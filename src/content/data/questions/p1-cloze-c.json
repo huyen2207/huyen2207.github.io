@@ -74,7 +74,8 @@
    "trapExplanationVi": "Đề đổi trợ từ ở vế sau để bẫy.",
    "fastestPathVi": "Hai vế có cùng động từ và cùng trợ từ không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Cậu có công nhận hay không thì sự thật vẫn thế."
  },
  {
   "id": "q-wa-dou-are-cloze-01",
@@ -151,7 +152,8 @@
    "trapExplanationVi": "「であれ」và 「はどうあれ」cùng là nhượng bộ nhưng đi với hai loại danh từ khác nhau.",
    "fastestPathVi": "Trước mẫu là từ để hỏi hay danh từ như 理由・動機?",
    "strength": 3
-  }
+  },
+  "stemVi": "Động cơ thế nào đi nữa thì việc phạm pháp vẫn là phạm pháp."
  },
  {
   "id": "q-mo-okamai-nashi-ni-cloze-01",
@@ -228,7 +230,8 @@
    "trapExplanationVi": "Ba mẫu cùng dịch là 'bất chấp', chỉ khen chê mới phân biệt được.",
    "fastestPathVi": "Câu đang khen hay đang chê?",
    "strength": 3
-  }
+  },
+  "stemVi": "Anh ta chẳng thèm để ý nội quy, cứ nói điện thoại oang oang."
  },
  {
   "id": "q-sotchinoke-cloze-01",
@@ -305,7 +308,8 @@
    "trapExplanationVi": "Phân biệt bằng ĐỐI TƯỢNG bị bỏ, không bằng nghĩa.",
    "fastestPathVi": "Cái bị bỏ là bổn phận của ai?",
    "strength": 3
-  }
+  },
+  "stemVi": "Cậu ấy bỏ bê ôn thi, lao vào hoạt động câu lạc bộ."
  },
  {
   "id": "q-to-shika-ii-you-ga-nai-cloze-01",
@@ -382,7 +386,8 @@
    "trapExplanationVi": "「かぎりだ」chỉ nhận tính từ đuôi い — đó là chỗ bẫy.",
    "fastestPathVi": "Từ trước mẫu là loại gì?",
    "strength": 3
-  }
+  },
+  "stemVi": "Kết cục này chỉ có thể gọi là khó hiểu."
  },
  {
   "id": "q-ni-kakatte-iru-cloze-01",
@@ -459,7 +464,8 @@
    "trapExplanationVi": "「にかかわる」và 「にかかっている」khác nhau ở nghĩa lẫn vị trí.",
    "fastestPathVi": "Ảnh hưởng TỚI, hay phụ thuộc VÀO?",
    "strength": 3
-  }
+  },
+  "stemVi": "Kế hoạch có thành hay không là tuỳ vào việc huy động vốn."
  },
  {
   "id": "q-ikan-ni-yotte-wa-cloze-01",
@@ -536,7 +542,8 @@
    "trapExplanationVi": "Các dạng của 「いかん」khác nhau ở chỗ kết câu hay nối tiếp.",
    "fastestPathVi": "Chỗ trống ở cuối câu hay giữa câu?",
    "strength": 3
-  }
+  },
+  "stemVi": "Tuỳ kết quả điều tra, có khi cả kế hoạch phải làm lại từ đầu."
  },
  {
   "id": "q-iza-shirazu-cloze-01",
@@ -613,7 +620,8 @@
    "trapExplanationVi": "「ならまだしも」và 「ならいざ知らず」nối giống hệt, chỉ khác sắc thái.",
    "fastestPathVi": "Câu có kèm chê trách kiểu 「〜とは」không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Lính mới thì còn được, đằng này người mười năm nghề mà chỉ đến thế thì khó chấp nhận."
  },
  {
   "id": "q-to-bakari-ni-cloze-01",
@@ -689,7 +697,8 @@
    "trapExplanationVi": "「んばかり」và 「とばかりに」chỉ khác một chữ nhưng nối hai thứ khác nhau.",
    "fastestPathVi": "Trước mẫu là động từ đơn hay cả một câu?",
    "strength": 3
-  }
+  },
+  "stemVi": "Như thể muốn nói đã hết chịu nổi, anh ta quăng bút xuống."
  },
  {
   "id": "q-kototote-cloze-01",
@@ -765,7 +774,8 @@
    "trapExplanationVi": "「ことだから」nối được y hệt nhưng phá vỡ văn phong thư tín.",
    "fastestPathVi": "Đây có phải văn xin lỗi trang trọng không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Vì là việc quá gấp nên chúng tôi tiếp đón sơ sài, mong lượng thứ."
  },
  {
   "id": "q-ni-tsugu-cloze-01",
@@ -841,7 +851,8 @@
    "trapExplanationVi": "「に次ぐ」bổ nghĩa danh từ, 「に次いで」nối vế.",
    "fastestPathVi": "Sau chỗ trống là danh từ hay cả một vế?",
    "strength": 3
-  }
+  },
+  "stemVi": "Bê bối nối tiếp bê bối, uy tín công ty rơi xuống đáy."
  },
  {
   "id": "q-ni-shite-mo-aru-cloze-01",
@@ -917,7 +928,8 @@
    "trapExplanationVi": "「にして」có bốn nghĩa; dấu hiệu 「でもある」quyết định.",
    "fastestPathVi": "Sau chỗ trống có 「でもある」không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Anh ấy vừa là bác sĩ ngoại khoa vừa là nhà nghiên cứu."
  },
  {
   "id": "q-todomaru-tokoro-wo-shiranai-cloze-01",
@@ -993,7 +1005,8 @@
    "trapExplanationVi": "Hai mẫu cùng tả xu thế tăng nhưng khác chỗ có tác nhân hay không.",
    "fastestPathVi": "Câu có chủ ngữ gây tác động không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Làn sóng dồn dân về đô thị không có dấu hiệu dừng lại."
  },
  {
   "id": "q-igai-no-nanimono-demo-nai-cloze-01",
@@ -1070,7 +1083,8 @@
    "trapExplanationVi": "Nhiều mẫu nhấn mạnh cùng nối được danh từ ở đây.",
    "fastestPathVi": "Câu đang chốt một tên gọi hay đang nâng mức?",
    "strength": 3
-  }
+  },
+  "stemVi": "Giấu sự thật đi thì chính là che đậy chứ không gì khác."
  },
  {
   "id": "q-de-sura-aru-cloze-01",
@@ -1146,7 +1160,8 @@
    "trapExplanationVi": "Dấu hiệu là câu ĐÃ có một nhận xét ở vế trước.",
    "fastestPathVi": "Câu này đang nâng mức một nhận xét có sẵn phải không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Quyết định ấy nhanh gọn, thậm chí có thể nói là táo bạo."
  },
  {
   "id": "q-nagara-no-cloze-01",
@@ -1224,7 +1239,8 @@
    "trapExplanationVi": "「ながら」có hai nghĩa hoàn toàn khác: nhượng bộ và giữ nguyên.",
    "fastestPathVi": "Trước mẫu là danh từ 昔・涙 hay là động từ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Ở xóm này vẫn còn nếp sống y như thuở xưa."
  },
  {
   "id": "q-tari-shinai-cloze-01",
@@ -1300,6 +1316,7 @@
    "trapExplanationVi": "Đáp án sai không sai ngữ pháp mà sai văn phong.",
    "fastestPathVi": "Đây là hội thoại hay văn thông cáo?",
    "strength": 3
-  }
+  },
+  "stemVi": "Giấy tờ quan trọng nên tôi tuyệt đối không làm mất đâu, cứ yên tâm."
  }
 ]

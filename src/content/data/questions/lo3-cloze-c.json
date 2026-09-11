@@ -74,7 +74,8 @@
    "trapExplanationVi": "Đây là câu thư tín; đáp án sai phá vỡ văn phong chứ không phải ngữ pháp.",
    "fastestPathVi": "Vế sau có phải lời cảm ơn hoặc xin lỗi không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Rất ngại khi quý vị đang bận, nhưng mong quý vị xác nhận giúp."
  },
  {
   "id": "q-meku-cloze-01",
@@ -150,7 +151,8 @@
    "trapExplanationVi": "「春めく」là cụm quen thuộc; 「めく」chỉ ghép được vài danh từ.",
    "fastestPathVi": "Danh từ này có nằm trong nhóm ghép được không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Nắng đã dịu lại, cuối cùng cũng phảng phất hơi xuân."
  },
  {
   "id": "q-nai-tomo-kagiranai-cloze-01",
@@ -226,7 +228,8 @@
    "trapExplanationVi": "Hai mẫu hai lần phủ định rất giống nhau; nội dung tốt hay xấu mới quyết.",
    "fastestPathVi": "Vế sau có phải lời khuyên đề phòng không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Vùng này cũng không chắc là sẽ không có mưa lớn, nên hãy xem trước lối thoát hiểm."
  },
  {
   "id": "q-to-wa-cloze-01",
@@ -303,7 +306,8 @@
    "trapExplanationVi": "Bẫy nằm ở chỗ câu bỏ lửng — phải nhận ra phần sau đã bị lược.",
    "fastestPathVi": "Câu có bỏ lửng không? Nếu có thì là 「とは」.",
    "strength": 3
-  }
+  },
+  "stemVi": "Kế hoạch chuẩn bị kỹ đến thế mà lại không được duyệt."
  },
  {
   "id": "q-nai-made-mo-cloze-01",
@@ -380,7 +384,8 @@
    "trapExplanationVi": "「〜とは言わないまでも」là cụm hay ra; bẫy ở chỗ đặt 「ない」.",
    "fastestPathVi": "Vế sau có nhẹ hơn vế trước không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Không đòi toàn bộ, nhưng mong trả lại được một phần."
  },
  {
   "id": "q-tomo-nashi-ni-cloze-01",
@@ -456,7 +461,8 @@
    "trapExplanationVi": "「ともなしに」và 「ともなく」trùng nghĩa; bẫy thật là 「ともなると」.",
    "fastestPathVi": "Trước mẫu là động từ tri giác hay danh từ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Khung cảnh ngắm mà chẳng để tâm ấy đến giờ vẫn in trong mắt tôi."
  },
  {
   "id": "q-hitori-nomi-narazu-cloze-01",
@@ -532,7 +538,8 @@
    "trapExplanationVi": "「ひとり」ở đây không có nghĩa 'một người' — đó chính là bẫy.",
    "fastestPathVi": "「ひとり」đi kèm 「のみならず」thành cụm cố định.",
    "strength": 3
-  }
+  },
+  "stemVi": "Già hoá dân số không chỉ là chuyện của riêng nước ta mà là vấn đề chung của các nước phát triển."
  },
  {
   "id": "q-atte-no-cloze-01",
@@ -608,7 +615,8 @@
    "trapExplanationVi": "「あっての」và 「なくして」cùng ý nhưng khác chỗ nối.",
    "fastestPathVi": "Sau chỗ trống là danh từ hay cả một vế?",
    "strength": 3
-  }
+  },
+  "stemVi": "Có những người nâng đỡ thì mới có tôi của ngày hôm nay."
  },
  {
   "id": "q-mo-soko-soko-ni-cloze-01",
@@ -684,7 +692,8 @@
    "trapExplanationVi": "Hai mẫu cùng có 「も」nên đề hay xếp chung một nhóm đáp án.",
    "fastestPathVi": "Danh từ trước mẫu là việc thường ngày hay hậu quả nặng?",
    "strength": 3
-  }
+  },
+  "stemVi": "Anh ấy thay đồ qua quýt rồi lao tới bệnh viện."
  },
  {
   "id": "q-mo-jisanai-cloze-01",
@@ -760,7 +769,8 @@
    "trapExplanationVi": "「辞さない」nghĩa là KHÔNG từ chối — hai lần phủ định dễ hiểu ngược.",
    "fastestPathVi": "Danh từ trước mẫu có phải hậu quả nặng không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Nếu còn bị đối xử bất công thì kiện ra toà cũng chẳng ngại."
  },
  {
   "id": "q-wa-tomoare-cloze-01",
@@ -837,7 +847,8 @@
    "trapExplanationVi": "Ba mẫu đều gạt một yếu tố sang bên, khác ở chỗ có kèm chê hay không.",
    "fastestPathVi": "Có lời chê nào ở vế sau không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Gác chi tiết sang bên, trước hết tôi nhẹ nhõm vì nghe tin mọi người bình an."
  },
  {
   "id": "q-beku-shite-cloze-01",
@@ -914,7 +925,8 @@
    "trapExplanationVi": "「べく」và 「べくして」chỉ khác hai chữ nhưng nghĩa khác hẳn.",
    "fastestPathVi": "Có phải cùng một động từ lặp hai lần không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Đã lơ là kiểm tra thì có thể nói hỏng hóc là chuyện tất phải xảy ra."
  },
  {
   "id": "q-ni-wa-ataranai-cloze-01",
@@ -991,7 +1003,8 @@
    "trapExplanationVi": "Ba mẫu 「にはあたらない／にはおよばない／にかたくない」cùng dạng 「に〜ない」.",
    "fastestPathVi": "Trước mẫu là động từ chỉ cảm xúc hay hành động?",
    "strength": 3
-  }
+  },
+  "stemVi": "Xét thực lực thì kết quả lần này chẳng có gì đáng ngạc nhiên."
  },
  {
   "id": "q-iza-to-naru-to-cloze-01",
@@ -1067,6 +1080,7 @@
    "trapExplanationVi": "Vế trước và vế sau trái ngược — đó là dấu hiệu của 「いざ〜となると」.",
    "fastestPathVi": "Vế sau có trái với dự tính không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Tập bao nhiêu lần rồi mà đến lúc đứng trước đám đông lại không nói nên lời."
  }
 ]

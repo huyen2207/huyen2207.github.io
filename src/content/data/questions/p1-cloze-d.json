@@ -74,7 +74,8 @@
    "trapExplanationVi": "「なりとも」và 「たりとも」khác nhau ở vế sau khẳng định hay phủ định.",
    "fastestPathVi": "Cuối câu có phủ định không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Nếu giúp được dù chỉ chút ít thì thật may mắn."
  },
  {
   "id": "q-ni-tsuide-cloze-01",
@@ -150,7 +151,8 @@
    "trapExplanationVi": "Cặp 「に次ぐ／に次いで」phân biệt bằng vị trí, không bằng nghĩa.",
    "fastestPathVi": "Sau chỗ trống là danh từ hay cả một vế?",
    "strength": 3
-  }
+  },
+  "stemVi": "Sau Mỹ, Nhật Bản là thị trường xuất khẩu lớn thứ hai."
  },
  {
   "id": "q-sobireru-cloze-01",
@@ -226,7 +228,8 @@
    "trapExplanationVi": "「そびれる」và 「ずじまい」cùng nghĩa tiếc nuối nhưng nối hai thể khác nhau.",
    "fastestPathVi": "Trước chỗ trống là thể ます hay thể ない?",
    "strength": 3
-  }
+  },
+  "stemVi": "Lỡ mất dịp bắt chuyện, rốt cuộc tôi chưa kịp nói lời cảm ơn."
  },
  {
   "id": "q-wo-kanete-cloze-01",
@@ -303,7 +306,8 @@
    "trapExplanationVi": "「をかねて」trung tính, 「にかこつけて」luôn kèm chê.",
    "fastestPathVi": "Lý do này là thật hay chỉ là cớ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Tiện thay đổi không khí, tôi đi vòng đường xa để về."
  },
  {
   "id": "q-ni-kakotsukete-cloze-01",
@@ -380,7 +384,8 @@
    "trapExplanationVi": "Cặp này chỉ phân biệt bằng SẮC THÁI, không bằng ngữ pháp.",
    "fastestPathVi": "Người nói có đang chê không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Nghe nói anh ta mượn cớ đi khảo sát để đi ngắm danh thắng."
  },
  {
   "id": "q-to-suru-cloze-01",
@@ -456,7 +461,8 @@
    "trapExplanationVi": "「とする」và 「から成る」cùng mô tả tổ chức nhưng khác cấu trúc.",
    "fastestPathVi": "Câu đang chỉ định vai trò hay liệt kê thành phần?",
    "strength": 3
-  }
+  },
+  "stemVi": "Nhiều doanh nghiệp lấy Osaka làm trụ sở chính đã góp mặt."
  },
  {
   "id": "q-kara-naru-cloze-01",
@@ -532,7 +538,8 @@
    "trapExplanationVi": "Bẫy nằm ở chỗ hai mẫu cùng dùng để mô tả cấu trúc tổ chức.",
    "fastestPathVi": "Trước chỗ trống có phải số lượng thành phần không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Quy định này gồm năm chương."
  },
  {
   "id": "q-me-ni-miete-cloze-01",
@@ -608,7 +615,8 @@
    "trapExplanationVi": "Cùng một câu, chỉ đổi đuôi khẳng định／phủ định là đổi đáp án.",
    "fastestPathVi": "Vế sau khẳng định hay phủ định?",
    "strength": 3
-  }
+  },
+  "stemVi": "Từ khi dùng thuốc, các chỉ số cải thiện thấy rõ."
  },
  {
   "id": "q-heta-wo-suru-to-cloze-01",
@@ -685,7 +693,8 @@
    "trapExplanationVi": "「あわや」và 「下手をすると」khác nhau ở THÌ của sự việc.",
    "fastestPathVi": "Việc đã xảy ra rồi hay chưa?",
    "strength": 3
-  }
+  },
+  "stemVi": "Không khéo thì sẽ thành chuyện không thể cứu vãn."
  },
  {
   "id": "q-ikkou-ni-cloze-01",
@@ -762,7 +771,8 @@
    "trapExplanationVi": "Bốn phó từ phủ định phân biệt bằng động từ đi kèm.",
    "fastestPathVi": "Câu này là chờ mà không đổi, hay là bất khả thi?",
    "strength": 3
-  }
+  },
+  "stemVi": "Giục mãi mà hồi âm chẳng thấy đâu."
  },
  {
   "id": "q-toutei-cloze-01",
@@ -839,7 +849,8 @@
    "trapExplanationVi": "Nhìn TỪ đi kèm ở cuối câu, đừng dịch nghĩa từng phó từ.",
    "fastestPathVi": "Cuối câu là 「無理だ」hay 「分からない」?",
    "strength": 3
-  }
+  },
+  "stemVi": "Với điều kiện này thì hoàn thành đúng hạn là điều không tưởng."
  },
  {
   "id": "q-ni-mukete-cloze-01",
@@ -916,7 +927,8 @@
    "trapExplanationVi": "Ba mẫu cùng nêu lý do／mục đích nên đề hay xếp chung.",
    "fastestPathVi": "Đây là đích nhắm, hai mục đích, hay cái cớ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Hướng tới kỷ niệm một trăm năm thành lập, các hoạt động đã khởi động."
  },
  {
   "id": "q-wa-naosara-no-koto-cloze-01",
@@ -993,7 +1005,8 @@
    "trapExplanationVi": "Dấu hiệu là câu ĐỨNG TRƯỚC làm mốc so sánh.",
    "fastestPathVi": "Có câu nêu mốc phía trước không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Người có kinh nghiệm còn thấy khó. Người mới thì lại càng vậy."
  },
  {
   "id": "q-ni-ni-te-cloze-01",
@@ -1070,7 +1083,8 @@
    "trapExplanationVi": "Ba mẫu lặp đôi に〜て／つ〜つ／ては phân biệt bằng số động từ và thể.",
    "fastestPathVi": "Có phải cùng MỘT động từ lặp lại không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Sau khi trăn trở mãi, anh ấy quyết định chuyển việc."
  },
  {
   "id": "q-ni-hakusha-wo-kakeru-cloze-01",
@@ -1146,7 +1160,8 @@
    "trapExplanationVi": "Dấu hiệu là có CHỦ NGỮ gây tác động ở đầu câu.",
    "fastestPathVi": "Câu có tác nhân bên ngoài không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Thiếu nhân lực đang đẩy giá cả tăng nhanh hơn."
  },
  {
   "id": "q-to-itta-cloze-01",
@@ -1223,7 +1238,8 @@
    "trapExplanationVi": "「という」và 「といった」khác một chữ, nghĩa khác hẳn.",
    "fastestPathVi": "Hai bên có phải cùng một danh từ không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Số học sinh học võ như judo hay kendo đã tăng lên."
  },
  {
   "id": "q-wa-betsu-ni-shite-cloze-01",
@@ -1300,6 +1316,7 @@
    "trapExplanationVi": "Nhiều mẫu cùng gạt yếu tố sang bên; dấu hiệu là 「〜かどうかは」.",
    "fastestPathVi": "Trước mẫu là 「〜かどうか」hay hai khả năng rõ ràng?",
    "strength": 3
-  }
+  },
+  "stemVi": "Gác chuyện có kịp hay không sang bên, trước hết cứ bắt tay vào đã."
  }
 ]

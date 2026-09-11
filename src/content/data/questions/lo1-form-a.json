@@ -55,7 +55,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nhất định sẽ khiến người ta phải kinh ngạc."
  },
  {
   "id": "q-nai-dewa-okanai-form-01",
@@ -113,7 +114,8 @@
   "sourcePage": "別冊 p.14",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nhất định sẽ làm người ta xúc động."
  },
  {
   "id": "q-zuni-wa-sumanai-form-01",
@@ -171,7 +173,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không thể không xin lỗi."
  },
  {
   "id": "q-nai-dewa-sumanai-form-01",
@@ -229,7 +232,8 @@
   "sourcePage": "別冊 p.24",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không thể không báo cáo."
  },
  {
   "id": "q-kiwamari-nai-form-01",
@@ -403,7 +407,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Thật là vinh dự tột cùng."
  },
  {
   "id": "q-to-ittara-nai-form-01",
@@ -751,7 +756,8 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vừa làm nghề giáo, vừa …"
  },
  {
   "id": "q-gatera-form-01",
@@ -809,7 +815,8 @@
   "sourcePage": "別冊 p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tiện thể đi dạo."
  },
  {
   "id": "q-katagata-form-01",
@@ -1041,7 +1048,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Ngay cả chuyên gia cũng …"
  },
  {
   "id": "q-dani-form-01",

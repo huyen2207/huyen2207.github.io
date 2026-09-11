@@ -74,7 +74,8 @@
    "trapExplanationVi": "Bốn phó từ phủ định phân biệt bằng cụm đi kèm, không bằng nghĩa.",
    "fastestPathVi": "Cuối câu là 「見当がつかない」hay 「無理だ」?",
    "strength": 3
-  }
+  },
+  "stemVi": "Về động cơ của thủ phạm thì hoàn toàn không đoán ra nổi."
  },
  {
   "id": "q-ni-shite-nenrei-cloze-01",
@@ -150,7 +151,8 @@
    "trapExplanationVi": "「にして」có bốn nghĩa; con số tuổi là dấu hiệu của nghĩa này.",
    "fastestPathVi": "Trước chỗ trống có phải con số tuổi không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Ở tuổi bảy mươi, bà ấy lần đầu chạy trọn một cuộc marathon."
  },
  {
   "id": "q-isso-cloze-01",
@@ -227,7 +229,8 @@
    "trapExplanationVi": "Ba mẫu cùng nói về quyết định nên đề hay xếp chung.",
    "fastestPathVi": "Câu đang đổi hướng, trấn an, hay quyết tâm?",
    "strength": 3
-  }
+  },
+  "stemVi": "Thay vì chắp vá lặt vặt, chi bằng làm lại hẳn cho nhanh."
  },
  {
   "id": "q-nan-to-ittemo-cloze-01",
@@ -304,7 +307,8 @@
    "trapExplanationVi": "「なんといっても」và 「なんでも」chỉ khác vài chữ.",
    "fastestPathVi": "Đuôi câu có 「らしい」không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Điểm mạnh của sản phẩm này, nói gì thì nói, vẫn là độ bền."
  },
  {
   "id": "q-nandemo-cloze-01",
@@ -381,7 +385,8 @@
    "trapExplanationVi": "Dấu hiệu nằm ở ĐUÔI CÂU chứ không ở đầu.",
    "fastestPathVi": "Cuối câu có 「らしい」「そうだ」không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Nghe nói quán bên cạnh tháng sau đóng cửa."
  },
  {
   "id": "q-dochira-ni-shitemo-cloze-01",
@@ -457,7 +462,8 @@
    "trapExplanationVi": "Dấu hiệu là có ĐÚNG HAI khả năng nêu ra trước.",
    "fastestPathVi": "Trước chỗ trống có hai khả năng không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Hoãn hay huỷ, đằng nào cũng cần thông báo sớm."
  },
  {
   "id": "q-kokoro-okinaku-cloze-01",
@@ -533,7 +539,8 @@
    "trapExplanationVi": "Cả hai đều là cụm xã giao trang trọng nên dễ lẫn.",
    "fastestPathVi": "Vế sau là lời mời hay lời cảm ơn?",
    "strength": 3
-  }
+  },
+  "stemVi": "Người kế nhiệm đã có rồi, xin anh cứ yên lòng mà lên đường."
  },
  {
   "id": "q-shitte-ka-shirazu-ka-cloze-01",
@@ -609,7 +616,8 @@
    "trapExplanationVi": "Cụm cố định — không được đổi 「知らずか」thành 「知らないか」.",
    "fastestPathVi": "Chủ thể là người khác hay chính người nói?",
    "strength": 3
-  }
+  },
+  "stemVi": "Chẳng rõ có biết hay không, anh ta cứ phá lệ mà đi vào sân trong."
  },
  {
   "id": "q-iyaou-nashi-ni-cloze-01",
@@ -685,7 +693,8 @@
    "trapExplanationVi": "Cả hai đều là sự bắt buộc; khác ở chỗ tự nhận hay bị ép.",
    "fastestPathVi": "Chủ thể có quyền chọn không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Chế độ thay đổi, chúng tôi bị buộc phải đổi hướng bất kể muốn hay không."
  },
  {
   "id": "q-ga-saiwai-shite-cloze-01",
@@ -761,7 +770,8 @@
    "trapExplanationVi": "Hai mẫu nêu lý do nhưng vế sau đi hai hướng ngược nhau.",
    "fastestPathVi": "Vế sau là kết quả tốt hay lời xin lỗi?",
    "strength": 3
-  }
+  },
+  "stemVi": "May nhờ mặc gọn nhẹ nên vết thương chỉ nhẹ thôi."
  },
  {
   "id": "q-you-to-iu-mono-da-cloze-01",
@@ -838,7 +848,8 @@
    "trapExplanationVi": "Nhóm mẫu kết bằng 「ものだ」rất đông và dễ lẫn.",
    "fastestPathVi": "Trước chỗ trống là thể ý chí phải không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Đã dốc sức đến thế thì đường cũng sẽ mở ra thôi."
  },
  {
   "id": "q-to-iu-fuu-ni-cloze-01",
@@ -914,7 +925,8 @@
    "trapExplanationVi": "Hai mẫu cùng mở đầu bằng 「という」nhưng nối hai thứ khác nhau.",
    "fastestPathVi": "Sau chỗ trống là danh từ hay động từ tư duy?",
    "strength": 3
-  }
+  },
+  "stemVi": "Tôi dần hiểu ra theo kiểu dục tốc bất đạt."
  },
  {
   "id": "q-yohodo-nai-to-cloze-01",
@@ -991,7 +1003,8 @@
    "trapExplanationVi": "Dấu hiệu là cặp 「よほど〜ないと」và vế sau xấu.",
    "fastestPathVi": "Vế sau có phải điều không mong muốn không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Trừ phi đọc thật kỹ, không thì sẽ bỏ sót điều kiện đấy."
  },
  {
   "id": "q-ikanimo-cloze-01",
@@ -1067,7 +1080,8 @@
    "trapExplanationVi": "「いかに」／「いかにも」khác một chữ nhưng đòi hai loại đuôi khác nhau.",
    "fastestPathVi": "Sau chỗ trống là 「らしい」hay 「〜ても」?",
    "strength": 3
-  }
+  },
+  "stemVi": "Cách làm việc tỉ mỉ đúng chất một người thợ."
  },
  {
   "id": "q-dou-ni-ka-shite-cloze-01",
@@ -1144,7 +1158,8 @@
    "trapExplanationVi": "「どうにか」và 「どうにかして」khác nhau hẳn về sắc thái.",
    "fastestPathVi": "Câu đang quyết tâm hay đang nói kết quả tạm ổn?",
    "strength": 3
-  }
+  },
+  "stemVi": "Bằng mọi cách phải phá vỡ được tình thế này."
  },
  {
   "id": "q-moto-moto-da-cloze-01",
@@ -1221,6 +1236,7 @@
    "trapExplanationVi": "「だめでもともと」「断られてもともと」là cụm quen thuộc.",
    "fastestPathVi": "Câu có đang tự trấn an trước khi thử không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Bị từ chối thì cũng như cũ thôi. Cứ thử hỏi xem sao."
  }
 ]

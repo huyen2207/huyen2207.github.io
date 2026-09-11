@@ -129,11 +129,20 @@ export function ExplanationPanel({
   children?: ReactNode;
 }) {
   const hasAny =
-    feedback.explanationVi || feedback.keyClueVi || feedback.trap || feedback.solvingStrategy || grammar || otherGrammars?.length;
+    feedback.explanationVi || feedback.keyClueVi || feedback.trap || feedback.solvingStrategy || feedback.stemVi || grammar || otherGrammars?.length;
   if (!hasAny) return <>{children}</>;
 
   return (
     <div className="mt-3 space-y-3">
+      {feedback.stemVi && (
+        <Card className="px-3.5 py-3">
+          <h3 className="mb-1 text-[12px] font-semibold uppercase tracking-wide" style={{ color: 'var(--ink-faint)' }}>
+            {t('question.meaningOfSentence')}
+          </h3>
+          <p className="text-[15px] leading-relaxed">{feedback.stemVi}</p>
+        </Card>
+      )}
+
       {feedback.explanationVi && (
         <Card className="px-3.5 py-3">
           <h3 className="mb-1 text-[12px] font-semibold uppercase tracking-wide" style={{ color: 'var(--ink-faint)' }}>

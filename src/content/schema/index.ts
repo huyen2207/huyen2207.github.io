@@ -182,6 +182,7 @@ export const zQuestion = z.object({
   phaseHint: z.array(zPhase).min(1),
   targetGrammarIds: z.array(z.string()).min(1),
   stemJa: z.string().min(1),
+  stemVi: z.string().optional(),
   contextJa: z.string().optional(),
   choices: z.array(zChoice).min(2),
   correctChoiceId: z.string().min(1),

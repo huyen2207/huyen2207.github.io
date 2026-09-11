@@ -52,6 +52,12 @@ export interface Question {
   phaseHint: Phase[];
   targetGrammarIds: string[];
   stemJa: string;
+  /**
+   * Nghĩa tiếng Việt của CÂU HOÀN CHỈNH — tức câu đã điền đáp án đúng vào chỗ trống.
+   * Chỉ hiện SAU khi người học đã trả lời, để không làm lộ đáp án (CLAUDE.md §11).
+   * Câu hỏi siêu dữ liệu (MEANING_MC) không có câu thật nên bỏ trống.
+   */
+  stemVi?: string;
   contextJa?: string;
   choices: Choice[];
   correctChoiceId: string;

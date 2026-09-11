@@ -37,6 +37,8 @@ export interface GradeInput {
 
 export interface FeedbackPayload {
   correctChoiceId: string | null;
+  /** Nghĩa tiếng Việt của câu hoàn chỉnh. Chỉ có sau khi đã trả lời (không lộ đáp án). */
+  stemVi: string | null;
   explanationVi: string | null;
   keyClueVi: string | null;
   choiceExplanations: Record<string, string> | null;
@@ -61,6 +63,7 @@ export interface GradeResult {
 
 const EMPTY_FEEDBACK: FeedbackPayload = {
   correctChoiceId: null,
+  stemVi: null,
   explanationVi: null,
   keyClueVi: null,
   choiceExplanations: null,
@@ -89,12 +92,15 @@ export function buildFeedback(q: Question, delivery: DeliveryMode): FeedbackPayl
     return {
       ...EMPTY_FEEDBACK,
       correctChoiceId: q.correctChoiceId,
+      // Bản dịch vẫn hiện ở chế độ bấm giờ: nó giúp nhớ, không phải lời giải.
+      stemVi: q.stemVi ?? null,
       keyClueVi: q.keyClueVi,
     };
   }
 
   return {
     correctChoiceId: q.correctChoiceId,
+    stemVi: q.stemVi ?? null,
     explanationVi: q.explanationVi,
     keyClueVi: q.keyClueVi,
     choiceExplanations,

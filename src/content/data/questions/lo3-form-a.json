@@ -56,7 +56,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nhân vật như anh ấy sẽ không xuất hiện lần thứ hai."
  },
  {
   "id": "q-n-ga-tame-ni-form-01",
@@ -115,7 +116,8 @@
   "sourcePage": "別冊 p.4",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Để sống sót, họ đã bỏ lại quê hương."
  },
  {
   "id": "q-nari-nari-form-01",
@@ -175,7 +177,8 @@
   "sourcePage": "別冊 p.4",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Gọi điện hay nhắn tin gì cũng được, nhất định phải liên lạc nhé."
  },
  {
   "id": "q-zujimai-form-01",
@@ -234,7 +237,8 @@
   "sourcePage": "別冊 p.4",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Rốt cuộc tôi đã không gặp được anh ấy."
  },
  {
   "id": "q-ni-shite-form-01",
@@ -293,7 +297,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Ngay cả bậc thầy cũng không chơi trọn được bản khó này."
  },
  {
   "id": "q-te-kara-to-iu-mono-form-01",
@@ -352,7 +357,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Kể từ khi bố nhập viện, trong nhà trở nên yên ắng hẳn."
  },
  {
   "id": "q-to-ii-to-ii-form-01",
@@ -412,7 +418,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Xét màu cũng vậy, dáng cũng vậy, chiếc bát này không chê vào đâu được."
  },
  {
   "id": "q-shimatsu-da-form-01",
@@ -471,7 +478,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nợ chồng nợ, rốt cuộc đến nước phải bỏ trốn trong đêm."
  },
  {
   "id": "q-taru-form-01",
@@ -530,7 +538,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Đã là người lãnh đạo thì phải chịu trách nhiệm về kết quả."
  },
  {
   "id": "q-you-ni-mo-nai-form-01",
@@ -588,7 +597,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Sốt cao quá, muốn dậy cũng không dậy nổi."
  },
  {
   "id": "q-dewa-arumai-shi-form-01",
@@ -648,7 +658,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đâu còn là trẻ con nữa, chuyện cỡ đó thì tự làm đi."
  },
  {
   "id": "q-dewa-sumasarenai-form-01",
@@ -707,7 +718,8 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đây là vấn đề không thể nói 'tôi không biết' là xong."
  },
  {
   "id": "q-made-no-koto-da-form-01",
@@ -767,7 +779,8 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tôi chỉ làm điều đương nhiên thôi."
  },
  {
   "id": "q-temae-form-01",
@@ -826,7 +839,8 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vì đã trót nói là không sao nên bây giờ không từ chối được."
  },
  {
   "id": "q-wo-mono-tomo-sezu-ni-form-01",
@@ -885,7 +899,8 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ấy bất chấp mưa lớn vẫn nhắm tới đỉnh núi."
  },
  {
   "id": "q-yochi-ga-aru-form-01",
@@ -943,6 +958,7 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Phương án này vẫn còn chỗ để cải thiện."
  }
 ]

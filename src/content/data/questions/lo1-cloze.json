@@ -74,7 +74,8 @@
    "trapExplanationVi": "Hai mẫu chỉ khác 「おかない」/「すまない」nhưng nghĩa đi hai hướng.",
    "fastestPathVi": "Hỏi: ai chịu tác động — người khác hay chính mình?",
    "strength": 3
-  }
+  },
+  "stemVi": "Kết cục của bộ phim này nhất định sẽ làm rung động lòng người xem."
  },
  {
   "id": "q-zuni-wa-sumanai-cloze-01",
@@ -151,7 +152,8 @@
    "trapExplanationVi": "Đề cài sẵn dạng chia sai 「しずには」ngay cạnh đáp án đúng.",
    "fastestPathVi": "Kiểm tra 「する」→「せ」trước khi so nghĩa.",
    "strength": 3
-  }
+  },
+  "stemVi": "Đã phát hiện lỗi linh kiện thì nhà sản xuất buộc phải thu hồi."
  },
  {
   "id": "q-kiwamari-nai-cloze-01",
@@ -223,7 +225,8 @@
   "sourcePage": "別冊 p.14",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chép miệng trước mặt khách thì đúng là thái độ vô cùng thất lễ."
  },
  {
   "id": "q-no-kiwami-cloze-01",
@@ -295,7 +298,8 @@
   "sourcePage": "別冊 p.4",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tăng ca liên miên lại còn đi làm ngày nghỉ, mệt mỏi đến cùng cực."
  },
  {
   "id": "q-ya-inaya-cloze-01",
@@ -367,7 +371,8 @@
   "sourcePage": "別冊 p.9",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cửa hội trường vừa mở là hàng người lập tức nhích lên."
  },
  {
   "id": "q-ga-hayai-ka-cloze-01",
@@ -445,7 +450,8 @@
    "trapExplanationVi": "「や否や」và 「が早いか」dịch ra tiếng Việt gần như trùng nhau.",
    "fastestPathVi": "Hỏi: việc đó có phải đã chực sẵn không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Chuông tan làm vừa reo là anh ta đứng dậy khỏi ghế."
  },
  {
   "id": "q-katawara-cloze-01",
@@ -517,7 +523,8 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ấy vừa dạy ở đại học vừa dạy toán miễn phí cho trẻ trong vùng."
  },
  {
   "id": "q-nomi-narazu-cloze-01",
@@ -589,7 +596,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cuốn sách này không chỉ giới chuyên môn mà cả độc giả phổ thông cũng đọc rộng rãi."
  },
  {
   "id": "q-wa-oroka-cloze-01",
@@ -667,7 +675,8 @@
    "trapExplanationVi": "Nếu chỉ dịch nghĩa mà không đọc đuôi câu thì rất dễ chọn 「のみならず」.",
    "fastestPathVi": "Đọc đuôi câu trước khi chọn.",
    "strength": 3
-  }
+  },
+  "stemVi": "Bận đến mức nghỉ phép đã đành, đến ngày cuối tuần cũng không nghỉ được."
  },
  {
   "id": "q-sura-cloze-01",
@@ -739,7 +748,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Hồi đó bận tới mức đến thời gian ăn cơm với gia đình cũng không có."
  },
  {
   "id": "q-nagara-mo-cloze-01",
@@ -811,7 +821,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tuy là người mới nhưng anh ấy trình bày ý kiến rất đường hoàng."
  },
  {
   "id": "q-ta-tokoro-de-cloze-01",
@@ -887,7 +898,8 @@
    "trapExplanationVi": "Nếu không đọc đuôi câu sẽ tưởng đây là mẫu chỉ thời điểm.",
    "fastestPathVi": "Đọc đuôi câu: có phủ định là chọn 「たところで」.",
    "strength": 3
-  }
+  },
+  "stemVi": "Bây giờ có xuất phát thì chắc cũng không kịp giờ mở màn."
  },
  {
   "id": "q-yue-cloze-01",
@@ -959,7 +971,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vì thiếu thông tin nên tôi đã phán đoán sai."
  },
  {
   "id": "q-wo-yogi-naku-sareru-cloze-01",
@@ -1037,7 +1050,8 @@
    "trapExplanationVi": "Hai mẫu cùng nghĩa 'buộc phải' nhưng một nối danh từ, một nối động từ.",
    "fastestPathVi": "Nhìn từ loại đứng trước rồi mới chọn.",
    "strength": 3
-  }
+  },
+  "stemVi": "Do trận tuyết kỷ lục, nhiều chuyến tàu buộc phải ngừng chạy."
  },
  {
   "id": "q-beku-cloze-01",
@@ -1112,7 +1126,8 @@
    "trapExplanationVi": "Chỗ hay sai là chia 「する」thành 「し」thay vì 「す」.",
    "fastestPathVi": "Nhớ 「すべく」như một khối.",
    "strength": 3
-  }
+  },
+  "stemVi": "Để làm rõ nguyên nhân vụ tai nạn, một đoàn điều tra chuyên môn đã được cử đến."
  },
  {
   "id": "q-ni-hikikae-cloze-01",
@@ -1190,6 +1205,7 @@
    "trapExplanationVi": "「にひきかえ」và 「にもまして」đều so sánh, chỉ khác chiều.",
    "fastestPathVi": "Hỏi: hai vế cùng chiều hay ngược chiều?",
    "strength": 3
-  }
+  },
+  "stemVi": "Trái ngược với phong độ tệ mùa trước, mùa này anh ấy đang cực kỳ sung sức."
  }
 ]

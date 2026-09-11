@@ -263,6 +263,7 @@ const vi: Record<string, string> = {
   'adaptation.tinySession': 'Chỉ có {minutes} phút — hôm nay chỉ ôn phần quan trọng nhất và chữa lỗi.',
 
   /* ── Learn card ── */
+  'question.meaningOfSentence': 'Nghĩa của câu',
   'question.reviewStructure': 'Ôn lại cấu trúc',
   'question.reviewStructureAll': 'Ôn lại cấu trúc của cả {n} mẫu',
   'learn.pattern': 'Mẫu',

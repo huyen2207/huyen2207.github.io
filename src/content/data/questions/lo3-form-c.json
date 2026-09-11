@@ -56,7 +56,8 @@
   "sourcePage": "別冊 p.24",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Cảm ơn quý vị đã tới dự dù đang bận rộn."
  },
  {
   "id": "q-meku-form-01",
@@ -115,7 +116,8 @@
   "sourcePage": "別冊 p.25",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Lời anh ta có âm hưởng nhuốm vẻ mỉa mai."
  },
  {
   "id": "q-nai-tomo-kagiranai-form-01",
@@ -174,7 +176,8 @@
   "sourcePage": "別冊 p.25",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không chắc là động đất sẽ không xảy ra, nên hãy chuẩn bị trước."
  },
  {
   "id": "q-to-wa-form-01",
@@ -233,7 +236,8 @@
   "sourcePage": "別冊 p.25",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Không ngờ hai người đó lại lấy nhau."
  },
  {
   "id": "q-nai-made-mo-form-01",
@@ -293,7 +297,8 @@
   "sourcePage": "別冊 p.26",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không đòi mỗi ngày, nhưng ít nhất mỗi tuần một lần hãy liên lạc."
  },
  {
   "id": "q-tomo-nashi-ni-form-01",
@@ -352,7 +357,8 @@
   "sourcePage": "別冊 p.26",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Câu chuyện nghe mà chẳng để tâm ấy lại đọng lại lạ lùng."
  },
  {
   "id": "q-hitori-nomi-narazu-form-01",
@@ -410,7 +416,8 @@
   "sourcePage": "別冊 p.30",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đây không chỉ là vấn đề của riêng Nhật Bản mà của cả thế giới."
  },
  {
   "id": "q-atte-no-form-01",
@@ -469,7 +476,8 @@
   "sourcePage": "別冊 p.32",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Không được quên rằng có khách hàng thì mới có việc buôn bán."
  },
  {
   "id": "q-mo-soko-soko-ni-form-01",
@@ -528,7 +536,8 @@
   "sourcePage": "別冊 p.34",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ấy ăn sáng qua quýt rồi lao ra khỏi nhà."
  },
  {
   "id": "q-mo-jisanai-form-01",
@@ -587,7 +596,8 @@
   "sourcePage": "別冊 p.36",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Công đoàn ở thế sẵn sàng đình công."
  },
  {
   "id": "q-wa-tomoare-form-01",
@@ -647,7 +657,8 @@
   "sourcePage": "別冊 p.36",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Gác mọi chuyện sang bên, may là bình an."
  },
  {
   "id": "q-beku-shite-form-01",
@@ -706,7 +717,8 @@
   "sourcePage": "別冊 p.37",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vụ tai nạn ấy là chuyện tất phải xảy ra."
  },
  {
   "id": "q-ni-wa-ataranai-form-01",
@@ -766,7 +778,8 @@
   "sourcePage": "別冊 p.37",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Việc anh ấy đoạt giải không có gì đáng ngạc nhiên."
  },
  {
   "id": "q-iza-to-naru-to-form-01",
@@ -825,6 +838,7 @@
   "sourcePage": "別冊 p.38",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Lúc tập thì bình thường, vậy mà đến lúc diễn thật thì chân run."
  }
 ]

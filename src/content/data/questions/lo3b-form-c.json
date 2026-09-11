@@ -57,7 +57,8 @@
   "sourcePage": "別冊 p.29",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chẳng lẽ lại thất bại — không thể nào."
  },
  {
   "id": "q-tewa-tewa-form-01",
@@ -117,7 +118,8 @@
   "sourcePage": "別冊 p.30",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Viết rồi xoá, viết rồi xoá, cuối cùng cũng xong lá thư."
  },
  {
   "id": "q-gotoki-ni-form-01",
@@ -177,7 +179,8 @@
   "sourcePage": "別冊 p.33",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đời nào ta lại thua cái loại như hắn."
  },
  {
   "id": "q-yoku-mono-da-form-01",
@@ -237,7 +240,8 @@
   "sourcePage": "別冊 p.33",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Sao mà nói được những lời thất lễ đến thế nhỉ."
  },
  {
   "id": "q-awaya-form-01",
@@ -296,7 +300,8 @@
   "sourcePage": "別冊 p.34",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Suýt nữa thì đâm nhau, may phanh gấp kịp."
  },
  {
   "id": "q-mo-sureba-form-01",
@@ -355,7 +360,8 @@
   "sourcePage": "別冊 p.34",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Chừng ba ngày là chỗ sưng sẽ xẹp thôi."
  },
  {
   "id": "q-mottomo-da-form-01",
@@ -414,7 +420,8 @@
   "sourcePage": "別冊 p.35",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Bị bắt chờ lâu thế thì giận cũng là đương nhiên."
  },
  {
   "id": "q-nanra-nai-form-01",
@@ -473,7 +480,8 @@
   "sourcePage": "別冊 p.35",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Vụ này với anh ta chẳng có liên quan gì cả."
  },
  {
   "id": "q-you-kanou-form-01",
@@ -532,7 +540,8 @@
   "sourcePage": "別冊 p.35",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Kết quả này có lẽ có thể gọi là thành công."
  },
  {
   "id": "q-doushite-you-ka-form-01",
@@ -591,7 +600,8 @@
   "sourcePage": "別冊 p.36",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Hiện thực này làm sao mà quên được."
  },
  {
   "id": "q-ikani-form-01",
@@ -650,7 +660,8 @@
   "sourcePage": "別冊 p.36",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Dù nỗ lực đến đâu, có khi kết quả vẫn không tới."
  },
  {
   "id": "q-ka-to-iu-to-form-01",
@@ -709,7 +720,8 @@
   "sourcePage": "別冊 p.37",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Có phải cứ đắt là ngon không, thì cũng không hẳn."
  },
  {
   "id": "q-kaimoku-nai-form-01",
@@ -768,7 +780,8 @@
   "sourcePage": "別冊 p.37",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nguyên nhân thì hoàn toàn chẳng đoán ra nổi."
  },
  {
   "id": "q-ni-shite-nenrei-form-01",
@@ -827,7 +840,8 @@
   "sourcePage": "別冊 p.37",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Anh ấy ra mắt chuyên nghiệp khi mới mười lăm tuổi."
  },
  {
   "id": "q-isso-form-01",
@@ -886,6 +900,7 @@
   "sourcePage": "別冊 p.38",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Sửa làm gì, chi bằng mua hẳn cái mới."
  }
 ]

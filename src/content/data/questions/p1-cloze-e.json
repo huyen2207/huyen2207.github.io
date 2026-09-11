@@ -73,7 +73,8 @@
    "trapExplanationVi": "Bẫy hay gặp nhất là 「する」→「せねば」.",
    "fastestPathVi": "Nhớ bỏ 「ない」trước khi ghép 「ねば」.",
    "strength": 3
-  }
+  },
+  "stemVi": "Chúng ta phải học từ bài học của quá khứ."
  },
  {
   "id": "q-ta-nari-cloze-01",
@@ -150,7 +151,8 @@
    "trapExplanationVi": "「なり」có ba cách dùng; thể đứng trước và số lần lặp quyết định.",
    "fastestPathVi": "Thể た → giữ nguyên; thể từ điển → tức thì; lặp hai lần → lựa chọn.",
    "strength": 3
-  }
+  },
+  "stemVi": "Anh ta cúi gằm mặt rồi cứ thế không nói một lời."
  },
  {
   "id": "q-garami-cloze-01",
@@ -226,7 +228,8 @@
    "trapExplanationVi": "Hai mẫu cùng ước lượng số nhưng khác vị trí trong câu.",
    "fastestPathVi": "Sau chỗ trống có danh từ không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Một người đàn ông trạc sáu mươi đã tới quầy."
  },
  {
   "id": "q-to-iu-cloze-01",
@@ -303,7 +306,8 @@
    "trapExplanationVi": "Dấu hiệu duy nhất là hai bên có CÙNG danh từ hay không.",
    "fastestPathVi": "So hai danh từ hai bên chỗ trống.",
    "strength": 3
-  }
+  },
+  "stemVi": "Sáng hôm sau bão, tất cả cửa sổ đều lấm lem bùn đất."
  },
  {
   "id": "q-to-itta-tokoro-da-cloze-01",
@@ -379,7 +383,8 @@
    "trapExplanationVi": "「せいぜい」「多くても」là dấu hiệu quen thuộc của mẫu này.",
    "fastestPathVi": "Câu có từ chỉ mức trần không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Thời gian chuẩn bị nhiều lắm cũng chỉ khoảng một tiếng."
  },
  {
   "id": "q-yomoya-cloze-01",
@@ -456,7 +461,8 @@
    "trapExplanationVi": "Các phó từ mở đầu よもや／どうして／よほど đòi ba loại đuôi khác nhau.",
    "fastestPathVi": "Nhìn đuôi câu để chọn phó từ.",
    "strength": 3
-  }
+  },
+  "stemVi": "Tôi không ngờ anh ấy lại rút lui."
  },
  {
   "id": "q-tewa-tewa-cloze-01",
@@ -533,7 +539,8 @@
    "trapExplanationVi": "Ba mẫu lặp đôi rất giống nhau về hình thức.",
    "fastestPathVi": "Hai động từ có trái nghĩa nhau không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Anh ta cứ đứng lên rồi ngồi xuống, đứng lên rồi ngồi xuống, chẳng yên."
  },
  {
   "id": "q-gotoki-ni-cloze-01",
@@ -610,7 +617,8 @@
    "trapExplanationVi": "「ごとき」và 「ごときに」chỉ khác một trợ từ mà sắc thái nặng hơn hẳn.",
    "fastestPathVi": "Sau chỗ trống là danh từ hay động từ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Cái hạng mới vào như thế thì làm sao kham nổi trọng trách này."
  },
  {
   "id": "q-yoku-mono-da-cloze-01",
@@ -687,7 +695,8 @@
    "trapExplanationVi": "Nhóm mẫu kết bằng 「ものだ」rất đông; đầu câu mới là dấu hiệu.",
    "fastestPathVi": "Đầu câu có 「よく」không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Với ngân sách này mà làm ra được chừng này thì thật đáng nể."
  },
  {
   "id": "q-awaya-cloze-01",
@@ -764,7 +773,8 @@
    "trapExplanationVi": "Bẫy nằm ở THÌ: việc đã suýt xảy ra rồi hay còn ở tương lai.",
    "fastestPathVi": "Việc đó đã suýt xảy ra hay chưa xảy ra?",
    "strength": 3
-  }
+  },
+  "stemVi": "Suýt nữa thì trật bánh, may đoàn tàu dừng kịp."
  },
  {
   "id": "q-mo-sureba-cloze-01",
@@ -840,7 +850,8 @@
    "trapExplanationVi": "Điều kiện là THỜI GIAN hay MỨC ĐỘ — đó là chỗ phân biệt.",
    "fastestPathVi": "Trước chỗ trống là thời gian hay mức độ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Chừng hai tháng là sẽ quen với môi trường mới thôi."
  },
  {
   "id": "q-mottomo-da-cloze-01",
@@ -917,7 +928,8 @@
    "trapExplanationVi": "Ba mẫu cùng kết bằng 「ものだ」／「もっともだ」.",
    "fastestPathVi": "Câu đang đồng cảm, kinh ngạc, hay chốt lẽ thường?",
    "strength": 3
-  }
+  },
+  "stemVi": "Huỷ mà không giải thích gì thì người tham gia giận cũng là đương nhiên."
  },
  {
   "id": "q-nanra-nai-cloze-01",
@@ -993,7 +1005,8 @@
    "trapExplanationVi": "Đáp án sai không sai ngữ pháp mà sai văn phong.",
    "fastestPathVi": "Đây là hội thoại hay văn thông cáo?",
    "strength": 3
-  }
+  },
+  "stemVi": "Về việc này, công ty chúng tôi không chịu bất kỳ trách nhiệm nào."
  },
  {
   "id": "q-you-kanou-cloze-01",
@@ -1069,7 +1082,8 @@
    "trapExplanationVi": "Cùng đuôi 「よう」cho hai nghĩa ngược nhau, khác nhau ở 「どうして」.",
    "fastestPathVi": "Đầu câu có 「どうして」không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Điều này có lẽ có thể xem là kim chỉ nam cho sau này."
  },
  {
   "id": "q-doushite-you-ka-cloze-01",
@@ -1145,7 +1159,8 @@
    "trapExplanationVi": "Đây là câu hỏi tu từ — hình thức hỏi, nghĩa phủ định tuyệt đối.",
    "fastestPathVi": "Đuôi câu có 「ようか」không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Đến nước này rồi thì làm sao mà quay đầu lại được."
  },
  {
   "id": "q-ikani-cloze-01",
@@ -1221,7 +1236,8 @@
    "trapExplanationVi": "「いかに」và 「いかにも」chỉ khác chữ 「も」nhưng đòi hai loại đuôi khác nhau.",
    "fastestPathVi": "Sau chỗ trống là 「〜ても」hay 「〜そうだ」?",
    "strength": 3
-  }
+  },
+  "stemVi": "Giải thích cặn kẽ đến đâu cũng không gỡ được hiểu lầm."
  },
  {
   "id": "q-ka-to-iu-to-cloze-01",
@@ -1297,6 +1313,7 @@
    "trapExplanationVi": "Dấu hiệu chắc chắn nhất là vế sau phủ định chính suy đoán vừa nêu.",
    "fastestPathVi": "Vế sau có bác lại vế trước không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Có phải cứ nỗ lực là được đền đáp không, thì cũng chưa chắc."
  }
 ]

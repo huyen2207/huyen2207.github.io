@@ -74,7 +74,8 @@
    "trapExplanationVi": "「おかない」và 「すまない」chỉ khác vài chữ nhưng hướng tác động ngược nhau.",
    "fastestPathVi": "Ai chịu tác động — người khác hay chính mình?",
    "strength": 3
-  }
+  },
+  "stemVi": "Bản tin này nhất định sẽ làm lay động dư luận."
  },
  {
   "id": "q-nai-dewa-sumanai-cloze-01",
@@ -151,7 +152,8 @@
    "trapExplanationVi": "Đề hay đảo chéo 「おかない」／「すまない」với hai loại chủ thể.",
    "fastestPathVi": "Có 「〜以上」「〜のだから」không? Nếu có thì là すまない.",
    "strength": 3
-  }
+  },
+  "stemVi": "Đã gây phiền đến mức này thì không thể không xin lỗi."
  },
  {
   "id": "q-no-itari-cloze-01",
@@ -227,7 +229,8 @@
    "trapExplanationVi": "「〜の至り」chỉ đi với vài danh từ cố định.",
    "fastestPathVi": "Nhận ra cụm cố định 「若気の至り」.",
    "strength": 3
-  }
+  },
+  "stemVi": "Do bồng bột tuổi trẻ, tôi đã lao vào một kế hoạch liều lĩnh."
  },
  {
   "id": "q-to-ittara-nai-cloze-01",
@@ -304,7 +307,8 @@
    "trapExplanationVi": "「かぎりだ」nghe rất giống về nghĩa nhưng không nối được danh từ.",
    "fastestPathVi": "Trước mẫu là danh từ hay tính từ đuôi い?",
    "strength": 3
-  }
+  },
+  "stemVi": "Nỗi kinh ngạc lúc nghe tin ấy thì không sao tả xiết."
  },
  {
   "id": "q-nari-cloze-01",
@@ -381,7 +385,8 @@
    "trapExplanationVi": "「なり」có ba cách dùng khác nhau tuỳ thể đứng trước và số lần lặp.",
    "fastestPathVi": "Thể từ điển → tức thì; thể た → giữ nguyên; lặp hai lần → lựa chọn.",
    "strength": 3
-  }
+  },
+  "stemVi": "Anh ta vừa ngồi xuống ghế là nói luôn một mạch như vỡ đê."
  },
  {
   "id": "q-soba-kara-cloze-01",
@@ -458,7 +463,8 @@
    "trapExplanationVi": "「なり」cũng nói việc tức thì nhưng không có ý lặp lại.",
    "fastestPathVi": "Việc này xảy ra một lần hay lặp mãi?",
    "strength": 3
-  }
+  },
+  "stemVi": "Cứ dọn xong là bọn trẻ lại bày bừa ra."
  },
  {
   "id": "q-gatera-cloze-01",
@@ -535,7 +541,8 @@
    "trapExplanationVi": "「がてら」thân mật, 「かたがた」trang trọng — cùng nghĩa nhưng khác văn phong.",
    "fastestPathVi": "Câu này là chuyện thường ngày hay việc xã giao?",
    "strength": 3
-  }
+  },
+  "stemVi": "Tiện đi dạo, tôi ghé qua bưu điện."
  },
  {
   "id": "q-katagata-cloze-01",
@@ -612,7 +619,8 @@
    "trapExplanationVi": "Đáp án sai không sai ngữ pháp mà sai VĂN PHONG.",
    "fastestPathVi": "Nhìn độ trang trọng của đuôi câu.",
    "strength": 3
-  }
+  },
+  "stemVi": "Tôi đến vừa để cảm ơn vừa để chào hỏi."
  },
  {
   "id": "q-dani-cloze-01",
@@ -688,7 +696,8 @@
    "trapExplanationVi": "「だに」chỉ đi với vài động từ tri giác cố định.",
    "fastestPathVi": "Nhận ra cụm 「想像するだに」.",
    "strength": 3
-  }
+  },
+  "stemVi": "Chỉ nghĩ tới tình huống đó thôi đã thấy đáng sợ."
  },
  {
   "id": "q-ni-taeru-cloze-01",
@@ -765,7 +774,8 @@
    "trapExplanationVi": "「に堪える」và 「にたえない」khác nhau một chữ mà nghĩa ngược nhau.",
    "fastestPathVi": "Câu đang khen hay đang chê?",
    "strength": 3
-  }
+  },
+  "stemVi": "Tác phẩm này đủ sức để thưởng thức."
  },
  {
   "id": "q-ni-taru-cloze-01",
@@ -842,7 +852,8 @@
    "trapExplanationVi": "「に足る」và 「に堪える」đi với hai nhóm động từ khác nhau.",
    "fastestPathVi": "Động từ đứng trước thuộc nhóm nào?",
    "strength": 3
-  }
+  },
+  "stemVi": "Chính anh ấy mới là người xứng đáng để tin cậy."
  },
  {
   "id": "q-ni-taenai-cloze-01",
@@ -919,7 +930,8 @@
    "trapExplanationVi": "Ba mẫu 「に堪える／に足る／にたえない」cùng dạng, chỉ khác chiều khen chê.",
    "fastestPathVi": "Nội dung phía trước là tốt hay thảm?",
    "strength": 3
-  }
+  },
+  "stemVi": "Cảnh tượng thảm khốc ấy không nỡ nhìn."
  },
  {
   "id": "q-mono-wo-cloze-01",
@@ -995,7 +1007,8 @@
    "trapExplanationVi": "Các mẫu bắt đầu bằng 「もの」rất dễ lẫn: ものを／ものの／ものだから.",
    "fastestPathVi": "Câu có đang tiếc nuối trách móc không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Giá mà bàn với tôi một câu thì đã giúp được rồi, tiếc thật."
  },
  {
   "id": "q-ba-sore-made-da-cloze-01",
@@ -1072,7 +1085,8 @@
    "trapExplanationVi": "Ba mẫu đều bắt đầu bằng thể ば nên đề hay xếp chung.",
    "fastestPathVi": "Vế sau là 'thế là hết' hay là lý do?",
    "strength": 3
-  }
+  },
+  "stemVi": "Kế hoạch hay đến mấy, không thực hiện thì cũng coi như xong."
  },
  {
   "id": "q-ba-koso-cloze-01",
@@ -1148,7 +1162,8 @@
    "trapExplanationVi": "「ばこそ」nêu lý do TÍCH CỰC, khác hẳn 「ばかりに」tiêu cực.",
    "fastestPathVi": "Lý do này là tốt hay xấu?",
    "strength": 3
-  }
+  },
+  "stemVi": "Chính vì nghĩ cho cậu nên tôi mới nói nặng lời."
  },
  {
   "id": "q-to-atte-cloze-01",
@@ -1226,7 +1241,8 @@
    "trapExplanationVi": "Bốn mẫu 「とあって／とあっては／とあれば／にあって」gần như luôn ra chung.",
    "fastestPathVi": "Vế sau là kết quả đương nhiên, tình thế ép, hay sự sẵn lòng?",
    "strength": 3
-  }
+  },
+  "stemVi": "Vì là ngày cuối kỳ nghỉ dài nên đường cao tốc tắc nghẽn."
  },
  {
   "id": "q-mamire-cloze-01",
@@ -1302,6 +1318,7 @@
    "trapExplanationVi": "「まみれ」chỉ dùng cho chất bẩn; 「ずくめ」dùng cho việc tốt và màu sắc.",
    "fastestPathVi": "Danh từ trước mẫu là chất bẩn hay chuyện tốt?",
    "strength": 3
-  }
+  },
+  "stemVi": "Làm xong việc, người anh ấy bê bết mồ hôi và bùn đất."
  }
 ]

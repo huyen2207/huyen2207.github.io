@@ -54,7 +54,8 @@
   "sourcePage": "別冊 p.33",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Hoàn cảnh thế nào đi nữa thì cũng phải giữ đúng hạn."
  },
  {
   "id": "q-wo-kawakiri-ni-form-01",
@@ -111,7 +112,8 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Mở màn bằng buổi diễn ở Osaka, chuyến lưu diễn toàn quốc đã bắt đầu."
  },
  {
   "id": "q-wo-kagiri-ni-form-01",
@@ -168,7 +170,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Kể từ hôm nay, cửa hàng này đóng cửa."
  },
  {
   "id": "q-ga-saigo-form-01",
@@ -223,7 +226,8 @@
   "sourcePage": "別冊 p.28",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Thuốc này mà đã uống một lần là không bỏ được."
  },
  {
   "id": "q-mo-okamai-nashi-ni-form-01",
@@ -280,7 +284,8 @@
   "sourcePage": "別冊 p.38",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ta chẳng thèm để ý phiền hà cho người khác, cứ nói oang oang."
  },
  {
   "id": "q-sotchinoke-form-01",
@@ -337,7 +342,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cậu ấy bỏ bê bài tập về nhà mà đi chơi."
  },
  {
   "id": "q-kagiri-da-form-01",

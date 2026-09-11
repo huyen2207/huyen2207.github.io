@@ -74,7 +74,8 @@
    "trapExplanationVi": "「たる」và 「ごとき」cùng bổ nghĩa danh từ nhưng một bên đề cao, một bên hạ thấp.",
    "fastestPathVi": "Câu đang đề cao hay tự hạ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Đây không phải chuyện mà kẻ như tôi được xen vào."
  },
  {
   "id": "q-n-ga-tame-ni-cloze-01",
@@ -150,7 +151,8 @@
    "trapExplanationVi": "「〜んがため」và 「〜ずじまい」cùng lấy thể ない bỏ ない nên rất dễ lẫn.",
    "fastestPathVi": "Nghĩa là mục đích hay tiếc nuối?",
    "strength": 3
-  }
+  },
+  "stemVi": "Để giữ trọn niềm tin của mình, anh ấy đã vứt bỏ tất cả."
  },
  {
   "id": "q-nari-nari-cloze-01",
@@ -227,7 +229,8 @@
    "trapExplanationVi": "「煮るなり焼くなり」là cụm cố định hay ra trong đề.",
    "fastestPathVi": "Vế sau có phải lời khuyên, đề nghị không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Luộc hay nướng gì cũng được, tuỳ anh."
  },
  {
   "id": "q-zujimai-cloze-01",
@@ -303,7 +306,8 @@
    "trapExplanationVi": "Đề đặt 「せず」cạnh 「せん」để bẫy phần chia bất quy tắc của 「する」.",
    "fastestPathVi": "Tìm 「結局」— dấu hiệu của tiếc nuối.",
    "strength": 3
-  }
+  },
+  "stemVi": "Cuốn sách mượn rốt cuộc tôi đã không trả lại được."
  },
  {
   "id": "q-ni-shite-cloze-01",
@@ -379,7 +383,8 @@
    "trapExplanationVi": "Cùng chữ 「にして」, chỉ vế sau mới quyết được nghĩa.",
    "fastestPathVi": "Vế sau khẳng định hay phủ định?",
    "strength": 3
-  }
+  },
+  "stemVi": "Ngay cả bậc đại sư ấy cũng không đạt tới cảnh giới này."
  },
  {
   "id": "q-te-kara-to-iu-mono-cloze-01",
@@ -456,7 +461,8 @@
    "trapExplanationVi": "Ba mẫu cùng gắn với một mốc thời gian nhưng nối ba thể khác nhau.",
    "fastestPathVi": "Trước chỗ trống là thể て hay danh từ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Kể từ khi sống một mình, tôi mới thấm thía nỗi vất vả của việc nhà."
  },
  {
   "id": "q-to-ii-to-ii-cloze-01",
@@ -533,7 +539,8 @@
    "trapExplanationVi": "「なり」và 「といい」đều lặp đôi nên đề hay xếp chung.",
    "fastestPathVi": "Câu đang gợi ý lựa chọn hay đang đánh giá?",
    "strength": 3
-  }
+  },
+  "stemVi": "Xét phối màu cũng vậy, bố cục cũng vậy, bức này vượt trội hẳn."
  },
  {
   "id": "q-shimatsu-da-cloze-01",
@@ -610,7 +617,8 @@
    "trapExplanationVi": "「に至る」nối được y hệt nhưng trung tính — bẫy nằm ở sắc thái.",
    "fastestPathVi": "Câu có đang chê không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Nhắc mà không nghe, rốt cuộc đến mức làm hỏng cả dụng cụ."
  },
  {
   "id": "q-taru-cloze-01",
@@ -687,7 +695,8 @@
    "trapExplanationVi": "「たる者」là cụm cố định; nhìn chữ 「者」là ra ngay.",
    "fastestPathVi": "Sau chỗ trống có phải 「者」không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Đã là nhà giáo thì phải hiểu sức nặng của lời nói."
  },
  {
   "id": "q-you-ni-mo-nai-cloze-01",
@@ -763,7 +772,8 @@
    "trapExplanationVi": "Đề đổi thể ở vế trước để bẫy phần 意向形.",
    "fastestPathVi": "Hai vế có cùng động từ không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Không có tài liệu trong tay, muốn kiểm chứng cũng chẳng kiểm được."
  },
  {
   "id": "q-dewa-arumai-shi-cloze-01",
@@ -840,7 +850,8 @@
    "trapExplanationVi": "Nhiều mẫu nhượng bộ nối được vào đây, chỉ giọng trách mới quyết.",
    "fastestPathVi": "Vế sau có phải mệnh lệnh hoặc lời trách không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Đâu còn là lính mới, chuyện cỡ đó thì kiểm tra rồi hãy nộp."
  },
  {
   "id": "q-dewa-sumasarenai-cloze-01",
@@ -916,7 +927,8 @@
    "trapExplanationVi": "「すまない」và 「すまされない」chỉ khác vài chữ nhưng chủ thể khác hẳn.",
    "fastestPathVi": "Ai là người phải chịu — mình hay xã hội?",
    "strength": 3
-  }
+  },
+  "stemVi": "Sự việc đã đến mức không thể nói 'tôi không biết quy định' là xong."
  },
  {
   "id": "q-made-no-koto-da-cloze-01",
@@ -993,7 +1005,8 @@
    "trapExplanationVi": "Ba mẫu cùng chứa 「まで」; thể của động từ là chỗ quyết định.",
    "fastestPathVi": "Trước chỗ trống là thể た hay thể ない?",
    "strength": 3
-  }
+  },
+  "stemVi": "Không cần cảm ơn đâu. Tôi chỉ làm điều đương nhiên thôi."
  },
  {
   "id": "q-temae-cloze-01",
@@ -1069,7 +1082,8 @@
    "trapExplanationVi": "Bẫy nằm ở chỗ phải nhận ra yếu tố 'người khác nhìn vào'.",
    "fastestPathVi": "Lý do có dính tới thể diện trước ai đó không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Đã trót lên giọng với đàn em nên giờ không thể kêu ca được."
  },
  {
   "id": "q-wo-mono-tomo-sezu-ni-cloze-01",
@@ -1146,7 +1160,8 @@
    "trapExplanationVi": "Ba mẫu cùng dịch là 'bất chấp', chỉ sắc thái khen hay chê mới phân biệt được.",
    "fastestPathVi": "Câu đang khen hay đang chê?",
    "strength": 3
-  }
+  },
+  "stemVi": "Bất chấp sự phản đối của mọi người, cô ấy một mình sang tận nơi."
  },
  {
   "id": "q-yochi-ga-aru-cloze-01",
@@ -1222,6 +1237,7 @@
    "trapExplanationVi": "「議論の余地」「検討の余地」là cụm cố định hay ra trong đề.",
    "fastestPathVi": "Trước mẫu là danh từ hay động từ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Kết luận này vẫn còn chỗ để tranh luận."
  }
 ]

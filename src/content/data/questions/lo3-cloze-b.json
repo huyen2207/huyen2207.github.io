@@ -74,7 +74,8 @@
    "trapExplanationVi": "「にかたくない」có 「ない」nhưng nghĩa KHẲNG ĐỊNH — đây chính là bẫy.",
    "fastestPathVi": "Nhớ: にかたくない = DỄ, không phải khó.",
    "strength": 3
-  }
+  },
+  "stemVi": "Không khó để hình dung nỗi vất vả của người mẹ nuôi con một mình."
  },
  {
   "id": "q-ni-shite-hajimete-cloze-01",
@@ -150,7 +151,8 @@
    "trapExplanationVi": "Cùng gốc 「にして」, chỉ đuôi câu mới quyết được.",
    "fastestPathVi": "Đọc đuôi câu: khẳng định hay phủ định?",
    "strength": 3
-  }
+  },
+  "stemVi": "Phải là người đã khổ luyện nghiêm ngặt mới cho ra được hương vị này."
  },
  {
   "id": "q-to-aimatte-cloze-01",
@@ -227,7 +229,8 @@
    "trapExplanationVi": "Cả ba mẫu đều nối hai yếu tố nên đề hay xếp chung.",
    "fastestPathVi": "Vế sau có phải KẾT QUẢ do hai yếu tố tạo ra không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Hương thơm riêng biệt cộng hưởng với vị ngọt thanh, tạo nên hương vị khó quên."
  },
  {
   "id": "q-to-kitara-cloze-01",
@@ -304,7 +307,8 @@
    "trapExplanationVi": "「ともなると」nối danh từ y hệt nhưng không hề mang giọng chê.",
    "fastestPathVi": "Câu đang than phiền hay đang nhận xét về mức độ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Nói tới sếp tôi thì chẳng bao giờ nghe cấp dưới nói hết câu."
  },
  {
   "id": "q-made-mo-nai-cloze-01",
@@ -381,7 +385,8 @@
    "trapExplanationVi": "「までもなく」và 「ないまでも」chỉ khác chỗ đặt 「ない」.",
    "fastestPathVi": "Chữ 「ない」nằm trước hay sau mẫu?",
    "strength": 3
-  }
+  },
+  "stemVi": "Khỏi cần nhìn kết quả, chỉ qua nét mặt là biết ngay."
  },
  {
   "id": "q-nara-dewa-cloze-01",
@@ -457,7 +462,8 @@
    "trapExplanationVi": "「ならでは」khen người khác, 「なりの」hạ mình — chỉ khác một chữ.",
    "fastestPathVi": "Câu đang khen hay đang khiêm tốn?",
    "strength": 3
-  }
+  },
+  "stemVi": "Đây đúng là độ tinh xảo chỉ người thợ lành nghề mới làm được."
  },
  {
   "id": "q-nari-no-cloze-01",
@@ -533,7 +539,8 @@
    "trapExplanationVi": "Đề dựng câu khen và câu khiêm tốn giống hệt nhau về cấu trúc.",
    "fastestPathVi": "Người nói đang khen ai — người khác hay chính mình?",
    "strength": 3
-  }
+  },
+  "stemVi": "Tuy làm còn vụng nhưng tôi đã cố hết sức trong khả năng của mình."
  },
  {
   "id": "q-tsu-tsu-cloze-01",
@@ -610,7 +617,8 @@
    "trapExplanationVi": "Chỉ vài cụm cố định: 持ちつ持たれつ・追いつ追われつ・行きつ戻りつ.",
    "fastestPathVi": "Có phải cặp chủ động và bị động không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Hai công ty trong ngành nhiều năm nay ở thế kẻ trước người sau đuổi nhau."
  },
  {
   "id": "q-de-nakute-nan-darou-cloze-01",
@@ -686,7 +694,8 @@
    "trapExplanationVi": "Hình thức là câu hỏi nhưng nghĩa là khẳng định mạnh nhất.",
    "fastestPathVi": "Đây là hỏi thật hay hỏi để khẳng định?",
    "strength": 3
-  }
+  },
+  "stemVi": "Lao xuống sông cứu một đứa trẻ xa lạ, nếu đó không phải dũng khí thì là gì?"
  },
  {
   "id": "q-ni-itaru-cloze-01",
@@ -763,7 +772,8 @@
    "trapExplanationVi": "「しまつだ」cũng kết một quá trình nhưng luôn kèm chê.",
    "fastestPathVi": "Kết cục này tốt hay xấu?",
    "strength": 3
-  }
+  },
+  "stemVi": "Sau nhiều lần hội đàm, cuối cùng cũng đi đến thoả thuận."
  },
  {
   "id": "q-tomo-naku-cloze-01",
@@ -839,7 +849,8 @@
    "trapExplanationVi": "「ともなく」và 「ともなると」chỉ khác hai chữ cuối.",
    "fastestPathVi": "Trước mẫu là động từ tri giác hay danh từ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Điều đang nghĩ mà chẳng chủ ý nghĩ lại buột ra khỏi miệng."
  },
  {
   "id": "q-mo-saru-koto-nagara-cloze-01",
@@ -916,7 +927,8 @@
    "trapExplanationVi": "Cả ba đều dịch là 'không chỉ', chỉ khác chỗ đặt trọng tâm.",
    "fastestPathVi": "Vế nào mới là điều người nói muốn nhấn?",
    "strength": 3
-  }
+  },
+  "stemVi": "Thiết kế đã đành, chiếc xe này được chọn nhờ mức tiêu thụ nhiên liệu tốt."
  },
  {
   "id": "q-to-shita-tokoro-de-cloze-01",
@@ -993,7 +1005,8 @@
    "trapExplanationVi": "「まい」là phủ định ẩn, rất dễ đọc sót.",
    "fastestPathVi": "Tìm dấu phủ định ở cuối câu, kể cả 「まい」.",
    "strength": 3
-  }
+  },
+  "stemVi": "Bây giờ có ra tay thì cũng khó tránh được thiệt hại."
  },
  {
   "id": "q-nai-mono-demo-nai-cloze-01",
@@ -1069,7 +1082,8 @@
    "trapExplanationVi": "Hai mẫu đều hai lần phủ định; khác nhau ở nội dung tốt hay xấu.",
    "fastestPathVi": "Nội dung phía trước là điều tốt hay điều xấu?",
    "strength": 3
-  }
+  },
+  "stemVi": "Chỉ cần thu xếp được lịch thì cũng không hẳn là tôi không tham gia."
  },
  {
   "id": "q-ni-wa-oyobanai-cloze-01",
@@ -1146,6 +1160,7 @@
    "trapExplanationVi": "「にはおよばない」và 「にはあたらない」gần như trùng chữ.",
    "fastestPathVi": "Đang ngăn một HÀNH ĐỘNG hay hạ nhiệt một CẢM XÚC?",
    "strength": 3
-  }
+  },
+  "stemVi": "Ngay gần đây thôi nên không cần ra đón đâu ạ."
  }
 ]

@@ -55,7 +55,8 @@
   "sourcePage": "別冊 p.13",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Không khó để hình dung nỗi đau của gia quyến."
  },
  {
   "id": "q-ni-shite-hajimete-form-01",
@@ -115,7 +116,8 @@
   "sourcePage": "別冊 p.13",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đây là kỹ thuật chỉ người thợ lành nghề mới làm được."
  },
  {
   "id": "q-to-aimatte-form-01",
@@ -174,7 +176,8 @@
   "sourcePage": "別冊 p.13",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nỗ lực của anh cộng hưởng với tài năng bẩm sinh, tạo nên thành quả rực rỡ."
  },
  {
   "id": "q-to-kitara-form-01",
@@ -233,7 +236,8 @@
   "sourcePage": "別冊 p.14",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Nói tới thằng con nhà tôi thì ngày nghỉ chỉ có ngủ."
  },
  {
   "id": "q-made-mo-nai-form-01",
@@ -292,7 +296,8 @@
   "sourcePage": "別冊 p.17",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Khỏi cần nói cũng biết, sức khoẻ là trên hết."
  },
  {
   "id": "q-nara-dewa-form-01",
@@ -351,7 +356,8 @@
   "sourcePage": "別冊 p.18",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Đây là hương vị chỉ tiệm lâu đời mới có."
  },
  {
   "id": "q-nari-no-form-01",
@@ -410,7 +416,8 @@
   "sourcePage": "別冊 p.18",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Trẻ con cũng suy nghĩ theo cách của trẻ con."
  },
  {
   "id": "q-tsu-tsu-form-01",
@@ -469,7 +476,8 @@
   "sourcePage": "別冊 p.18",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Hai người có quan hệ nương tựa lẫn nhau."
  },
  {
   "id": "q-de-nakute-nan-darou-form-01",
@@ -528,7 +536,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Liều mạng bảo vệ con — đây không phải tình yêu thì là gì?"
  },
  {
   "id": "q-ni-itaru-form-01",
@@ -587,7 +596,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Sau cuộc thương lượng dài, hai công ty đã đi đến thoả thuận."
  },
  {
   "id": "q-tomo-naku-form-01",
@@ -646,7 +656,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đang nhìn ra ngoài cửa sổ chẳng chủ ý gì thì anh ấy đi qua."
  },
  {
   "id": "q-mo-saru-koto-nagara-form-01",
@@ -705,7 +716,8 @@
   "sourcePage": "別冊 p.20",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Hương vị đã đành, nhưng quán này không khí mới tuyệt."
  },
  {
   "id": "q-to-shita-tokoro-de-form-01",
@@ -765,7 +777,8 @@
   "sourcePage": "別冊 p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cho dù bây giờ có vội thì cũng không kịp giờ mở màn."
  },
  {
   "id": "q-nai-mono-demo-nai-form-01",
@@ -824,7 +837,8 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tuỳ điều kiện, cũng không hẳn là tôi không nhận."
  },
  {
   "id": "q-ni-wa-oyobanai-form-01",
@@ -883,6 +897,7 @@
   "sourcePage": "別冊 p.24",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chỉ là vết thương nhẹ nên xin đừng bận tâm."
  }
 ]

@@ -56,7 +56,8 @@
   "sourcePage": "別冊 p.20",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Sức hút của thành phố này, nói gì thì nói, vẫn là đồ ăn."
  },
  {
   "id": "q-nandemo-form-01",
@@ -116,7 +117,8 @@
   "sourcePage": "別冊 p.20",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Nghe nói tháng sau anh ấy chuyển việc."
  },
  {
   "id": "q-dochira-ni-shitemo-form-01",
@@ -175,7 +177,8 @@
   "sourcePage": "別冊 p.14",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Đi hay không đi, đằng nào cũng mong bạn báo một tiếng."
  },
  {
   "id": "q-kokoro-okinaku-form-01",
@@ -234,7 +237,8 @@
   "sourcePage": "別冊 p.14",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Xin quý vị cứ thoải mái, đừng ngại gì cả."
  },
  {
   "id": "q-shitte-ka-shirazu-ka-form-01",
@@ -293,7 +297,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không rõ có biết hay không, anh ta vẫn ngồi thản nhiên."
  },
  {
   "id": "q-iyaou-nashi-ni-form-01",
@@ -352,7 +357,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Sự đổi thay của thời đại cuốn chúng ta vào bất kể muốn hay không."
  },
  {
   "id": "q-ga-saiwai-shite-form-01",
@@ -411,7 +417,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "May nhờ ra khỏi nhà sớm mà tránh được tắc đường."
  },
  {
   "id": "q-you-to-iu-mono-da-form-01",
@@ -470,7 +477,8 @@
   "sourcePage": "別冊 p.4",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Lúc hoạn nạn mà giúp nhau thì mới gọi là bạn được chứ."
  },
  {
   "id": "q-to-iu-fuu-ni-form-01",
@@ -529,7 +537,8 @@
   "sourcePage": "別冊 p.25",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Tôi nghĩ theo kiểu thất bại cũng là một phần kinh nghiệm."
  },
  {
   "id": "q-yohodo-nai-to-form-01",
@@ -589,7 +598,8 @@
   "sourcePage": "別冊 p.33",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Trừ phi thật cẩn thận, không thì lại lặp lại đúng lỗi ấy đấy."
  },
  {
   "id": "q-ikanimo-form-01",
@@ -648,7 +658,8 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Bày ra toàn những chiếc bánh trông đúng là ngon."
  },
  {
   "id": "q-dou-ni-ka-shite-form-01",
@@ -708,7 +719,8 @@
   "sourcePage": "別冊 p.17",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Bằng mọi cách tôi muốn hoàn thành trước hạn."
  },
  {
   "id": "q-moto-moto-da-form-01",
@@ -767,6 +779,7 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Trượt thì cũng như cũ thôi, cứ thử nộp xem sao."
  }
 ]

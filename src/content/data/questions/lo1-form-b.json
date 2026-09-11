@@ -229,7 +229,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Tuy nhỏ nhưng …"
  },
  {
   "id": "q-ta-tokoro-de-form-01",
@@ -345,7 +346,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Hết là coi như xong."
  },
  {
   "id": "q-yue-form-01",
@@ -403,7 +405,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vì còn ít kinh nghiệm nên …"
  },
  {
   "id": "q-ba-koso-form-01",
@@ -461,7 +464,8 @@
   "sourcePage": "別冊 p.30",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chính vì nghĩ cho nên …"
  },
  {
   "id": "q-to-atte-form-01",
@@ -751,7 +755,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Luôn mong mỏi không thôi."
  },
  {
   "id": "q-wo-motte-form-01",
@@ -1041,7 +1046,8 @@
   "sourcePage": "別冊 p.24",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Để mà làm …"
  },
  {
   "id": "q-ni-hikikae-form-01",
@@ -1157,6 +1163,7 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Hơn hẳn trước đây."
  }
 ]

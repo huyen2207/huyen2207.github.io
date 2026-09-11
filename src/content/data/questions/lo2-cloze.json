@@ -74,7 +74,8 @@
    "trapExplanationVi": "Ba dạng 「べからず／べからざる／まじき」chỉ khác đuôi.",
    "fastestPathVi": "Nhìn ngay sau chỗ trống: có danh từ không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Trên biển ghi rõ: cấm giẫm lên bãi cỏ."
  },
  {
   "id": "q-majiki-cloze-01",
@@ -151,7 +152,8 @@
    "trapExplanationVi": "「べからざる」cũng nối được danh từ nên rất dễ chọn nhầm.",
    "fastestPathVi": "Có nêu tư cách 「N にある」không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Xem thường bệnh nhân là hành vi không xứng với một người thầy thuốc."
  },
  {
   "id": "q-wo-oite-cloze-01",
@@ -228,7 +230,8 @@
    "trapExplanationVi": "「いまい」là phủ định ẩn, dễ bị đọc sót.",
    "fastestPathVi": "Tìm dấu phủ định ở cuối câu, kể cả 「まい」.",
    "strength": 3
-  }
+  },
+  "stemVi": "Người có thể vượt qua tình thế khó này thì ngoài cô ấy ra chắc không còn ai."
  },
  {
   "id": "q-kara-aru-cloze-01",
@@ -305,7 +308,8 @@
    "trapExplanationVi": "「からある／からの／からする」khác nhau ở loại số lượng và vị trí.",
    "fastestPathVi": "Số lượng thuộc loại gì: khối lượng, giá tiền, hay số người?",
    "strength": 3
-  }
+  },
+  "stemVi": "Anh ấy nhấc bổng thanh tạ nặng tới một trăm ký một cách nhẹ nhàng."
  },
  {
   "id": "q-tari-tomo-cloze-01",
@@ -382,7 +386,8 @@
    "trapExplanationVi": "Đề đặt 「一日からある」cạnh để bẫy người chỉ nhìn con số.",
    "fastestPathVi": "Con số là 「一」và vế sau phủ định → たりとも.",
    "strength": 3
-  }
+  },
+  "stemVi": "Từ giờ tới hạn chót, dù chỉ một ngày cũng không được lơ là."
  },
  {
   "id": "q-to-mo-naru-to-cloze-01",
@@ -460,7 +465,8 @@
    "trapExplanationVi": "Bốn mẫu 「ともなると／とあれば／とあっては／にあって」hay ra chung một đề.",
    "fastestPathVi": "Danh từ trước mẫu là địa vị hay thời thế?",
    "strength": 3
-  }
+  },
+  "stemVi": "Đã lên tới chức quản lý thì phải gánh cả lỗi của cấp dưới."
  },
  {
   "id": "q-ni-atte-cloze-01",
@@ -538,7 +544,8 @@
    "trapExplanationVi": "「にあって」và 「ともなると」đều nối danh từ trần nên dễ nhầm.",
    "fastestPathVi": "Danh từ là thời thế → にあって.",
    "strength": 3
-  }
+  },
+  "stemVi": "Giữa thời đại thông tin tràn ngập, năng lực chọn lọc mới là thứ bị đem ra thử thách."
  },
  {
   "id": "q-ppanashi-cloze-01",
@@ -615,7 +622,8 @@
    "trapExplanationVi": "「っぱなし／てばかり／たばかり」nghe gần giống nhưng nối ba thể khác nhau.",
    "fastestPathVi": "Xác định thể của động từ đứng trước.",
    "strength": 3
-  }
+  },
+  "stemVi": "Tôi để nguyên điều hoà đang bật rồi đi mất."
  },
  {
   "id": "q-de-are-cloze-01",
@@ -692,7 +700,8 @@
    "trapExplanationVi": "「であれ」và 「であろうが」chỉ khác vài chữ.",
    "fastestPathVi": "Có từ để hỏi 誰・何・どこ không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Đối phương là ai đi nữa thì cũng không thể bẻ cong luật lệ."
  },
  {
   "id": "q-u-ga-mai-ga-cloze-01",
@@ -769,7 +778,8 @@
    "trapExplanationVi": "Đề đổi động từ ở vế sau để bẫy.",
    "fastestPathVi": "Kiểm tra hai vế có cùng động từ và cùng trợ từ không.",
    "strength": 3
-  }
+  },
+  "stemVi": "Dù có tham gia hay không thì chi phí vẫn do tất cả cùng chịu."
  },
  {
   "id": "q-wo-kawakiri-ni-cloze-01",
@@ -846,7 +856,8 @@
    "trapExplanationVi": "「を皮切りに」và 「を限りに」dùng cùng loại danh từ mốc, chỉ khác ở vế sau.",
    "fastestPathVi": "Đọc vế SAU: bắt đầu hay kết thúc?",
    "strength": 3
-  }
+  },
+  "stemVi": "Mở màn bằng buổi diễn ở Fukuoka, đoàn sẽ đi qua hai mươi nơi trên cả nước."
  },
  {
   "id": "q-wo-kagiri-ni-cloze-01",
@@ -923,7 +934,8 @@
    "trapExplanationVi": "Cặp 「を皮切りに／を限りに」luôn ra chung.",
    "fastestPathVi": "Đọc vế SAU: bắt đầu hay kết thúc?",
    "strength": 3
-  }
+  },
+  "stemVi": "Kể từ hôm nay, cửa hàng chúng tôi ngừng kinh doanh."
  },
  {
   "id": "q-ga-saigo-cloze-01",
@@ -1000,7 +1012,8 @@
    "trapExplanationVi": "Ba mẫu cùng nói về mốc thời gian nhưng nối ba thể khác nhau.",
    "fastestPathVi": "Thể た → が最後; danh từ → を限りに／を皮切りに.",
    "strength": 3
-  }
+  },
+  "stemVi": "Người đó mà đã bắt đầu nói thì chẳng ai cản nổi."
  },
  {
   "id": "q-kagiri-da-cloze-01",
@@ -1076,7 +1089,8 @@
    "trapExplanationVi": "Bẫy nằm ở từ loại: 「かぎりだ」chỉ nhận tính từ đuôi い.",
    "fastestPathVi": "Xem từ trước chỗ trống là tính từ hay danh từ.",
    "strength": 3
-  }
+  },
+  "stemVi": "Không có lấy một người để nương tựa, thật là cô đơn hết sức."
  },
  {
   "id": "q-ni-kakawaru-cloze-01",
@@ -1153,7 +1167,8 @@
    "trapExplanationVi": "「にかかわる／にかかっている／にかかわらず」rất giống nhau về mặt chữ.",
    "fastestPathVi": "Sau chỗ trống có danh từ không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Rò rỉ thông tin cá nhân là vấn đề động tới sự tồn vong của doanh nghiệp."
  },
  {
   "id": "q-ikan-da-cloze-01",
@@ -1230,7 +1245,8 @@
    "trapExplanationVi": "Bốn dạng của 「いかん」khác nhau ở chỗ kết câu hay nối tiếp.",
    "fastestPathVi": "Chỗ trống ở cuối câu hay giữa câu?",
    "strength": 3
-  }
+  },
+  "stemVi": "Có tiến hành kế hoạch hay không là tuỳ vào phản ứng của cư dân."
  },
  {
   "id": "q-naku-shite-cloze-01",
@@ -1307,7 +1323,8 @@
    "trapExplanationVi": "「なくして」và 「なしに」chỉ khác một chữ nhưng khác hẳn ràng buộc vế sau.",
    "fastestPathVi": "Vế sau phủ định → なくして.",
    "strength": 3
-  }
+  },
+  "stemVi": "Không có nỗ lực bền bỉ của những người liên quan thì đã không có thành công hôm nay."
  },
  {
   "id": "q-nashi-ni-cloze-01",
@@ -1384,7 +1401,8 @@
    "trapExplanationVi": "Cặp 「なくして／なしに」phân biệt bằng vế sau chứ không bằng nghĩa.",
    "fastestPathVi": "Vế sau khẳng định → なしに.",
    "strength": 3
-  }
+  },
+  "stemVi": "Anh ta nghỉ việc đột ngột mà chẳng báo một tiếng."
  },
  {
   "id": "q-koto-nashi-ni-cloze-01",
@@ -1461,7 +1479,8 @@
    "trapExplanationVi": "Ba mẫu cùng nghĩa 'không có/không làm' nhưng nối danh từ hay động từ khác nhau.",
    "fastestPathVi": "Trước chỗ trống là danh từ hay động từ?",
    "strength": 3
-  }
+  },
+  "stemVi": "Không mạnh tay cải tổ dù có đau đớn thì tổ chức này sẽ không thay đổi."
  },
  {
   "id": "q-nara-madashimo-cloze-01",
@@ -1538,7 +1557,8 @@
    "trapExplanationVi": "「ならまだしも」và 「ならいざ知らず」đều nối giống nhau, chỉ khác sắc thái.",
    "fastestPathVi": "Vế sau là chê trách hay chỉ là đối lập?",
    "strength": 3
-  }
+  },
+  "stemVi": "Người mới thì còn được, đằng này nhân viên mười năm mà mắc lỗi này thì thật đáng trách."
  },
  {
   "id": "q-to-omoi-kiya-cloze-01",
@@ -1615,7 +1635,8 @@
    "trapExplanationVi": "Đề dựng hai vế đối lập rồi cho cả nhóm mẫu nhượng bộ làm đáp án.",
    "fastestPathVi": "Vế sau chỉ trái dự đoán, hay còn kèm chê trách?",
    "strength": 3
-  }
+  },
+  "stemVi": "Tưởng năm nay là mùa đông ấm, hoá ra lại có tuyết lớn kỷ lục."
  },
  {
   "id": "q-n-bakari-cloze-01",
@@ -1691,6 +1712,7 @@
    "trapExplanationVi": "「割れんばかりの拍手」là cụm cố định hay ra trong đề.",
    "fastestPathVi": "Trước mẫu là động từ đơn hay cả một câu?",
    "strength": 3
-  }
+  },
+  "stemVi": "Khán giả đáp lại bằng tràng pháo tay như muốn vỡ tung cả khán phòng."
  }
 ]

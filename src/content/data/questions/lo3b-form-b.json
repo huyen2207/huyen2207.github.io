@@ -56,7 +56,8 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Từ khi đổi thuốc, triệu chứng đã đỡ hẳn thấy rõ."
  },
  {
   "id": "q-heta-wo-suru-to-form-01",
@@ -115,7 +116,8 @@
   "sourcePage": "別冊 p.16",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Không khéo thì có khi lỡ chuyến tàu cuối."
  },
  {
   "id": "q-ikkou-ni-form-01",
@@ -174,7 +176,8 @@
   "sourcePage": "別冊 p.17",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Uống thuốc rồi mà sốt chẳng hề hạ chút nào."
  },
  {
   "id": "q-toutei-form-01",
@@ -234,7 +237,8 @@
   "sourcePage": "別冊 p.17",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Với ngân sách này thì dù thế nào cũng không thực hiện nổi."
  },
  {
   "id": "q-ni-mukete-form-01",
@@ -293,7 +297,8 @@
   "sourcePage": "別冊 p.18",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Hướng tới ngày tổ chức, công tác chuẩn bị đang vào giai đoạn cao điểm."
  },
  {
   "id": "q-wa-naosara-no-koto-form-01",
@@ -352,7 +357,8 @@
   "sourcePage": "別冊 p.18",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Người lớn còn thấy khó. Trẻ con thì lại càng vậy."
  },
  {
   "id": "q-ni-ni-te-form-01",
@@ -412,7 +418,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tin tức chờ mãi chờ mãi cuối cùng cũng tới."
  },
  {
   "id": "q-ni-hakusha-wo-kakeru-form-01",
@@ -471,7 +478,8 @@
   "sourcePage": "別冊 p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đồng yên yếu đang thúc đẩy giá cả tăng nhanh hơn."
  },
  {
   "id": "q-to-itta-form-01",
@@ -531,7 +539,8 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Số gia đình nuôi thú cưng như chó, mèo đã tăng lên."
  },
  {
   "id": "q-wa-betsu-ni-shite-form-01",
@@ -590,7 +599,8 @@
   "sourcePage": "別冊 p.25",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Gác chuyện có thực hiện được không sang bên, ý tưởng thì hay."
  },
  {
   "id": "q-neba-form-01",
@@ -648,7 +658,8 @@
   "sourcePage": "別冊 p.26",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vấn đề này phải được giải quyết cấp tốc."
  },
  {
   "id": "q-ta-nari-form-01",
@@ -708,7 +719,8 @@
   "sourcePage": "別冊 p.26",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ta quay mặt đi rồi cứ thế không nói câu nào."
  },
  {
   "id": "q-garami-form-01",
@@ -767,7 +779,8 @@
   "sourcePage": "別冊 p.28",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Một người đàn ông trạc bốn mươi đã tới thăm."
  },
  {
   "id": "q-to-iu-form-01",
@@ -826,7 +839,8 @@
   "sourcePage": "別冊 p.28",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Hôm ấy, tất cả các cửa hàng đều đóng cửa."
  },
  {
   "id": "q-to-itta-tokoro-da-form-01",
@@ -886,6 +900,7 @@
   "sourcePage": "別冊 p.29",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Người tham gia nhiều lắm cũng chỉ cỡ ba mươi."
  }
 ]

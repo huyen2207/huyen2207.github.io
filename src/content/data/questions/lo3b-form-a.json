@@ -56,7 +56,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vì còn chưa quen việc, mong quý vị lượng thứ cho sơ suất."
  },
  {
   "id": "q-ni-tsugu-form-01",
@@ -115,7 +116,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tai hoạ nối tiếp tai hoạ khiến ngôi làng kiệt quệ."
  },
  {
   "id": "q-ni-shite-mo-aru-form-01",
@@ -174,7 +176,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Ông ấy vừa là bác sĩ vừa là nhà văn."
  },
  {
   "id": "q-todomaru-tokoro-wo-shiranai-form-01",
@@ -233,7 +236,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Đà tăng giá cả không có dấu hiệu dừng lại."
  },
  {
   "id": "q-igai-no-nanimono-demo-nai-form-01",
@@ -292,7 +296,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Phát ngôn ấy chính là kỳ thị chứ không gì khác."
  },
  {
   "id": "q-de-sura-aru-form-01",
@@ -351,7 +356,8 @@
   "sourcePage": "別冊 p.9",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Quyết định ấy táo bạo, thậm chí có thể nói là liều lĩnh."
  },
  {
   "id": "q-nagara-no-form-01",
@@ -411,7 +417,8 @@
   "sourcePage": "別冊 p.9",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Thị trấn này vẫn còn dãy nhà y như thuở xưa."
  },
  {
   "id": "q-tari-shinai-form-01",
@@ -470,7 +477,8 @@
   "sourcePage": "別冊 p.9",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Anh tuyệt đối không nuốt lời đâu, cứ yên tâm."
  },
  {
   "id": "q-naritomo-form-01",
@@ -530,7 +538,8 @@
   "sourcePage": "別冊 p.10",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nếu giúp được dù chỉ chút ít thì thật may mắn."
  },
  {
   "id": "q-ni-tsuide-form-01",
@@ -589,7 +598,8 @@
   "sourcePage": "別冊 p.10",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Sau Trung Quốc, Ấn Độ là nước đông dân."
  },
  {
   "id": "q-sobireru-form-01",
@@ -648,7 +658,8 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Bận quá nên tôi lỡ mất bữa trưa."
  },
  {
   "id": "q-wo-kanete-form-01",
@@ -707,7 +718,8 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Tôi quyết định đi bộ ra ga, tiện thể tản bộ luôn."
  },
  {
   "id": "q-ni-kakotsukete-form-01",
@@ -766,7 +778,8 @@
   "sourcePage": "別冊 p.13",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ta mượn cớ công tác để đi chơi."
  },
  {
   "id": "q-to-suru-form-01",
@@ -825,7 +838,8 @@
   "sourcePage": "別冊 p.13",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Một đội do anh ấy làm đại diện đã được thành lập."
  },
  {
   "id": "q-kara-naru-form-01",
@@ -884,6 +898,7 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Uỷ ban này gồm mười chuyên gia."
  }
 ]

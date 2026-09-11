@@ -73,7 +73,8 @@
    "trapExplanationVi": "「ずくめ」cho chuyện tốt và màu sắc; 「まみれ」cho chất bẩn.",
    "fastestPathVi": "Danh từ trước mẫu là tốt hay bẩn?",
    "strength": 3
-  }
+  },
+  "stemVi": "Năm nay cưới xin rồi thăng chức, toàn chuyện vui."
  },
  {
   "id": "q-wo-kinji-enai-cloze-01",
@@ -150,7 +151,8 @@
    "trapExplanationVi": "Chỉ vài danh từ cảm xúc ghép được với mẫu này.",
    "fastestPathVi": "Trước mẫu có phải danh từ chỉ cảm xúc không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Trước cảnh tượng ấy, tôi không kìm được nước mắt."
  },
  {
   "id": "q-te-yamanai-cloze-01",
@@ -226,7 +228,8 @@
    "trapExplanationVi": "Đây là câu thư tín; đáp án sai phá vỡ văn phong.",
    "fastestPathVi": "Nhìn độ trang trọng của câu.",
    "strength": 3
-  }
+  },
+  "stemVi": "Tôi luôn cầu chúc quý vị dồi dào sức khoẻ."
  },
  {
   "id": "q-wo-motte-cloze-01",
@@ -303,7 +306,8 @@
    "trapExplanationVi": "「をもって」và 「を限りに」cùng nêu mốc kết thúc, khác ở văn phong.",
    "fastestPathVi": "Đây là thông báo hành chính hay lời tuyên bố cá nhân?",
    "strength": 3
-  }
+  },
+  "stemVi": "Kể từ hôm nay, quầy chúng tôi ngừng tiếp nhận."
  },
  {
   "id": "q-ni-sokushita-cloze-01",
@@ -379,7 +383,8 @@
    "trapExplanationVi": "Bổ nghĩa danh từ thì dùng 「に即した」, nối vế thì 「に即して」.",
    "fastestPathVi": "Sau chỗ trống là danh từ hay cả một vế?",
    "strength": 3
-  }
+  },
+  "stemVi": "Cần có biện pháp bám sát thực trạng tại hiện trường."
  },
  {
   "id": "q-wo-fumaete-cloze-01",
@@ -456,7 +461,8 @@
    "trapExplanationVi": "「をふまえて」nối vế, 「をふまえた」bổ nghĩa danh từ.",
    "fastestPathVi": "Sau chỗ trống là danh từ hay cả một vế?",
    "strength": 3
-  }
+  },
+  "stemVi": "Dựa trên những gì rút ra lần trước, tôi đã soạn lại kế hoạch."
  },
  {
   "id": "q-ni-mo-mashite-cloze-01",
@@ -532,7 +538,8 @@
    "trapExplanationVi": "「例年にもまして」là cụm hay ra trong đề.",
    "fastestPathVi": "Trước mẫu có phải mốc so sánh về thời gian không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Năm nay cái nóng gay gắt hơn hẳn mọi năm."
  },
  {
   "id": "q-bekarazaru-cloze-01",
@@ -609,7 +616,8 @@
    "trapExplanationVi": "Ba dạng cổ べからず／べからざる／まじき chỉ khác đuôi.",
    "fastestPathVi": "Sau chỗ trống có danh từ không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Nước là thứ không thể thiếu trong đời sống."
  },
  {
   "id": "q-kitte-no-cloze-01",
@@ -686,7 +694,8 @@
    "trapExplanationVi": "「きっての」và 「をおいて」cùng nói 'nhất' nhưng khác ràng buộc vế sau.",
    "fastestPathVi": "Cuối câu có phủ định không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Anh ấy được xem là nam diễn viên số một đương thời."
  },
  {
   "id": "q-naishi-cloze-01",
@@ -763,7 +772,8 @@
    "trapExplanationVi": "「ないし」và 「もしくは」trùng nghĩa, chỉ khác ngữ cảnh dùng.",
    "fastestPathVi": "Đây là nêu khoảng hay chỉ dẫn thủ tục?",
    "strength": 3
-  }
+  },
+  "stemVi": "Thời gian nằm viện dự kiến khoảng một tuần đến mười ngày."
  },
  {
   "id": "q-moshiku-wa-cloze-01",
@@ -840,7 +850,8 @@
    "trapExplanationVi": "Hai mẫu trùng nghĩa; ngữ cảnh thủ tục mới là dấu hiệu.",
    "fastestPathVi": "Đây có phải văn hướng dẫn thủ tục không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Xin nộp đơn tại quầy hoặc gửi qua đường bưu điện."
  },
  {
   "id": "q-kara-no-cloze-01",
@@ -917,7 +928,8 @@
    "trapExplanationVi": "「からある」kết câu, 「からの」bổ nghĩa danh từ.",
    "fastestPathVi": "Sau chỗ trống có danh từ không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Tới năm nghìn khán giả đã đổ về hội trường."
  },
  {
   "id": "q-to-areba-cloze-01",
@@ -995,7 +1007,8 @@
    "trapExplanationVi": "Bốn mẫu 「とあれば／とあっては／とあって／にあって」luôn ra chung.",
    "fastestPathVi": "Vế sau là sẵn lòng hay bị ép?",
    "strength": 3
-  }
+  },
+  "stemVi": "Nếu là vì gia đình thì vất vả đến mấy tôi cũng không tiếc."
  },
  {
   "id": "q-to-atte-wa-cloze-01",
@@ -1073,7 +1086,8 @@
    "trapExplanationVi": "Phải đọc VẾ SAU mới phân biệt được nhóm 「とあ〜」.",
    "fastestPathVi": "Vế sau có 「わけにはいかない」không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Đã là lời nhờ của chính cậu thì tôi không thể từ chối được."
  },
  {
   "id": "q-tomo-suru-to-cloze-01",
@@ -1150,7 +1164,8 @@
    "trapExplanationVi": "「ともすると」đi thành cặp cố định với 「〜がちだ」「〜やすい」.",
    "fastestPathVi": "Cuối câu có 「がちだ」không?",
    "strength": 3
-  }
+  },
+  "stemVi": "Thiếu ngủ thì dễ sinh ra lơ đễnh, mất tập trung."
  },
  {
   "id": "q-te-bakari-iru-cloze-01",
@@ -1227,6 +1242,7 @@
    "trapExplanationVi": "「てばかり」／「っぱなし」／「たばかり」nghe gần giống nhưng nối ba thể khác nhau.",
    "fastestPathVi": "Xác định thể của động từ đứng trước.",
    "strength": 3
-  }
+  },
+  "stemVi": "Thằng em chỉ toàn càu nhàu mà chẳng chịu nhúc nhích."
  }
 ]

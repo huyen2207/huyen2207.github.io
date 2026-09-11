@@ -52,7 +52,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Cấm vứt rác ở đây."
  },
  {
   "id": "q-bekarazaru-form-01",
@@ -107,7 +108,8 @@
   "sourcePage": "別冊 p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nước là thứ không thể thiếu trong đời sống."
  },
  {
   "id": "q-majiki-form-01",
@@ -164,7 +166,8 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đó là hành vi không xứng với một người thầy."
  },
  {
   "id": "q-kitte-no-form-01",
@@ -221,7 +224,8 @@
   "sourcePage": "別冊 p.9",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Anh ấy là nam diễn viên số một đương thời."
  },
  {
   "id": "q-wo-oite-form-01",
@@ -278,7 +282,8 @@
   "sourcePage": "別冊 p.16",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Người làm được vai này thì ngoài anh ấy ra không còn ai."
  },
  {
   "id": "q-naishi-form-01",
@@ -335,7 +340,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Xin liên hệ qua điện thoại hoặc thư điện tử."
  },
  {
   "id": "q-moshiku-wa-form-01",
@@ -390,7 +396,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Xin xuất trình bằng lái hoặc thẻ bảo hiểm."
  },
  {
   "id": "q-kara-aru-form-01",
@@ -445,7 +452,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ấy vác kiện hàng nặng tới năm mươi ký."
  },
  {
   "id": "q-kara-no-form-01",
@@ -502,7 +510,8 @@
   "sourcePage": "別冊 p.10",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Mỗi ngày tới ba triệu người sử dụng nhà ga này."
  },
  {
   "id": "q-tari-tomo-form-01",
@@ -559,7 +568,8 @@
   "sourcePage": "別冊 p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Dù chỉ một ngày cũng không thể nghỉ."
  },
  {
   "id": "q-to-mo-naru-to-form-01",
@@ -614,7 +624,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đã là sinh viên đại học thì phải tự mình phán đoán."
  },
  {
   "id": "q-to-areba-form-01",
@@ -673,7 +684,8 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nếu là vì con thì vất vả đến mấy cũng không nề hà."
  },
  {
   "id": "q-to-atte-wa-form-01",
@@ -732,7 +744,8 @@
   "sourcePage": "別冊 p.4",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đã là chỉ thị của giám đốc thì không thể không tuân theo."
  },
  {
   "id": "q-ni-atte-form-01",
@@ -791,7 +804,8 @@
   "sourcePage": "別冊 p.25",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Trong thời khắc khẩn cấp này, sự bình tĩnh là điều cần thiết."
  },
  {
   "id": "q-tomo-suru-to-form-01",
@@ -848,7 +862,8 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Khi mệt thì dễ sinh ra phán đoán qua loa."
  },
  {
   "id": "q-ppanashi-form-01",
@@ -905,7 +920,8 @@
   "sourcePage": "別冊 p.35",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Tôi để nguyên đèn đang bật rồi đi ra ngoài."
  },
  {
   "id": "q-te-bakari-iru-form-01",
@@ -962,7 +978,8 @@
   "sourcePage": "別冊 p.32",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Thằng em chỉ toàn chơi điện tử."
  },
  {
   "id": "q-de-are-form-01",
@@ -1017,7 +1034,8 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Lý do là gì đi nữa thì bạo lực cũng không được tha thứ."
  },
  {
   "id": "q-u-ga-mai-ga-form-01",
@@ -1072,7 +1090,8 @@
   "sourcePage": "別冊 p.16",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Dù mưa hay không thì đại hội vẫn diễn ra."
  },
  {
   "id": "q-u-to-mai-to-form-01",
@@ -1127,6 +1146,7 @@
   "sourcePage": "別冊 p.31",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Dù tin hay không thì đây vẫn là sự thật."
  }
 ]
