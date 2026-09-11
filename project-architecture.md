@@ -558,6 +558,23 @@ Luật: bảng tỉ lệ ở `CLAUDE.md §4.1`; Phase 3 ≥ 7 ngày; TRIAGE khi 
 **Không ai khác** được tự tính phase.
 
 ### 7.2 RoadmapEngine
+**Bổ sung 2026-09-11 — hai hàm trả lời câu hỏi "kế hoạch này có thực tế không":**
+
+| Hàm | Trả lời | Dùng ở |
+|---|---|---|
+| `coverageFeasibility()` | Phase 1 có kịp phủ hết kho mẫu không, và tối thiểu bao nhiêu buổi/tuần mới đủ | `/onboarding` bước xem lộ trình |
+| `observedCadence()` | Nhịp học THỰC TẾ (đếm `dayKey` khác nhau trong 14 ngày) so với `daysPerWeek` đã khai | `/analytics` |
+
+Lý do cần `observedCadence()`: `daysPerWeek` là con số người học **tự khai một lần** ở onboarding
+nhưng chi phối `totalStudyDays`, ranh giới giai đoạn và `newPerDay`. Khai sai thì cả kế hoạch lệch,
+mà `shouldReplan()` không phát hiện được — nó chỉ chỉnh `newPerDay`, không chỉnh chính `daysPerWeek`.
+
+Ba ràng buộc cố ý của `observedCadence()`:
+- **Im lặng trước ngày 14** (`CADENCE_MIN_ELAPSED_DAYS`) — mới bắt đầu mà đã phán "học ít quá" thì vừa sai vừa làm nản.
+- **Lệch < 1 buổi/tuần thì không nói gì** (`CADENCE_MIN_DRIFT`) — tránh làm phiền vì sai số vụn.
+- **Làm tròn XUỐNG** — khai thấp an toàn hơn khai cao: khai 5 mà học 7 chỉ có lợi, khai 7 mà học 4 thì kế hoạch sai từ gốc.
+
+
 
 **Trách nhiệm:** sinh `StudyPlan` từ profile + content + mastery hiện có.
 

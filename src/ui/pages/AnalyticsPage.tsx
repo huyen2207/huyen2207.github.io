@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAppStore } from '@/app/stores/appStore';
-import { cards, checkpoints, dashboardForDisplay, recommendations } from '@/app/services/analyticsService';
+import { cadenceCheck, cards, checkpoints, dashboardForDisplay, recommendations } from '@/app/services/analyticsService';
+import { updateProfile } from '@/app/services/settingsService';
 import type { WeeklyCheckpoint } from '@/domain/analytics';
 import { t } from '@/i18n/vi';
 import { AppShell } from '../AppShell';
-import { Card, EmptyState, LoadingState, Pill, SecondaryButton } from '../components/primitives';
+import { Card, EmptyState, LoadingState, Pill, PrimaryButton, SecondaryButton } from '../components/primitives';
 import { ProgressRing } from '../components/StatePill';
 import { PhaseTimeline } from '../components/PhaseTimeline';
 
@@ -30,6 +31,15 @@ export default function AnalyticsPage() {
   const metrics = useMemo(() => (ctx ? dashboardForDisplay(ctx) : null), [ctx]);
   const metricCards = useMemo(() => (ctx ? cards(ctx) : []), [ctx]);
   const recs = useMemo(() => (ctx ? recommendations(ctx) : []), [ctx]);
+  const cadence = useMemo(() => (ctx ? cadenceCheck(ctx, new Date()) : null), [ctx]);
+  const refresh = useAppStore((s) => s.bootstrap);
+
+  async function applyCadence(next: number) {
+    if (!ctx) return;
+    if (!confirm(t('cadence.applyConfirm', { n: next }))) return;
+    await updateProfile(ctx.profile, { daysPerWeek: next }, new Date());
+    await refresh();
+  }
 
   if (!ctx || !metrics) {
     return (
@@ -42,8 +52,37 @@ export default function AnalyticsPage() {
   const readiness = metrics.readiness;
   const isFinal7 = ctx.timeline.mode === 'FINAL_7';
 
+  const slower = cadence?.direction === 'SLOWER' && cadence.suggested !== null;
+  const faster = cadence?.direction === 'FASTER' && cadence.suggested !== null;
+
   return (
     <AppShell title={t('analytics.title')}>
+      {cadence && (slower || faster) && (
+        <Card className="mb-4 px-4 py-3">
+          <p className="mb-1 text-[15px] font-semibold" style={{ color: 'var(--accent)' }}>
+            {t(slower ? 'cadence.slower.title' : 'cadence.faster.title')}
+          </p>
+          <p className="text-[14px] leading-relaxed">
+            {t(slower ? 'cadence.slower.body' : 'cadence.faster.body', {
+              declared: cadence.declared,
+              windowDays: cadence.windowDays,
+              studiedDays: cadence.studiedDays,
+              observed: cadence.observed.toFixed(1),
+            })}
+          </p>
+          {slower && (
+            <p className="mt-2 text-[13px] leading-relaxed" style={{ color: 'var(--ink-soft)' }}>
+              {t('cadence.slower.effect')}
+            </p>
+          )}
+          <div className="mt-3">
+            <PrimaryButton onClick={() => void applyCadence(cadence.suggested!)}>
+              {t('cadence.apply', { n: cadence.suggested! })}
+            </PrimaryButton>
+          </div>
+        </Card>
+      )}
+
       <div className="mb-4 grid grid-cols-2 gap-2">
         <Card className="px-3.5 py-3">
           <p className="text-[12px]" style={{ color: 'var(--ink-faint)' }}>

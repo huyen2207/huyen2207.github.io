@@ -208,6 +208,18 @@ const vi: Record<string, string> = {
     'Dữ liệu học nằm trên trình duyệt của bạn. Nhớ sao lưu ở Cài đặt mỗi tuần.',
 
   /* ── Today ── */
+  'cadence.slower.title': 'Nhịp học thật đang chậm hơn kế hoạch',
+  'cadence.slower.body':
+    'Bạn khai {declared} buổi/tuần, nhưng {windowDays} ngày qua chỉ học {studiedDays} ngày — tức khoảng {observed} buổi/tuần. Kế hoạch đang tính trên con số lạc quan hơn thực tế.',
+  'cadence.slower.effect':
+    'Theo nhịp thật, số buổi còn lại ít hơn app đang giả định, nên mỗi buổi sẽ bị dồn nhiều mẫu hơn mức bạn kham được.',
+  'cadence.faster.title': 'Bạn đang học nhiều hơn đã khai',
+  'cadence.faster.body':
+    'Bạn khai {declared} buổi/tuần, nhưng {windowDays} ngày qua học tới {studiedDays} ngày — khoảng {observed} buổi/tuần. Khai đúng hơn thì kế hoạch được trải rộng ra, mỗi buổi nhẹ đi.',
+  'cadence.apply': 'Đổi sang {n} buổi/tuần',
+  'cadence.applyConfirm':
+    'Đổi sang {n} buổi/tuần? Lộ trình sẽ được tính lại. Toàn bộ tiến độ và lịch sử được giữ nguyên.',
+  'cadence.applied': 'Đã đổi nhịp học và tính lại lộ trình.',
   'today.title': '今日の学習',
   'today.dayCounter': 'BUỔI HỌC {day} / {total}',
   'today.daysLeft': 'Còn {days} ngày lịch đến JLPT',

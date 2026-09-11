@@ -277,3 +277,17 @@ export const PLACEMENT_QUESTION_COUNT = 40;
  * Đúng do đoán thì không phải bằng chứng (cùng tinh thần với CLAUDE.md §12).
  */
 export const PLACEMENT_KNOWN_REQUIRES_NON_GUESS = true;
+
+/* ─────────────── Đo nhịp học thực tế (so với daysPerWeek đã khai) ─────────────── */
+
+/** Cửa sổ quan sát nhịp học, tính bằng ngày lịch. */
+export const CADENCE_WINDOW_DAYS = 14;
+
+/**
+ * Chưa học đủ ngần này ngày lịch thì KHÔNG kết luận gì.
+ * Mới bắt đầu mà đã phán "bạn học ít quá" là vừa sai vừa làm nản.
+ */
+export const CADENCE_MIN_ELAPSED_DAYS = 14;
+
+/** Lệch dưới ngần này buổi/tuần thì coi như trùng khớp, không làm phiền. */
+export const CADENCE_MIN_DRIFT = 1;

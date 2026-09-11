@@ -1,3 +1,4 @@
+import { observedCadence, type CadenceCheck } from '@/engines/roadmap';
 import type { DashboardMetrics, NotebookLineVi, WeeklyCheckpoint } from '@/domain/analytics';
 import type { GrammarMetrics, SkillProfile } from '@/domain/mastery';
 import {
@@ -159,3 +160,19 @@ export async function checkpoints(): Promise<WeeklyCheckpoint[]> {
 export async function readinessHistory() {
   return readinessRepo.all();
 }
+
+/**
+ * Nhịp học thực tế so với `daysPerWeek` đã khai.
+ * Tách ra khỏi UI để `/analytics` không phải tự đụng vào engine (arch §3).
+ */
+export function cadenceCheck(ctx: EngineContext, now: Date): CadenceCheck {
+  return observedCadence(
+    ctx.attempts.map((a) => a.dayKey),
+    ctx.profile.daysPerWeek,
+    ctx.profile.studyStartDate,
+    now,
+    ctx.profile.dayBoundaryHour,
+  );
+}
+
+export type { CadenceCheck };
