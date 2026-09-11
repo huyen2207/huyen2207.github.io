@@ -1,3 +1,9 @@
+// Ranh giới "ngày học" là 04:00 GIỜ ĐỊA PHƯƠNG (CLAUDE.md §26), nên kết quả của
+// PhaseEngine phụ thuộc múi giờ máy chạy. Ghim múi giờ để test cho cùng kết quả ở
+// mọi nơi — nếu không, CI (UTC) và máy người học (UTC+7) sẽ bất đồng.
+// Ghim CỨNG, không nhận đè từ môi trường: test phải cho cùng kết quả ở mọi máy.
+process.env.TZ = 'Asia/Ho_Chi_Minh';
+
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
