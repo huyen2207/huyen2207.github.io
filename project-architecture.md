@@ -1070,7 +1070,7 @@ và `session.test.ts` kiểm tra `KNOWN` bị đẩy khỏi nhóm học đầu n
 | ~~P3~~ | ~~Câu COMPARE cho 6 mẫu còn thiếu~~ | ✅ **XONG** (2026-09-11): 6 bộ so sánh mới ＋ 12 `MINIMAL_PAIR`, gồm cả cụm 「に至る／に至るまで／に至っては」mà `CLAUDE.md §3` lấy làm ví dụ mẫu | Thang mastery nay thông suốt cho cả 195 mẫu. Khoá bằng test `mọi mẫu đều có câu COMPARE…` | — |
 | ~~P4~~ | ~~Nâng độ dày câu hỏi~~ | ✅ **XONG** (2026-09-11): 132 câu `VALID_OR_INVALID` soạn từ `restrictions` đã ghi trong content, cân bằng 62 đáp án 〇 / 76 đáp án × | Mọi mẫu nay có ≥ 6 câu. Khoá bằng test `mọi mẫu đạt mức khuyến nghị ≥ 6 câu hỏi` và test chống đoán mẹo ○× | — |
 | ~~P5~~ | ~~Placement quiz ở onboarding~~ | ✅ **XONG** (2026-09-11): `engines/placement` + `/placement` + 40 câu. **KHÔNG** bỏ qua mẫu nào và **KHÔNG** thăng cấp mẫu nào — chỉ ghi `placementResult` để xếp lại thứ tự LEARN (xem ADR #12) | Mẫu đã chắc được đẩy xuống cuối hàng đợi; mẫu chưa biết học trước | — |
-| **P6** | Kiểm thử trên máy thật | Mới chỉ chạy ở khung 375px trong trình duyệt nội bộ | `CLAUDE.md §28`: DoD đòi chạy được offline, một tay, 375px trên thiết bị thật | người học tự kiểm |
+| **P6** | Kiểm thử trên máy thật | Đã deploy: **https://huyen2207.github.io/** (GitHub Pages, Actions). Mới chỉ kiểm ở khung 375px trong trình duyệt nội bộ. | `CLAUDE.md §28`: DoD đòi chạy được offline, một tay, 375px trên thiết bị thật | người học tự kiểm |
 
 Thứ tự này bám theo `CLAUDE.md §19`: việc nào mở khoá được bậc mastery cao hơn thì lên trước.
 
