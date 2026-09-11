@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import type { Confidence, ErrorType, GradeFlag } from '@/domain/enums';
 import type { FeedbackPayload } from '@/engines/exercise';
+import type { GrammarView } from '@/domain/grammar';
 import { CONFIDENCES } from '@/domain/enums';
 import { t } from '@/i18n/vi';
 import { Card, Pill } from './primitives';
@@ -115,14 +116,17 @@ export function ResultBanner({ isCorrect, flags }: { isCorrect: boolean; flags: 
 export function ExplanationPanel({
   feedback,
   choiceLabels,
+  grammar,
   children,
 }: {
   feedback: FeedbackPayload;
   choiceLabels: Record<string, string>;
+  /** Mẫu để ôn lại cấu trúc; chỉ truyền khi câu hỏi nhắm đúng một mẫu. */
+  grammar?: GrammarView;
   children?: ReactNode;
 }) {
   const hasAny =
-    feedback.explanationVi || feedback.keyClueVi || feedback.trap || feedback.solvingStrategy;
+    feedback.explanationVi || feedback.keyClueVi || feedback.trap || feedback.solvingStrategy || grammar;
   if (!hasAny) return <>{children}</>;
 
   return (
@@ -194,8 +198,64 @@ export function ExplanationPanel({
         </Card>
       )}
 
+      {grammar && <StructureRecap grammar={grammar} />}
+
       {children}
     </div>
+  );
+}
+
+/**
+ * Ôn lại cấu trúc ngay sau khi trả lời — lúc người học đang chú ý nhất.
+ * Chỉ hiện khi câu hỏi nhắm ĐÚNG MỘT mẫu; câu so sánh nhiều mẫu đã có bảng riêng
+ * ở Compare Lab, nhồi 3–4 cấu trúc vào đây sẽ thành bức tường chữ trên điện thoại.
+ */
+function StructureRecap({ grammar }: { grammar: GrammarView }) {
+  return (
+    <Card className="px-3.5 py-3">
+      <h3 className="mb-2 text-[12px] font-semibold uppercase tracking-wide" style={{ color: 'var(--ink-faint)' }}>
+        {t('question.reviewStructure')}
+      </h3>
+
+      <p className="ja text-[20px] font-semibold leading-tight">{grammar.pattern}</p>
+      <p className="mt-1 text-[14px] leading-relaxed">{grammar.meaningVi}</p>
+
+      <h4 className="ja mt-3 text-[12px] font-semibold" style={{ color: 'var(--ink-faint)' }}>
+        {t('learn.structure')}
+      </h4>
+      <ul className="mt-1 space-y-1">
+        {grammar.structure.map((s, i) => (
+          <li key={i} className="ja text-[16px]">
+            {s.form}
+            {s.note && (
+              <span className="ml-2 text-[12px]" style={{ color: 'var(--ink-faint)' }}>
+                {s.note}
+              </span>
+            )}
+          </li>
+        ))}
+      </ul>
+
+      {grammar.restrictions.length > 0 && (
+        <>
+          <h4 className="ja mt-3 text-[12px] font-semibold" style={{ color: 'var(--ink-faint)' }}>
+            {t('learn.restrictions')}
+          </h4>
+          <ul className="mt-1 space-y-1">
+            {grammar.restrictions.map((r, i) => (
+              <li key={i} className="text-[14px] leading-relaxed">
+                {r.ruleVi}
+                {r.counterExample && (
+                  <span className="ja ml-1" style={{ color: 'var(--ink-faint)' }}>
+                    {r.counterExample}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+    </Card>
   );
 }
 

@@ -10,6 +10,7 @@ import { t } from '@/i18n/vi';
 import { Card, NeedsReviewBadge, PrimaryButton, SecondaryButton, ThumbBar } from './primitives';
 import { ChoiceButton, ConfidenceSelector, ExplanationPanel, ResultBanner, SelfReportPrompt } from './answering';
 import { ClozeText, JaText } from './JaText';
+import { getGrammarView } from '@/content/repository';
 
 export interface QuestionRunnerProps {
   question: Question;
@@ -41,6 +42,10 @@ export function QuestionRunner({
 
   const [selected, setSelected] = useState<string | null>(null);
   const [order, setOrder] = useState<string[]>([]);
+  // Chỉ ôn lại cấu trúc khi câu hỏi nhắm ĐÚNG MỘT mẫu. Câu so sánh nhiều mẫu
+  // đã có bảng riêng ở Compare Lab, nhồi 3–4 cấu trúc vào đây sẽ quá dài.
+  const recapGrammar =
+    question.targetGrammarIds.length === 1 ? getGrammarView(question.targetGrammarIds[0]) : undefined;
   const [confidence, setConfidence] = useState<Confidence | null>(null);
   const [result, setResult] = useState<GradeResult | null>(null);
   const [selfReported, setSelfReported] = useState(false);
@@ -247,7 +252,7 @@ export function QuestionRunner({
               {t('question.timedHint')}
             </p>
           )}
-          <ExplanationPanel feedback={result.feedback} choiceLabels={choiceLabels} />
+          <ExplanationPanel feedback={result.feedback} choiceLabels={choiceLabels} grammar={recapGrammar} />
           {result.needsSelfReport && !selfReported && result.selfReportOptions.length > 0 && (
             <SelfReportPrompt
               options={result.selfReportOptions}
