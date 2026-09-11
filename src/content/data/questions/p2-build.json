@@ -82,7 +82,8 @@
   "sourcePage": "別冊 p.15 / p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Đoàn kịch này mở màn bằng buổi diễn tỉnh lẻ đầu tiên rồi vươn tới mức đi khắp các nhà hát toàn quốc."
  },
  {
   "id": "q-build-b02",
@@ -167,7 +168,8 @@
   "sourcePage": "別冊 p.22 / p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Không có sự thấu hiểu và hợp tác của cư dân thì dự án này dù chỉ một ngày cũng không thể đứng vững."
  },
  {
   "id": "q-build-b03",
@@ -252,7 +254,8 @@
   "sourcePage": "別冊 p.13 / p.26",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Nghĩ tới hoàn cảnh của người bị nạn thì nỗi thất vọng ấy không khó hình dung, và tôi không kìm được lòng thương cảm."
  },
  {
   "id": "q-build-b04",
@@ -337,7 +340,8 @@
   "sourcePage": "別冊 p.20 / p.13",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Hương vị của quán này đã đành, nội thất trầm lắng cộng hưởng với cung cách phục vụ chu đáo đang tạo nên tiếng vang."
  },
  {
   "id": "q-build-b05",
@@ -422,7 +426,8 @@
   "sourcePage": "別冊 p.28",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Hợp đồng này mà đã ký một lần là buộc phải chấp nhận mọi điều khoản."
  },
  {
   "id": "q-build-b06",
@@ -507,7 +512,8 @@
   "sourcePage": "別冊 p.25 / p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Giữa thời loạn lạc sau chiến tranh, anh ấy bất chấp thiếu thốn vật tư, chỉ trong ba năm đã gây dựng lại sự nghiệp."
  },
  {
   "id": "q-build-b07",
@@ -592,7 +598,8 @@
   "sourcePage": "別冊 p.28 / p.25",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Người mới thì còn được, đằng này nhân viên mười năm mà lặp lại đúng lỗi ấy thì thật đáng trách."
  },
  {
   "id": "q-build-b08",
@@ -677,7 +684,8 @@
   "sourcePage": "別冊 p.30 / p.36",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Tuỳ kết quả thương lượng sắp tới, phía công đoàn ở thế sẵn sàng đình công toàn diện."
  },
  {
   "id": "q-build-b09",
@@ -762,6 +770,7 @@
   "sourcePage": "別冊 p.6 / p.17",
   "verificationStatus": "VERIFIED",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Kể từ khi đi công tác xa nhà một mình, nếp sống của anh ấy ngày càng xô lệch mà chẳng có dấu hiệu cải thiện."
  }
 ]

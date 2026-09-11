@@ -58,7 +58,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3b-02"
+  "comparisonSetId": "cmp-degree-lo3b-02",
+  "stemVi": "Từ khi triển khai biện pháp, số ca nhiễm giảm đi thấy rõ."
  },
  {
   "id": "q-cmp-degree-lo3b-02-mp-02",
@@ -119,7 +120,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3b-02"
+  "comparisonSetId": "cmp-degree-lo3b-02",
+  "stemVi": "Đã triển khai biện pháp nhưng số ca nhiễm chẳng hề giảm chút nào."
  },
  {
   "id": "q-cmp-assumption-lo3b-01-mp-01",
@@ -182,7 +184,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-assumption-lo3b-01"
+  "comparisonSetId": "cmp-assumption-lo3b-01",
+  "stemVi": "Suýt nữa thì thành thảm hoạ lớn."
  },
  {
   "id": "q-cmp-assumption-lo3b-01-mp-02",
@@ -245,7 +248,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-assumption-lo3b-01"
+  "comparisonSetId": "cmp-assumption-lo3b-01",
+  "stemVi": "Không khéo thì có thể thành tai nạn nghiêm trọng."
  },
  {
   "id": "q-cmp-stance-lo3b-01-mp-01",
@@ -308,7 +312,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3b-01"
+  "comparisonSetId": "cmp-stance-lo3b-01",
+  "stemVi": "Ngày thường đã đông. Ngày nghỉ thì lại càng vậy."
  },
  {
   "id": "q-cmp-stance-lo3b-01-mp-02",
@@ -371,7 +376,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3b-01"
+  "comparisonSetId": "cmp-stance-lo3b-01",
+  "stemVi": "Gác chuyện có được nhận hay không sang bên, cứ thử nộp đơn đã."
  },
  {
   "id": "q-cmp-emphasis-lo3b-03-mp-01",
@@ -434,7 +440,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-lo3b-03"
+  "comparisonSetId": "cmp-emphasis-lo3b-03",
+  "stemVi": "Cuốn sách tìm mãi tìm mãi lại lòi ra từ sâu trong kệ."
  },
  {
   "id": "q-cmp-emphasis-lo3b-03-mp-02",
@@ -497,7 +504,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-lo3b-03"
+  "comparisonSetId": "cmp-emphasis-lo3b-03",
+  "stemVi": "Sóng cứ xô vào rồi rút ra, xô vào rồi rút ra."
  },
  {
   "id": "q-cmp-degree-lo3b-03-mp-01",
@@ -558,7 +566,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3b-03"
+  "comparisonSetId": "cmp-degree-lo3b-03",
+  "stemVi": "Giá dầu cao đang thúc đẩy giá cả tăng nhanh hơn."
  },
  {
   "id": "q-cmp-degree-lo3b-03-mp-02",
@@ -619,7 +628,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3b-03"
+  "comparisonSetId": "cmp-degree-lo3b-03",
+  "stemVi": "Làn sóng người trẻ rời quê lên phố không có dấu hiệu dừng lại."
  },
  {
   "id": "q-cmp-addition-lo3b-02-mp-01",
@@ -682,7 +692,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-addition-lo3b-02"
+  "comparisonSetId": "cmp-addition-lo3b-02",
+  "stemVi": "Hôm ấy, tất cả các con đường đều chật kín người."
  },
  {
   "id": "q-cmp-addition-lo3b-02-mp-02",
@@ -745,7 +756,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-addition-lo3b-02"
+  "comparisonSetId": "cmp-addition-lo3b-02",
+  "stemVi": "Tôi đã tới thăm những thành phố vùng Kansai như Osaka, Kyoto."
  },
  {
   "id": "q-cmp-inevitability-lo3b-01-mp-01",
@@ -806,7 +818,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-inevitability-lo3b-01"
+  "comparisonSetId": "cmp-inevitability-lo3b-01",
+  "stemVi": "Chúng ta phải học từ lịch sử."
  },
  {
   "id": "q-cmp-inevitability-lo3b-01-mp-02",
@@ -867,7 +880,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-inevitability-lo3b-01"
+  "comparisonSetId": "cmp-inevitability-lo3b-01",
+  "stemVi": "Vì chế độ thay đổi, chúng tôi bị dồn vào thế buộc phải quyết định."
  },
  {
   "id": "q-cmp-evaluation-lo3b-01-mp-01",
@@ -928,7 +942,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-evaluation-lo3b-01"
+  "comparisonSetId": "cmp-evaluation-lo3b-01",
+  "stemVi": "Cái hạng nghiệp dư thì biết được gì."
  },
  {
   "id": "q-cmp-evaluation-lo3b-01-mp-02",
@@ -989,7 +1004,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-evaluation-lo3b-01"
+  "comparisonSetId": "cmp-evaluation-lo3b-01",
+  "stemVi": "Nhân vật như anh ấy thì hiếm khi xuất hiện."
  },
  {
   "id": "q-cmp-degree-lo3b-04-mp-01",
@@ -1050,7 +1066,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3b-04"
+  "comparisonSetId": "cmp-degree-lo3b-04",
+  "stemVi": "Một quý ông trạc năm mươi đang đứng ở quầy lễ tân."
  },
  {
   "id": "q-cmp-degree-lo3b-04-mp-02",
@@ -1111,6 +1128,7 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3b-04"
+  "comparisonSetId": "cmp-degree-lo3b-04",
+  "stemVi": "Chi phí nhiều lắm cũng chỉ khoảng một trăm nghìn yên."
  }
 ]

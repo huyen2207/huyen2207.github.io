@@ -62,7 +62,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-inevitability-lo3-01"
+  "comparisonSetId": "cmp-inevitability-lo3-01",
+  "stemVi": "Lơ là cảnh giác, rốt cuộc đến mức làm hỏng cả máy móc."
  },
  {
   "id": "q-cmp-inevitability-lo3-01-mp-02",
@@ -126,7 +127,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-inevitability-lo3-01"
+  "comparisonSetId": "cmp-inevitability-lo3-01",
+  "stemVi": "Đã bỏ qua khâu kiểm tra an toàn thì vụ tai nạn ấy là chuyện tất phải xảy ra."
  },
  {
   "id": "q-cmp-assumption-lo3-02-mp-01",
@@ -189,7 +191,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-assumption-lo3-02"
+  "comparisonSetId": "cmp-assumption-lo3-02",
+  "stemVi": "Bây giờ có chạy hết sức thì cũng không kịp chuyến tàu đầu tiên."
  },
  {
   "id": "q-cmp-assumption-lo3-02-mp-02",
@@ -251,7 +254,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-assumption-lo3-02"
+  "comparisonSetId": "cmp-assumption-lo3-02",
+  "stemVi": "Miệng thì mạnh mẽ, vậy mà đến lúc diễn thật thì giọng run."
  },
  {
   "id": "q-cmp-stance-lo3-02-mp-01",
@@ -314,7 +318,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3-02"
+  "comparisonSetId": "cmp-stance-lo3-02",
+  "stemVi": "Bất chấp hết lần này lần khác thất bại, anh ấy vẫn tiếp tục nghiên cứu."
  },
  {
   "id": "q-cmp-stance-lo3-02-mp-02",
@@ -377,7 +382,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3-02"
+  "comparisonSetId": "cmp-stance-lo3-02",
+  "stemVi": "Mặc kệ nỗi lo của gia đình, anh ấy lên đường tác nghiệp ở nơi nguy hiểm."
  },
  {
   "id": "q-cmp-stance-lo3-03-mp-01",
@@ -438,7 +444,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3-03"
+  "comparisonSetId": "cmp-stance-lo3-03",
+  "stemVi": "Anh ta chào hỏi qua quýt rồi rời khỏi phòng họp."
  },
  {
   "id": "q-cmp-stance-lo3-03-mp-02",
@@ -499,7 +506,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3-03"
+  "comparisonSetId": "cmp-stance-lo3-03",
+  "stemVi": "Họ ở thế sẵn sàng đưa nhau ra toà."
  },
  {
   "id": "q-cmp-addition-lo3-02-mp-01",
@@ -562,7 +570,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-addition-lo3-02"
+  "comparisonSetId": "cmp-addition-lo3-02",
+  "stemVi": "Nhắn tin hay gọi điện gì cũng được, xin báo sớm cho một tiếng."
  },
  {
   "id": "q-cmp-addition-lo3-02-mp-02",
@@ -625,7 +634,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-addition-lo3-02"
+  "comparisonSetId": "cmp-addition-lo3-02",
+  "stemVi": "Xét bìa sách cũng vậy, nội dung cũng vậy, cuốn này không chê vào đâu được."
  },
  {
   "id": "q-cmp-emphasis-lo3-02-mp-01",
@@ -688,7 +698,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-lo3-02"
+  "comparisonSetId": "cmp-emphasis-lo3-02",
+  "stemVi": "Người cẩn thận như anh ấy mà lại sai, chắc mệt lắm rồi."
  },
  {
   "id": "q-cmp-emphasis-lo3-02-mp-02",
@@ -751,7 +762,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-lo3-02"
+  "comparisonSetId": "cmp-emphasis-lo3-02",
+  "stemVi": "Nói tới con chó nhà bên thì nửa đêm cũng cứ sủa không thôi."
  },
  {
   "id": "q-cmp-time-lo3-01-mp-01",
@@ -814,7 +826,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-lo3-01"
+  "comparisonSetId": "cmp-time-lo3-01",
+  "stemVi": "Kể từ khi chuyển nhà, sức khoẻ tôi tốt hẳn lên."
  },
  {
   "id": "q-cmp-time-lo3-01-mp-02",
@@ -877,7 +890,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-lo3-01"
+  "comparisonSetId": "cmp-time-lo3-01",
+  "stemVi": "Sau cuộc thương lượng bền bỉ, cuối cùng cũng đi đến hoà giải."
  },
  {
   "id": "q-cmp-degree-lo3-02-mp-01",
@@ -938,7 +952,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3-02"
+  "comparisonSetId": "cmp-degree-lo3-02",
+  "stemVi": "Giọng điệu của anh ta có gì đó nhuốm vẻ phê phán."
  },
  {
   "id": "q-cmp-degree-lo3-02-mp-02",
@@ -999,7 +1014,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3-02"
+  "comparisonSetId": "cmp-degree-lo3-02",
+  "stemVi": "Không phải người thực lực như anh ấy thì không vượt qua được tình thế khó này."
  },
  {
   "id": "q-cmp-concession-lo3-01-mp-01",
@@ -1062,7 +1078,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-concession-lo3-01"
+  "comparisonSetId": "cmp-concession-lo3-01",
+  "stemVi": "Gác kết quả sang bên, việc đã dốc hết sức mới là điều đáng giá."
  },
  {
   "id": "q-cmp-concession-lo3-01-mp-02",
@@ -1125,7 +1142,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-concession-lo3-01"
+  "comparisonSetId": "cmp-concession-lo3-01",
+  "stemVi": "Người mới thì còn được, đằng này người có kinh nghiệm mà lại mắc lỗi này."
  },
  {
   "id": "q-cmp-cause-lo3-01-mp-01",
@@ -1186,7 +1204,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-cause-lo3-01"
+  "comparisonSetId": "cmp-cause-lo3-01",
+  "stemVi": "Đã trót nhận lời trước mặt mọi người nên không thể bỏ ngang."
  },
  {
   "id": "q-cmp-cause-lo3-01-mp-02",
@@ -1248,7 +1267,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-cause-lo3-01"
+  "comparisonSetId": "cmp-cause-lo3-01",
+  "stemVi": "Đây là tai nạn không thể nói 'tôi lơ đãng' là xong."
  },
  {
   "id": "q-cmp-time-lo3-02-mp-01",
@@ -1309,7 +1329,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-lo3-02"
+  "comparisonSetId": "cmp-time-lo3-02",
+  "stemVi": "Rất ngại khi anh đang nghỉ, nhưng cho tôi xin ít phút được không?"
  },
  {
   "id": "q-cmp-time-lo3-02-mp-02",
@@ -1370,6 +1391,7 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-lo3-02"
+  "comparisonSetId": "cmp-time-lo3-02",
+  "stemVi": "Giữa thời đại thông tin tràn ngập, chính năng lực chọn lọc mới bị đem ra thử thách."
  }
 ]

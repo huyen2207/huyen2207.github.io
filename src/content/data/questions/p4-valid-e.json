@@ -45,7 +45,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chiều cao cái bàn của anh ta không có dấu hiệu dừng lại. (câu SAI: phải là xu thế tăng được)"
  },
  {
   "id": "q-igai-no-nanimono-demo-nai-valid-01",
@@ -93,7 +94,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Phát ngôn ấy chính là kỳ thị chứ không gì khác."
  },
  {
   "id": "q-de-sura-aru-valid-01",
@@ -141,7 +143,8 @@
   "sourcePage": "別冊 p.9",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Quyết định ấy táo bạo, thậm chí có thể nói là liều lĩnh."
  },
  {
   "id": "q-tari-shinai-valid-01",
@@ -189,7 +192,8 @@
   "sourcePage": "別冊 p.9",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tôi làm lộ bí mật. (câu SAI: mẫu này luôn ở dạng phủ định)"
  },
  {
   "id": "q-naritomo-valid-01",
@@ -237,7 +241,8 @@
   "sourcePage": "別冊 p.10",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nếu giúp được dù chỉ chút ít thì thật may mắn."
  },
  {
   "id": "q-ni-tsuide-valid-01",
@@ -285,7 +290,8 @@
   "sourcePage": "別冊 p.10",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Sau Trung Quốc, Ấn Độ là nước đông dân."
  },
  {
   "id": "q-sobireru-valid-01",
@@ -333,7 +339,8 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Trời lỡ mất dịp mưa. (câu SAI: chỉ dùng với hành động có ý chí)"
  },
  {
   "id": "q-wo-kanete-valid-01",
@@ -381,7 +388,8 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tôi quyết định đi bộ ra ga, tiện thể tản bộ luôn."
  },
  {
   "id": "q-ni-kakotsukete-valid-01",
@@ -429,7 +437,8 @@
   "sourcePage": "別冊 p.13",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ta mượn cớ công tác để đi chơi."
  },
  {
   "id": "q-to-suru-valid-01",
@@ -477,7 +486,8 @@
   "sourcePage": "別冊 p.13",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Một đội do anh ấy làm đại diện đã được thành lập."
  },
  {
   "id": "q-kara-naru-valid-01",
@@ -525,7 +535,8 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Bánh mì này được cấu thành từ lúa mì. (câu SAI: chỉ dùng cho cấu tạo, không dùng cho nguyên liệu chế biến)"
  },
  {
   "id": "q-me-ni-miete-valid-01",
@@ -573,7 +584,8 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tôi đọc sách một cách thấy rõ. (câu SAI: chỉ đi với động từ chỉ sự biến đổi)"
  },
  {
   "id": "q-heta-wo-suru-to-valid-01",
@@ -621,7 +633,8 @@
   "sourcePage": "別冊 p.16",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không khéo thì có khi lại vô địch. (câu SAI: vế sau phải là kết quả xấu)"
  },
  {
   "id": "q-ni-mukete-valid-01",
@@ -669,7 +682,8 @@
   "sourcePage": "別冊 p.18",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Hướng tới ngày tổ chức, công tác chuẩn bị đang vào giai đoạn cao điểm."
  },
  {
   "id": "q-wa-naosara-no-koto-valid-01",
@@ -717,7 +731,8 @@
   "sourcePage": "別冊 p.18",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Trẻ con thì lại càng vậy. (câu SAI: thiếu câu nêu mốc so sánh phía trước)"
  },
  {
   "id": "q-ni-ni-te-valid-01",
@@ -765,7 +780,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chờ đến mệt, anh ta bỏ về. (câu SAI: bắt buộc lặp cùng một động từ)"
  },
  {
   "id": "q-ni-hakusha-wo-kakeru-valid-01",
@@ -813,7 +829,8 @@
   "sourcePage": "別冊 p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đồng yên yếu đang thúc đẩy giá cả tăng nhanh hơn."
  },
  {
   "id": "q-neba-valid-01",
@@ -861,7 +878,8 @@
   "sourcePage": "別冊 p.26",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không về sớm thì mẹ lo đấy. (câu SAI: mẫu này là văn viết, không dùng trong hội thoại thường)"
  },
  {
   "id": "q-ta-nari-valid-01",
@@ -909,7 +927,8 @@
   "sourcePage": "別冊 p.26",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ta quay mặt đi rồi cứ thế không nói câu nào."
  },
  {
   "id": "q-garami-valid-01",
@@ -957,7 +976,8 @@
   "sourcePage": "別冊 p.28",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Rắc rối dính tới tiền bạc thì không dứt."
  },
  {
   "id": "q-yomoya-valid-01",
@@ -1005,7 +1025,8 @@
   "sourcePage": "別冊 p.29",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chẳng lẽ anh ấy sẽ đến. (câu SAI: bắt buộc đi với phủ định)"
  },
  {
   "id": "q-tewa-tewa-valid-01",
@@ -1053,6 +1074,7 @@
   "sourcePage": "別冊 p.30",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Viết rồi xoá, viết rồi xoá, cuối cùng cũng xong lá thư."
  }
 ]

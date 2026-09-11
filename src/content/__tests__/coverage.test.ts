@@ -241,6 +241,26 @@ describe('Vệ sinh dữ liệu', () => {
     expect(offenders).toEqual([]);
   });
 
+  it('bản dịch nghĩa câu không được lẫn chữ Nhật', () => {
+    // Đã lọt 1 lần khi soạn hàng loạt (viết tên nhóm động từ bằng tiếng Nhật vào bản dịch).
+    const ja = /[\u3040-\u30ff\u4e00-\u9faf]/;
+    const offenders = questions.filter((q) => q.stemVi && ja.test(q.stemVi)).map((q) => q.id);
+    expect(offenders).toEqual([]);
+  });
+
+  it('mọi câu CÓ câu ví dụ thật đều có bản dịch nghĩa', () => {
+    // Câu hỏi VỀ bản thân mẫu (nghĩa/接続/từ loại đứng trước) không có câu nào để dịch.
+    const meta = /^「〜?[^」]+」(\([^)]*\))?(の(意味|接続|前に|元になって)|と組み合わせ|を使う文|が「)/;
+    const sentenceTypes = [
+      'CLOZE_MC', 'FORM_MC', 'MINIMAL_PAIR', 'VALID_OR_INVALID', 'CONTEXT_MATCH',
+      'GRAMMAR_RECOGNITION', 'TRAP_ID', 'WHY_NOT_OTHER', 'SENTENCE_BUILD',
+    ];
+    const offenders = questions
+      .filter((q) => sentenceTypes.includes(q.type) && !meta.test(q.stemJa) && !q.stemVi)
+      .map((q) => q.id);
+    expect(offenders).toEqual([]);
+  });
+
   it('không có chữ Latin lọt vào câu hoặc đáp án tiếng Nhật', () => {
     // Đã lọt 1 lần khi soạn P1 (「family のため」thay vì 「家族のため」) — khoá lại bằng test.
     const latin = /[A-Za-z]{2,}/;

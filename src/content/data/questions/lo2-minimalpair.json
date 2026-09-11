@@ -61,7 +61,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo2-01"
+  "comparisonSetId": "cmp-negation-lo2-01",
+  "stemVi": "Nguy hiểm, cấm vào."
  },
  {
   "id": "q-cmp-negation-lo2-01-mp-02",
@@ -125,7 +126,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo2-01"
+  "comparisonSetId": "cmp-negation-lo2-01",
+  "stemVi": "Bỏ mặc người yếu thế là hành vi không xứng với một chính trị gia."
  },
  {
   "id": "q-cmp-limitation-lo2-01-mp-01",
@@ -188,7 +190,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-limitation-lo2-01"
+  "comparisonSetId": "cmp-limitation-lo2-01",
+  "stemVi": "Người đóng nổi vai khó này thì ngoài cô ấy ra không còn ai."
  },
  {
   "id": "q-cmp-limitation-lo2-01-mp-02",
@@ -251,7 +254,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-limitation-lo2-01"
+  "comparisonSetId": "cmp-limitation-lo2-01",
+  "stemVi": "Anh ấy được xem là kỹ sư số một của công ty chúng tôi."
  },
  {
   "id": "q-cmp-addition-lo2-01-mp-01",
@@ -312,7 +316,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 3,
-  "comparisonSetId": "cmp-addition-lo2-01"
+  "comparisonSetId": "cmp-addition-lo2-01",
+  "stemVi": "Hồi phục dự kiến mất khoảng hai đến ba tuần."
  },
  {
   "id": "q-cmp-addition-lo2-01-mp-02",
@@ -373,7 +378,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 3,
-  "comparisonSetId": "cmp-addition-lo2-01"
+  "comparisonSetId": "cmp-addition-lo2-01",
+  "stemVi": "Để xác minh nhân thân, xin mang theo bằng lái hoặc hộ chiếu."
  },
  {
   "id": "q-cmp-degree-lo2-01-mp-01",
@@ -435,7 +441,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo2-01"
+  "comparisonSetId": "cmp-degree-lo2-01",
+  "stemVi": "Dù chỉ một đồng cũng không được phí phạm."
  },
  {
   "id": "q-cmp-degree-lo2-01-mp-02",
@@ -497,7 +504,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo2-01"
+  "comparisonSetId": "cmp-degree-lo2-01",
+  "stemVi": "Tới hai nghìn khán giả đã đổ về hội trường."
  },
  {
   "id": "q-cmp-condition-lo2-01-mp-01",
@@ -562,7 +570,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-condition-lo2-01"
+  "comparisonSetId": "cmp-condition-lo2-01",
+  "stemVi": "Đã là lời nhờ của thầy cũ thì không thể từ chối được."
  },
  {
   "id": "q-cmp-condition-lo2-01-mp-02",
@@ -627,7 +636,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-condition-lo2-01"
+  "comparisonSetId": "cmp-condition-lo2-01",
+  "stemVi": "Giữa thời loạn lạc sau chiến tranh, người ta sống nương tựa vào nhau."
  },
  {
   "id": "q-cmp-evaluation-lo2-01-mp-01",
@@ -689,7 +699,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 3,
-  "comparisonSetId": "cmp-evaluation-lo2-01"
+  "comparisonSetId": "cmp-evaluation-lo2-01",
+  "stemVi": "Tôi để nguyên cửa sổ đang mở rồi ngủ mất."
  },
  {
   "id": "q-cmp-evaluation-lo2-01-mp-02",
@@ -751,7 +762,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 3,
-  "comparisonSetId": "cmp-evaluation-lo2-01"
+  "comparisonSetId": "cmp-evaluation-lo2-01",
+  "stemVi": "Anh ta chỉ toàn ca thán mà chẳng làm gì cả."
  },
  {
   "id": "q-cmp-concession-lo2-01-mp-01",
@@ -816,7 +828,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-concession-lo2-01"
+  "comparisonSetId": "cmp-concession-lo2-01",
+  "stemVi": "Đương sự có chấp nhận hay không thì quy định vẫn là quy định."
  },
  {
   "id": "q-cmp-concession-lo2-01-mp-02",
@@ -881,7 +894,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-concession-lo2-01"
+  "comparisonSetId": "cmp-concession-lo2-01",
+  "stemVi": "Kết quả thế nào đi nữa thì việc đã dốc hết sức vẫn có ý nghĩa."
  },
  {
   "id": "q-cmp-time-lo2-01-mp-01",
@@ -943,7 +957,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-lo2-01"
+  "comparisonSetId": "cmp-time-lo2-01",
+  "stemVi": "Mở màn bằng buổi diễn ở Hokkaido, chuyến lưu diễn sẽ đi qua mười thành phố."
  },
  {
   "id": "q-cmp-time-lo2-01-mp-02",
@@ -1005,7 +1020,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-lo2-01"
+  "comparisonSetId": "cmp-time-lo2-01",
+  "stemVi": "Đã ký một lần là không thể thay đổi điều khoản."
  },
  {
   "id": "q-cmp-stance-lo2-01-mp-01",
@@ -1067,7 +1083,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo2-01"
+  "comparisonSetId": "cmp-stance-lo2-01",
+  "stemVi": "Anh ta bỏ bê nghề chính, mải mê với việc làm thêm."
  },
  {
   "id": "q-cmp-stance-lo2-01-mp-02",
@@ -1131,7 +1148,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo2-01"
+  "comparisonSetId": "cmp-stance-lo2-01",
+  "stemVi": "Bất chấp sự phản đối của bố mẹ, cô ấy quyết định đi du học."
  },
  {
   "id": "q-cmp-emphasis-lo2-01-mp-01",
@@ -1190,7 +1208,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 3,
-  "comparisonSetId": "cmp-emphasis-lo2-01"
+  "comparisonSetId": "cmp-emphasis-lo2-01",
+  "stemVi": "Lâu ngày gặp lại bạn cũ, thật là vui hết sức."
  },
  {
   "id": "q-cmp-emphasis-lo2-01-mp-02",
@@ -1249,7 +1268,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 3,
-  "comparisonSetId": "cmp-emphasis-lo2-01"
+  "comparisonSetId": "cmp-emphasis-lo2-01",
+  "stemVi": "Kết cục này chỉ có thể gọi là mỉa mai."
  },
  {
   "id": "q-cmp-cause-lo2-01-mp-01",
@@ -1314,7 +1334,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-cause-lo2-01"
+  "comparisonSetId": "cmp-cause-lo2-01",
+  "stemVi": "Việc xử lý thông tin là vấn đề động tới uy tín của công ty."
  },
  {
   "id": "q-cmp-cause-lo2-01-mp-02",
@@ -1377,7 +1398,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-cause-lo2-01"
+  "comparisonSetId": "cmp-cause-lo2-01",
+  "stemVi": "Có tiếp tục hỗ trợ hay không là tuỳ vào ngân sách năm tới."
  },
  {
   "id": "q-cmp-negation-lo2-02-mp-01",
@@ -1439,7 +1461,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo2-02"
+  "comparisonSetId": "cmp-negation-lo2-02",
+  "stemVi": "Không có sự thấu hiểu của cộng đồng thì kế hoạch này không thành."
  },
  {
   "id": "q-cmp-negation-lo2-02-mp-02",
@@ -1501,7 +1524,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo2-02"
+  "comparisonSetId": "cmp-negation-lo2-02",
+  "stemVi": "Không va chạm với người khác thì không thể biết được lòng dạ thật của họ."
  },
  {
   "id": "q-cmp-concession-lo2-02-mp-01",
@@ -1565,7 +1589,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-concession-lo2-02"
+  "comparisonSetId": "cmp-concession-lo2-02",
+  "stemVi": "Một lần thì còn được, đằng này tận năm lần cùng một lỗi."
  },
  {
   "id": "q-cmp-concession-lo2-02-mp-02",
@@ -1627,7 +1652,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-concession-lo2-02"
+  "comparisonSetId": "cmp-concession-lo2-02",
+  "stemVi": "Tưởng xong ngay, hoá ra mất tới ba tiếng."
  },
  {
   "id": "q-cmp-degree-lo2-02-mp-01",
@@ -1686,7 +1712,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo2-02"
+  "comparisonSetId": "cmp-degree-lo2-02",
+  "stemVi": "Anh ta mang vẻ mặt như sắp oà khóc tới nơi."
  },
  {
   "id": "q-cmp-degree-lo2-02-mp-02",
@@ -1745,6 +1772,7 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo2-02"
+  "comparisonSetId": "cmp-degree-lo2-02",
+  "stemVi": "Như thể muốn nói đã hết chịu nổi, anh ta đặt bút xuống."
  }
 ]

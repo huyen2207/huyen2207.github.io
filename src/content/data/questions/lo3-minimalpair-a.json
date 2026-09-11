@@ -61,7 +61,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3-01"
+  "comparisonSetId": "cmp-degree-lo3-01",
+  "stemVi": "Khỏi cần giải thích lại, mọi người đều đã biết."
  },
  {
   "id": "q-cmp-degree-lo3-01-mp-02",
@@ -125,7 +126,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3-01"
+  "comparisonSetId": "cmp-degree-lo3-01",
+  "stemVi": "Không đòi hoàn hảo, nhưng mong bạn làm cẩn thận hơn một chút."
  },
  {
   "id": "q-cmp-negation-lo3-01-mp-01",
@@ -188,7 +190,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3-01"
+  "comparisonSetId": "cmp-negation-lo3-01",
+  "stemVi": "Anh ấy vô địch là đúng với thực lực, chẳng có gì đáng ngạc nhiên."
  },
  {
   "id": "q-cmp-negation-lo3-01-mp-02",
@@ -251,7 +254,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3-01"
+  "comparisonSetId": "cmp-negation-lo3-01",
+  "stemVi": "Gần đây thôi nên không cần phải ra đón đâu ạ."
  },
  {
   "id": "q-cmp-emphasis-lo3-01-mp-01",
@@ -312,7 +316,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-lo3-01"
+  "comparisonSetId": "cmp-emphasis-lo3-01",
+  "stemVi": "Ngay cả bậc kỳ cựu ấy cũng không chơi trọn được bản này."
  },
  {
   "id": "q-cmp-emphasis-lo3-01-mp-02",
@@ -373,7 +378,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-lo3-01"
+  "comparisonSetId": "cmp-emphasis-lo3-01",
+  "stemVi": "Đây là cảnh giới chỉ người khổ luyện nhiều năm mới chạm tới được."
  },
  {
   "id": "q-cmp-limitation-lo3-01-mp-01",
@@ -434,7 +440,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-limitation-lo3-01"
+  "comparisonSetId": "cmp-limitation-lo3-01",
+  "stemVi": "Đây đúng là cung cách tiếp đãi chỉ Kyoto mới có."
  },
  {
   "id": "q-cmp-limitation-lo3-01-mp-02",
@@ -495,7 +502,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-limitation-lo3-01"
+  "comparisonSetId": "cmp-limitation-lo3-01",
+  "stemVi": "Người mới thì cũng đang mày mò cải tiến theo cách của người mới."
  },
  {
   "id": "q-cmp-stance-lo3-01-mp-01",
@@ -556,7 +564,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3-01"
+  "comparisonSetId": "cmp-stance-lo3-01",
+  "stemVi": "Chiếc radio nghe mà chẳng để tâm ấy phát lên một bài hát thân thuộc."
  },
  {
   "id": "q-cmp-stance-lo3-01-mp-02",
@@ -618,7 +627,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3-01"
+  "comparisonSetId": "cmp-stance-lo3-01",
+  "stemVi": "Đã là sinh viên đại học thì phải tự mình phán đoán."
  },
  {
   "id": "q-cmp-negation-lo3-02-mp-01",
@@ -681,7 +691,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3-02"
+  "comparisonSetId": "cmp-negation-lo3-02",
+  "stemVi": "Rốt cuộc tôi đã không hỏi được sự thật."
  },
  {
   "id": "q-cmp-negation-lo3-02-mp-02",
@@ -743,7 +754,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3-02"
+  "comparisonSetId": "cmp-negation-lo3-02",
+  "stemVi": "Để làm sáng tỏ sự thật, anh ấy tiếp tục điều tra."
  },
  {
   "id": "q-cmp-assumption-lo3-01-mp-01",
@@ -806,7 +818,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-assumption-lo3-01"
+  "comparisonSetId": "cmp-assumption-lo3-01",
+  "stemVi": "Lơ là là không chắc tai nạn sẽ không xảy ra."
  },
  {
   "id": "q-cmp-assumption-lo3-01-mp-02",
@@ -869,7 +882,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-assumption-lo3-01"
+  "comparisonSetId": "cmp-assumption-lo3-01",
+  "stemVi": "Chỉ cần thù lao tương xứng thì cũng không hẳn là tôi không nhận."
  },
  {
   "id": "q-cmp-evaluation-lo3-01-mp-01",
@@ -932,7 +946,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-evaluation-lo3-01"
+  "comparisonSetId": "cmp-evaluation-lo3-01",
+  "stemVi": "Đã là chính trị gia thì trước hết phải tự răn mình."
  },
  {
   "id": "q-cmp-evaluation-lo3-01-mp-02",
@@ -996,7 +1011,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-evaluation-lo3-01"
+  "comparisonSetId": "cmp-evaluation-lo3-01",
+  "stemVi": "Kẻ như tôi thì làm sao kham nổi trọng trách lớn."
  },
  {
   "id": "q-cmp-addition-lo3-01-mp-01",
@@ -1060,7 +1076,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-addition-lo3-01"
+  "comparisonSetId": "cmp-addition-lo3-01",
+  "stemVi": "Chất lượng đã đành, sản phẩm này còn áp đảo đối thủ cả về giá."
  },
  {
   "id": "q-cmp-addition-lo3-01-mp-02",
@@ -1124,7 +1141,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-addition-lo3-01"
+  "comparisonSetId": "cmp-addition-lo3-01",
+  "stemVi": "Nguồn nước dồi dào cộng hưởng với khí hậu vùng này, cho ra loại gạo chất lượng."
  },
  {
   "id": "q-cmp-condition-lo3-01-mp-01",
@@ -1185,7 +1203,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-condition-lo3-01"
+  "comparisonSetId": "cmp-condition-lo3-01",
+  "stemVi": "Không được quên rằng có độc giả thì mới có tạp chí."
  },
  {
   "id": "q-cmp-condition-lo3-01-mp-02",
@@ -1246,6 +1265,7 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-condition-lo3-01"
+  "comparisonSetId": "cmp-condition-lo3-01",
+  "stemVi": "Không có sự ủng hộ của độc giả thì tạp chí này không thể tồn tại."
  }
 ]

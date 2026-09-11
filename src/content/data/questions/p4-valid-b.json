@@ -45,7 +45,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Kế hoạch hay đến mấy, không thực hiện thì cũng coi như xong."
  },
  {
   "id": "q-yue-valid-01",
@@ -93,7 +94,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Giờ nghĩ lại, đó là lỗi lầm do còn trẻ."
  },
  {
   "id": "q-ba-koso-valid-01",
@@ -141,7 +143,8 @@
   "sourcePage": "別冊 p.30",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chính vì ghét nên tôi mới tránh anh ta. (câu sai: lý do phải là thiện chí)"
  },
  {
   "id": "q-mamire-valid-01",
@@ -189,7 +192,8 @@
   "sourcePage": "別冊 p.20",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chúng tôi mừng sinh nhật trong căn phòng đầy hoa. (câu sai: mẫu này chỉ dùng cho chất bẩn)"
  },
  {
   "id": "q-zukume-valid-01",
@@ -237,7 +241,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tháng này là một tháng toàn kỷ lục."
  },
  {
   "id": "q-te-yamanai-valid-01",
@@ -285,7 +290,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tôi chạy mãi không thôi. (câu sai: mẫu này chỉ đi với động từ tình cảm)"
  },
  {
   "id": "q-wo-motte-valid-01",
@@ -333,7 +339,8 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Kể từ hôm nay, cửa hàng chúng tôi đóng cửa."
  },
  {
   "id": "q-ni-sokushita-valid-01",
@@ -381,7 +388,8 @@
   "sourcePage": "別冊 p.4",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tôi lập kế hoạch bám sát lý tưởng. (câu sai: phải là cái tồn tại thật)"
  },
  {
   "id": "q-wo-fumaete-valid-01",
@@ -429,7 +437,8 @@
   "sourcePage": "別冊 p.10",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Dựa trên những gì rút ra lần trước, tôi đã soạn lại kế hoạch."
  },
  {
   "id": "q-wo-yogi-naku-sareru-valid-01",
@@ -477,7 +486,8 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vì bão, đại hội buộc phải huỷ."
  },
  {
   "id": "q-beku-valid-01",
@@ -525,7 +535,8 @@
   "sourcePage": "別冊 p.24",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Để đỗ thì hãy cố lên. (câu sai: vế sau không được là mệnh lệnh)"
  },
  {
   "id": "q-ni-hikikae-valid-01",
@@ -573,7 +584,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Trái ngược với sự chăm chỉ của anh trai, em trai chỉ toàn lười biếng."
  },
  {
   "id": "q-ni-mo-mashite-valid-01",
@@ -621,7 +633,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Năm nay cái nóng gay gắt hơn hẳn mọi năm."
  },
  {
   "id": "q-bekarazu-valid-01",
@@ -669,7 +682,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Thưa thầy, cấm đi muộn. (câu sai: mẫu này chỉ dùng trên biển báo)"
  },
  {
   "id": "q-bekarazaru-valid-01",
@@ -717,7 +731,8 @@
   "sourcePage": "別冊 p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cấm vào đây. (câu sai: mẫu này phải có danh từ đứng sau)"
  },
  {
   "id": "q-kitte-no-valid-01",
@@ -765,7 +780,8 @@
   "sourcePage": "別冊 p.9",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Là kẻ lười nhất lớp. (câu sai: mẫu này chỉ dùng để khen)"
  },
  {
   "id": "q-wo-oite-valid-01",
@@ -813,7 +829,8 @@
   "sourcePage": "別冊 p.16",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Ngoài anh ấy ra vẫn có người phù hợp. (câu sai: vế sau phải phủ định)"
  },
  {
   "id": "q-naishi-valid-01",
@@ -861,7 +878,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Hồi phục dự kiến mất khoảng hai đến ba tuần."
  },
  {
   "id": "q-moshiku-wa-valid-01",
@@ -909,7 +927,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cuối tuần tớ muốn đi xem phim hoặc hát karaoke. (câu sai: mẫu này dùng cho văn thủ tục)"
  },
  {
   "id": "q-kara-aru-valid-01",
@@ -957,7 +976,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tôi vác kiện hàng nặng tới ba gam. (câu sai: mẫu này dùng cho số lượng lớn)"
  },
  {
   "id": "q-kara-no-valid-01",
@@ -1005,7 +1025,8 @@
   "sourcePage": "別冊 p.10",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Số người ứng tuyển là tới một trăm. (câu sai: mẫu này phải có danh từ đứng sau)"
  },
  {
   "id": "q-to-mo-naru-to-valid-01",
@@ -1053,6 +1074,7 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đã đến buổi sáng thì rửa mặt. (câu sai: vế trước phải là mốc đặc biệt)"
  }
 ]

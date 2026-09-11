@@ -45,7 +45,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Sáng nào tôi cũng nhất định phải chạy. (câu SAI: chủ thể phải là sự việc tác động lên người khác)"
  },
  {
   "id": "q-nai-dewa-okanai-valid-01",
@@ -93,7 +94,8 @@
   "sourcePage": "別冊 p.14",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Phán quyết này nhất định sẽ dấy lên tranh luận lớn trong xã hội."
  },
  {
   "id": "q-zuni-wa-sumanai-valid-01",
@@ -141,7 +143,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đã gây phiền đến thế thì không thể không xin lỗi."
  },
  {
   "id": "q-nai-dewa-sumanai-valid-01",
@@ -189,7 +192,8 @@
   "sourcePage": "別冊 p.24",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chắc trời không thể không mưa. (câu SAI: mưa không mang nghĩa vụ)"
  },
  {
   "id": "q-kiwamari-nai-valid-01",
@@ -237,7 +241,8 @@
   "sourcePage": "別冊 p.14",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tôi cảm ơn thái độ vô cùng tử tế ấy. (câu SAI: mẫu này mang sắc thái chê)"
  },
  {
   "id": "q-no-kiwami-valid-01",
@@ -285,7 +290,8 @@
   "sourcePage": "別冊 p.4",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Ước mơ bao năm thành hiện thực, thật là xúc động tột cùng."
  },
  {
   "id": "q-no-itari-valid-01",
@@ -333,7 +339,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tuy là do bồng bột tuổi trẻ, nhưng đó vẫn là hành vi đáng xấu hổ."
  },
  {
   "id": "q-to-ittara-nai-valid-01",
@@ -381,7 +388,8 @@
   "sourcePage": "別冊 p.17",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cái nóng hôm ấy thì không sao tả xiết."
  },
  {
   "id": "q-ya-inaya-valid-01",
@@ -429,7 +437,8 @@
   "sourcePage": "別冊 p.9",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vừa về tới nhà là tôi sẽ gọi điện. (câu SAI: vế sau phải là việc đã xảy ra)"
  },
  {
   "id": "q-ga-hayai-ka-valid-01",
@@ -477,7 +486,8 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chuông vừa reo là học sinh ùa ra khỏi lớp."
  },
  {
   "id": "q-nari-valid-01",
@@ -525,7 +535,8 @@
   "sourcePage": "別冊 p.23",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Bố vừa về là mẹ đi ra ngoài. (câu SAI: hai vế phải cùng chủ ngữ)"
  },
  {
   "id": "q-soba-kara-valid-01",
@@ -573,7 +584,8 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vừa tốt nghiệp là đi làm ngay. (câu SAI: mẫu này nói việc lặp đi lặp lại)"
  },
  {
   "id": "q-katawara-valid-01",
@@ -621,7 +633,8 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ấy vừa làm ở công ty vừa viết tiểu thuyết."
  },
  {
   "id": "q-gatera-valid-01",
@@ -669,7 +682,8 @@
   "sourcePage": "別冊 p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tiện tập thể dục mỗi sáng, tôi dắt chó đi dạo. (câu SAI: mẫu này dùng cho một lần cụ thể)"
  },
  {
   "id": "q-katagata-valid-01",
@@ -717,7 +731,8 @@
   "sourcePage": "別冊 p.13",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tiện đi dạo, tôi ra bưu điện. (câu SAI: mẫu này chỉ dùng cho việc lễ nghi)"
  },
  {
   "id": "q-wa-oroka-valid-01",
@@ -765,7 +780,8 @@
   "sourcePage": "別冊 p.32",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đứa bé này chữ Hán đã đành, đến cả chữ mềm cũng không đọc được."
  },
  {
   "id": "q-sura-valid-01",
@@ -813,7 +829,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đây là câu hỏi khó tới mức ngay cả chuyên gia cũng bí."
  },
  {
   "id": "q-dani-valid-01",
@@ -861,7 +878,8 @@
   "sourcePage": "別冊 p.32",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chỉ chạy mỗi sáng thôi đã thấy dễ chịu. (câu SAI: mẫu này chỉ đi với động từ tri giác)"
  },
  {
   "id": "q-ni-taeru-valid-01",
@@ -909,7 +927,8 @@
   "sourcePage": "別冊 p.9",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Bài luận này đủ sức chịu được phê bình."
  },
  {
   "id": "q-ni-taru-valid-01",
@@ -957,7 +976,8 @@
   "sourcePage": "別冊 p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Món này đáng để ăn. (câu sai: mẫu này chỉ đi với nhóm tin cậy, kính trọng, hài lòng)"
  },
  {
   "id": "q-nagara-mo-valid-01",
@@ -1005,7 +1025,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh trai tuy còn trẻ nhưng em trai lại điềm đạm. (câu sai: hai vế phải cùng chủ ngữ)"
  },
  {
   "id": "q-ta-tokoro-de-valid-01",
@@ -1053,6 +1074,7 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Bây giờ có chạy thì vẫn kịp. (câu sai: vế sau phải mang nghĩa phủ định)"
  }
 ]

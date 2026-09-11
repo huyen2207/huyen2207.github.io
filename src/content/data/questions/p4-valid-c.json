@@ -45,7 +45,8 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nếu là vì con gái thì vất vả đến mấy tôi cũng không nề hà."
  },
  {
   "id": "q-to-atte-wa-valid-01",
@@ -93,7 +94,8 @@
   "sourcePage": "別冊 p.4",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đã là uống cà phê mỗi sáng thì không thể từ chối. (câu sai: phải là tình thế ngoại lệ)"
  },
  {
   "id": "q-ppanashi-valid-01",
@@ -141,7 +143,8 @@
   "sourcePage": "別冊 p.35",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tôi để nguyên điều hoà đang bật rồi đi mất."
  },
  {
   "id": "q-te-bakari-iru-valid-01",
@@ -189,7 +192,8 @@
   "sourcePage": "別冊 p.32",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ấy ngày nào cũng chỉ toàn nỗ lực, thật đáng khâm phục. (câu sai: mẫu này mang ý chê)"
  },
  {
   "id": "q-de-are-valid-01",
@@ -237,7 +241,8 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Lý do là gì đi nữa thì bạo lực cũng không được tha thứ."
  },
  {
   "id": "q-u-ga-mai-ga-valid-01",
@@ -285,7 +290,8 @@
   "sourcePage": "別冊 p.16",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Dù đi hay không đến thì lịch cũng không đổi. (câu sai: hai vế phải cùng một động từ)"
  },
  {
   "id": "q-u-to-mai-to-valid-01",
@@ -333,7 +339,8 @@
   "sourcePage": "別冊 p.31",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Dù tin hay không thì đây vẫn là sự thật."
  },
  {
   "id": "q-wa-dou-are-valid-01",
@@ -381,7 +388,8 @@
   "sourcePage": "別冊 p.33",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Kết quả thế nào đi nữa thì tôi đã dốc hết sức."
  },
  {
   "id": "q-wo-kagiri-ni-valid-01",
@@ -429,7 +437,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Kể từ giải này, anh ấy giải nghệ."
  },
  {
   "id": "q-sotchinoke-valid-01",
@@ -477,7 +486,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ta bỏ mặc sự phiền hà của hàng xóm mà mở nhạc. (câu sai: phải là bổn phận của chính chủ thể)"
  },
  {
   "id": "q-ni-kakawaru-valid-01",
@@ -525,7 +535,8 @@
   "sourcePage": "別冊 p.28",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đây là vấn đề liên quan tới đồ ăn vặt. (câu sai: phải là chuyện hệ trọng)"
  },
  {
   "id": "q-ni-kakatte-iru-valid-01",
@@ -573,7 +584,8 @@
   "sourcePage": "別冊 p.35",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Thành hay bại là tuỳ vào nỗ lực của cậu."
  },
  {
   "id": "q-ikan-da-valid-01",
@@ -621,7 +633,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chuyến đi lần này có đi hay không là tuỳ thời tiết nhỉ. (câu sai: mẫu này là văn viết trang trọng)"
  },
  {
   "id": "q-nashi-ni-valid-01",
@@ -669,7 +682,8 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ta dùng bàn của tôi mà không xin phép."
  },
  {
   "id": "q-to-omoi-kiya-valid-01",
@@ -717,7 +731,8 @@
   "sourcePage": "別冊 p.20",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tưởng dễ, hoá ra đúng là dễ thật. (câu sai: vế sau phải trái với dự đoán)"
  },
  {
   "id": "q-n-bakari-valid-01",
@@ -765,7 +780,8 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ta khóc như sắp khóc. (câu sai: mẫu này nói việc thực ra chưa xảy ra)"
  },
  {
   "id": "q-to-bakari-ni-valid-01",
@@ -813,7 +829,8 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Như thể muốn nói đợi mãi rồi, anh ấy đứng dậy khỏi ghế."
  },
  {
   "id": "q-to-ii-to-ii-valid-01",
@@ -861,7 +878,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Xét bố cũng vậy, mẹ cũng vậy, anh trai thật hiền. (câu sai: phải cùng một đối tượng)"
  },
  {
   "id": "q-shimatsu-da-valid-01",
@@ -909,7 +927,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nỗ lực rồi rốt cuộc đến mức thi đỗ. (câu sai: mẫu này chỉ dùng cho kết cục xấu)"
  },
  {
   "id": "q-taru-valid-01",
@@ -957,7 +976,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đã là học sinh thì nên chơi. (câu sai: vế sau phải là bổn phận nghiêm túc)"
  },
  {
   "id": "q-dewa-arumai-shi-valid-01",
@@ -1005,7 +1025,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đâu phải trẻ con, cậu ấy ba tuổi. (câu sai: vế sau phải là lời trách hoặc khuyên)"
  },
  {
   "id": "q-dewa-sumasarenai-valid-01",
@@ -1053,6 +1074,7 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đây là vấn đề không thể nói 'tôi không biết' là xong."
  }
 ]

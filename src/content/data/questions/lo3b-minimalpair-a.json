@@ -58,7 +58,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-lo3b-01"
+  "comparisonSetId": "cmp-time-lo3b-01",
+  "stemVi": "Suy thoái nối tiếp suy thoái, phố xá không còn sức sống."
  },
  {
   "id": "q-cmp-time-lo3b-01-mp-02",
@@ -119,7 +120,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-lo3b-01"
+  "comparisonSetId": "cmp-time-lo3b-01",
+  "stemVi": "Tiếp sau lễ khai mạc là buổi diễn thuyết kỷ niệm."
  },
  {
   "id": "q-cmp-emphasis-lo3b-01-mp-01",
@@ -182,7 +184,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-lo3b-01"
+  "comparisonSetId": "cmp-emphasis-lo3b-01",
+  "stemVi": "Anh ấy vừa là kiến trúc sư vừa là nhiếp ảnh gia."
  },
  {
   "id": "q-cmp-emphasis-lo3b-01-mp-02",
@@ -245,7 +248,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-lo3b-01"
+  "comparisonSetId": "cmp-emphasis-lo3b-01",
+  "stemVi": "Ở tuổi hai mươi, cô ấy đã đứng trên đỉnh thế giới."
  },
  {
   "id": "q-cmp-emphasis-lo3b-02-mp-01",
@@ -306,7 +310,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-lo3b-02"
+  "comparisonSetId": "cmp-emphasis-lo3b-02",
+  "stemVi": "Cách xử lý đó chính là đùn đẩy trách nhiệm chứ không gì khác."
  },
  {
   "id": "q-cmp-emphasis-lo3b-02-mp-02",
@@ -367,7 +372,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-lo3b-02"
+  "comparisonSetId": "cmp-emphasis-lo3b-02",
+  "stemVi": "Khả năng tập trung của anh ấy phi thường, thậm chí có thể nói là bất thường."
  },
  {
   "id": "q-cmp-negation-lo3b-01-mp-01",
@@ -432,7 +438,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3b-01"
+  "comparisonSetId": "cmp-negation-lo3b-01",
+  "stemVi": "Công trình không nhúc nhích, tình hình chẳng hề cải thiện chút nào."
  },
  {
   "id": "q-cmp-negation-lo3b-01-mp-02",
@@ -497,7 +504,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3b-01"
+  "comparisonSetId": "cmp-negation-lo3b-01",
+  "stemVi": "Nguyên nhân vụ tai nạn thì hoàn toàn chẳng đoán ra nổi."
  },
  {
   "id": "q-cmp-negation-lo3b-02-mp-01",
@@ -560,7 +568,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3b-02"
+  "comparisonSetId": "cmp-negation-lo3b-02",
+  "stemVi": "Ơn này làm sao mà quên được."
  },
  {
   "id": "q-cmp-negation-lo3b-02-mp-02",
@@ -623,7 +632,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3b-02"
+  "comparisonSetId": "cmp-negation-lo3b-02",
+  "stemVi": "Thành quả này có lẽ có thể xem là kết tinh của nỗ lực."
  },
  {
   "id": "q-cmp-time-lo3b-02-mp-01",
@@ -686,7 +696,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-lo3b-02"
+  "comparisonSetId": "cmp-time-lo3b-02",
+  "stemVi": "Anh ta quay lưng đi rồi cứ thế không ngoái lại lần nào."
  },
  {
   "id": "q-cmp-time-lo3b-02-mp-02",
@@ -749,7 +760,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-lo3b-02"
+  "comparisonSetId": "cmp-time-lo3b-02",
+  "stemVi": "Nhắn tin hay gọi điện gì cũng được, mong báo sớm cho tôi."
  },
  {
   "id": "q-cmp-degree-lo3b-01-mp-01",
@@ -810,7 +822,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3b-01"
+  "comparisonSetId": "cmp-degree-lo3b-01",
+  "stemVi": "Dù chỉ một ngày cũng không thể lơ là."
  },
  {
   "id": "q-cmp-degree-lo3b-01-mp-02",
@@ -871,7 +884,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3b-01"
+  "comparisonSetId": "cmp-degree-lo3b-01",
+  "stemVi": "Dù chỉ một lời thôi, tôi cũng muốn nói lời cảm ơn."
  },
  {
   "id": "q-cmp-negation-lo3b-03-mp-01",
@@ -932,7 +946,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3b-03"
+  "comparisonSetId": "cmp-negation-lo3b-03",
+  "stemVi": "Định bắt chuyện mà rốt cuộc chưa kịp nói."
  },
  {
   "id": "q-cmp-negation-lo3b-03-mp-02",
@@ -993,7 +1008,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3b-03"
+  "comparisonSetId": "cmp-negation-lo3b-03",
+  "stemVi": "Cơ hội hiếm có vậy mà rốt cuộc tôi đã không đi được."
  },
  {
   "id": "q-cmp-purpose-lo3b-01-mp-01",
@@ -1056,7 +1072,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-purpose-lo3b-01"
+  "comparisonSetId": "cmp-purpose-lo3b-01",
+  "stemVi": "Anh ta mượn cớ tiếp khách để ăn ở nhà hàng sang."
  },
  {
   "id": "q-cmp-purpose-lo3b-01-mp-02",
@@ -1119,7 +1136,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-purpose-lo3b-01"
+  "comparisonSetId": "cmp-purpose-lo3b-01",
+  "stemVi": "Tiện vận động, tôi đi bộ về một chặng ga."
  },
  {
   "id": "q-cmp-addition-lo3b-01-mp-01",
@@ -1180,7 +1198,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-addition-lo3b-01"
+  "comparisonSetId": "cmp-addition-lo3b-01",
+  "stemVi": "Bản báo cáo này gồm ba chương."
  },
  {
   "id": "q-cmp-addition-lo3b-01-mp-02",
@@ -1241,6 +1260,7 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-addition-lo3b-01"
+  "comparisonSetId": "cmp-addition-lo3b-01",
+  "stemVi": "Số doanh nghiệp lấy Tokyo làm cứ điểm đang tăng lên."
  }
 ]

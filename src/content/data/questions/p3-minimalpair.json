@@ -60,7 +60,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-p3-01"
+  "comparisonSetId": "cmp-time-p3-01",
+  "stemVi": "Từ đồng phục cho tới tận đồ dùng cá nhân đều được quy định chi tiết."
  },
  {
   "id": "q-cmp-time-p3-01-mp-02",
@@ -123,7 +124,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-time-p3-01"
+  "comparisonSetId": "cmp-time-p3-01",
+  "stemVi": "Người đi muộn liên tiếp, đến mức khối lớp hai thì vắng tới một nửa."
  },
  {
   "id": "q-cmp-evaluation-p3-01-mp-01",
@@ -184,7 +186,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-evaluation-p3-01"
+  "comparisonSetId": "cmp-evaluation-p3-01",
+  "stemVi": "Anh ấy có xu hướng nghĩ mọi việc phức tạp lên."
  },
  {
   "id": "q-cmp-evaluation-p3-01-mp-02",
@@ -245,7 +248,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-evaluation-p3-01"
+  "comparisonSetId": "cmp-evaluation-p3-01",
+  "stemVi": "Khi mệt thì dễ sinh ra phán đoán dễ dãi."
  },
  {
   "id": "q-cmp-degree-p3-01-mp-01",
@@ -308,7 +312,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-p3-01"
+  "comparisonSetId": "cmp-degree-p3-01",
+  "stemVi": "Niềm vui lúc biết tin đỗ thì không sao tả xiết."
  },
  {
   "id": "q-cmp-degree-p3-01-mp-02",
@@ -371,7 +376,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-p3-01"
+  "comparisonSetId": "cmp-degree-p3-01",
+  "stemVi": "Trông nhà một mình, thật là cô đơn hết sức."
  },
  {
   "id": "q-cmp-emphasis-p3-01-mp-01",
@@ -432,7 +438,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-p3-01"
+  "comparisonSetId": "cmp-emphasis-p3-01",
+  "stemVi": "Cảnh tượng hôm ấy, chỉ nhớ lại thôi đã thấy đau lòng."
  },
  {
   "id": "q-cmp-emphasis-p3-01-mp-02",
@@ -493,7 +500,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-emphasis-p3-01"
+  "comparisonSetId": "cmp-emphasis-p3-01",
+  "stemVi": "Từ giờ tới hạn chót, dù chỉ một phút cũng không được phí."
  },
  {
   "id": "q-cmp-concession-p3-01-mp-01",
@@ -554,7 +562,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-concession-p3-01"
+  "comparisonSetId": "cmp-concession-p3-01",
+  "stemVi": "Xưởng này tuy nhỏ nhưng vẫn giữ được tay nghề vững vàng."
  },
  {
   "id": "q-cmp-concession-p3-01-mp-02",
@@ -615,7 +624,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-concession-p3-01"
+  "comparisonSetId": "cmp-concession-p3-01",
+  "stemVi": "Khu này vẫn còn dãy phố y như thuở xưa."
  },
  {
   "id": "q-cmp-purpose-p3-01-mp-01",
@@ -678,7 +688,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-purpose-p3-01"
+  "comparisonSetId": "cmp-purpose-p3-01",
+  "stemVi": "Để thu xếp tình hình, một ban chỉ đạo đã được lập ra."
  },
  {
   "id": "q-cmp-purpose-p3-01-mp-02",
@@ -741,6 +752,7 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-purpose-p3-01"
+  "comparisonSetId": "cmp-purpose-p3-01",
+  "stemVi": "Đã lơ là kiểm tra thì hỏng hóc là chuyện tất phải xảy ra."
  }
 ]

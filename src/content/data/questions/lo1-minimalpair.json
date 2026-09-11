@@ -62,7 +62,8 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Kết cục của cuốn tiểu thuyết này nhất định sẽ gây chấn động cho người đọc."
  },
  {
   "id": "q-cmp-inevitability-02-mp-02",
@@ -127,7 +128,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Đã gây thiệt hại đến mức này thì người phụ trách không thể không giải trình."
  },
  {
   "id": "q-cmp-degree-01-mp-01",
@@ -191,7 +193,8 @@
   "sourcePage": "別冊 p.14",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chụp ảnh mà không xin phép thì đúng là vô cùng thiếu ý thức."
  },
  {
   "id": "q-cmp-degree-01-mp-02",
@@ -255,7 +258,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Lần này được nhận giải thưởng quá sức mình, thật là vinh dự tột cùng."
  },
  {
   "id": "q-cmp-time-02-mp-01",
@@ -320,7 +324,8 @@
   "sourcePage": "別冊 p.23",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Anh ta vừa ngồi xuống ghế là oà khóc."
  },
  {
   "id": "q-cmp-time-02-mp-02",
@@ -385,7 +390,8 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Cứ nhắc xong là bọn trẻ lại làm y như cũ."
  },
  {
   "id": "q-cmp-addition-01-mp-01",
@@ -449,7 +455,8 @@
   "sourcePage": "別冊 p.15",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ấy vừa làm ở công ty, vừa vẽ tranh vào ngày nghỉ."
  },
  {
   "id": "q-cmp-addition-01-mp-02",
@@ -513,7 +520,8 @@
   "sourcePage": "別冊 p.13",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Tôi đến vừa để cảm ơn hôm trước vừa để chào hỏi."
  },
  {
   "id": "q-cmp-emphasis-01-mp-01",
@@ -577,7 +585,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chế độ này không chỉ áp dụng cho nhân viên chính thức mà cả nhân viên thời vụ."
  },
  {
   "id": "q-cmp-emphasis-01-mp-02",
@@ -641,7 +650,8 @@
   "sourcePage": "別冊 p.32",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Bận tới mức đi du lịch đã đành, đến ăn ngoài cũng không có thời gian."
  },
  {
   "id": "q-cmp-evaluation-02-mp-01",
@@ -705,7 +715,8 @@
   "sourcePage": "別冊 p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Anh ấy là người xứng đáng được cấp dưới tin cậy."
  },
  {
   "id": "q-cmp-evaluation-02-mp-02",
@@ -769,7 +780,8 @@
   "sourcePage": "別冊 p.29",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Những bức ảnh hiện trường tai nạn thảm tới mức không nỡ nhìn."
  },
  {
   "id": "q-cmp-cause-01-mp-01",
@@ -833,7 +845,8 @@
   "sourcePage": "別冊 p.30",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Tôi chỉ bảo nghiêm khắc chính là vì nghĩ cho tương lai của cậu."
  },
  {
   "id": "q-cmp-cause-01-mp-02",
@@ -897,7 +910,8 @@
   "sourcePage": "別冊 p.29",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Vì là ngày đầu kỳ nghỉ dài nên nhà ga đông nghịt từ sáng."
  },
  {
   "id": "q-cmp-degree-02-mp-01",
@@ -960,7 +974,8 @@
   "sourcePage": "別冊 p.20",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Làm xong việc, anh ấy trở về trong bộ đồ bảo hộ bê bết dầu mỡ."
  },
  {
   "id": "q-cmp-degree-02-mp-02",
@@ -1023,7 +1038,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Năm nay là một năm toàn chuyện vui."
  },
  {
   "id": "q-cmp-condition-01-mp-01",
@@ -1087,7 +1103,8 @@
   "sourcePage": "別冊 p.10",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Dựa trên kết quả khảo sát lần này, chúng tôi sẽ quyết định phương hướng năm tới."
  },
  {
   "id": "q-cmp-condition-01-mp-02",
@@ -1151,7 +1168,8 @@
   "sourcePage": "別冊 p.4",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Chế độ phải là thứ bám sát thực trạng tại hiện trường."
  },
  {
   "id": "q-cmp-concession-02-mp-01",
@@ -1215,7 +1233,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Bây giờ có chạy hết sức thì cũng không kịp chuyến tàu đầu tiên."
  },
  {
   "id": "q-cmp-concession-02-mp-02",
@@ -1279,7 +1298,8 @@
   "sourcePage": "別冊 p.17",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Giá mà bàn với tôi một câu thì đã giúp được, vậy mà anh ấy im lặng đến cùng."
  },
  {
   "id": "q-cmp-stance-02-mp-01",
@@ -1342,7 +1362,8 @@
   "sourcePage": "別冊 p.26",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Trước dáng vẻ đổi thay của quê nhà, tôi không kìm được nỗi kinh ngạc."
  },
  {
   "id": "q-cmp-stance-02-mp-02",
@@ -1405,7 +1426,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Tôi luôn cầu chúc các em tân cử nhân gặt hái nhiều thành công."
  },
  {
   "id": "q-cmp-inevitability-03-mp-01",
@@ -1468,7 +1490,8 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Do ảnh hưởng của động đất, nhà máy buộc phải ngừng hoạt động."
  },
  {
   "id": "q-cmp-inevitability-03-mp-02",
@@ -1531,7 +1554,8 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Chứng cứ đã đầy đủ thì không thể không thừa nhận sự thật."
  },
  {
   "id": "q-cmp-evaluation-03-mp-01",
@@ -1594,7 +1618,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Trái ngược với phong độ sa sút năm ngoái, năm nay đội đang thắng như chẻ tre."
  },
  {
   "id": "q-cmp-evaluation-03-mp-02",
@@ -1657,6 +1682,7 @@
   "sourcePage": "別冊 p.7",
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Năm nay số người tham gia hoạt động của khu phố tăng hơn hẳn trước đây."
  }
 ]

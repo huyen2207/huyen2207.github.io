@@ -45,7 +45,8 @@
   "sourcePage": "別冊 p.33",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cái hạng nghiệp dư thì biết cái gì."
  },
  {
   "id": "q-yoku-mono-da-valid-01",
@@ -93,7 +94,8 @@
   "sourcePage": "別冊 p.33",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Hồi nhỏ tôi hay bơi ở con sông này. (câu SAI: đây là mẫu hồi tưởng, khác với mẫu bày tỏ kinh ngạc)"
  },
  {
   "id": "q-awaya-valid-01",
@@ -141,7 +143,8 @@
   "sourcePage": "別冊 p.34",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Suýt nữa thì vô địch. (câu SAI: mẫu này chỉ dùng cho việc xấu)"
  },
  {
   "id": "q-mo-sureba-valid-01",
@@ -189,7 +192,8 @@
   "sourcePage": "別冊 p.34",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Qua thầy giáo là sẽ hiểu. (câu SAI: phải là danh từ chỉ độ dài thời gian)"
  },
  {
   "id": "q-mottomo-da-valid-01",
@@ -237,7 +241,8 @@
   "sourcePage": "別冊 p.35",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Bị bắt chờ lâu thế thì giận cũng là đương nhiên."
  },
  {
   "id": "q-you-kanou-valid-01",
@@ -285,7 +290,8 @@
   "sourcePage": "別冊 p.35",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Kết quả này có lẽ có thể gọi là thành công."
  },
  {
   "id": "q-doushite-you-ka-valid-01",
@@ -333,7 +339,8 @@
   "sourcePage": "別冊 p.36",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Làm sao mà quên được, không, quên được chứ. (câu SAI: đây là câu hỏi tu từ mang nghĩa phủ định, vế sau tự mâu thuẫn)"
  },
  {
   "id": "q-ikani-valid-01",
@@ -381,7 +388,8 @@
   "sourcePage": "別冊 p.36",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Dù nỗ lực đến đâu, có khi kết quả vẫn không tới."
  },
  {
   "id": "q-ka-to-iu-to-valid-01",
@@ -429,7 +437,8 @@
   "sourcePage": "別冊 p.37",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Có phải cứ đắt là ngon không, thì đúng là ngon thật. (câu SAI: vế sau phải bác lại suy đoán)"
  },
  {
   "id": "q-ni-shite-nenrei-valid-01",
@@ -477,7 +486,8 @@
   "sourcePage": "別冊 p.37",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ấy ra mắt chuyên nghiệp khi mới mười lăm tuổi."
  },
  {
   "id": "q-isso-valid-01",
@@ -525,7 +535,8 @@
   "sourcePage": "別冊 p.38",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Sửa làm gì, chi bằng mua hẳn cái mới."
  },
  {
   "id": "q-nan-to-ittemo-valid-01",
@@ -573,7 +584,8 @@
   "sourcePage": "別冊 p.20",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Sức hút của thành phố này, nói gì thì nói, vẫn là đồ ăn."
  },
  {
   "id": "q-dochira-ni-shitemo-valid-01",
@@ -621,7 +633,8 @@
   "sourcePage": "別冊 p.14",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đằng nào cũng cần thông báo sớm. (câu SAI: thiếu hai khả năng nêu trước)"
  },
  {
   "id": "q-kokoro-okinaku-valid-01",
@@ -669,7 +682,8 @@
   "sourcePage": "別冊 p.14",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Xin quý vị cứ thoải mái, đừng ngại gì cả."
  },
  {
   "id": "q-shitte-ka-shirazu-ka-valid-01",
@@ -717,7 +731,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chẳng rõ có biết hay không, tôi đã phá lệ. (câu SAI: chủ thể phải là người khác)"
  },
  {
   "id": "q-iyaou-nashi-ni-valid-01",
@@ -765,7 +780,8 @@
   "sourcePage": "別冊 p.8",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Sự đổi thay của thời đại cuốn chúng ta vào bất kể muốn hay không."
  },
  {
   "id": "q-ga-saiwai-shite-valid-01",
@@ -813,7 +829,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "May nhờ ra sớm mà tôi đến muộn. (câu SAI: vế sau phải là kết quả tốt)"
  },
  {
   "id": "q-you-to-iu-mono-da-valid-01",
@@ -861,7 +878,8 @@
   "sourcePage": "別冊 p.4",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chuẩn bị đến thế thì thành công cũng là phải thôi."
  },
  {
   "id": "q-to-iu-fuu-ni-valid-01",
@@ -909,7 +927,8 @@
   "sourcePage": "別冊 p.25",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tôi nghĩ theo kiểu thất bại cũng là kinh nghiệm."
  },
  {
   "id": "q-ikanimo-valid-01",
@@ -957,7 +976,8 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Bày ra toàn những chiếc bánh trông đúng là ngon."
  },
  {
   "id": "q-dou-ni-ka-shite-valid-01",
@@ -1005,7 +1025,8 @@
   "sourcePage": "別冊 p.17",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Bằng mọi cách tôi muốn hoàn thành trước hạn."
  },
  {
   "id": "q-moto-moto-da-valid-01",
@@ -1053,6 +1074,7 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Ca phẫu thuật này thất bại thì cũng như cũ thôi. (câu SAI: chỉ dùng khi thất bại không gây thiệt hại)"
  }
 ]

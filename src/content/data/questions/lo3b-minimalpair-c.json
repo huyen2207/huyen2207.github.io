@@ -60,7 +60,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-evaluation-lo3b-02"
+  "comparisonSetId": "cmp-evaluation-lo3b-02",
+  "stemVi": "Bị bắt làm nhiều đến thế thì có bất mãn cũng là đương nhiên."
  },
  {
   "id": "q-cmp-evaluation-lo3b-02-mp-02",
@@ -123,7 +124,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-evaluation-lo3b-02"
+  "comparisonSetId": "cmp-evaluation-lo3b-02",
+  "stemVi": "Sao mà buông được những lời cay nghiệt đến thế nhỉ."
  },
  {
   "id": "q-cmp-condition-lo3b-01-mp-01",
@@ -184,7 +186,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-condition-lo3b-01"
+  "comparisonSetId": "cmp-condition-lo3b-01",
+  "stemVi": "Chừng một tuần là sẽ quen với công việc này thôi."
  },
  {
   "id": "q-cmp-condition-lo3b-01-mp-02",
@@ -246,7 +249,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-condition-lo3b-01"
+  "comparisonSetId": "cmp-condition-lo3b-01",
+  "stemVi": "Trừ phi đọc thật kỹ, không thì sẽ mắc bẫy đấy."
  },
  {
   "id": "q-cmp-cause-lo3b-01-mp-01",
@@ -307,7 +311,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-cause-lo3b-01"
+  "comparisonSetId": "cmp-cause-lo3b-01",
+  "stemVi": "May nhờ phát hiện sớm mà không xảy ra chuyện lớn."
  },
  {
   "id": "q-cmp-cause-lo3b-01-mp-02",
@@ -368,7 +373,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-cause-lo3b-01"
+  "comparisonSetId": "cmp-cause-lo3b-01",
+  "stemVi": "Vì việc quá gấp nên chúng tôi đã không chuẩn bị được chu đáo."
  },
  {
   "id": "q-cmp-assumption-lo3b-02-mp-01",
@@ -431,7 +437,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-assumption-lo3b-02"
+  "comparisonSetId": "cmp-assumption-lo3b-02",
+  "stemVi": "Sức hút của quán này, nói gì thì nói, vẫn là giá rẻ."
  },
  {
   "id": "q-cmp-assumption-lo3b-02-mp-02",
@@ -494,7 +501,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-assumption-lo3b-02"
+  "comparisonSetId": "cmp-assumption-lo3b-02",
+  "stemVi": "Nghe nói quán đó tháng này đóng cửa."
  },
  {
   "id": "q-cmp-concession-lo3b-01-mp-01",
@@ -555,7 +563,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-concession-lo3b-01"
+  "comparisonSetId": "cmp-concession-lo3b-01",
+  "stemVi": "Đỗ hay trượt, đằng nào tuần sau cũng biết kết quả."
  },
  {
   "id": "q-cmp-concession-lo3b-01-mp-02",
@@ -616,7 +625,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-concession-lo3b-01"
+  "comparisonSetId": "cmp-concession-lo3b-01",
+  "stemVi": "Gác giá cả sang bên, chất lượng thì không chê vào đâu được."
  },
  {
   "id": "q-cmp-stance-lo3b-02-mp-01",
@@ -678,7 +688,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3b-02"
+  "comparisonSetId": "cmp-stance-lo3b-02",
+  "stemVi": "Cảm ơn quý vị đã tới dự dù đường sá đi lại khó khăn."
  },
  {
   "id": "q-cmp-stance-lo3b-02-mp-02",
@@ -739,7 +750,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3b-02"
+  "comparisonSetId": "cmp-stance-lo3b-02",
+  "stemVi": "Đã chuẩn bị xong rồi. Xin quý vị cứ thoải mái dùng bữa."
  },
  {
   "id": "q-cmp-degree-lo3b-05-mp-01",
@@ -800,7 +812,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3b-05"
+  "comparisonSetId": "cmp-degree-lo3b-05",
+  "stemVi": "Giải thích đến đâu anh ta cũng không chịu hiểu."
  },
  {
   "id": "q-cmp-degree-lo3b-05-mp-02",
@@ -861,7 +874,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-degree-lo3b-05"
+  "comparisonSetId": "cmp-degree-lo3b-05",
+  "stemVi": "Cách nói chuyện điềm đạm đúng chất một học giả."
  },
  {
   "id": "q-cmp-stance-lo3b-03-mp-01",
@@ -922,7 +936,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3b-03"
+  "comparisonSetId": "cmp-stance-lo3b-03",
+  "stemVi": "Tôi hiểu theo kiểu dục tốc bất đạt."
  },
  {
   "id": "q-cmp-stance-lo3b-03-mp-02",
@@ -984,7 +999,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3b-03"
+  "comparisonSetId": "cmp-stance-lo3b-03",
+  "stemVi": "Những loài hoa mùa xuân như anh đào, mai đã bắt đầu nở."
  },
  {
   "id": "q-cmp-stance-lo3b-04-mp-01",
@@ -1047,7 +1063,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3b-04"
+  "comparisonSetId": "cmp-stance-lo3b-04",
+  "stemVi": "Thay vì phân vân nửa vời, chi bằng nghỉ hẳn cho xong."
  },
  {
   "id": "q-cmp-stance-lo3b-04-mp-02",
@@ -1110,7 +1127,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-stance-lo3b-04"
+  "comparisonSetId": "cmp-stance-lo3b-04",
+  "stemVi": "Bị từ chối thì cũng như cũ thôi. Cứ thử hỏi xem sao."
  },
  {
   "id": "q-cmp-negation-lo3b-04-mp-01",
@@ -1171,7 +1189,8 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3b-04"
+  "comparisonSetId": "cmp-negation-lo3b-04",
+  "stemVi": "Đừng lo. Tôi tuyệt đối không làm lộ bí mật đâu."
  },
  {
   "id": "q-cmp-negation-lo3b-04-mp-02",
@@ -1232,6 +1251,7 @@
   "verificationStatus": "VERIFIED",
   "testedSkill": "COMPARE",
   "difficultyStatic": 4,
-  "comparisonSetId": "cmp-negation-lo3b-04"
+  "comparisonSetId": "cmp-negation-lo3b-04",
+  "stemVi": "Về việc này, công ty chúng tôi không chịu bất kỳ trách nhiệm nào."
  }
 ]

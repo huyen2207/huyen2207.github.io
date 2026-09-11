@@ -400,7 +400,8 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đi một mình, thật là cô đơn hết sức."
  },
  {
   "id": "q-to-shika-ii-you-ga-nai-form-01",
@@ -457,7 +458,8 @@
   "sourcePage": "別冊 p.13",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chuyện đó chỉ có thể gọi là kỳ tích."
  },
  {
   "id": "q-ni-kakawaru-form-01",
@@ -514,7 +516,8 @@
   "sourcePage": "別冊 p.28",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đây là vấn đề động tới tính mạng."
  },
  {
   "id": "q-ni-kakatte-iru-form-01",
@@ -571,7 +574,8 @@
   "sourcePage": "別冊 p.35",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Thành hay bại là tuỳ vào nỗ lực của cậu."
  },
  {
   "id": "q-ikan-da-form-01",
@@ -628,7 +632,8 @@
   "sourcePage": "別冊 p.3",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Có thực hiện hay không là tuỳ vào tình hình sắp tới."
  },
  {
   "id": "q-ikan-ni-yotte-wa-form-01",
@@ -685,7 +690,8 @@
   "sourcePage": "別冊 p.30",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tuỳ kết quả xét nghiệm, có khi phải nhập viện."
  },
  {
   "id": "q-naku-shite-form-01",
@@ -742,7 +748,8 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không có nỗ lực thì không thể có thành công."
  },
  {
   "id": "q-nashi-ni-form-01",
@@ -801,7 +808,8 @@
   "sourcePage": "別冊 p.12",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ta ghé thăm mà không báo trước."
  },
  {
   "id": "q-koto-nashi-ni-form-01",
@@ -856,7 +864,8 @@
   "sourcePage": "別冊 p.18",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Không nỗ lực thì không thể tiến bộ."
  },
  {
   "id": "q-nara-madashimo-form-01",
@@ -915,7 +924,8 @@
   "sourcePage": "別冊 p.28",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Trẻ con thì còn được, đằng này người lớn mà lại nói vậy."
  },
  {
   "id": "q-iza-shirazu-form-01",
@@ -972,7 +982,8 @@
   "sourcePage": "別冊 p.33",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chuyên gia thì không biết, chứ người ngoài nghề thì không thể."
  },
  {
   "id": "q-to-omoi-kiya-form-01",
@@ -1029,7 +1040,8 @@
   "sourcePage": "別冊 p.20",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tưởng suôn sẻ, hoá ra ngay trước đó lại nảy sinh vấn đề."
  },
  {
   "id": "q-n-bakari-form-01",
@@ -1084,7 +1096,8 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cô ấy đón tôi bằng nụ cười như sắp tràn ra."
  },
  {
   "id": "q-to-bakari-ni-form-01",
@@ -1141,6 +1154,7 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Như thể muốn nói không đợi được nữa, anh ta đứng bật dậy."
  }
 ]

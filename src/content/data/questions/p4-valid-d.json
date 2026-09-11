@@ -45,7 +45,8 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tôi chỉ làm điều đương nhiên thôi."
  },
  {
   "id": "q-temae-valid-01",
@@ -93,7 +94,8 @@
   "sourcePage": "別冊 p.11",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vì buồn ngủ nên tôi ngủ mất. (câu SAI: phải có yếu tố thể diện trước người khác)"
  },
  {
   "id": "q-to-kitara-valid-01",
@@ -141,7 +143,8 @@
   "sourcePage": "別冊 p.14",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Nói tới giám đốc thì thật là một người đáng kính. (câu SAI: mẫu này dùng để chê và không dùng với người trên)"
  },
  {
   "id": "q-made-mo-nai-valid-01",
@@ -189,7 +192,8 @@
   "sourcePage": "別冊 p.17",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Khỏi cần nói cũng biết, sức khoẻ là trên hết."
  },
  {
   "id": "q-nara-dewa-valid-01",
@@ -237,7 +241,8 @@
   "sourcePage": "別冊 p.18",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đây là cái dở chỉ quán này mới có. (câu SAI: mẫu này chỉ dùng để khen)"
  },
  {
   "id": "q-nari-no-valid-01",
@@ -285,7 +290,8 @@
   "sourcePage": "別冊 p.18",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Xin thầy cho ý kiến trong khả năng của thầy. (câu SAI: mẫu này hàm ý khiêm nhường, không dùng với người trên)"
  },
  {
   "id": "q-de-nakute-nan-darou-valid-01",
@@ -333,7 +339,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cái này không phải cái bàn thì là gì. (câu SAI: phải là khái niệm trừu tượng)"
  },
  {
   "id": "q-tomo-naku-valid-01",
@@ -381,7 +388,8 @@
   "sourcePage": "別冊 p.19",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Ăn mà chẳng chủ ý ăn. (câu SAI: mẫu này chỉ đi với động từ tri giác)"
  },
  {
   "id": "q-to-shita-tokoro-de-valid-01",
@@ -429,7 +437,8 @@
   "sourcePage": "別冊 p.21",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cho dù có vội thì vẫn kịp. (câu SAI: vế sau phải là kết quả không mong muốn)"
  },
  {
   "id": "q-nai-mono-demo-nai-valid-01",
@@ -477,7 +486,8 @@
   "sourcePage": "別冊 p.22",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tuỳ điều kiện, cũng không hẳn là tôi không nhận."
  },
  {
   "id": "q-ni-wa-oyobanai-valid-01",
@@ -525,7 +535,8 @@
   "sourcePage": "別冊 p.24",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chỉ là vết thương nhẹ nên xin đừng bận tâm."
  },
  {
   "id": "q-meku-valid-01",
@@ -573,7 +584,8 @@
   "sourcePage": "別冊 p.25",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Câu chuyện nhuốm vẻ cái bàn. (câu SAI: mẫu này chỉ ghép vài danh từ trừu tượng)"
  },
  {
   "id": "q-nai-tomo-kagiranai-valid-01",
@@ -621,7 +633,8 @@
   "sourcePage": "別冊 p.25",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không chắc là động đất sẽ không xảy ra, nên hãy chuẩn bị trước."
  },
  {
   "id": "q-nai-made-mo-valid-01",
@@ -669,7 +682,8 @@
   "sourcePage": "別冊 p.26",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không đòi mỗi ngày, nhưng mong cứ mỗi tiếng lại đến. (câu SAI: vế sau phải nhẹ hơn vế trước)"
  },
  {
   "id": "q-tomo-nashi-ni-valid-01",
@@ -717,7 +731,8 @@
   "sourcePage": "別冊 p.26",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Chạy mà chẳng chủ ý chạy. (câu SAI: mẫu này chỉ đi với động từ tri giác)"
  },
  {
   "id": "q-hitori-nomi-narazu-valid-01",
@@ -765,7 +780,8 @@
   "sourcePage": "別冊 p.30",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không chỉ riêng cái bàn, cái ghế cũng cũ. (câu SAI: phải là người hoặc tổ chức)"
  },
  {
   "id": "q-mo-soko-soko-ni-valid-01",
@@ -813,7 +829,8 @@
   "sourcePage": "別冊 p.34",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Sách cũng qua quýt rồi đi ra ngoài. (câu SAI: phải là danh từ chỉ hành động)"
  },
  {
   "id": "q-ni-wa-ataranai-valid-01",
@@ -861,7 +878,8 @@
   "sourcePage": "別冊 p.37",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Việc anh ấy đoạt giải không có gì đáng ngạc nhiên."
  },
  {
   "id": "q-iza-to-naru-to-valid-01",
@@ -909,7 +927,8 @@
   "sourcePage": "別冊 p.38",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Lúc tập thì bình thường, vậy mà đến lúc diễn thật thì chân run."
  },
  {
   "id": "q-kototote-valid-01",
@@ -957,7 +976,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vì là ngày nghỉ nên tôi ngủ rất ngon. (câu SAI: vế sau phải là lời xin lỗi)"
  },
  {
   "id": "q-ni-tsugu-valid-01",
@@ -1005,7 +1025,8 @@
   "sourcePage": "別冊 p.5",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tai hoạ nối tiếp tai hoạ khiến ngôi làng kiệt quệ."
  },
  {
   "id": "q-ni-shite-mo-aru-valid-01",
@@ -1053,6 +1074,7 @@
   "sourcePage": "別冊 p.6",
   "verificationStatus": "VERIFIED",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Vừa là màu đỏ vừa là màu xanh. (câu SAI: hai bên phải là nghề nghiệp hoặc vị trí)"
  }
 ]

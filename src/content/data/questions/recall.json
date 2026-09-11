@@ -738,7 +738,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Buộc phải làm."
  },
  {
   "id": "q-narade-wa-form-01",
@@ -796,7 +797,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Đây là hương vị chỉ quán này mới có."
  },
  {
   "id": "q-ni-itatte-form-01",
@@ -911,7 +913,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Không thể không khóc."
  },
  {
   "id": "q-kirai-ga-aru-form-01",
@@ -1036,7 +1039,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cho dù là trẻ con thì cũng phải giữ quy định."
  },
  {
   "id": "q-wo-yoso-ni-form-01",
@@ -1147,7 +1151,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Từ trang phục cho tới tận kiểu tóc."
  },
  {
   "id": "q-ni-itatte-recog-01",
@@ -1210,7 +1215,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Đến khi thiệt hại lan rộng, biện pháp mới được đưa ra."
  },
  {
   "id": "q-narade-wa-recog-01",
@@ -1266,7 +1272,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Tôi xúc động trước cung cách tiếp đãi chỉ nhà trọ này mới có."
  },
  {
   "id": "q-to-wa-ie-recog-01",
@@ -1322,7 +1329,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tuy đã đỗ nhưng vẫn chưa được chủ quan."
  },
  {
   "id": "q-wo-mono-tomosezu-recog-01",
@@ -1378,7 +1386,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Bất chấp chấn thương nặng, anh ấy đã vô địch."
  },
  {
   "id": "q-narade-wa-valid-01",
@@ -1426,7 +1435,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đây là cái dở chỉ quán này mới có. (câu SAI: mẫu này chỉ dùng để khen)"
  },
  {
   "id": "q-kirai-ga-aru-valid-01",
@@ -1468,7 +1478,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 2
+  "difficultyStatic": 2,
+  "stemVi": "Anh ấy có xu hướng tử tế với người khác. (câu SAI: mẫu này chỉ dùng cho xu hướng xấu)"
  },
  {
   "id": "q-nai-dewa-irarenai-valid-01",
@@ -1515,7 +1526,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Lần nào anh ta cũng không thể không khóc. (câu SAI: mẫu này nói cảm xúc trào lên một lần, không phải thói quen lặp lại)"
  },
  {
   "id": "q-wo-yoso-ni-valid-01",
@@ -1556,7 +1568,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "KNOW",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Mặc kệ mưa lớn, anh ấy vẫn tiếp tục leo núi. (câu SAI: mẫu này dùng với tình cảm của người khác, không dùng với thiên tai)"
  },
  {
   "id": "q-cmp-stance-01-ctx-01",
@@ -1625,7 +1638,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Mặc kệ sự phản đối của cư dân, công trình vẫn bị làm cho bằng được."
  },
  {
   "id": "q-cmp-inevitability-01-ctx-01",
@@ -1689,6 +1703,7 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "COMPARE",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đã là mệnh lệnh của cấp trên thì buộc phải tuân theo."
  }
 ]

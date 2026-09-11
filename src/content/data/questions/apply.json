@@ -79,7 +79,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đến khi thiệt hại lan ra cả nước, chính phủ mới chịu ra tay."
  },
  {
   "id": "q-ni-itaru-made-cloze-01",
@@ -154,7 +155,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Từ phương châm kinh doanh cho tới tận trang phục nhân viên, tất cả đều do giám đốc quyết."
  },
  {
   "id": "q-ni-itatte-wa-cloze-01",
@@ -218,7 +220,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Môn nào điểm cũng tụt, đến mức môn toán thì suýt nữa là điểm liệt."
  },
  {
   "id": "q-narade-wa-cloze-01",
@@ -288,7 +291,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Lễ hội này có bầu không khí sôi động chỉ vùng đất này mới có."
  },
  {
   "id": "q-nari-ni-cloze-01",
@@ -358,7 +362,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Kinh nghiệm còn ít nhưng anh ấy vẫn mày mò cải tiến theo cách của mình."
  },
  {
   "id": "q-to-iedomo-cloze-01",
@@ -427,7 +432,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Cho dù là giám đốc thì cũng không thể phớt lờ quy định."
  },
  {
   "id": "q-to-wa-ie-cloze-01",
@@ -491,7 +497,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tuy giá đã giảm nhưng vẫn chưa phải mức mua được dễ dàng."
  },
  {
   "id": "q-zaru-wo-enai-cloze-01",
@@ -566,7 +573,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Ngân sách đã bị cắt thì buộc phải thu hẹp kế hoạch."
  },
  {
   "id": "q-nai-dewa-irarenai-cloze-01",
@@ -629,7 +637,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Xem hình ảnh vùng thiên tai, tôi không thể không muốn làm điều gì đó."
  },
  {
   "id": "q-wo-mono-tomosezu-cloze-01",
@@ -699,7 +708,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Bất chấp gió lớn, đội cứu hoả vẫn tiếp tục công tác cứu hộ."
  },
  {
   "id": "q-wo-yoso-ni-cloze-01",
@@ -762,7 +772,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Mặc kệ kỳ vọng của mọi người, anh ấy tuyên bố giải nghệ một cách dứt khoát."
  },
  {
   "id": "q-kirai-ga-aru-cloze-01",
@@ -824,7 +835,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Anh ấy có vẻ hay vội vàng đưa ra kết luận."
  },
  {
   "id": "q-mixed-cloze-01",
@@ -896,7 +908,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 5
+  "difficultyStatic": 5,
+  "stemVi": "Đến khi khoản lỗ phình to tới mức này, ban lãnh đạo buộc phải thừa nhận cần đổi hướng."
  },
  {
   "id": "q-mixed-cloze-02",
@@ -959,7 +972,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Tay nghề tỉ mỉ chỉ xưởng này mới có thì hàng sản xuất đại trà không bắt chước nổi."
  },
  {
   "id": "q-build-01",
@@ -1042,7 +1056,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Đến khi vấn đề lan rộng, họ mới bắt đầu ứng phó."
  },
  {
   "id": "q-build-02",
@@ -1119,7 +1134,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Mặc kệ sự phản đối của cư dân, công trình đã được tiến hành."
  },
  {
   "id": "q-build-03",
@@ -1196,7 +1212,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Cho dù là ai đi nữa thì cũng không được tha thứ."
  },
  {
   "id": "q-build-04",
@@ -1273,7 +1290,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Ở cửa hàng này, từ đồ dùng nhỏ cho tới tận đồ nội thất đều có đủ."
  },
  {
   "id": "q-build-05",
@@ -1361,7 +1379,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 5
+  "difficultyStatic": 5,
+  "stemVi": "Chứng cứ đã đầy đủ nên buộc phải thừa nhận."
  },
  {
   "id": "q-text-01",
@@ -1725,7 +1744,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Đến khi thiệt hại lan rộng, chính phủ mới ra tay."
  },
  {
   "id": "q-trapid-02",
@@ -1785,7 +1805,8 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 4
+  "difficultyStatic": 4,
+  "stemVi": "Đây là cái dở chỉ quán này mới có. (câu SAI: mẫu này chỉ dùng để khen)"
  },
  {
   "id": "q-trapid-03",
@@ -1845,6 +1866,7 @@
   "sourceId": "ai-seed",
   "verificationStatus": "NEEDS_REVIEW",
   "testedSkill": "DETECT",
-  "difficultyStatic": 3
+  "difficultyStatic": 3,
+  "stemVi": "Buộc phải thu hẹp kế hoạch."
  }
 ]
