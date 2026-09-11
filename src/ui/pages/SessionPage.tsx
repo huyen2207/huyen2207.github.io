@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import type { SessionItem } from '@/domain/session';
+import type { DailySession, SessionItem } from '@/domain/session';
 import type { SessionBlockType } from '@/domain/enums';
 import type { GradeResult } from '@/engines/exercise';
 import { useAppStore } from '@/app/stores/appStore';
 import { markLearnCard } from '@/app/services/answerService';
-import { completeSession, markSessionStarted, saveSession } from '@/app/services/sessionService';
+import { completeSession, markSessionStarted, saveSession, refreshAnalyze } from '@/app/services/sessionService';
 import { finalizeSession } from '@/app/services/analyticsService';
 import { getComparisonSet, getGrammarView, getQuestion } from '@/content/repository';
 import { attemptRepo } from '@/storage/repositories';
@@ -78,7 +78,15 @@ export default function SessionPage() {
       return;
     }
     const target = flat[next];
-    await saveSession({ ...session, cursor: { blockIndex: target.blockIndex, itemIndex: target.itemIndex } });
+    let moved: DailySession = { ...session, cursor: { blockIndex: target.blockIndex, itemIndex: target.itemIndex } };
+    await saveSession(moved);
+
+    // Sắp bước vào khối "Chữa lỗi" → dựng lại nội dung theo các câu VỪA làm.
+    // Buổi học sinh từ đầu ngày nên nếu không làm mới, nó vẫn báo "không có câu sai".
+    if (ctx && target.blockType === 'ANALYZE_ERROR' && flat[pos]?.blockType !== 'ANALYZE_ERROR') {
+      moved = await refreshAnalyze(ctx, moved);
+      setSession(moved);
+    }
     setPos(next);
   }, [ctx, flat, pos, session, setSession]);
 

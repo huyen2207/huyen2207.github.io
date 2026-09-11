@@ -480,6 +480,28 @@ function questionItems(pick: PickResult, delivery: DeliveryMode, _env: SessionEn
   }));
 }
 
+/**
+ * Dựng lại nội dung khối ANALYZE_ERROR từ nguyên liệu lỗi HIỆN TẠI.
+ *
+ * Buổi học được sinh một lần vào đầu ngày, lúc đó chưa có câu trả lời nào — nên nếu
+ * để nguyên, khối này vĩnh viễn báo "hôm nay không có câu sai" dù người học sai bao nhiêu.
+ * Phải gọi lại ngay trước khi người học bước vào khối (arch §8.3).
+ */
+export function refreshAnalyzeBlock(
+  session: DailySession,
+  env: SessionEnv,
+  timeline: Timeline,
+): DailySession {
+  const block = session.blocks.find((b) => b.type === 'ANALYZE_ERROR');
+  if (!block) return session;
+  const capacity = Math.max(1, capacityOf('ANALYZE_ERROR', block.budgetMinutes, timeline));
+  const items = buildAnalyzeItems(env, capacity);
+  return {
+    ...session,
+    blocks: session.blocks.map((b) => (b.type === 'ANALYZE_ERROR' ? { ...b, items } : b)),
+  };
+}
+
 function buildAnalyzeItems(env: SessionEnv, capacity: number): SessionItem[] {
   const materials = env.errorMaterials.slice(0, Math.max(1, capacity));
   if (materials.length === 0) {

@@ -6,6 +6,7 @@ import {
   computeRatios,
   dailyReviewCapacity,
   displayGroups,
+  refreshAnalyzeBlock,
   estimatedMinutes,
   type SessionEnv,
   type SessionInput,
@@ -481,5 +482,43 @@ describe('H9 lọc nhưng KHÔNG làm cạn buổi học', () => {
       }
     }
     console.log('BUỔI 1:', report.join(' · '));
+  });
+});
+
+describe('Khối Chữa lỗi phải phản ánh câu VỪA làm, không phải ảnh chụp đầu ngày', () => {
+  it('dựng lúc chưa có bài làm thì báo không có lỗi', () => {
+    const s = buildDailySession(baseInput({ env: makeEnv({ errorMaterials: [] }) }));
+    const items = s.blocks.find((b) => b.type === 'ANALYZE_ERROR')!.items;
+    expect(items).toHaveLength(1);
+    expect(items[0].kind === 'ERROR_REVIEW' && items[0].noteKey).toBe('analyze.noErrors');
+  });
+
+  it('sau khi có câu sai, refreshAnalyzeBlock thay bằng chính các câu đó', () => {
+    const built = buildDailySession(baseInput({ env: makeEnv({ errorMaterials: [] }) }));
+    expect(
+      built.blocks.find((b) => b.type === 'ANALYZE_ERROR')!.items[0],
+    ).toMatchObject({ noteKey: 'analyze.noErrors' });
+
+    // Người học làm bài xong, giờ mới có nguyên liệu lỗi.
+    const withErrors = makeEnv({
+      errorMaterials: [{ attemptIds: ['att_1', 'att_2'], noteKey: 'analyze.todayErrors' }],
+    });
+    const refreshed = refreshAnalyzeBlock(built, withErrors, baseInput().timeline);
+    const items = refreshed.blocks.find((b) => b.type === 'ANALYZE_ERROR')!.items;
+    expect(items).toHaveLength(1);
+    expect(items[0]).toMatchObject({ noteKey: 'analyze.todayErrors', attemptIds: ['att_1', 'att_2'] });
+  });
+
+  it('chỉ đụng vào khối ANALYZE_ERROR, các khối khác giữ nguyên', () => {
+    const built = buildDailySession(baseInput());
+    const refreshed = refreshAnalyzeBlock(
+      built,
+      makeEnv({ errorMaterials: [{ attemptIds: ['x'], noteKey: 'analyze.todayErrors' }] }),
+      baseInput().timeline,
+    );
+    for (const b of built.blocks) {
+      if (b.type === 'ANALYZE_ERROR') continue;
+      expect(refreshed.blocks.find((r) => r.type === b.type)!.items).toEqual(b.items);
+    }
   });
 });

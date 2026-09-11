@@ -758,6 +758,21 @@ Session của một ngày được **sinh một lần** và lưu lại; mở l�
 
 ### 8.3 Trả lời một câu (đường nóng nhất)
 
+**Bổ sung 2026-09-11 — khối ANALYZE_ERROR phải được dựng LẠI trước khi bước vào.**
+
+`getOrCreateTodaySession` sinh buổi học **một lần vào đầu ngày** và lưu lại (arch §8.2).
+Lúc đó chưa có `Attempt` nào của hôm nay, nên `buildErrorMaterials` không tìm thấy câu sai
+và khối ANALYZE_ERROR bị đóng băng ở thông điệp "hôm nay không có câu sai" — kể cả khi
+người học sau đó sai hàng chục câu. Màn tổng kết lại tính lại từ `Attempt` thật nên hiện
+đúng tỉ lệ, tạo ra mâu thuẫn ngay trong một buổi học.
+
+`refreshAnalyzeBlock(session, env, timeline)` dựng lại **chỉ** khối đó từ nguyên liệu lỗi
+hiện tại; `SessionPage` gọi ngay khi con trỏ sắp bước vào ANALYZE_ERROR.
+`refreshAnalyze()` ở tầng app **đọc lại `Attempt` từ DB** chứ không tin `ctx.attempts` trong
+store — các câu vừa trả lời có thể chưa kịp vào ctx, mà đó đúng là những câu cần chữa.
+
+
+
 ```
 UI: chọn đáp án + confidence
   → ExerciseEngine.grade()

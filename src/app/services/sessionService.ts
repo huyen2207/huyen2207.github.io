@@ -7,6 +7,7 @@ import {
   dailyReviewCapacity,
   type SessionEnv,
   type TodayErrorMaterial,
+  refreshAnalyzeBlock,
 } from '@/engines/session';
 import { evaluate } from '@/engines/adaptation';
 import { selectDueItems } from '@/engines/review';
@@ -161,6 +162,22 @@ export async function getOrCreateTodaySession(ctx: EngineContext, force = false)
   }
   await sessionRepo.put(session);
   return session;
+}
+
+/**
+ * Làm mới khối "Chữa lỗi" theo các câu đã trả lời tới thời điểm này.
+ * Gọi ngay trước khi người học bước vào khối đó — nếu không, nội dung vẫn là
+ * ảnh chụp lúc đầu ngày (khi chưa ai trả lời câu nào).
+ */
+export async function refreshAnalyze(ctx: EngineContext, session: DailySession): Promise<DailySession> {
+  // ĐỌC LẠI attempt từ DB: ctx trong store có thể chưa kịp cập nhật các câu vừa trả lời,
+  // mà đó chính là những câu cần đưa vào phần chữa lỗi.
+  const attempts = await attemptRepo.all();
+  const fresh: EngineContext = { ...ctx, attempts };
+  const seedBase = hashString(`${fresh.timeline.todayKey}|${fresh.plan.version}`);
+  const next = refreshAnalyzeBlock(session, makeSessionEnv(fresh, seedBase), fresh.timeline);
+  await sessionRepo.put(next);
+  return next;
 }
 
 export async function saveSession(session: DailySession): Promise<void> {
