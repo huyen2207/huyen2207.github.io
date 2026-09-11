@@ -117,16 +117,19 @@ export function ExplanationPanel({
   feedback,
   choiceLabels,
   grammar,
+  otherGrammars,
   children,
 }: {
   feedback: FeedbackPayload;
   choiceLabels: Record<string, string>;
   /** Mẫu để ôn lại cấu trúc; chỉ truyền khi câu hỏi nhắm đúng một mẫu. */
   grammar?: GrammarView;
+  /** Các mẫu còn lại của câu so sánh — hiện thu gọn, bấm mới mở. */
+  otherGrammars?: GrammarView[];
   children?: ReactNode;
 }) {
   const hasAny =
-    feedback.explanationVi || feedback.keyClueVi || feedback.trap || feedback.solvingStrategy || grammar;
+    feedback.explanationVi || feedback.keyClueVi || feedback.trap || feedback.solvingStrategy || grammar || otherGrammars?.length;
   if (!hasAny) return <>{children}</>;
 
   return (
@@ -199,6 +202,36 @@ export function ExplanationPanel({
       )}
 
       {grammar && <StructureRecap grammar={grammar} />}
+
+      {otherGrammars && otherGrammars.length > 0 && (
+        <Card className="px-3.5 py-3">
+          <details>
+            <summary className="cursor-pointer text-[12px] font-semibold uppercase tracking-wide" style={{ color: 'var(--ink-faint)' }}>
+              {t('question.reviewStructureAll', { n: otherGrammars.length })}
+            </summary>
+            <div className="mt-3 space-y-4">
+              {otherGrammars.map((g) => (
+                <div key={g.id}>
+                  <p className="ja text-[18px] font-semibold leading-tight">{g.pattern}</p>
+                  <p className="mt-0.5 text-[14px] leading-relaxed">{g.meaningVi}</p>
+                  <ul className="mt-1.5 space-y-0.5">
+                    {g.structure.map((st, i) => (
+                      <li key={i} className="ja text-[15px]">
+                        {st.form}
+                      </li>
+                    ))}
+                  </ul>
+                  {g.restrictions[0] && (
+                    <p className="mt-1 text-[13px] leading-relaxed" style={{ color: 'var(--ink-soft)' }}>
+                      {g.restrictions[0].ruleVi}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </details>
+        </Card>
+      )}
 
       {children}
     </div>

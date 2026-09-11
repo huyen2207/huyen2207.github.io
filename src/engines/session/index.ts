@@ -317,11 +317,25 @@ export function buildDailySession(input: SessionInput): DailySession {
     learnIds.map((grammarId) => ({ kind: 'LEARN_CARD', grammarId }) as SessionItem),
   );
 
+  /**
+   * Mẫu được phép xuất hiện trong câu hỏi hôm nay (H9):
+   * đã học từ trước (state ≠ UNSEEN) CỘNG các mẫu học ngay trong buổi này.
+   * Thiếu vế thứ hai thì RECALL sẽ không có câu cho mẫu vừa dạy.
+   */
+  const introducedGrammarIds = [
+    ...plan.requiredGrammarIds.filter((id) => {
+      const m = byId.get(id);
+      return m && m.state !== 'UNSEEN';
+    }),
+    ...learnIds,
+  ];
+
   /* RECALL — mỗi mẫu vừa học phải có ≥ 1 câu recall */
   const recallTarget = Math.max(learnIds.length, capacityOf('RECALL', budgets.RECALL, timeline));
   const recallPick = env.pickQuestions(
     {
       seedSalt: 'recall',
+      introducedGrammarIds,
       grammarIds: learnIds.length ? learnIds : recentReviewIds(due),
       types: RECALL_TYPES,
       delivery: 'STUDY',
@@ -349,7 +363,14 @@ export function buildDailySession(input: SessionInput): DailySession {
     const set = compareSets[0];
     compareItems.push({ kind: 'COMPARE_SET', comparisonSetId: set.id });
     const comparePick = env.pickQuestions(
-      { seedSalt: `compare-${set.id}`, comparisonSetId: set.id, types: COMPARE_TYPES, delivery: 'STUDY', skill: 'COMPARE' },
+      {
+        seedSalt: `compare-${set.id}`,
+        introducedGrammarIds,
+        comparisonSetId: set.id,
+        types: COMPARE_TYPES,
+        delivery: 'STUDY',
+        skill: 'COMPARE',
+      },
       Math.max(1, compareCapacity - 1),
     );
     compareItems.push(...questionItems(comparePick, 'STUDY', env));
@@ -361,6 +382,7 @@ export function buildDailySession(input: SessionInput): DailySession {
   const applyPick = env.pickQuestions(
     {
       seedSalt: 'apply',
+      introducedGrammarIds,
       types: APPLY_TYPES,
       delivery: applyDelivery,
       skill: 'DETECT',
@@ -389,7 +411,7 @@ export function buildDailySession(input: SessionInput): DailySession {
   const recovery = adaptations.find((a) => a.ruleId === 'recovery_return');
   if (recovery?.focus?.kind === 'RECOVERY_WIN' && recovery.focus.grammarIds.length) {
     const win = env.pickQuestions(
-      { seedSalt: 'recovery-win', grammarIds: recovery.focus.grammarIds, delivery: 'PRACTICE' },
+      { seedSalt: 'recovery-win', introducedGrammarIds, grammarIds: recovery.focus.grammarIds, delivery: 'PRACTICE' },
       RECOVERY_WIN_QUESTIONS,
     );
     const block = blocks.find((b) => b.type === 'RECALL')!;
@@ -436,6 +458,7 @@ function buildReviewItems(due: ScoredItem[], env: SessionEnv, seed: number): Ses
     if (item.mixedOnly) continue; // EXAM_READY chỉ vào mixed set khi gần thi
     const pick = env.pickQuestions(
       {
+        // REVIEW đã khoá vào đúng một mẫu đang đến hạn ôn, nên mẫu đó chắc chắn đã học.
         seedSalt: `review-${item.grammarId}-${seed + i}`,
         grammarIds: [item.grammarId],
         delivery: item.suggestedDelivery,
@@ -595,8 +618,11 @@ export function buildAdHocDrill(
   payload: Record<string, unknown>,
   env: SessionEnv,
   count = 5,
+  /** H9 — không lôi mẫu chưa dạy vào Trap Lab hay /practice. */
+  introducedGrammarIds?: string[],
 ): SessionBlock {
   const criteria: Partial<PickCriteria> & { seedSalt: string } = { seedSalt: `drill-${kind}` };
+  if (introducedGrammarIds) criteria.introducedGrammarIds = introducedGrammarIds;
   let delivery: DeliveryMode = 'PRACTICE';
 
   switch (kind) {

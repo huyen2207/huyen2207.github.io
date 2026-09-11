@@ -397,3 +397,89 @@ describe('Bài xếp lớp đổi thứ tự LEARN (P5)', () => {
     expect(learnIdsWith(unknown)).toEqual(learnIdsWith(base));
   });
 });
+
+describe('Không hỏi mẫu chưa được dạy (H9)', () => {
+  const env0 = makeEnv();
+  /** Mọi grammarId xuất hiện trong một khối, lấy qua câu hỏi thật. */
+  function idsOf(s: ReturnType<typeof buildDailySession>, block: string): string[] {
+    const items = s.blocks.find((b) => b.type === block)?.items ?? [];
+    const out: string[] = [];
+    for (const i of items) {
+      if (i.kind === 'QUESTION' || i.kind === 'TRAP_DRILL') {
+        out.push(...(env0.questionById(i.questionId)?.targetGrammarIds ?? []));
+      }
+    }
+    return out;
+  }
+  function learnedIn(s: ReturnType<typeof buildDailySession>): string[] {
+    const items = s.blocks.find((b) => b.type === 'LEARN')?.items ?? [];
+    return items.flatMap((i) => (i.kind === 'LEARN_CARD' ? [i.grammarId] : []));
+  }
+
+  it('buổi ĐẦU TIÊN: mọi câu chỉ nhắm mẫu học trong chính buổi đó', () => {
+    const mastery = listRawGrammar().map((g) => createInitialMastery(g.id));
+    const s = buildDailySession(baseInput({ allMastery: mastery, env: env0 }));
+
+    const learned = new Set(learnedIn(s));
+    expect(learned.size).toBeGreaterThan(0);
+
+    for (const block of ['RECALL', 'COMPARE', 'APPLY']) {
+      for (const gid of idsOf(s, block)) {
+        expect(learned.has(gid)).toBe(true);
+      }
+    }
+  });
+
+  it('mẫu đã học từ trước vẫn được dùng lại', () => {
+    const all = listRawGrammar();
+    const known = all.slice(0, 40).map((g) => g.id);
+    const mastery = all.map((g) =>
+      known.includes(g.id)
+        ? { ...createInitialMastery(g.id), state: 'RECOGNIZED' as const, baseRank: 'RECOGNIZED' as const }
+        : createInitialMastery(g.id),
+    );
+    const s = buildDailySession(baseInput({ allMastery: mastery, env: env0 }));
+    const learned = learnedIn(s);
+    const allowed = new Set([...known, ...learned]);
+
+    // Ghi lại số liệu để thấy rõ H9 lọc chứ không làm cạn kho câu.
+    const applied = idsOf(s, 'APPLY');
+    const recalled = idsOf(s, 'RECALL');
+    expect(recalled.length + applied.length).toBeGreaterThan(0);
+    for (const gid of [...applied, ...recalled]) expect(allowed.has(gid)).toBe(true);
+  });
+
+  it('câu so sánh chỉ ra khi ĐỦ CẢ BỘ mẫu đã học, không ra khi mới biết một nửa', () => {
+    const all = listRawGrammar();
+    const set = listComparisonSets().find((c) => c.grammarIds.length >= 3)!;
+    // Chỉ cho biết 1 trong số các mẫu của bộ đó.
+    const mastery = all.map((g) =>
+      g.id === set.grammarIds[0]
+        ? { ...createInitialMastery(g.id), state: 'RECOGNIZED' as const, baseRank: 'RECOGNIZED' as const }
+        : createInitialMastery(g.id),
+    );
+    const s = buildDailySession(baseInput({ allMastery: mastery, env: env0 }));
+    const learned = new Set(learnedIn(s));
+    const allowed = new Set([set.grammarIds[0], ...learned]);
+
+    for (const block of ['RECALL', 'COMPARE', 'APPLY']) {
+      for (const gid of idsOf(s, block)) expect(allowed.has(gid)).toBe(true);
+    }
+  });
+});
+
+describe('H9 lọc nhưng KHÔNG làm cạn buổi học', () => {
+  it('buổi đầu tiên vẫn đủ mục ở mọi khối có ngân sách', () => {
+    const mastery = listRawGrammar().map((g) => createInitialMastery(g.id));
+    const s = buildDailySession(baseInput({ allMastery: mastery }));
+    const report: string[] = [];
+    for (const b of s.blocks) {
+      report.push(`${b.type}=${b.items.length}/${b.budgetMinutes}p(thiếu ${b.shortfall ?? 0})`);
+      // Khối có ngân sách > 0 thì phải có ít nhất 1 mục.
+      if (b.budgetMinutes > 0 && b.type !== 'SCHEDULE') {
+        expect(b.items.length).toBeGreaterThan(0);
+      }
+    }
+    console.log('BUỔI 1:', report.join(' · '));
+  });
+});

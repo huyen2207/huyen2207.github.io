@@ -643,6 +643,25 @@ Thuật toán:
 
 ### 7.6 ExerciseEngine
 
+**Bổ sung 2026-09-11 — luật H9: KHÔNG hỏi mẫu chưa được dạy.**
+
+Bộ lọc cứng trước đây (H1–H8) không có điều kiện nào về việc người học đã gặp mẫu hay chưa,
+nên buổi đầu tiên có thể ra câu về mẫu thuộc lô soạn sau — trái hẳn `CLAUDE.md §7`
+(vòng học `LEARN → RECALL → COMPARE → APPLY`, phần APPLY phải áp dụng cái VỪA HỌC).
+
+`PickCriteria.introducedGrammarIds` khi được truyền sẽ loại mọi câu có **bất kỳ** mẫu đích
+nằm ngoài danh sách. Yêu cầu ĐỦ CẢ BỘ, không phải một nửa: câu so sánh mà chỉ biết một
+trong ba mẫu thì không so được gì.
+
+`SessionEngine` dựng danh sách này bằng: mẫu đã học từ trước (`state ≠ UNSEEN`)
+**cộng** các mẫu học ngay trong buổi đó — thiếu vế thứ hai thì RECALL sẽ không có câu cho
+mẫu vừa dạy. `buildAdHocDrill` (Trap Lab, `/practice`) cũng nhận danh sách này.
+
+Cố ý KHÔNG áp cho: bài xếp lớp (`buildPlacementQuiz`) vì mục đích của nó là hỏi mẫu chưa học,
+và khối REVIEW vì nó vốn đã khoá vào đúng một mẫu đang đến hạn ôn.
+
+
+
 **Trách nhiệm:** chọn/biến hoá câu hỏi, chấm, xáo đáp án.
 
 ```ts

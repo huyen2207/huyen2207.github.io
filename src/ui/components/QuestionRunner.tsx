@@ -46,6 +46,11 @@ export function QuestionRunner({
   // đã có bảng riêng ở Compare Lab, nhồi 3–4 cấu trúc vào đây sẽ quá dài.
   const recapGrammar =
     question.targetGrammarIds.length === 1 ? getGrammarView(question.targetGrammarIds[0]) : undefined;
+  // Câu so sánh nhiều mẫu: gom tất cả vào một khối THU GỌN để không thành tường chữ.
+  const recapAll =
+    question.targetGrammarIds.length > 1
+      ? question.targetGrammarIds.map(getGrammarView).filter((g): g is NonNullable<typeof g> => Boolean(g))
+      : undefined;
   const [confidence, setConfidence] = useState<Confidence | null>(null);
   const [result, setResult] = useState<GradeResult | null>(null);
   const [selfReported, setSelfReported] = useState(false);
@@ -252,7 +257,7 @@ export function QuestionRunner({
               {t('question.timedHint')}
             </p>
           )}
-          <ExplanationPanel feedback={result.feedback} choiceLabels={choiceLabels} grammar={recapGrammar} />
+          <ExplanationPanel feedback={result.feedback} choiceLabels={choiceLabels} grammar={recapGrammar} otherGrammars={recapAll} />
           {result.needsSelfReport && !selfReported && result.selfReportOptions.length > 0 && (
             <SelfReportPrompt
               options={result.selfReportOptions}

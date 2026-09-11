@@ -184,7 +184,9 @@ export function buildDrill(ctx: EngineContext, kind: DrillKind, payload: Record<
   const env = makeSessionEnv(ctx, hashString(`drill|${kind}|${JSON.stringify(payload)}`));
   const supported = ['CONFUSION_PAIR', 'ERROR_TYPE', 'FAMILY', 'SPEED', 'TRAP_TYPE', 'REVIEW_TOP'] as const;
   const k = (supported as readonly string[]).includes(kind) ? (kind as (typeof supported)[number]) : 'ERROR_TYPE';
-  return buildAdHocDrill(k, payload, env, count);
+  // Chỉ luyện trên mẫu đã được dạy (H9) — Trap Lab và /practice cũng phải theo luật này.
+  const introduced = ctx.mastery.filter((m) => m.state !== 'UNSEEN').map((m) => m.grammarId);
+  return buildAdHocDrill(k, payload, env, count, introduced);
 }
 
 export async function sessionAttempts(sessionId: string): Promise<Attempt[]> {

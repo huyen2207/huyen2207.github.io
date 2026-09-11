@@ -56,6 +56,12 @@ export interface PickCriteria {
   weakGrammarIds?: string[];
   topConfusionPairs?: ConfusionPair[];
   requireTrap?: boolean;
+  /**
+   * Các mẫu người học ĐÃ được giới thiệu (state ≠ UNSEEN).
+   * Khi có, câu hỏi chỉ hợp lệ nếu MỌI mẫu đích đều nằm trong danh sách này (H9).
+   * Bỏ trống = không lọc, dùng cho bài xếp lớp và các luồng cố ý hỏi mẫu chưa học.
+   */
+  introducedGrammarIds?: string[];
 }
 
 export interface PickResult {
@@ -114,6 +120,15 @@ export function passesHardFilter(
       .map((g) => env.grammarById(g)?.examFrequency)
       .filter(Boolean) as ExamFrequency[];
     if (freqs.length > 0 && freqs.every((f) => f === 'LOW')) return false;
+  }
+
+  // H9 — KHÔNG hỏi mẫu chưa được dạy.
+  // CLAUDE.md §7: vòng học là LEARN → RECALL → COMPARE → APPLY; phần APPLY phải áp dụng
+  // cái VỪA HỌC. Trước đây thiếu luật này nên buổi đầu có thể ra mẫu của lô sau.
+  // Yêu cầu MỌI mẫu đích đều đã được giới thiệu: câu so sánh mà chỉ biết một nửa thì vô nghĩa.
+  if (criteria.introducedGrammarIds) {
+    const introduced = criteria.introducedGrammarIds;
+    if (!q.targetGrammarIds.every((g) => introduced.includes(g))) return false;
   }
 
   // H7
