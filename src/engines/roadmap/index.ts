@@ -2,7 +2,7 @@ import type { Grammar } from '@/domain/grammar';
 import type { LearnerProfile, StudyPlan, Timeline } from '@/domain/learner';
 import type { GrammarMastery } from '@/domain/mastery';
 import { EXAM_FREQUENCY_WEIGHT, NEW_PER_DAY_HARD_CAP, REPLAN_PROGRESS_DRIFT, RECOVERY_GAP_DAYS } from '@/config/learning.config';
-import { allowedExamFrequencies } from '@/engines/phase';
+import { allowedExamFrequencies, computeTimeline } from '@/engines/phase';
 import { atLeast } from '@/engines/mastery';
 
 export interface PlanInput {
@@ -118,4 +118,53 @@ export function knowDebtOf(plan: StudyPlan, mastery: GrammarMastery[]): number {
     if (!m || !atLeast(m, 'RECOGNIZED')) debt++;
   }
   return debt;
+}
+
+export interface CoverageFeasibility {
+  /** Số buổi học của Phase 1. */
+  phase1Days: number;
+  /** Số mẫu học được nếu chạy hết công suất Phase 1. */
+  capacity: number;
+  /** Số mẫu bắt buộc phải phủ. */
+  required: number;
+  /** > 0 nghĩa là Phase 1 KHÔNG kịp phủ hết; phần thiếu thành "nợ KNOW" ở Phase 2 (§22). */
+  shortfall: number;
+  /** Số buổi/tuần tối thiểu để hết thiếu, hoặc null nếu 7 buổi/tuần vẫn không đủ. */
+  suggestedDaysPerWeek: number | null;
+}
+
+/**
+ * Phase 1 có kịp phủ hết kho mẫu không?
+ *
+ * `newPerDay` đã bị chặn bởi trần cứng 8 mẫu/ngày (`CLAUDE.md §8.2`), nên khi số buổi
+ * học ít, công suất Phase 1 có thể nhỏ hơn số mẫu bắt buộc. Engine vốn tính ra được
+ * điều này nhưng trước đây không nói cho người học biết.
+ */
+export function coverageFeasibility(input: PlanInput): CoverageFeasibility {
+  const plan = generatePlan(input);
+  const phase1Days = Math.max(1, plan.phaseBoundaries.knowEndsDay);
+  const capacity = phase1Days * plan.newPerDay;
+  const required = plan.coverageTarget;
+
+  let suggested: number | null = null;
+  if (capacity < required) {
+    for (let dpw = input.profile.daysPerWeek + 1; dpw <= 7; dpw += 1) {
+      const profile = { ...input.profile, daysPerWeek: dpw };
+      const timeline = computeTimeline(profile, input.now);
+      const p = generatePlan({ ...input, profile, timeline });
+      const days = Math.max(1, p.phaseBoundaries.knowEndsDay);
+      if (days * p.newPerDay >= p.coverageTarget) {
+        suggested = dpw;
+        break;
+      }
+    }
+  }
+
+  return {
+    phase1Days,
+    capacity,
+    required,
+    shortfall: Math.max(0, required - capacity),
+    suggestedDaysPerWeek: suggested,
+  };
 }

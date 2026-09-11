@@ -46,7 +46,7 @@ const vi: Record<string, string> = {
   'phase.PHASE_1_KNOW.question': '「Mẫu này nghĩa là gì?」',
   'phase.PHASE_2_COMPARE.question': '「Tại sao là nó mà không phải mẫu kia?」',
   'phase.PHASE_3_DETECT.question': '「Đề đang định bẫy mình ở đâu?」',
-  'phase.range': 'Ngày {from}–{to}',
+  'phase.range': 'Buổi {from}–{to}',
   'phase.current': 'Đang ở đây',
 
   /* ── Mode ── */
@@ -195,13 +195,22 @@ const vi: Record<string, string> = {
   'placement.done.known': 'Bạn đã chắc {n} mẫu — chúng được đẩy xuống cuối hàng đợi.',
   'placement.done.none': 'Chưa mẫu nào đủ chắc, nên thứ tự học giữ nguyên. Hoàn toàn bình thường khi mới bắt đầu.',
   'placement.done.continue': 'Bắt đầu học',
+  'onboarding.roadmap.studyDaysNote':
+    'Bạn học {daysPerWeek} buổi/tuần, nên {calendarDays} ngày lịch quy ra {studyDays} buổi học. Mọi con số trong app đếm theo BUỔI HỌC.',
+  'onboarding.roadmap.shortfall.title': 'Giai đoạn 1 sẽ không kịp học hết',
+  'onboarding.roadmap.shortfall.body':
+    'Với {daysPerWeek} buổi/tuần, giai đoạn 「文法を知る」chỉ có {phase1Days} buổi. Trần cứng là {perDay} mẫu mới mỗi ngày, nên chỉ phủ được {capacity}/{required} mẫu — còn thiếu {shortfall} mẫu.',
+  'onboarding.roadmap.shortfall.fix':
+    'Học {suggested} buổi/tuần là đủ. Bạn quay lại bước trước để đổi, hoặc đổi sau ở phần cài đặt.',
+  'onboarding.roadmap.shortfall.accept':
+    'Vẫn học {daysPerWeek} buổi/tuần cũng được: {shortfall} mẫu còn lại sẽ được chuyển thành "nợ" và học xen vào giai đoạn 2.',
   'onboarding.dataWarning':
     'Dữ liệu học nằm trên trình duyệt của bạn. Nhớ sao lưu ở Cài đặt mỗi tuần.',
 
   /* ── Today ── */
   'today.title': '今日の学習',
-  'today.dayCounter': 'DAY {day} / {total}',
-  'today.daysLeft': 'Còn {days} ngày đến JLPT',
+  'today.dayCounter': 'BUỔI HỌC {day} / {total}',
+  'today.daysLeft': 'Còn {days} ngày lịch đến JLPT',
   'today.mission': 'Hôm nay',
   'today.startSession': '今日の学習を始める',
   'today.resumeSession': 'Học tiếp',

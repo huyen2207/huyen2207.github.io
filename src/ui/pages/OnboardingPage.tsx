@@ -161,7 +161,44 @@ export default function OnboardingPage() {
             <p className="mt-1 text-[13px]" style={{ color: 'var(--ink-faint)' }}>
               {formatDateVi(preview.profile.examDate)}
             </p>
+            {preview.profile.daysPerWeek < 7 && (
+              <p className="mt-2 text-[13px] leading-relaxed" style={{ color: 'var(--ink-faint)' }}>
+                {t('onboarding.roadmap.studyDaysNote', {
+                  daysPerWeek: preview.profile.daysPerWeek,
+                  calendarDays: preview.timeline.daysRemaining,
+                  studyDays: preview.timeline.totalStudyDays,
+                })}
+              </p>
+            )}
           </Card>
+
+          {preview.feasibility.shortfall > 0 && (
+            <Card className="mb-4 px-4 py-3">
+              <p className="mb-1 text-[15px] font-semibold" style={{ color: 'var(--accent)' }}>
+                {t('onboarding.roadmap.shortfall.title')}
+              </p>
+              <p className="text-[14px] leading-relaxed">
+                {t('onboarding.roadmap.shortfall.body', {
+                  daysPerWeek: preview.profile.daysPerWeek,
+                  phase1Days: preview.feasibility.phase1Days,
+                  perDay: preview.plan.newPerDay,
+                  capacity: preview.feasibility.capacity,
+                  required: preview.feasibility.required,
+                  shortfall: preview.feasibility.shortfall,
+                })}
+              </p>
+              <p className="mt-2 text-[14px] leading-relaxed">
+                {preview.feasibility.suggestedDaysPerWeek
+                  ? t('onboarding.roadmap.shortfall.fix', {
+                      suggested: preview.feasibility.suggestedDaysPerWeek,
+                    })
+                  : t('onboarding.roadmap.shortfall.accept', {
+                      daysPerWeek: preview.profile.daysPerWeek,
+                      shortfall: preview.feasibility.shortfall,
+                    })}
+              </p>
+            </Card>
+          )}
 
           <div className="mb-4">
             <PhaseTimeline timeline={preview.timeline} />

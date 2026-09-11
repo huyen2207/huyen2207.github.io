@@ -1,6 +1,6 @@
 import type { LearnerProfile } from '@/domain/learner';
 import { computeTimeline } from '@/engines/phase';
-import { generatePlan } from '@/engines/roadmap';
+import { generatePlan, coverageFeasibility } from '@/engines/roadmap';
 import { listRawGrammar } from '@/content/repository';
 import { planRepo, profileRepo } from '@/storage/repositories';
 import { DEFAULT_DAY_BOUNDARY_HOUR } from '@/config/learning.config';
@@ -27,7 +27,14 @@ export function previewRoadmap(answers: OnboardingAnswers, now: Date) {
     mastery: mastery as never,
     now,
   });
-  return { profile, timeline, plan };
+  const feasibility = coverageFeasibility({
+    profile,
+    timeline,
+    allGrammar: listRawGrammar(),
+    mastery: mastery as never,
+    now,
+  });
+  return { profile, timeline, plan, feasibility };
 }
 
 export function toProfile(answers: OnboardingAnswers, now: Date): LearnerProfile {
