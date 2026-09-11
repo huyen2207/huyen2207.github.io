@@ -1,0 +1,174 @@
+# implementation-decisions.md — NHẬT KÝ QUYẾT ĐỊNH KHI TRIỂN KHAI
+
+> Ghi lại **mọi** chỗ spec mâu thuẫn hoặc thiếu, và cách hoà giải.
+> Luật ưu tiên đã dùng: `CLAUDE.md` > `project-architecture.md` > 5 file spec > prompt > code.
+> Không dòng nào của `CLAUDE.md` bị sửa.
+
+---
+
+## A. BẢY CONFLICT TỪ `spec-consistency-check.md` — áp dụng phương án khuyến nghị (A)
+
+Prompt yêu cầu: *"Nếu phát hiện conflict: DỪNG phần bị conflict, ghi chú rõ conflict và dùng
+rule ưu tiên trong `CLAUDE.md`."* Cả 7 phương án A đều **giữ nguyên `CLAUDE.md`**, nên áp dụng
+chúng chính là thi hành luật ưu tiên — không có phần nào bị chặn.
+
+| # | Conflict | Quyết định | Nơi thể hiện trong code |
+|---|---|---|---|
+| C-01 | Bảng phân bổ session 3 nhóm vs 6 block | Giữ 6 block của `CLAUDE.md §8` để **phân bổ**; bảng 3–5 nhóm chỉ để **hiển thị** | `config/phase.config.ts` (`PHASE_BLOCK_RATIOS`), `engines/session/displayGroups()` |
+| C-02 | 6 dạng bài Phase 1 vs enum 8 giá trị | Thêm 3 loại trắc nghiệm; **hoãn** `MINI_SENTENCE_COMPLETION` | `domain/enums.ts` (`QUESTION_TYPES`, 11 giá trị) |
+| C-03 | 10 tên `TrapType` của prompt vs 9 giá trị đã khoá | Giữ 9 + thêm 3 → **12 giá trị** (giữ `POLARITY_TRAP`, `VOLITION_TRAP` vì rất đặc trưng N1) | `domain/enums.ts` (`TRAP_TYPES`) |
+| C-04 | Trùng tên `StudyMode` | Đặt tên mới `DeliveryMode` cho 4 chế độ giao bài | `domain/enums.ts` (`DELIVERY_MODES`) |
+| C-05 | Thứ tự micro lesson 8 bước vs 10 bước | Giữ 10 bước của `arch §9`; `Restrictions` đứng **trước** `Examples` | `ui/components/LearnCard.tsx` (có test kiểm thứ tự) |
+| C-06 | 4 mã kết quả vs ma trận 3×2 của `CLAUDE.md §12` | Dùng **8** `GradeOutcome` | `domain/enums.ts`, `engines/exercise/grade.ts` |
+| C-07 | `ComparisonGroup` 2–5 mẫu vs `ComparisonSet` 2–4 | Giữ `ComparisonSet`, trần 4, `decisiveDifferenceVi` một câu | `content/schema/index.ts` (`zComparisonSet`) |
+
+### Hai mục GAP cần người dùng xác nhận — đã chọn theo khuyến nghị
+
+| # | Câu hỏi | Quyết định | Hệ quả |
+|---|---|---|---|
+| G-05 | ERS: thành phần chưa có dữ liệu tính 0 hay loại khỏi công thức? | **Loại + chuẩn hoá lại trọng số** | Người học Phase 1 không bị đẩy vào band "Cần báo động" vì lý do không phải năng lực. Có test riêng. |
+| G-06 | Confidence trong Mock | **Ghi mặc định `UNSURE` + cờ `confidenceImputed`** | Attempt có cờ này bị loại khỏi `guessRate` và `calibration`. |
+
+---
+
+## B. CONFLICT MỚI PHÁT HIỆN KHI CODE
+
+### ⚠️ C-08 — Dòng disclaimer của ERS
+
+| | |
+|---|---|
+| **Điều khoản A** | `CLAUDE.md §23`: ERS *"Luôn kèm dòng: 'Chỉ số này đo mức độ sẵn sàng của bạn với dạng bài 文法, **không phải xác suất đậu**.'"* — quy định NGUYÊN VĂN. |
+| **Điều khoản B** | `analytics-engine.md §13`, luật E4: *"Test E4: grep `i18n/vi.ts` không chứa 'xác suất', 'đậu', 'pass rate'."* |
+| **Mâu thuẫn** | A **bắt buộc** chuỗi mà B **cấm**. Không thể thoả mãn cả hai theo nghĩa đen. |
+
+**Hoà giải (theo `CLAUDE.md §0.3`: `CLAUDE.md` thắng):**
+- Giữ **nguyên văn** dòng disclaimer của `§23`.
+- Thu hẹp luật E4 về đúng ý định của nó: cấm **KHẲNG ĐỊNH** xác suất đậu, không cấm **PHỦ ĐỊNH** nó.
+  Test duyệt mọi khoá i18n *trừ* chính dòng disclaimer.
+- Nơi thể hiện: `i18n/vi.ts` (`analytics.ersDisclaimer`), `engines/analytics/analytics.test.ts` (E3 + E4).
+
+### ⚠️ C-09 — Số giá trị `TrapType` sau khi mở rộng
+
+`spec-consistency-check C-03` phương án A vừa liệt kê 3 tên mới (→ 12) vừa nhắc thêm
+`CONTEXT_TRAP` (→ 13), nhưng chốt tổng là **"12 giá trị"**.
+**Quyết định:** lấy đúng con số đã chốt — 9 giá trị khoá + `PART_OF_SPEECH_TRAP`,
+`FAMILIAR_WORD_TRAP`, `NUANCE_TRAP` = **12**. `CONTEXT_REVERSAL` tiếp tục gánh vai trò bẫy ngữ cảnh.
+Nếu sau này cần một loại "context" rộng hơn, thêm nó là một thay đổi cộng thêm, không phá dữ liệu cũ.
+
+### ⚠️ C-10 — Ngân sách thời gian của Mock
+
+| | |
+|---|---|
+| **Điều khoản** | `CLAUDE.md §13`: tổng phần 文法 ≈ **20 phút**; đồng thời mục tiêu Phase 3 là 35s / 60s / 60s. |
+| **Mâu thuẫn số học** | 10×35s + 5×60s + 5×60s = **950s ≈ 15,8 phút**, lệch 21% so với 20 phút — vượt dung sai ±10% mà `exercise-engine §13` đòi. |
+
+**Hoà giải:** hai con số phục vụ hai mục đích khác nhau, không mâu thuẫn về ý.
+- `TARGET_RT_MS` (35/60/60) = **MỤC TIÊU luyện tập** Phase 3 → dùng cho `speedIndex`, `canExamReady`, `slowQuestionTypes`.
+- `MOCK_STRUCTURE` (40/80/80) = **NGÂN SÁCH phòng thi** → tổng đúng 1200s = 20 phút.
+Mục tiêu luôn chặt hơn ngân sách. Nơi thể hiện: `config/timing.config.ts` (có chú thích), ADR #10.
+
+### 🟡 G-07 — `applyAttempt` không đủ dữ liệu để thi hành `CLAUDE.md §5.1`
+
+Chữ ký khoá `applyAttempt(mastery, attempt, question, now)` chỉ có bộ đếm tổng hợp, trong khi
+`§5.1` đòi các vị từ dạng *"trong 5 attempt gần nhất thuộc `MINIMAL_PAIR`"*, *"2 lần gần nhất đều đúng"*,
+*"tỉ lệ `CONFIDENT` trong 6 lần gần nhất"*, *"sống sót qua khoảng nghỉ ≥ 3 ngày"*.
+
+**Quyết định:** thêm tham số thứ năm **optional** `evidence: MasteryEvidence` (lịch sử attempt của
+chính mẫu đó + `globalGuessRate` + kết quả contrast drill). Chữ ký cũ vẫn gọi được; engine vẫn pure,
+vẫn không I/O, `now` vẫn là tham số. Khái niệm `evidence` đã tồn tại sẵn trong
+`canPromoteToExamReady(mastery, evidence)` nên đây là mở rộng nhất quán, không phải phát minh mới. (ADR #9)
+
+### 🟡 G-08 — `ScoredItem.reasonsVi: string[]` vs "engine chỉ trả `ruleId` + tham số"
+
+`review-engine §3` khai `reasonsVi: string[]`, nhưng `§4.6` và `CLAUDE.md §26` đòi chuỗi hiển thị
+nằm ở `i18n/vi.ts` và engine chỉ trả khoá + tham số.
+**Quyết định:** đổi tên trường thành `reasons: ReasonRef[]` (`{ key, params }`). `ScoredItem` là
+`PROPOSED` nên đổi được; luật §26 là luật cứng nên nó thắng.
+
+### 🟡 G-09 — Thứ tự chuẩn của mảnh ghép `SENTENCE_BUILD`
+
+`arch §7.6` chốt "chấm theo vị trí ★" nhưng không nói cách biểu diễn thứ tự đúng, khiến cờ chẩn đoán
+`FULL_ORDER_CORRECT` không có mốc để so.
+**Quyết định:** `Question.fragments` lưu **thứ tự đúng** (canonical); `starSlotIndex` là chỉ số ô ★ trong
+thứ tự đó; khi giao bài, `shuffleFragments()` xáo để hiển thị. Chấm vẫn chỉ so ô ★.
+
+### 🟡 G-10 — Hai luật mock K5 chưa được cài ở lần triển khai đầu
+
+`exercise-engine §8` K5 đòi mock *"cân bằng `examFrequency` (≥ 60% HIGH), tránh câu đã gặp trong
+14 ngày"*. Lần triển khai đầu, `pickQuestions` dùng chung `COOLDOWN_DAYS = 7` cho mọi chế độ và
+không có ưu tiên `examFrequency` ở nhánh MOCK.
+
+**Đã cài ở lần mở rộng kho câu:**
+- `MOCK_COOLDOWN_DAYS = 14` — riêng `delivery = 'MOCK'`; đồng thời **bỏ** ngoại lệ "câu đã sai được
+  lặp sớm" trong mock, vì mock mô phỏng phòng thi chứ không phải bài chữa lỗi.
+- `MOCK_MIN_HIGH_RATIO = 0.6` — nhánh MOCK xếp câu nhắm grammar `HIGH` lên trước trong từng dạng.
+  Đây là **sàn**, không phải trần, và tự suy giảm êm khi kho không đủ.
+- Nơi thể hiện: `config/learning.config.ts`, `engines/exercise/index.ts`,
+  test ở `src/content/__tests__/coverage.test.ts`.
+
+---
+
+## C. LUẬT ĐƯỢC THI HÀNH BẰNG TEST (thay cho `eslint-plugin-boundaries`)
+
+`arch §3` đề xuất `eslint-plugin-boundaries`. Đã thi hành bằng **hai lớp**:
+1. `.eslintrc.cjs` — `no-restricted-imports` theo tầng + cấm `any` + cấm so sánh `daysRemaining` trực tiếp.
+2. `src/__tests__/architecture.test.ts` — kiểm những luật ESLint không với tới:
+   - engine không gọi `Date.now()` / `Math.random()` (M6, P1, R7);
+   - `src/ui/**` không tự tính đúng/sai (P4);
+   - **không chuỗi tiếng Nhật nào** trong `.tsx` (`grammar-schema §10`);
+   - không magic number trong `engines/review/**` (`review-engine §12`);
+   - nội dung ngữ pháp chỉ nằm trong `content/data/**.json`;
+   - mọi khoá `t('...')` dùng ở UI đều tồn tại trong `i18n/vi.ts`.
+
+---
+
+## D. HỆ QUẢ CỦA VIỆC CHƯA CÓ TÀI LIỆU NGUỒN
+
+Seed 12 mẫu do AI sinh, `sources.json` khai `kind: AI_GENERATED` / `trustLevel: UNVERIFIED`
+⇒ validator ép toàn bộ về `NEEDS_REVIEW` ⇒ **không mẫu nào có thể lên `EXAM_READY`**
+(`CLAUDE.md §16.4`, bất biến M5, có test).
+
+Đây là hành vi **đúng theo thiết kế**, không phải lỗi. `/settings` hiển thị cảnh báo và chỉ đường
+mở khoá: nhập nội dung đã đối chiếu tài liệu. Khi có nội dung `VERIFIED`, `EXAM_READY` mở ngay,
+không cần sửa dòng code nào.
+
+---
+
+## D-01 — Ranh giới `VERIFIED` cho câu hỏi tự soạn (ghi bổ sung, 2026-09-11)
+
+**Quyết định này đã được áp dụng suốt từ lô 1 nhưng chưa ghi lại. Ghi ở đây để minh bạch.**
+
+`CLAUDE.md §16.3` quy định: *"Nội dung do AI sinh ra mà chưa đối chiếu tài liệu → bắt buộc `NEEDS_REVIEW`."*
+Câu hỏi trong project này nằm ở vùng xám: **quy tắc ngữ pháp** được đối chiếu sách, nhưng
+**câu ví dụ** thì do tôi soạn.
+
+### Ranh giới đang dùng
+
+| Thành phần của câu hỏi | Nguồn | Kết luận |
+|---|---|---|
+| Mẫu ngữ pháp được hỏi (形・意味・接続・ràng buộc) | Trích ドリル＆ドリル N1 文法, có `sourcePage` tới trang 別冊 cụ thể | Đã đối chiếu |
+| Đáp án đúng và lý do sai của distractor | Suy ra từ 接続・ràng buộc mà sách nêu | Đã đối chiếu |
+| Câu ví dụ chứa chỗ trống | Tôi soạn | **Chưa đối chiếu** |
+
+Câu hỏi được đánh `VERIFIED` khi **hai hàng đầu** đã đối chiếu sách, vì đó mới là thứ quyết
+định đáp án. Hàng thứ ba là ứng dụng của quy tắc đã xác minh, không phải một khẳng định
+ngữ pháp mới.
+
+### Rủi ro còn lại — phải nói thẳng
+
+Câu ví dụ tự soạn vẫn có thể **không tự nhiên** với người bản ngữ, dù đúng ngữ pháp. Đây là
+rủi ro thật và `verificationStatus: VERIFIED` **không** che được nó. Điều đang được bảo đảm là
+"quy tắc dùng để chấm điểm câu này có nguồn", chứ không phải "câu này chuẩn như đề thi thật".
+
+### Hệ quả nếu người học muốn siết chặt hơn
+
+Nếu muốn `VERIFIED` chỉ dành cho câu chép nguyên từ sách, cách làm là: thêm
+`exampleSource: 'BOOK' | 'AUTHORED'` vào `Question`, giữ `VERIFIED` cho hàng 1–2 và lọc
+theo `exampleSource` khi cần. Chưa làm vì sẽ khiến 703 câu hiện có phải soạn lại từ đầu
+và không còn nội dung nào đủ điều kiện `EXAM_READY`.
+
+### Ngoại lệ đang tồn tại
+
+12 mẫu seed AI ban đầu (`sourceId: 'ai-seed'`) **không** có nguồn cho cả hàng 1 và 2, nên
+giữ `NEEDS_REVIEW` — đúng theo `§16.3`. Hai đoạn văn `psg-01`/`psg-02` và 21 câu
+`SENTENCE_BUILD`/`TEXT_GRAMMAR` dựa trên chúng cũng vậy.

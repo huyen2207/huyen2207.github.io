@@ -1,0 +1,23 @@
+[
+  { "from": "ni-itatte", "to": "ni-itatte-wa", "type": "oftenConfusedWith", "differenceKey": "chức năng", "noteVi": "Cùng bắt đầu bằng 「に至」nhưng một bên nối MỐC–HÀNH ĐỘNG, một bên nêu VÍ DỤ cực đoan.", "source": "CURATED" },
+  { "from": "ni-itatte", "to": "ni-itaru-made", "type": "oftenConfusedWith", "differenceKey": "phạm vi", "noteVi": "「〜に至って」là một thời điểm; 「〜に至るまで」là cả một dải phạm vi.", "source": "CURATED" },
+  { "from": "ni-itatte-wa", "to": "ni-itaru-made", "type": "similarTo", "differenceKey": "hình thức", "noteVi": "Cùng gốc 「至る」, khác hoàn toàn về chức năng.", "source": "CURATED" },
+  { "from": "ni-itatte", "to": "ni-itatte-wa", "type": "sameFunctionGroup", "source": "CURATED" },
+
+  { "from": "narade-wa", "to": "nari-ni", "type": "oftenConfusedWith", "differenceKey": "sắc thái", "noteVi": "「ならでは」khen nét ĐỘC QUYỀN; 「なりに」công nhận nỗ lực TRONG GIỚI HẠN.", "source": "CURATED" },
+  { "from": "narade-wa", "to": "nari-ni", "type": "contrastsWith", "differenceKey": "đánh giá", "source": "CURATED" },
+
+  { "from": "to-iedomo", "to": "to-wa-ie", "type": "oftenConfusedWith", "differenceKey": "giả định hay sự thật", "noteVi": "「といえども」nêu trường hợp GIẢ ĐỊNH; 「とはいえ」kéo lại một SỰ THẬT vừa nói.", "source": "CURATED" },
+  { "from": "to-iedomo", "to": "to-wa-ie", "type": "sameFunctionGroup", "source": "CURATED" },
+
+  { "from": "zaru-wo-enai", "to": "nai-dewa-irarenai", "type": "oftenConfusedWith", "differenceKey": "nguồn ép buộc", "noteVi": "「ざるを得ない」bị ép từ BÊN NGOÀI; 「ないではいられない」trào lên từ BÊN TRONG.", "source": "CURATED" },
+  { "from": "zaru-wo-enai", "to": "nai-dewa-irarenai", "type": "contrastsWith", "differenceKey": "chủ thể", "source": "CURATED" },
+
+  { "from": "wo-mono-tomosezu", "to": "wo-yoso-ni", "type": "oftenConfusedWith", "differenceKey": "khen hay chê", "noteVi": "「をものともせず」KHEN người vượt khó; 「をよそに」CHÊ người phớt lờ mối bận tâm của người khác.", "source": "CURATED" },
+  { "from": "wo-mono-tomosezu", "to": "wo-yoso-ni", "type": "contrastsWith", "differenceKey": "sắc thái", "source": "CURATED" },
+  { "from": "wo-mono-tomosezu", "to": "to-iedomo", "type": "sameFunctionGroup", "source": "CURATED" },
+
+  { "from": "kirai-ga-aru", "to": "nari-ni", "type": "similarTo", "differenceKey": "đánh giá", "noteVi": "Cả hai đều nhận xét về khuynh hướng, nhưng 「きらいがある」luôn tiêu cực.", "source": "CURATED" },
+
+  { "from": "ni-itatte", "to": "zaru-wo-enai", "type": "sameFunctionGroup", "source": "CURATED" }
+]

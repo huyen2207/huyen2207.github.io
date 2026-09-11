@@ -1,0 +1,305 @@
+[
+ {
+  "id": "cmp-time-p3-01",
+  "grammarIds": [
+   "ni-itaru",
+   "ni-itaru-made",
+   "ni-itatte-wa"
+  ],
+  "familyHint": "TIME",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "ni-itaru": "Cuối cùng thành ra…",
+     "ni-itaru-made": "Từ … cho tới tận …",
+     "ni-itatte-wa": "Đến mức … thì (còn tệ hơn)"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "ni-itaru": "Kể kết cục của quá trình",
+     "ni-itaru-made": "Nhấn phạm vi rộng bất ngờ",
+     "ni-itatte-wa": "Nêu một trường hợp cực đoan để chê"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "ni-itaru": "V-辞書形／N＋に至る",
+     "ni-itaru-made": "N＋から＋N＋に至るまで",
+     "ni-itatte-wa": "N＋に至っては"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "ni-itaru": "「〜の末」đứng trước",
+     "ni-itaru-made": "Có 「〜から」ghép cặp",
+     "ni-itatte-wa": "Vế sau là lời chê"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "「に至る」kết cục · 「に至るまで」dải phạm vi (cần 「から」) · 「に至っては」nêu ca cực đoan để chê.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.19",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-time-p3-01-mp-01",
+   "q-cmp-time-p3-01-mp-02"
+  ],
+  "examPatternVi": "Đây là cụm mà CLAUDE.md §3 lấy làm ví dụ mẫu cho Phase 2 — đề rất hay ghép cả ba.",
+  "openerQuestionId": "q-cmp-time-p3-01-mp-01"
+ },
+ {
+  "id": "cmp-evaluation-p3-01",
+  "grammarIds": [
+   "kirai-ga-aru",
+   "tomo-suru-to"
+  ],
+  "familyHint": "EVALUATION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "kirai-ga-aru": "Có xu hướng xấu là…",
+     "tomo-suru-to": "Dễ rơi vào hướng xấu"
+    }
+   },
+   {
+    "axis": "SUBJECT",
+    "cells": {
+     "kirai-ga-aru": "Tính cách cố hữu của một người",
+     "tomo-suru-to": "Tình huống chung, ai cũng có thể"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "kirai-ga-aru": "V-辞書形／N＋の＋きらいがある",
+     "tomo-suru-to": "ともすると＋〜がちだ／〜やすい"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "kirai-ga-aru": "Kết câu, không cần từ đi kèm",
+     "tomo-suru-to": "Bắt buộc có 「がちだ」「やすい」ở cuối"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "「きらいがある」nói TÍNH CÁCH cố hữu và tự kết câu; 「ともすると」cần 「がちだ」và nói tình huống chung.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.15",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-evaluation-p3-01-mp-01",
+   "q-cmp-evaluation-p3-01-mp-02"
+  ],
+  "examPatternVi": "Cả hai đều dịch là 'có xu hướng' nên rất dễ chọn nhầm khi dịch ngược.",
+  "openerQuestionId": "q-cmp-evaluation-p3-01-mp-01"
+ },
+ {
+  "id": "cmp-degree-p3-01",
+  "grammarIds": [
+   "to-ittara-nai",
+   "kagiri-da",
+   "to-shika-ii-you-ga-nai"
+  ],
+  "familyHint": "DEGREE",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "to-ittara-nai": "… không sao tả xiết",
+     "kagiri-da": "Thật là … hết sức",
+     "to-shika-ii-you-ga-nai": "Chỉ có thể nói là …"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "to-ittara-nai": "N／い形容詞＋といったらない",
+     "kagiri-da": "CHỈ い形容詞＋かぎりだ",
+     "to-shika-ii-you-ga-nai": "N／な形容詞語幹＋としか言いようがない"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "to-ittara-nai": "Cảm xúc mạnh tới mức không tả nổi",
+     "kagiri-da": "Bộc lộ cảm xúc của người nói",
+     "to-shika-ii-you-ga-nai": "Đưa ra đánh giá dứt khoát"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "to-ittara-nai": "Nối được cả danh từ 「緊張」",
+     "kagiri-da": "Chỉ nối 「うれしい」「寂しい」",
+     "to-shika-ii-you-ga-nai": "Nối 「奇跡」「不可解」"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "「かぎりだ」CHỈ nhận tính từ đuôi い. Nối danh từ được thì là 「といったらない」hoặc 「としか言いようがない」.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.17 / p.6 / p.13",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-degree-p3-01-mp-01",
+   "q-cmp-degree-p3-01-mp-02"
+  ],
+  "examPatternVi": "Ba mẫu cùng nhấn cảm xúc cực đại; loại từ đứng trước là chỗ quyết định.",
+  "openerQuestionId": "q-cmp-degree-p3-01-mp-01"
+ },
+ {
+  "id": "cmp-emphasis-p3-01",
+  "grammarIds": [
+   "dani",
+   "tari-tomo"
+  ],
+  "familyHint": "EMPHASIS",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "dani": "Chỉ … thôi cũng đã …",
+     "tari-tomo": "Dù chỉ một … cũng không"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "dani": "V-辞書形／N＋だに",
+     "tari-tomo": "一＋助数詞＋たりとも＋〜ない"
+    }
+   },
+   {
+    "axis": "POLARITY_TENDENCY",
+    "cells": {
+     "dani": "Vế sau khẳng định được (恐ろしい)",
+     "tari-tomo": "Vế sau BẮT BUỘC phủ định"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "dani": "「想像する」「思い出す」đứng trước",
+     "tari-tomo": "Con số luôn là 「一」"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "「だに」đi với động từ tri giác và vế sau khẳng định được; 「たりとも」cần số 「一」và vế sau phủ định.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.32 / p.21",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-emphasis-p3-01-mp-01",
+   "q-cmp-emphasis-p3-01-mp-02"
+  ],
+  "examPatternVi": "Cả hai đều nhấn 'chỉ chừng ấy thôi cũng…' nên đề hay xếp chung.",
+  "openerQuestionId": "q-cmp-emphasis-p3-01-mp-01"
+ },
+ {
+  "id": "cmp-concession-p3-01",
+  "grammarIds": [
+   "nagara-mo",
+   "nagara-no"
+  ],
+  "familyHint": "CONCESSION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "nagara-mo": "Tuy … nhưng lại …",
+     "nagara-no": "Vẫn giữ nguyên như …"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "nagara-mo": "V-ます形／い形容詞／N＋ながら(も)",
+     "nagara-no": "N＋ながらの＋N"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "nagara-mo": "Hai vế TRÁI chiều nhau",
+     "nagara-no": "「昔ながら」「涙ながら」, có danh từ đứng sau"
+    }
+   },
+   {
+    "axis": "RESTRICTION",
+    "cells": {
+     "nagara-mo": "Chủ ngữ hai vế phải là một",
+     "nagara-no": "Chỉ ghép vài danh từ cố định"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Cùng chữ 「ながら」: hai vế trái chiều → nhượng bộ; có danh từ đứng ngay sau → giữ nguyên trạng thái.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.19 / p.9",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-concession-p3-01-mp-01",
+   "q-cmp-concession-p3-01-mp-02"
+  ],
+  "examPatternVi": "Đây là chữ đa nghĩa mà đề khai thác bằng cách đặt hai nghĩa vào cùng một nhóm đáp án.",
+  "openerQuestionId": "q-cmp-concession-p3-01-mp-01"
+ },
+ {
+  "id": "cmp-purpose-p3-01",
+  "grammarIds": [
+   "beku",
+   "n-ga-tame-ni",
+   "beku-shite"
+  ],
+  "familyHint": "PURPOSE",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "beku": "Để … / nhằm …",
+     "n-ga-tame-ni": "Để mà … (dồn hết sức)",
+     "beku-shite": "Xảy ra là đương nhiên"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "beku": "V-辞書形＋べく（する→すべく）",
+     "n-ga-tame-ni": "V-ない形 bỏ ない＋んがため",
+     "beku-shite": "同じ動詞＋べくして＋同じ動詞"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "beku": "Nêu mục đích, trung tính",
+     "n-ga-tame-ni": "Nêu mục đích, nhấn quyết liệt",
+     "beku-shite": "Nhận xét tính tất yếu"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "beku": "Chỉ xuất hiện một lần",
+     "n-ga-tame-ni": "Thể ない bỏ ない",
+     "beku-shite": "Cùng động từ lặp hai lần"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "「べくして」lặp CÙNG động từ và không nói mục đích. 「べく」và 「んがため」cùng nêu mục đích, khác độ quyết liệt.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.24 / p.4 / p.37",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-purpose-p3-01-mp-01",
+   "q-cmp-purpose-p3-01-mp-02"
+  ],
+  "examPatternVi": "「べく」và 「べくして」chỉ khác hai chữ nhưng một cái là mục đích, một cái là tất yếu.",
+  "openerQuestionId": "q-cmp-purpose-p3-01-mp-01"
+ }
+]

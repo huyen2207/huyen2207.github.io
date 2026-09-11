@@ -1,0 +1,345 @@
+[
+ {
+  "from": "zuni-wa-okanai",
+  "to": "nai-dewa-okanai",
+  "type": "registerVariantOf",
+  "differenceKey": "cách nối",
+  "noteVi": "Cùng nghĩa; 「ずには」bỏ 「ない」, 「ないでは」giữ 「ない」.",
+  "source": "CURATED"
+ },
+ {
+  "from": "zuni-wa-sumanai",
+  "to": "nai-dewa-sumanai",
+  "type": "registerVariantOf",
+  "differenceKey": "cách nối",
+  "noteVi": "Cùng nghĩa; khác nhau ở chỗ giữ hay bỏ 「ない」.",
+  "source": "CURATED"
+ },
+ {
+  "from": "zuni-wa-okanai",
+  "to": "zuni-wa-sumanai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nguồn ép buộc",
+  "noteVi": "「おかない」= tác động tất yếu lên NGƯỜI KHÁC; 「すまない」= bản thân BUỘC PHẢI làm vì nghĩa vụ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nai-dewa-okanai",
+  "to": "nai-dewa-sumanai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nguồn ép buộc",
+  "noteVi": "Chỉ khác một chữ nhưng nghĩa ngược hướng nhau.",
+  "source": "CURATED"
+ },
+ {
+  "from": "zuni-wa-okanai",
+  "to": "zuni-wa-sumanai",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "zuni-wa-sumanai",
+  "to": "zaru-wo-enai",
+  "type": "similarTo",
+  "differenceKey": "sắc thái",
+  "noteVi": "Đều là 'buộc phải', nhưng 「ずにはすまない」nhấn nghĩa vụ xã hội.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-yogi-naku-sareru",
+  "to": "zaru-wo-enai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "chủ thể",
+  "noteVi": "「を余儀なくされる」nối DANH TỪ và chủ thể bị động; 「ざるを得ない」nối ĐỘNG TỪ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "kiwamari-nai",
+  "to": "no-kiwami",
+  "type": "oftenConfusedWith",
+  "differenceKey": "cách nối",
+  "noteVi": "「極まりない」nối TÍNH TỪ; 「の極み」nối DANH TỪ cố định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "no-kiwami",
+  "to": "no-itari",
+  "type": "oftenConfusedWith",
+  "differenceKey": "ngữ cảnh",
+  "noteVi": "「の極み」thiên về mức độ; 「の至り」dùng trong lời phát biểu nghi thức.",
+  "source": "CURATED"
+ },
+ {
+  "from": "kiwamari-nai",
+  "to": "to-ittara-nai",
+  "type": "similarTo",
+  "differenceKey": "cực tính",
+  "noteVi": "「極まりない」hầu như chỉ chê; 「といったらない」khen chê đều được.",
+  "source": "CURATED"
+ },
+ {
+  "from": "kiwamari-nai",
+  "to": "no-itari",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ya-inaya",
+  "to": "ga-hayai-ka",
+  "type": "oftenConfusedWith",
+  "differenceKey": "vế sau có chờ sẵn không",
+  "noteVi": "「が早いか」= việc đã chực sẵn; 「や否や」= việc xảy ra ngay, thường ngoài dự tính.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ga-hayai-ka",
+  "to": "nari",
+  "type": "oftenConfusedWith",
+  "differenceKey": "bất ngờ hay chờ sẵn",
+  "noteVi": "「なり」vế sau BẤT NGỜ và chủ ngữ hai vế phải giống nhau.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ya-inaya",
+  "to": "soba-kara",
+  "type": "contrastsWith",
+  "differenceKey": "một lần hay lặp lại",
+  "noteVi": "「そばから」nhấn việc LẶP LẠI nhiều lần, không phải một lần.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ya-inaya",
+  "to": "nari",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ga-hayai-ka",
+  "to": "soba-kara",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "nari",
+  "to": "soba-kara",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "katawara",
+  "to": "gatera",
+  "type": "oftenConfusedWith",
+  "differenceKey": "thời lượng",
+  "noteVi": "「かたわら」là nghề chính kéo dài; 「がてら」là một lần tiện thể.",
+  "source": "CURATED"
+ },
+ {
+  "from": "gatera",
+  "to": "katagata",
+  "type": "oftenConfusedWith",
+  "differenceKey": "văn phong",
+  "noteVi": "「かたがた」chỉ đi với danh từ lễ nghi (お礼・ご挨拶).",
+  "source": "CURATED"
+ },
+ {
+  "from": "katawara",
+  "to": "katagata",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "katawara",
+  "to": "nagara-mo",
+  "type": "similarTo",
+  "differenceKey": "quan hệ hai vế",
+  "noteVi": "「ながらも」là nhượng bộ, không phải làm hai việc song song.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nomi-narazu",
+  "to": "wa-oroka",
+  "type": "oftenConfusedWith",
+  "differenceKey": "cực tính",
+  "noteVi": "「はおろか」vế sau hầu như luôn tiêu cực/phủ định; 「のみならず」trung tính.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wa-oroka",
+  "to": "sura",
+  "type": "oftenConfusedWith",
+  "differenceKey": "vị trí trong câu",
+  "noteVi": "「はおろか」mở đầu cặp so sánh; 「すら」đứng ở vế bị nhấn.",
+  "source": "CURATED"
+ },
+ {
+  "from": "sura",
+  "to": "dani",
+  "type": "similarTo",
+  "differenceKey": "văn phong",
+  "noteVi": "「だに」cổ và hẹp hơn, chỉ đi với vài động từ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nomi-narazu",
+  "to": "sura",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-taeru",
+  "to": "ni-taenai",
+  "type": "contrastsWith",
+  "differenceKey": "khẳng định hay phủ định",
+  "noteVi": "Chỉ khác một chữ nhưng nghĩa ngược hẳn.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-taeru",
+  "to": "ni-taru",
+  "type": "oftenConfusedWith",
+  "differenceKey": "đối tượng đánh giá",
+  "noteVi": "「にたえる」đánh giá CHẤT LƯỢNG vật; 「に足る」đánh giá TƯ CÁCH người.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-taru",
+  "to": "ni-taenai",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "yue",
+  "to": "ba-koso",
+  "type": "oftenConfusedWith",
+  "differenceKey": "cực tính của lý do",
+  "noteVi": "「ばこそ」lý do thường là thiện chí; 「ゆえ」trung tính.",
+  "source": "CURATED"
+ },
+ {
+  "from": "yue",
+  "to": "to-atte",
+  "type": "oftenConfusedWith",
+  "differenceKey": "loại kết quả",
+  "noteVi": "「とあって」vế sau là kết quả ai cũng đoán được, giọng tường thuật.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ba-koso",
+  "to": "to-atte",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "mamire",
+  "to": "zukume",
+  "type": "oftenConfusedWith",
+  "differenceKey": "loại vật",
+  "noteVi": "「まみれ」là chất BẨN bám lên; 「ずくめ」là TOÀN BỘ cùng một loại.",
+  "source": "CURATED"
+ },
+ {
+  "from": "mamire",
+  "to": "zukume",
+  "type": "contrastsWith",
+  "differenceKey": "cực tính",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-kinji-enai",
+  "to": "te-yamanai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "cách nối",
+  "noteVi": "「を禁じ得ない」nối DANH TỪ cảm xúc; 「てやまない」nối ĐỘNG TỪ tình cảm.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-kinji-enai",
+  "to": "nai-dewa-irarenai",
+  "type": "similarTo",
+  "differenceKey": "văn phong",
+  "noteVi": "Cùng là cảm xúc không kìm được; 「を禁じ得ない」trang trọng hơn.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-sokushita",
+  "to": "wo-fumaete",
+  "type": "oftenConfusedWith",
+  "differenceKey": "loại danh từ",
+  "noteVi": "「に即した」bám sát THỰC TRẠNG; 「をふまえて」dựa trên KẾT QUẢ đã có.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-fumaete",
+  "to": "wo-motte",
+  "type": "oftenConfusedWith",
+  "differenceKey": "vai trò danh từ",
+  "noteVi": "「をもって」là mốc thời gian hoặc phương tiện, không phải căn cứ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-sokushita",
+  "to": "wo-motte",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-hikikae",
+  "to": "ni-mo-mashite",
+  "type": "oftenConfusedWith",
+  "differenceKey": "cùng chiều hay ngược chiều",
+  "noteVi": "「にひきかえ」hai vế NGƯỢC nhau; 「にもまして」cùng chiều nhưng vượt lên.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ta-tokoro-de",
+  "to": "ba-sore-made-da",
+  "type": "oftenConfusedWith",
+  "differenceKey": "loại điều kiện",
+  "noteVi": "「たところで」phủ nhận hiệu quả; 「ばそれまでだ」nói mọi thứ đổ bể.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ta-tokoro-de",
+  "to": "mono-wo",
+  "type": "similarTo",
+  "differenceKey": "hướng nhìn",
+  "noteVi": "「ものを」trách việc đã KHÔNG làm; 「たところで」phủ nhận việc CÓ làm.",
+  "source": "CURATED"
+ },
+ {
+  "from": "mono-wo",
+  "to": "nagara-mo",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "beku",
+  "to": "wo-yogi-naku-sareru",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "zuni-wa-okanai",
+  "to": "nai-dewa-sumanai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nguồn ép buộc",
+  "noteVi": "Bốn mẫu này chỉ khác nhau vài chữ nhưng chia làm hai nghĩa: 「おかない」và 「すまない」.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nai-dewa-okanai",
+  "to": "zuni-wa-sumanai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nguồn ép buộc",
+  "noteVi": "Chéo giữa hai cách nối và hai nghĩa — chỗ dễ sập bẫy nhất của cụm.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ba-sore-made-da",
+  "to": "mono-wo",
+  "type": "oftenConfusedWith",
+  "differenceKey": "hướng nhìn",
+  "noteVi": "「ばそれまでだ」nói tương lai đổ bể; 「ものを」trách quá khứ đã không làm.",
+  "source": "CURATED"
+ }
+]

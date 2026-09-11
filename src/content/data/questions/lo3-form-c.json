@@ -1,0 +1,830 @@
+[
+ {
+  "id": "q-tokoro-wo-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "tokoro-wo"
+  ],
+  "stemJa": "「お忙しい（　）、お集まりいただきありがとうございます。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ところを",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "にあって",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Đặt bối cảnh thời thế, không phải cụm xã giao.",
+    "confusedWithGrammarId": "ni-atte",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "ところが",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành liên từ đối lập, không nối được câu cảm ơn.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "ところに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cụm xã giao cố định dùng 「ところを」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「お忙しいところを」＋ lời cảm ơn hoặc xin lỗi.",
+  "keyClueVi": "Vế sau là 「ありがとうございます」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.24",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-meku-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "meku"
+  ],
+  "stemJa": "「彼の言葉には皮肉（　）響きがあった。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "めいた",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "めく",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Bổ nghĩa danh từ thì dùng 「めいた」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "ごとき",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nêu ví dụ cụ thể, không phải phảng phất.",
+    "confusedWithGrammarId": "gotoki",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "めきの",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「N めいた＋N」— bổ nghĩa cho danh từ đứng sau.",
+  "keyClueVi": "Sau chỗ trống là 「響き」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-nai-tomo-kagiranai-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "nai-tomo-kagiranai"
+  ],
+  "stemJa": "「地震が起き（　）から、備えておこう。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ないとも限らない",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "ないものでもない",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nêu khả năng chấp nhận được, không phải cảnh báo.",
+    "confusedWithGrammarId": "nai-mono-demo-nai",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "るとも限らない",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Phải là thể ない.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "ないに限らない",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「V-ない形＋とも限らない」— khả năng xấu chưa loại trừ được.",
+  "keyClueVi": "Vế sau là lời khuyên đề phòng.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-to-wa-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "to-wa"
+  ],
+  "stemJa": "「あの二人が結婚する（　）、思いもしなかった。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "とは",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "ときたら",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nêu người rồi than phiền, không phải bất ngờ về sự việc.",
+    "confusedWithGrammarId": "to-kitara",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "というのは",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành câu định nghĩa.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "とても",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không phải trợ từ nối.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「普通形＋とは」— bộc lộ kinh ngạc.",
+  "keyClueVi": "Vế sau là 「思いもしなかった」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-nai-made-mo-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "nai-made-mo"
+  ],
+  "stemJa": "「毎日とは言わ（　）、週に一度は連絡してほしい。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ないまでも",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "までもなく",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa là khỏi cần nói, không nêu mức tối thiểu.",
+    "confusedWithGrammarId": "made-mo-nai",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "ないまで",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thiếu 「も」thì cụm không thành.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "たまでだ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành 'chỉ làm vậy thôi'.",
+    "confusedWithGrammarId": "made-no-koto-da",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「V-ない形＋までも」— hạ chuẩn rồi nêu mức tối thiểu.",
+  "keyClueVi": "Vế sau nhẹ hơn vế trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-tomo-nashi-ni-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "tomo-nashi-ni"
+  ],
+  "stemJa": "「聞く（　）聞いていた話が、妙に心に残った。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ともなしに",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "ともなると",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nói về mức độ, địa vị.",
+    "confusedWithGrammarId": "to-mo-naru-to",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "こともなしに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành phủ định hoàn toàn.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "たともなしに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nối thể từ điển.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「V-辞書形＋ともなしに」＋ cùng động từ đó.",
+  "keyClueVi": "Động từ tri giác lặp hai lần.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-hitori-nomi-narazu-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "hitori-nomi-narazu"
+  ],
+  "stemJa": "「これは（　）日本のみならず、世界全体の問題だ。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ひとり",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "ただ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cụm cố định là 「ひとり〜のみならず」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "ひとりの",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không thêm 「の」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "ひとつ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Phải là 「ひとり」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「ひとり＋N＋のみならず」là cụm cố định.",
+  "keyClueVi": "A là người hoặc tổ chức.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.30",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-atte-no-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "atte-no"
+  ],
+  "stemJa": "「お客様（　）商売だということを忘れてはならない。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "あっての",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "なくしての",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "「なくして」dẫn sang cả một vế phủ định, không nối danh từ.",
+    "confusedWithGrammarId": "naku-shite",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "があっての",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thừa 「が」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "あっては",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành câu điều kiện.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「N あっての＋N」— hai bên đều là danh từ.",
+  "keyClueVi": "Sau chỗ trống là 「商売」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.32",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-mo-soko-soko-ni-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "mo-soko-soko-ni"
+  ],
+  "stemJa": "「彼は朝食（　）家を飛び出した。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "もそこそこに",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "も辞さずに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa là quyết tâm chấp nhận, không phải vội vã.",
+    "confusedWithGrammarId": "mo-jisanai",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "をそこそこに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Trợ từ phải là 「も」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "もそこそこで",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cụm cố định dùng 「に」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「N もそこそこに」— làm qua quýt rồi vội đi.",
+  "keyClueVi": "「朝食」là danh từ chỉ hành động.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.34",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-mo-jisanai-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "mo-jisanai"
+  ],
+  "stemJa": "「組合はストライキ（　）構えだ。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "も辞さない",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "もそこそこに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa là vội vã, không phải quyết tâm.",
+    "confusedWithGrammarId": "mo-soko-soko-ni",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "も辞さる",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "を辞する",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa ngược lại — thành ra là từ chối.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「N（を）も辞さない」— sẵn sàng chấp nhận cả hậu quả nặng.",
+  "keyClueVi": "「ストライキ」là hậu quả nặng.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.36",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-wa-tomoare-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "wa-tomoare"
+  ],
+  "stemJa": "「何（　）、無事でよかった。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "はともあれ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "はどうあれ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Dùng với 理由・結果, không đi với 「何」ở cụm cố định này.",
+    "confusedWithGrammarId": "wa-dou-are",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "ならまだしも",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "So hai mức rồi chê.",
+    "confusedWithGrammarId": "nara-madashimo",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "をともあれ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Trợ từ phải là 「は」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「何はともあれ」là cụm cố định.",
+  "keyClueVi": "Vế sau là trọng tâm.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.36",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-beku-shite-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "beku-shite"
+  ],
+  "stemJa": "「あの事故は起こる（　）起こった。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "べくして",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "べく",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thiếu 「して」thì thành nghĩa mục đích.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "が最後",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nối thể た và cảnh báo việc chưa xảy ra.",
+    "confusedWithGrammarId": "ga-saigo",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "たべくして",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Vế trước phải là thể từ điển.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「V-辞書形＋べくして＋同じ動詞」.",
+  "keyClueVi": "Cùng một động từ hai lần.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.37",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-ni-wa-ataranai-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "ni-wa-ataranai"
+  ],
+  "stemJa": "「彼の受賞は驚く（　）。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "にはあたらない",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "にはおよばない",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Ngăn một hành động, không phải hạ nhiệt phản ứng.",
+    "confusedWithGrammarId": "ni-wa-oyobanai",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "にかたくない",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa khẳng định — dễ hình dung.",
+    "confusedWithGrammarId": "ni-katakunai",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "にはあたる",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cụm cố định luôn ở dạng phủ định.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「驚く／非難する＋にはあたらない」.",
+  "keyClueVi": "Trước chỗ trống là động từ chỉ phản ứng.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.37",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-iza-to-naru-to-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "iza-to-naru-to"
+  ],
+  "stemJa": "「練習では平気だったのに、（　）本番となると足が震えた。」正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "いざ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "もし",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành câu giả định, mất ý việc thật sự xảy ra.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "いざの",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không thêm 「の」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "としたところで",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Vẫn là giả định chưa xảy ra.",
+    "confusedWithGrammarId": "to-shita-tokoro-de",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「いざ＋N／V＋となると」là cụm cố định.",
+  "keyClueVi": "Vế sau trái với dự tính.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認する",
+    "labelVi": "Nhìn từ đứng NGAY TRƯỚC chỗ trống, xác định thể cần dùng."
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.38",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ }
+]

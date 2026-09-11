@@ -1,0 +1,394 @@
+[
+ {
+  "from": "made-mo-nai",
+  "to": "made-no-koto-da",
+  "type": "oftenConfusedWith",
+  "differenceKey": "vế sau khẳng định hay phủ định",
+  "noteVi": "「までもない」= khỏi cần làm; 「まで(のこと)だ」= chỉ làm vậy thôi, hoặc thì chỉ còn cách vậy.",
+  "source": "CURATED"
+ },
+ {
+  "from": "made-mo-nai",
+  "to": "nai-made-mo",
+  "type": "oftenConfusedWith",
+  "differenceKey": "chỗ đặt 「ない」",
+  "noteVi": "「までもない」phủ định ở SAU; 「ないまでも」phủ định ở TRƯỚC và vế sau nêu mức tối thiểu.",
+  "source": "CURATED"
+ },
+ {
+  "from": "made-no-koto-da",
+  "to": "nai-made-mo",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-wa-oyobanai",
+  "to": "ni-wa-ataranai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "ngăn việc hay hạ nhiệt cảm xúc",
+  "noteVi": "「にはおよばない」ngăn một HÀNH ĐỘNG (khỏi lo, khỏi tới); 「にはあたらない」hạ nhiệt một PHẢN ỨNG (khỏi ngạc nhiên).",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-wa-oyobanai",
+  "to": "ni-katakunai",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-wa-ataranai",
+  "to": "ni-katakunai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "phủ định hay khẳng định",
+  "noteVi": "「にはあたらない」= không đáng làm; 「にかたくない」= dễ dàng làm được.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-shite",
+  "to": "ni-shite-hajimete",
+  "type": "oftenConfusedWith",
+  "differenceKey": "vế sau phủ định hay khẳng định",
+  "noteVi": "Cùng chữ 「にして」: vế sau phủ định = ngay cả X cũng không; có 「はじめて」và vế sau khẳng định = chỉ X mới được.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nara-dewa",
+  "to": "nari-no",
+  "type": "oftenConfusedWith",
+  "differenceKey": "khen hay khiêm tốn",
+  "noteVi": "「ならでは」KHEN nét độc nhất; 「なりの」KHIÊM TỐN về sức mình có hạn.",
+  "source": "CURATED"
+ },
+ {
+  "from": "tomo-naku",
+  "to": "tomo-nashi-ni",
+  "type": "registerVariantOf",
+  "differenceKey": "chữ dùng",
+  "noteVi": "Trùng nghĩa hoàn toàn, chỉ khác 「なく」và 「なしに」.",
+  "source": "CURATED"
+ },
+ {
+  "from": "zujimai",
+  "to": "n-ga-tame-ni",
+  "type": "oftenConfusedWith",
+  "differenceKey": "tiếc nuối hay mục đích",
+  "noteVi": "Cùng lấy thể ない bỏ ない (せず／せん): 「ずじまい」= rốt cuộc không làm được; 「んがため」= để mà làm.",
+  "source": "CURATED"
+ },
+ {
+  "from": "zujimai",
+  "to": "you-ni-mo-nai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "đã rồi hay đang bế tắc",
+  "noteVi": "「ずじまい」kể việc ĐÃ lỡ; 「ようにも〜ない」nói tình thế HIỆN không làm nổi.",
+  "source": "CURATED"
+ },
+ {
+  "from": "n-ga-tame-ni",
+  "to": "you-ni-mo-nai",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "nai-mono-demo-nai",
+  "to": "nai-tomo-kagiranai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "khả năng tốt hay xấu",
+  "noteVi": "「ないものでもない」nêu khả năng CHẤP NHẬN được; 「ないとも限らない」cảnh báo khả năng XẤU.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nai-mono-demo-nai",
+  "to": "yochi-ga-aru",
+  "type": "similarTo",
+  "differenceKey": "cách nói",
+  "noteVi": "Cùng nói còn khả năng; 「余地がある」nói thẳng, không vòng vo hai lần phủ định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nai-tomo-kagiranai",
+  "to": "yochi-ga-aru",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "taru",
+  "to": "gotoki",
+  "type": "oftenConfusedWith",
+  "differenceKey": "đề cao hay hạ thấp",
+  "noteVi": "「たる」ĐỀ CAO vị trí; 「ごとき」nêu ví dụ, dùng cho người thì thành HẠ THẤP.",
+  "source": "CURATED"
+ },
+ {
+  "from": "taru",
+  "to": "majiki",
+  "type": "oftenConfusedWith",
+  "differenceKey": "phải làm hay không được làm",
+  "noteVi": "「たる」nêu bổn phận PHẢI làm; 「まじき」nêu hành vi KHÔNG được làm.",
+  "source": "CURATED"
+ },
+ {
+  "from": "gotoki",
+  "to": "majiki",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "mo-saru-koto-nagara",
+  "to": "hitori-nomi-narazu",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "mo-saru-koto-nagara",
+  "to": "nomi-narazu",
+  "type": "oftenConfusedWith",
+  "differenceKey": "trọng tâm nằm ở đâu",
+  "noteVi": "「もさることながら」dồn trọng tâm về VẾ SAU; 「のみならず」chỉ mở rộng phạm vi.",
+  "source": "CURATED"
+ },
+ {
+  "from": "mo-saru-koto-nagara",
+  "to": "to-aimatte",
+  "type": "oftenConfusedWith",
+  "differenceKey": "liệt kê hay cộng hưởng",
+  "noteVi": "「もさることながら」so hai yếu tố; 「と相まって」nói hai tính chất CỘNG HƯỞNG ra kết quả.",
+  "source": "CURATED"
+ },
+ {
+  "from": "hitori-nomi-narazu",
+  "to": "nomi-narazu",
+  "type": "registerVariantOf",
+  "differenceKey": "độ cứng",
+  "noteVi": "Cùng nghĩa; 「ひとり〜のみならず」cứng hơn và A phải là người hoặc tổ chức.",
+  "source": "CURATED"
+ },
+ {
+  "from": "hitori-nomi-narazu",
+  "to": "to-aimatte",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "nomi-narazu",
+  "to": "to-aimatte",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "atte-no",
+  "to": "naku-shite",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nối danh từ hay nối vế",
+  "noteVi": "「あっての」nối hai DANH TỪ; 「なくして」dẫn sang cả một vế và vế đó phải phủ định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "shimatsu-da",
+  "to": "ni-itaru",
+  "type": "oftenConfusedWith",
+  "differenceKey": "có chê trách không",
+  "noteVi": "「しまつだ」luôn CHÊ kết cục khó coi; 「に至る」trung tính, chỉ kể quá trình dẫn tới kết quả.",
+  "source": "CURATED"
+ },
+ {
+  "from": "shimatsu-da",
+  "to": "beku-shite",
+  "type": "oftenConfusedWith",
+  "differenceKey": "kết cục hay tất yếu",
+  "noteVi": "「べくして」nhấn rằng kết cục là TẤT YẾU và phải lặp cùng động từ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "shimatsu-da",
+  "to": "ga-saigo",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-itaru",
+  "to": "beku-shite",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-itaru",
+  "to": "ga-saigo",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "beku-shite",
+  "to": "ga-saigo",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nhìn lại hay cảnh báo",
+  "noteVi": "「べくして」nhìn LẠI việc đã xảy ra; 「が最後」cảnh báo việc CHƯA xảy ra.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-shita-tokoro-de",
+  "to": "iza-to-naru-to",
+  "type": "oftenConfusedWith",
+  "differenceKey": "giả định hay thực tế",
+  "noteVi": "「としたところで」là GIẢ ĐỊNH bị bác; 「いざ〜となると」là lúc việc THẬT SỰ xảy ra.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-shita-tokoro-de",
+  "to": "dewa-arumai-shi",
+  "type": "oftenConfusedWith",
+  "differenceKey": "bác giả định của ai",
+  "noteVi": "「としたところで」bác giả định về KẾT QUẢ; 「ではあるまいし」bác một tiền đề vô lý rồi trách nhẹ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "iza-to-naru-to",
+  "to": "dewa-arumai-shi",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-mono-tomo-sezu-ni",
+  "to": "wo-yoso-ni",
+  "type": "oftenConfusedWith",
+  "differenceKey": "khen hay chê",
+  "noteVi": "「をものともせずに」luôn KHEN; 「をよそに」thường CHÊ vì phớt lờ tình cảm người khác.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-mono-tomo-sezu-ni",
+  "to": "mo-okamai-nashi-ni",
+  "type": "oftenConfusedWith",
+  "differenceKey": "vượt qua hay phớt lờ",
+  "noteVi": "「をものともせずに」VƯỢT QUA khó khăn; 「もおかまいなしに」PHỚT LỜ quy định, người xung quanh.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-yoso-ni",
+  "to": "mo-okamai-nashi-ni",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "mo-soko-soko-ni",
+  "to": "mo-jisanai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "vội vàng hay quyết tâm",
+  "noteVi": "Cùng có 「も」: 「もそこそこに」bỏ dở vì VỘI; 「も辞さない」chấp nhận hậu quả nặng vì QUYẾT TÂM.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nari-nari",
+  "to": "to-ii-to-ii",
+  "type": "oftenConfusedWith",
+  "differenceKey": "lựa chọn hay đánh giá",
+  "noteVi": "「なり、なり」nêu LỰA CHỌN cho người nghe; 「といい、といい」nêu hai KHÍA CẠNH để đánh giá.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nari-nari",
+  "to": "tsu-tsu",
+  "type": "oftenConfusedWith",
+  "differenceKey": "tự ghép hay cụm cố định",
+  "noteVi": "「なり、なり」ghép tự do; 「つ〜つ」chỉ có vài cụm cố định như 持ちつ持たれつ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-ii-to-ii",
+  "to": "tsu-tsu",
+  "type": "oftenConfusedWith",
+  "differenceKey": "hai danh từ hay hai động từ",
+  "noteVi": "「といい」nối DANH TỪ; 「つ〜つ」nối hai động từ thể ます và là cụm cố định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-wa",
+  "to": "to-kitara",
+  "type": "oftenConfusedWith",
+  "differenceKey": "bất ngờ hay than phiền",
+  "noteVi": "「とは」bộc lộ BẤT NGỜ về sự việc; 「ときたら」nêu ĐỐI TƯỢNG rồi than phiền về họ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-wa",
+  "to": "de-nakute-nan-darou",
+  "type": "oftenConfusedWith",
+  "differenceKey": "bỏ lửng hay hỏi tu từ",
+  "noteVi": "「とは」hay bỏ lửng câu; 「でなくてなんだろう」là câu HỎI TU TỪ để khẳng định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-kitara",
+  "to": "de-nakute-nan-darou",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "te-kara-to-iu-mono",
+  "to": "ni-itaru",
+  "type": "oftenConfusedWith",
+  "differenceKey": "mốc bắt đầu hay điểm cuối",
+  "noteVi": "「てからというもの」lấy mốc BẮT ĐẦU; 「に至る」nói ĐIỂM CUỐI của quá trình.",
+  "source": "CURATED"
+ },
+ {
+  "from": "te-kara-to-iu-mono",
+  "to": "wo-kawakiri-ni",
+  "type": "oftenConfusedWith",
+  "differenceKey": "thay đổi hay chuỗi sự kiện",
+  "noteVi": "「てからというもの」nhấn TRẠNG THÁI đổi hẳn; 「を皮切りに」nhấn CHUỖI sự kiện nối nhau.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-itaru",
+  "to": "wo-kawakiri-ni",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "meku",
+  "to": "gotoki",
+  "type": "oftenConfusedWith",
+  "differenceKey": "phảng phất hay ví dụ",
+  "noteVi": "「めく」nói PHẢNG PHẤT sắc thái đó; 「ごとき」nêu một VÍ DỤ cụ thể.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wa-tomoare",
+  "to": "nara-madashimo",
+  "type": "oftenConfusedWith",
+  "differenceKey": "gác sang bên hay so mức",
+  "noteVi": "「はともあれ」không so sánh; 「ならまだしも」so hai MỨC rồi chê.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wa-tomoare",
+  "to": "iza-shirazu",
+  "type": "oftenConfusedWith",
+  "differenceKey": "gác tạm hay gác hẳn",
+  "noteVi": "「はともあれ」gác TẠM để nói cái quan trọng hơn; 「いざ知らず」gác HẲN một trường hợp ra ngoài.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nara-madashimo",
+  "to": "iza-shirazu",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "temae",
+  "to": "dewa-sumasarenai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "lý do hay kết luận",
+  "noteVi": "「手前」nêu LÝ DO vì thể diện; 「ではすまされない」là KẾT LUẬN rằng biện bạch không đủ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "tokoro-wo",
+  "to": "ni-atte",
+  "type": "oftenConfusedWith",
+  "differenceKey": "xã giao hay bối cảnh",
+  "noteVi": "「ところ(を)」là cụm XÃ GIAO, vế sau là cảm ơn hoặc xin lỗi; 「にあって」đặt BỐI CẢNH thời thế.",
+  "source": "CURATED"
+ }
+]

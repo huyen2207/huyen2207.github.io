@@ -1,0 +1,16 @@
+# Deploy tĩnh. App không có backend — chỉ cần build rồi phục vụ thư mục dist.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# BrowserRouter: mọi đường dẫn đều trả về index.html để React Router tự định tuyến.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Service worker không được cache lâu, nếu không bản cập nhật nội dung sẽ không tới được máy học.
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"

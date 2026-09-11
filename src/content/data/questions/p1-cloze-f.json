@@ -1,0 +1,1226 @@
+[
+ {
+  "id": "q-kaimoku-nai-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "kaimoku-nai"
+  ],
+  "stemJa": "「犯人の動機については___見当がつかない。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "皆目",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "とうてい",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đi với 「無理だ」「できない」, nói bất khả thi.",
+    "confusedWithGrammarId": "toutei",
+    "violatedAxis": "KEY_CLUE"
+   },
+   {
+    "id": "c",
+    "textJa": "一向に",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Dùng khi chờ mà tình hình không đổi.",
+    "confusedWithGrammarId": "ikkou-ni",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "d",
+    "textJa": "皆目に",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không thêm 「に」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「見当がつかない」là cụm cố định đi với 「皆目」.",
+  "keyClueVi": "Nhìn động từ ở cuối câu.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.37",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "COLLOCATION",
+   "textJa": "見当がつかない",
+   "noteVi": "Nhìn động từ ở cuối câu."
+  },
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "Bốn phó từ phủ định phân biệt bằng cụm đi kèm, không bằng nghĩa.",
+   "fastestPathVi": "Cuối câu là 「見当がつかない」hay 「無理だ」?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-ni-shite-nenrei-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "ni-shite-nenrei"
+  ],
+  "stemJa": "「彼女は七十歳___、初のマラソン完走を果たした。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "にして",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "にしてはじめて",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Thành nghĩa 'chỉ có ở tuổi đó mới được', sai ý.",
+    "confusedWithGrammarId": "ni-shite-hajimete",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "になってから",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Mất sắc thái kinh ngạc.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "にしても",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành nhượng bộ.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Con số chỉ tuổi 「七十歳」→ 「にして」nghĩa 'ở tuổi … mà đã'.",
+  "keyClueVi": "Con số tuổi đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.37",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "COLLOCATION",
+   "textJa": "七十歳___",
+   "noteVi": "Con số tuổi đứng trước."
+  },
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "「にして」có bốn nghĩa; con số tuổi là dấu hiệu của nghĩa này.",
+   "fastestPathVi": "Trước chỗ trống có phải con số tuổi không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-isso-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "isso"
+  ],
+  "stemJa": "「小手先の修正を重ねるより、___作り直したほうが早い。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "いっそ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "でもともとだから",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là lời tự trấn an, không phải chọn giữa hai phương án.",
+    "confusedWithGrammarId": "moto-moto-da",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "どうにかして",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Giữ nguyên mục tiêu và tìm mọi cách, còn đây là đổi hướng.",
+    "confusedWithGrammarId": "dou-ni-ka-shite",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "d",
+    "textJa": "いっそう",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa là 'càng thêm'.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「〜より」＋ chọn hẳn phương án khác → 「いっそ」.",
+  "keyClueVi": "「〜より」đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.38",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONTEXT",
+   "textJa": "作り直したほうが早い",
+   "noteVi": "「〜より」đứng trước."
+  },
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "Ba mẫu cùng nói về quyết định nên đề hay xếp chung.",
+   "fastestPathVi": "Câu đang đổi hướng, trấn an, hay quyết tâm?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-nan-to-ittemo-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "nan-to-ittemo"
+  ],
+  "stemJa": "「この製品の強みは、___耐久性の高さだ。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "なんといっても",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "なんでも",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần kết câu bằng 「らしい」「そうだ」.",
+    "confusedWithGrammarId": "nandemo",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "知ってか知らずか",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Dùng để phỏng đoán nhận thức của người khác.",
+    "confusedWithGrammarId": "shitte-ka-shirazu-ka",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "d",
+    "textJa": "なんといって",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thiếu 「も」thì cụm không thành.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Chốt điều nổi bật nhất → 「なんといっても」.",
+  "keyClueVi": "Vế sau là điều được chọn ra.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.20",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "COLLOCATION",
+   "textJa": "強みは",
+   "noteVi": "Vế sau là điều được chọn ra."
+  },
+  "trap": {
+   "trapType": "LOOKALIKE_FORM",
+   "trapExplanationVi": "「なんといっても」và 「なんでも」chỉ khác vài chữ.",
+   "fastestPathVi": "Đuôi câu có 「らしい」không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-nandemo-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "nandemo"
+  ],
+  "stemJa": "「___隣の店は来月で閉めるそうだ。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "なんでも",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "なんといっても",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Dùng để chốt điều nổi bật nhất, không truyền tin đồn.",
+    "confusedWithGrammarId": "nan-to-ittemo",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "知ってか知らずか",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Chủ thể phải là người khác và không kết bằng 「そうだ」.",
+    "confusedWithGrammarId": "shitte-ka-shirazu-ka",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "なんでもの",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không thêm 「の」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Kết câu bằng 「そうだ」→ truyền tin nghe được → 「なんでも」.",
+  "keyClueVi": "「そうだ」ở cuối.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.20",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "POSITION",
+   "textJa": "閉めるそうだ",
+   "noteVi": "「そうだ」ở cuối."
+  },
+  "trap": {
+   "trapType": "LOOKALIKE_FORM",
+   "trapExplanationVi": "Dấu hiệu nằm ở ĐUÔI CÂU chứ không ở đầu.",
+   "fastestPathVi": "Cuối câu có 「らしい」「そうだ」không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-dochira-ni-shitemo-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "dochira-ni-shitemo"
+  ],
+  "stemJa": "「延期するか中止するか、___早めの告知が必要だ。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "どちらにしても",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "は別にして",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Chỉ gác một yếu tố, không kết luận chung cho hai khả năng.",
+    "confusedWithGrammarId": "wa-betsu-ni-shite",
+    "violatedAxis": "KEY_CLUE"
+   },
+   {
+    "id": "c",
+    "textJa": "どちらかにして",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành lời yêu cầu chọn một.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "どちらにして",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thiếu 「も」thì cụm không thành.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Có hai khả năng 「延期するか中止するか」→ 「どちらにしても」.",
+  "keyClueVi": "Hai khả năng nêu trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.14",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONTEXT",
+   "textJa": "延期するか中止するか",
+   "noteVi": "Hai khả năng nêu trước."
+  },
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "Dấu hiệu là có ĐÚNG HAI khả năng nêu ra trước.",
+   "fastestPathVi": "Trước chỗ trống có hai khả năng không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-kokoro-okinaku-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "kokoro-okinaku"
+  ],
+  "stemJa": "「後任も決まりましたので、___お発ちください。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "心おきなく",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "お忙しいところを",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Rào trước hoàn cảnh rồi cảm ơn hoặc xin lỗi, không phải lời mời.",
+    "confusedWithGrammarId": "tokoro-wo",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "心おきない",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Phải là dạng 「〜なく」để bổ nghĩa động từ.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "心を置かないで",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có cách nói này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Mời người nghe cứ yên lòng mà đi → 「心おきなく」.",
+  "keyClueVi": "Lời mời lịch sự.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.14",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONTEXT",
+   "textJa": "お発ちください",
+   "noteVi": "Lời mời lịch sự."
+  },
+  "trap": {
+   "trapType": "REGISTER_MISMATCH",
+   "trapExplanationVi": "Cả hai đều là cụm xã giao trang trọng nên dễ lẫn.",
+   "fastestPathVi": "Vế sau là lời mời hay lời cảm ơn?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-shitte-ka-shirazu-ka-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "shitte-ka-shirazu-ka"
+  ],
+  "stemJa": "「___、彼は禁を破って中庭に入っていった。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "知ってか知らずか",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "なんでも",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần kết câu bằng 「らしい」「そうだ」.",
+    "confusedWithGrammarId": "nandemo",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "知っても知らなくても",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành nhượng bộ, mất ý phỏng đoán.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "知ってか知らないか",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cụm cố định là 「知らずか」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Phỏng đoán nhận thức của người khác → 「知ってか知らずか」.",
+  "keyClueVi": "Chủ thể là người khác.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.8",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "RESTRICTION",
+   "textJa": "彼は禁を破って",
+   "noteVi": "Chủ thể là người khác."
+  },
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "Cụm cố định — không được đổi 「知らずか」thành 「知らないか」.",
+   "fastestPathVi": "Chủ thể là người khác hay chính người nói?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-iyaou-nashi-ni-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "iyaou-nashi-ni"
+  ],
+  "stemJa": "「制度改正で、我々は___方針転換を迫られた。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "いやおうなしに",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "せねば",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là bổn phận tự nhận và cần 「ならない」ở sau.",
+    "confusedWithGrammarId": "neba",
+    "violatedAxis": "SUBJECT"
+   },
+   {
+    "id": "c",
+    "textJa": "いやおうなく",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cụm quen dùng là 「いやおうなしに」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "いやなしに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Bị hoàn cảnh dồn ép 「迫られた」→ 「いやおうなしに」.",
+  "keyClueVi": "Chủ thể bị động.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.8",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "RESTRICTION",
+   "textJa": "迫られた",
+   "noteVi": "Chủ thể bị động."
+  },
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "Cả hai đều là sự bắt buộc; khác ở chỗ tự nhận hay bị ép.",
+   "fastestPathVi": "Chủ thể có quyền chọn không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-ga-saiwai-shite-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "ga-saiwai-shite"
+  ],
+  "stemJa": "「軽装だったの___、けがは軽く済んだ。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "が幸いして",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "こととて",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Vế sau phải là lời xin lỗi, ở đây là kết quả may mắn.",
+    "confusedWithGrammarId": "kototote",
+    "violatedAxis": "POLARITY_TENDENCY"
+   },
+   {
+    "id": "c",
+    "textJa": "を幸いして",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Trợ từ phải là 「が」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "が幸いで",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cụm cố định là 「が幸いして」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Vế sau là kết quả tốt 「軽く済んだ」→ 「が幸いして」.",
+  "keyClueVi": "Kết quả may mắn.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.6",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "POSITION",
+   "textJa": "軽く済んだ",
+   "noteVi": "Kết quả may mắn."
+  },
+  "trap": {
+   "trapType": "CONTEXT_REVERSAL",
+   "trapExplanationVi": "Hai mẫu nêu lý do nhưng vế sau đi hai hướng ngược nhau.",
+   "fastestPathVi": "Vế sau là kết quả tốt hay lời xin lỗi?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-you-to-iu-mono-da-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "you-to-iu-mono-da"
+  ],
+  "stemJa": "「これだけ手を尽くせば、道も開け___。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ようというものだ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "るものだ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cấu trúc là 「よく〜ものだ」với 「よく」đứng đầu.",
+    "confusedWithGrammarId": "yoku-mono-da",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "るのももっともだ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Dùng để đồng cảm với cảm xúc người khác.",
+    "confusedWithGrammarId": "mottomo-da",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "d",
+    "textJa": "ようというものか",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành câu hỏi, mất ý khẳng định.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Thể ý chí ＋ chốt điều hợp lẽ → 「ようというものだ」.",
+  "keyClueVi": "Thể ý chí đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.4",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONNECTION",
+   "textJa": "道も開け___",
+   "noteVi": "Thể ý chí đứng trước."
+  },
+  "trap": {
+   "trapType": "LOOKALIKE_FORM",
+   "trapExplanationVi": "Nhóm mẫu kết bằng 「ものだ」rất đông và dễ lẫn.",
+   "fastestPathVi": "Trước chỗ trống là thể ý chí phải không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-to-iu-fuu-ni-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "to-iu-fuu-ni"
+  ],
+  "stemJa": "「急がば回れ、___理解するようになった。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "というふうに",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "といった",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần danh từ khái quát đứng sau, không nối trực tiếp động từ tư duy.",
+    "confusedWithGrammarId": "to-itta",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "というふうで",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nối động từ thì dùng 「に」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "というような",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không nối trực tiếp 「理解する」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Động từ tư duy 「理解する」ở sau → 「というふうに」.",
+  "keyClueVi": "Động từ tư duy ở sau.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONNECTION",
+   "textJa": "理解するようになった",
+   "noteVi": "Động từ tư duy ở sau."
+  },
+  "trap": {
+   "trapType": "CONNECTION_MISMATCH",
+   "trapExplanationVi": "Hai mẫu cùng mở đầu bằng 「という」nhưng nối hai thứ khác nhau.",
+   "fastestPathVi": "Sau chỗ trống là danh từ hay động từ tư duy?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-yohodo-nai-to-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "yohodo-nai-to"
+  ],
+  "stemJa": "「___注意して読まないと、条件を見落とすよ。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "よほど",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "二か月もすれば",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Điều kiện phải là thời gian trôi qua, không phải mức độ.",
+    "confusedWithGrammarId": "mo-sureba",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "よほどの",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Ở đây không thêm 「の」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "よもや",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cần vế sau là 「〜まい」.",
+    "confusedWithGrammarId": "yomoya",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Điều kiện là mức độ kỹ lưỡng ＋ vế sau xấu → 「よほど〜ないと」.",
+  "keyClueVi": "Vế sau là kết quả xấu.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.33",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONTEXT",
+   "textJa": "見落とすよ",
+   "noteVi": "Vế sau là kết quả xấu."
+  },
+  "trap": {
+   "trapType": "CONNECTION_MISMATCH",
+   "trapExplanationVi": "Dấu hiệu là cặp 「よほど〜ないと」và vế sau xấu.",
+   "fastestPathVi": "Vế sau có phải điều không mong muốn không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-ikanimo-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "ikanimo"
+  ],
+  "stemJa": "「___職人らしい丁寧な仕事ぶりだった。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "いかにも",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "いかに",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nhấn mức độ và hay đi 「〜ても」, không đi với 「らしい」.",
+    "confusedWithGrammarId": "ikani",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "いかにもの",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không thêm 「の」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "いかがにも",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Có 「らしい」→ 「いかにも」nhận xét vẻ ngoài.",
+  "keyClueVi": "「らしい」ở sau.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.11",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONNECTION",
+   "textJa": "職人らしい",
+   "noteVi": "「らしい」ở sau."
+  },
+  "trap": {
+   "trapType": "LOOKALIKE_FORM",
+   "trapExplanationVi": "「いかに」／「いかにも」khác một chữ nhưng đòi hai loại đuôi khác nhau.",
+   "fastestPathVi": "Sau chỗ trống là 「らしい」hay 「〜ても」?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-dou-ni-ka-shite-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "dou-ni-ka-shite"
+  ],
+  "stemJa": "「___この状況を打開しなければならない。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "どうにかして",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "いっそ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là đổi sang phương án khác, không giữ nguyên mục tiêu.",
+    "confusedWithGrammarId": "isso",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "どうにか",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa là 'tạm ổn', mất ý quyết tâm.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "とうてい",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa ngược lại.",
+    "confusedWithGrammarId": "toutei",
+    "violatedAxis": "MEANING"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「〜なければならない」＋ quyết tâm tìm mọi cách → 「どうにかして」.",
+  "keyClueVi": "「〜なければ」ở sau.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.17",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONTEXT",
+   "textJa": "打開しなければならない",
+   "noteVi": "「〜なければ」ở sau."
+  },
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "「どうにか」và 「どうにかして」khác nhau hẳn về sắc thái.",
+   "fastestPathVi": "Câu đang quyết tâm hay đang nói kết quả tạm ổn?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-moto-moto-da-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "moto-moto-da"
+  ],
+  "stemJa": "「断られて___だ。とにかく頼んでみよう。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "もともと",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "いっそ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "So hai phương án rồi chọn hẳn, không phải tự trấn an.",
+    "confusedWithGrammarId": "isso",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "どうにかして",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là quyết tâm tìm mọi cách, không phải trấn an.",
+    "confusedWithGrammarId": "dou-ni-ka-shite",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "d",
+    "textJa": "もとより",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa là 'vốn dĩ'.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Thất bại thì cũng như cũ → 「〜でもともとだ」.",
+  "keyClueVi": "Giọng tự trấn an.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.12",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "COLLOCATION",
+   "textJa": "断られて___",
+   "noteVi": "Giọng tự trấn an."
+  },
+  "trap": {
+   "trapType": "COLLOCATION_TRAP",
+   "trapExplanationVi": "「だめでもともと」「断られてもともと」là cụm quen thuộc.",
+   "fastestPathVi": "Câu có đang tự trấn an trước khi thử không?",
+   "strength": 3
+  }
+ }
+]

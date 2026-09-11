@@ -1,0 +1,874 @@
+[
+ {
+  "id": "me-ni-miete",
+  "pattern": "〜目に見えて",
+  "reading": "めにみえて",
+  "aliases": [],
+  "meaningVi": "Thấy rõ … / rõ rệt hẳn.",
+  "coreImage": "Thay đổi lớn tới mức nhìn bằng mắt cũng nhận ra.",
+  "nuanceVi": "Chỉ đi với động từ chỉ sự biến đổi: 増える・減る・よくなる.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "目に見えて＋V（変化）"
+   }
+  ],
+  "usage": [
+   "Nhấn một thay đổi rõ rệt"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Chỉ đi với động từ chỉ sự biến đổi.",
+    "counterExample": "×目に見えて本を読んだ。"
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "会話",
+   "報道"
+  ],
+  "examples": [
+   {
+    "ja": "薬を変えてから、症状は目に見えてよくなった。",
+    "vi": "Từ khi đổi thuốc, triệu chứng đã đỡ hẳn thấy rõ."
+   },
+   {
+    "ja": "観光客が目に見えて減っている。",
+    "vi": "Khách du lịch đang giảm đi thấy rõ."
+   }
+  ],
+  "commonMistakes": [
+   "Ghép với động từ không chỉ biến đổi",
+   "Hiểu theo nghĩa đen là nhìn thấy"
+  ],
+  "keyClues": [
+   "động từ chỉ biến đổi",
+   "「〜てから」đứng trước"
+  ],
+  "families": [
+   "DEGREE"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.15",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "heta-wo-suru-to",
+  "pattern": "〜下手(を)すると",
+  "reading": "へたをすると",
+  "aliases": [],
+  "meaningVi": "Không khéo thì … / tệ nhất là …",
+  "coreImage": "Nhìn trước tình huống xấu nhất có thể xảy ra.",
+  "nuanceVi": "Vế sau luôn là kết quả xấu, thường kèm 「かもしれない」.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "下手(を)すると＋文"
+   }
+  ],
+  "usage": [
+   "Cảnh báo tình huống xấu nhất"
+  ],
+  "restrictions": [
+   {
+    "kind": "POLARITY",
+    "ruleVi": "Vế sau phải là kết quả xấu.",
+    "counterExample": "×下手をすると、優勝できるかもしれない。"
+   }
+  ],
+  "register": "SPOKEN",
+  "typicalContexts": [
+   "会話"
+  ],
+  "examples": [
+   {
+    "ja": "下手をすると、終電に間に合わないかもしれない。",
+    "vi": "Không khéo thì có khi lỡ chuyến tàu cuối."
+   },
+   {
+    "ja": "下手をすると、大事故になりかねない。",
+    "vi": "Tệ nhất thì có thể thành tai nạn lớn."
+   }
+  ],
+  "commonMistakes": [
+   "Vế sau là kết quả tốt",
+   "Hiểu 「下手」theo nghĩa vụng về"
+  ],
+  "keyClues": [
+   "vế sau xấu",
+   "có 「かもしれない」"
+  ],
+  "families": [
+   "ASSUMPTION",
+   "CONDITION"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.16",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "ikkou-ni",
+  "pattern": "〜一向に",
+  "reading": "いっこうに",
+  "aliases": [],
+  "meaningVi": "Chẳng hề … chút nào.",
+  "coreImage": "Chờ mãi mà tình hình đứng yên tại chỗ.",
+  "nuanceVi": "Luôn đi với phủ định. Hàm ý sốt ruột.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "一向に＋V-ない形"
+   },
+   {
+    "pos": "A",
+    "form": "一向に＋A-ない"
+   }
+  ],
+  "usage": [
+   "Bày tỏ sốt ruột vì không có tiến triển"
+  ],
+  "restrictions": [
+   {
+    "kind": "POLARITY",
+    "ruleVi": "Bắt buộc đi với phủ định.",
+    "counterExample": "×一向によくなった。"
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "会話",
+   "報道"
+  ],
+  "examples": [
+   {
+    "ja": "薬を飲んでも、熱は一向に下がらない。",
+    "vi": "Uống thuốc rồi mà sốt chẳng hề hạ chút nào."
+   },
+   {
+    "ja": "何度説明しても、一向に理解してもらえない。",
+    "vi": "Giải thích bao lần mà chẳng ai hiểu cho chút nào."
+   }
+  ],
+  "commonMistakes": [
+   "Dùng với câu khẳng định",
+   "Nhầm với 「一気に」"
+  ],
+  "keyClues": [
+   "vế sau phủ định",
+   "giọng sốt ruột"
+  ],
+  "families": [
+   "NEGATION",
+   "DEGREE"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.17",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "toutei",
+  "pattern": "〜とうてい",
+  "reading": "とうてい",
+  "aliases": [],
+  "meaningVi": "Dù thế nào cũng không …",
+  "coreImage": "Thử mọi cách rồi, vẫn không tài nào được.",
+  "nuanceVi": "Luôn đi với phủ định hoặc 「無理だ」「不可能だ」.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "とうてい＋V-可能形の否定"
+   },
+   {
+    "pos": "A",
+    "form": "とうてい＋無理だ／不可能だ"
+   }
+  ],
+  "usage": [
+   "Khẳng định sự bất khả thi"
+  ],
+  "restrictions": [
+   {
+    "kind": "POLARITY",
+    "ruleVi": "Bắt buộc đi với phủ định hoặc từ mang nghĩa phủ định.",
+    "counterExample": "×とうてい間に合う。"
+   }
+  ],
+  "register": "FORMAL_WRITTEN",
+  "typicalContexts": [
+   "論説文",
+   "会話"
+  ],
+  "examples": [
+   {
+    "ja": "この予算では、とうてい実現できない。",
+    "vi": "Với ngân sách này thì dù thế nào cũng không thực hiện nổi."
+   },
+   {
+    "ja": "一日で仕上げるのはとうてい無理だ。",
+    "vi": "Hoàn thành trong một ngày thì dù sao cũng bất khả thi."
+   }
+  ],
+  "commonMistakes": [
+   "Dùng với câu khẳng định",
+   "Nhầm với 「到底」nghĩa khác"
+  ],
+  "keyClues": [
+   "vế sau phủ định",
+   "「無理だ」「不可能だ」"
+  ],
+  "families": [
+   "NEGATION",
+   "EMPHASIS"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.17",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "ni-mukete",
+  "pattern": "〜に向けて",
+  "reading": "にむけて",
+  "aliases": [],
+  "meaningVi": "Hướng tới … / nhắm tới …",
+  "coreImage": "Đặt một cái đích rồi mọi việc đều xoay về phía đó.",
+  "nuanceVi": "A là mục tiêu, thời điểm đích, hoặc nơi đến.",
+  "structure": [
+   {
+    "pos": "N",
+    "form": "N＋に向けて"
+   }
+  ],
+  "usage": [
+   "Nêu mục tiêu của một loạt hành động"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "A phải là mục tiêu, đích đến hoặc thời điểm đích."
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "報道",
+   "説明"
+  ],
+  "examples": [
+   {
+    "ja": "開催に向けて、準備が本格化している。",
+    "vi": "Hướng tới ngày tổ chức, công tác chuẩn bị đang vào giai đoạn cao điểm."
+   },
+   {
+    "ja": "世界に向けて情報を発信していく。",
+    "vi": "Chúng tôi sẽ phát đi thông tin hướng ra thế giới."
+   }
+  ],
+  "commonMistakes": [
+   "Nhầm với 「に向かって」",
+   "Ghép với danh từ không phải mục tiêu"
+  ],
+  "keyClues": [
+   "danh từ chỉ mục tiêu",
+   "vế sau là chuẩn bị"
+  ],
+  "families": [
+   "PURPOSE"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.18",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "wa-naosara-no-koto",
+  "pattern": "〜はなおさらのこと",
+  "reading": "はなおさらのこと",
+  "aliases": [],
+  "meaningVi": "… thì lại càng như vậy.",
+  "coreImage": "Cái trước đã thế, cái này còn hơn nữa.",
+  "nuanceVi": "Nêu một trường hợp rồi đẩy lên mức mạnh hơn.",
+  "structure": [
+   {
+    "pos": "N",
+    "form": "N＋はなおさらのこと"
+   }
+  ],
+  "usage": [
+   "Đẩy mức độ lên sau khi nêu một ví dụ"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Phải có một mệnh đề nêu trước làm mốc so sánh."
+   }
+  ],
+  "register": "FORMAL_WRITTEN",
+  "typicalContexts": [
+   "論説文",
+   "会話"
+  ],
+  "examples": [
+   {
+    "ja": "大人でも難しい。子供はなおさらのことだ。",
+    "vi": "Người lớn còn thấy khó. Trẻ con thì lại càng vậy."
+   },
+   {
+    "ja": "平日でも混む。休日はなおさらのことだ。",
+    "vi": "Ngày thường đã đông. Ngày nghỉ thì lại càng hơn."
+   }
+  ],
+  "commonMistakes": [
+   "Thiếu mệnh đề mốc phía trước",
+   "Nhầm với 「もちろん」"
+  ],
+  "keyClues": [
+   "có câu nêu mốc phía trước",
+   "đẩy mức lên cao hơn"
+  ],
+  "families": [
+   "DEGREE",
+   "EMPHASIS"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 3,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.18",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "ni-ni-te",
+  "pattern": "〜に〜て",
+  "reading": "にて",
+  "aliases": [],
+  "meaningVi": "… hết sức là …",
+  "coreImage": "Lặp lại chính động từ đó để nhấn cho tới cùng.",
+  "nuanceVi": "Lặp cùng một động từ: thể ます ＋ に ＋ thể て. Cụm cố định.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "V-ます形＋に＋同じ動詞のて形"
+   }
+  ],
+  "usage": [
+   "Nhấn mạnh mức độ của một hành động"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Bắt buộc lặp CÙNG một động từ.",
+    "counterExample": "×待ちに疲れて。"
+   }
+  ],
+  "register": "LITERARY",
+  "typicalContexts": [
+   "小説",
+   "慣用表現"
+  ],
+  "examples": [
+   {
+    "ja": "待ちに待った知らせがようやく届いた。",
+    "vi": "Tin tức chờ mãi chờ mãi cuối cùng cũng tới."
+   },
+   {
+    "ja": "考えに考えた末に出した結論だ。",
+    "vi": "Đây là kết luận sau khi đã nghĩ đi nghĩ lại rất nhiều."
+   }
+  ],
+  "commonMistakes": [
+   "Dùng hai động từ khác nhau",
+   "Nhầm với 「〜つ〜つ」"
+  ],
+  "keyClues": [
+   "cùng động từ hai lần",
+   "「待ちに待った」"
+  ],
+  "families": [
+   "EMPHASIS"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 3,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.19",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "ni-hakusha-wo-kakeru",
+  "pattern": "〜に拍車をかける",
+  "reading": "にはくしゃをかける",
+  "aliases": [],
+  "meaningVi": "Thúc đẩy … thêm nữa.",
+  "coreImage": "Đang lao nhanh rồi còn quất thêm roi.",
+  "nuanceVi": "Hầu như luôn dùng cho xu thế xấu đang tăng.",
+  "structure": [
+   {
+    "pos": "N",
+    "form": "N＋に拍車をかける"
+   }
+  ],
+  "usage": [
+   "Nói một yếu tố làm xu thế tăng nhanh hơn"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "A thường là xu thế không mong muốn: 過疎化・値上がり・人手不足."
+   }
+  ],
+  "register": "FORMAL_WRITTEN",
+  "typicalContexts": [
+   "報道",
+   "論説文"
+  ],
+  "examples": [
+   {
+    "ja": "円安が物価高に拍車をかけている。",
+    "vi": "Đồng yên yếu đang thúc đẩy giá cả tăng nhanh hơn."
+   },
+   {
+    "ja": "高齢化が人手不足に拍車をかけた。",
+    "vi": "Già hoá dân số đã làm tình trạng thiếu nhân lực trầm trọng thêm."
+   }
+  ],
+  "commonMistakes": [
+   "Dùng cho xu thế tốt",
+   "Hiểu theo nghĩa đen"
+  ],
+  "keyClues": [
+   "danh từ chỉ xu thế xấu",
+   "văn báo chí"
+  ],
+  "families": [
+   "CAUSE",
+   "DEGREE"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 3,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.21",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "to-itta",
+  "pattern": "〜といった",
+  "reading": "といった",
+  "aliases": [],
+  "meaningVi": "Những … như là …",
+  "coreImage": "Nêu vài cái tiêu biểu rồi ngụ ý còn nữa.",
+  "nuanceVi": "Nêu ví dụ cụ thể rồi khái quát bằng danh từ ở sau.",
+  "structure": [
+   {
+    "pos": "N",
+    "form": "N、N＋といった＋N"
+   }
+  ],
+  "usage": [
+   "Liệt kê ví dụ tiêu biểu"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Sau 「といった」phải là danh từ khái quát."
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "説明",
+   "報道"
+  ],
+  "examples": [
+   {
+    "ja": "犬や猫といったペットを飼う家庭が増えた。",
+    "vi": "Số gia đình nuôi thú cưng như chó, mèo đã tăng lên."
+   },
+   {
+    "ja": "大阪や京都といった関西の都市を訪れた。",
+    "vi": "Tôi đã tới thăm những thành phố vùng Kansai như Osaka, Kyoto."
+   }
+  ],
+  "commonMistakes": [
+   "Nhầm với 「といって」",
+   "Sau mẫu không có danh từ khái quát"
+  ],
+  "keyClues": [
+   "hai ví dụ ＋ danh từ khái quát",
+   "「や」đứng giữa"
+  ],
+  "families": [
+   "ADDITION"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.22",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "wa-betsu-ni-shite",
+  "pattern": "〜は別にして",
+  "reading": "はべつにして",
+  "aliases": [],
+  "meaningVi": "Gác … sang bên đã.",
+  "coreImage": "Tạm đặt một chuyện xuống để bàn chuyện chính.",
+  "nuanceVi": "Trung tính, không kèm chê. Hay đi với 「〜かどうかは」.",
+  "structure": [
+   {
+    "pos": "N",
+    "form": "N＋は別にして"
+   },
+   {
+    "pos": "V",
+    "form": "V／A-普通形＋か（どうか）＋は別にして"
+   }
+  ],
+  "usage": [
+   "Gạt một yếu tố sang bên để nói trọng tâm"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Vế sau mới là điều muốn nói."
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "会話",
+   "説明"
+  ],
+  "examples": [
+   {
+    "ja": "実現できるかどうかは別にして、案は面白い。",
+    "vi": "Gác chuyện có thực hiện được không sang bên, ý tưởng thì hay."
+   },
+   {
+    "ja": "値段は別にして、品質は申し分ない。",
+    "vi": "Gác giá cả sang bên, chất lượng thì không chê vào đâu được."
+   }
+  ],
+  "commonMistakes": [
+   "Nhầm với 「はともあれ」về sắc thái",
+   "Đảo trọng tâm sang vế trước"
+  ],
+  "keyClues": [
+   "「〜かどうかは」",
+   "vế sau là trọng tâm"
+  ],
+  "families": [
+   "CONCESSION",
+   "STANCE"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "neba",
+  "pattern": "〜ねば",
+  "reading": "ねば",
+  "aliases": [],
+  "meaningVi": "Phải … (dạng cổ).",
+  "coreImage": "Cách nói cứng của 「なければ」.",
+  "nuanceVi": "Dạng cổ, văn viết. 「する」thành 「せねば」.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "V-ない形（bỏ ない）＋ねば"
+   },
+   {
+    "pos": "V",
+    "form": "する → せねば",
+    "note": "Bất quy tắc"
+   }
+  ],
+  "usage": [
+   "Nêu bổn phận trong văn viết trang trọng"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Là biến thể văn viết của 「なければ」, không dùng trong hội thoại thường."
+   }
+  ],
+  "register": "FORMAL_WRITTEN",
+  "typicalContexts": [
+   "論説文",
+   "訓示"
+  ],
+  "examples": [
+   {
+    "ja": "この問題は早急に解決せねばならない。",
+    "vi": "Vấn đề này phải được giải quyết cấp tốc."
+   },
+   {
+    "ja": "我々は歴史から学ばねばならない。",
+    "vi": "Chúng ta phải học từ lịch sử."
+   }
+  ],
+  "commonMistakes": [
+   "Quên bỏ 「ない」",
+   "Dùng trong hội thoại thường"
+  ],
+  "keyClues": [
+   "thể ない bỏ ない",
+   "「せねば」"
+  ],
+  "families": [
+   "INEVITABILITY"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "ta-nari",
+  "pattern": "〜たなり",
+  "reading": "たなり",
+  "aliases": [],
+  "meaningVi": "Cứ để nguyên đã …",
+  "coreImage": "Làm xong một động tác rồi giữ nguyên thế đó.",
+  "nuanceVi": "Nối thể た. Khác hẳn 「なり、なり」nêu lựa chọn.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "V-た形＋なり"
+   }
+  ],
+  "usage": [
+   "Tả trạng thái giữ nguyên sau một hành động"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Chỉ nối thể た, khác hoàn toàn 「なり、なり」."
+   }
+  ],
+  "register": "LITERARY",
+  "typicalContexts": [
+   "小説"
+  ],
+  "examples": [
+   {
+    "ja": "彼は横を向いたなり、口をきかなかった。",
+    "vi": "Anh ta quay mặt đi rồi cứ thế không nói câu nào."
+   },
+   {
+    "ja": "靴を履いたなり、部屋に上がってしまった。",
+    "vi": "Cậu ta cứ để nguyên giày mà bước lên phòng."
+   }
+  ],
+  "commonMistakes": [
+   "Nhầm với 「なり、なり」(nêu lựa chọn)",
+   "Nhầm với 「〜ながら」"
+  ],
+  "keyClues": [
+   "thể た đứng trước",
+   "giữ nguyên trạng thái"
+  ],
+  "families": [
+   "TIME"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 3,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "garami",
+  "pattern": "〜がらみ",
+  "reading": "がらみ",
+  "aliases": [],
+  "meaningVi": "Dính tới … / xấp xỉ …",
+  "coreImage": "Có dây mơ rễ má với chuyện đó.",
+  "nuanceVi": "Hai nghĩa: liên quan tới (hay là chuyện xấu), hoặc xấp xỉ một con số.",
+  "structure": [
+   {
+    "pos": "N",
+    "form": "N＋がらみだ"
+   },
+   {
+    "pos": "N",
+    "form": "N＋がらみの＋N"
+   }
+  ],
+  "usage": [
+   "Nói việc dính líu tới chuyện gì",
+   "Nêu tuổi hoặc số lượng xấp xỉ"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Khi chỉ sự liên quan thì A thường là chuyện tiêu cực: 金・汚職・利権."
+   }
+  ],
+  "register": "SPOKEN",
+  "typicalContexts": [
+   "報道",
+   "会話"
+  ],
+  "examples": [
+   {
+    "ja": "金がらみのトラブルが絶えない。",
+    "vi": "Rắc rối dính tới tiền bạc thì không dứt."
+   },
+   {
+    "ja": "四十がらみの男性が訪ねてきた。",
+    "vi": "Một người đàn ông trạc bốn mươi đã tới thăm."
+   }
+  ],
+  "commonMistakes": [
+   "Dùng cho chuyện tích cực",
+   "Nhầm với 「〜ぐるみ」"
+  ],
+  "keyClues": [
+   "「金がらみ」",
+   "con số xấp xỉ"
+  ],
+  "families": [
+   "EVALUATION"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 3,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.28",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "to-iu",
+  "pattern": "〜という〜",
+  "reading": "という",
+  "aliases": [],
+  "meaningVi": "Tất cả mọi …",
+  "coreImage": "Không sót một cái nào, cái nào cũng thế.",
+  "nuanceVi": "Lặp lại CÙNG một danh từ hai bên để nhấn 'toàn bộ'.",
+  "structure": [
+   {
+    "pos": "N",
+    "form": "N＋という＋同じN"
+   }
+  ],
+  "usage": [
+   "Nhấn rằng không sót một cái nào"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Hai bên phải là CÙNG một danh từ.",
+    "counterExample": "×店という場所が閉まった。"
+   }
+  ],
+  "register": "FORMAL_WRITTEN",
+  "typicalContexts": [
+   "報道",
+   "小説"
+  ],
+  "examples": [
+   {
+    "ja": "その日、店という店が閉まっていた。",
+    "vi": "Hôm ấy, tất cả các cửa hàng đều đóng cửa."
+   },
+   {
+    "ja": "窓という窓が割れてしまった。",
+    "vi": "Toàn bộ cửa sổ, cái nào cũng vỡ hết."
+   }
+  ],
+  "commonMistakes": [
+   "Dùng hai danh từ khác nhau",
+   "Nhầm với 「という」trích dẫn"
+  ],
+  "keyClues": [
+   "cùng danh từ hai lần",
+   "nghĩa là toàn bộ"
+  ],
+  "families": [
+   "EMPHASIS"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 3,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.28",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "to-itta-tokoro-da",
+  "pattern": "〜といったところだ",
+  "reading": "といったところだ",
+  "aliases": [],
+  "meaningVi": "Cỡ khoảng … thôi.",
+  "coreImage": "Ước chừng một mức, không hơn.",
+  "nuanceVi": "Nêu mức độ hoặc số lượng ước lượng, hàm ý 'chỉ tới đó thôi'.",
+  "structure": [
+   {
+    "pos": "N",
+    "form": "N（程度・数量）＋といったところだ"
+   }
+  ],
+  "usage": [
+   "Ước lượng mức độ, số lượng"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "A phải là từ chỉ mức độ hoặc số lượng."
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "会話",
+   "説明"
+  ],
+  "examples": [
+   {
+    "ja": "参加者は多くても三十人といったところだ。",
+    "vi": "Người tham gia nhiều lắm cũng chỉ cỡ ba mươi."
+   },
+   {
+    "ja": "回復には二週間といったところでしょう。",
+    "vi": "Hồi phục thì chắc khoảng hai tuần thôi."
+   }
+  ],
+  "commonMistakes": [
+   "Ghép với danh từ không chỉ mức độ",
+   "Nhầm với 「ところだ」chỉ thời điểm"
+  ],
+  "keyClues": [
+   "con số đứng trước",
+   "「多くても」đứng trước"
+  ],
+  "families": [
+   "DEGREE"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.29",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ }
+]

@@ -1,0 +1,1162 @@
+[
+ {
+  "id": "q-ni-taru-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "ni-taru"
+  ],
+  "stemJa": "「〜に足る」の前に来る語として自然なのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "信頼",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "鑑賞",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜にたえる」."
+   },
+   {
+    "id": "c",
+    "textJa": "ほこり",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không nằm trong nhóm từ đánh giá tư cách."
+   },
+   {
+    "id": "d",
+    "textJa": "中止",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜を余儀なくされる」."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「に足る」đi với 信頼・尊敬・満足 — đánh giá tư cách.",
+  "keyClueVi": "Nhóm từ đánh giá tư cách người.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.21",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 4
+ },
+ {
+  "id": "q-ni-taenai-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "ni-taenai"
+  ],
+  "stemJa": "「〜にたえない」が「ひどくて〜できない」の意味になる動詞はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "見る",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "感謝",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Với 「感謝」mẫu mang nghĩa 'vô cùng biết ơn'."
+   },
+   {
+    "id": "c",
+    "textJa": "信頼",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜に足る」."
+   },
+   {
+    "id": "d",
+    "textJa": "使用",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜にたえる」."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Động từ giác quan (見る・聞く・読む) cho nghĩa 'không nổi'.",
+  "keyClueVi": "Nhìn động từ để chọn nghĩa.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.29",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 4
+ },
+ {
+  "id": "q-mono-wo-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "mono-wo"
+  ],
+  "stemJa": "「〜ものを」を使う文でよく前に来るのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "〜ば／〜たら の条件節",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "〜ながら の節",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không phải khung của mẫu này."
+   },
+   {
+    "id": "c",
+    "textJa": "〜ために の節",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không phải quan hệ mục đích."
+   },
+   {
+    "id": "d",
+    "textJa": "〜とすると の節",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không phải giả định thuần tuý."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「〜ばAものを」— nêu điều lẽ ra nên làm nhưng đã không làm.",
+  "keyClueVi": "Có 「〜ば」ở vế trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.17",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 4
+ },
+ {
+  "id": "q-nagara-mo-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "nagara-mo"
+  ],
+  "stemJa": "「小さい」に「〜ながらも」をつけた正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "小さいながらも",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "小さいのながらも",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không thêm 「の」."
+   },
+   {
+    "id": "c",
+    "textJa": "小さくながらも",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không chia sang thể く."
+   },
+   {
+    "id": "d",
+    "textJa": "小さいであるながらも",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không dùng 「である」với tính từ đuôi い."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「い形容詞＋ながらも」— nối thẳng.",
+  "keyClueVi": "Tính từ đuôi い nối thẳng.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.19",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-ta-tokoro-de-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "ta-tokoro-de"
+  ],
+  "stemJa": "「〜たところで」の前に来る形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "動詞・た形",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "動詞・辞書形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Mẫu này dùng thể quá khứ."
+   },
+   {
+    "id": "c",
+    "textJa": "動詞・ない形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không nối với thể ない."
+   },
+   {
+    "id": "d",
+    "textJa": "動詞・ば形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không nối với thể điều kiện."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「V-た形＋ところで」.",
+  "keyClueVi": "Thể た.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.3",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-ba-sore-made-da-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "ba-sore-made-da"
+  ],
+  "stemJa": "「終わる」に「〜ばそれまでだ」をつけた正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "終わればそれまでだ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "終わるばそれまでだ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Phải chia sang thể ば."
+   },
+   {
+    "id": "c",
+    "textJa": "終わったらそれまでだ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Dạng chuẩn của mẫu dùng thể ば."
+   },
+   {
+    "id": "d",
+    "textJa": "終わってそれまでだ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không nối với thể て."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「V-ば形＋それまでだ」.",
+  "keyClueVi": "Thể ば.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.8",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-yue-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "yue"
+  ],
+  "stemJa": "「経験が浅い」に「〜ゆえに」をつけた正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "経験が浅いゆえに",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "経験が浅いのゆえに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Với tính từ đuôi い không cần 「の」."
+   },
+   {
+    "id": "c",
+    "textJa": "経験が浅くゆえに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không chia sang thể く."
+   },
+   {
+    "id": "d",
+    "textJa": "経験が浅いだゆえに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không thêm 「だ」."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Tính từ đuôi い nối thẳng; danh từ thì 「N＋の／である＋ゆえに」.",
+  "keyClueVi": "Nhìn từ loại để quyết định có thêm 「の」không.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.8",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-ba-koso-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "ba-koso"
+  ],
+  "stemJa": "「思う」に「〜ばこそ」をつけた正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "思えばこそ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "思うばこそ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Phải chia sang thể ば."
+   },
+   {
+    "id": "c",
+    "textJa": "思ってこそ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không phải dạng của mẫu này."
+   },
+   {
+    "id": "d",
+    "textJa": "思ったらこそ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không dùng thể たら."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「V-ば形＋こそ」.",
+  "keyClueVi": "Thể ば.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.30",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-to-atte-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "to-atte"
+  ],
+  "stemJa": "「〜とあって」の前に来ないのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "動詞・ます形",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "名詞",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đây là cách nối ĐÚNG."
+   },
+   {
+    "id": "c",
+    "textJa": "動詞・普通形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đây là cách nối ĐÚNG."
+   },
+   {
+    "id": "d",
+    "textJa": "い形容詞・普通形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đây là cách nối ĐÚNG."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Mẫu nối với danh từ và thể thông thường, không nối thể ます.",
+  "keyClueVi": "Câu hỏi tìm cách nối SAI.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.29",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-mamire-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "mamire"
+  ],
+  "stemJa": "「〜まみれ」の前に来る語として自然なのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "泥",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "いいこと",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜ずくめ」."
+   },
+   {
+    "id": "c",
+    "textJa": "規則",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜ずくめ」."
+   },
+   {
+    "id": "d",
+    "textJa": "中止",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không phải chất bẩn."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「まみれ」chỉ đi với chất bẩn, dính: 泥・血・汗・ほこり.",
+  "keyClueVi": "Chất bẩn bám lên bề mặt.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.20",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-zukume-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "zukume"
+  ],
+  "stemJa": "「〜ずくめ」の前に来る語として自然なのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "いいこと",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "泥",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜まみれ」."
+   },
+   {
+    "id": "c",
+    "textJa": "汗",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜まみれ」."
+   },
+   {
+    "id": "d",
+    "textJa": "驚き",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜を禁じ得ない」."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「ずくめ」đi với 黒・いいこと・ごちそう・規則.",
+  "keyClueVi": "Toàn bộ cùng một loại.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.6",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-wo-kinji-enai-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "wo-kinji-enai"
+  ],
+  "stemJa": "「〜を禁じ得ない」の前に来るのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "感情を表す名詞",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "動詞・て形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là cách nối của 「〜てやまない」."
+   },
+   {
+    "id": "c",
+    "textJa": "動詞・辞書形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Mẫu này chỉ nối với danh từ."
+   },
+   {
+    "id": "d",
+    "textJa": "い形容詞",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không nối với tính từ."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「N(感情)＋を禁じ得ない」: 驚き・怒り・同情.",
+  "keyClueVi": "Danh từ cảm xúc.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-te-yamanai-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "te-yamanai"
+  ],
+  "stemJa": "「願う」に「〜てやまない」をつけた正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "願ってやまない",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "願うやまない",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Phải chia sang thể て."
+   },
+   {
+    "id": "c",
+    "textJa": "願いやまない",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không dùng thể ます."
+   },
+   {
+    "id": "d",
+    "textJa": "願いをやまない",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không dùng trợ từ 「を」."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「V-て形＋やまない」.",
+  "keyClueVi": "Thể て.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.3",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-wo-motte-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "wo-motte"
+  ],
+  "stemJa": "「〜をもって」の前に来るのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "名詞",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "動詞・辞書形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Mẫu này chỉ nối với danh từ."
+   },
+   {
+    "id": "c",
+    "textJa": "動詞・て形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không nối với thể て."
+   },
+   {
+    "id": "d",
+    "textJa": "い形容詞",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không nối với tính từ."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「N＋をもって」.",
+  "keyClueVi": "Có trợ từ 「を」nên trước nó là danh từ.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.12",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-ni-sokushita-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "ni-sokushita"
+  ],
+  "stemJa": "「〜に即した」の前に来る語として自然なのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "実情",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "結果",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜をふまえて」."
+   },
+   {
+    "id": "c",
+    "textJa": "驚き",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không nằm trong nhóm từ chỉ thực trạng."
+   },
+   {
+    "id": "d",
+    "textJa": "お礼",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜かたがた」."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「に即した」đi với 実情・現状・規則・時代.",
+  "keyClueVi": "Danh từ chỉ thực trạng.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.4",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-wo-fumaete-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "wo-fumaete"
+  ],
+  "stemJa": "「〜をふまえて」の前に来る語として自然なのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "調査結果",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "実情",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜に即した」."
+   },
+   {
+    "id": "c",
+    "textJa": "泥",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không phải dữ liệu."
+   },
+   {
+    "id": "d",
+    "textJa": "光栄",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là từ đi với 「〜の至り」."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「をふまえて」đi với 結果・意見・調査・反省.",
+  "keyClueVi": "Danh từ chỉ dữ liệu đã có.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.10",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-wo-yogi-naku-sareru-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "wo-yogi-naku-sareru"
+  ],
+  "stemJa": "「〜を余儀なくされる」の前に来るのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "名詞",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "動詞・ない形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là cách nối của 「〜ざるを得ない」."
+   },
+   {
+    "id": "c",
+    "textJa": "動詞・辞書形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Mẫu này chỉ nối với danh từ."
+   },
+   {
+    "id": "d",
+    "textJa": "い形容詞",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không nối với tính từ."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「N＋を余儀なくされる」— đây là chỗ hay bị nhầm với 「ざるを得ない」.",
+  "keyClueVi": "Có trợ từ 「を」nên trước nó là danh từ.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.12",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-beku-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "beku"
+  ],
+  "stemJa": "「する」に「〜べく」をつけた正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "すべく",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "しべく",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Chia sai: 「する」thành 「す」."
+   },
+   {
+    "id": "c",
+    "textJa": "するべし",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Đó là dạng khác, mang nghĩa 'nên làm'."
+   },
+   {
+    "id": "d",
+    "textJa": "しべし",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Sai cả cách chia lẫn dạng mẫu."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「する」→「すべく」(cũng chấp nhận 「するべく」).",
+  "keyClueVi": "「する」là chỗ hay ra đề.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.24",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-ni-hikikae-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "ni-hikikae"
+  ],
+  "stemJa": "「〜にひきかえ」の前に来る形として正しいのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "名詞／動詞・普通形＋の",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "動詞・ます形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không nối với thể ます."
+   },
+   {
+    "id": "c",
+    "textJa": "動詞・て形",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không nối với thể て."
+   },
+   {
+    "id": "d",
+    "textJa": "い形容詞＋く",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không chia sang thể く."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「N＋にひきかえ」hoặc 「V-普通形＋の＋にひきかえ」.",
+  "keyClueVi": "Động từ phải thêm 「の」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.3",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-ni-mo-mashite-form-01",
+  "type": "FORM_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "ni-mo-mashite"
+  ],
+  "stemJa": "「以前」に「〜にもまして」をつけた正しい形はどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "以前にもまして",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "以前をもまして",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không dùng trợ từ 「を」."
+   },
+   {
+    "id": "c",
+    "textJa": "以前のにもまして",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Với danh từ không thêm 「の」."
+   },
+   {
+    "id": "d",
+    "textJa": "以前でもまして",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "violatedAxis": "CONNECTION",
+    "whyWrongVi": "Không dùng 「で」."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「N＋にもまして」.",
+  "keyClueVi": "Danh từ nối thẳng với 「に」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước mẫu"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.7",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ }
+]

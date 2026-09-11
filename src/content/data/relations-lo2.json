@@ -1,0 +1,352 @@
+[
+ {
+  "from": "bekarazu",
+  "to": "bekarazaru",
+  "type": "oftenConfusedWith",
+  "differenceKey": "vị trí trong câu",
+  "noteVi": "「べからず」kết câu trên biển báo; 「べからざる」đứng TRƯỚC danh từ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "bekarazaru",
+  "to": "majiki",
+  "type": "oftenConfusedWith",
+  "differenceKey": "có đòi tư cách không",
+  "noteVi": "「まじき」bắt buộc nêu TƯ CÁCH (〜にあるまじき); 「べからざる」thì không.",
+  "source": "CURATED"
+ },
+ {
+  "from": "bekarazu",
+  "to": "majiki",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "kitte-no",
+  "to": "wo-oite",
+  "type": "oftenConfusedWith",
+  "differenceKey": "khen nhất hay loại trừ",
+  "noteVi": "「きっての」khen giỏi nhất nhóm; 「をおいて」loại hết lựa chọn khác, vế sau phủ định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "naishi",
+  "to": "moshiku-wa",
+  "type": "registerVariantOf",
+  "differenceKey": "văn phong",
+  "noteVi": "Gần như trùng nghĩa; 「もしくは」thiên về chỉ dẫn thủ tục.",
+  "source": "CURATED"
+ },
+ {
+  "from": "kara-aru",
+  "to": "kara-no",
+  "type": "oftenConfusedWith",
+  "differenceKey": "có danh từ đứng sau không",
+  "noteVi": "「からある」kết câu; 「からの」bổ nghĩa cho danh từ đứng ngay sau.",
+  "source": "CURATED"
+ },
+ {
+  "from": "kara-aru",
+  "to": "tari-tomo",
+  "type": "contrastsWith",
+  "differenceKey": "hướng nhấn",
+  "noteVi": "「からある」nhấn số LỚN; 「たりとも」nhấn số NHỎ NHẤT để phủ định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "kara-no",
+  "to": "tari-tomo",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-mo-naru-to",
+  "to": "to-areba",
+  "type": "oftenConfusedWith",
+  "differenceKey": "mốc hay điều kiện",
+  "noteVi": "「ともなると」là MỐC cao đạt tới; 「とあれば」là điều kiện khiến ta sẵn sàng.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-areba",
+  "to": "to-atte-wa",
+  "type": "oftenConfusedWith",
+  "differenceKey": "có nhấn ngoại lệ không",
+  "noteVi": "「とあっては」nhấn tính NGOẠI LỆ, vế sau hay có 〜わけにはいかない.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-atte-wa",
+  "to": "ni-atte",
+  "type": "oftenConfusedWith",
+  "differenceKey": "điều kiện hay hoàn cảnh",
+  "noteVi": "「にあって」nêu HOÀN CẢNH đang diễn ra, không phải điều kiện.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-mo-naru-to",
+  "to": "ni-atte",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-mo-naru-to",
+  "to": "to-atte-wa",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-areba",
+  "to": "ni-atte",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-atte",
+  "to": "to-atte",
+  "type": "oftenConfusedWith",
+  "differenceKey": "hoàn cảnh hay lý do",
+  "noteVi": "「にあって」= hoàn cảnh; 「とあって」= lý do khiến kết quả đương nhiên.",
+  "source": "CURATED"
+ },
+ {
+  "from": "tomo-suru-to",
+  "to": "ppanashi",
+  "type": "oftenConfusedWith",
+  "differenceKey": "khuynh hướng hay trạng thái",
+  "noteVi": "「ともすると」là khuynh hướng dễ mắc; 「っぱなし」là trạng thái để nguyên.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ppanashi",
+  "to": "te-bakari-iru",
+  "type": "oftenConfusedWith",
+  "differenceKey": "để nguyên hay lặp lại",
+  "noteVi": "「っぱなし」để nguyên không dọn; 「てばかりいる」chỉ toàn làm mỗi việc đó.",
+  "source": "CURATED"
+ },
+ {
+  "from": "tomo-suru-to",
+  "to": "te-bakari-iru",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "tomo-suru-to",
+  "to": "kirai-ga-aru",
+  "type": "similarTo",
+  "differenceKey": "văn phong",
+  "noteVi": "Cùng chỉ khuynh hướng xấu; 「きらいがある」thiên về tính cách, văn viết hơn.",
+  "source": "CURATED"
+ },
+ {
+  "from": "de-are",
+  "to": "u-ga-mai-ga",
+  "type": "oftenConfusedWith",
+  "differenceKey": "một hay hai khả năng",
+  "noteVi": "「であれ」bất kể trường hợp nào; 「うが〜まいが」nêu đúng HAI khả năng ngược nhau.",
+  "source": "CURATED"
+ },
+ {
+  "from": "u-ga-mai-ga",
+  "to": "u-to-mai-to",
+  "type": "registerVariantOf",
+  "differenceKey": "trợ từ",
+  "noteVi": "Trùng nghĩa; chỉ khác 「が」và 「と」.",
+  "source": "CURATED"
+ },
+ {
+  "from": "de-are",
+  "to": "wa-dou-are",
+  "type": "oftenConfusedWith",
+  "differenceKey": "đi với từ để hỏi hay danh từ",
+  "noteVi": "「であれ」hay đi với 誰・何; 「はどうあれ」gạt một yếu tố (理由・結果) sang bên.",
+  "source": "CURATED"
+ },
+ {
+  "from": "de-are",
+  "to": "u-to-mai-to",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "u-ga-mai-ga",
+  "to": "wa-dou-are",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "u-to-mai-to",
+  "to": "wa-dou-are",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-kawakiri-ni",
+  "to": "wo-kagiri-ni",
+  "type": "contrastsWith",
+  "differenceKey": "đầu hay cuối",
+  "noteVi": "「を皮切りに」là điểm BẮT ĐẦU chuỗi; 「を限りに」là điểm KẾT THÚC.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-kagiri-ni",
+  "to": "ga-saigo",
+  "type": "oftenConfusedWith",
+  "differenceKey": "tuyên bố hay cảnh báo",
+  "noteVi": "「を限りに」tuyên bố chấm dứt; 「が最後」cảnh báo hệ quả không thể vãn hồi.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-kawakiri-ni",
+  "to": "ga-saigo",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-kagiri-ni",
+  "to": "wo-motte",
+  "type": "oftenConfusedWith",
+  "differenceKey": "mốc kết thúc",
+  "noteVi": "Cả hai đều nêu mốc; 「をもって」còn có nghĩa phương tiện.",
+  "source": "CURATED"
+ },
+ {
+  "from": "mo-okamai-nashi-ni",
+  "to": "sotchinoke",
+  "type": "oftenConfusedWith",
+  "differenceKey": "phớt lờ cái gì",
+  "noteVi": "「もおかまいなしに」phớt lờ quy định/người xung quanh; 「そっちのけ」bỏ bê chính bổn phận của mình.",
+  "source": "CURATED"
+ },
+ {
+  "from": "mo-okamai-nashi-ni",
+  "to": "wo-yoso-ni",
+  "type": "oftenConfusedWith",
+  "differenceKey": "đối tượng bị phớt lờ",
+  "noteVi": "「をよそに」phớt lờ TÌNH CẢM của người khác.",
+  "source": "CURATED"
+ },
+ {
+  "from": "sotchinoke",
+  "to": "wo-yoso-ni",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "kagiri-da",
+  "to": "to-shika-ii-you-ga-nai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "cảm xúc hay đánh giá",
+  "noteVi": "「かぎりだ」bày tỏ CẢM XÚC của người nói; 「としか言いようがない」đưa ra ĐÁNH GIÁ dứt khoát.",
+  "source": "CURATED"
+ },
+ {
+  "from": "kagiri-da",
+  "to": "to-ittara-nai",
+  "type": "similarTo",
+  "differenceKey": "cách nối",
+  "noteVi": "Cùng nhấn mức độ cảm xúc; 「かぎりだ」chỉ nối tính từ đuôi い.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-kakawaru",
+  "to": "ni-kakatte-iru",
+  "type": "oftenConfusedWith",
+  "differenceKey": "ảnh hưởng hay quyết định",
+  "noteVi": "「にかかわる」= ẢNH HƯỞNG tới; 「にかかっている」= PHỤ THUỘC vào.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-kakatte-iru",
+  "to": "ikan-da",
+  "type": "registerVariantOf",
+  "differenceKey": "văn phong",
+  "noteVi": "Cùng nghĩa 'tuỳ vào'; 「いかんだ」cứng và trang trọng hơn.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ikan-da",
+  "to": "ikan-ni-yotte-wa",
+  "type": "oftenConfusedWith",
+  "differenceKey": "chắc chắn hay khả năng",
+  "noteVi": "「いかんだ」nêu yếu tố quyết định; 「いかんによっては」nêu một KHẢ NĂNG có thể xảy ra.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-kakawaru",
+  "to": "ikan-da",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-kakatte-iru",
+  "to": "ikan-ni-yotte-wa",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "naku-shite",
+  "to": "nashi-ni",
+  "type": "oftenConfusedWith",
+  "differenceKey": "vế sau có phủ định không",
+  "noteVi": "「なくして」vế sau BẮT BUỘC phủ định; 「なしに」thì không.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nashi-ni",
+  "to": "koto-nashi-ni",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nối danh từ hay động từ",
+  "noteVi": "「なしに」nối danh từ; 「ことなしに」nối động từ và vế sau là 〜できない.",
+  "source": "CURATED"
+ },
+ {
+  "from": "naku-shite",
+  "to": "koto-nashi-ni",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "nara-madashimo",
+  "to": "iza-shirazu",
+  "type": "oftenConfusedWith",
+  "differenceKey": "so mức hay gác sang bên",
+  "noteVi": "「ならまだしも」so hai MỨC chấp nhận; 「いざ知らず」GÁC một trường hợp sang bên.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nara-madashimo",
+  "to": "to-omoi-kiya",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "iza-shirazu",
+  "to": "to-omoi-kiya",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nhượng bộ hay bất ngờ",
+  "noteVi": "「と思いきや」nói điều TRÁI dự đoán, không phải nhượng bộ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "n-bakari",
+  "to": "to-bakari-ni",
+  "type": "oftenConfusedWith",
+  "differenceKey": "sắp xảy ra hay thái độ",
+  "noteVi": "「んばかり」= như sắp xảy ra; 「とばかりに」= như thể muốn nói rằng.",
+  "source": "CURATED"
+ },
+ {
+  "from": "n-bakari",
+  "to": "to-bakari-ni",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-kakawaru",
+  "to": "ikan-ni-yotte-wa",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ }
+]

@@ -1,0 +1,1117 @@
+[
+  {
+    "id": "wa-dou-are",
+    "pattern": "〜はどうあれ",
+    "reading": "はどうあれ",
+    "aliases": [],
+    "meaningVi": "Dù … thế nào đi nữa.",
+    "coreImage": "Không cần biết cái đó ra sao, kết luận vẫn thế.",
+    "nuanceVi": "Danh từ trước là thứ ta cố ý không xét tới: 理由・結果・事情.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "N＋はどうあれ"
+      }
+    ],
+    "usage": [
+      "Gạt một yếu tố sang bên để kết luận",
+      "Hay đi với 理由・事情・結果"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Vế sau là kết luận không phụ thuộc vào cái vừa gạt đi."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "理由はどうあれ、約束を破ったことは事実だ。",
+        "vi": "Lý do thế nào đi nữa thì việc thất hứa vẫn là sự thật."
+      },
+      {
+        "ja": "結果はどうあれ、全力を尽くしたい。",
+        "vi": "Kết quả ra sao đi nữa, tôi vẫn muốn dốc hết sức."
+      }
+    ],
+    "commonMistakes": [
+      "Nhầm với 〜であれ (đi với từ để hỏi)"
+    ],
+    "keyClues": [
+      "理由・結果・事情 đứng trước"
+    ],
+    "families": [
+      "CONCESSION"
+    ],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.33",
+    "sourceSection": "文の文法1 第26回【253】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "wo-kawakiri-ni",
+    "pattern": "〜を皮切りに",
+    "reading": "をかわきりに",
+    "aliases": [
+      "を皮切りとして"
+    ],
+    "meaningVi": "Mở màn bằng … rồi liên tiếp …",
+    "coreImage": "Phát súng đầu tiên, sau đó là cả loạt.",
+    "nuanceVi": "Vế sau BẮT BUỘC là chuỗi việc nối tiếp, không phải một việc.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "N＋を皮切りに／を皮切りにして／を皮切りとして"
+      }
+    ],
+    "usage": [
+      "Sự kiện mở màn cho một chuỗi",
+      "Vế sau là chuỗi liên tiếp"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Vế sau phải là nhiều việc nối nhau, không phải một việc đơn lẻ.",
+        "counterExample": "×開会式を皮切りに、式が終わった。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "東京公演を皮切りに、全国十都市を回る。",
+        "vi": "Mở màn bằng buổi diễn ở Tokyo, đoàn sẽ đi vòng mười thành phố."
+      },
+      {
+        "ja": "この論文を皮切りに、研究が次々と発表された。",
+        "vi": "Mở đầu bằng bài báo này, hàng loạt nghiên cứu lần lượt được công bố."
+      }
+    ],
+    "commonMistakes": [
+      "Vế sau chỉ có một việc",
+      "Nhầm với 〜を限りに (kết thúc)"
+    ],
+    "keyClues": [
+      "vế sau là chuỗi liên tiếp",
+      "điểm bắt đầu"
+    ],
+    "families": [
+      "TIME"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.15",
+    "sourceSection": "文の文法1 第10回【92】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "wo-kagiri-ni",
+    "pattern": "〜を限りに",
+    "reading": "をかぎりに",
+    "aliases": [],
+    "meaningVi": "Kể từ … là chấm dứt.",
+    "coreImage": "Vạch một đường: tới đây thôi, không tiếp nữa.",
+    "nuanceVi": "Ngược hướng với 〜を皮切りに: đây là điểm KẾT THÚC.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "N＋を限りに"
+      },
+      {
+        "pos": "V",
+        "form": "V-辞書形／た形＋の＋を限りに"
+      }
+    ],
+    "usage": [
+      "Tuyên bố chấm dứt việc đã kéo dài",
+      "Danh từ là mốc thời gian cuối"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Việc bị chấm dứt phải là việc đã kéo dài trước đó."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "今大会を限りに、彼は現役を引退する。",
+        "vi": "Kể từ sau đại hội này, anh ấy giải nghệ."
+      },
+      {
+        "ja": "本日を限りに当店は営業を終了いたします。",
+        "vi": "Kể từ hôm nay cửa hàng chúng tôi ngừng kinh doanh."
+      }
+    ],
+    "commonMistakes": [
+      "Nhầm chiều với 〜を皮切りに",
+      "Nhầm với 〜をもって (cũng chỉ mốc)"
+    ],
+    "keyClues": [
+      "mốc kết thúc",
+      "việc đã kéo dài"
+    ],
+    "families": [
+      "TIME"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.7",
+    "sourceSection": "文の文法1 第4回【32】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "ga-saigo",
+    "pattern": "〜が最後",
+    "reading": "がさいご",
+    "aliases": [
+      "たら最後"
+    ],
+    "meaningVi": "Hễ đã … là chắc chắn (hỏng).",
+    "coreImage": "Bước qua vạch đó rồi thì không quay lại được.",
+    "nuanceVi": "Vế sau luôn là hệ quả XẤU, không thể vãn hồi.",
+    "structure": [
+      {
+        "pos": "V",
+        "form": "V-た形＋が最後"
+      },
+      {
+        "pos": "V",
+        "form": "V-たら最後",
+        "note": "Biến thể"
+      }
+    ],
+    "usage": [
+      "Cảnh báo hệ quả không thể đảo ngược",
+      "Vế sau luôn tiêu cực"
+    ],
+    "restrictions": [
+      {
+        "kind": "POLARITY",
+        "ruleVi": "Vế sau bắt buộc là hệ quả xấu.",
+        "counterExample": "×この薬を飲んだが最後、すぐ治る。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "この書類は出したが最後、取り消せない。",
+        "vi": "Hồ sơ này hễ đã nộp là không rút lại được."
+      },
+      {
+        "ja": "彼は話し始めたが最後、止まらない。",
+        "vi": "Anh ta hễ đã bắt đầu nói là không dừng được."
+      }
+    ],
+    "commonMistakes": [
+      "Vế sau dùng nghĩa tích cực",
+      "Nhầm với 〜たとたん (chỉ thời điểm)"
+    ],
+    "keyClues": [
+      "V-た形 đứng trước",
+      "vế sau xấu, không đảo ngược được"
+    ],
+    "families": [
+      "CONDITION",
+      "INEVITABILITY"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.28",
+    "sourceSection": "文の文法1 第21回【206】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "mo-okamai-nashi-ni",
+    "pattern": "〜もおかまいなしに",
+    "reading": "もおかまいなしに",
+    "aliases": [],
+    "meaningVi": "Chẳng thèm để ý tới … mà vẫn …",
+    "coreImage": "Người khác nghĩ gì cũng mặc, cứ làm.",
+    "nuanceVi": "Luôn kèm giọng CHÊ; vế trước là điều lẽ ra phải để ý.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "N＋もおかまいなしに＋文"
+      },
+      {
+        "pos": "Clause",
+        "form": "文＋の＋もおかまいなしに"
+      }
+    ],
+    "usage": [
+      "Chê người phớt lờ điều đáng lẽ phải quan tâm",
+      "Vế trước là quy định, cảm nhận người khác"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Vế trước phải là thứ lẽ ra phải để tâm tới."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "周囲の迷惑もおかまいなしに、大声で話し続けている。",
+        "vi": "Chẳng thèm để ý làm phiền xung quanh, anh ta cứ nói oang oang."
+      },
+      {
+        "ja": "禁止の表示もおかまいなしに、彼は中に入った。",
+        "vi": "Bất chấp cả biển cấm, anh ta vẫn đi vào."
+      }
+    ],
+    "commonMistakes": [
+      "Nhầm với 〜をよそに (phớt lờ tình cảm người khác)"
+    ],
+    "keyClues": [
+      "giọng chê",
+      "vế trước là điều đáng lẽ phải để ý"
+    ],
+    "families": [
+      "STANCE",
+      "CONCESSION"
+    ],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.38",
+    "sourceSection": "文の文法2 第2回【293】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "sotchinoke",
+    "pattern": "〜そっちのけ",
+    "reading": "そっちのけ",
+    "aliases": [],
+    "meaningVi": "Bỏ mặc … sang một bên.",
+    "coreImage": "Gạt việc chính ra rìa để làm việc khác.",
+    "nuanceVi": "Vế trước là việc lẽ ra phải làm; luôn kèm giọng chê.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "N（は／も／を）＋そっちのけだ／そっちのけにする"
+      }
+    ],
+    "usage": [
+      "Chê ai đó bỏ bê việc chính",
+      "Vế trước là bổn phận: 仕事・勉強"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Vế trước phải là việc thuộc bổn phận của chủ thể."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "彼は仕事そっちのけで趣味に没頭している。",
+        "vi": "Anh ta bỏ mặc công việc, vùi đầu vào sở thích."
+      },
+      {
+        "ja": "宿題はそっちのけで、一日中遊んでいた。",
+        "vi": "Bài tập thì bỏ đó, cả ngày chỉ chơi."
+      }
+    ],
+    "commonMistakes": [
+      "Nhầm với 〜をよそに"
+    ],
+    "keyClues": [
+      "việc bổn phận bị bỏ bê"
+    ],
+    "families": [
+      "STANCE"
+    ],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.8",
+    "sourceSection": "文の文法1 第5回【44】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "kagiri-da",
+    "pattern": "〜かぎりだ",
+    "reading": "かぎりだ",
+    "aliases": [],
+    "meaningVi": "Thật là … hết sức (cảm xúc).",
+    "coreImage": "Cảm xúc dâng tới giới hạn của nó.",
+    "nuanceVi": "Chỉ đi với TÍNH TỪ chỉ cảm xúc: うれしい・寂しい・心細い.",
+    "structure": [
+      {
+        "pos": "A-i",
+        "form": "い形容詞＋かぎりだ"
+      }
+    ],
+    "usage": [
+      "Bày tỏ cảm xúc mạnh của người nói",
+      "Tính từ phải chỉ cảm xúc"
+    ],
+    "restrictions": [
+      {
+        "kind": "SUBJECT",
+        "ruleVi": "Chỉ dùng cho cảm xúc của chính người nói.",
+        "counterExample": "×彼は寂しいかぎりだ。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "長年通った店が閉まるとは、寂しいかぎりだ。",
+        "vi": "Quán quen bao năm mà đóng cửa, thật buồn hết sức."
+      },
+      {
+        "ja": "皆さんに再会できて、うれしいかぎりです。",
+        "vi": "Được gặp lại mọi người, tôi vui khôn xiết."
+      }
+    ],
+    "commonMistakes": [
+      "Dùng cho cảm xúc của người khác",
+      "Ghép với tính từ không chỉ cảm xúc"
+    ],
+    "keyClues": [
+      "tính từ cảm xúc",
+      "chủ thể là người nói"
+    ],
+    "families": [
+      "EMPHASIS",
+      "STANCE"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.6",
+    "sourceSection": "文の文法1 第3回【25】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "to-shika-ii-you-ga-nai",
+    "pattern": "〜としか言いようがない",
+    "reading": "としかいいようがない",
+    "aliases": [],
+    "meaningVi": "Chỉ có thể nói là …",
+    "coreImage": "Tìm cách nói khác cũng không ra, chỉ còn từ đó.",
+    "nuanceVi": "Nhấn rằng đánh giá này là duy nhất đúng.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "N＋としか言いようがない"
+      },
+      {
+        "pos": "A-na",
+        "form": "な形容詞（語幹）＋としか言いようがない"
+      }
+    ],
+    "usage": [
+      "Đưa ra đánh giá dứt khoát",
+      "Hay đi với 奇跡・不運・当然"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Vế trước là một đánh giá, không phải sự việc trung tính."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "あの状況で助かったのは、奇跡としか言いようがない。",
+        "vi": "Thoát được trong tình cảnh đó thì chỉ có thể nói là phép màu."
+      },
+      {
+        "ja": "この対応は不誠実としか言いようがない。",
+        "vi": "Cách xử lý này chỉ có thể nói là thiếu thành ý."
+      }
+    ],
+    "commonMistakes": [
+      "Nhầm với 〜といったらない (nhấn mức độ cảm xúc)"
+    ],
+    "keyClues": [
+      "đánh giá dứt khoát"
+    ],
+    "families": [
+      "EMPHASIS",
+      "EVALUATION"
+    ],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.13",
+    "sourceSection": "文の文法1 第8回【79】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "ni-kakawaru",
+    "pattern": "〜にかかわる",
+    "reading": "にかかわる",
+    "aliases": [],
+    "meaningVi": "Liên quan tới … (chuyện hệ trọng).",
+    "coreImage": "Đụng vào là ảnh hưởng tới thứ quan trọng nhất.",
+    "nuanceVi": "Danh từ trước phải HỆ TRỌNG: 命・名誉・信用.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "N＋にかかわる"
+      }
+    ],
+    "usage": [
+      "Cảnh báo mức nghiêm trọng",
+      "Danh từ: 命・名誉・評判・信用"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Danh từ phải là thứ có ảnh hưởng lớn, không dùng cho chuyện vặt.",
+        "counterExample": "×おやつにかかわる問題だ。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "これは会社の信用にかかわる問題だ。",
+        "vi": "Đây là vấn đề động tới uy tín công ty."
+      },
+      {
+        "ja": "命にかかわるけがではなかった。",
+        "vi": "Đó không phải vết thương nguy hiểm tới tính mạng."
+      }
+    ],
+    "commonMistakes": [
+      "Dùng cho chuyện nhỏ",
+      "Nhầm với 〜にかかっている (phụ thuộc vào)"
+    ],
+    "keyClues": [
+      "命・名誉・信用 đứng trước"
+    ],
+    "families": [
+      "EVALUATION",
+      "CAUSE"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.28",
+    "sourceSection": "文の文法1 第21回【204】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "ni-kakatte-iru",
+    "pattern": "〜にかかっている",
+    "reading": "にかかっている",
+    "aliases": [],
+    "meaningVi": "Phụ thuộc vào …",
+    "coreImage": "Cả kết quả treo trên một điểm duy nhất.",
+    "nuanceVi": "Khác 〜にかかわる: đây là QUYẾT ĐỊNH bởi, không phải liên quan tới.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "AはBにかかっている"
+      },
+      {
+        "pos": "Clause",
+        "form": "AはB＋か（どうか）＋にかかっている"
+      }
+    ],
+    "usage": [
+      "Nói kết quả do yếu tố nào quyết định",
+      "Hay gặp trong bình luận, phân tích"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Vế B là yếu tố quyết định, không phải yếu tố bị ảnh hưởng."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "成功するかどうかは、準備にかかっている。",
+        "vi": "Thành công hay không là phụ thuộc vào khâu chuẩn bị."
+      },
+      {
+        "ja": "この計画の成否は資金調達にかかっている。",
+        "vi": "Kế hoạch này thành bại nằm ở việc huy động vốn."
+      }
+    ],
+    "commonMistakes": [
+      "Nhầm chiều với 〜にかかわる"
+    ],
+    "keyClues": [
+      "AはBにかかっている",
+      "B là yếu tố quyết định"
+    ],
+    "families": [
+      "CAUSE",
+      "CONDITION"
+    ],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.35",
+    "sourceSection": "文の文法1 第28回【270】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "ikan-da",
+    "pattern": "〜いかんだ",
+    "reading": "いかんだ",
+    "aliases": [],
+    "meaningVi": "Tuỳ thuộc vào …",
+    "coreImage": "Ra sao thì còn tuỳ cái đó thế nào.",
+    "nuanceVi": "Rất trang trọng; cùng nghĩa 「〜にかかっている」nhưng cứng hơn.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "AはBいかんだ"
+      },
+      {
+        "pos": "N",
+        "form": "AはBのいかんだ"
+      }
+    ],
+    "usage": [
+      "Nêu yếu tố quyết định trong văn bản",
+      "Cứng hơn 〜にかかっている"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Chỉ dùng trong văn viết trang trọng."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "実施するかどうかは、今後の状況いかんだ。",
+        "vi": "Có thực hiện hay không còn tuỳ tình hình sắp tới."
+      },
+      {
+        "ja": "採用は本人の能力いかんである。",
+        "vi": "Việc tuyển dụng là tuỳ vào năng lực của đương sự."
+      }
+    ],
+    "commonMistakes": [
+      "Dùng trong hội thoại"
+    ],
+    "keyClues": [
+      "văn bản trang trọng",
+      "AはBいかんだ"
+    ],
+    "families": [
+      "CONDITION",
+      "CAUSE"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.3",
+    "sourceSection": "文の文法1 第1回【7】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "ikan-ni-yotte-wa",
+    "pattern": "〜いかんによっては",
+    "reading": "いかんによっては",
+    "aliases": [],
+    "meaningVi": "Tuỳ theo … mà có thể …",
+    "coreImage": "Đổi cái đó thì kết cục cũng có thể đổi.",
+    "nuanceVi": "Vế sau nêu MỘT khả năng có thể xảy ra, không phải kết quả chắc chắn.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "AいかんによってはB"
+      },
+      {
+        "pos": "N",
+        "form": "Aのいかんによっては"
+      }
+    ],
+    "usage": [
+      "Nêu khả năng thay đổi tuỳ tình hình",
+      "Vế sau có thể có 〜こともある"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Vế sau là khả năng, không phải điều chắc chắn."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "検査結果いかんによっては、入院が必要になる。",
+        "vi": "Tuỳ kết quả xét nghiệm mà có thể phải nhập viện."
+      },
+      {
+        "ja": "天候いかんによっては中止することもある。",
+        "vi": "Tuỳ thời tiết mà cũng có khi phải huỷ."
+      }
+    ],
+    "commonMistakes": [
+      "Nhầm với 〜いかんだ (nêu yếu tố quyết định)"
+    ],
+    "keyClues": [
+      "vế sau là khả năng"
+    ],
+    "families": [
+      "CONDITION"
+    ],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.30",
+    "sourceSection": "文の文法1 第23回【224】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "naku-shite",
+    "pattern": "〜なくして",
+    "reading": "なくして",
+    "aliases": [
+      "なくしては"
+    ],
+    "meaningVi": "Không có … thì không thể …",
+    "coreImage": "Thiếu cái đó là cả việc sụp.",
+    "nuanceVi": "Vế sau BẮT BUỘC phủ định.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "N＋なくして（は）〜ない"
+      }
+    ],
+    "usage": [
+      "Nêu điều kiện không thể thiếu",
+      "Vế sau luôn phủ định"
+    ],
+    "restrictions": [
+      {
+        "kind": "POLARITY",
+        "ruleVi": "Vế sau bắt buộc phủ định.",
+        "counterExample": "×努力なくして成功する。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "地域の協力なくしては、この事業は成り立たない。",
+        "vi": "Không có sự hợp tác của địa phương thì dự án này không thành."
+      },
+      {
+        "ja": "努力なくして成果は得られない。",
+        "vi": "Không nỗ lực thì không có thành quả."
+      }
+    ],
+    "commonMistakes": [
+      "Quên phủ định ở vế sau",
+      "Nhầm với 〜なしに"
+    ],
+    "keyClues": [
+      "vế sau phủ định",
+      "N＋なくして"
+    ],
+    "families": [
+      "CONDITION",
+      "NEGATION"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.22",
+    "sourceSection": "文の文法1 第16回【153】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "nashi-ni",
+    "pattern": "〜なしに",
+    "reading": "なしに",
+    "aliases": [],
+    "meaningVi": "Không … mà (vẫn) …",
+    "coreImage": "Bỏ qua bước đó rồi làm luôn.",
+    "nuanceVi": "Khác 〜なくして: vế sau KHÔNG bắt buộc phủ định.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "N＋なしに"
+      },
+      {
+        "pos": "V",
+        "form": "V-辞書形＋こと＋なしに"
+      }
+    ],
+    "usage": [
+      "Làm việc gì mà bỏ qua một bước cần thiết",
+      "Vế sau có thể khẳng định"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Bước bị bỏ qua thường là thủ tục lẽ ra phải có."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "彼は断りなしに私の机を使った。",
+        "vi": "Anh ta dùng bàn của tôi mà chẳng xin phép."
+      },
+      {
+        "ja": "予約なしに来店される方はお待ちいただきます。",
+        "vi": "Quý khách đến mà không đặt trước xin vui lòng chờ."
+      }
+    ],
+    "commonMistakes": [
+      "Nhầm với 〜なくして (đòi vế sau phủ định)"
+    ],
+    "keyClues": [
+      "vế sau có thể khẳng định"
+    ],
+    "families": [
+      "NEGATION"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.12",
+    "sourceSection": "文の文法1 第7回【70】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "koto-nashi-ni",
+    "pattern": "〜ことなしに",
+    "reading": "ことなしに",
+    "aliases": [],
+    "meaningVi": "Không … thì không thể …",
+    "coreImage": "Không qua cửa đó thì không tới được đích.",
+    "nuanceVi": "Nối với ĐỘNG TỪ; vế sau là thể khả năng phủ định.",
+    "structure": [
+      {
+        "pos": "V",
+        "form": "V-辞書形＋ことなしに＋V-可能形の否定"
+      }
+    ],
+    "usage": [
+      "Nêu bước bắt buộc phải qua",
+      "Vế sau là 〜できない"
+    ],
+    "restrictions": [
+      {
+        "kind": "POLARITY",
+        "ruleVi": "Vế sau bắt buộc là khả năng phủ định."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "失敗を経験することなしに、成長することはできない。",
+        "vi": "Không trải qua thất bại thì không thể trưởng thành."
+      },
+      {
+        "ja": "努力することなしに、目標を達成できるはずがない。",
+        "vi": "Không nỗ lực thì không thể đạt mục tiêu."
+      }
+    ],
+    "commonMistakes": [
+      "Nhầm với 〜なしに (nối danh từ)"
+    ],
+    "keyClues": [
+      "nối động từ",
+      "vế sau 〜できない"
+    ],
+    "families": [
+      "NEGATION",
+      "CONDITION"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.18",
+    "sourceSection": "文の文法1 第12回【118】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "nara-madashimo",
+    "pattern": "〜ならまだしも",
+    "reading": "ならまだしも",
+    "aliases": [],
+    "meaningVi": "Nếu là … thì còn được, đằng này …",
+    "coreImage": "Cái nhẹ còn tha được, cái này thì không.",
+    "nuanceVi": "Vế sau luôn là điều KHÔNG chấp nhận được.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "N＋ならまだしも"
+      },
+      {
+        "pos": "V",
+        "form": "V-辞書形／ない形＋ならまだしも"
+      }
+    ],
+    "usage": [
+      "So hai mức để nhấn cái sau là quá đáng",
+      "Vế sau bị chê"
+    ],
+    "restrictions": [
+      {
+        "kind": "POLARITY",
+        "ruleVi": "Vế sau bắt buộc là điều bị phê phán."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "一度ならまだしも、三度も遅刻するとは。",
+        "vi": "Một lần thì còn được, đằng này muộn tới ba lần."
+      },
+      {
+        "ja": "冗談ならまだしも、本気で言っているのなら問題だ。",
+        "vi": "Đùa thì còn được, chứ nói thật thì là vấn đề đấy."
+      }
+    ],
+    "commonMistakes": [
+      "Vế sau dùng nghĩa trung tính"
+    ],
+    "keyClues": [
+      "so hai mức",
+      "vế sau bị chê"
+    ],
+    "families": [
+      "CONCESSION",
+      "EVALUATION"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.28",
+    "sourceSection": "文の文法1 第21回【209】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "iza-shirazu",
+    "pattern": "〜いざ知らず",
+    "reading": "いざしらず",
+    "aliases": [],
+    "meaningVi": "… thì không biết, chứ …",
+    "coreImage": "Trường hợp kia tạm gác, còn cái này thì rõ.",
+    "nuanceVi": "Gác một trường hợp sang bên để nói về trường hợp còn lại.",
+    "structure": [
+      {
+        "pos": "N",
+        "form": "N＋は／ならいざ知らず、〜"
+      }
+    ],
+    "usage": [
+      "Gác một trường hợp để tập trung vào cái còn lại",
+      "Hay đi với 昔・子ども・専門家"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Trường hợp bị gác phải khác biệt rõ với trường hợp đang nói."
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "昔ならいざ知らず、今どきそんな考えは通用しない。",
+        "vi": "Ngày xưa thì không biết, chứ thời nay lối nghĩ đó không xuôi."
+      },
+      {
+        "ja": "子どもならいざ知らず、大人がそれをするのは恥ずかしい。",
+        "vi": "Trẻ con thì không nói, chứ người lớn làm thế thì thật ngượng."
+      }
+    ],
+    "commonMistakes": [
+      "Nhầm với 〜ならまだしも (so mức độ chấp nhận)"
+    ],
+    "keyClues": [
+      "昔・子ども đứng trước"
+    ],
+    "families": [
+      "CONCESSION"
+    ],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.33",
+    "sourceSection": "文の文法1 第26回【255】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "to-omoi-kiya",
+    "pattern": "〜と思いきや",
+    "reading": "とおもいきや",
+    "aliases": [],
+    "meaningVi": "Tưởng là … hoá ra không phải.",
+    "coreImage": "Đoán một đằng, sự thật một nẻo.",
+    "nuanceVi": "Vế sau LUÔN trái với dự đoán ở vế trước.",
+    "structure": [
+      {
+        "pos": "V",
+        "form": "V／A／N・普通形＋と思いきや"
+      }
+    ],
+    "usage": [
+      "Kể lại điều bất ngờ trái dự đoán",
+      "Vế sau luôn ngược lại"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Vế sau bắt buộc trái với điều đã đoán."
+      }
+    ],
+    "register": "NEUTRAL",
+    "examples": [
+      {
+        "ja": "簡単だと思いきや、思わぬところでつまずいた。",
+        "vi": "Tưởng dễ, hoá ra lại vấp ở chỗ không ngờ."
+      },
+      {
+        "ja": "雨がやんだと思いきや、また降り出した。",
+        "vi": "Tưởng mưa đã tạnh, ai ngờ lại đổ xuống."
+      }
+    ],
+    "commonMistakes": [
+      "Vế sau không trái dự đoán"
+    ],
+    "keyClues": [
+      "vế sau ngược hẳn dự đoán"
+    ],
+    "families": [
+      "CONCESSION",
+      "EVALUATION"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.20",
+    "sourceSection": "文の文法1 第14回【132】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "n-bakari",
+    "pattern": "〜んばかり",
+    "reading": "んばかり",
+    "aliases": [
+      "んばかりに",
+      "んばかりの"
+    ],
+    "meaningVi": "Như thể sắp … tới nơi.",
+    "coreImage": "Chưa xảy ra, nhưng nhìn y như sắp xảy ra.",
+    "nuanceVi": "Nối V-ない形 (bỏ ない); 「する」→「せんばかり」.",
+    "structure": [
+      {
+        "pos": "V",
+        "form": "V-ない形（ない を bỏ）＋んばかり"
+      },
+      {
+        "pos": "V",
+        "form": "する → せんばかり",
+        "note": "Bất quy tắc"
+      }
+    ],
+    "usage": [
+      "Miêu tả hình ảnh sống động",
+      "Hay gặp 泣かんばかり, あふれんばかり"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Việc đó THỰC RA chưa xảy ra.",
+        "counterExample": "×彼は泣かんばかりに泣いた。"
+      }
+    ],
+    "register": "LITERARY",
+    "examples": [
+      {
+        "ja": "彼女はあふれんばかりの笑顔で迎えてくれた。",
+        "vi": "Cô ấy đón tôi bằng nụ cười như muốn tràn ra."
+      },
+      {
+        "ja": "店員は今にも泣かんばかりの顔で謝った。",
+        "vi": "Nhân viên xin lỗi với gương mặt như sắp khóc."
+      }
+    ],
+    "commonMistakes": [
+      "Dùng khi việc đã thực sự xảy ra",
+      "Chia 「する」thành ×しんばかり"
+    ],
+    "keyClues": [
+      "chưa thực sự xảy ra",
+      "する → せんばかり"
+    ],
+    "families": [
+      "DEGREE",
+      "EMPHASIS"
+    ],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.22",
+    "sourceSection": "文の文法1 第16回【147】",
+    "verificationStatus": "VERIFIED"
+  },
+  {
+    "id": "to-bakari-ni",
+    "pattern": "〜とばかりに",
+    "reading": "とばかりに",
+    "aliases": [
+      "と言わんばかりに"
+    ],
+    "meaningVi": "Như thể muốn nói rằng …",
+    "coreImage": "Không nói ra miệng, nhưng thái độ nói hộ.",
+    "nuanceVi": "Trước 「と」thường là lời trích dẫn ngầm.",
+    "structure": [
+      {
+        "pos": "Clause",
+        "form": "文＋とばかりに"
+      },
+      {
+        "pos": "Clause",
+        "form": "文＋と言わんばかりに",
+        "note": "Biến thể"
+      }
+    ],
+    "usage": [
+      "Miêu tả thái độ thay cho lời nói",
+      "Trước 「と」là câu được trích ngầm"
+    ],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Người đó KHÔNG thực sự nói câu ấy ra miệng."
+      }
+    ],
+    "register": "LITERARY",
+    "examples": [
+      {
+        "ja": "待っていたとばかりに、彼は席を立った。",
+        "vi": "Như thể đã chờ sẵn, anh ta đứng bật dậy."
+      },
+      {
+        "ja": "早く帰れとばかりに、店員が掃除を始めた。",
+        "vi": "Như thể giục khách về, nhân viên bắt đầu quét dọn."
+      }
+    ],
+    "commonMistakes": [
+      "Dùng khi người đó thực sự nói ra câu ấy"
+    ],
+    "keyClues": [
+      "câu trích ngầm trước 「と」"
+    ],
+    "families": [
+      "EMPHASIS",
+      "STANCE"
+    ],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.22",
+    "sourceSection": "文の文法1 第16回【156】",
+    "verificationStatus": "VERIFIED"
+  }
+]

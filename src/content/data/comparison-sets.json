@@ -1,0 +1,132 @@
+[
+  {
+    "id": "cmp-time-01",
+    "grammarIds": ["ni-itatte", "ni-itatte-wa", "ni-itaru-made"],
+    "familyHint": "TIME",
+    "rows": [
+      { "axis": "MEANING", "cells": {
+        "ni-itatte": "Đến mốc nghiêm trọng đó thì mới…",
+        "ni-itatte-wa": "Nêu ví dụ cực đoan nhất trong nhóm",
+        "ni-itaru-made": "Từ … cho tới tận …, nhấn phạm vi" } },
+      { "axis": "SUBJECT", "cells": {
+        "ni-itatte": "Một sự kiện/giai đoạn",
+        "ni-itatte-wa": "Một thành viên của tập hợp vừa nêu",
+        "ni-itaru-made": "Hai đầu của một dải" } },
+      { "axis": "KEY_CLUE", "cells": {
+        "ni-itatte": "ようやく / 初めて ở vế sau",
+        "ni-itatte-wa": "có liệt kê ở phía trước",
+        "ni-itaru-made": "có mốc đầu 「から」ở phía trước" } },
+      { "axis": "NUANCE", "cells": {
+        "ni-itatte": "Muộn màng, đáng lẽ phải sớm hơn",
+        "ni-itatte-wa": "Kinh ngạc hoặc chê trách",
+        "ni-itaru-made": "Ngạc nhiên vì phạm vi rộng" } }
+    ],
+    "decisiveDifferenceVi": "「に至って」nối MỐC với HÀNH ĐỘNG; 「に至っては」nêu VÍ DỤ; 「に至るまで」đo PHẠM VI.",
+    "examPatternVi": "Đề thường cho cả ba đáp án cùng bắt đầu bằng 「に至」và bắt bạn đọc hết đuôi.",
+    "minimalPairQuestionIds": ["q-cmp-time-01-mp-01", "q-cmp-time-01-mp-02"],
+    "whyNotQuestionIds": ["q-cmp-time-01-wn-01"],
+    "openerQuestionId": "q-cmp-time-01-mp-01",
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "cmp-evaluation-01",
+    "grammarIds": ["narade-wa", "nari-ni"],
+    "familyHint": "EVALUATION",
+    "rows": [
+      { "axis": "MEANING", "cells": {
+        "narade-wa": "Chỉ riêng … mới có được",
+        "nari-ni": "Theo cách phù hợp với giới hạn của …" } },
+      { "axis": "NUANCE", "cells": {
+        "narade-wa": "Khen nét độc quyền, không ai bắt chước được",
+        "nari-ni": "Công nhận nỗ lực dù chưa hoàn hảo" } },
+      { "axis": "CONNECTION", "cells": {
+        "narade-wa": "N＋ならではの＋N / N＋ならではだ",
+        "nari-ni": "N＋なりに / N＋なりの＋N" } },
+      { "axis": "KEY_CLUE", "cells": {
+        "narade-wa": "vế sau là điểm tốt được khen",
+        "nari-ni": "thường lặp lại chính danh từ đó" } }
+    ],
+    "decisiveDifferenceVi": "「ならでは」khen ĐỘC QUYỀN; 「なりに」công nhận nỗ lực TRONG GIỚI HẠN.",
+    "minimalPairQuestionIds": ["q-cmp-evaluation-01-mp-01", "q-cmp-evaluation-01-mp-02"],
+    "whyNotQuestionIds": ["q-cmp-evaluation-01-wn-01"],
+    "openerQuestionId": "q-cmp-evaluation-01-mp-01",
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "cmp-concession-01",
+    "grammarIds": ["to-iedomo", "to-wa-ie"],
+    "familyHint": "CONCESSION",
+    "rows": [
+      { "axis": "MEANING", "cells": {
+        "to-iedomo": "Dù là … đi chăng nữa",
+        "to-wa-ie": "Tuy nói là … nhưng thực tế" } },
+      { "axis": "SPEAKER_INTENT", "cells": {
+        "to-iedomo": "Nêu trường hợp tưởng là ngoại lệ rồi phủ nhận",
+        "to-wa-ie": "Đính chính kỳ vọng sinh ra từ điều vừa nói" } },
+      { "axis": "KEY_CLUE", "cells": {
+        "to-iedomo": "thường có 「たとえ」ở đầu câu",
+        "to-wa-ie": "vế trước là sự thật vừa được nêu" } },
+      { "axis": "REGISTER", "cells": {
+        "to-iedomo": "Rất trang trọng, văn nghị luận",
+        "to-wa-ie": "Trang trọng vừa, dùng cả trong hội thoại lịch sự" } }
+    ],
+    "decisiveDifferenceVi": "「といえども」đi với GIẢ ĐỊNH (たとえ); 「とはいえ」đi với SỰ THẬT vừa nói.",
+    "minimalPairQuestionIds": ["q-cmp-concession-01-mp-01", "q-cmp-concession-01-mp-02"],
+    "whyNotQuestionIds": ["q-cmp-concession-01-wn-01"],
+    "openerQuestionId": "q-cmp-concession-01-mp-01",
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "cmp-inevitability-01",
+    "grammarIds": ["zaru-wo-enai", "nai-dewa-irarenai"],
+    "familyHint": "INEVITABILITY",
+    "rows": [
+      { "axis": "MEANING", "cells": {
+        "zaru-wo-enai": "Buộc phải làm vì hoàn cảnh",
+        "nai-dewa-irarenai": "Không kìm được nên phải làm" } },
+      { "axis": "SUBJECT", "cells": {
+        "zaru-wo-enai": "Áp lực đến từ BÊN NGOÀI",
+        "nai-dewa-irarenai": "Thôi thúc đến từ BÊN TRONG người nói" } },
+      { "axis": "CONNECTION", "cells": {
+        "zaru-wo-enai": "V-ない（bỏ ない）＋ざるを得ない；する→せざるを得ない",
+        "nai-dewa-irarenai": "V-ない形＋ではいられない" } },
+      { "axis": "KEY_CLUE", "cells": {
+        "zaru-wo-enai": "có 「〜ため」「〜以上」ở vế trước",
+        "nai-dewa-irarenai": "vế trước là kích thích cảm xúc" } }
+    ],
+    "decisiveDifferenceVi": "Ép từ BÊN NGOÀI thì dùng 「ざるを得ない」; trào lên từ BÊN TRONG thì dùng 「ないではいられない」.",
+    "minimalPairQuestionIds": ["q-cmp-inevitability-01-mp-01", "q-cmp-inevitability-01-mp-02"],
+    "whyNotQuestionIds": ["q-cmp-inevitability-01-wn-01"],
+    "openerQuestionId": "q-cmp-inevitability-01-mp-01",
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "cmp-stance-01",
+    "grammarIds": ["wo-mono-tomosezu", "wo-yoso-ni"],
+    "familyHint": "STANCE",
+    "rows": [
+      { "axis": "MEANING", "cells": {
+        "wo-mono-tomosezu": "Bất chấp khó khăn mà vẫn làm",
+        "wo-yoso-ni": "Mặc kệ mối bận tâm của người khác mà vẫn làm" } },
+      { "axis": "NUANCE", "cells": {
+        "wo-mono-tomosezu": "KHEN — đáng khâm phục",
+        "wo-yoso-ni": "CHÊ — vô trách nhiệm" } },
+      { "axis": "SUBJECT", "cells": {
+        "wo-mono-tomosezu": "Vế trước là khó khăn, nguy hiểm",
+        "wo-yoso-ni": "Vế trước là 反対 / 心配 của người khác" } },
+      { "axis": "POLARITY_TENDENCY", "cells": {
+        "wo-mono-tomosezu": "Vế sau là thành tựu",
+        "wo-yoso-ni": "Vế sau là hành động bị phê phán" } }
+    ],
+    "decisiveDifferenceVi": "Vế trước là KHÓ KHĂN → ものともせず (khen); là LO LẮNG của người khác → よそに (chê).",
+    "minimalPairQuestionIds": ["q-cmp-stance-01-mp-01", "q-cmp-stance-01-mp-02"],
+    "whyNotQuestionIds": ["q-cmp-stance-01-wn-01"],
+    "openerQuestionId": "q-cmp-stance-01-mp-01",
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  }
+]

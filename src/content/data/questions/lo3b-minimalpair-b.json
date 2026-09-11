@@ -1,0 +1,1116 @@
+[
+ {
+  "id": "q-cmp-degree-lo3b-02-mp-01",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "me-ni-miete",
+   "ikkou-ni"
+  ],
+  "stemJa": "「対策を打ってから、感染者数は___減っている。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "目に見えて",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "一向に",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đòi vế sau phủ định, ở đây là khẳng định.",
+    "confusedWithGrammarId": "ikkou-ni",
+    "violatedAxis": "POLARITY_TENDENCY"
+   },
+   {
+    "id": "c",
+    "textJa": "目に見える",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Phải là thể て để bổ nghĩa động từ.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "目にして",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có cách dùng này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Vế sau khẳng định 「減っている」→ 「目に見えて」.",
+  "keyClueVi": "Động từ chỉ biến đổi ở sau.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.15",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-degree-lo3b-02"
+ },
+ {
+  "id": "q-cmp-degree-lo3b-02-mp-02",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "me-ni-miete",
+   "ikkou-ni"
+  ],
+  "stemJa": "「対策を打ったが、感染者数は___減らない。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "一向に",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "目に見えて",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đòi vế sau khẳng định, ở đây là phủ định.",
+    "confusedWithGrammarId": "me-ni-miete",
+    "violatedAxis": "POLARITY_TENDENCY"
+   },
+   {
+    "id": "c",
+    "textJa": "一気に",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không hợp với vế phủ định.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "一向の",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Vế sau phủ định 「減らない」→ 「一向に」. Cùng một câu, chỉ đổi đuôi là đổi đáp án.",
+  "keyClueVi": "Vế sau phủ định.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.17",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-degree-lo3b-02"
+ },
+ {
+  "id": "q-cmp-assumption-lo3b-01-mp-01",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "heta-wo-suru-to",
+   "yohodo-nai-to",
+   "awaya"
+  ],
+  "stemJa": "「___大惨事というところだった。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "あわや",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "下手をすると",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cảnh báo việc CHƯA xảy ra, còn đây là việc đã suýt xảy ra rồi.",
+    "confusedWithGrammarId": "heta-wo-suru-to",
+    "violatedAxis": "TIME_RELATION"
+   },
+   {
+    "id": "c",
+    "textJa": "よほど",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần vế sau là 「〜ないと」.",
+    "confusedWithGrammarId": "yohodo-nai-to",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "あわよくば",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa ngược lại — 'nếu may thì'.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Kết bằng 「というところだった」→ việc đã suýt xảy ra → 「あわや」.",
+  "keyClueVi": "Thì quá khứ.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.34",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-assumption-lo3b-01"
+ },
+ {
+  "id": "q-cmp-assumption-lo3b-01-mp-02",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "heta-wo-suru-to",
+   "yohodo-nai-to",
+   "awaya"
+  ],
+  "stemJa": "「___、大事故になりかねない。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "下手をすると",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "あわや",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Kể việc ĐÃ suýt xảy ra, còn đây là cảnh báo việc chưa xảy ra.",
+    "confusedWithGrammarId": "awaya",
+    "violatedAxis": "TIME_RELATION"
+   },
+   {
+    "id": "c",
+    "textJa": "よほど",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần vế sau là 「〜ないと」.",
+    "confusedWithGrammarId": "yohodo-nai-to",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "下手なら",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Hiểu 「下手」theo nghĩa vụng về.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「〜かねない」báo hiệu việc chưa xảy ra → 「下手をすると」.",
+  "keyClueVi": "Vế sau là khả năng xấu.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.16",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-assumption-lo3b-01"
+ },
+ {
+  "id": "q-cmp-stance-lo3b-01-mp-01",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "wa-naosara-no-koto",
+   "wa-betsu-ni-shite",
+   "wa-tomoare"
+  ],
+  "stemJa": "「平日でも混雑する。休日___だ。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "はなおさらのこと",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "は別にして",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Gác sang bên, ngược chiều với việc đẩy mức lên.",
+    "confusedWithGrammarId": "wa-betsu-ni-shite",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "はともあれ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cũng là gác sang bên.",
+    "confusedWithGrammarId": "wa-tomoare",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "d",
+    "textJa": "がなおさらのこと",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Trợ từ phải là 「は」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Có câu nêu mốc 「平日でも混雑する」rồi đẩy lên → 「はなおさらのこと」.",
+  "keyClueVi": "Đẩy mức lên cao hơn.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.18",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-stance-lo3b-01"
+ },
+ {
+  "id": "q-cmp-stance-lo3b-01-mp-02",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "wa-naosara-no-koto",
+   "wa-betsu-ni-shite",
+   "wa-tomoare"
+  ],
+  "stemJa": "「採用されるか___、応募だけはしてみよう。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "どうかは別にして",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "どうかはなおさらのこと",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Dùng để đẩy mức lên, không phải gác sang bên.",
+    "confusedWithGrammarId": "wa-naosara-no-koto",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "どうかは別だ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Là dạng kết câu, không nối vế sau.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "どうかをともあれ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Trợ từ phải là 「は」.",
+    "confusedWithGrammarId": "wa-tomoare",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「〜かどうかは」đứng trước → 「は別にして」.",
+  "keyClueVi": "Gác một yếu tố sang bên.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-stance-lo3b-01"
+ },
+ {
+  "id": "q-cmp-emphasis-lo3b-03-mp-01",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "ni-ni-te",
+   "tsu-tsu",
+   "tewa-tewa"
+  ],
+  "stemJa": "「探し___探した本が、棚の奥から出てきた。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "に",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "つ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Ghép cặp chủ động và bị động, không lặp cùng một động từ.",
+    "confusedWithGrammarId": "tsu-tsu",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "ては",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nối thể て và cần cặp trái nghĩa.",
+    "confusedWithGrammarId": "tewa-tewa",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "も",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có cấu trúc này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Cùng động từ 「探す」lặp hai lần để nhấn mức độ → 「に〜て」.",
+  "keyClueVi": "Một động từ, hai lần.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.19",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-emphasis-lo3b-03"
+ },
+ {
+  "id": "q-cmp-emphasis-lo3b-03-mp-02",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "ni-ni-te",
+   "tsu-tsu",
+   "tewa-tewa"
+  ],
+  "stemJa": "「波が寄せ___返し、寄せ___返している。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ては／ては",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "つ／つ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nối thể ます, ở đây trước chỗ trống là 「寄せ」nhưng sau lại là 「返し」dạng nối thể て.",
+    "confusedWithGrammarId": "tsu-tsu",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "に／に",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Lặp CÙNG một động từ, còn đây là cặp trái nghĩa 寄せる／返す.",
+    "confusedWithGrammarId": "ni-ni-te",
+    "violatedAxis": "SUBJECT"
+   },
+   {
+    "id": "d",
+    "textJa": "ては／では",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cả hai vế phải cùng là 「ては」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Cặp động từ trái nghĩa 寄せる／返す lặp lại → 「ては〜、ては〜」.",
+  "keyClueVi": "Hai động từ trái nghĩa.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.30",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-emphasis-lo3b-03"
+ },
+ {
+  "id": "q-cmp-degree-lo3b-03-mp-01",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "ni-hakusha-wo-kakeru",
+   "todomaru-tokoro-wo-shiranai"
+  ],
+  "stemJa": "「原油高が物価上昇___いる。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "に拍車をかけて",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "はとどまるところを知らないで",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Sai cấu trúc, và mẫu đó không cần tác nhân bên ngoài.",
+    "confusedWithGrammarId": "todomaru-tokoro-wo-shiranai",
+    "violatedAxis": "SUBJECT"
+   },
+   {
+    "id": "c",
+    "textJa": "を拍車をかけて",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Trợ từ phải là 「に」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "に拍車をかける",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cần thể て để nối 「いる」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Có tác nhân 「原油高が」đẩy → 「に拍車をかける」.",
+  "keyClueVi": "Có chủ ngữ gây tác động.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.21",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-degree-lo3b-03"
+ },
+ {
+  "id": "q-cmp-degree-lo3b-03-mp-02",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "ni-hakusha-wo-kakeru",
+   "todomaru-tokoro-wo-shiranai"
+  ],
+  "stemJa": "「若者の都市流出___。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "はとどまるところを知らない",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "に拍車をかけている",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần một tác nhân đẩy ở trước, câu này không có.",
+    "confusedWithGrammarId": "ni-hakusha-wo-kakeru",
+    "violatedAxis": "SUBJECT"
+   },
+   {
+    "id": "c",
+    "textJa": "をとどまるところを知らない",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Trợ từ phải là 「は」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "はとどまるところを知る",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cụm cố định ở dạng phủ định.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Không có tác nhân, xu thế tự tăng → 「はとどまるところを知らない」.",
+  "keyClueVi": "Đứng cuối câu.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.6",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-degree-lo3b-03"
+ },
+ {
+  "id": "q-cmp-addition-lo3b-02-mp-01",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "to-itta",
+   "to-iu",
+   "to-itta-tokoro-da"
+  ],
+  "stemJa": "「その日は道___道が人であふれていた。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "という",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "といった",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Hai bên phải là danh từ KHÁC nhau mới dùng 「といった」.",
+    "confusedWithGrammarId": "to-itta",
+    "violatedAxis": "KEY_CLUE"
+   },
+   {
+    "id": "c",
+    "textJa": "といったところの",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là dạng kết câu, ước lượng mức độ.",
+    "confusedWithGrammarId": "to-itta-tokoro-da",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "といって",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có cấu trúc này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Cùng danh từ 「道」hai bên → 「という」nghĩa toàn bộ.",
+  "keyClueVi": "Cùng danh từ hai lần.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.28",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-addition-lo3b-02"
+ },
+ {
+  "id": "q-cmp-addition-lo3b-02-mp-02",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "to-itta",
+   "to-iu",
+   "to-itta-tokoro-da"
+  ],
+  "stemJa": "「大阪や京都___関西の都市を訪れた。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "といった",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "という",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần CÙNG một danh từ hai bên.",
+    "confusedWithGrammarId": "to-iu",
+    "violatedAxis": "KEY_CLUE"
+   },
+   {
+    "id": "c",
+    "textJa": "といったところだ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là dạng kết câu, không bổ nghĩa danh từ.",
+    "confusedWithGrammarId": "to-itta-tokoro-da",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "といって",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không nối được danh từ.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Hai ví dụ khác nhau ＋ danh từ khái quát 「都市」→ 「といった」.",
+  "keyClueVi": "Có 「や」đứng giữa.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.22",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-addition-lo3b-02"
+ },
+ {
+  "id": "q-cmp-inevitability-lo3b-01-mp-01",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "neba",
+   "iyaou-nashi-ni"
+  ],
+  "stemJa": "「我々は歴史から学ば___ならない。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ねば",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "いやおうなしに",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là trạng ngữ chỉ sự cưỡng ép, không nối vào 「ならない」.",
+    "confusedWithGrammarId": "iyaou-nashi-ni",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "ないねば",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Phải bỏ 「ない」rồi ghép 「ねば」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "ねばに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「V-ない形 bỏ ない＋ねばならない」.",
+  "keyClueVi": "Chủ thể tự nhận bổn phận.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-inevitability-lo3b-01"
+ },
+ {
+  "id": "q-cmp-inevitability-lo3b-01-mp-02",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "neba",
+   "iyaou-nashi-ni"
+  ],
+  "stemJa": "「制度の変更で、___決断を迫られた。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "いやおうなしに",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "せねば",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là bổn phận tự nhận và cần 「ならない」ở sau.",
+    "confusedWithGrammarId": "neba",
+    "violatedAxis": "SUBJECT"
+   },
+   {
+    "id": "c",
+    "textJa": "いやおうなく",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cụm quen dùng là 「いやおうなしに」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "いやなしに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Bị hoàn cảnh dồn ép, không có lựa chọn → 「いやおうなしに」.",
+  "keyClueVi": "Chủ thể bị động.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.8",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-inevitability-lo3b-01"
+ },
+ {
+  "id": "q-cmp-evaluation-lo3b-01-mp-01",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "gotoki-ni",
+   "gotoki"
+  ],
+  "stemJa": "「素人___何が分かるものか。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ごときに",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "ごとき",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần trợ từ 「に」vì sau là động từ.",
+    "confusedWithGrammarId": "gotoki",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "ごとくに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này ở vị trí này.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "ごとくの",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Sai cấu trúc.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Vế sau là câu phản bác 「〜ものか」→ 「ごときに」, giọng miệt thị.",
+  "keyClueVi": "Có trợ từ 「に」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.33",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-evaluation-lo3b-01"
+ },
+ {
+  "id": "q-cmp-evaluation-lo3b-01-mp-02",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "gotoki-ni",
+   "gotoki"
+  ],
+  "stemJa": "「彼___人物は滅多に現れない。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "のごとき",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "ごときに",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần trợ từ 「に」và vế sau phản bác; ở đây sau là danh từ 「人物」.",
+    "confusedWithGrammarId": "gotoki-ni",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "にごとき",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Trợ từ phải là 「の」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "とごとく",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "「ごとく」bổ nghĩa động từ.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Sau chỗ trống là danh từ 「人物」→ 「のごとき」nêu ví dụ.",
+  "keyClueVi": "Danh từ đứng ngay sau.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.3",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-evaluation-lo3b-01"
+ },
+ {
+  "id": "q-cmp-degree-lo3b-04-mp-01",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "garami",
+   "to-itta-tokoro-da"
+  ],
+  "stemJa": "「五十___の紳士が受付に立っていた。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "がらみ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "といったところ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là dạng kết câu, không bổ nghĩa danh từ 「紳士」.",
+    "confusedWithGrammarId": "to-itta-tokoro-da",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "がらむ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này ở vị trí này.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "ぐるみ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa là 'cả nhà, cả làng', khác hẳn.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Bổ nghĩa danh từ và chỉ tuổi xấp xỉ → 「がらみ」.",
+  "keyClueVi": "Con số tuổi ＋ danh từ ở sau.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.28",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-degree-lo3b-04"
+ },
+ {
+  "id": "q-cmp-degree-lo3b-04-mp-02",
+  "type": "MINIMAL_PAIR",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "garami",
+   "to-itta-tokoro-da"
+  ],
+  "stemJa": "「費用は多く見ても十万円___。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "といったところだ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "がらみだ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Thường dùng cho tuổi và bổ nghĩa danh từ, không kết câu kiểu này.",
+    "confusedWithGrammarId": "garami",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "といった",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cần danh từ khái quát đứng sau.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "というところに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Sai cấu trúc kết câu.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「多く見ても」＋ kết câu ước lượng → 「といったところだ」.",
+  "keyClueVi": "Đứng cuối câu.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "決定軸を探す",
+    "labelVi": "Tìm trục quyết định của cụm này, đừng dịch nghĩa từng đáp án."
+   }
+  ],
+  "targetTimeMs": 30000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.29",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "COMPARE",
+  "difficultyStatic": 4,
+  "comparisonSetId": "cmp-degree-lo3b-04"
+ }
+]

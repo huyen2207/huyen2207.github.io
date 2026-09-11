@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ai-seed",
+    "titleJa": "シードデータ（AI生成・未検証）",
+    "kind": "AI_GENERATED",
+    "trustLevel": "UNVERIFIED"
+  },
+  {
+    "id": "drill-drill-n1",
+    "titleJa": "ドリル＆ドリル 日本語能力試験 N1 文法",
+    "publisher": "ユニコム",
+    "year": 2011,
+    "kind": "WORKBOOK",
+    "trustLevel": "PRIMARY"
+  }
+]

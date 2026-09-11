@@ -1,0 +1,789 @@
+[
+ {
+  "id": "q-tokoro-wo-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "tokoro-wo"
+  ],
+  "stemJa": "「〜ところ(を)」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "Aのときなのに(わざわざ)",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aという状況の中で",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「にあって」— đặt bối cảnh thời thế, không phải lời xã giao.",
+    "confusedWithGrammarId": "ni-atte"
+   },
+   {
+    "id": "c",
+    "textJa": "Aしたところ、〜だった",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nhầm với 「たところ」chỉ kết quả."
+   },
+   {
+    "id": "d",
+    "textJa": "Aする場所を",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nhầm 「ところ」thành nghĩa nơi chốn."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「お忙しいところを」— rào trước rồi mới cảm ơn hoặc xin lỗi.",
+  "keyClueVi": "Vế sau là cảm ơn hoặc xin lỗi.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.24",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-meku-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "meku"
+  ],
+  "stemJa": "「〜めく」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "Aのような感じがする",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aのような(例をあげる)",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「ごとき」— nêu ví dụ cụ thể, không phải phảng phất.",
+    "confusedWithGrammarId": "gotoki"
+   },
+   {
+    "id": "c",
+    "textJa": "Aになった",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Chưa hẳn thành A, chỉ mới phảng phất."
+   },
+   {
+    "id": "d",
+    "textJa": "Aのふりをする",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Không phải giả vờ."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「皮肉めいた響き」— chưa hẳn là mỉa mai nhưng đã phảng phất.",
+  "keyClueVi": "Chỉ ghép vài danh từ: 春・謎・皮肉.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-nai-tomo-kagiranai-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "nai-tomo-kagiranai"
+  ],
+  "stemJa": "「〜ないとも限らない」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "Aする恐れがある",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "場合によってはAできる",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「ないものでもない」— khả năng chấp nhận được, không phải cảnh báo.",
+    "confusedWithGrammarId": "nai-mono-demo-nai"
+   },
+   {
+    "id": "c",
+    "textJa": "絶対にAしない",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Ngược nghĩa."
+   },
+   {
+    "id": "d",
+    "textJa": "Aに限らない",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nhầm với 「〜に限らない」chỉ phạm vi."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「地震が起きないとも限らない」— khả năng xấu chưa loại trừ được, nên đề phòng.",
+  "keyClueVi": "Vế sau là lời khuyên đề phòng.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-to-wa-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "to-wa"
+  ],
+  "stemJa": "「〜とは」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "Aということには驚いた",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aは(困ったものだ)",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「ときたら」— nêu người rồi than phiền.",
+    "confusedWithGrammarId": "to-kitara"
+   },
+   {
+    "id": "c",
+    "textJa": "Aという意味だ",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nhầm với 「とは」dùng để định nghĩa."
+   },
+   {
+    "id": "d",
+    "textJa": "Aと言われている",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Không phải trích dẫn."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「結婚するとは」— nghe xong sững người, câu thường bỏ lửng.",
+  "keyClueVi": "Nội dung gây bất ngờ.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-nai-made-mo-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "nai-made-mo"
+  ],
+  "stemJa": "「〜ないまでも」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "Aほどではないとしても(せめて)",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aする必要はない",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「までもない」— phủ định nằm SAU mẫu.",
+    "confusedWithGrammarId": "made-mo-nai"
+   },
+   {
+    "id": "c",
+    "textJa": "ただAしただけだ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「まで(のこと)だ」.",
+    "confusedWithGrammarId": "made-no-koto-da"
+   },
+   {
+    "id": "d",
+    "textJa": "Aするまで続ける",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nhầm 「まで」thành mốc thời gian."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「毎日とは言わないまでも」— hạ chuẩn xuống rồi nêu mức tối thiểu.",
+  "keyClueVi": "Vế sau có 「せめて」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-tomo-nashi-ni-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "tomo-nashi-ni"
+  ],
+  "stemJa": "「〜ともなしに」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "特にAしようと思わずに",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aという段階になると",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「ともなると」— nói về mức độ.",
+    "confusedWithGrammarId": "to-mo-naru-to"
+   },
+   {
+    "id": "c",
+    "textJa": "Aしないことにして",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Không phải quyết định không làm."
+   },
+   {
+    "id": "d",
+    "textJa": "Aする間もなく",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Không phải nghĩa thời gian."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Trùng nghĩa hoàn toàn với 「ともなく」.",
+  "keyClueVi": "Động từ tri giác, lặp hai lần.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-hitori-nomi-narazu-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "hitori-nomi-narazu"
+  ],
+  "stemJa": "「ひとり〜のみならず」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "Aだけでなく(もっと広く)",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aももちろんだが",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「もさることながら」— dời trọng tâm chứ không mở rộng phạm vi.",
+    "confusedWithGrammarId": "mo-saru-koto-nagara"
+   },
+   {
+    "id": "c",
+    "textJa": "Aひとりだけが",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Ngược nghĩa — mẫu này MỞ RỘNG ra khỏi A."
+   },
+   {
+    "id": "d",
+    "textJa": "Aとともに行く",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nhầm 「ひとり」thành nghĩa đi một mình."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「ひとり日本のみならず」— kéo phạm vi từ một nước ra cả thế giới.",
+  "keyClueVi": "「ひとり」đứng đầu, A là người hoặc tổ chức.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.30",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-atte-no-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "atte-no"
+  ],
+  "stemJa": "「〜あっての」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "Aがあるからこそ Bが成り立つ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aがなければ〜できない",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cùng ý nhưng 「なくして」dẫn sang cả một vế phủ định, không nối danh từ.",
+    "confusedWithGrammarId": "naku-shite"
+   },
+   {
+    "id": "c",
+    "textJa": "AにおけるB",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Không phải nghĩa phạm vi."
+   },
+   {
+    "id": "d",
+    "textJa": "AのあとのB",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Không phải trình tự thời gian."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「お客様あっての商売」— rút A đi thì B sụp ngay.",
+  "keyClueVi": "Danh từ ở cả hai bên.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.32",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-mo-soko-soko-ni-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "mo-soko-soko-ni"
+  ],
+  "stemJa": "「〜もそこそこに」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ゆっくりAをしないで(急いで)",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aも避けない覚悟だ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「も辞さない」— quyết tâm, không phải vội vã.",
+    "confusedWithGrammarId": "mo-jisanai"
+   },
+   {
+    "id": "c",
+    "textJa": "Aをまったくしないで",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Vẫn có làm, chỉ là làm qua quýt."
+   },
+   {
+    "id": "d",
+    "textJa": "Aをしてからゆっくり",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Ngược nghĩa."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「朝食もそこそこに」— ăn qua quýt rồi lao đi.",
+  "keyClueVi": "Danh từ chỉ hành động đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.34",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-mo-jisanai-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "mo-jisanai"
+  ],
+  "stemJa": "「〜も辞さない」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "Aさえも覚悟している",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aもゆっくりしないで",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「もそこそこに」— vội vã, không phải quyết tâm.",
+    "confusedWithGrammarId": "mo-soko-soko-ni"
+   },
+   {
+    "id": "c",
+    "textJa": "Aを断る",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Ngược nghĩa — 「辞さない」là KHÔNG từ chối."
+   },
+   {
+    "id": "d",
+    "textJa": "Aを避けたい",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Ngược nghĩa."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「ストライキも辞さない」— cái giá đắt nhất cũng chịu.",
+  "keyClueVi": "Danh từ chỉ hậu quả nặng đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.36",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-wa-tomoare-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "wa-tomoare"
+  ],
+  "stemJa": "「〜はともあれ」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "Aは問題にしないで言えば",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aなら許せるが実際はひどい",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「ならまだしも」— so hai mức rồi chê.",
+    "confusedWithGrammarId": "nara-madashimo"
+   },
+   {
+    "id": "c",
+    "textJa": "Aの場合は別として",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「いざ知らず」— gác hẳn một trường hợp ra ngoài.",
+    "confusedWithGrammarId": "iza-shirazu"
+   },
+   {
+    "id": "d",
+    "textJa": "Aと同時に",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Không phải quan hệ thời gian."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「何はともあれ」— gác tạm sang bên để nói cái quan trọng hơn.",
+  "keyClueVi": "Vế sau là trọng tâm.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.36",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 2
+ },
+ {
+  "id": "q-beku-shite-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "beku-shite"
+  ],
+  "stemJa": "「〜べくして」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "Aするのは当然の結果だ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "一度Aしたら取り返しがつかない",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「が最後」— cảnh báo việc CHƯA xảy ra.",
+    "confusedWithGrammarId": "ga-saigo"
+   },
+   {
+    "id": "c",
+    "textJa": "Aするために",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nhầm với 「べく」nghĩa mục đích."
+   },
+   {
+    "id": "d",
+    "textJa": "Aすべきだった",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Không phải nghĩa lẽ ra nên làm."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「起こるべくして起こった」— nhìn lại thì điều kiện đã đủ, tất phải xảy ra.",
+  "keyClueVi": "Lặp cùng một động từ hai lần.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.37",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-ni-wa-ataranai-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "ni-wa-ataranai"
+  ],
+  "stemJa": "「〜にはあたらない」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "Aするほどのことではない",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aする必要はありません(申し出を断る)",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「にはおよばない」— ngăn một hành động, còn đây là hạ nhiệt một phản ứng.",
+    "confusedWithGrammarId": "ni-wa-oyobanai"
+   },
+   {
+    "id": "c",
+    "textJa": "簡単にAできる",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「にかたくない」— nghĩa khẳng định.",
+    "confusedWithGrammarId": "ni-katakunai"
+   },
+   {
+    "id": "d",
+    "textJa": "Aしてはいけない",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Không phải cấm đoán."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「驚くにはあたらない」— chuyện chưa tới mức đáng ngạc nhiên vậy.",
+  "keyClueVi": "「驚く」「非難する」đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.37",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-iza-to-naru-to-meaning-01",
+  "type": "MEANING_MC",
+  "phaseHint": [
+   "PHASE_1_KNOW"
+  ],
+  "targetGrammarIds": [
+   "iza-to-naru-to"
+  ],
+  "stemJa": "「いざ〜となると」の意味に最も近いのはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "実際にAの場面になると",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "Aと仮定しても",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đó là 「としたところで」— vẫn là giả định, chưa xảy ra thật.",
+    "confusedWithGrammarId": "to-shita-tokoro-de"
+   },
+   {
+    "id": "c",
+    "textJa": "Aする前に",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Ngược chiều thời gian."
+   },
+   {
+    "id": "d",
+    "textJa": "Aしたあとで",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Không phải sau khi xong."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「いざ本番となると」— nghĩ thì dễ, tới lúc thật mới thấy khác.",
+  "keyClueVi": "「いざ」đứng đầu, vế sau trái dự tính.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "核心を思い出す",
+    "labelVi": "Hỏi: mẫu này nói về cái gì trước tiên?"
+   }
+  ],
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.38",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ }
+]

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# Bản trích 210 mẫu kèm 形/意味 chép nguyên từ ドリル＆ドリル N1 文法.
+# Là file làm việc, app KHÔNG import. Không đẩy lên repo công khai.
+content-inventory/
+
+# Cấu hình Claude Code trên máy
+.claude/

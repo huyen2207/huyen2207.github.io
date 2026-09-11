@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "q-neba-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "neba"
+  ],
+  "stemJa": "「我々は過去の教訓に学ば___ならない。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ねば",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "いやおうなしに",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là trạng ngữ chỉ sự cưỡng ép, không nối vào 「ならない」.",
+    "confusedWithGrammarId": "iyaou-nashi-ni",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "ないねば",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Phải bỏ 「ない」rồi ghép 「ねば」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "ねばに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「学ばない」bỏ 「ない」→「学ばねばならない」.",
+  "keyClueVi": "Thể ない bỏ ない.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONNECTION",
+   "textJa": "学ば___ならない",
+   "noteVi": "Thể ない bỏ ない."
+  },
+  "trap": {
+   "trapType": "CONNECTION_MISMATCH",
+   "trapExplanationVi": "Bẫy hay gặp nhất là 「する」→「せねば」.",
+   "fastestPathVi": "Nhớ bỏ 「ない」trước khi ghép 「ねば」.",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-ta-nari-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "ta-nari"
+  ],
+  "stemJa": "「彼はうつむい___、一言も発しなかった。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "たなり",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "るなりするなり",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "「なり」lặp hai lần thì thành nghĩa nêu lựa chọn.",
+    "confusedWithGrammarId": "nari-nari",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "ながらの",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nối danh từ, không nối động từ.",
+    "confusedWithGrammarId": "nagara-no",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "るなり",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành nghĩa 'vừa làm xong là lập tức', và phải nối thể từ điển.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Thể た ＋ giữ nguyên trạng thái → 「たなり」.",
+  "keyClueVi": "「なり」chỉ xuất hiện một lần.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONNECTION",
+   "textJa": "うつむい___",
+   "noteVi": "「なり」chỉ xuất hiện một lần."
+  },
+  "trap": {
+   "trapType": "LOOKALIKE_FORM",
+   "trapExplanationVi": "「なり」có ba cách dùng; thể đứng trước và số lần lặp quyết định.",
+   "fastestPathVi": "Thể た → giữ nguyên; thể từ điển → tức thì; lặp hai lần → lựa chọn.",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-garami-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "garami"
+  ],
+  "stemJa": "「六十___の男性が窓口を訪れた。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "がらみ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "といったところ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là dạng kết câu, không bổ nghĩa danh từ 「男性」.",
+    "confusedWithGrammarId": "to-itta-tokoro-da",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "ぐるみ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa là 'cả nhà, cả làng'.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "がらみで",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Bổ nghĩa danh từ thì dùng 「がらみの」hoặc 「がらみ」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Bổ nghĩa danh từ và chỉ tuổi xấp xỉ → 「がらみ」.",
+  "keyClueVi": "Con số tuổi ＋ danh từ ở sau.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.28",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "POSITION",
+   "textJa": "六十___の男性",
+   "noteVi": "Con số tuổi ＋ danh từ ở sau."
+  },
+  "trap": {
+   "trapType": "CONNECTION_MISMATCH",
+   "trapExplanationVi": "Hai mẫu cùng ước lượng số nhưng khác vị trí trong câu.",
+   "fastestPathVi": "Sau chỗ trống có danh từ không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-to-iu-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "to-iu"
+  ],
+  "stemJa": "「台風の翌朝、窓___窓が泥で汚れていた。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "という",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "といった",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Hai bên phải là danh từ KHÁC nhau.",
+    "confusedWithGrammarId": "to-itta",
+    "violatedAxis": "KEY_CLUE"
+   },
+   {
+    "id": "c",
+    "textJa": "といったところの",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là dạng kết câu, ước lượng mức độ.",
+    "confusedWithGrammarId": "to-itta-tokoro-da",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "といって",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có cấu trúc này.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Cùng danh từ 「窓」hai bên → 「という」nghĩa toàn bộ.",
+  "keyClueVi": "Cùng danh từ hai lần.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.28",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "POSITION",
+   "textJa": "窓___窓",
+   "noteVi": "Cùng danh từ hai lần."
+  },
+  "trap": {
+   "trapType": "LOOKALIKE_FORM",
+   "trapExplanationVi": "Dấu hiệu duy nhất là hai bên có CÙNG danh từ hay không.",
+   "fastestPathVi": "So hai danh từ hai bên chỗ trống.",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-to-itta-tokoro-da-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "to-itta-tokoro-da"
+  ],
+  "stemJa": "「準備にかかる時間は、せいぜい一時間___。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "といったところだ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "がらみだ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Thường dùng cho tuổi và bổ nghĩa danh từ.",
+    "confusedWithGrammarId": "garami",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "といった",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cần danh từ khái quát đứng sau.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "というところに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Sai cấu trúc kết câu.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「せいぜい」＋ kết câu ước lượng → 「といったところだ」.",
+  "keyClueVi": "「せいぜい」đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.29",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONTEXT",
+   "textJa": "せいぜい",
+   "noteVi": "「せいぜい」đứng trước."
+  },
+  "trap": {
+   "trapType": "CONNECTION_MISMATCH",
+   "trapExplanationVi": "「せいぜい」「多くても」là dấu hiệu quen thuộc của mẫu này.",
+   "fastestPathVi": "Câu có từ chỉ mức trần không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-yomoya-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "yomoya"
+  ],
+  "stemJa": "「___彼が辞退するとは思わなかった。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "よもや",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "どうして",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần đuôi 「ようか」mới thành phủ định mạnh.",
+    "confusedWithGrammarId": "doushite-you-ka",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "よもやの",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không thêm 「の」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "よほど",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cần vế sau là 「〜ないと」.",
+    "confusedWithGrammarId": "yohodo-nai-to",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「よもや〜とは思わなかった」— gạt phăng một khả năng khó tin.",
+  "keyClueVi": "Vế sau phủ định.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.29",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "COLLOCATION",
+   "textJa": "思わなかった",
+   "noteVi": "Vế sau phủ định."
+  },
+  "trap": {
+   "trapType": "LOOKALIKE_FORM",
+   "trapExplanationVi": "Các phó từ mở đầu よもや／どうして／よほど đòi ba loại đuôi khác nhau.",
+   "fastestPathVi": "Nhìn đuôi câu để chọn phó từ.",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-tewa-tewa-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "tewa-tewa"
+  ],
+  "stemJa": "「彼は立っ___座り、立っ___座りして落ち着かない。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ては／ては",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "つ／つ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nối thể ます và ghép cặp chủ động／bị động.",
+    "confusedWithGrammarId": "tsu-tsu",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "に／に",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Lặp CÙNG một động từ, còn đây là cặp trái nghĩa.",
+    "confusedWithGrammarId": "ni-ni-te",
+    "violatedAxis": "SUBJECT"
+   },
+   {
+    "id": "d",
+    "textJa": "ては／では",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cả hai vế phải cùng là 「ては」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Cặp trái nghĩa 立つ／座る lặp lại → 「ては〜、ては〜」.",
+  "keyClueVi": "Hai động từ trái nghĩa.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.30",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONNECTION",
+   "textJa": "立っ___座り",
+   "noteVi": "Hai động từ trái nghĩa."
+  },
+  "trap": {
+   "trapType": "LOOKALIKE_FORM",
+   "trapExplanationVi": "Ba mẫu lặp đôi rất giống nhau về hình thức.",
+   "fastestPathVi": "Hai động từ có trái nghĩa nhau không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-gotoki-ni-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "gotoki-ni"
+  ],
+  "stemJa": "「あんな新参者___、この役目が務まるものか。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ごときに",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "ごとき",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần trợ từ 「に」vì sau là động từ.",
+    "confusedWithGrammarId": "gotoki",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "ごとくに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Không có dạng này ở vị trí này.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "めいたに",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Chỉ ghép vài danh từ trừu tượng.",
+    "confusedWithGrammarId": "meku",
+    "violatedAxis": "RESTRICTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Vế sau là câu phản bác 「〜ものか」→ 「ごときに」, giọng miệt thị.",
+  "keyClueVi": "Có trợ từ 「に」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.33",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "POSITION",
+   "textJa": "務まるものか",
+   "noteVi": "Có trợ từ 「に」."
+  },
+  "trap": {
+   "trapType": "NUANCE_TRAP",
+   "trapExplanationVi": "「ごとき」và 「ごときに」chỉ khác một trợ từ mà sắc thái nặng hơn hẳn.",
+   "fastestPathVi": "Sau chỗ trống là danh từ hay động từ?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-yoku-mono-da-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "yoku-mono-da"
+  ],
+  "stemJa": "「この予算で___これだけの物が作れるものだ。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "よく",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "もっとも",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cấu trúc là 「〜ももっともだ」.",
+    "confusedWithGrammarId": "mottomo-da",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "よくも作れて",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Sai cấu trúc.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "よほど",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cần vế sau là 「〜ないと」.",
+    "confusedWithGrammarId": "yohodo-nai-to",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「よく」đứng đầu ＋「ものだ」→ kinh ngạc, ở đây là thán phục.",
+  "keyClueVi": "「よく」ở đầu.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.33",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "COLLOCATION",
+   "textJa": "作れるものだ",
+   "noteVi": "「よく」ở đầu."
+  },
+  "trap": {
+   "trapType": "LOOKALIKE_FORM",
+   "trapExplanationVi": "Nhóm mẫu kết bằng 「ものだ」rất đông; đầu câu mới là dấu hiệu.",
+   "fastestPathVi": "Đầu câu có 「よく」không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-awaya-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "awaya"
+  ],
+  "stemJa": "「___脱線というところで、列車は停止した。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "あわや",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "下手をすると",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cảnh báo việc chưa xảy ra, còn đây là việc đã suýt xảy ra.",
+    "confusedWithGrammarId": "heta-wo-suru-to",
+    "violatedAxis": "TIME_RELATION"
+   },
+   {
+    "id": "c",
+    "textJa": "よほど",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần vế sau là 「〜ないと」.",
+    "confusedWithGrammarId": "yohodo-nai-to",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "あわよくば",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa ngược lại — 'nếu may thì'.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Kết bằng 「というところで」→ việc đã suýt xảy ra → 「あわや」.",
+  "keyClueVi": "Thì quá khứ, việc xấu.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.34",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONTEXT",
+   "textJa": "列車は停止した",
+   "noteVi": "Thì quá khứ, việc xấu."
+  },
+  "trap": {
+   "trapType": "CONTEXT_REVERSAL",
+   "trapExplanationVi": "Bẫy nằm ở THÌ: việc đã suýt xảy ra rồi hay còn ở tương lai.",
+   "fastestPathVi": "Việc đó đã suýt xảy ra hay chưa xảy ra?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-mo-sureba-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "mo-sureba"
+  ],
+  "stemJa": "「二か月___、新しい環境にも慣れるだろう。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "もすれば",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "よほどしないと",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Điều kiện là mức độ kỹ lưỡng, không phải thời gian.",
+    "confusedWithGrammarId": "yohodo-nai-to",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "もあれば",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cấu trúc đó là 「〜もあれば〜もある」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "をすれば",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Trợ từ phải là 「も」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「二か月」là danh từ chỉ thời gian → 「もすれば」.",
+  "keyClueVi": "Danh từ chỉ thời gian.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.34",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONNECTION",
+   "textJa": "二か月___",
+   "noteVi": "Danh từ chỉ thời gian."
+  },
+  "trap": {
+   "trapType": "CONNECTION_MISMATCH",
+   "trapExplanationVi": "Điều kiện là THỜI GIAN hay MỨC ĐỘ — đó là chỗ phân biệt.",
+   "fastestPathVi": "Trước chỗ trống là thời gian hay mức độ?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-mottomo-da-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "mottomo-da"
+  ],
+  "stemJa": "「説明もなく中止では、参加者が怒るの___。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "ももっともだ",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "もよくあるものだ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cấu trúc là 「よく〜ものだ」với 「よく」đứng đầu.",
+    "confusedWithGrammarId": "yoku-mono-da",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "もというものだ",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần thể ý chí đứng trước.",
+    "confusedWithGrammarId": "you-to-iu-mono-da",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "がもっともだ",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Cụm cố định dùng 「も」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Cảm xúc 「怒る」＋ đồng cảm → 「〜のももっともだ」.",
+  "keyClueVi": "Đồng cảm với người khác.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.35",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "COLLOCATION",
+   "textJa": "参加者が怒るの___",
+   "noteVi": "Đồng cảm với người khác."
+  },
+  "trap": {
+   "trapType": "LOOKALIKE_FORM",
+   "trapExplanationVi": "Ba mẫu cùng kết bằng 「ものだ」／「もっともだ」.",
+   "fastestPathVi": "Câu đang đồng cảm, kinh ngạc, hay chốt lẽ thường?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-nanra-nai-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "nanra-nai"
+  ],
+  "stemJa": "「本件について、当社は___責任を負いかねます。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "なんら",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "たりしない",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là khẩu ngữ, không hợp văn thông cáo.",
+    "confusedWithGrammarId": "tari-shinai",
+    "violatedAxis": "REGISTER"
+   },
+   {
+    "id": "c",
+    "textJa": "なんらか",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Nghĩa ngược lại — 'một chút nào đó'.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "なんらの",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Ở đây không thêm 「の」.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Văn thông cáo ＋ phủ định khách quan → 「なんら」.",
+  "keyClueVi": "Văn viết cứng.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.35",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "REGISTER",
+   "textJa": "負いかねます",
+   "noteVi": "Văn viết cứng."
+  },
+  "trap": {
+   "trapType": "REGISTER_MISMATCH",
+   "trapExplanationVi": "Đáp án sai không sai ngữ pháp mà sai văn phong.",
+   "fastestPathVi": "Đây là hội thoại hay văn thông cáo?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-you-kanou-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "you-kanou"
+  ],
+  "stemJa": "「これは今後の指針とも___。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "言えよう",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "どうして言えようか",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Có 「どうして」thì thành phủ định, trái hẳn ý câu.",
+    "confusedWithGrammarId": "doushite-you-ka",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "言おう",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Phải là thể khả năng 「言える」rồi mới ghép 「よう」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "言えようか",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành câu hỏi tu từ mang nghĩa phủ định.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Không có 「どうして」→ 「よう」là KHẲNG ĐỊNH.",
+  "keyClueVi": "Đây chính là chỗ bẫy.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.35",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "POSITION",
+   "textJa": "指針とも___",
+   "noteVi": "Đây chính là chỗ bẫy."
+  },
+  "trap": {
+   "trapType": "POLARITY_TRAP",
+   "trapExplanationVi": "Cùng đuôi 「よう」cho hai nghĩa ngược nhau, khác nhau ở 「どうして」.",
+   "fastestPathVi": "Đầu câu có 「どうして」không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-doushite-you-ka-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "doushite-you-ka"
+  ],
+  "stemJa": "「この期に及んで、___後戻りできようか。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "どうして",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "よもや",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần vế sau là 「〜まい」「〜ない」, không đi với 「ようか」.",
+    "confusedWithGrammarId": "yomoya",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "どうしても",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Mất cấu trúc câu hỏi tu từ.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "どうやって",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành câu hỏi thật về phương thức.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Có đuôi 「ようか」→ cần 「どうして」để thành phủ định mạnh.",
+  "keyClueVi": "「ようか」ở cuối câu.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.36",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "POSITION",
+   "textJa": "後戻りできようか",
+   "noteVi": "「ようか」ở cuối câu."
+  },
+  "trap": {
+   "trapType": "POLARITY_TRAP",
+   "trapExplanationVi": "Đây là câu hỏi tu từ — hình thức hỏi, nghĩa phủ định tuyệt đối.",
+   "fastestPathVi": "Đuôi câu có 「ようか」không?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-ikani-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "ikani"
+  ],
+  "stemJa": "「___丁寧に説明しても、誤解は解けなかった。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "いかに",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "いかにも",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần đuôi 「そうだ」「らしい」và nhận xét vẻ ngoài.",
+    "confusedWithGrammarId": "ikanimo",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "c",
+    "textJa": "いかが",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Là từ hỏi lịch sự, không nối 「〜ても」.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "いかにして",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành nghĩa phương thức.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Có 「〜ても」→ 「いかに」nhấn mức độ.",
+  "keyClueVi": "「〜ても」ở sau.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.36",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONNECTION",
+   "textJa": "説明しても",
+   "noteVi": "「〜ても」ở sau."
+  },
+  "trap": {
+   "trapType": "LOOKALIKE_FORM",
+   "trapExplanationVi": "「いかに」và 「いかにも」chỉ khác chữ 「も」nhưng đòi hai loại đuôi khác nhau.",
+   "fastestPathVi": "Sau chỗ trống là 「〜ても」hay 「〜そうだ」?",
+   "strength": 3
+  }
+ },
+ {
+  "id": "q-ka-to-iu-to-cloze-01",
+  "type": "CLOZE_MC",
+  "phaseHint": [
+   "PHASE_2_COMPARE",
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "ka-to-iu-to"
+  ],
+  "stemJa": "「努力すれば必ず報われる___、そうとは限らない。」",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "かというと",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "よもや",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Bác ngay từ đầu, không nêu ra rồi mới bác.",
+    "confusedWithGrammarId": "yomoya",
+    "violatedAxis": "MEANING"
+   },
+   {
+    "id": "c",
+    "textJa": "かどうか",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thành câu hỏi thật, mất cấu trúc tự bác.",
+    "violatedAxis": "CONNECTION"
+   },
+   {
+    "id": "d",
+    "textJa": "というと",
+    "isCorrect": false,
+    "wrongBecause": "FORM_ERROR",
+    "whyWrongVi": "Thiếu 「か」thì cụm không thành.",
+    "violatedAxis": "CONNECTION"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Nêu suy đoán rồi tự bác bằng 「そうとは限らない」→ 「かというと」.",
+  "keyClueVi": "Vế sau là 「そうとは限らない」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "文末を見る",
+    "labelVi": "Đọc đuôi câu trước"
+   },
+   {
+    "order": 2,
+    "labelJa": "接続を確認",
+    "labelVi": "Kiểm tra từ loại đứng trước chỗ trống"
+   }
+  ],
+  "targetTimeMs": 50000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.37",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "decisiveClue": {
+   "kind": "CONTEXT",
+   "textJa": "そうとは限らない",
+   "noteVi": "Vế sau là 「そうとは限らない」."
+  },
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "Dấu hiệu chắc chắn nhất là vế sau phủ định chính suy đoán vừa nêu.",
+   "fastestPathVi": "Vế sau có bác lại vế trước không?",
+   "strength": 3
+  }
+ }
+]

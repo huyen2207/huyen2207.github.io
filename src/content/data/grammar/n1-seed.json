@@ -1,0 +1,514 @@
+[
+  {
+    "id": "ni-itatte",
+    "pattern": "〜に至って",
+    "reading": "にいたって",
+    "aliases": ["に至り", "に至っても"],
+    "meaningVi": "Đến tận mức/giai đoạn nghiêm trọng đó thì mới…",
+    "coreImage": "Đi hết một chặng dài, tới điểm cuối — lúc đó mới xảy ra chuyện.",
+    "nuanceVi": "Hàm ý muộn màng: đáng lẽ phải xảy ra sớm hơn.",
+    "structure": [
+      { "pos": "N", "form": "N＋に至って" },
+      { "pos": "V", "form": "V-辞書形＋に至って" }
+    ],
+    "usage": [
+      "Tình huống đã đi tới mức xấu/nghiêm trọng",
+      "Thường đi với 初めて / ようやく / やっと"
+    ],
+    "restrictions": [
+      {
+        "kind": "SCOPE",
+        "ruleVi": "Không dùng cho việc nhỏ, việc thường ngày.",
+        "counterExample": "×コーヒーがなくなるに至って、店に行った。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "typicalContexts": ["ニュース", "論説文"],
+    "examples": [
+      {
+        "ja": "事故が起きるに至って、ようやく対策が取られた。",
+        "vi": "Đến khi tai nạn xảy ra thì rốt cuộc mới có biện pháp.",
+        "whyNaturalVi": "Có 「ようやく」— dấu hiệu điển hình của 〜に至って.",
+        "whyNotOthers": [
+          { "grammarId": "ni-itatte-wa", "reasonVi": "「〜に至っては」nêu ví dụ cực đoan, không diễn tả mốc thời gian.", "axis": "MEANING" }
+        ]
+      },
+      {
+        "ja": "裁判に至って初めて、会社は責任を認めた。",
+        "vi": "Đến khi ra toà thì công ty mới lần đầu thừa nhận trách nhiệm.",
+        "contextVi": "Bản tin thời sự."
+      }
+    ],
+    "commonMistakes": ["Nhầm với 〜に至っては (nêu ví dụ cực đoan)"],
+    "keyClues": ["ようやく / 初めて đứng sau", "sự việc nghiêm trọng đứng trước"],
+    "families": ["TIME", "INEVITABILITY"],
+    "examFrequency": "HIGH",
+    "difficulty": 2,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "ni-itatte-wa",
+    "pattern": "〜に至っては",
+    "reading": "にいたっては",
+    "aliases": [],
+    "meaningVi": "Nói đến … thì (nêu ví dụ cực đoan nhất trong nhóm).",
+    "coreImage": "Trong một dãy tệ dần, chỉ tay vào cái tệ nhất.",
+    "nuanceVi": "Luôn kèm đánh giá tiêu cực hoặc kinh ngạc của người nói.",
+    "structure": [{ "pos": "N", "form": "N＋に至っては" }],
+    "usage": [
+      "Sau khi đã liệt kê vài trường hợp, nêu trường hợp cực đoan",
+      "Vế sau thường là nhận xét tiêu cực"
+    ],
+    "restrictions": [
+      {
+        "kind": "SCOPE",
+        "ruleVi": "Phải có bối cảnh liệt kê hoặc so sánh trước đó.",
+        "counterExample": "×朝に至っては、コーヒーを飲む。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "typicalContexts": ["論説文", "ニュース"],
+    "examples": [
+      {
+        "ja": "遅刻者が続出し、田中君に至っては三日連続で欠席だ。",
+        "vi": "Người đi muộn liên tục, còn nói đến cậu Tanaka thì nghỉ ba ngày liền.",
+        "whyNaturalVi": "Có liệt kê ở vế trước, vế sau là nhận xét tiêu cực.",
+        "whyNotOthers": [
+          { "grammarId": "ni-itatte", "reasonVi": "「〜に至って」cần một mốc sự kiện, không nêu ví dụ.", "axis": "MEANING" }
+        ]
+      },
+      {
+        "ja": "設備は古く、二号機に至ってはもう動かない。",
+        "vi": "Thiết bị thì cũ, còn máy số hai thì đã không chạy nữa."
+      }
+    ],
+    "commonMistakes": ["Dùng như mốc thời gian giống 〜に至って"],
+    "keyClues": ["có liệt kê phía trước", "vế sau mang giọng chê/kinh ngạc"],
+    "families": ["EMPHASIS", "EVALUATION"],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "ni-itaru-made",
+    "pattern": "〜に至るまで",
+    "reading": "にいたるまで",
+    "aliases": ["に至るまでも"],
+    "meaningVi": "Từ … cho tới tận … (nhấn phạm vi rộng đến bất ngờ).",
+    "coreImage": "Kéo một đường từ đầu này tới tận đầu kia, không sót gì.",
+    "structure": [{ "pos": "N", "form": "N＋に至るまで" }],
+    "usage": [
+      "Thường đi cặp với 「〜から」ở phía trước",
+      "Nhấn rằng phạm vi rộng hơn người nghe tưởng"
+    ],
+    "restrictions": [
+      {
+        "kind": "SCOPE",
+        "ruleVi": "Cần một mốc đầu (thường có 〜から) để tạo thành một dải.",
+        "counterExample": "×彼は失敗に至るまで反省した。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "typicalContexts": ["論説文", "ビジネス文書"],
+    "examples": [
+      {
+        "ja": "服装から髪型に至るまで、細かく決められている。",
+        "vi": "Từ trang phục cho tới tận kiểu tóc đều được quy định chi tiết.",
+        "whyNaturalVi": "Có mốc đầu 「服装から」→ đây là một dải phạm vi.",
+        "whyNotOthers": [
+          { "grammarId": "ni-itatte", "reasonVi": "「〜に至って」nối mốc với hành động, không đo phạm vi.", "axis": "MEANING" }
+        ]
+      },
+      {
+        "ja": "大人から子どもに至るまで、この歌を知らない人はいない。",
+        "vi": "Từ người lớn cho tới tận trẻ con, không ai là không biết bài hát này."
+      }
+    ],
+    "commonMistakes": ["Dùng khi không có mốc đầu 「から」"],
+    "keyClues": ["có 「〜から」ở phía trước", "hai đầu của một dải"],
+    "families": ["TIME", "DEGREE"],
+    "examFrequency": "MEDIUM",
+    "difficulty": 2,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "narade-wa",
+    "pattern": "〜ならでは",
+    "reading": "ならでは",
+    "aliases": ["ならではの", "ならではだ"],
+    "meaningVi": "Chỉ riêng … mới có được (khen ngợi nét độc quyền).",
+    "coreImage": "Đóng dấu độc quyền: chỗ khác không làm được như thế.",
+    "nuanceVi": "Luôn mang sắc thái KHEN. Không dùng để chê.",
+    "structure": [
+      { "pos": "N", "form": "N＋ならではの＋N" },
+      { "pos": "N", "form": "N＋ならではだ" }
+    ],
+    "usage": ["Khen đặc sản, đặc trưng riêng của một nơi/người", "Hay gặp trong quảng cáo, giới thiệu"],
+    "restrictions": [
+      {
+        "kind": "POLARITY",
+        "ruleVi": "Chỉ dùng cho đánh giá tích cực.",
+        "counterExample": "×この店ならではのまずさだ。"
+      }
+    ],
+    "register": "NEUTRAL",
+    "typicalContexts": ["広告", "紹介文"],
+    "examples": [
+      {
+        "ja": "京都ならではの静けさが味わえる。",
+        "vi": "Có thể cảm nhận sự tĩnh lặng chỉ riêng Kyoto mới có.",
+        "whyNaturalVi": "Vế sau là điểm tốt được khen.",
+        "whyNotOthers": [
+          { "grammarId": "nari-ni", "reasonVi": "「〜なりに」nói về mức độ phù hợp với năng lực, không phải nét độc quyền.", "axis": "MEANING" }
+        ]
+      },
+      {
+        "ja": "職人ならではの技だ。",
+        "vi": "Đúng là kỹ nghệ chỉ nghệ nhân mới có."
+      }
+    ],
+    "commonMistakes": ["Dùng để chê", "Nhầm với 〜なりに"],
+    "keyClues": ["vế sau là điểm tốt", "thường có の nối với danh từ"],
+    "families": ["LIMITATION", "EVALUATION"],
+    "examFrequency": "HIGH",
+    "difficulty": 2,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "nari-ni",
+    "pattern": "〜なりに",
+    "reading": "なりに",
+    "aliases": ["なりの"],
+    "meaningVi": "Theo cách phù hợp với … (dù không hoàn hảo nhưng đã cố hết mức của mình).",
+    "coreImage": "Trong giới hạn của mình, đã làm hết sức.",
+    "nuanceVi": "Thừa nhận hạn chế nhưng vẫn đánh giá tích cực nỗ lực.",
+    "structure": [
+      { "pos": "N", "form": "N＋なりに" },
+      { "pos": "N", "form": "N＋なりの＋N" }
+    ],
+    "usage": ["Nói về nỗ lực trong giới hạn năng lực", "Hay dùng với 子ども / 私 / 彼"],
+    "restrictions": [
+      {
+        "kind": "SUBJECT",
+        "ruleVi": "Không dùng để hạ thấp người trên một cách trực tiếp.",
+        "counterExample": "×社長は社長なりに頑張っていますね。"
+      }
+    ],
+    "register": "NEUTRAL",
+    "examples": [
+      {
+        "ja": "子どもは子どもなりに考えている。",
+        "vi": "Trẻ con cũng suy nghĩ theo cách của trẻ con.",
+        "whyNaturalVi": "Lặp lại danh từ 「子ども」— cấu trúc điển hình của 〜なりに.",
+        "whyNotOthers": [
+          { "grammarId": "narade-wa", "reasonVi": "「〜ならでは」khen nét độc quyền, không nói về giới hạn năng lực.", "axis": "NUANCE" }
+        ]
+      },
+      {
+        "ja": "私なりに努力したつもりだ。",
+        "vi": "Tôi nghĩ mình đã cố gắng theo cách của mình."
+      }
+    ],
+    "commonMistakes": ["Nhầm với 〜ならでは vì hai mẫu đều gắn với danh từ"],
+    "keyClues": ["hay lặp lại chính danh từ đó", "vế sau nói về nỗ lực/suy nghĩ"],
+    "families": ["LIMITATION", "EVALUATION"],
+    "examFrequency": "HIGH",
+    "difficulty": 2,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "to-iedomo",
+    "pattern": "〜といえども",
+    "reading": "といえども",
+    "aliases": [],
+    "meaningVi": "Dù là … đi chăng nữa thì cũng…",
+    "coreImage": "Nêu một trường hợp tưởng là ngoại lệ, rồi phủ nhận ngoại lệ đó.",
+    "nuanceVi": "Văn viết trang trọng, thường dùng với chân lý chung.",
+    "structure": [
+      { "pos": "N", "form": "N＋といえども" },
+      { "pos": "V", "form": "V-普通形＋といえども" }
+    ],
+    "usage": ["Nhượng bộ mạnh trong văn nghị luận", "Thường đi với 「たとえ」"],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Không dùng cho chuyện vụn vặt đời thường.",
+        "counterExample": "×コンビニといえども、今日は休みだ。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "typicalContexts": ["論説文", "スピーチ"],
+    "examples": [
+      {
+        "ja": "専門家といえども、間違えることはある。",
+        "vi": "Dù là chuyên gia đi nữa thì cũng có lúc sai.",
+        "whyNaturalVi": "Nêu một trường hợp tưởng như ngoại lệ (chuyên gia) rồi phủ nhận nó.",
+        "whyNotOthers": [
+          { "grammarId": "to-wa-ie", "reasonVi": "「〜とはいえ」nhận lại điều vừa nói ở câu trước, không nêu trường hợp giả định.", "axis": "SPEAKER_INTENT" }
+        ]
+      },
+      {
+        "ja": "たとえ子どもといえども、罪は罪だ。",
+        "vi": "Dù có là trẻ con đi nữa thì tội vẫn là tội."
+      }
+    ],
+    "commonMistakes": ["Nhầm với 〜とはいえ"],
+    "keyClues": ["thường có 「たとえ」ở đầu", "vế sau là kết luận chung"],
+    "families": ["CONCESSION"],
+    "examFrequency": "HIGH",
+    "difficulty": 3,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "to-wa-ie",
+    "pattern": "〜とはいえ",
+    "reading": "とはいえ",
+    "aliases": [],
+    "meaningVi": "Tuy nói là … nhưng thực tế thì…",
+    "coreImage": "Vừa công nhận một điều đã biết, rồi lập tức kéo lại.",
+    "nuanceVi": "Điều nhượng bộ là SỰ THẬT đã biết, không phải giả định.",
+    "structure": [
+      { "pos": "N", "form": "N＋とはいえ" },
+      { "pos": "V", "form": "V-普通形＋とはいえ" }
+    ],
+    "usage": ["Đính chính kỳ vọng sinh ra từ điều vừa nói", "Hay đứng đầu câu sau dấu chấm"],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Vế trước phải là sự thật đã xác lập, không phải giả định 「たとえ〜」.",
+        "counterExample": "×たとえ専門家とはいえ、間違える。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "春とはいえ、まだ風は冷たい。",
+        "vi": "Tuy nói là mùa xuân nhưng gió vẫn còn lạnh.",
+        "whyNaturalVi": "「春」là sự thật đã biết; vế sau đính chính kỳ vọng ấm áp.",
+        "whyNotOthers": [
+          { "grammarId": "to-iedomo", "reasonVi": "「〜といえども」dùng cho trường hợp giả định/ngoại lệ, thường có 「たとえ」.", "axis": "SPEAKER_INTENT" }
+        ]
+      },
+      {
+        "ja": "合格したとはいえ、まだ安心はできない。",
+        "vi": "Tuy đã đỗ nhưng vẫn chưa thể yên tâm."
+      }
+    ],
+    "commonMistakes": ["Dùng chung với 「たとえ」"],
+    "keyClues": ["vế trước là sự thật vừa nêu", "vế sau đính chính kỳ vọng"],
+    "families": ["CONCESSION"],
+    "examFrequency": "HIGH",
+    "difficulty": 2,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "zaru-wo-enai",
+    "pattern": "〜ざるを得ない",
+    "reading": "ざるをえない",
+    "aliases": ["ざるをえない"],
+    "meaningVi": "Không thể không … / buộc phải … (dù không muốn).",
+    "coreImage": "Hoàn cảnh ép buộc, không còn lựa chọn nào khác.",
+    "nuanceVi": "Miễn cưỡng do áp lực bên ngoài, không phải mong muốn của người nói.",
+    "structure": [
+      { "pos": "V", "form": "V-ない形（ない を bỏ）＋ざるを得ない" },
+      { "pos": "V", "form": "する → せざるを得ない", "note": "Bất quy tắc, hay ra đề" }
+    ],
+    "usage": ["Bị hoàn cảnh ép buộc", "Văn viết, phát biểu trang trọng"],
+    "restrictions": [
+      {
+        "kind": "VOLITION",
+        "ruleVi": "Chủ thể bị ép bởi hoàn cảnh; không dùng cho mong muốn tự thân.",
+        "counterExample": "×好きだから行かざるを得ない。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "台風のため、中止せざるを得なかった。",
+        "vi": "Vì bão nên buộc phải huỷ.",
+        "whyNaturalVi": "Có lý do khách quan 「台風のため」ép buộc.",
+        "whyNotOthers": [
+          { "grammarId": "nai-dewa-irarenai", "reasonVi": "「〜ないではいられない」là cảm xúc bên trong không kìm được, không phải áp lực bên ngoài.", "axis": "SUBJECT" }
+        ]
+      },
+      {
+        "ja": "証拠がある以上、認めざるを得ない。",
+        "vi": "Đã có bằng chứng thì buộc phải thừa nhận."
+      }
+    ],
+    "commonMistakes": ["Chia sai 「する」thành ×しざるを得ない"],
+    "keyClues": ["có lý do khách quan ở vế trước", "「〜ため」「〜以上」"],
+    "families": ["INEVITABILITY", "NEGATION"],
+    "examFrequency": "HIGH",
+    "difficulty": 2,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "nai-dewa-irarenai",
+    "pattern": "〜ないではいられない",
+    "reading": "ないではいられない",
+    "aliases": ["ずにはいられない"],
+    "meaningVi": "Không thể không … (cảm xúc trào lên, không kìm được).",
+    "coreImage": "Cảm xúc bên trong đẩy ra, tay chân tự làm.",
+    "nuanceVi": "Nguồn ép buộc nằm BÊN TRONG người nói.",
+    "structure": [{ "pos": "V", "form": "V-ない形＋ではいられない" }],
+    "usage": ["Cảm xúc mạnh không kìm được", "Chủ ngữ thường là ngôi thứ nhất"],
+    "restrictions": [
+      {
+        "kind": "SUBJECT",
+        "ruleVi": "Chủ ngữ là người nói; ngôi thứ ba cần 「ようだ」「らしい」.",
+        "counterExample": "×彼は笑わないではいられない。"
+      }
+    ],
+    "register": "NEUTRAL",
+    "examples": [
+      {
+        "ja": "あの映画を見ると、泣かないではいられない。",
+        "vi": "Cứ xem bộ phim đó là tôi không thể không khóc.",
+        "whyNaturalVi": "Cảm xúc bên trong, chủ ngữ là người nói.",
+        "whyNotOthers": [
+          { "grammarId": "zaru-wo-enai", "reasonVi": "「〜ざるを得ない」cần áp lực bên ngoài, không dùng cho cảm xúc.", "axis": "SUBJECT" }
+        ]
+      },
+      {
+        "ja": "この状況を見て、何か言わないではいられなかった。",
+        "vi": "Nhìn tình cảnh này, tôi đã không thể không nói gì đó."
+      }
+    ],
+    "commonMistakes": ["Dùng cho ngôi thứ ba mà không có 「らしい」"],
+    "keyClues": ["vế trước là cảm xúc/kích thích", "chủ ngữ là 私"],
+    "families": ["INEVITABILITY", "STANCE"],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "wo-mono-tomosezu",
+    "pattern": "〜をものともせず",
+    "reading": "をものともせず",
+    "aliases": ["をものともせずに"],
+    "meaningVi": "Bất chấp … (khó khăn) mà vẫn dũng cảm làm.",
+    "coreImage": "Coi khó khăn như không có gì, lao thẳng qua.",
+    "nuanceVi": "Luôn KHEN ngợi người vượt khó.",
+    "structure": [{ "pos": "N", "form": "N＋をものともせず（に）" }],
+    "usage": ["Vế trước là khó khăn, nguy hiểm", "Vế sau là hành động đáng khâm phục"],
+    "restrictions": [
+      {
+        "kind": "SUBJECT",
+        "ruleVi": "Không dùng cho hành động của chính người nói (nghe như tự khen).",
+        "counterExample": "×私は雨をものともせず出かけた。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "彼はけがをものともせず、試合に出場した。",
+        "vi": "Anh ấy bất chấp chấn thương vẫn ra thi đấu.",
+        "whyNaturalVi": "Vế trước là khó khăn, vế sau là hành động đáng khen.",
+        "whyNotOthers": [
+          { "grammarId": "wo-yoso-ni", "reasonVi": "「〜をよそに」mang giọng CHÊ vì phớt lờ mối quan tâm của người khác.", "axis": "NUANCE" }
+        ]
+      },
+      {
+        "ja": "悪天候をものともせず、船は出港した。",
+        "vi": "Bất chấp thời tiết xấu, con tàu vẫn rời cảng."
+      }
+    ],
+    "commonMistakes": ["Dùng cho chính mình", "Nhầm với 〜をよそに"],
+    "keyClues": ["vế trước là khó khăn", "vế sau đáng khâm phục"],
+    "families": ["CONCESSION", "STANCE"],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "wo-yoso-ni",
+    "pattern": "〜をよそに",
+    "reading": "をよそに",
+    "aliases": [],
+    "meaningVi": "Mặc kệ … (sự lo lắng, phản đối của người khác) mà vẫn làm.",
+    "coreImage": "Quay lưng lại với mối bận tâm của người khác.",
+    "nuanceVi": "Luôn mang giọng CHÊ trách của người nói.",
+    "structure": [{ "pos": "N", "form": "N＋をよそに" }],
+    "usage": ["Vế trước là lo lắng/phản đối của người khác", "Vế sau là hành động bị chê"],
+    "restrictions": [
+      {
+        "kind": "OTHER",
+        "ruleVi": "Vế trước phải là tình cảm/mối quan tâm của người KHÁC.",
+        "counterExample": "×雨をよそに出かけた。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "住民の反対をよそに、工事が始まった。",
+        "vi": "Mặc kệ sự phản đối của cư dân, công trình vẫn khởi công.",
+        "whyNaturalVi": "Vế trước là phản đối của người khác, giọng câu là chê.",
+        "whyNotOthers": [
+          { "grammarId": "wo-mono-tomosezu", "reasonVi": "「〜をものともせず」dùng khi vượt KHÓ KHĂN và được khen.", "axis": "NUANCE" }
+        ]
+      },
+      {
+        "ja": "親の心配をよそに、彼は毎晩遊び歩いている。",
+        "vi": "Mặc kệ nỗi lo của cha mẹ, cậu ta đêm nào cũng đi chơi."
+      }
+    ],
+    "commonMistakes": ["Dùng khi vế trước là khó khăn tự nhiên (mưa, bão)"],
+    "keyClues": ["vế trước là 反対 / 心配 của người khác", "giọng chê"],
+    "families": ["CONCESSION", "STANCE"],
+    "examFrequency": "MEDIUM",
+    "difficulty": 3,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  },
+  {
+    "id": "kirai-ga-aru",
+    "pattern": "〜きらいがある",
+    "reading": "きらいがある",
+    "aliases": [],
+    "meaningVi": "Có xu hướng (không tốt) là…",
+    "coreImage": "Một thói xấu lặp đi lặp lại, người nói không hài lòng.",
+    "nuanceVi": "Chỉ dùng cho khuynh hướng TIÊU CỰC.",
+    "structure": [
+      { "pos": "V", "form": "V-辞書形＋きらいがある" },
+      { "pos": "N", "form": "N＋の＋きらいがある" }
+    ],
+    "usage": ["Nhận xét thói quen xấu", "Thường đi với どうも / とかく"],
+    "restrictions": [
+      {
+        "kind": "POLARITY",
+        "ruleVi": "Không dùng cho khuynh hướng tốt.",
+        "counterExample": "×彼は親切にするきらいがある。"
+      }
+    ],
+    "register": "FORMAL_WRITTEN",
+    "examples": [
+      {
+        "ja": "彼はものごとを悲観的に考えるきらいがある。",
+        "vi": "Anh ta có xu hướng nghĩ mọi việc theo hướng bi quan.",
+        "whyNaturalVi": "「悲観的」là điểm tiêu cực — đúng sắc thái của mẫu."
+      },
+      {
+        "ja": "この報告書は結論を急ぐきらいがある。",
+        "vi": "Bản báo cáo này có xu hướng vội vàng kết luận."
+      }
+    ],
+    "commonMistakes": ["Dùng cho khuynh hướng tích cực"],
+    "keyClues": ["vế trước là điểm tiêu cực", "どうも / とかく"],
+    "families": ["EVALUATION"],
+    "examFrequency": "LOW",
+    "difficulty": 2,
+    "sourceId": "ai-seed",
+    "verificationStatus": "NEEDS_REVIEW"
+  }
+]

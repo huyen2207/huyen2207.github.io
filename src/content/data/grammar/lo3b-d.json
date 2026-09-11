@@ -1,0 +1,745 @@
+[
+ {
+  "id": "nan-to-ittemo",
+  "pattern": "〜なんといっても",
+  "reading": "なんといっても",
+  "aliases": [],
+  "meaningVi": "Nói gì thì nói, … vẫn là nhất.",
+  "coreImage": "Cân nhắc hết rồi vẫn chốt lại một cái.",
+  "nuanceVi": "Đứng đầu câu, dẫn ra điều nổi bật nhất.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "なん（何）といっても＋文"
+   }
+  ],
+  "usage": [
+   "Nêu điều nổi bật nhất trong nhiều thứ"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Đứng đầu câu, vế sau là điều được chọn ra."
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "会話",
+   "紹介文"
+  ],
+  "examples": [
+   {
+    "ja": "この街の魅力は、なんといっても食べ物だ。",
+    "vi": "Sức hút của thành phố này, nói gì thì nói, vẫn là đồ ăn."
+   },
+   {
+    "ja": "なんといっても健康が一番だ。",
+    "vi": "Nói gì thì nói, sức khoẻ vẫn là số một."
+   }
+  ],
+  "commonMistakes": [
+   "Đặt giữa câu",
+   "Nhầm với 「〜といっても」(tuy nói là)"
+  ],
+  "keyClues": [
+   "đứng đầu câu",
+   "「一番」ở vế sau"
+  ],
+  "families": [
+   "EMPHASIS",
+   "EVALUATION"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.20",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "nandemo",
+  "pattern": "〜なんでも",
+  "reading": "なんでも",
+  "aliases": [],
+  "meaningVi": "Nghe nói là … (nghe đồn).",
+  "coreImage": "Truyền lại tin nghe được, không dám chắc.",
+  "nuanceVi": "Đứng đầu câu, kết bằng 「らしい」「そうだ」. Khác 「何でも」nghĩa 'cái gì cũng'.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "なんでも＋文＋らしい／そうだ"
+   }
+  ],
+  "usage": [
+   "Truyền đạt tin nghe được, không chắc chắn"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Kết câu bắt buộc có 「らしい」「そうだ」「ということだ」."
+   }
+  ],
+  "register": "SPOKEN",
+  "typicalContexts": [
+   "会話"
+  ],
+  "examples": [
+   {
+    "ja": "なんでも彼は来月転職するらしい。",
+    "vi": "Nghe nói tháng sau anh ấy chuyển việc."
+   },
+   {
+    "ja": "なんでも駅前に新しい店ができるそうだ。",
+    "vi": "Nghe đồn sắp có cửa hàng mới trước ga."
+   }
+  ],
+  "commonMistakes": [
+   "Nhầm với 「何でも」nghĩa 'cái gì cũng'",
+   "Quên đuôi 「らしい」「そうだ」"
+  ],
+  "keyClues": [
+   "đứng đầu câu",
+   "kết bằng 「らしい」"
+  ],
+  "families": [
+   "ASSUMPTION"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.20",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "dochira-ni-shitemo",
+  "pattern": "〜どちらにしても",
+  "reading": "どちらにしても",
+  "aliases": [],
+  "meaningVi": "Đằng nào thì cũng …",
+  "coreImage": "Hai ngả đều dẫn về cùng một chỗ.",
+  "nuanceVi": "Nêu hai khả năng rồi kết luận chung cho cả hai.",
+  "structure": [
+   {
+    "pos": "N",
+    "form": "A、B、どちらにしても＋文"
+   }
+  ],
+  "usage": [
+   "Kết luận chung cho hai khả năng"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Phải có hai khả năng nêu trước."
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "会話",
+   "説明"
+  ],
+  "examples": [
+   {
+    "ja": "行くか行かないか、どちらにしても連絡はしてほしい。",
+    "vi": "Đi hay không đi, đằng nào cũng mong bạn báo một tiếng."
+   },
+   {
+    "ja": "勝つか負けるか、どちらにしても全力を尽くすだけだ。",
+    "vi": "Thắng hay thua, đằng nào cũng chỉ có dốc hết sức."
+   }
+  ],
+  "commonMistakes": [
+   "Thiếu hai khả năng nêu trước",
+   "Nhầm với 「いずれにしても」về văn phong"
+  ],
+  "keyClues": [
+   "hai khả năng nêu trước",
+   "kết luận chung"
+  ],
+  "families": [
+   "CONCESSION"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.14",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "kokoro-okinaku",
+  "pattern": "〜心おきなく",
+  "reading": "こころおきなく",
+  "aliases": [],
+  "meaningVi": "Thoải mái … không phải ngại.",
+  "coreImage": "Bỏ hết dè dặt xuống, cứ tự nhiên.",
+  "nuanceVi": "Lời mời hoặc trấn an lịch sự.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "心おきなく＋V"
+   }
+  ],
+  "usage": [
+   "Mời mọc, trấn an lịch sự"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Vế sau là hành động của người nghe, không phải người nói."
+   }
+  ],
+  "register": "FORMAL_WRITTEN",
+  "typicalContexts": [
+   "あいさつ",
+   "手紙"
+  ],
+  "examples": [
+   {
+    "ja": "どうぞ心おきなくお過ごしください。",
+    "vi": "Xin quý vị cứ thoải mái, đừng ngại gì cả."
+   },
+   {
+    "ja": "これで心おきなく旅立てる。",
+    "vi": "Thế này thì có thể yên lòng lên đường."
+   }
+  ],
+  "commonMistakes": [
+   "Nhầm với 「遠慮なく」về văn phong",
+   "Dùng trong hội thoại suồng sã"
+  ],
+  "keyClues": [
+   "lời mời lịch sự",
+   "「どうぞ」đứng trước"
+  ],
+  "families": [
+   "STANCE"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.14",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "shitte-ka-shirazu-ka",
+  "pattern": "〜知ってか知らずか",
+  "reading": "しってかしらずか",
+  "aliases": [],
+  "meaningVi": "Không rõ có biết hay không, mà …",
+  "coreImage": "Người đó cứ làm, chẳng biết có hay chuyện không.",
+  "nuanceVi": "Nghiêng về phía 'chắc là không biết'. Vế sau là hành động của người đó.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "知ってか知らずか＋文"
+   }
+  ],
+  "usage": [
+   "Nhận xét về hành động của người khác"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Chủ thể là người khác, không phải người nói."
+   }
+  ],
+  "register": "LITERARY",
+  "typicalContexts": [
+   "小説",
+   "エッセイ"
+  ],
+  "examples": [
+   {
+    "ja": "知ってか知らずか、彼は平然と座っていた。",
+    "vi": "Không rõ có biết hay không, anh ta vẫn ngồi thản nhiên."
+   },
+   {
+    "ja": "周囲の心配を知ってか知らずか、彼女は笑っていた。",
+    "vi": "Chẳng rõ có biết mọi người lo lắng không, cô ấy vẫn cười."
+   }
+  ],
+  "commonMistakes": [
+   "Dùng cho chính người nói",
+   "Hiểu thành câu hỏi thật"
+  ],
+  "keyClues": [
+   "chủ thể là người khác",
+   "nghiêng về 'không biết'"
+  ],
+  "families": [
+   "ASSUMPTION",
+   "STANCE"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 3,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.8",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "iyaou-nashi-ni",
+  "pattern": "〜いやおうなしに",
+  "reading": "いやおうなしに",
+  "aliases": [],
+  "meaningVi": "Bất kể muốn hay không, … một cách cưỡng ép.",
+  "coreImage": "Không hỏi ý ai, cứ thế mà kéo đi.",
+  "nuanceVi": "Nhấn tính cưỡng ép, không có lựa chọn.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "いやおうなしに＋文"
+   }
+  ],
+  "usage": [
+   "Tả sự việc diễn ra cưỡng ép"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Chủ thể bị động, không có quyền chọn."
+   }
+  ],
+  "register": "FORMAL_WRITTEN",
+  "typicalContexts": [
+   "報道",
+   "小説"
+  ],
+  "examples": [
+   {
+    "ja": "時代の変化は、いやおうなしに我々を巻き込む。",
+    "vi": "Sự đổi thay của thời đại cuốn chúng ta vào bất kể muốn hay không."
+   },
+   {
+    "ja": "いやおうなしに決断を迫られた。",
+    "vi": "Tôi bị dồn vào thế buộc phải quyết định."
+   }
+  ],
+  "commonMistakes": [
+   "Dùng khi chủ thể có quyền chọn",
+   "Nhầm với 「〜ざるを得ない」"
+  ],
+  "keyClues": [
+   "giọng cưỡng ép",
+   "chủ thể bị động"
+  ],
+  "families": [
+   "INEVITABILITY"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 3,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.8",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "ga-saiwai-shite",
+  "pattern": "〜が幸いして",
+  "reading": "がさいわいして",
+  "aliases": [],
+  "meaningVi": "May nhờ … mà …",
+  "coreImage": "Một chi tiết tưởng nhỏ lại hoá ra cứu cả tình thế.",
+  "nuanceVi": "Vế sau luôn là kết quả tốt. Hàm ý may mắn ngoài dự tính.",
+  "structure": [
+   {
+    "pos": "N",
+    "form": "N＋が幸いして"
+   }
+  ],
+  "usage": [
+   "Giải thích một kết quả tốt nhờ may mắn"
+  ],
+  "restrictions": [
+   {
+    "kind": "POLARITY",
+    "ruleVi": "Vế sau phải là kết quả tốt.",
+    "counterExample": "×早めに出たのが幸いして、遅刻した。"
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "報道",
+   "会話"
+  ],
+  "examples": [
+   {
+    "ja": "早めに家を出たのが幸いして、渋滞を避けられた。",
+    "vi": "May nhờ ra khỏi nhà sớm mà tránh được tắc đường."
+   },
+   {
+    "ja": "軽装だったのが幸いして、けがは軽くて済んだ。",
+    "vi": "May nhờ mặc gọn nhẹ mà chỉ bị thương nhẹ."
+   }
+  ],
+  "commonMistakes": [
+   "Vế sau là kết quả xấu",
+   "Nhầm với 「〜おかげで」về sắc thái may rủi"
+  ],
+  "keyClues": [
+   "vế sau là kết quả tốt",
+   "yếu tố may mắn"
+  ],
+  "families": [
+   "CAUSE"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.6",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "you-to-iu-mono-da",
+  "pattern": "〜(よ)うというものだ",
+  "reading": "ようというものだ",
+  "aliases": [],
+  "meaningVi": "Thế mới là … chứ / như thế mới phải.",
+  "coreImage": "Chốt lại rằng đó mới là cách hợp lẽ thường.",
+  "nuanceVi": "Nêu điều mà người nói cho là hợp lý, đương nhiên.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "V-意向形＋というものだ"
+   }
+  ],
+  "usage": [
+   "Kết luận điều gì là hợp lẽ"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Đứng cuối câu, sau một tình huống đã nêu."
+   }
+  ],
+  "register": "FORMAL_WRITTEN",
+  "typicalContexts": [
+   "論説文",
+   "会話"
+  ],
+  "examples": [
+   {
+    "ja": "困ったときに助け合ってこそ、友人と言えようというものだ。",
+    "vi": "Lúc hoạn nạn mà giúp nhau thì mới gọi là bạn được chứ."
+   },
+   {
+    "ja": "これだけ準備すれば、成功もしようというものだ。",
+    "vi": "Chuẩn bị đến thế thì thành công cũng là phải thôi."
+   }
+  ],
+  "commonMistakes": [
+   "Nhầm với 「意向形」(ý chí)",
+   "Nhầm với 「というものだ」thông thường"
+  ],
+  "keyClues": [
+   "thể ý chí đứng trước",
+   "kết luận hợp lẽ"
+  ],
+  "families": [
+   "EVALUATION"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 3,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.4",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "to-iu-fuu-ni",
+  "pattern": "〜というふうに",
+  "reading": "というふうに",
+  "aliases": [],
+  "meaningVi": "Theo kiểu … / rằng …",
+  "coreImage": "Diễn đạt lại một ý một cách mềm hơn.",
+  "nuanceVi": "Mềm hơn 「と」thông thường. Hay đi với 考える・思う.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "文＋というふうに＋考える／思う"
+   }
+  ],
+  "usage": [
+   "Trình bày cách nghĩ một cách mềm mại"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Thường đi với động từ tư duy: 考える・思う・理解する."
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "会話",
+   "説明"
+  ],
+  "examples": [
+   {
+    "ja": "失敗も経験のうちだ、というふうに考えている。",
+    "vi": "Tôi nghĩ theo kiểu thất bại cũng là một phần kinh nghiệm."
+   },
+   {
+    "ja": "彼はそれを拒否だというふうに受け取った。",
+    "vi": "Anh ấy hiểu chuyện đó theo kiểu là một lời từ chối."
+   }
+  ],
+  "commonMistakes": [
+   "Ghép với động từ không phải tư duy",
+   "Nhầm với 「〜ような」"
+  ],
+  "keyClues": [
+   "「考える」「思う」ở sau",
+   "giọng mềm"
+  ],
+  "families": [
+   "STANCE"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "yohodo-nai-to",
+  "pattern": "よほど〜ないと",
+  "reading": "よほどないと",
+  "aliases": [],
+  "meaningVi": "Trừ phi thật … thì (sẽ hỏng).",
+  "coreImage": "Phải cẩn thận lắm mới thoát, không thì rắc rối.",
+  "nuanceVi": "Vế sau luôn là kết quả xấu. Nhấn điều kiện phải rất kỹ.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "よほど＋V-ない形＋と"
+   },
+   {
+    "pos": "A",
+    "form": "よほど＋A-くない＋と"
+   }
+  ],
+  "usage": [
+   "Cảnh báo rằng phải rất kỹ mới tránh được điều xấu"
+  ],
+  "restrictions": [
+   {
+    "kind": "POLARITY",
+    "ruleVi": "Vế sau phải là kết quả không mong muốn."
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "会話",
+   "説明"
+  ],
+  "examples": [
+   {
+    "ja": "よほど気をつけないと、同じミスを繰り返すよ。",
+    "vi": "Trừ phi thật cẩn thận, không thì lại lặp lại đúng lỗi ấy đấy."
+   },
+   {
+    "ja": "よほど早く出ないと、開演に間に合わない。",
+    "vi": "Trừ phi đi thật sớm, không thì không kịp giờ mở màn."
+   }
+  ],
+  "commonMistakes": [
+   "Vế sau là kết quả tốt",
+   "Nhầm với 「よほど」nghĩa 'khá là'"
+  ],
+  "keyClues": [
+   "「よほど」đứng đầu",
+   "vế sau xấu"
+  ],
+  "families": [
+   "CONDITION"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.33",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "ikanimo",
+  "pattern": "〜いかにも",
+  "reading": "いかにも",
+  "aliases": [],
+  "meaningVi": "Đúng là … thật / trông đúng kiểu …",
+  "coreImage": "Nhìn phát là thấy đúng chất luôn.",
+  "nuanceVi": "Nhấn rằng vẻ ngoài rất khớp với hình dung thông thường.",
+  "structure": [
+   {
+    "pos": "A",
+    "form": "いかにも＋A＋そう／げ"
+   },
+   {
+    "pos": "N",
+    "form": "いかにも＋N＋らしい"
+   }
+  ],
+  "usage": [
+   "Nhận xét rằng vẻ ngoài rất đúng kiểu"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Thường đi kèm 「〜そうだ」「〜らしい」「〜げ」ở sau."
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "会話",
+   "小説"
+  ],
+  "examples": [
+   {
+    "ja": "いかにもおいしそうなケーキが並んでいる。",
+    "vi": "Bày ra toàn những chiếc bánh trông đúng là ngon."
+   },
+   {
+    "ja": "彼はいかにも学者らしい話し方をする。",
+    "vi": "Anh ấy nói chuyện đúng kiểu một học giả."
+   }
+  ],
+  "commonMistakes": [
+   "Quên đuôi 「そうだ」「らしい」",
+   "Nhầm với 「いかに」(mức độ)"
+  ],
+  "keyClues": [
+   "「〜そうな」「〜らしい」ở sau",
+   "nhấn vẻ ngoài"
+  ],
+  "families": [
+   "DEGREE",
+   "EVALUATION"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.11",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "dou-ni-ka-shite",
+  "pattern": "〜どうにかして",
+  "reading": "どうにかして",
+  "aliases": [],
+  "meaningVi": "Bằng mọi cách phải …",
+  "coreImage": "Xoay đủ đường, miễn là xong việc.",
+  "nuanceVi": "Thể hiện quyết tâm. Vế sau hay có 「〜たい」「〜なければ」.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "どうにかして＋文"
+   }
+  ],
+  "usage": [
+   "Bày tỏ quyết tâm tìm mọi cách"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Vế sau thường là nguyện vọng hoặc bổn phận."
+   }
+  ],
+  "register": "NEUTRAL",
+  "typicalContexts": [
+   "会話"
+  ],
+  "examples": [
+   {
+    "ja": "どうにかして期限までに仕上げたい。",
+    "vi": "Bằng mọi cách tôi muốn hoàn thành trước hạn."
+   },
+   {
+    "ja": "どうにかして彼を説得しなければならない。",
+    "vi": "Phải bằng mọi cách thuyết phục được anh ấy."
+   }
+  ],
+  "commonMistakes": [
+   "Vế sau không phải nguyện vọng",
+   "Nhầm với 「どうにか」(tạm ổn)"
+  ],
+  "keyClues": [
+   "「〜たい」「〜なければ」ở sau",
+   "giọng quyết tâm"
+  ],
+  "families": [
+   "PURPOSE",
+   "STANCE"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 2,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.17",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ },
+ {
+  "id": "moto-moto-da",
+  "pattern": "〜でもともとだ",
+  "reading": "でもともとだ",
+  "aliases": [],
+  "meaningVi": "Có mất gì đâu mà không thử.",
+  "coreImage": "Thua thì cũng như cũ, nên cứ liều.",
+  "nuanceVi": "Tự trấn an trước khi thử một việc khó.",
+  "structure": [
+   {
+    "pos": "V",
+    "form": "V-て形＋もともとだ"
+   },
+   {
+    "pos": "N",
+    "form": "N＋で＋もともとだ"
+   }
+  ],
+  "usage": [
+   "Tự trấn an trước khi thử việc khó"
+  ],
+  "restrictions": [
+   {
+    "kind": "OTHER",
+    "ruleVi": "Chỉ dùng khi việc thất bại không gây thiệt hại."
+   }
+  ],
+  "register": "SPOKEN",
+  "typicalContexts": [
+   "会話"
+  ],
+  "examples": [
+   {
+    "ja": "だめでもともとだから、応募してみよう。",
+    "vi": "Trượt thì cũng như cũ thôi, cứ thử nộp xem sao."
+   },
+   {
+    "ja": "断られてもともとだ。頼むだけ頼んでみる。",
+    "vi": "Bị từ chối thì cũng chẳng mất gì. Cứ thử nhờ xem."
+   }
+  ],
+  "commonMistakes": [
+   "Dùng khi thất bại gây thiệt hại thật",
+   "Nhầm với 「もともと」(vốn dĩ)"
+  ],
+  "keyClues": [
+   "「だめでもともと」",
+   "giọng tự trấn an"
+  ],
+  "families": [
+   "STANCE",
+   "ASSUMPTION"
+  ],
+  "examFrequency": "MEDIUM",
+  "difficulty": 3,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.12",
+  "sourceSection": "文の文法1",
+  "verificationStatus": "VERIFIED"
+ }
+]

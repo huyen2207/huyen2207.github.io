@@ -1,0 +1,464 @@
+[
+ {
+  "from": "ni-tsugu",
+  "to": "ni-tsuide",
+  "type": "oftenConfusedWith",
+  "differenceKey": "có danh từ đứng sau không",
+  "noteVi": "「に次ぐ」bổ nghĩa danh từ; 「に次いで」nối sang cả một vế.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-shite",
+  "to": "ni-shite-hajimete",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-shite",
+  "to": "ni-shite-mo-aru",
+  "type": "oftenConfusedWith",
+  "differenceKey": "có 「でもある」không",
+  "noteVi": "「にして〜でもある」nêu HAI tư cách; 「にして」đơn thuần nhấn 'ngay cả'.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-shite",
+  "to": "ni-shite-nenrei",
+  "type": "oftenConfusedWith",
+  "differenceKey": "trước mẫu là gì",
+  "noteVi": "Trước mẫu là con số chỉ TUỔI thì là nghĩa 'ở tuổi …'.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-shite-hajimete",
+  "to": "ni-shite-mo-aru",
+  "type": "oftenConfusedWith",
+  "differenceKey": "chỉ có hay hai tư cách",
+  "noteVi": "「はじめて」= chỉ có A mới được; 「でもある」= A kiêm luôn B.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-shite-hajimete",
+  "to": "ni-shite-nenrei",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-shite-mo-aru",
+  "to": "ni-shite-nenrei",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "igai-no-nanimono-demo-nai",
+  "to": "de-sura-aru",
+  "type": "oftenConfusedWith",
+  "differenceKey": "chốt tên hay nâng mức",
+  "noteVi": "「以外の何ものでもない」chốt đúng một cách gọi; 「ですらある」nâng nhận xét lên một nấc.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ikkou-ni",
+  "to": "toutei",
+  "type": "oftenConfusedWith",
+  "differenceKey": "không tiến triển hay bất khả thi",
+  "noteVi": "「一向に」= chờ mà không đổi; 「とうてい」= dù làm gì cũng không nổi.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ikkou-ni",
+  "to": "nanra-nai",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ikkou-ni",
+  "to": "kaimoku-nai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "không đổi hay không biết",
+  "noteVi": "「一向に」nói tình hình không đổi; 「皆目」nói mình không nắm được gì.",
+  "source": "CURATED"
+ },
+ {
+  "from": "toutei",
+  "to": "nanra-nai",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "toutei",
+  "to": "kaimoku-nai",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "nanra-nai",
+  "to": "kaimoku-nai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "động từ đi kèm",
+  "noteVi": "「なんら」đi với 関係・問題; 「皆目」đi với 分からない・見当がつかない.",
+  "source": "CURATED"
+ },
+ {
+  "from": "yomoya",
+  "to": "doushite-you-ka",
+  "type": "oftenConfusedWith",
+  "differenceKey": "bác khả năng hay hỏi ngược",
+  "noteVi": "「よもや」bác một khả năng; 「どうして〜ようか」hỏi ngược để phủ định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "yomoya",
+  "to": "you-kanou",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "yomoya",
+  "to": "ka-to-iu-to",
+  "type": "oftenConfusedWith",
+  "differenceKey": "bác trước hay bác sau",
+  "noteVi": "「よもや」bác ngay từ đầu; 「かというと」nêu ra rồi mới bác ở vế sau.",
+  "source": "CURATED"
+ },
+ {
+  "from": "doushite-you-ka",
+  "to": "you-kanou",
+  "type": "oftenConfusedWith",
+  "differenceKey": "có 「どうして」không",
+  "noteVi": "Cùng đuôi 「よう」: có 「どうして」thì thành phủ định mạnh, không có thì là khẳng định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "doushite-you-ka",
+  "to": "ka-to-iu-to",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "you-kanou",
+  "to": "ka-to-iu-to",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "ta-nari",
+  "to": "nagara-no",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nối động từ hay danh từ",
+  "noteVi": "「たなり」nối thể た; 「ながらの」nối danh từ cố định như 昔・涙.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ta-nari",
+  "to": "nari-nari",
+  "type": "oftenConfusedWith",
+  "differenceKey": "「なり」xuất hiện mấy lần",
+  "noteVi": "Một lần sau thể た = giữ nguyên; hai lần = nêu lựa chọn.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nagara-no",
+  "to": "nari-nari",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "naritomo",
+  "to": "tari-tomo",
+  "type": "oftenConfusedWith",
+  "differenceKey": "vế sau khẳng định hay phủ định",
+  "noteVi": "「なりとも」vế sau khẳng định (xin một chút); 「たりとも」vế sau bắt buộc phủ định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "sobireru",
+  "to": "zujimai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nối thể ます hay thể ない",
+  "noteVi": "「そびれる」nối thể ます; 「ずじまい」nối thể ない đã bỏ 「ない」.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-kanete",
+  "to": "ni-kakotsukete",
+  "type": "oftenConfusedWith",
+  "differenceKey": "lý do thật hay cái cớ",
+  "noteVi": "「をかねて」hai mục đích đều thật; 「にかこつけて」lý do chỉ là cớ, mang ý chê.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wo-kanete",
+  "to": "ni-mukete",
+  "type": "oftenConfusedWith",
+  "differenceKey": "kiêm nhiệm hay nhắm đích",
+  "noteVi": "「をかねて」gộp hai việc; 「に向けて」nhắm tới một đích duy nhất.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-kakotsukete",
+  "to": "ni-mukete",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "kara-naru",
+  "to": "to-suru",
+  "type": "oftenConfusedWith",
+  "differenceKey": "cấu tạo hay vai trò",
+  "noteVi": "「から成る」liệt kê thành phần; 「とする」chỉ định vai trò của một thành phần.",
+  "source": "CURATED"
+ },
+ {
+  "from": "me-ni-miete",
+  "to": "ikkou-ni",
+  "type": "contrastsWith",
+  "differenceKey": "có thay đổi hay không",
+  "noteVi": "「目に見えて」thay đổi rõ; 「一向に」không đổi chút nào và bắt buộc vế sau phủ định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "heta-wo-suru-to",
+  "to": "yohodo-nai-to",
+  "type": "oftenConfusedWith",
+  "differenceKey": "khả năng hay điều kiện",
+  "noteVi": "「下手をすると」nêu khả năng xấu; 「よほど〜ないと」nêu điều kiện phải rất kỹ mới tránh được.",
+  "source": "CURATED"
+ },
+ {
+  "from": "heta-wo-suru-to",
+  "to": "awaya",
+  "type": "oftenConfusedWith",
+  "differenceKey": "chưa xảy ra hay đã suýt xảy ra",
+  "noteVi": "「下手をすると」cảnh báo trước; 「あわや」kể việc đã suýt xảy ra rồi.",
+  "source": "CURATED"
+ },
+ {
+  "from": "yohodo-nai-to",
+  "to": "awaya",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "wa-naosara-no-koto",
+  "to": "wa-betsu-ni-shite",
+  "type": "contrastsWith",
+  "differenceKey": "đẩy lên hay gác đi",
+  "noteVi": "「はなおさらのこと」đẩy mức lên; 「は別にして」gác yếu tố đó sang bên.",
+  "source": "CURATED"
+ },
+ {
+  "from": "wa-naosara-no-koto",
+  "to": "wa-tomoare",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "wa-betsu-ni-shite",
+  "to": "wa-tomoare",
+  "type": "oftenConfusedWith",
+  "differenceKey": "văn phong",
+  "noteVi": "Gần như trùng nghĩa; 「はともあれ」cố định hơn ở cụm 「何はともあれ」.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-ni-te",
+  "to": "tsu-tsu",
+  "type": "oftenConfusedWith",
+  "differenceKey": "một động từ hay hai",
+  "noteVi": "「に〜て」lặp CÙNG một động từ; 「つ〜つ」ghép cặp chủ động và bị động.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-ni-te",
+  "to": "tewa-tewa",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nhấn mức hay nhấn lặp lại",
+  "noteVi": "「に〜て」nhấn MỨC ĐỘ; 「ては」nhấn số LẦN lặp lại.",
+  "source": "CURATED"
+ },
+ {
+  "from": "tsu-tsu",
+  "to": "tewa-tewa",
+  "type": "oftenConfusedWith",
+  "differenceKey": "thể ます hay thể て",
+  "noteVi": "「つ〜つ」nối thể ます; 「ては」nối thể て và hai động từ thường trái nghĩa.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-hakusha-wo-kakeru",
+  "to": "todomaru-tokoro-wo-shiranai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "có tác nhân bên ngoài không",
+  "noteVi": "「拍車をかける」cần một tác nhân đẩy; 「とどまるところを知らない」thì xu thế tự tăng.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-itta",
+  "to": "to-iu",
+  "type": "oftenConfusedWith",
+  "differenceKey": "hai bên có cùng danh từ không",
+  "noteVi": "Cùng một danh từ hai bên → 「という」nghĩa toàn bộ; khác nhau → 「といった」nêu ví dụ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-itta",
+  "to": "to-itta-tokoro-da",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nêu ví dụ hay ước lượng",
+  "noteVi": "「といった」nêu ví dụ; 「といったところだ」ước lượng mức độ và đứng cuối câu.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-iu",
+  "to": "to-itta-tokoro-da",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "neba",
+  "to": "iyaou-nashi-ni",
+  "type": "oftenConfusedWith",
+  "differenceKey": "tự nhận hay bị ép",
+  "noteVi": "「ねば」chủ thể tự nhận bổn phận; 「いやおうなしに」bị ngoại cảnh cưỡng ép.",
+  "source": "CURATED"
+ },
+ {
+  "from": "gotoki-ni",
+  "to": "gotoki",
+  "type": "oftenConfusedWith",
+  "differenceKey": "có trợ từ 「に」không",
+  "noteVi": "「ごときに」＋câu phản bác, miệt thị rõ; 「ごとき」＋danh từ, chỉ nêu ví dụ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "garami",
+  "to": "to-itta-tokoro-da",
+  "type": "oftenConfusedWith",
+  "differenceKey": "ước lượng kiểu gì",
+  "noteVi": "「がらみ」bổ nghĩa danh từ và hay chỉ tuổi; 「といったところだ」kết câu và hàm ý 'chỉ tới đó'.",
+  "source": "CURATED"
+ },
+ {
+  "from": "yoku-mono-da",
+  "to": "mottomo-da",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "yoku-mono-da",
+  "to": "you-to-iu-mono-da",
+  "type": "oftenConfusedWith",
+  "differenceKey": "kinh ngạc hay hợp lẽ",
+  "noteVi": "「よく〜ものだ」kinh ngạc vì khó tin; 「〜うというものだ」khẳng định là hợp lẽ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "mottomo-da",
+  "to": "you-to-iu-mono-da",
+  "type": "oftenConfusedWith",
+  "differenceKey": "đồng cảm hay khẳng định",
+  "noteVi": "「もっともだ」đồng cảm với cảm xúc người khác; 「うというものだ」chốt điều hợp lẽ thường.",
+  "source": "CURATED"
+ },
+ {
+  "from": "mo-sureba",
+  "to": "yohodo-nai-to",
+  "type": "oftenConfusedWith",
+  "differenceKey": "thời gian hay mức độ",
+  "noteVi": "「もすれば」điều kiện là THỜI GIAN trôi qua; 「よほど〜ないと」điều kiện là MỨC ĐỘ kỹ lưỡng.",
+  "source": "CURATED"
+ },
+ {
+  "from": "kototote",
+  "to": "ga-saiwai-shite",
+  "type": "contrastsWith",
+  "differenceKey": "vế sau tốt hay xấu",
+  "noteVi": "「こととて」vế sau là lời xin lỗi; 「が幸いして」vế sau là kết quả may mắn.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nan-to-ittemo",
+  "to": "nandemo",
+  "type": "oftenConfusedWith",
+  "differenceKey": "chốt cái nhất hay truyền tin đồn",
+  "noteVi": "「なんといっても」chốt điều nổi bật nhất; 「なんでも」truyền tin nghe được, kết bằng 「らしい」.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nan-to-ittemo",
+  "to": "shitte-ka-shirazu-ka",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "nandemo",
+  "to": "shitte-ka-shirazu-ka",
+  "type": "oftenConfusedWith",
+  "differenceKey": "tin đồn hay phỏng đoán",
+  "noteVi": "「なんでも」truyền tin nghe được; 「知ってか知らずか」phỏng đoán về nhận thức của người khác.",
+  "source": "CURATED"
+ },
+ {
+  "from": "dochira-ni-shitemo",
+  "to": "wa-betsu-ni-shite",
+  "type": "oftenConfusedWith",
+  "differenceKey": "hai khả năng hay một yếu tố",
+  "noteVi": "「どちらにしても」cần hai khả năng nêu trước; 「は別にして」chỉ gác một yếu tố.",
+  "source": "CURATED"
+ },
+ {
+  "from": "kokoro-okinaku",
+  "to": "tokoro-wo",
+  "type": "oftenConfusedWith",
+  "differenceKey": "mời hay rào trước",
+  "noteVi": "「心おきなく」là lời mời; 「ところを」rào trước hoàn cảnh rồi cảm ơn hoặc xin lỗi.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ikani",
+  "to": "ikanimo",
+  "type": "oftenConfusedWith",
+  "differenceKey": "có chữ 「も」không",
+  "noteVi": "「いかに」nhấn mức độ, hay đi 「〜ても」; 「いかにも」nhận xét vẻ ngoài, cần 「そうだ」「らしい」.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-iu-fuu-ni",
+  "to": "to-itta",
+  "type": "oftenConfusedWith",
+  "differenceKey": "dẫn cách nghĩ hay dẫn ví dụ",
+  "noteVi": "「というふうに」＋động từ tư duy; 「といった」＋danh từ khái quát.",
+  "source": "CURATED"
+ },
+ {
+  "from": "isso",
+  "to": "moto-moto-da",
+  "type": "oftenConfusedWith",
+  "differenceKey": "chọn phương án hay trấn an",
+  "noteVi": "「いっそ」so rồi chọn hẳn một bên; 「でもともと」tự trấn an rằng thử cũng không mất gì.",
+  "source": "CURATED"
+ },
+ {
+  "from": "isso",
+  "to": "dou-ni-ka-shite",
+  "type": "oftenConfusedWith",
+  "differenceKey": "đổi hướng hay giữ hướng",
+  "noteVi": "「いっそ」ĐỔI sang phương án khác; 「どうにかして」giữ nguyên mục tiêu và tìm mọi cách.",
+  "source": "CURATED"
+ },
+ {
+  "from": "moto-moto-da",
+  "to": "dou-ni-ka-shite",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "tari-shinai",
+  "to": "nanra-nai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "khẩu ngữ hay văn viết",
+  "noteVi": "「たりしない」khẩu ngữ, giọng cam kết; 「なんら〜ない」văn viết cứng, phủ định khách quan.",
+  "source": "CURATED"
+ }
+]

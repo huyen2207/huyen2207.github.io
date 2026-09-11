@@ -1,0 +1,1058 @@
+[
+ {
+  "id": "q-made-no-koto-da-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "made-no-koto-da"
+  ],
+  "stemJa": "「当然のことをしたまでだ。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "Thể た ＋ nghĩa 'chỉ làm vậy thôi' — đúng ràng buộc."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Câu đúng: khiêm tốn hạ thấp việc mình làm.",
+  "keyClueVi": "Thể た đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "CONNECTION_MISMATCH",
+   "trapExplanationVi": "Hai nghĩa của mẫu phân biệt bằng thể, dễ lẫn.",
+   "fastestPathVi": "Thể trước mẫu là た hay từ điển?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.11",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-temae-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "temae"
+  ],
+  "stemJa": "「眠い手前、寝てしまった。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "Phải có yếu tố 'người khác nhìn vào', không phải lý do riêng tư."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "Buồn ngủ là lý do cá nhân, không dính tới thể diện.",
+  "keyClueVi": "「眠い」là lý do riêng tư.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "Cách nối đúng nhưng thiếu yếu tố thể diện.",
+   "fastestPathVi": "Có ai chứng kiến không?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.11",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-to-kitara-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "to-kitara"
+  ],
+  "stemJa": "「社長ときたら、立派な方だ。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "「ときたら」không dùng với người trên, và luôn mang giọng chê."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "Câu đang khen giám đốc nên hoàn toàn không hợp.",
+  "keyClueVi": "Đối tượng là người trên, vế sau là lời khen.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "REGISTER_MISMATCH",
+   "trapExplanationVi": "Vi phạm cùng lúc cả đối tượng lẫn sắc thái.",
+   "fastestPathVi": "Đối tượng là ai và câu đang khen hay chê?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.14",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-made-mo-nai-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "made-mo-nai"
+  ],
+  "stemJa": "「言うまでもなく、健康が第一だ。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "「言う」là động từ phát ngôn — đúng ràng buộc."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Câu đúng: hiển nhiên tới mức khỏi cần nói.",
+  "keyClueVi": "「言う」đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "COLLOCATION_TRAP",
+   "trapExplanationVi": "Mẫu kén động từ nên dễ bị nghi khi dùng đúng.",
+   "fastestPathVi": "Động từ này có phải nhận thức hay phát ngôn không?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.17",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-nara-dewa-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "nara-dewa"
+  ],
+  "stemJa": "「この店ならではのまずさだ。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "「ならでは」chỉ dùng trong câu đánh giá TỐT."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "「まずさ」là lời chê nên không hợp với mẫu.",
+  "keyClueVi": "「まずさ」mang nghĩa chê.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "NUANCE_TRAP",
+   "trapExplanationVi": "Cách nối đúng nhưng chiều đánh giá ngược.",
+   "fastestPathVi": "Câu đang khen hay chê?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.18",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-nari-no-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "nari-no"
+  ],
+  "stemJa": "「先生なりのご意見をください。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "「なりの」hàm ý khiêm nhường nên không dùng với người trên."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "Nói với thầy thì phải dùng cách khác.",
+  "keyClueVi": "Đối tượng là người trên.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "REGISTER_MISMATCH",
+   "trapExplanationVi": "Ngữ pháp đúng nhưng thất lễ với người trên.",
+   "fastestPathVi": "Đối tượng là ai?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.18",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-de-nakute-nan-darou-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "de-nakute-nan-darou"
+  ],
+  "stemJa": "「これが机でなくてなんだろう。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "A phải là khái niệm TRỪU TƯỢNG như 愛・運命・奇跡."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "「机」là vật cụ thể, không dùng được với mẫu này.",
+  "keyClueVi": "「机」là vật cụ thể.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "COLLOCATION_TRAP",
+   "trapExplanationVi": "Cách nối đúng nhưng danh từ sai loại.",
+   "fastestPathVi": "Danh từ này trừu tượng hay cụ thể?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.19",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-tomo-naku-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "tomo-naku"
+  ],
+  "stemJa": "「食べるともなく食べた。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "Chỉ dùng với động từ TRI GIÁC như 見る・聞く・考える."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "「食べる」là hành động thể chất, không thuộc nhóm cho phép.",
+  "keyClueVi": "Động từ không phải tri giác.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "COLLOCATION_TRAP",
+   "trapExplanationVi": "Cấu trúc lặp động từ đúng nhưng động từ sai nhóm.",
+   "fastestPathVi": "Động từ này có phải tri giác không?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.19",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-to-shita-tokoro-de-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "to-shita-tokoro-de"
+  ],
+  "stemJa": "「急いだとしたところで、間に合った。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "Vế sau phải là phủ định hoặc kết quả không mong muốn."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "「間に合った」là kết quả tốt nên mâu thuẫn với mẫu.",
+  "keyClueVi": "Vế sau là kết quả tốt.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "POLARITY_TRAP",
+   "trapExplanationVi": "Cách nối đúng nhưng chiều của vế sau ngược.",
+   "fastestPathVi": "Vế sau tích cực hay tiêu cực?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.21",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-nai-mono-demo-nai-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "nai-mono-demo-nai"
+  ],
+  "stemJa": "「条件次第では、引き受けないものでもない。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "Là cách nói dè dặt, giữ đường lui — đúng ràng buộc."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Câu đúng: tuỳ điều kiện thì cũng không hẳn là không nhận.",
+  "keyClueVi": "「条件次第では」đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "Hai lần phủ định dễ bị hiểu ngược thành từ chối.",
+   "fastestPathVi": "Đây là đồng ý dè dặt hay từ chối?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.22",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-ni-wa-oyobanai-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "ni-wa-oyobanai"
+  ],
+  "stemJa": "「軽いけがですから、ご心配にはおよびません。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "「心配する」nằm trong nhóm quen dùng — đúng ràng buộc."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Câu đúng: nhã nhặn ngăn sự bận tâm.",
+  "keyClueVi": "「ご心配には」là cụm quen thuộc.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "Dễ nhầm với 「にはあたらない」dùng cho phản ứng cảm xúc.",
+   "fastestPathVi": "Đang ngăn hành động hay hạ nhiệt cảm xúc?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.24",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-meku-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "meku"
+  ],
+  "stemJa": "「机めいた話。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "「めく」chỉ ghép với một số danh từ trừu tượng như 春・謎・皮肉."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "「机」là vật cụ thể, không ghép được.",
+  "keyClueVi": "「机」là vật cụ thể.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "COLLOCATION_TRAP",
+   "trapExplanationVi": "Cách nối đúng nhưng danh từ sai loại.",
+   "fastestPathVi": "Danh từ này có trừu tượng không?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-nai-tomo-kagiranai-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "nai-tomo-kagiranai"
+  ],
+  "stemJa": "「地震が起きないとも限らないから、備えておこう。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "「地震」là điều không mong muốn — đúng ràng buộc."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Câu đúng: khả năng xấu chưa loại trừ nên phải đề phòng.",
+  "keyClueVi": "Vế sau là lời khuyên đề phòng.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "Dễ nhầm với 「ないものでもない」vốn nêu khả năng chấp nhận được.",
+   "fastestPathVi": "Nội dung là điều tốt hay xấu?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-nai-made-mo-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "nai-made-mo"
+  ],
+  "stemJa": "「毎日とは言わないまでも、毎時間来てほしい。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "Vế sau phải NHẸ hơn vế trước, không được nặng hơn."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "Mỗi giờ còn nhiều hơn mỗi ngày nên mức độ bị đảo ngược.",
+  "keyClueVi": "Vế sau nặng hơn vế trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "CONTEXT_REVERSAL",
+   "trapExplanationVi": "Cách nối đúng nhưng thang mức độ bị đảo.",
+   "fastestPathVi": "Vế sau nhẹ hơn hay nặng hơn?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-tomo-nashi-ni-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "tomo-nashi-ni"
+  ],
+  "stemJa": "「走るともなしに走った。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "Chỉ dùng với động từ TRI GIÁC."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "「走る」là hành động thể chất, không thuộc nhóm cho phép.",
+  "keyClueVi": "Động từ không phải tri giác.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "COLLOCATION_TRAP",
+   "trapExplanationVi": "Trùng ràng buộc với 「ともなく」— cùng kén động từ.",
+   "fastestPathVi": "Động từ này có phải tri giác không?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.26",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-hitori-nomi-narazu-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "hitori-nomi-narazu"
+  ],
+  "stemJa": "「ひとり机のみならず、椅子も古い。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "A phải là người hoặc tổ chức, không phải vật."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "「机」là đồ vật nên không dùng được với 「ひとり〜のみならず」.",
+  "keyClueVi": "「机」là đồ vật.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "COLLOCATION_TRAP",
+   "trapExplanationVi": "Cách nối đúng nhưng danh từ sai loại.",
+   "fastestPathVi": "A là người/tổ chức hay đồ vật?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.30",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-mo-soko-soko-ni-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "mo-soko-soko-ni"
+  ],
+  "stemJa": "「本もそこそこに出かけた。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "A phải là danh từ chỉ HÀNH ĐỘNG như 食事・挨拶・支度."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "「本」là đồ vật, không phải hành động.",
+  "keyClueVi": "「本」là đồ vật.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "COLLOCATION_TRAP",
+   "trapExplanationVi": "Cách nối đúng nhưng danh từ sai loại.",
+   "fastestPathVi": "Danh từ này có chỉ hành động không?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.34",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-ni-wa-ataranai-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "ni-wa-ataranai"
+  ],
+  "stemJa": "「彼の受賞は驚くにはあたらない。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "「驚く」là động từ chỉ phản ứng cảm xúc — đúng ràng buộc."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Câu đúng: chuyện chưa tới mức đáng ngạc nhiên.",
+  "keyClueVi": "「驚く」đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "MEANING_OVERLAP",
+   "trapExplanationVi": "Dễ nhầm với 「にはおよばない」dùng để ngăn một hành động.",
+   "fastestPathVi": "Đang hạ nhiệt cảm xúc hay ngăn hành động?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.37",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-iza-to-naru-to-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "iza-to-naru-to"
+  ],
+  "stemJa": "「練習では平気だったのに、いざ本番となると足が震えた。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "Vế sau trái với dự tính ban đầu — đúng ràng buộc."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Câu đúng: lúc tập bình thường, tới lúc thật lại run.",
+  "keyClueVi": "Hai vế trái ngược.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "CONTEXT_REVERSAL",
+   "trapExplanationVi": "Dễ nhầm với 「としたところで」vốn vẫn là giả định.",
+   "fastestPathVi": "Việc đã thật sự xảy ra chưa?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.38",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-kototote-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "kototote"
+  ],
+  "stemJa": "「休日のこととて、よく眠れた。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "Vế sau phải là lời xin lỗi hoặc xin thông cảm."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "「よく眠れた」là chuyện tốt nên không hợp với mẫu.",
+  "keyClueVi": "Vế sau không phải lời xin lỗi.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "NUANCE_TRAP",
+   "trapExplanationVi": "Cách nối đúng nhưng chiều của vế sau ngược.",
+   "fastestPathVi": "Vế sau có phải lời xin lỗi không?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.5",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-ni-tsugu-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "ni-tsugu"
+  ],
+  "stemJa": "「災害に次ぐ災害で、村は疲弊しきっている。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "Cùng danh từ 「災害」hai bên khi nhấn sự liên tiếp — đúng ràng buộc."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Câu đúng: tai hoạ nối tiếp tai hoạ.",
+  "keyClueVi": "Cùng danh từ hai bên.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "CONNECTION_MISMATCH",
+   "trapExplanationVi": "Dễ nhầm với 「に次いで」vốn là dạng nối vế.",
+   "fastestPathVi": "Sau chỗ này là danh từ hay cả một vế?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.5",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ },
+ {
+  "id": "q-ni-shite-mo-aru-valid-01",
+  "type": "VALID_OR_INVALID",
+  "phaseHint": [
+   "PHASE_2_COMPARE"
+  ],
+  "targetGrammarIds": [
+   "ni-shite-mo-aru"
+  ],
+  "stemJa": "「赤にして青でもある。」— この文は正しいか。",
+  "choices": [
+   {
+    "id": "b",
+    "textJa": "×（不自然）",
+    "isCorrect": true
+   },
+   {
+    "id": "a",
+    "textJa": "〇（自然）",
+    "isCorrect": false,
+    "wrongBecause": "CONSTRAINT_ERROR",
+    "violatedAxis": "RESTRICTION",
+    "whyWrongVi": "A và B phải là nghề nghiệp hoặc vị trí xã hội."
+   }
+  ],
+  "correctChoiceId": "b",
+  "explanationVi": "「赤」「青」là màu sắc, không phải tư cách.",
+  "keyClueVi": "Hai bên là màu sắc.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "制約を確認する",
+    "labelVi": "Kiểm tra ràng buộc của mẫu, không chỉ nhìn cách nối"
+   }
+  ],
+  "trap": {
+   "trapType": "COLLOCATION_TRAP",
+   "trapExplanationVi": "Cách nối đúng nhưng danh từ sai loại.",
+   "fastestPathVi": "Hai bên có phải tư cách không?",
+   "strength": 3
+  },
+  "targetTimeMs": 20000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.6",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "KNOW",
+  "difficultyStatic": 3
+ }
+]

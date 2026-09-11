@@ -1,0 +1,1085 @@
+[
+ {
+  "id": "cmp-degree-lo3-01",
+  "grammarIds": [
+   "made-mo-nai",
+   "made-no-koto-da",
+   "nai-made-mo"
+  ],
+  "familyHint": "DEGREE",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "made-mo-nai": "Khỏi cần làm, vì quá rõ",
+     "made-no-koto-da": "Chỉ làm vậy thôi / thì chỉ còn cách vậy",
+     "nai-made-mo": "Không đến mức đó, nhưng ít nhất phải…"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "made-mo-nai": "V-辞書形＋までもない",
+     "made-no-koto-da": "V-た形＋まで(のこと)だ",
+     "nai-made-mo": "V-ない形＋までも"
+    }
+   },
+   {
+    "axis": "POLARITY_TENDENCY",
+    "cells": {
+     "made-mo-nai": "Phủ định nằm ở SAU mẫu",
+     "made-no-koto-da": "Không có phủ định",
+     "nai-made-mo": "Phủ định nằm TRƯỚC mẫu"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "made-mo-nai": "「言う」「聞く」đứng trước",
+     "made-no-koto-da": "「当然のことをした」kiểu khiêm tốn",
+     "nai-made-mo": "Vế sau có 「せめて」"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Nhìn chỗ đặt 「ない」: sau mẫu → までもない; trước mẫu → ないまでも; không có → まで(のこと)だ.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.17 / p.11 / p.26",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-degree-lo3-01-mp-01",
+   "q-cmp-degree-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Ba mẫu cùng chứa 「まで」nên đề chỉ cần đổi thể động từ là bẫy được.",
+  "openerQuestionId": "q-cmp-degree-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-negation-lo3-01",
+  "grammarIds": [
+   "ni-wa-oyobanai",
+   "ni-wa-ataranai",
+   "ni-katakunai"
+  ],
+  "familyHint": "NEGATION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "ni-wa-oyobanai": "Không cần phải làm việc đó",
+     "ni-wa-ataranai": "Không đáng phản ứng mạnh vậy",
+     "ni-katakunai": "Không khó để hình dung"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "ni-wa-oyobanai": "「ご心配には」「わざわざ」",
+     "ni-wa-ataranai": "「驚く」「非難する」",
+     "ni-katakunai": "「想像に」「理解に」"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "ni-wa-oyobanai": "Nhã nhặn ngăn đối phương",
+     "ni-wa-ataranai": "Hạ nhiệt phản ứng thái quá",
+     "ni-katakunai": "Khẳng định điều đó dễ hiểu"
+    }
+   },
+   {
+    "axis": "POLARITY_TENDENCY",
+    "cells": {
+     "ni-wa-oyobanai": "Ý phủ định",
+     "ni-wa-ataranai": "Ý phủ định",
+     "ni-katakunai": "Hình thức phủ định nhưng nghĩa KHẲNG ĐỊNH"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "「にかたくない」tuy có 「ない」nhưng nghĩa là DỄ. Hai mẫu kia mới thật sự phủ định.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.24 / p.37 / p.13",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-negation-lo3-01-mp-01",
+   "q-cmp-negation-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Đề khai thác chỗ 「にかたくない」nhìn như phủ định mà lại mang nghĩa khẳng định.",
+  "openerQuestionId": "q-cmp-negation-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-emphasis-lo3-01",
+  "grammarIds": [
+   "ni-shite",
+   "ni-shite-hajimete"
+  ],
+  "familyHint": "EMPHASIS",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "ni-shite": "Ngay cả … cũng không",
+     "ni-shite-hajimete": "Phải là … thì mới được"
+    }
+   },
+   {
+    "axis": "POLARITY_TENDENCY",
+    "cells": {
+     "ni-shite": "Vế sau PHỦ ĐỊNH",
+     "ni-shite-hajimete": "Vế sau KHẲNG ĐỊNH"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "ni-shite": "Không có 「はじめて」",
+     "ni-shite-hajimete": "Có 「はじめて」"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "ni-shite": "Nhấn cái khó",
+     "ni-shite-hajimete": "Khen năng lực"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Cùng chữ 「にして」— quyết bằng vế sau: phủ định thì là 'ngay cả', khẳng định thì là 'chỉ có'.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.5 / p.13",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-emphasis-lo3-01-mp-01",
+   "q-cmp-emphasis-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Đề để nguyên 「にして」rồi thay đuôi câu, buộc phải đọc hết mới chọn được.",
+  "openerQuestionId": "q-cmp-emphasis-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-limitation-lo3-01",
+  "grammarIds": [
+   "nara-dewa",
+   "nari-no"
+  ],
+  "familyHint": "LIMITATION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "nara-dewa": "Chỉ nơi đó mới có được",
+     "nari-no": "Theo sức riêng, có thể chưa hoàn hảo"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "nara-dewa": "Khen ngợi",
+     "nari-no": "Khiêm tốn"
+    }
+   },
+   {
+    "axis": "RESTRICTION",
+    "cells": {
+     "nara-dewa": "Chỉ dùng trong câu đánh giá TỐT",
+     "nari-no": "Hàm ý khiêm nhường, không dùng với người trên"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "nara-dewa": "「老舗ならではの」",
+     "nari-no": "Lặp lại chính danh từ đó: 「子供は子供なりに」"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "「ならでは」khen người khác; 「なりの」hạ mình. Nhìn xem câu đang khen hay đang khiêm tốn.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.18",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-limitation-lo3-01-mp-01",
+   "q-cmp-limitation-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Hai mẫu chỉ khác 「では」/「の」nên là cặp bẫy quen thuộc.",
+  "openerQuestionId": "q-cmp-limitation-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-stance-lo3-01",
+  "grammarIds": [
+   "tomo-naku",
+   "tomo-nashi-ni"
+  ],
+  "familyHint": "STANCE",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "tomo-naku": "Chẳng chủ ý mà lại…",
+     "tomo-nashi-ni": "Chẳng chủ ý mà lại…"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "tomo-naku": "V-辞書形＋ともなく",
+     "tomo-nashi-ni": "V-辞書形＋ともなしに"
+    }
+   },
+   {
+    "axis": "RESTRICTION",
+    "cells": {
+     "tomo-naku": "Chỉ động từ tri giác",
+     "tomo-nashi-ni": "Chỉ động từ tri giác"
+    }
+   },
+   {
+    "axis": "REGISTER",
+    "cells": {
+     "tomo-naku": "Văn chương",
+     "tomo-nashi-ni": "Văn chương"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Trùng nghĩa hoàn toàn. Đề không bắt phân biệt hai mẫu này mà bắt phân biệt với 「ともなると」.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.19 / p.26",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-stance-lo3-01-mp-01",
+   "q-cmp-stance-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Bẫy thật nằm ở 「ともなると」(mức độ) chứ không phải giữa 「ともなく」và 「ともなしに」.",
+  "openerQuestionId": "q-cmp-stance-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-negation-lo3-02",
+  "grammarIds": [
+   "zujimai",
+   "n-ga-tame-ni",
+   "you-ni-mo-nai"
+  ],
+  "familyHint": "NEGATION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "zujimai": "Rốt cuộc đã không làm được",
+     "n-ga-tame-ni": "Để mà làm cho được",
+     "you-ni-mo-nai": "Muốn làm cũng không nổi"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "zujimai": "V-ない形 bỏ ない＋ずじまい",
+     "n-ga-tame-ni": "V-ない形 bỏ ない＋んがため",
+     "you-ni-mo-nai": "V-意向形＋にも＋V-可能形否定"
+    }
+   },
+   {
+    "axis": "TIME_RELATION",
+    "cells": {
+     "zujimai": "Việc ĐÃ kết thúc",
+     "n-ga-tame-ni": "Hướng tới tương lai",
+     "you-ni-mo-nai": "Tình thế hiện tại"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "zujimai": "「結局」đứng trước",
+     "n-ga-tame-ni": "Vế sau là hành động có ý chí",
+     "you-ni-mo-nai": "Cùng một động từ hai lần"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Ba mẫu cùng lấy thể ない bỏ ない (せず／せん) nên rất dễ lẫn khi chia — phải đọc nghĩa vế sau.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.4 / p.4 / p.7",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-negation-lo3-02-mp-01",
+   "q-cmp-negation-lo3-02-mp-02"
+  ],
+  "examPatternVi": "Đề cho 「せず」và 「せん」đứng cạnh nhau để bẫy phần chia bất quy tắc của 「する」.",
+  "openerQuestionId": "q-cmp-negation-lo3-02-mp-01"
+ },
+ {
+  "id": "cmp-assumption-lo3-01",
+  "grammarIds": [
+   "nai-mono-demo-nai",
+   "nai-tomo-kagiranai",
+   "yochi-ga-aru"
+  ],
+  "familyHint": "ASSUMPTION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "nai-mono-demo-nai": "Cũng không hẳn là không được",
+     "nai-tomo-kagiranai": "Không chắc là sẽ không xảy ra",
+     "yochi-ga-aru": "Còn chỗ để làm thêm"
+    }
+   },
+   {
+    "axis": "POLARITY_TENDENCY",
+    "cells": {
+     "nai-mono-demo-nai": "Nội dung TRUNG TÍNH hoặc tốt",
+     "nai-tomo-kagiranai": "Nội dung XẤU",
+     "yochi-ga-aru": "Trung tính"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "nai-mono-demo-nai": "Trả lời dè dặt, giữ đường lui",
+     "nai-tomo-kagiranai": "Cảnh báo nên đề phòng",
+     "yochi-ga-aru": "Nhận xét khách quan"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "nai-mono-demo-nai": "「条件次第では」đứng trước",
+     "nai-tomo-kagiranai": "Vế sau là 「備えよう」",
+     "yochi-ga-aru": "「改善の」「検討の」đứng trước"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Nội dung xấu và vế sau khuyên đề phòng → ないとも限らない. Trả lời dè dặt → ないものでもない.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.22 / p.25 / p.11",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-assumption-lo3-01-mp-01",
+   "q-cmp-assumption-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Hai mẫu đầu đều hai lần phủ định nên hay bị dịch nhầm thành phủ định hoàn toàn.",
+  "openerQuestionId": "q-cmp-assumption-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-evaluation-lo3-01",
+  "grammarIds": [
+   "taru",
+   "gotoki",
+   "majiki"
+  ],
+  "familyHint": "EVALUATION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "taru": "Đã ở vị trí đó thì phải…",
+     "gotoki": "Như / kiểu như…",
+     "majiki": "Không xứng với tư cách đó"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "taru": "Đề cao vị trí",
+     "gotoki": "Nêu ví dụ; với người thì hạ thấp",
+     "majiki": "Phê phán hành vi"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "taru": "N＋たる＋N",
+     "gotoki": "N＋ごとき＋N",
+     "majiki": "V-辞書形＋まじき＋N"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "taru": "「〜たる者」",
+     "gotoki": "「彼のごとき」",
+     "majiki": "「N にある」đứng trước"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Cả ba đều bổ nghĩa danh từ: たる đề cao, ごとき nêu ví dụ, まじき phê phán. Nhìn ý người nói.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.7 / p.3 / p.22",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-evaluation-lo3-01-mp-01",
+   "q-cmp-evaluation-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Ba mẫu cùng là dạng cổ bổ nghĩa danh từ nên hay xuất hiện chung một đề.",
+  "openerQuestionId": "q-cmp-evaluation-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-addition-lo3-01",
+  "grammarIds": [
+   "mo-saru-koto-nagara",
+   "hitori-nomi-narazu",
+   "nomi-narazu",
+   "to-aimatte"
+  ],
+  "familyHint": "ADDITION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "mo-saru-koto-nagara": "A đã đành, nhưng B mới đáng nói",
+     "hitori-nomi-narazu": "Không chỉ riêng A",
+     "nomi-narazu": "Không chỉ A mà còn B",
+     "to-aimatte": "A cộng hưởng với B"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "mo-saru-koto-nagara": "Dồn trọng tâm về vế sau",
+     "hitori-nomi-narazu": "Mở rộng phạm vi",
+     "nomi-narazu": "Mở rộng phạm vi",
+     "to-aimatte": "Giải thích nguyên nhân kết quả"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "mo-saru-koto-nagara": "N＋もさることながら",
+     "hitori-nomi-narazu": "ひとり＋N＋のみならず",
+     "nomi-narazu": "N／V＋のみならず",
+     "to-aimatte": "N＋と相まって"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "mo-saru-koto-nagara": "Cả hai vế đều tích cực",
+     "hitori-nomi-narazu": "Có 「ひとり」đứng đầu",
+     "nomi-narazu": "Vế sau có 「も」",
+     "to-aimatte": "Hai bên là TÍNH CHẤT, không phải người"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "「と相まって」nói hai tính chất tạo ra kết quả; ba mẫu kia chỉ mở rộng hoặc dời trọng tâm.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.20 / p.30 / p.13",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-addition-lo3-01-mp-01",
+   "q-cmp-addition-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Đề đặt 「もさることながら」cạnh 「はもとより」và 「のみならず」vì đều dịch là 'không chỉ'.",
+  "openerQuestionId": "q-cmp-addition-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-condition-lo3-01",
+  "grammarIds": [
+   "atte-no",
+   "naku-shite"
+  ],
+  "familyHint": "CONDITION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "atte-no": "Có A mới có B",
+     "naku-shite": "Không có A thì không thể"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "atte-no": "N＋あっての＋N",
+     "naku-shite": "N＋なくして（は）＋vế phủ định"
+    }
+   },
+   {
+    "axis": "POLARITY_TENDENCY",
+    "cells": {
+     "atte-no": "Khẳng định",
+     "naku-shite": "Vế sau BẮT BUỘC phủ định"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "atte-no": "Danh từ đứng ngay sau",
+     "naku-shite": "Cả một vế đứng sau"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Cùng ý 'thiếu A thì hỏng': sau chỗ trống là DANH TỪ → あっての; là cả một VẾ → なくして.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.32 / p.22",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-condition-lo3-01-mp-01",
+   "q-cmp-condition-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Đề dùng chung loại danh từ trừu tượng nên phải nhìn cái đứng sau mới quyết được.",
+  "openerQuestionId": "q-cmp-condition-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-inevitability-lo3-01",
+  "grammarIds": [
+   "shimatsu-da",
+   "ni-itaru",
+   "beku-shite",
+   "ga-saigo"
+  ],
+  "familyHint": "INEVITABILITY",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "shimatsu-da": "Rốt cuộc đến nông nỗi này",
+     "ni-itaru": "Cuối cùng thành ra…",
+     "beku-shite": "Xảy ra là chuyện đương nhiên",
+     "ga-saigo": "Hễ đã làm là hỏng"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "shimatsu-da": "Chê trách",
+     "ni-itaru": "Trung tính",
+     "beku-shite": "Nhận xét tất yếu",
+     "ga-saigo": "Cảnh báo"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "shimatsu-da": "V-辞書形＋しまつだ",
+     "ni-itaru": "V-辞書形／N＋に至る",
+     "beku-shite": "Cùng động từ hai lần",
+     "ga-saigo": "V-た形＋が最後"
+    }
+   },
+   {
+    "axis": "TIME_RELATION",
+    "cells": {
+     "shimatsu-da": "Việc đã xảy ra",
+     "ni-itaru": "Việc đã xảy ra",
+     "beku-shite": "Nhìn lại việc đã xảy ra",
+     "ga-saigo": "Việc chưa xảy ra"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Chỉ 「が最後」nói việc CHƯA xảy ra. Ba mẫu kia đều nhìn lại; khác nhau ở chỗ có chê hay không.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.7 / p.19 / p.37 / p.28",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-inevitability-lo3-01-mp-01",
+   "q-cmp-inevitability-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Bốn mẫu cùng kết một quá trình nên đề hay xếp chung; đọc thì của động từ là phân biệt được.",
+  "openerQuestionId": "q-cmp-inevitability-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-assumption-lo3-02",
+  "grammarIds": [
+   "to-shita-tokoro-de",
+   "iza-to-naru-to",
+   "dewa-arumai-shi"
+  ],
+  "familyHint": "ASSUMPTION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "to-shita-tokoro-de": "Cho dù có… cũng vô ích",
+     "iza-to-naru-to": "Đến lúc thật sự thì lại…",
+     "dewa-arumai-shi": "Đâu phải là… mà"
+    }
+   },
+   {
+    "axis": "POLARITY_TENDENCY",
+    "cells": {
+     "to-shita-tokoro-de": "Vế sau phủ định hoặc xấu",
+     "iza-to-naru-to": "Vế sau trái dự tính",
+     "dewa-arumai-shi": "Vế sau là trách hoặc khuyên"
+    }
+   },
+   {
+    "axis": "REGISTER",
+    "cells": {
+     "to-shita-tokoro-de": "Trung tính",
+     "iza-to-naru-to": "Trung tính",
+     "dewa-arumai-shi": "Khẩu ngữ"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "to-shita-tokoro-de": "Vế sau có 「まい」「ない」",
+     "iza-to-naru-to": "Có 「いざ」đứng đầu",
+     "dewa-arumai-shi": "Vế sau là mệnh lệnh"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Có 「いざ」→ việc thật sự xảy ra. Giọng trách móc → ではあるまいし. Còn lại là としたところで.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.21 / p.38 / p.8",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-assumption-lo3-02-mp-01",
+   "q-cmp-assumption-lo3-02-mp-02"
+  ],
+  "examPatternVi": "Cả ba đều dựng một giả định rồi lật, khác nhau ở chỗ lật bằng cách nào.",
+  "openerQuestionId": "q-cmp-assumption-lo3-02-mp-01"
+ },
+ {
+  "id": "cmp-stance-lo3-02",
+  "grammarIds": [
+   "wo-mono-tomo-sezu-ni",
+   "wo-yoso-ni",
+   "mo-okamai-nashi-ni"
+  ],
+  "familyHint": "STANCE",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "wo-mono-tomo-sezu-ni": "Bất chấp khó khăn mà vẫn làm",
+     "wo-yoso-ni": "Mặc kệ tình cảm người khác",
+     "mo-okamai-nashi-ni": "Chẳng thèm để ý mà vẫn làm"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "wo-mono-tomo-sezu-ni": "KHEN",
+     "wo-yoso-ni": "Thường CHÊ",
+     "mo-okamai-nashi-ni": "CHÊ"
+    }
+   },
+   {
+    "axis": "SUBJECT",
+    "cells": {
+     "wo-mono-tomo-sezu-ni": "Không dùng cho chính người nói",
+     "wo-yoso-ni": "Đối tượng là tình cảm người khác",
+     "mo-okamai-nashi-ni": "Đối tượng là quy định, người xung quanh"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "wo-mono-tomo-sezu-ni": "「嵐」「けが」đứng trước",
+     "wo-yoso-ni": "「心配」「反対」đứng trước",
+     "mo-okamai-nashi-ni": "「迷惑」「規則」đứng trước"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Cùng dịch là 'bất chấp'. Quyết bằng danh từ đứng trước: khó khăn → khen; tình cảm người khác → chê.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.11 / p.14 / p.38",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-stance-lo3-02-mp-01",
+   "q-cmp-stance-lo3-02-mp-02"
+  ],
+  "examPatternVi": "Ba mẫu này trong tiếng Việt gần như một nghĩa nên chỉ có thể phân biệt bằng danh từ đứng trước.",
+  "openerQuestionId": "q-cmp-stance-lo3-02-mp-01"
+ },
+ {
+  "id": "cmp-stance-lo3-03",
+  "grammarIds": [
+   "mo-soko-soko-ni",
+   "mo-jisanai"
+  ],
+  "familyHint": "STANCE",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "mo-soko-soko-ni": "Làm qua quýt rồi vội đi",
+     "mo-jisanai": "Sẵn sàng chấp nhận cả…"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "mo-soko-soko-ni": "Tả sự vội vã",
+     "mo-jisanai": "Tuyên bố quyết tâm"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "mo-soko-soko-ni": "N（動作）＋もそこそこに",
+     "mo-jisanai": "N＋(を)も辞さない"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "mo-soko-soko-ni": "「食事」「挨拶」đứng trước",
+     "mo-jisanai": "「辞任」「ストライキ」đứng trước"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Cùng có 「も」nhưng khác hẳn: danh từ hành động thường ngày → もそこそこに; hậu quả nặng → も辞さない.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.34 / p.36",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-stance-lo3-03-mp-01",
+   "q-cmp-stance-lo3-03-mp-02"
+  ],
+  "examPatternVi": "Đề tận dụng chữ 「も」chung để xếp hai mẫu vào cùng một nhóm đáp án.",
+  "openerQuestionId": "q-cmp-stance-lo3-03-mp-01"
+ },
+ {
+  "id": "cmp-addition-lo3-02",
+  "grammarIds": [
+   "nari-nari",
+   "to-ii-to-ii",
+   "tsu-tsu"
+  ],
+  "familyHint": "ADDITION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "nari-nari": "A hay B gì cũng được",
+     "to-ii-to-ii": "Xét A cũng vậy, B cũng vậy",
+     "tsu-tsu": "Lúc A lúc B, luân phiên"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "nari-nari": "N／V-辞書形＋なり",
+     "to-ii-to-ii": "N＋といい",
+     "tsu-tsu": "V-ます形＋つ"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "nari-nari": "Gợi ý lựa chọn",
+     "to-ii-to-ii": "Đánh giá, thường là khen",
+     "tsu-tsu": "Tả trạng thái"
+    }
+   },
+   {
+    "axis": "RESTRICTION",
+    "cells": {
+     "nari-nari": "Không dùng cho việc của người trên",
+     "to-ii-to-ii": "Hai vế phải là hai mặt của cùng một đối tượng",
+     "tsu-tsu": "Cụm cố định, không ghép tự do"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Ba mẫu cùng dạng lặp đôi. Quyết bằng thể: 辞書形→なり, danh từ→といい, ます形→つ〜つ.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.4 / p.6 / p.18",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-addition-lo3-02-mp-01",
+   "q-cmp-addition-lo3-02-mp-02"
+  ],
+  "examPatternVi": "Đề dựng câu có hai vế song song rồi cho cả ba mẫu làm đáp án.",
+  "openerQuestionId": "q-cmp-addition-lo3-02-mp-01"
+ },
+ {
+  "id": "cmp-emphasis-lo3-02",
+  "grammarIds": [
+   "to-wa",
+   "to-kitara",
+   "de-nakute-nan-darou"
+  ],
+  "familyHint": "EMPHASIS",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "to-wa": "Thế mà lại…",
+     "to-kitara": "Nói tới … thì thật là",
+     "de-nakute-nan-darou": "Nếu không phải … thì là gì"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "to-wa": "Kinh ngạc",
+     "to-kitara": "Than phiền về ai đó",
+     "de-nakute-nan-darou": "Khẳng định mạnh"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "to-wa": "普通形＋とは",
+     "to-kitara": "N＋ときたら",
+     "de-nakute-nan-darou": "N＋でなくてなんだろう"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "to-wa": "Câu hay bỏ lửng",
+     "to-kitara": "Đối tượng là người thân quen",
+     "de-nakute-nan-darou": "Danh từ trừu tượng: 愛・運命"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "「ときたら」phải có ĐỐI TƯỢNG là người; 「でなくてなんだろう」phải có danh từ trừu tượng.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25 / p.14 / p.19",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-emphasis-lo3-02-mp-01",
+   "q-cmp-emphasis-lo3-02-mp-02"
+  ],
+  "examPatternVi": "Cả ba đều là cách nhấn cảm xúc nên hay bị gom chung trong 問題5.",
+  "openerQuestionId": "q-cmp-emphasis-lo3-02-mp-01"
+ },
+ {
+  "id": "cmp-time-lo3-01",
+  "grammarIds": [
+   "te-kara-to-iu-mono",
+   "ni-itaru",
+   "wo-kawakiri-ni"
+  ],
+  "familyHint": "TIME",
+  "rows": [
+   {
+    "axis": "TIME_RELATION",
+    "cells": {
+     "te-kara-to-iu-mono": "Mốc bắt đầu, sau đó đổi hẳn",
+     "ni-itaru": "Điểm cuối của quá trình",
+     "wo-kawakiri-ni": "Mốc mở màn một chuỗi"
+    }
+   },
+   {
+    "axis": "MEANING",
+    "cells": {
+     "te-kara-to-iu-mono": "Kể từ khi … thì khác hẳn",
+     "ni-itaru": "Cuối cùng thành ra…",
+     "wo-kawakiri-ni": "Mở màn rồi liên tiếp"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "te-kara-to-iu-mono": "V-て形＋からというもの",
+     "ni-itaru": "V-辞書形／N＋に至る",
+     "wo-kawakiri-ni": "N＋を皮切りに"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "te-kara-to-iu-mono": "Vế sau là trạng thái kéo dài",
+     "ni-itaru": "「〜の末」đứng trước",
+     "wo-kawakiri-ni": "Vế sau có 「次々と」"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Vế sau là TRẠNG THÁI kéo dài → てからというもの; là CHUỖI sự kiện → を皮切りに; là KẾT CỤC → に至る.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.6 / p.19 / p.15",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-time-lo3-01-mp-01",
+   "q-cmp-time-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Ba mẫu cùng gắn với một mốc thời gian, phải đọc vế sau mới phân biệt được.",
+  "openerQuestionId": "q-cmp-time-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-degree-lo3-02",
+  "grammarIds": [
+   "meku",
+   "gotoki"
+  ],
+  "familyHint": "DEGREE",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "meku": "Nhuốm vẻ, phảng phất",
+     "gotoki": "Như, kiểu như"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "meku": "N＋めく／めいた＋N",
+     "gotoki": "N＋ごとき＋N"
+    }
+   },
+   {
+    "axis": "RESTRICTION",
+    "cells": {
+     "meku": "Chỉ ghép vài danh từ: 春・謎・皮肉",
+     "gotoki": "Dùng cho người thì thành coi thường"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "meku": "「皮肉めいた」",
+     "gotoki": "「彼のごとき」"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "「めく」nói mức độ phảng phất; 「ごとき」nêu một ví dụ cụ thể để so sánh.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25 / p.3",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-degree-lo3-02-mp-01",
+   "q-cmp-degree-lo3-02-mp-02"
+  ],
+  "examPatternVi": "Cả hai đều dịch là 'như' nên dễ chọn nhầm khi dịch ngược từ tiếng Việt.",
+  "openerQuestionId": "q-cmp-degree-lo3-02-mp-01"
+ },
+ {
+  "id": "cmp-concession-lo3-01",
+  "grammarIds": [
+   "wa-tomoare",
+   "nara-madashimo",
+   "iza-shirazu"
+  ],
+  "familyHint": "CONCESSION",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "wa-tomoare": "Gác … sang bên thì…",
+     "nara-madashimo": "Nếu là … thì còn được",
+     "iza-shirazu": "… thì không biết, chứ…"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "wa-tomoare": "Chuyển sang điều quan trọng hơn",
+     "nara-madashimo": "Chê mức độ quá đáng",
+     "iza-shirazu": "Gác một trường hợp ra ngoài"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "wa-tomoare": "N＋はともあれ",
+     "nara-madashimo": "N／V＋ならまだしも",
+     "iza-shirazu": "N＋は／ならいざ知らず"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "wa-tomoare": "「何はともあれ」",
+     "nara-madashimo": "Vế sau có 「〜とは」",
+     "iza-shirazu": "Vế trước là 昔・子供・専門家"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Có chê trách kèm 「〜とは」→ ならまだしも. Chỉ gác tạm để nói tiếp → はともあれ.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.36 / p.28 / p.33",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-concession-lo3-01-mp-01",
+   "q-cmp-concession-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Ba mẫu cùng gạt một yếu tố sang bên, khác nhau ở chỗ có kèm chê hay không.",
+  "openerQuestionId": "q-cmp-concession-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-cause-lo3-01",
+  "grammarIds": [
+   "temae",
+   "dewa-sumasarenai"
+  ],
+  "familyHint": "CAUSE",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "temae": "Vì đã trót … trước mặt người ta",
+     "dewa-sumasarenai": "Không thể nói … là xong"
+    }
+   },
+   {
+    "axis": "SPEAKER_INTENT",
+    "cells": {
+     "temae": "Nêu lý do vì thể diện",
+     "dewa-sumasarenai": "Kết luận rằng biện bạch không đủ"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "temae": "V-普通形／N＋の＋手前",
+     "dewa-sumasarenai": "N／文＋ではすまされない"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "temae": "Có người khác chứng kiến",
+     "dewa-sumasarenai": "Trước mẫu là một lời biện bạch"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "「手前」đứng ở vế LÝ DO, còn 「ではすまされない」đứng ở vế KẾT LUẬN cuối câu.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.11",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-cause-lo3-01-mp-01",
+   "q-cmp-cause-lo3-01-mp-02"
+  ],
+  "examPatternVi": "Cả hai đều xoay quanh trách nhiệm xã hội nên hay ra chung một đoạn văn.",
+  "openerQuestionId": "q-cmp-cause-lo3-01-mp-01"
+ },
+ {
+  "id": "cmp-time-lo3-02",
+  "grammarIds": [
+   "tokoro-wo",
+   "ni-atte"
+  ],
+  "familyHint": "TIME",
+  "rows": [
+   {
+    "axis": "MEANING",
+    "cells": {
+     "tokoro-wo": "Đang lúc … mà vẫn…",
+     "ni-atte": "Ở trong hoàn cảnh…"
+    }
+   },
+   {
+    "axis": "TYPICAL_CONTEXT",
+    "cells": {
+     "tokoro-wo": "Lời chào hỏi trang trọng",
+     "ni-atte": "Văn nghị luận, báo chí"
+    }
+   },
+   {
+    "axis": "CONNECTION",
+    "cells": {
+     "tokoro-wo": "(お／ご)N＋の＋ところ(を)",
+     "ni-atte": "N＋にあって"
+    }
+   },
+   {
+    "axis": "KEY_CLUE",
+    "cells": {
+     "tokoro-wo": "Vế sau là cảm ơn hoặc xin lỗi",
+     "ni-atte": "Danh từ chỉ thời thế: 不況下・非常時"
+    }
+   }
+  ],
+  "decisiveDifferenceVi": "Vế sau là lời cảm ơn hay xin lỗi → ところ(を). Vế sau là nhận định → にあって.",
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.24 / p.25",
+  "verificationStatus": "VERIFIED",
+  "minimalPairQuestionIds": [
+   "q-cmp-time-lo3-02-mp-01",
+   "q-cmp-time-lo3-02-mp-02"
+  ],
+  "examPatternVi": "Hai mẫu đều đặt bối cảnh cho vế sau, chỉ khác ở loại văn bản.",
+  "openerQuestionId": "q-cmp-time-lo3-02-mp-01"
+ }
+]

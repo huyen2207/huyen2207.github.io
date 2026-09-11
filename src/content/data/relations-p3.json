@@ -1,0 +1,96 @@
+[
+ {
+  "from": "ni-itaru",
+  "to": "ni-itaru-made",
+  "type": "oftenConfusedWith",
+  "differenceKey": "điểm cuối hay dải phạm vi",
+  "noteVi": "「に至る」nói ĐIỂM CUỐI của quá trình; 「に至るまで」nói cả DẢI từ đâu tới đâu, cần 「から」.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-itaru",
+  "to": "ni-itatte-wa",
+  "type": "oftenConfusedWith",
+  "differenceKey": "trung tính hay chê trách",
+  "noteVi": "「に至る」trung tính; 「に至っては」nêu một trường hợp cực đoan kèm chê.",
+  "source": "CURATED"
+ },
+ {
+  "from": "ni-itaru-made",
+  "to": "ni-itatte-wa",
+  "type": "oftenConfusedWith",
+  "differenceKey": "phạm vi hay ca cực đoan",
+  "noteVi": "「に至るまで」liệt kê cả dải; 「に至っては」chỉ lôi ra MỘT ca tệ nhất.",
+  "source": "CURATED"
+ },
+ {
+  "from": "kirai-ga-aru",
+  "to": "tomo-suru-to",
+  "type": "oftenConfusedWith",
+  "differenceKey": "tính cách hay tình huống",
+  "noteVi": "「きらいがある」là tính cách cố hữu, tự kết câu; 「ともすると」cần 「がちだ」ở cuối.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-ittara-nai",
+  "to": "kagiri-da",
+  "type": "oftenConfusedWith",
+  "differenceKey": "nối được danh từ không",
+  "noteVi": "「といったらない」nối cả danh từ; 「かぎりだ」CHỈ nối tính từ đuôi い.",
+  "source": "CURATED"
+ },
+ {
+  "from": "to-ittara-nai",
+  "to": "to-shika-ii-you-ga-nai",
+  "type": "oftenConfusedWith",
+  "differenceKey": "cảm xúc hay đánh giá",
+  "noteVi": "「といったらない」bộc lộ CẢM XÚC; 「としか言いようがない」đưa ra ĐÁNH GIÁ.",
+  "source": "CURATED"
+ },
+ {
+  "from": "kagiri-da",
+  "to": "to-shika-ii-you-ga-nai",
+  "type": "sameFunctionGroup",
+  "source": "CURATED"
+ },
+ {
+  "from": "dani",
+  "to": "tari-tomo",
+  "type": "oftenConfusedWith",
+  "differenceKey": "vế sau khẳng định hay phủ định",
+  "noteVi": "「だに」＋động từ tri giác, vế sau khẳng định được; 「たりとも」＋số 「一」, vế sau phủ định.",
+  "source": "CURATED"
+ },
+ {
+  "from": "nagara-mo",
+  "to": "nagara-no",
+  "type": "oftenConfusedWith",
+  "differenceKey": "hai vế có trái chiều không",
+  "noteVi": "Trái chiều → 「ながらも」nhượng bộ; có danh từ ngay sau → 「ながらの」giữ nguyên trạng thái.",
+  "source": "CURATED"
+ },
+ {
+  "from": "beku",
+  "to": "n-ga-tame-ni",
+  "type": "oftenConfusedWith",
+  "differenceKey": "độ quyết liệt",
+  "noteVi": "Cùng nêu mục đích; 「んがため」quyết liệt và cổ hơn, nối thể ない bỏ ない.",
+  "source": "CURATED"
+ },
+ {
+  "from": "beku",
+  "to": "beku-shite",
+  "type": "oftenConfusedWith",
+  "differenceKey": "có lặp động từ không",
+  "noteVi": "「べく」nêu MỤC ĐÍCH và chỉ xuất hiện một lần; 「べくして」lặp cùng động từ và nói TẤT YẾU.",
+  "source": "CURATED"
+ },
+ {
+  "from": "n-ga-tame-ni",
+  "to": "beku-shite",
+  "type": "oftenConfusedWith",
+  "differenceKey": "mục đích hay tất yếu",
+  "noteVi": "「んがため」nói MỤC ĐÍCH hướng tới; 「べくして」nói kết cục TẤT YẾU đã xảy ra.",
+  "source": "CURATED"
+ }
+]

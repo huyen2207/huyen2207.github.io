@@ -1,0 +1,587 @@
+[
+ {
+  "id": "q-text-b01",
+  "type": "TEXT_GRAMMAR",
+  "phaseHint": [
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "mono-wo"
+  ],
+  "stemJa": "【1】に入る最も適切なものはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "のではなく",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "ものを",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Là lời tiếc nuối trách móc, không hợp mạch đối lập trung tính ở đây.",
+    "confusedWithGrammarId": "mono-wo"
+   },
+   {
+    "id": "c",
+    "textJa": "ばかりに",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nghĩa là 'chỉ vì', mang ý tiêu cực."
+   },
+   {
+    "id": "d",
+    "textJa": "どころか",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Vế sau không phủ định mạnh hơn vế trước."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Vế sau 「体で覚えろ」đối lập trực tiếp với 「言葉で教わる」→ 「のではなく」.",
+  "keyClueVi": "Hai vế đối lập trực tiếp.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "前後のつながりを見る",
+    "labelVi": "Đọc quan hệ với câu trước và câu sau"
+   }
+  ],
+  "targetTimeMs": 90000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.17",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "passageId": "psg-03"
+ },
+ {
+  "id": "q-text-b02",
+  "type": "TEXT_GRAMMAR",
+  "phaseHint": [
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "ni-atte",
+   "to-atte"
+  ],
+  "stemJa": "【2】に入る最も適切なものはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "なか",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "にあって",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nối được, nhưng ở đây trước chỗ trống là thể từ điển 「深刻化する」nên 「なか」tự nhiên hơn.",
+    "confusedWithGrammarId": "ni-atte"
+   },
+   {
+    "id": "c",
+    "textJa": "とあって",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nối danh từ, không nối thể từ điển ở vị trí này.",
+    "confusedWithGrammarId": "to-atte"
+   },
+   {
+    "id": "d",
+    "textJa": "にして",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nghĩa hoàn toàn khác ở vị trí này.",
+    "confusedWithGrammarId": "ni-shite"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「深刻化するなか」— nêu bối cảnh đang diễn ra.",
+  "keyClueVi": "Thể từ điển đứng trước.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "前後のつながりを見る",
+    "labelVi": "Đọc quan hệ với câu trước và câu sau"
+   }
+  ],
+  "targetTimeMs": 90000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.25",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 3,
+  "passageId": "psg-03"
+ },
+ {
+  "id": "q-text-b03",
+  "type": "TEXT_GRAMMAR",
+  "phaseHint": [
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "ni-taenai",
+   "wo-kinji-enai"
+  ],
+  "stemJa": "【3】に入る最も適切なものはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "に、",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "を禁じ得ず",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần danh từ chỉ cảm xúc đứng ngay trước, ở đây là 「こと」.",
+    "confusedWithGrammarId": "wo-kinji-enai"
+   },
+   {
+    "id": "c",
+    "textJa": "にたえず",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cụm 「にたえない」đi với 見る・聞く, không đi với 「こと」.",
+    "confusedWithGrammarId": "ni-taenai"
+   },
+   {
+    "id": "d",
+    "textJa": "にかたくなく",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nghĩa là dễ hình dung, không hợp mạch.",
+    "confusedWithGrammarId": "ni-katakunai"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「〜ことに、抵抗を覚える」— nêu đối tượng gây ra phản ứng.",
+  "keyClueVi": "Sau chỗ trống là 「抵抗を覚える」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "前後のつながりを見る",
+    "labelVi": "Đọc quan hệ với câu trước và câu sau"
+   }
+  ],
+  "targetTimeMs": 90000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.29",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 3,
+  "passageId": "psg-03"
+ },
+ {
+  "id": "q-text-b04",
+  "type": "TEXT_GRAMMAR",
+  "phaseHint": [
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "ni-itatte-wa",
+   "wa-betsu-ni-shite"
+  ],
+  "stemJa": "【4】に入る最も適切なものはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "に至っては",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "は別にして",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Gác sang bên rồi bỏ qua, nhưng đoạn này vẫn bàn tiếp về nó.",
+    "confusedWithGrammarId": "wa-betsu-ni-shite"
+   },
+   {
+    "id": "c",
+    "textJa": "にあっては",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nêu bối cảnh thời thế, không nêu một trường hợp cực đoan.",
+    "confusedWithGrammarId": "ni-atte"
+   },
+   {
+    "id": "d",
+    "textJa": "に至るまで",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Chỉ dải phạm vi, không nêu một trường hợp riêng."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Sau khi nói 「動作だけ」, đoạn nêu riêng một thứ khó hơn → 「に至っては」.",
+  "keyClueVi": "Câu trước vừa giới hạn phạm vi.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "前後のつながりを見る",
+    "labelVi": "Đọc quan hệ với câu trước và câu sau"
+   }
+  ],
+  "targetTimeMs": 90000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.19",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "passageId": "psg-03"
+ },
+ {
+  "id": "q-text-b05",
+  "type": "TEXT_GRAMMAR",
+  "phaseHint": [
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "naku-shite",
+   "atte-no"
+  ],
+  "stemJa": "【5】に入る最も適切なものはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "なくして",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "あっての",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Cần danh từ đứng ngay sau, ở đây sau là 「成り立たない」.",
+    "confusedWithGrammarId": "atte-no"
+   },
+   {
+    "id": "c",
+    "textJa": "をものともせず",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nghĩa là bất chấp khó khăn, không hợp mạch.",
+    "confusedWithGrammarId": "wo-mono-tomo-sezu-ni"
+   },
+   {
+    "id": "d",
+    "textJa": "にかかわらず",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nghĩa ngược lại."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Sau chỗ trống là vế phủ định 「成り立たない」→ 「なくして」.",
+  "keyClueVi": "Vế sau phủ định.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "前後のつながりを見る",
+    "labelVi": "Đọc quan hệ với câu trước và câu sau"
+   }
+  ],
+  "targetTimeMs": 90000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.22",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "passageId": "psg-03"
+ },
+ {
+  "id": "q-text-b06",
+  "type": "TEXT_GRAMMAR",
+  "phaseHint": [
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "to-iu",
+   "nandemo"
+  ],
+  "stemJa": "【1】に入る最も適切なものはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "という",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "なんでも",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Phải đứng ĐẦU câu và kết bằng 「らしい」「そうだ」.",
+    "confusedWithGrammarId": "nandemo"
+   },
+   {
+    "id": "c",
+    "textJa": "とか",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Quá suồng sã so với văn phong đoạn này."
+   },
+   {
+    "id": "d",
+    "textJa": "そうだ",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Đã có 「という」ở cuối câu trước nên lặp lại là thừa."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「〜だという」— truyền đạt lời của người phụ trách.",
+  "keyClueVi": "Câu trước có 「担当者によれば」.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "前後のつながりを見る",
+    "labelVi": "Đọc quan hệ với câu trước và câu sau"
+   }
+  ],
+  "targetTimeMs": 90000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.20",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 3,
+  "passageId": "psg-04"
+ },
+ {
+  "id": "q-text-b07",
+  "type": "TEXT_GRAMMAR",
+  "phaseHint": [
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "you-ni-mo-nai"
+  ],
+  "stemJa": "【2】に入る最も適切なものはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "にも",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "としても",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Thành nhượng bộ, mất ý bất khả thi."
+   },
+   {
+    "id": "c",
+    "textJa": "ものなら",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Không hợp với 「参加できない」ở sau."
+   },
+   {
+    "id": "d",
+    "textJa": "とすると",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Thành giả định."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「参加しようにも参加できない」— muốn mà hoàn cảnh không cho.",
+  "keyClueVi": "Cùng động từ 「参加」hai lần.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "前後のつながりを見る",
+    "labelVi": "Đọc quan hệ với câu trước và câu sau"
+   }
+  ],
+  "targetTimeMs": 90000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.7",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "passageId": "psg-04"
+ },
+ {
+  "id": "q-text-b08",
+  "type": "TEXT_GRAMMAR",
+  "phaseHint": [
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "yochi-ga-aru"
+  ],
+  "stemJa": "【3】に入る最も適切なものはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "余地がある",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "限りがある",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nghĩa là 'có giới hạn', ngược mạch — đoạn đang nói còn cải thiện được.",
+    "confusedWithGrammarId": "kagiri-da"
+   },
+   {
+    "id": "c",
+    "textJa": "必要はない",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Ngược nghĩa hoàn toàn."
+   },
+   {
+    "id": "d",
+    "textJa": "余地がない",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Ngược nghĩa — câu sau nêu ví dụ cải thiện thành công."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Câu sau nêu ví dụ cải tiến thành công → 「工夫の余地がある」.",
+  "keyClueVi": "Câu sau đưa ra một cải tiến cụ thể.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "前後のつながりを見る",
+    "labelVi": "Đọc quan hệ với câu trước và câu sau"
+   }
+  ],
+  "targetTimeMs": 90000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.11",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 3,
+  "passageId": "psg-04"
+ },
+ {
+  "id": "q-text-b09",
+  "type": "TEXT_GRAMMAR",
+  "phaseHint": [
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "kaimoku-nai",
+   "toutei"
+  ],
+  "stemJa": "【4】に入る最も適切なものはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "皆目",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "とうてい",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Đi với 「無理だ」「できない」, không đi với 「存在しない」.",
+    "confusedWithGrammarId": "toutei"
+   },
+   {
+    "id": "c",
+    "textJa": "一向に",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Dùng khi chờ mà tình hình không đổi.",
+    "confusedWithGrammarId": "ikkou-ni"
+   },
+   {
+    "id": "d",
+    "textJa": "なんら",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Đi với 「関係」「問題」.",
+    "confusedWithGrammarId": "nanra-nai"
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "「皆目存在しないはずだ」— hoàn toàn chẳng có nơi nào như thế.",
+  "keyClueVi": "Vế sau phủ định.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "前後のつながりを見る",
+    "labelVi": "Đọc quan hệ với câu trước và câu sau"
+   }
+  ],
+  "targetTimeMs": 90000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.37",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "passageId": "psg-04"
+ },
+ {
+  "id": "q-text-b10",
+  "type": "TEXT_GRAMMAR",
+  "phaseHint": [
+   "PHASE_3_DETECT"
+  ],
+  "targetGrammarIds": [
+   "naku-shite",
+   "koto-nashi-ni"
+  ],
+  "stemJa": "【5】に入る最も適切なものはどれか。",
+  "choices": [
+   {
+    "id": "a",
+    "textJa": "なくしては",
+    "isCorrect": true
+   },
+   {
+    "id": "b",
+    "textJa": "ことなしには",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nối động từ, ở đây trước chỗ trống là danh từ 「積み重ね」.",
+    "confusedWithGrammarId": "koto-nashi-ni"
+   },
+   {
+    "id": "c",
+    "textJa": "なしには",
+    "isCorrect": false,
+    "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
+    "whyWrongVi": "Nối được, nhưng vế sau phủ định mạnh nên 「なくしては」chuẩn hơn.",
+    "confusedWithGrammarId": "nashi-ni"
+   },
+   {
+    "id": "d",
+    "textJa": "にもかかわらず",
+    "isCorrect": false,
+    "wrongBecause": "MEANING_ERROR",
+    "whyWrongVi": "Nghĩa ngược lại."
+   }
+  ],
+  "correctChoiceId": "a",
+  "explanationVi": "Danh từ 「積み重ね」＋ vế phủ định 「動かない」→ 「なくしては」.",
+  "keyClueVi": "Vế sau phủ định.",
+  "solvingStrategy": [
+   {
+    "order": 1,
+    "labelJa": "前後のつながりを見る",
+    "labelVi": "Đọc quan hệ với câu trước và câu sau"
+   }
+  ],
+  "targetTimeMs": 90000,
+  "sourceId": "drill-drill-n1",
+  "sourcePage": "別冊 p.22",
+  "verificationStatus": "VERIFIED",
+  "testedSkill": "DETECT",
+  "difficultyStatic": 4,
+  "passageId": "psg-04"
+ }
+]

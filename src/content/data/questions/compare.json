@@ -1,0 +1,274 @@
+[
+  {
+    "id": "q-cmp-time-01-mp-01", "type": "MINIMAL_PAIR", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["ni-itatte", "ni-itatte-wa"], "comparisonSetId": "cmp-time-01",
+    "stemJa": "事態が深刻化する___、政府はようやく動き出した。",
+    "choices": [
+      { "id": "a", "textJa": "に至って", "isCorrect": true },
+      { "id": "b", "textJa": "に至っては", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "ni-itatte-wa", "violatedAxis": "MEANING", "whyWrongVi": "Không có liệt kê phía trước nên không thể nêu ví dụ cực đoan." },
+      { "id": "c", "textJa": "に至るまで", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "ni-itaru-made", "violatedAxis": "MEANING", "whyWrongVi": "Thiếu mốc đầu 「から」nên không tạo thành dải phạm vi." },
+      { "id": "d", "textJa": "に至らず", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Thể phủ định mâu thuẫn với 「動き出した」đã xảy ra." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "「ようやく」ở vế sau chốt rằng đây là mốc bước ngoặt.",
+    "keyClueVi": "「ようやく」ở vế sau.",
+    "solvingStrategy": [
+      { "order": 1, "labelJa": "文末を見る", "labelVi": "Vế sau đã xảy ra → loại thể phủ định" },
+      { "order": 2, "labelJa": "副詞を探す", "labelVi": "Tìm 「ようやく」" }
+    ],
+    "decisiveClue": { "kind": "CONTEXT", "textJa": "ようやく", "noteVi": "Trạng từ chốt mốc bước ngoặt." },
+    "trap": { "trapType": "LOOKALIKE_FORM", "trapExplanationVi": "Ba đáp án cùng bắt đầu bằng 「に至」— đề đánh vào việc đọc lướt phần đầu.", "fastestPathVi": "Đọc đuôi từng đáp án trước, rồi mới đọc câu.", "strength": 3 },
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 3
+  },
+  {
+    "id": "q-cmp-time-01-mp-02", "type": "MINIMAL_PAIR", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["ni-itatte-wa", "ni-itatte"], "comparisonSetId": "cmp-time-01",
+    "stemJa": "どの支店も赤字だが、北店___、閉店寸前だ。",
+    "choices": [
+      { "id": "a", "textJa": "に至っては", "isCorrect": true },
+      { "id": "b", "textJa": "に至って", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "ni-itatte", "violatedAxis": "MEANING", "whyWrongVi": "Câu không nêu mốc thời gian mà đang chỉ ra trường hợp tệ nhất." },
+      { "id": "c", "textJa": "に至るまで", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "ni-itaru-made", "violatedAxis": "MEANING", "whyWrongVi": "Không có dải phạm vi từ đâu tới đâu." },
+      { "id": "d", "textJa": "をよそに", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "whyWrongVi": "Không có ai phớt lờ mối bận tâm của ai." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "Vế trước liệt kê 「どの支店も」rồi chỉ vào trường hợp cực đoan nhất.",
+    "keyClueVi": "「どの…も」báo hiệu bối cảnh liệt kê.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "前に列挙があるか", "labelVi": "Kiểm tra vế trước có liệt kê không" }],
+    "decisiveClue": { "kind": "CONTEXT", "textJa": "どの支店も", "noteVi": "Liệt kê trước → chuẩn bị cho ví dụ cực đoan." },
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 4
+  },
+  {
+    "id": "q-cmp-time-01-wn-01", "type": "WHY_NOT_OTHER", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["ni-itatte", "ni-itatte-wa"], "comparisonSetId": "cmp-time-01",
+    "stemJa": "「事故が起きるに至って、対策が取られた。」— なぜ「に至っては」は使えないか。",
+    "choices": [
+      { "id": "a", "textJa": "前に列挙がなく、極端な例を挙げる文脈ではないから", "isCorrect": true },
+      { "id": "b", "textJa": "「に至っては」は名詞にしか付かないから", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Đúng là mẫu đó nối với danh từ, nhưng đó không phải lý do quyết định ở câu này." },
+      { "id": "c", "textJa": "「に至っては」は話し言葉だから", "isCorrect": false, "wrongBecause": "NUANCE_ERROR", "violatedAxis": "REGISTER", "whyWrongVi": "Cả hai mẫu đều là văn viết trang trọng." },
+      { "id": "d", "textJa": "「に至っては」は肯定文で使えないから", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "violatedAxis": "POLARITY_TENDENCY", "whyWrongVi": "Mẫu đó không bị ràng buộc cực tính như vậy." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "「に至っては」đòi hỏi bối cảnh liệt kê để chỉ ra trường hợp cực đoan; câu này chỉ có một mốc sự kiện.",
+    "keyClueVi": "Không có liệt kê → loại 「に至っては」.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "文脈条件を確認", "labelVi": "Kiểm tra điều kiện ngữ cảnh của mẫu bị loại" }],
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 4
+  },
+
+  {
+    "id": "q-cmp-evaluation-01-mp-01", "type": "MINIMAL_PAIR", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["narade-wa", "nari-ni"], "comparisonSetId": "cmp-evaluation-01",
+    "stemJa": "老舗___の落ち着いた雰囲気が魅力だ。",
+    "choices": [
+      { "id": "a", "textJa": "ならでは", "isCorrect": true },
+      { "id": "b", "textJa": "なり", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "nari-ni", "violatedAxis": "NUANCE", "whyWrongVi": "「なりの」nói về giới hạn năng lực, không dùng để khen nét độc quyền." },
+      { "id": "c", "textJa": "きらい", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "whyWrongVi": "Mẫu đó chỉ dùng cho khuynh hướng xấu." },
+      { "id": "d", "textJa": "といえども", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Không nối được với 「の＋N」như ở đây." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "Vế sau là lời khen 「魅力だ」→ 「ならではの」.",
+    "keyClueVi": "「魅力」— đánh giá tích cực.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "評価の向き", "labelVi": "Khen hay chê?" }],
+    "decisiveClue": { "kind": "NUANCE", "textJa": "魅力", "noteVi": "Từ mang nghĩa khen → mẫu phải mang sắc thái khen." },
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 3
+  },
+  {
+    "id": "q-cmp-evaluation-01-mp-02", "type": "MINIMAL_PAIR", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["nari-ni", "narade-wa"], "comparisonSetId": "cmp-evaluation-01",
+    "stemJa": "新人は新人___、精一杯やっている。",
+    "choices": [
+      { "id": "a", "textJa": "なりに", "isCorrect": true },
+      { "id": "b", "textJa": "ならでは", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "narade-wa", "violatedAxis": "NUANCE", "whyWrongVi": "Câu công nhận nỗ lực trong giới hạn, không khen nét độc quyền." },
+      { "id": "c", "textJa": "とはいえ", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Không hợp với cấu trúc lặp danh từ 「新人は新人___」." },
+      { "id": "d", "textJa": "をよそに", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "whyWrongVi": "Không có ai bị phớt lờ." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "Cấu trúc lặp 「N は N なりに」là dấu hiệu điển hình.",
+    "keyClueVi": "Danh từ lặp lại hai lần.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "繰り返しを見る", "labelVi": "Thấy danh từ lặp → nghĩ tới 「なりに」" }],
+    "decisiveClue": { "kind": "POSITION", "textJa": "新人は新人", "noteVi": "Cấu trúc lặp danh từ." },
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 3
+  },
+  {
+    "id": "q-cmp-evaluation-01-wn-01", "type": "WHY_NOT_OTHER", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["narade-wa", "nari-ni"], "comparisonSetId": "cmp-evaluation-01",
+    "stemJa": "「子どもは子どもなりに考えている。」— なぜ「ならでは」は使えないか。",
+    "choices": [
+      { "id": "a", "textJa": "「ならでは」は他にまねできない長所をほめる表現で、能力の限界を認める文脈に合わないから", "isCorrect": true },
+      { "id": "b", "textJa": "「ならでは」は動詞に接続できないから", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Vấn đề ở đây là sắc thái, không phải cách nối." },
+      { "id": "c", "textJa": "「ならでは」は否定文専用だから", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "violatedAxis": "POLARITY_TENDENCY", "whyWrongVi": "Mẫu đó không chuyên dùng cho câu phủ định." },
+      { "id": "d", "textJa": "「ならでは」は話し言葉だから", "isCorrect": false, "wrongBecause": "NUANCE_ERROR", "violatedAxis": "REGISTER", "whyWrongVi": "Register không phải điểm quyết định ở đây." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "Trục quyết định là NUANCE: khen độc quyền so với công nhận giới hạn.",
+    "keyClueVi": "Trục sắc thái, không phải trục hình thức.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "決定軸を選ぶ", "labelVi": "Chọn đúng trục quyết định" }],
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 4
+  },
+
+  {
+    "id": "q-cmp-concession-01-mp-01", "type": "MINIMAL_PAIR", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["to-iedomo", "to-wa-ie"], "comparisonSetId": "cmp-concession-01",
+    "stemJa": "たとえ専門家___、判断を誤ることはある。",
+    "choices": [
+      { "id": "a", "textJa": "といえども", "isCorrect": true },
+      { "id": "b", "textJa": "とはいえ", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "to-wa-ie", "violatedAxis": "SPEAKER_INTENT", "whyWrongVi": "Có 「たとえ」nên vế trước là giả định, không phải sự thật đã nêu." },
+      { "id": "c", "textJa": "ならでは", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "whyWrongVi": "Không có quan hệ nhượng bộ." },
+      { "id": "d", "textJa": "をものともせず", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Sai cả hình thức lẫn nghĩa trong ngữ cảnh này." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "「たとえ」đầu câu đòi hỏi mẫu nhượng bộ giả định 「といえども」.",
+    "keyClueVi": "「たとえ」ở đầu câu.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "文頭の副詞を見る", "labelVi": "Nhìn trạng từ đầu câu" }],
+    "decisiveClue": { "kind": "COLLOCATION", "textJa": "たとえ", "noteVi": "Cặp cố định 「たとえ〜といえども」." },
+    "trap": { "trapType": "MEANING_OVERLAP", "trapExplanationVi": "Hai mẫu dịch sang tiếng Việt gần như giống nhau, chỉ khác ở giả định hay sự thật.", "fastestPathVi": "Tìm 「たとえ」trước khi so nghĩa.", "strength": 3 },
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 4
+  },
+  {
+    "id": "q-cmp-concession-01-mp-02", "type": "MINIMAL_PAIR", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["to-wa-ie", "to-iedomo"], "comparisonSetId": "cmp-concession-01",
+    "stemJa": "四月になった___、朝晩はまだ冷える。",
+    "choices": [
+      { "id": "a", "textJa": "とはいえ", "isCorrect": true },
+      { "id": "b", "textJa": "といえども", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "to-iedomo", "violatedAxis": "SPEAKER_INTENT", "whyWrongVi": "Vế trước là sự thật đã xảy ra, không phải trường hợp giả định." },
+      { "id": "c", "textJa": "に至って", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "whyWrongVi": "Không có sắc thái 'đến tận lúc đó mới'." },
+      { "id": "d", "textJa": "きらいがあり", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Sai cả hình thức lẫn nghĩa." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "「四月になった」là sự thật; vế sau đính chính kỳ vọng trời ấm.",
+    "keyClueVi": "Vế trước ở thể quá khứ, là sự thật đã xảy ra.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "事実か仮定か", "labelVi": "Sự thật hay giả định?" }],
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 3
+  },
+  {
+    "id": "q-cmp-concession-01-wn-01", "type": "WHY_NOT_OTHER", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["to-wa-ie", "to-iedomo"], "comparisonSetId": "cmp-concession-01",
+    "stemJa": "「春とはいえ、まだ風は冷たい。」— なぜ「といえども」は不自然か。",
+    "choices": [
+      { "id": "a", "textJa": "「春」はすでに成立した事実であり、仮定の極端な例ではないから", "isCorrect": true },
+      { "id": "b", "textJa": "「といえども」は名詞に付かないから", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Mẫu đó nối được với danh từ, nên đây không phải lý do." },
+      { "id": "c", "textJa": "「といえども」は過去形と使えないから", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Không có ràng buộc thì như vậy." },
+      { "id": "d", "textJa": "「といえども」は肯定の結論と使えないから", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "violatedAxis": "POLARITY_TENDENCY", "whyWrongVi": "Không có ràng buộc cực tính như vậy." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "Trục quyết định là SPEAKER_INTENT: giả định so với sự thật đã xác lập.",
+    "keyClueVi": "「春」là sự thật hiển nhiên đang diễn ra.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "決定軸を選ぶ", "labelVi": "Chọn trục quyết định" }],
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 4
+  },
+
+  {
+    "id": "q-cmp-inevitability-01-mp-01", "type": "MINIMAL_PAIR", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["zaru-wo-enai", "nai-dewa-irarenai"], "comparisonSetId": "cmp-inevitability-01",
+    "stemJa": "大雪のため、試合を中止せ___。",
+    "choices": [
+      { "id": "a", "textJa": "ざるを得なかった", "isCorrect": true },
+      { "id": "b", "textJa": "ないではいられなかった", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "nai-dewa-irarenai", "violatedAxis": "SUBJECT", "whyWrongVi": "Nguyên nhân là thời tiết (bên ngoài), không phải cảm xúc bên trong." },
+      { "id": "c", "textJa": "ずにはおかなかった", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Nghĩa và cách dùng không khớp ngữ cảnh này." },
+      { "id": "d", "textJa": "るきらいがあった", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "whyWrongVi": "Không nói về khuynh hướng lặp lại." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "「大雪のため」là nguyên nhân khách quan ép buộc.",
+    "keyClueVi": "「〜のため」ở vế trước.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "原因の性質", "labelVi": "Nguyên nhân bên ngoài hay bên trong" }],
+    "decisiveClue": { "kind": "CONTEXT", "textJa": "大雪のため", "noteVi": "Nguyên nhân khách quan." },
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 3
+  },
+  {
+    "id": "q-cmp-inevitability-01-mp-02", "type": "MINIMAL_PAIR", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["nai-dewa-irarenai", "zaru-wo-enai"], "comparisonSetId": "cmp-inevitability-01",
+    "stemJa": "彼女の手紙を読むと、涙を流さ___。",
+    "choices": [
+      { "id": "a", "textJa": "ないではいられない", "isCorrect": true },
+      { "id": "b", "textJa": "ざるを得ない", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "zaru-wo-enai", "violatedAxis": "SUBJECT", "whyWrongVi": "Không có hoàn cảnh ép buộc; đây là cảm xúc trào lên." },
+      { "id": "c", "textJa": "ないきらいがある", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "whyWrongVi": "Không nói về khuynh hướng xấu." },
+      { "id": "d", "textJa": "ないとはいえ", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Không tạo thành câu hoàn chỉnh." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "Vế trước là kích thích cảm xúc → thôi thúc từ bên trong.",
+    "keyClueVi": "「〜と」+ phản ứng cảm xúc.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "感情かどうか", "labelVi": "Có phải phản ứng cảm xúc không" }],
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 3
+  },
+  {
+    "id": "q-cmp-inevitability-01-wn-01", "type": "WHY_NOT_OTHER", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["zaru-wo-enai", "nai-dewa-irarenai"], "comparisonSetId": "cmp-inevitability-01",
+    "stemJa": "「台風のため、中止せざるを得なかった。」— なぜ「ないではいられない」は使えないか。",
+    "choices": [
+      { "id": "a", "textJa": "強制の源が外部の状況であり、内側から込み上げる感情ではないから", "isCorrect": true },
+      { "id": "b", "textJa": "「ないではいられない」は過去形にできないから", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Mẫu đó chia quá khứ được bình thường." },
+      { "id": "c", "textJa": "「ないではいられない」は書き言葉ではないから", "isCorrect": false, "wrongBecause": "NUANCE_ERROR", "violatedAxis": "REGISTER", "whyWrongVi": "Register không phải điểm quyết định." },
+      { "id": "d", "textJa": "「中止する」は意志動詞ではないから", "isCorrect": false, "wrongBecause": "CONSTRAINT_ERROR", "violatedAxis": "RESTRICTION", "whyWrongVi": "「中止する」là động từ ý chí." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "Trục quyết định là SUBJECT: nguồn ép buộc ở bên ngoài hay bên trong.",
+    "keyClueVi": "「台風のため」— nguyên nhân bên ngoài.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "強制の出どころ", "labelVi": "Xác định nguồn ép buộc" }],
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 3
+  },
+
+  {
+    "id": "q-cmp-stance-01-mp-01", "type": "MINIMAL_PAIR", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["wo-mono-tomosezu", "wo-yoso-ni"], "comparisonSetId": "cmp-stance-01",
+    "stemJa": "彼は度重なる失敗___、研究を続けた。",
+    "choices": [
+      { "id": "a", "textJa": "をものともせず", "isCorrect": true },
+      { "id": "b", "textJa": "をよそに", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "wo-yoso-ni", "violatedAxis": "NUANCE", "whyWrongVi": "Vế trước là khó khăn của chính chủ thể, và câu đang khen chứ không chê." },
+      { "id": "c", "textJa": "に至って", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "whyWrongVi": "Không có mốc bước ngoặt." },
+      { "id": "d", "textJa": "ならではの", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Không nối được vào vị trí này." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "「度重なる失敗」là khó khăn; 「研究を続けた」đáng khâm phục.",
+    "keyClueVi": "Khó khăn + hành động đáng khen.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "前の名詞の性質", "labelVi": "Vế trước là khó khăn hay cảm xúc người khác" }],
+    "decisiveClue": { "kind": "CONTEXT", "textJa": "度重なる失敗", "noteVi": "Khó khăn của chính chủ thể." },
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 3
+  },
+  {
+    "id": "q-cmp-stance-01-mp-02", "type": "MINIMAL_PAIR", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["wo-yoso-ni", "wo-mono-tomosezu"], "comparisonSetId": "cmp-stance-01",
+    "stemJa": "親の心配___、彼は留学を決めてしまった。",
+    "choices": [
+      { "id": "a", "textJa": "をよそに", "isCorrect": true },
+      { "id": "b", "textJa": "をものともせず", "isCorrect": false, "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION", "confusedWithGrammarId": "wo-mono-tomosezu", "violatedAxis": "NUANCE", "whyWrongVi": "「心配」là mối bận tâm của người khác, và 「〜てしまった」cho thấy giọng chê." },
+      { "id": "c", "textJa": "に至るまで", "isCorrect": false, "wrongBecause": "MEANING_ERROR", "whyWrongVi": "Không có dải phạm vi." },
+      { "id": "d", "textJa": "とはいえ", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Không nối trực tiếp với danh từ theo cách này." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "「心配」của cha mẹ + 「〜てしまった」mang giọng phê phán → 「をよそに」.",
+    "keyClueVi": "「心配」của người khác.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "誰の感情か", "labelVi": "Cảm xúc đó là của ai" }],
+    "decisiveClue": { "kind": "CONTEXT", "textJa": "親の心配", "noteVi": "Mối bận tâm của người khác." },
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 3
+  },
+  {
+    "id": "q-cmp-stance-01-wn-01", "type": "WHY_NOT_OTHER", "phaseHint": ["PHASE_2_COMPARE"],
+    "targetGrammarIds": ["wo-yoso-ni", "wo-mono-tomosezu"], "comparisonSetId": "cmp-stance-01",
+    "stemJa": "「住民の反対をよそに、工事が始まった。」— なぜ「をものともせず」は使えないか。",
+    "choices": [
+      { "id": "a", "textJa": "「をものともせず」は困難を乗り越える人をほめる表現で、批判の文脈に合わないから", "isCorrect": true },
+      { "id": "b", "textJa": "「をものともせず」は名詞に付かないから", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Mẫu đó nối với danh từ bình thường." },
+      { "id": "c", "textJa": "「をものともせず」は過去の文で使えないから", "isCorrect": false, "wrongBecause": "FORM_ERROR", "violatedAxis": "CONNECTION", "whyWrongVi": "Không có ràng buộc thì như vậy." },
+      { "id": "d", "textJa": "「反対」は名詞ではないから", "isCorrect": false, "wrongBecause": "CARELESS_ERROR", "whyWrongVi": "「反対」đúng là danh từ." }
+    ],
+    "correctChoiceId": "a",
+    "explanationVi": "Trục quyết định là NUANCE: khen hay chê.",
+    "keyClueVi": "Câu đang phê phán việc thi công.",
+    "solvingStrategy": [{ "order": 1, "labelJa": "評価軸を選ぶ", "labelVi": "Chọn trục đánh giá" }],
+    "targetTimeMs": 30000, "sourceId": "ai-seed", "verificationStatus": "NEEDS_REVIEW",
+    "testedSkill": "COMPARE", "difficultyStatic": 4
+  }
+]
