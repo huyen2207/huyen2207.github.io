@@ -118,12 +118,15 @@ export function ExplanationPanel({
   choiceLabels,
   grammar,
   otherGrammars,
+  teachFully,
   children,
 }: {
   feedback: FeedbackPayload;
   choiceLabels: Record<string, string>;
   /** Mẫu để ôn lại cấu trúc; chỉ truyền khi câu hỏi nhắm đúng một mẫu. */
   grammar?: GrammarView;
+  /** Trả lời SAI → dạy lại đầy đủ như màn hình học mẫu mới, không chỉ nhắc cấu trúc. */
+  teachFully?: boolean;
   /** Các mẫu còn lại của câu so sánh — hiện thu gọn, bấm mới mở. */
   otherGrammars?: GrammarView[];
   children?: ReactNode;
@@ -210,7 +213,7 @@ export function ExplanationPanel({
         </Card>
       )}
 
-      {grammar && <StructureRecap grammar={grammar} />}
+      {grammar && <StructureRecap grammar={grammar} full={Boolean(teachFully)} />}
 
       {otherGrammars && otherGrammars.length > 0 && (
         <Card className="px-3.5 py-3">
@@ -252,15 +255,29 @@ export function ExplanationPanel({
  * Chỉ hiện khi câu hỏi nhắm ĐÚNG MỘT mẫu; câu so sánh nhiều mẫu đã có bảng riêng
  * ở Compare Lab, nhồi 3–4 cấu trúc vào đây sẽ thành bức tường chữ trên điện thoại.
  */
-function StructureRecap({ grammar }: { grammar: GrammarView }) {
+function StructureRecap({ grammar, full }: { grammar: GrammarView; full: boolean }) {
   return (
     <Card className="px-3.5 py-3">
       <h3 className="mb-2 text-[12px] font-semibold uppercase tracking-wide" style={{ color: 'var(--ink-faint)' }}>
-        {t('question.reviewStructure')}
+        {t(full ? 'question.relearnStructure' : 'question.reviewStructure')}
       </h3>
 
       <p className="ja text-[20px] font-semibold leading-tight">{grammar.pattern}</p>
       <p className="mt-1 text-[14px] leading-relaxed">{grammar.meaningVi}</p>
+
+      {full && (
+        <>
+          <h4 className="ja mt-3 text-[12px] font-semibold" style={{ color: 'var(--ink-faint)' }}>
+            {t('learn.coreImage')}
+          </h4>
+          <p className="mt-1 text-[14px] leading-relaxed">{grammar.coreImage}</p>
+          {grammar.nuanceVi && (
+            <p className="mt-1 text-[14px] leading-relaxed" style={{ color: 'var(--ink-soft)' }}>
+              {grammar.nuanceVi}
+            </p>
+          )}
+        </>
+      )}
 
       <h4 className="ja mt-3 text-[12px] font-semibold" style={{ color: 'var(--ink-faint)' }}>
         {t('learn.structure')}
@@ -278,6 +295,21 @@ function StructureRecap({ grammar }: { grammar: GrammarView }) {
         ))}
       </ul>
 
+      {full && grammar.usage.length > 0 && (
+        <>
+          <h4 className="ja mt-3 text-[12px] font-semibold" style={{ color: 'var(--ink-faint)' }}>
+            {t('learn.usage')}
+          </h4>
+          <ul className="mt-1 space-y-0.5">
+            {grammar.usage.map((u, i) => (
+              <li key={i} className="text-[14px] leading-relaxed">
+                {u}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
       {grammar.restrictions.length > 0 && (
         <>
           <h4 className="ja mt-3 text-[12px] font-semibold" style={{ color: 'var(--ink-faint)' }}>
@@ -292,6 +324,48 @@ function StructureRecap({ grammar }: { grammar: GrammarView }) {
                     {r.counterExample}
                   </span>
                 )}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {full && grammar.examples.length > 0 && (
+        <>
+          <h4 className="ja mt-3 text-[12px] font-semibold" style={{ color: 'var(--ink-faint)' }}>
+            {t('learn.examples')}
+          </h4>
+          <ul className="mt-1 space-y-2">
+            {grammar.examples.map((e, i) => (
+              <li key={i}>
+                <p className="ja text-[16px] leading-relaxed">{e.ja}</p>
+                <p className="text-[13px] leading-relaxed" style={{ color: 'var(--ink-soft)' }}>
+                  {e.vi}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {full && grammar.keyClues.length > 0 && (
+        <>
+          <h4 className="mt-3 text-[12px] font-semibold" style={{ color: 'var(--ink-faint)' }}>
+            {t('learn.keyClues')}
+          </h4>
+          <p className="mt-1 text-[14px] leading-relaxed">{grammar.keyClues.join(' · ')}</p>
+        </>
+      )}
+
+      {full && grammar.commonMistakes.length > 0 && (
+        <>
+          <h4 className="mt-3 text-[12px] font-semibold" style={{ color: 'var(--ink-faint)' }}>
+            {t('learn.commonMistakes')}
+          </h4>
+          <ul className="mt-1 space-y-0.5">
+            {grammar.commonMistakes.map((m, i) => (
+              <li key={i} className="text-[14px] leading-relaxed">
+                {m}
               </li>
             ))}
           </ul>

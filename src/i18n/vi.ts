@@ -265,6 +265,7 @@ const vi: Record<string, string> = {
   /* ── Learn card ── */
   'question.meaningOfSentence': 'Nghĩa của câu',
   'question.reviewStructure': 'Ôn lại cấu trúc',
+  'question.relearnStructure': 'Học lại cấu trúc này',
   'question.reviewStructureAll': 'Ôn lại cấu trúc của cả {n} mẫu',
   'learn.pattern': 'Mẫu',
   'learn.meaning': '意味',

@@ -257,7 +257,7 @@ export function QuestionRunner({
               {t('question.timedHint')}
             </p>
           )}
-          <ExplanationPanel feedback={result.feedback} choiceLabels={choiceLabels} grammar={recapGrammar} otherGrammars={recapAll} />
+          <ExplanationPanel feedback={result.feedback} choiceLabels={choiceLabels} grammar={recapGrammar} otherGrammars={recapAll} teachFully={!result.isCorrect} />
           {result.needsSelfReport && !selfReported && result.selfReportOptions.length > 0 && (
             <SelfReportPrompt
               options={result.selfReportOptions}

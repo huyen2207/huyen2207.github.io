@@ -259,8 +259,12 @@ export function buildDailySession(input: SessionInput): DailySession {
 
   /* Ngân sách rất nhỏ — session tối thiểu (learning-engine §15). */
   if (minutes < SESSION_MIN_MINUTES) {
+    const learnedIds = plan.requiredGrammarIds.filter((id) => {
+      const m = byId.get(id);
+      return m && m.state !== 'UNSEEN';
+    });
     const due = env.selectDue(3);
-    const reviewItems = buildReviewItems(due, env, seed);
+    const reviewItems = buildReviewItems(due, env, seed, learnedIds);
     const blocks = emptyBlocks();
     setBlock(blocks, 'REVIEW', Math.max(1, minutes - 2), reviewItems);
     setBlock(blocks, 'ANALYZE_ERROR', Math.min(2, minutes), buildAnalyzeItems(env, 1));
@@ -282,9 +286,13 @@ export function buildDailySession(input: SessionInput): DailySession {
   const blocks = emptyBlocks();
 
   /* REVIEW */
+  const alreadyLearned = plan.requiredGrammarIds.filter((id) => {
+    const m = byId.get(id);
+    return m && m.state !== 'UNSEEN';
+  });
   const reviewCapacity = capacityOf('REVIEW', budgets.REVIEW, timeline);
   const due = env.selectDue(reviewCapacity);
-  setBlock(blocks, 'REVIEW', budgets.REVIEW, buildReviewItems(due, env, seed));
+  setBlock(blocks, 'REVIEW', budgets.REVIEW, buildReviewItems(due, env, seed, alreadyLearned));
 
   /* LEARN — ưu tiên cùng family với mẫu vừa học 2 ngày qua */
   const recentFamilies = new Set(input.env.recentlyLearnedGrammarIds.flatMap((id) => env.familiesOf(id)));
@@ -322,13 +330,7 @@ export function buildDailySession(input: SessionInput): DailySession {
    * đã học từ trước (state ≠ UNSEEN) CỘNG các mẫu học ngay trong buổi này.
    * Thiếu vế thứ hai thì RECALL sẽ không có câu cho mẫu vừa dạy.
    */
-  const introducedGrammarIds = [
-    ...plan.requiredGrammarIds.filter((id) => {
-      const m = byId.get(id);
-      return m && m.state !== 'UNSEEN';
-    }),
-    ...learnIds,
-  ];
+  const introducedGrammarIds = [...alreadyLearned, ...learnIds];
 
   /* RECALL — mỗi mẫu vừa học phải có ≥ 1 câu recall */
   const recallTarget = Math.max(learnIds.length, capacityOf('RECALL', budgets.RECALL, timeline));
@@ -452,14 +454,21 @@ function recentReviewIds(due: ScoredItem[]): string[] {
   return due.slice(0, 3).map((d) => d.grammarId);
 }
 
-function buildReviewItems(due: ScoredItem[], env: SessionEnv, seed: number): SessionItem[] {
+function buildReviewItems(
+  due: ScoredItem[],
+  env: SessionEnv,
+  seed: number,
+  introducedGrammarIds: string[],
+): SessionItem[] {
   const items: SessionItem[] = [];
   for (const [i, item] of due.entries()) {
     if (item.mixedOnly) continue; // EXAM_READY chỉ vào mixed set khi gần thi
     const pick = env.pickQuestions(
       {
-        // REVIEW đã khoá vào đúng một mẫu đang đến hạn ôn, nên mẫu đó chắc chắn đã học.
+        // `grammarIds` lọc bằng .some(), nên một câu so sánh nhắm 3 mẫu vẫn lọt qua khi
+        // CHỈ MỘT mẫu đến hạn ôn. Phải kèm H9 để hai mẫu còn lại cũng đã được dạy.
         seedSalt: `review-${item.grammarId}-${seed + i}`,
+        introducedGrammarIds,
         grammarIds: [item.grammarId],
         delivery: item.suggestedDelivery,
       },

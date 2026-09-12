@@ -657,8 +657,14 @@ trong ba mẫu thì không so được gì.
 **cộng** các mẫu học ngay trong buổi đó — thiếu vế thứ hai thì RECALL sẽ không có câu cho
 mẫu vừa dạy. `buildAdHocDrill` (Trap Lab, `/practice`) cũng nhận danh sách này.
 
-Cố ý KHÔNG áp cho: bài xếp lớp (`buildPlacementQuiz`) vì mục đích của nó là hỏi mẫu chưa học,
-và khối REVIEW vì nó vốn đã khoá vào đúng một mẫu đang đến hạn ôn.
+Cố ý KHÔNG áp cho: bài xếp lớp (`buildPlacementQuiz`) vì mục đích của nó là hỏi mẫu chưa học.
+
+> ⚠️ **Sửa 2026-09-12 — khối REVIEW ban đầu bị bỏ sót, và lý do bỏ sót là SAI.**
+> Lập luận cũ: "REVIEW đã khoá vào đúng một mẫu đang đến hạn ôn nên mẫu đó chắc chắn đã học".
+> Đúng về mẫu ĐẾN HẠN, nhưng `criteria.grammarIds` lọc bằng `.some()` — một câu so sánh nhắm
+> ba mẫu vẫn lọt qua khi CHỈ MỘT mẫu khớp. Người học vì vậy gặp mẫu chưa dạy ngay trong phần ôn.
+> `buildReviewItems` nay nhận và truyền `introducedGrammarIds`. Thà khối ôn tập ngắn đi còn hơn
+> hỏi mẫu chưa dạy.
 
 
 

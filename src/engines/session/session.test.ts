@@ -522,3 +522,54 @@ describe('Khối Chữa lỗi phải phản ánh câu VỪA làm, không phải 
     }
   });
 });
+
+describe('Khối ÔN TẬP cũng không được chứa mẫu chưa học (H9)', () => {
+  /**
+   * Bẫy đã từng sập: `criteria.grammarIds` lọc bằng .some(), nên một câu so sánh
+   * nhắm 3 mẫu vẫn lọt vào khối REVIEW khi CHỈ MỘT mẫu đến hạn ôn.
+   * Ép kho câu chỉ còn đúng câu so sánh đó để tình huống chắc chắn xảy ra.
+   */
+  it('mẫu đến hạn ôn nằm trong bộ so sánh, hai mẫu kia chưa học → câu đó không được ra', () => {
+    const all = listRawGrammar();
+    const mp = listQuestions().find(
+      (q) => q.type === 'MINIMAL_PAIR' && q.targetGrammarIds.length >= 3,
+    )!;
+    const dueId = mp.targetGrammarIds[0];
+
+    const mastery = all.map((g) =>
+      g.id === dueId
+        ? { ...createInitialMastery(g.id), state: 'RECOGNIZED' as const, baseRank: 'RECOGNIZED' as const }
+        : createInitialMastery(g.id),
+    );
+
+    const env = makeEnv({
+      selectDue: () => [
+        {
+          grammarId: dueId,
+          priority: 0.9,
+          reasons: [{ key: 'review.reason.state', params: {} }],
+          suggestedDelivery: 'PRACTICE' as const,
+          mixedOnly: false,
+          pinned: false,
+        },
+      ],
+      // Kho chỉ có đúng câu so sánh nhiều mẫu — không còn lựa chọn nào an toàn.
+      pickQuestions: (criteria, count) =>
+        pickQuestions(
+          [mp],
+          { phase: 'PHASE_2_COMPARE', mode: 'NORMAL', delivery: 'PRACTICE', daysUntilExam: 40, seed: 42, now: NOW, ...criteria },
+          emptyHistory,
+          count,
+          { grammarById: getGrammar },
+        ),
+    });
+
+    const s = buildDailySession(baseInput({ allMastery: mastery, env }));
+    const reviewQuestionIds = (s.blocks.find((b) => b.type === 'REVIEW')?.items ?? []).flatMap((i) =>
+      i.kind === 'QUESTION' || i.kind === 'TRAP_DRILL' ? [i.questionId] : [],
+    );
+
+    // Thà khối ôn tập rỗng còn hơn hỏi mẫu chưa dạy.
+    expect(reviewQuestionIds).not.toContain(mp.id);
+  });
+});
