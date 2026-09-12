@@ -236,8 +236,19 @@ export function applyAttempt(
   let baseRank: BaseRank | null = mastery.baseRank;
   let reason = '';
 
-  /* UNSEEN → INTRODUCED: chạm mẫu lần đầu qua learn card + mini recall */
+  /* UNSEEN → INTRODUCED: chạm mẫu lần đầu qua learn card + mini recall.
+   *
+   * CLAUDE.md §5.1 đòi ĐỦ HAI vế: learn card XONG **và** trả lời mini-recall.
+   * Trước đây chỉ kiểm vế sau — nên một câu lọt từ chỗ khác (đề mock, câu so sánh
+   * nhắm nhiều mẫu) cũng đủ đánh dấu "đã dạy", với lý do ghi trong lịch sử là SAI.
+   * Hậu quả nặng: mẫu đó thoát UNSEEN nên LEARN không bao giờ dạy nó nữa.
+   * Không có learn card thì ghi bộ đếm, KHÔNG đổi state. */
   if (state === 'UNSEEN') {
+    if (!mastery.learnCardDoneAt) {
+      next.state = 'UNSEEN';
+      next.baseRank = null;
+      return { mastery: next };
+    }
     state = 'INTRODUCED';
     baseRank = 'INTRODUCED';
     reason = 'Đã học thẻ và trả lời mini-recall lần đầu.';
@@ -359,6 +370,31 @@ export function applyDecay(mastery: GrammarMastery, timeline: Timeline, now: Dat
   const threshold = staleThresholdDays(timeline.currentPhase, timeline.mode);
   const isStale = daysAgo(mastery.lastReviewedAt, now) > threshold;
   return isStale === mastery.isStale ? mastery : { ...mastery, isStale };
+}
+
+/**
+ * Sửa dữ liệu cũ: mẫu bị đánh dấu đã dạy mà THỰC TẾ chưa bao giờ có learn card.
+ *
+ * Sinh ra từ lỗi ở trên cộng với việc câu hỏi mẫu chưa học lọt vào buổi học.
+ * Chỉ đụng đến bậc thấp nhất (`INTRODUCED`): từ `RECOGNIZED` trở lên nghĩa là người
+ * học đã chứng minh được qua nhiều ngày — xoá đi là phá tiến bộ thật.
+ * Attempt KHÔNG bị xoá (append-only, CLAUDE.md §9); chỉ trả mẫu về hàng chờ dạy.
+ * Pure — không I/O.
+ */
+export function repairUntaught(rows: GrammarMastery[], now: Date): GrammarMastery[] {
+  return rows.map((m) => {
+    if (m.state === 'UNSEEN' || m.learnCardDoneAt) return m;
+    if ((m.baseRank ?? 'INTRODUCED') !== 'INTRODUCED') return m;
+    const fresh = createInitialMastery(m.grammarId);
+    return {
+      ...fresh,
+      ...(m.placementResult ? { placementResult: m.placementResult } : {}),
+      stateHistory: [
+        ...m.stateHistory,
+        event(m.state, 'UNSEEN', now.toISOString(), 'Chưa từng học thẻ mẫu này — trả về hàng chờ để được dạy tử tế.'),
+      ],
+    };
+  });
 }
 
 /** Đánh dấu đã hoàn thành learn card (điều kiện đầu của UNSEEN → INTRODUCED). */

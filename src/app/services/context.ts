@@ -4,7 +4,7 @@ import type { LearnerProfile, StudyPlan, Timeline } from '@/domain/learner';
 import type { WeaknessProfile } from '@/domain/analytics';
 import type { Confidence, QuestionType } from '@/domain/enums';
 import { computeTimeline } from '@/engines/phase';
-import { createInitialMastery, applyDecay } from '@/engines/mastery';
+import { createInitialMastery, applyDecay, repairUntaught } from '@/engines/mastery';
 import { buildWeaknessProfile, emptyWeaknessProfile } from '@/engines/error';
 import { generatePlan, shouldReplan } from '@/engines/roadmap';
 import { weightedErrorScore, type GrammarPrioritySignals, type PriorityContext } from '@/engines/review';
@@ -34,7 +34,13 @@ export async function ensureMasteryRows(): Promise<GrammarMastery[]> {
     .filter((g) => !known.has(g.id))
     .map((g) => createInitialMastery(g.id));
   if (missing.length) await masteryRepo.putMany(missing);
-  return [...existing, ...missing];
+
+  // Trả về hàng chờ những mẫu bị đánh dấu "đã dạy" mà chưa hề có learn card.
+  const repaired = repairUntaught(existing, new Date());
+  const changed = repaired.filter((m, i) => m !== existing[i]);
+  if (changed.length) await masteryRepo.putMany(changed);
+
+  return [...repaired, ...missing];
 }
 
 export function buildSignals(

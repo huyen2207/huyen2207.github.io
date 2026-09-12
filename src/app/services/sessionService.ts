@@ -43,9 +43,22 @@ export function exposureHistoryFrom(attempts: Attempt[], todayKey: string): Expo
   };
 }
 
-/** Nguyên liệu cho block ANALYZE_ERROR: lỗi hôm nay + top lỗi 7 ngày; nếu không có lỗi thì đổi nội dung. */
+/**
+ * Nguyên liệu cho block ANALYZE_ERROR: lỗi hôm nay + top lỗi 7 ngày.
+ *
+ * Chỉ nhận lỗi thuộc mẫu ĐÃ ĐƯỢC DẠY (H9). Chữa lỗi một mẫu người học chưa từng
+ * học không dạy được gì — nó chỉ bày ra mẫu lạ ở đúng lúc người học đang mệt.
+ * Lỗi loại này vẫn nằm trong lịch sử, chỉ không được đưa lên màn chữa lỗi.
+ */
 export function buildErrorMaterials(ctx: EngineContext): TodayErrorMaterial[] {
-  const today = ctx.attempts.filter((a) => a.dayKey === ctx.timeline.todayKey);
+  const introduced = new Set(ctx.mastery.filter((m) => m.state !== 'UNSEEN').map((m) => m.grammarId));
+  const onTaughtGrammar = (a: Attempt): boolean => {
+    const q = getQuestion(a.questionId);
+    if (!q) return introduced.has(a.grammarId);
+    return q.targetGrammarIds.every((g) => introduced.has(g));
+  };
+
+  const today = ctx.attempts.filter((a) => a.dayKey === ctx.timeline.todayKey && onTaughtGrammar(a));
   const out: TodayErrorMaterial[] = [];
 
   const todayWrong = today.filter((a) => !a.isCorrect);
@@ -53,7 +66,9 @@ export function buildErrorMaterials(ctx: EngineContext): TodayErrorMaterial[] {
     out.push({ attemptIds: todayWrong.map((a) => a.attemptId), noteKey: 'analyze.todayErrors' });
   }
 
-  const week = ctx.attempts.filter((a) => daysAgo(a.timestamp, ctx.now) <= 7 && !a.isCorrect);
+  const week = ctx.attempts.filter(
+    (a) => daysAgo(a.timestamp, ctx.now) <= 7 && !a.isCorrect && onTaughtGrammar(a),
+  );
   const records = buildErrorRecords(week);
   const recurring = records.filter((r) => r.recurrenceCount >= 2).slice(0, 2);
   for (const r of recurring) {

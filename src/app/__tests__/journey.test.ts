@@ -141,6 +141,10 @@ describe('Hành trình Month 2 — nhầm mẫu gần nghĩa', () => {
     let ctx = (await loadContext(START))!;
     await getOrCreateTodaySession(ctx);
 
+    // Phải học thẻ trước — mẫu chưa dạy thì không được lên thang mastery (§5.1).
+    await markLearnCard(ctx, 'ni-itatte', START);
+    ctx = (await loadContext(START))!;
+
     const q = getQuestion('q-ni-itatte-cloze-01')!;
     const confusingChoice = q.choices.find((c) => c.confusedWithGrammarId === 'ni-itatte-wa')!;
 

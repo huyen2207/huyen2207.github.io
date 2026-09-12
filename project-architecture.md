@@ -659,6 +659,11 @@ mẫu vừa dạy. `buildAdHocDrill` (Trap Lab, `/practice`) cũng nhận danh s
 
 Cố ý KHÔNG áp cho: bài xếp lớp (`buildPlacementQuiz`) vì mục đích của nó là hỏi mẫu chưa học.
 
+> ⚠️ **Sửa 2026-09-12 (lần 2) — màn CHỮA LỖI cũng bị sót.**
+> `buildErrorMaterials` lọc câu sai theo ngày, không theo "mẫu đã dạy hay chưa". Người học vì vậy
+> bị lôi ra chữa những mẫu chưa từng học. Nay lọc theo `targetGrammarIds.every(đã dạy)`.
+> Attempt vẫn nằm nguyên trong lịch sử (§9 append-only) — chỉ không lên màn chữa lỗi.
+
 > ⚠️ **Sửa 2026-09-12 — khối REVIEW ban đầu bị bỏ sót, và lý do bỏ sót là SAI.**
 > Lập luận cũ: "REVIEW đã khoá vào đúng một mẫu đang đến hạn ôn nên mẫu đó chắc chắn đã học".
 > Đúng về mẫu ĐẾN HẠN, nhưng `criteria.grammarIds` lọc bằng `.some()` — một câu so sánh nhắm
@@ -1115,6 +1120,23 @@ và `session.test.ts` kiểm tra `KNOWN` bị đẩy khỏi nhóm học đầu n
 > chúng không thể lên `EXAM_READY`. Xem hàng đầu bảng ưu tiên ở `§18`.
 
 ---
+
+### 17.x MasteryEngine — cổng UNSEEN → INTRODUCED
+
+CLAUDE.md §5.1 đòi **đủ hai vế**: learn card XONG **và** trả lời mini-recall.
+Bản đầu chỉ kiểm vế sau: bất kỳ câu trả lời nào cũng đủ đẩy mẫu ra khỏi `UNSEEN`,
+với lý do ghi vào `stateHistory` là *"Đã học thẻ và trả lời mini-recall lần đầu"* — một câu SAI SỰ THẬT.
+`markLearnCardDone` vẫn được gọi đúng chỗ, nhưng `learnCardDoneAt` chưa bao giờ được **đọc**.
+
+Hậu quả dây chuyền, nặng hơn lỗi gốc: mẫu bị đánh dấu đã dạy → LEARN bỏ qua nó vĩnh viễn
+→ người học **không bao giờ được dạy** mẫu đó, nhưng vẫn bị hỏi nó trong REVIEW và chữa lỗi.
+
+Nay `applyAttempt` giữ nguyên `UNSEEN` khi thiếu `learnCardDoneAt` (bộ đếm vẫn ghi).
+`repairUntaught()` (pure) dọn dữ liệu cũ, chạy trong `ensureMasteryRows`, idempotent.
+Chỉ đụng bậc `INTRODUCED` — từ `RECOGNIZED` trở lên là tiến bộ đã chứng minh qua nhiều ngày, không phá.
+
+> M2 ("không bao giờ rơi về UNSEEN") vẫn nguyên vẹn: nó nói về **tụt cấp** từ trên thang xuống.
+> Mẫu chưa học thẻ thì chưa từng lên thang.
 
 ## 18. BẢNG ƯU TIÊN HOÀN THIỆN (sau lô 3b, 2026-09-11)
 

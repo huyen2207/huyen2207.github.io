@@ -6,6 +6,7 @@ import {
   canPromoteToExamReady,
   createInitialMastery,
   markLearnCardDone,
+  repairUntaught,
 } from './index';
 import type { Attempt } from '@/domain/attempt';
 import type { GrammarMastery } from '@/domain/mastery';
@@ -85,6 +86,35 @@ describe('MasteryEngine — transitions CLAUDE.md §5.1', () => {
     const m = run([att({ day: '2026-09-01', isCorrect: false })]);
     expect(m.state).toBe('INTRODUCED');
     expect(m.stateHistory[0].reason).not.toBe('');
+  });
+
+  it('CHƯA học thẻ thì trả lời bao nhiêu câu cũng không được coi là đã dạy', () => {
+    // Câu lọt từ chỗ khác (đề mock, câu so sánh nhắm nhiều mẫu) không phải là bài học.
+    const m = run(
+      [
+        att({ day: '2026-09-01', isCorrect: false }),
+        att({ day: '2026-09-02', isCorrect: true }),
+        att({ day: '2026-09-03', isCorrect: true }),
+      ],
+      q(),
+      createInitialMastery(GID),
+    );
+    expect(m.state).toBe('UNSEEN');
+    expect(m.baseRank).toBeNull();
+    expect(m.stateHistory).toHaveLength(0);
+  });
+
+  it('repairUntaught trả mẫu chưa từng học thẻ về hàng chờ, nhưng không đụng tiến bộ thật', () => {
+    const now = new Date('2026-09-12T00:00:00Z');
+    const gia = run([att({ day: '2026-09-01' })]); // có learn card → INTRODUCED thật
+    const gian = { ...createInitialMastery('g-gian'), state: 'INTRODUCED' as const, baseRank: 'INTRODUCED' as const };
+    const cao = { ...createInitialMastery('g-cao'), state: 'RECOGNIZED' as const, baseRank: 'RECOGNIZED' as const };
+
+    const [a, b, c] = repairUntaught([gia, gian, cao], now);
+    expect(a.state).toBe('INTRODUCED'); // có learnCardDoneAt → giữ nguyên
+    expect(b.state).toBe('UNSEEN'); // bịa ra do lỗi → trả về hàng chờ
+    expect(b.stateHistory.at(-1)?.to).toBe('UNSEEN');
+    expect(c.state).toBe('RECOGNIZED'); // đã chứng minh qua nhiều ngày → không phá
   });
 
   it('INTRODUCED → RECOGNIZED cần 3 lần đúng trải ≥ 2 ngày', () => {
@@ -261,7 +291,7 @@ describe('MasteryEngine — bất biến', () => {
   });
 
   it('M7 — mọi lần đổi state đều sinh đúng 1 event có reason', () => {
-    const m = createInitialMastery(GID);
+    const m = markLearnCardDone(createInitialMastery(GID), new Date('2026-09-01T00:00:00Z'));
     const res = applyAttempt(m, att({ day: '2026-09-01' }), q(), new Date('2026-09-01'));
     expect(res.event).toBeDefined();
     expect(res.event!.reason.length).toBeGreaterThan(0);
@@ -274,7 +304,9 @@ describe('MasteryEngine — bất biến', () => {
     const confs: Confidence[] = ['GUESS', 'UNSURE', 'CONFIDENT'];
 
     for (let run = 0; run < 500; run++) {
-      let m = createInitialMastery(GID);
+      // M2 nói về TỤT CẤP: đã lên thang thì sàn là INTRODUCED. Mẫu chưa học thẻ thì
+      // chưa lên thang, nên phải xuất phát từ trạng thái đã học thẻ mới đúng ý M2.
+      let m = markLearnCardDone(createInitialMastery(GID), new Date('2026-08-31T00:00:00Z'));
       const prior: Attempt[] = [];
       const len = 3 + Math.floor(rnd() * 20);
       for (let i = 0; i < len; i++) {
