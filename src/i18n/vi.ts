@@ -580,6 +580,7 @@ const vi: Record<string, string> = {
   'settings.resetStep1': 'Xoá toàn bộ dữ liệu học?',
   'settings.resetStep2': 'Không thể hoàn tác. Xác nhận lần cuối.',
   'settings.redoOnboarding': 'Thiết lập lại lộ trình',
+  'settings.updateSection': 'Cập nhật ứng dụng',
   'settings.appVersion': 'Phiên bản ứng dụng: {version}',
   'settings.forceUpdate': 'Nạp lại bản mới nhất',
   'settings.forceUpdateNote':

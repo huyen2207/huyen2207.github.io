@@ -94,6 +94,27 @@ export default function SettingsPage() {
 
       <section className="mb-5">
         <h2 className="mb-2 text-[13px] font-semibold uppercase tracking-wide" style={{ color: 'var(--ink-faint)' }}>
+          {t('settings.updateSection')}
+        </h2>
+        <Card className="px-4 py-3">
+          <p className="text-[13px]" style={{ color: 'var(--ink-soft)' }}>
+            {t('settings.appVersion', { version: BUILD_VERSION })}
+          </p>
+          <p className="mt-1 text-[13px] leading-relaxed" style={{ color: 'var(--ink-faint)' }}>
+            {t('settings.forceUpdateNote')}
+          </p>
+          <button
+            type="button"
+            onClick={() => void forceUpdate()}
+            className="tap mt-2 w-full rounded-lg border py-2.5 text-center text-[14px] hairline"
+            style={{ background: 'var(--paper-raised)', color: 'var(--accent)' }}
+          >
+            {t('settings.forceUpdate')}
+          </button>
+        </Card>
+      </section>
+      <section className="mb-5">
+        <h2 className="mb-2 text-[13px] font-semibold uppercase tracking-wide" style={{ color: 'var(--ink-faint)' }}>
           {t('onboarding.roadmap.title')}
         </h2>
         <Card className="divide-y px-4 hairline">
@@ -223,24 +244,6 @@ export default function SettingsPage() {
         </Card>
       </section>
 
-      <section className="mb-5">
-        <Card className="px-4 py-3">
-          <p className="text-[13px]" style={{ color: 'var(--ink-soft)' }}>
-            {t('settings.appVersion', { version: BUILD_VERSION })}
-          </p>
-          <p className="mt-1 text-[13px] leading-relaxed" style={{ color: 'var(--ink-faint)' }}>
-            {t('settings.forceUpdateNote')}
-          </p>
-          <button
-            type="button"
-            onClick={() => void forceUpdate()}
-            className="tap mt-2 w-full rounded-lg border py-2.5 text-center text-[14px] hairline"
-            style={{ background: 'var(--paper-raised)', color: 'var(--accent)' }}
-          >
-            {t('settings.forceUpdate')}
-          </button>
-        </Card>
-      </section>
     </AppShell>
   );
 }
