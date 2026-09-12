@@ -421,8 +421,12 @@ const vi: Record<string, string> = {
   'practice.goalNewNote': 'Đi trước lộ trình. Mai buổi học tự nhảy sang mẫu kế tiếp.',
   'practice.goalReview': 'Ôn cho nhuần mẫu đã học',
   'practice.goalReviewNote': 'Luyện lại các mẫu bạn đã học, theo điểm yếu hiện tại.',
-  'practice.newQuota': 'Hôm nay còn học thêm được {n} mẫu mới.',
-  'practice.newQuotaFull': 'Hôm nay đã học đủ {cap} mẫu mới — trần cứng của hệ thống. Thêm nữa thì nhớ kém đi, không phải nhanh hơn. Hãy chuyển sang ôn.',
+  'practice.newToday': 'Hôm nay đã học {done}/{target} mẫu mới. Lộ trình còn {left} mẫu chưa học.',
+  'practice.newAhead':
+    'Bạn đã đạt mục tiêu hôm nay. Học thêm bây giờ thì mục tiêu các buổi sau tự trừ đi phần này — hôm nào bận cũng không đứt lộ trình.',
+  'practice.beyondCap':
+    'Bạn đã học {done} mẫu mới hôm nay, vượt mốc {cap} mà hệ thống tự xếp. Từ đây là bạn tự quyết: học thêm nữa thì mỗi mẫu sẽ nhớ nông hơn, và ngày mai phần ôn sẽ nặng lên. Nếu vẫn còn tỉnh táo thì cứ đi tiếp.',
+  'practice.beyondCapGo': 'Tôi hiểu, vẫn học tiếp',
   'practice.newDone': 'Xong phần học thêm. Các mẫu này đã vào lịch ôn.',
   'practice.noNewLeft': 'Lộ trình không còn mẫu nào chưa học.',
   'practice.newCount': 'Số mẫu',

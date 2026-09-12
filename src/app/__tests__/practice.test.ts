@@ -5,7 +5,7 @@ import {
   buildDrill,
   buildExtraLearnBlocks,
   getOrCreateTodaySession,
-  newGrammarQuotaLeft,
+  newGrammarToday,
 } from '@/app/services/sessionService';
 import { markLearnCard, gradeAnswer, persistAnswer } from '@/app/services/answerService';
 import { getQuestion } from '@/content/repository';
@@ -95,23 +95,31 @@ describe('/practice — học thêm mẫu mới khi còn thời gian', () => {
     expect(recall.items.length).toBeGreaterThan(0);
   });
 
-  it('không vượt trần 8 mẫu mới/ngày dù người học đòi thêm (CLAUDE.md §8.2)', async () => {
+  it('người học chủ động thì KHÔNG bị chặn ở mốc 8 mẫu/ngày (CLAUDE.md §8.2 sau sửa)', async () => {
     const ctx = await studyWholeDay();
-    const learnedToday = NEW_PER_DAY_HARD_CAP - newGrammarQuotaLeft(ctx);
-    const blocks = buildExtraLearnBlocks(ctx, 99);
-    const asked = blocks.find((b) => b.type === 'LEARN')?.items.length ?? 0;
-    expect(learnedToday + asked).toBeLessThanOrEqual(NEW_PER_DAY_HARD_CAP);
+    const asked = buildExtraLearnBlocks(ctx, NEW_PER_DAY_HARD_CAP + 4).find((b) => b.type === 'LEARN')!;
+    expect(asked.items.length).toBeGreaterThan(NEW_PER_DAY_HARD_CAP);
   });
 
-  it('hết quota thì trả về rỗng, không lặng lẽ dạy quá trần', async () => {
+  it('nhưng buổi học do HỆ THỐNG sinh ra thì vẫn không quá 8 mẫu mới', async () => {
     const ctx = await studyWholeDay();
-    const full: EngineContext = {
+    const session = await getOrCreateTodaySession(ctx, true);
+    const learn = session.blocks.find((b) => b.type === 'LEARN')!;
+    expect(learn.items.length).toBeLessThanOrEqual(NEW_PER_DAY_HARD_CAP);
+  });
+
+  it('học trước thì mục tiêu buổi sau tự trừ đi, không lệch lộ trình', async () => {
+    const ctx = await studyWholeDay();
+    const before = newGrammarToday(ctx);
+    // Lộ trình chia đều số mẫu CHƯA HỌC cho số buổi còn lại — học trước thì tử số giảm.
+    const after = newGrammarToday({
       ...ctx,
-      mastery: ctx.mastery.map((m, i) =>
-        i < NEW_PER_DAY_HARD_CAP ? { ...m, learnCardDoneAt: START.toISOString() } : m,
+      mastery: ctx.mastery.map((m) =>
+        ctx.plan.requiredGrammarIds.slice(0, 40).includes(m.grammarId) && m.state === 'UNSEEN'
+          ? { ...m, state: 'INTRODUCED' as const, baseRank: 'INTRODUCED' as const }
+          : m,
       ),
-    };
-    expect(newGrammarQuotaLeft(full)).toBe(0);
-    expect(buildExtraLearnBlocks(full, 3)).toHaveLength(0);
+    });
+    expect(after.unseenLeft).toBeLessThan(before.unseenLeft);
   });
 });

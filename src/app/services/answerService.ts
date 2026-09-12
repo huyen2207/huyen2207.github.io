@@ -209,6 +209,9 @@ function contrastWin(
 export async function markLearnCard(ctx: EngineContext, grammarId: string, now: Date): Promise<void> {
   const m = ctx.mastery.find((x) => x.grammarId === grammarId);
   if (!m) return;
+  // Chỉ đóng dấu LẦN ĐẦU. Xem lại thẻ cũ không được tính là "hôm nay học mẫu mới",
+  // nếu không thì việc dựng lại buổi học sẽ ăn mất quota mẫu mới của ngày hôm đó.
+  if (m.learnCardDoneAt) return;
   const next = {
     ...m,
     learnCardDoneAt: now.toISOString(),

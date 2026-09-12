@@ -264,7 +264,11 @@ Rapid review → Trap drill → Timed set → Error analysis → Weak-point dril
 ### 8.2 Ràng buộc khối lượng
 
 - Session **không được vượt** `M` quá 15%. Nếu vượt → cắt bớt block ưu tiên thấp nhất, **không** cắt `ANALYZE_ERROR`.
-- Số grammar mới/ngày = `ceil(unseenRequired / learningDaysLeftInPhase1)`, **trần cứng 8/ngày** (quá 8 mẫu N1/ngày là ảo tưởng).
+- Số grammar mới/ngày = `ceil(unseenRequired / learningDaysLeftInPhase1)`, **trần 8/ngày cho buổi học do hệ thống sinh ra** (quá 8 mẫu N1/ngày là ảo tưởng).
+  - Trần này ràng buộc **hệ thống**, không ràng buộc **người học**. Hệ thống không bao giờ tự xếp quá 8 mẫu mới vào một buổi.
+  - Người học chủ động bấm "Học thêm mẫu mới" ở `/practice` thì **không bị chặn**. Qua mốc 8 phải nhắc một lần, nói rõ đánh đổi, rồi vẫn cho đi tiếp. Quyết định thuộc về người học.
+  - Học trước không làm lệch lộ trình: `newPerDay` tính từ số mẫu **chưa học** còn lại, nên hôm sau mục tiêu tự trừ đi phần đã học trước.
+  - *(Sửa 2026-09-12 theo quyết định của người học — phương án B. Lý do: những hôm rảnh học bù trước để hôm bận không đứt lộ trình. Bản gốc chặn cứng cả hai phía.)*
 - Nếu `reviewBacklog > 1.5 × dailyReviewCapacity` → **đóng băng LEARN hôm nay**, dồn cho REVIEW. Hiển thị lý do rõ ràng cho người học.
 
 ---

@@ -649,18 +649,18 @@ export function displayGroups(session: DailySession): Array<{ key: string; minut
  * Lấy tiếp các mẫu UNSEEN theo đúng thứ tự lộ trình, nên học trước hôm nay thì mai
  * buổi học tự nhảy sang mẫu kế — không lệch kế hoạch, không học trùng.
  *
- * VẪN đếm vào trần cứng 8 mẫu mới/ngày (CLAUDE.md §8.2). Đây là giới hạn cố ý:
- * quá 8 mẫu N1 trong một ngày là đổi cảm giác tiến bộ lấy trí nhớ. Hết quota thì
- * trả về rỗng để tầng trên mời người học chuyển sang ôn.
+ * KHÔNG chặn ở trần 8 mẫu/ngày. Trần đó ràng buộc buổi học do hệ thống sinh ra
+ * (`learnCount` bên trên), không ràng buộc người học tự bấm học thêm — CLAUDE.md §8.2
+ * sau khi sửa theo quyết định của người học. Tầng UI có trách nhiệm nhắc một lần khi
+ * vượt mốc, nhưng quyền quyết định là của người học.
  */
 export function buildExtraLearn(
   plan: StudyPlan,
   allMastery: GrammarMastery[],
   env: SessionEnv,
-  learnedToday: number,
   requested: number,
 ): SessionBlock[] {
-  const take = Math.min(requested, Math.max(0, NEW_PER_DAY_HARD_CAP - learnedToday));
+  const take = Math.max(0, requested);
   if (take <= 0) return [];
 
   const byId = new Map(allMastery.map((m) => [m.grammarId, m]));

@@ -1150,8 +1150,22 @@ Nay `PickCriteria.relaxRecency` bỏ H4/H5 cho drill ad-hoc. H9 và mọi luật
 mẫu chưa biết là vô nghĩa. UI nay nói rõ lý do thay vì màn trắng.
 
 **`buildExtraLearn` — học thêm mẫu mới.** Lấy tiếp mẫu UNSEEN theo thứ tự lộ trình nên
-không lệch kế hoạch. Vẫn đếm vào trần cứng `NEW_PER_DAY_HARD_CAP = 8` (CLAUDE.md §8.2);
-hết quota thì trả rỗng và UI mời chuyển sang ôn. Mỗi thẻ học kèm câu recall (§11).
+không lệch kế hoạch. Mỗi thẻ học kèm câu recall (§11).
+
+> **Sửa 2026-09-12 — quyết định của người học (phương án B).** `NEW_PER_DAY_HARD_CAP = 8`
+> nay chỉ ràng buộc **buổi học do hệ thống sinh ra** (`learnCount` trong `buildDailySession`).
+> `buildExtraLearn` KHÔNG chặn: người học chủ động bấm thì được học tiếp.
+> UI nhắc **một lần** khi vượt mốc (`practice.beyondCap` + nút xác nhận) rồi thôi.
+>
+> Học trước không làm lệch lộ trình vì `newPerDay = ceil(unseenRequired / learningDaysLeft)`
+> — tử số là số mẫu **chưa học**, nên học trước 3 mẫu thì hôm sau mục tiêu tự tụt 3.
+> Cơ chế này đã có sẵn từ đầu; thứ duy nhất từng chặn là con số 8.
+>
+> `newGrammarToday()` trả về `{learnedToday, target, remainingToTarget, beyondCap, unseenLeft}`
+> để UI nói đúng tình hình thay vì chỉ chặn.
+>
+> Kèm theo: `markLearnCard` nay chỉ đóng dấu `learnCardDoneAt` **lần đầu**. Trước đó xem lại
+> thẻ cũ cũng bị tính là "hôm nay học mẫu mới", nên dựng lại buổi học ăn mất quota của ngày.
 
 ## 18. BẢNG ƯU TIÊN HOÀN THIỆN (sau lô 3b, 2026-09-11)
 

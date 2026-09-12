@@ -3,7 +3,7 @@ import { useAppStore } from '@/app/stores/appStore';
 import {
   buildDrill,
   buildExtraLearnBlocks,
-  newGrammarQuotaLeft,
+  newGrammarToday,
 } from '@/app/services/sessionService';
 import { markLearnCard } from '@/app/services/answerService';
 import { getGrammarView, getQuestion } from '@/content/repository';
@@ -35,7 +35,9 @@ export default function PracticePage() {
   const [items, setItems] = useState<SessionItem[] | null>(null);
   const [pos, setPos] = useState(0);
 
-  const quota = ctx ? newGrammarQuotaLeft(ctx) : 0;
+  const [capAck, setCapAck] = useState(false);
+  const status = ctx ? newGrammarToday(ctx) : null;
+  const canLearnNew = (status?.unseenLeft ?? 0) > 0;
 
   function run(next: SessionItem[]) {
     setItems(next);
@@ -71,7 +73,7 @@ export default function PracticePage() {
           <EmptyState titleKey="practice.emptyTitle" bodyKey="practice.emptyBody" />
           <ThumbBar>
             <div className="space-y-2">
-              {quota > 0 && (
+              {canLearnNew && (
                 <PrimaryButton
                   onClick={() => {
                     setItems(null);
@@ -172,20 +174,47 @@ export default function PracticePage() {
   }
 
   /* ── Học thêm mẫu mới ── */
-  if (goal === 'NEW') {
+  if (goal === 'NEW' && status) {
+    // Vượt mốc 8 thì NHẮC một lần rồi vẫn cho đi tiếp — trần chỉ ràng buộc hệ thống,
+    // không ràng buộc người học (CLAUDE.md §8.2 sau khi sửa).
+    const mustWarn = status.beyondCap && !capAck;
     return (
       <AppShell title={t('practice.title')} back>
-        <Card className="mb-4 px-4 py-3">
+        <Card className="mb-3 px-4 py-3">
           <p className="text-[14px] leading-relaxed">
-            {quota > 0 ? t('practice.newQuota', { n: quota }) : t('practice.newQuotaFull', { cap: NEW_PER_DAY_HARD_CAP })}
+            {t('practice.newToday', {
+              done: status.learnedToday,
+              target: status.target,
+              left: status.unseenLeft,
+            })}
           </p>
         </Card>
 
-        {quota > 0 && (
+        {!canLearnNew && (
+          <Card className="mb-4 px-4 py-3">
+            <p className="text-[14px] leading-relaxed">{t('practice.noNewLeft')}</p>
+          </Card>
+        )}
+
+        {canLearnNew && mustWarn && (
+          <Card className="mb-4 px-4 py-3">
+            <p className="text-[14px] leading-relaxed">
+              {t('practice.beyondCap', { done: status.learnedToday, cap: NEW_PER_DAY_HARD_CAP })}
+            </p>
+          </Card>
+        )}
+
+        {canLearnNew && !mustWarn && status.remainingToTarget === 0 && (
+          <Card className="mb-4 px-4 py-3">
+            <p className="text-[14px] leading-relaxed">{t('practice.newAhead')}</p>
+          </Card>
+        )}
+
+        {canLearnNew && !mustWarn && (
           <div className="mb-4 flex items-center gap-3">
             <span className="text-[14px]">{t('practice.newCount')}</span>
             <div className="flex gap-2">
-              {[1, 2, 3].filter((n) => n <= quota).map((n) => (
+              {[1, 2, 3, 5].filter((n) => n <= status.unseenLeft).map((n) => (
                 <button
                   key={n}
                   type="button"
@@ -206,7 +235,12 @@ export default function PracticePage() {
 
         <ThumbBar>
           <div className="space-y-2">
-            {quota > 0 && <PrimaryButton onClick={startNewLearning}>{t('practice.goalNew')}</PrimaryButton>}
+            {canLearnNew &&
+              (mustWarn ? (
+                <PrimaryButton onClick={() => setCapAck(true)}>{t('practice.beyondCapGo')}</PrimaryButton>
+              ) : (
+                <PrimaryButton onClick={startNewLearning}>{t('practice.goalNew')}</PrimaryButton>
+              ))}
             <button
               type="button"
               onClick={() => setGoal('REVIEW')}

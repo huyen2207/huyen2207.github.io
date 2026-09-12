@@ -255,15 +255,36 @@ export function newGrammarLearnedToday(ctx: EngineContext): number {
   ).length;
 }
 
-/** Quota mẫu mới còn lại hôm nay (CLAUDE.md §8.2 — trần cứng 8/ngày). */
-export function newGrammarQuotaLeft(ctx: EngineContext): number {
-  return Math.max(0, NEW_PER_DAY_HARD_CAP - newGrammarLearnedToday(ctx));
+export interface NewGrammarToday {
+  /** Số mẫu mới đã học thẻ hôm nay. */
+  learnedToday: number;
+  /** Mục tiêu hôm nay theo lộ trình — học trước thì hôm sau mục tiêu tự tụt. */
+  target: number;
+  /** Còn thiếu bao nhiêu mẫu nữa mới đạt mục tiêu hôm nay. */
+  remainingToTarget: number;
+  /** Đã vượt mốc 8 mẫu/ngày — UI phải nhắc một lần, nhưng KHÔNG được chặn. */
+  beyondCap: boolean;
+  /** Lộ trình còn mẫu nào chưa học không. */
+  unseenLeft: number;
+}
+
+/** Tình hình học mẫu mới hôm nay (CLAUDE.md §8.2 sau sửa — trần chỉ ràng buộc hệ thống). */
+export function newGrammarToday(ctx: EngineContext): NewGrammarToday {
+  const learnedToday = newGrammarLearnedToday(ctx);
+  const byId = new Map(ctx.mastery.map((m) => [m.grammarId, m]));
+  return {
+    learnedToday,
+    target: ctx.plan.newPerDay,
+    remainingToTarget: Math.max(0, ctx.plan.newPerDay - learnedToday),
+    beyondCap: learnedToday >= NEW_PER_DAY_HARD_CAP,
+    unseenLeft: ctx.plan.requiredGrammarIds.filter((id) => (byId.get(id)?.state ?? 'UNSEEN') === 'UNSEEN').length,
+  };
 }
 
 /** "Học thêm mẫu mới" ở /practice — đi trước lộ trình, không lệch lộ trình. */
 export function buildExtraLearnBlocks(ctx: EngineContext, requested: number): SessionBlock[] {
   const env = makeSessionEnv(ctx, hashString(`extra-learn|${ctx.timeline.todayKey}|${requested}`));
-  return buildExtraLearn(ctx.plan, ctx.mastery, env, newGrammarLearnedToday(ctx), requested);
+  return buildExtraLearn(ctx.plan, ctx.mastery, env, requested);
 }
 
 export async function sessionAttempts(sessionId: string): Promise<Attempt[]> {
