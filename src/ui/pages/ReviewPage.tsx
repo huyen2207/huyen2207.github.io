@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useAppStore } from '@/app/stores/appStore';
 import { reviewCapacityOf } from '@/app/services/analyticsService';
 import { buildDrill } from '@/app/services/sessionService';
@@ -13,8 +13,17 @@ import { QuestionRunner } from '../components/QuestionRunner';
 
 export default function ReviewPage() {
   const ctx = useAppStore((s) => s.ctx);
+  const refresh = useAppStore((s) => s.refresh);
   const [block, setBlock] = useState<SessionBlock | null>(null);
   const [pos, setPos] = useState(0);
+
+  // Ảnh chụp trạng thái học (`ctx`) chỉ được dựng lúc mở app. Học xong buổi chính rồi
+  // sang đây thì ảnh chụp vẫn là của lúc sáng — những mẫu vừa học hôm nay chưa có trong
+  // danh sách "đã dạy", nên H9 loại sạch câu hỏi và màn hình trống trơn. Phải đọc lại.
+  useEffect(() => {
+    void refresh();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const capacity = ctx ? Math.max(1, reviewCapacityOf(ctx)) : 0;
   const due = useMemo(
@@ -43,7 +52,14 @@ export default function ReviewPage() {
         <AppShell title={t('review.title')} back hideNav>
           <EmptyState titleKey="common.empty" />
           <ThumbBar>
-            <PrimaryButton onClick={() => setBlock(null)}>{t('common.finish')}</PrimaryButton>
+            <PrimaryButton
+              onClick={() => {
+                setBlock(null);
+                void refresh();
+              }}
+            >
+              {t('common.finish')}
+            </PrimaryButton>
           </ThumbBar>
         </AppShell>
       );
@@ -58,7 +74,11 @@ export default function ReviewPage() {
           blockType="REVIEW"
           index={pos}
           total={block.items.length}
-          onNext={() => (pos + 1 >= block.items.length ? setBlock(null) : setPos((p) => p + 1))}
+          onNext={() => {
+            if (pos + 1 < block.items.length) return setPos((p) => p + 1);
+            setBlock(null);
+            void refresh();
+          }}
         />
       </AppShell>
     );

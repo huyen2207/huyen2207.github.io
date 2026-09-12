@@ -1167,6 +1167,18 @@ không lệch kế hoạch. Mỗi thẻ học kèm câu recall (§11).
 > Kèm theo: `markLearnCard` nay chỉ đóng dấu `learnCardDoneAt` **lần đầu**. Trước đó xem lại
 > thẻ cũ cũng bị tính là "hôm nay học mẫu mới", nên dựng lại buổi học ăn mất quota của ngày.
 
+### 17.w `ctx` cũ làm chết `/practice` và `/review`
+
+`ctx` (ảnh chụp hồ sơ + mastery + weakness) chỉ được dựng trong `bootstrap`, tức là **lúc mở
+app**. `refresh()` trước đây chỉ được gọi ở `/settings`, `/analytics` và lúc KẾT THÚC buổi học.
+
+Hệ quả đúng vào luồng người học hay dùng nhất: học xong buổi chính → sang "Luyện thêm" ngay
+trong cùng phiên → `buildDrill` vẫn đọc ảnh chụp lúc sáng, khi các mẫu học hôm nay còn `UNSEEN`.
+H9 loại sạch câu hỏi của chúng → **mọi mục đều ra màn trắng**. Tải lại trang thì hết, nên lỗi
+rất dễ bị đổ nhầm cho bộ nhớ đệm.
+
+`/practice` và `/review` nay gọi `refresh()` khi vào trang và sau mỗi lượt luyện xong.
+
 ### 17.z Nạp bản mới sau deploy (PWA)
 
 **Lỗi âm thầm, tốn nhiều vòng qua lại nhất.** Service worker precache cả `index.html`, nên

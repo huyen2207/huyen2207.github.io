@@ -430,9 +430,12 @@ const vi: Record<string, string> = {
   'practice.newDone': 'Xong phần học thêm. Các mẫu này đã vào lịch ôn.',
   'practice.noNewLeft': 'Lộ trình không còn mẫu nào chưa học.',
   'practice.newCount': 'Số mẫu',
+  'practice.nothingLearnedTitle': 'Bạn chưa học mẫu nào',
+  'practice.nothingLearnedBody':
+    'Phần này ôn lại những mẫu bạn ĐÃ học, nên bây giờ chưa có gì để ôn. Hãy học buổi hôm nay ở tab Hôm nay, hoặc học vài mẫu mới ngay tại đây.',
   'practice.emptyTitle': 'Chưa đủ mẫu đã học cho dạng này',
   'practice.emptyBody':
-    'Bài so sánh chỉ ra khi bạn đã học ĐỦ các mẫu trong cùng một nhóm — so sánh với mẫu chưa biết thì vô nghĩa. Học thêm vài mẫu nữa rồi quay lại.',
+    'Dạng này cần bạn đã học đủ mẫu thì mới ra câu — riêng bài so sánh còn đòi cả nhóm mẫu, vì so với mẫu chưa biết thì vô nghĩa. Học thêm vài mẫu rồi quay lại.',
 
   /* ── Mock ── */
   'mock.title': 'Thi thử phần 文法',

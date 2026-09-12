@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useAppStore } from '@/app/stores/appStore';
 import {
   buildDrill,
@@ -29,6 +29,7 @@ type Goal = 'NEW' | 'REVIEW';
 
 export default function PracticePage() {
   const ctx = useAppStore((s) => s.ctx);
+  const refresh = useAppStore((s) => s.refresh);
   const [goal, setGoal] = useState<Goal | null>(null);
   const [count, setCount] = useState(5);
   const [newCount, setNewCount] = useState(2);
@@ -36,8 +37,17 @@ export default function PracticePage() {
   const [pos, setPos] = useState(0);
 
   const [capAck, setCapAck] = useState(false);
+  // Ảnh chụp trạng thái học (`ctx`) chỉ được dựng lúc mở app. Học xong buổi chính rồi
+  // sang đây thì ảnh chụp vẫn là của lúc sáng — những mẫu vừa học hôm nay chưa có trong
+  // danh sách "đã dạy", nên H9 loại sạch câu hỏi và màn hình trống trơn. Phải đọc lại.
+  useEffect(() => {
+    void refresh();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const status = ctx ? newGrammarToday(ctx) : null;
   const canLearnNew = (status?.unseenLeft ?? 0) > 0;
+  const learnedCount = ctx ? ctx.mastery.filter((m) => m.state !== 'UNSEEN').length : 0;
 
   function run(next: SessionItem[]) {
     setItems(next);
@@ -63,14 +73,20 @@ export default function PracticePage() {
   /* ── Đang chạy ── */
   if (items) {
     const item = items[pos];
-    const finish = () => setItems(null);
+    const finish = () => {
+      setItems(null);
+      void refresh();
+    };
     const advance = () => (pos + 1 >= items.length ? finish() : setPos((p) => p + 1));
 
     if (!item) {
       return (
         <AppShell title={t('practice.title')} back hideNav>
           {/* Màn trắng không nói gì là tệ nhất: nói rõ VÌ SAO trống và làm gì tiếp. */}
-          <EmptyState titleKey="practice.emptyTitle" bodyKey="practice.emptyBody" />
+          <EmptyState
+            titleKey={learnedCount === 0 ? 'practice.nothingLearnedTitle' : 'practice.emptyTitle'}
+            bodyKey={learnedCount === 0 ? 'practice.nothingLearnedBody' : 'practice.emptyBody'}
+          />
           <ThumbBar>
             <div className="space-y-2">
               {canLearnNew && (
