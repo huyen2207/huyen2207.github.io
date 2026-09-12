@@ -643,6 +643,68 @@ export function displayGroups(session: DailySession): Array<{ key: string; minut
   return groups.filter((g) => g.minutes > 0 || g.items > 0);
 }
 
+/**
+ * SessionEngine.buildExtraLearn — "còn thời gian, muốn học thêm mẫu mới".
+ *
+ * Lấy tiếp các mẫu UNSEEN theo đúng thứ tự lộ trình, nên học trước hôm nay thì mai
+ * buổi học tự nhảy sang mẫu kế — không lệch kế hoạch, không học trùng.
+ *
+ * VẪN đếm vào trần cứng 8 mẫu mới/ngày (CLAUDE.md §8.2). Đây là giới hạn cố ý:
+ * quá 8 mẫu N1 trong một ngày là đổi cảm giác tiến bộ lấy trí nhớ. Hết quota thì
+ * trả về rỗng để tầng trên mời người học chuyển sang ôn.
+ */
+export function buildExtraLearn(
+  plan: StudyPlan,
+  allMastery: GrammarMastery[],
+  env: SessionEnv,
+  learnedToday: number,
+  requested: number,
+): SessionBlock[] {
+  const take = Math.min(requested, Math.max(0, NEW_PER_DAY_HARD_CAP - learnedToday));
+  if (take <= 0) return [];
+
+  const byId = new Map(allMastery.map((m) => [m.grammarId, m]));
+  const ids = plan.requiredGrammarIds
+    .filter((id) => (byId.get(id)?.state ?? 'UNSEEN') === 'UNSEEN')
+    .sort((a, b) => {
+      const pa = placementRank(byId.get(a));
+      const pb = placementRank(byId.get(b));
+      if (pa !== pb) return pa - pb;
+      return plan.requiredGrammarIds.indexOf(a) - plan.requiredGrammarIds.indexOf(b);
+    })
+    .slice(0, take);
+  if (ids.length === 0) return [];
+
+  // Mỗi thẻ học phải kết thúc bằng ít nhất một câu recall (CLAUDE.md §11 — cấm đọc suông).
+  const recall = env.pickQuestions(
+    {
+      seedSalt: `extra-learn-${ids.join('-')}`,
+      introducedGrammarIds: ids,
+      grammarIds: ids,
+      types: RECALL_TYPES,
+      delivery: 'STUDY',
+      skill: 'KNOW',
+      relaxRecency: true,
+    },
+    Math.max(ids.length, ids.length * 2),
+  );
+
+  return [
+    {
+      type: 'LEARN',
+      budgetMinutes: Math.max(1, Math.round((ids.length * LEARN_CARD_MS) / 60_000)),
+      items: ids.map((grammarId) => ({ kind: 'LEARN_CARD', grammarId }) as SessionItem),
+      completed: false,
+    },
+    {
+      type: 'RECALL',
+      budgetMinutes: Math.max(1, Math.round((recall.questions.length * 30_000) / 60_000)),
+      items: questionItems(recall, 'STUDY', env),
+      completed: false,
+    },
+  ];
+}
+
 /** SessionEngine.buildAdHocDrill — nút "Luyện ngay" ở /mistakes và /analytics. */
 export function buildAdHocDrill(
   kind: 'CONFUSION_PAIR' | 'ERROR_TYPE' | 'FAMILY' | 'SPEED' | 'TRAP_TYPE' | 'REVIEW_TOP',
@@ -652,7 +714,12 @@ export function buildAdHocDrill(
   /** H9 — không lôi mẫu chưa dạy vào Trap Lab hay /practice. */
   introducedGrammarIds?: string[],
 ): SessionBlock {
-  const criteria: Partial<PickCriteria> & { seedSalt: string } = { seedSalt: `drill-${kind}` };
+  const criteria: Partial<PickCriteria> & { seedSalt: string } = {
+    seedSalt: `drill-${kind}`,
+    // Luyện thêm mà đòi câu chưa từng gặp thì gần như luôn ra màn trắng: người học chỉ
+    // biết vài chục mẫu, câu của chúng đã dùng hết trong buổi học chính hôm nay.
+    relaxRecency: true,
+  };
   if (introducedGrammarIds) criteria.introducedGrammarIds = introducedGrammarIds;
   let delivery: DeliveryMode = 'PRACTICE';
 

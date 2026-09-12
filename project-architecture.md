@@ -1138,6 +1138,21 @@ Chỉ đụng bậc `INTRODUCED` — từ `RECOGNIZED` trở lên là tiến b�
 > M2 ("không bao giờ rơi về UNSEEN") vẫn nguyên vẹn: nó nói về **tụt cấp** từ trên thang xuống.
 > Mẫu chưa học thẻ thì chưa từng lên thang.
 
+### 17.y `/practice` — luyện thêm
+
+**Lỗi: mọi mục đều ra màn trắng.** H4 (không lặp trong ngày) + H5 (cooldown 7 ngày) giữ cho
+BUỔI HỌC không lặp câu. Nhưng người học chỉ biết vài chục mẫu, và vừa trả lời hết câu của
+chúng trong buổi chính — áp nguyên hai luật thì phần luyện thêm chết hẳn.
+Nay `PickCriteria.relaxRecency` bỏ H4/H5 cho drill ad-hoc. H9 và mọi luật khác giữ nguyên.
+Điểm mềm (`noveltyBonus`, `overExposurePenalty`) vẫn đẩy câu vừa gặp xuống cuối.
+
+**"Bài so sánh" vẫn có thể rỗng — đúng luật.** H9 đòi MỌI mẫu đích đã được dạy; so sánh với
+mẫu chưa biết là vô nghĩa. UI nay nói rõ lý do thay vì màn trắng.
+
+**`buildExtraLearn` — học thêm mẫu mới.** Lấy tiếp mẫu UNSEEN theo thứ tự lộ trình nên
+không lệch kế hoạch. Vẫn đếm vào trần cứng `NEW_PER_DAY_HARD_CAP = 8` (CLAUDE.md §8.2);
+hết quota thì trả rỗng và UI mời chuyển sang ôn. Mỗi thẻ học kèm câu recall (§11).
+
 ## 18. BẢNG ƯU TIÊN HOÀN THIỆN (sau lô 3b, 2026-09-11)
 
 Đo trên kho nội dung thực tế: 195 grammar · 708 câu hỏi · 82 ComparisonSet.

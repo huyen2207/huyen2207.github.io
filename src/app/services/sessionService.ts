@@ -8,6 +8,7 @@ import {
   type SessionEnv,
   type TodayErrorMaterial,
   refreshAnalyzeBlock,
+  buildExtraLearn,
 } from '@/engines/session';
 import { evaluate } from '@/engines/adaptation';
 import { selectDueItems } from '@/engines/review';
@@ -21,9 +22,10 @@ import {
 } from '@/content/repository';
 import { attemptRepo, sessionRepo } from '@/storage/repositories';
 import { ratiosFor } from '@/config/phase.config';
+import { NEW_PER_DAY_HARD_CAP } from '@/config/learning.config';
 import { accHat } from '@/shared/math';
 import { hashString } from '@/shared/prng';
-import { daysAgo } from '@/shared/date';
+import { daysAgo, dayKey } from '@/shared/date';
 import type { EngineContext } from './context';
 
 export function exposureHistoryFrom(attempts: Attempt[], todayKey: string): ExposureHistory {
@@ -244,6 +246,24 @@ export function buildDrill(ctx: EngineContext, kind: DrillKind, payload: Record<
   // Chỉ luyện trên mẫu đã được dạy (H9) — Trap Lab và /practice cũng phải theo luật này.
   const introduced = ctx.mastery.filter((m) => m.state !== 'UNSEEN').map((m) => m.grammarId);
   return buildAdHocDrill(k, payload, env, count, introduced);
+}
+
+/** Số mẫu mới đã học thẻ trong ngày hôm nay — dùng để trừ vào trần 8 mẫu/ngày. */
+export function newGrammarLearnedToday(ctx: EngineContext): number {
+  return ctx.mastery.filter(
+    (m) => m.learnCardDoneAt && dayKey(new Date(m.learnCardDoneAt), ctx.profile.dayBoundaryHour) === ctx.timeline.todayKey,
+  ).length;
+}
+
+/** Quota mẫu mới còn lại hôm nay (CLAUDE.md §8.2 — trần cứng 8/ngày). */
+export function newGrammarQuotaLeft(ctx: EngineContext): number {
+  return Math.max(0, NEW_PER_DAY_HARD_CAP - newGrammarLearnedToday(ctx));
+}
+
+/** "Học thêm mẫu mới" ở /practice — đi trước lộ trình, không lệch lộ trình. */
+export function buildExtraLearnBlocks(ctx: EngineContext, requested: number): SessionBlock[] {
+  const env = makeSessionEnv(ctx, hashString(`extra-learn|${ctx.timeline.todayKey}|${requested}`));
+  return buildExtraLearn(ctx.plan, ctx.mastery, env, newGrammarLearnedToday(ctx), requested);
 }
 
 export async function sessionAttempts(sessionId: string): Promise<Attempt[]> {

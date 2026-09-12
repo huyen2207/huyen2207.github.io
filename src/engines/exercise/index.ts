@@ -62,6 +62,15 @@ export interface PickCriteria {
    * Bỏ trống = không lọc, dùng cho bài xếp lớp và các luồng cố ý hỏi mẫu chưa học.
    */
   introducedGrammarIds?: string[];
+  /**
+   * Luyện thêm ngoài buổi học chính: bỏ H4 (không lặp trong ngày) và H5 (cooldown 7 ngày).
+   *
+   * Hai luật đó giữ cho BUỔI HỌC không lặp câu. Nhưng ở `/practice`, người học đã trả lời
+   * hết câu của những mẫu mình biết trong ngày — áp nguyên hai luật thì mọi mục đều ra
+   * màn trắng, tức là phần "luyện thêm" chết hẳn. Điểm mềm (`noveltyBonus`,
+   * `overExposurePenalty`) vẫn đẩy câu vừa gặp xuống cuối, nên câu mới vẫn được ưu tiên.
+   */
+  relaxRecency?: boolean;
 }
 
 export interface PickResult {
@@ -99,12 +108,12 @@ export function passesHardFilter(
   if (criteria.excludeQuestionIds?.includes(q.id)) return false;
 
   // H4 — không lặp trong cùng ngày.
-  if (history.recentQuestionIdsToday.includes(q.id)) return false;
+  if (!criteria.relaxRecency && history.recentQuestionIdsToday.includes(q.id)) return false;
 
   // H5 — cooldown 7 ngày, trừ ngoại lệ "câu đã sai".
   // K5: riêng MOCK dùng cửa sổ 14 ngày để đề thi thử không lặp lại câu vừa gặp.
   const seen = history.byQuestion[q.id];
-  if (seen) {
+  if (seen && !criteria.relaxRecency) {
     const since = daysAgo(seen.lastSeenAt, criteria.now);
     const cooldown = criteria.delivery === 'MOCK' ? MOCK_COOLDOWN_DAYS : COOLDOWN_DAYS;
     if (seen.lastWasWrong && criteria.delivery !== 'MOCK') {

@@ -416,6 +416,19 @@ const vi: Record<string, string> = {
   'practice.mixed': 'Trộn nhiều dạng',
   'practice.count': 'Số câu',
   'practice.start': 'Bắt đầu luyện',
+  'practice.chooseGoal': 'Bạn còn thời gian — muốn làm gì?',
+  'practice.goalNew': 'Học thêm mẫu mới',
+  'practice.goalNewNote': 'Đi trước lộ trình. Mai buổi học tự nhảy sang mẫu kế tiếp.',
+  'practice.goalReview': 'Ôn cho nhuần mẫu đã học',
+  'practice.goalReviewNote': 'Luyện lại các mẫu bạn đã học, theo điểm yếu hiện tại.',
+  'practice.newQuota': 'Hôm nay còn học thêm được {n} mẫu mới.',
+  'practice.newQuotaFull': 'Hôm nay đã học đủ {cap} mẫu mới — trần cứng của hệ thống. Thêm nữa thì nhớ kém đi, không phải nhanh hơn. Hãy chuyển sang ôn.',
+  'practice.newDone': 'Xong phần học thêm. Các mẫu này đã vào lịch ôn.',
+  'practice.noNewLeft': 'Lộ trình không còn mẫu nào chưa học.',
+  'practice.newCount': 'Số mẫu',
+  'practice.emptyTitle': 'Chưa đủ mẫu đã học cho dạng này',
+  'practice.emptyBody':
+    'Bài so sánh chỉ ra khi bạn đã học ĐỦ các mẫu trong cùng một nhóm — so sánh với mẫu chưa biết thì vô nghĩa. Học thêm vài mẫu nữa rồi quay lại.',
 
   /* ── Mock ── */
   'mock.title': 'Thi thử phần 文法',
