@@ -156,18 +156,18 @@ export default function TodayPage() {
             <PrimaryButton onClick={() => navigate('/session')}>
               <span className="ja">{inProgress ? t('today.resumeSession') : t('today.startSession')}</span>
             </PrimaryButton>
-            {!inProgress && (
-              <button
-                type="button"
-                onClick={() => {
-                  if (confirm(t('today.regenerateConfirm'))) void regenerate();
-                }}
-                className="tap w-full text-center text-[13px]"
-                style={{ color: 'var(--ink-faint)' }}
-              >
-                {t('today.regenerate')}
-              </button>
-            )}
+            {/* Hiện cả khi đang học dở: lúc cần dựng lại buổi học nhất chính là lúc
+                đang học mà thấy nội dung không ổn. Hộp xác nhận đã báo rõ mất tiến độ. */}
+            <button
+              type="button"
+              onClick={() => {
+                if (confirm(t('today.regenerateConfirm'))) void regenerate();
+              }}
+              className="tap w-full text-center text-[13px]"
+              style={{ color: 'var(--ink-faint)' }}
+            >
+              {t('today.regenerate')}
+            </button>
           </div>
         )}
       </ThumbBar>

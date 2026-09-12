@@ -155,9 +155,34 @@ export function buildAdaptations(ctx: EngineContext) {
 }
 
 /** Session của một ngày sinh MỘT LẦN và được lưu (arch §8.2). */
+/**
+ * Buổi học đã lưu có đang hỏi mẫu CHƯA được dạy không? (H9)
+ *
+ * Buổi học là ảnh chụp lúc đầu ngày. Khi luật lọc đổi, hoặc khi `repairUntaught` trả một
+ * mẫu về hàng chờ, ảnh chụp cũ vẫn còn nguyên câu hỏi sai luật — và người học không có
+ * cách nào biết ngoài việc gặp lại mẫu lạ. Phát hiện được thì dựng lại, không bắt người
+ * học tự đi tìm nút.
+ *
+ * Mẫu nằm trong khối HỌC MỚI hôm nay được tính là hợp lệ: đó chính là mẫu sắp được dạy.
+ */
+function usesUntaughtGrammar(session: DailySession, ctx: EngineContext): boolean {
+  const allowed = new Set(ctx.mastery.filter((m) => m.state !== 'UNSEEN').map((m) => m.grammarId));
+  for (const b of session.blocks) {
+    for (const it of b.items) if (it.kind === 'LEARN_CARD') allowed.add(it.grammarId);
+  }
+  for (const b of session.blocks) {
+    for (const it of b.items) {
+      if (it.kind !== 'QUESTION' && it.kind !== 'TRAP_DRILL') continue;
+      const q = getQuestion(it.questionId);
+      if (q && !q.targetGrammarIds.every((g) => allowed.has(g))) return true;
+    }
+  }
+  return false;
+}
+
 export async function getOrCreateTodaySession(ctx: EngineContext, force = false): Promise<DailySession> {
   const existing = await sessionRepo.getByDate(ctx.timeline.todayKey);
-  if (existing && !force) return existing;
+  if (existing && !force && !usesUntaughtGrammar(existing, ctx)) return existing;
 
   const seedBase = hashString(`${ctx.timeline.todayKey}|${ctx.plan.version}`);
   const session = buildDailySession({

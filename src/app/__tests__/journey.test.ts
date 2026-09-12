@@ -9,7 +9,7 @@ import {
 import { gradeAnswer, markLearnCard, persistAnswer } from '@/app/services/answerService';
 import { finalizeSession, notebook, dashboard } from '@/app/services/analyticsService';
 import { updateProfile } from '@/app/services/settingsService';
-import { getQuestion, getQuestionsForGrammar, listRawGrammar } from '@/content/repository';
+import { getQuestion, getQuestionsForGrammar, listQuestions, listRawGrammar } from '@/content/repository';
 import { attemptRepo, masteryRepo, resetAllData, sessionRepo } from '@/storage/repositories';
 import { exportBackup, importBackup } from '@/storage/backup';
 import type { Question } from '@/domain/question';
@@ -132,6 +132,48 @@ describe('Hành trình Day 1 — người học mới', () => {
     const metrics = dashboard(ctx);
     expect(metrics.currentPhase).toBe('PHASE_1_KNOW');
     expect(metrics.readiness).not.toBeUndefined();
+  });
+});
+
+describe('Buổi học đã lưu mà chứa mẫu chưa dạy thì tự dựng lại', () => {
+  it('không bắt người học tự đi tìm nút "Tạo lại buổi học"', async () => {
+    await onboard();
+    const ctx = (await loadContext(START))!;
+    const session = await getOrCreateTodaySession(ctx);
+
+    // Giả lập ảnh chụp cũ sinh trước khi có luật H9: nhét một câu nhắm mẫu chưa hề dạy.
+    const taught = new Set(ctx.mastery.filter((m) => m.state !== 'UNSEEN').map((m) => m.grammarId));
+    for (const b of session.blocks) {
+      for (const it of b.items) if (it.kind === 'LEARN_CARD') taught.add(it.grammarId);
+    }
+    const intruder = listQuestions().find((q) => q.targetGrammarIds.every((g) => !taught.has(g)))!;
+    const block = session.blocks.find((b) => b.type === 'REVIEW' || b.items.length > 0)!;
+    await sessionRepo.put({
+      ...session,
+      blocks: session.blocks.map((b) =>
+        b.type === block.type
+          ? {
+              ...b,
+              items: [
+                ...b.items,
+                {
+                  kind: 'QUESTION' as const,
+                  questionId: intruder.id,
+                  timed: false,
+                  delivery: 'PRACTICE' as const,
+                  grammarId: intruder.targetGrammarIds[0],
+                },
+              ],
+            }
+          : b,
+      ),
+    });
+
+    const rebuilt = await getOrCreateTodaySession((await loadContext(START))!);
+    const ids = rebuilt.blocks.flatMap((b) =>
+      b.items.filter((i) => i.kind === 'QUESTION').map((i) => (i as { questionId: string }).questionId),
+    );
+    expect(ids).not.toContain(intruder.id);
   });
 });
 
