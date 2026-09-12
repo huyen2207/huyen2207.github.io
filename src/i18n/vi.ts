@@ -580,6 +580,10 @@ const vi: Record<string, string> = {
   'settings.resetStep1': 'Xoá toàn bộ dữ liệu học?',
   'settings.resetStep2': 'Không thể hoàn tác. Xác nhận lần cuối.',
   'settings.redoOnboarding': 'Thiết lập lại lộ trình',
+  'settings.appVersion': 'Phiên bản ứng dụng: {version}',
+  'settings.forceUpdate': 'Nạp lại bản mới nhất',
+  'settings.forceUpdateNote':
+    'App lưu offline nên đôi khi tải lại một lần vẫn còn bản cũ. Nút này xoá bộ nhớ đệm và nạp lại — dữ liệu học của bạn không bị đụng tới.',
 
   /* ── Roadmap replan ── */
   'roadmap.replan.scheduleChanged': 'Lịch thi hoặc thời lượng học đã đổi — kế hoạch được tính lại.',

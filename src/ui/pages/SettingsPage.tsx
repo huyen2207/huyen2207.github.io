@@ -9,6 +9,10 @@ import { contentStats } from '@/content/repository';
 import { BACKUP_REMINDER_DAYS } from '@/config/learning.config';
 import { daysAgo, formatDateVi } from '@/shared/date';
 import { t } from '@/i18n/vi';
+import { forceUpdate } from '@/app/pwa';
+
+/** Đóng dấu lúc build để người học xác nhận mình đang chạy bản nào. */
+const BUILD_VERSION = __BUILD_VERSION__;
 import { AppShell } from '../AppShell';
 import { Card, PrimaryButton, SecondaryButton } from '../components/primitives';
 
@@ -216,6 +220,25 @@ export default function SettingsPage() {
               <span style={{ color: 'var(--seal)' }}>{t('settings.reset')}</span>
             </PrimaryButton>
           </div>
+        </Card>
+      </section>
+
+      <section className="mb-5">
+        <Card className="px-4 py-3">
+          <p className="text-[13px]" style={{ color: 'var(--ink-soft)' }}>
+            {t('settings.appVersion', { version: BUILD_VERSION })}
+          </p>
+          <p className="mt-1 text-[13px] leading-relaxed" style={{ color: 'var(--ink-faint)' }}>
+            {t('settings.forceUpdateNote')}
+          </p>
+          <button
+            type="button"
+            onClick={() => void forceUpdate()}
+            className="tap mt-2 w-full rounded-lg border py-2.5 text-center text-[14px] hairline"
+            style={{ background: 'var(--paper-raised)', color: 'var(--accent)' }}
+          >
+            {t('settings.forceUpdate')}
+          </button>
         </Card>
       </section>
     </AppShell>

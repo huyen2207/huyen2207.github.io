@@ -9,7 +9,10 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import { fileURLToPath, URL } from 'node:url';
 
+const BUILD_VERSION = new Date().toISOString().slice(0, 16).replace('T', ' ');
+
 export default defineConfig({
+  define: { __BUILD_VERSION__: JSON.stringify(BUILD_VERSION) },
   plugins: [
     react(),
     VitePWA({

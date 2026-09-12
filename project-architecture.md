@@ -1167,6 +1167,23 @@ không lệch kế hoạch. Mỗi thẻ học kèm câu recall (§11).
 > Kèm theo: `markLearnCard` nay chỉ đóng dấu `learnCardDoneAt` **lần đầu**. Trước đó xem lại
 > thẻ cũ cũng bị tính là "hôm nay học mẫu mới", nên dựng lại buổi học ăn mất quota của ngày.
 
+### 17.z Nạp bản mới sau deploy (PWA)
+
+**Lỗi âm thầm, tốn nhiều vòng qua lại nhất.** Service worker precache cả `index.html`, nên
+lần tải lại ĐẦU TIÊN sau deploy vẫn nhận bundle CŨ — bản mới lúc đó mới vừa cài xong ở nền.
+Phải tải lại LẦN HAI mới thấy, mà không có gì báo cho người học biết. Kết quả: sửa xong,
+deploy xong, người học vẫn gặp y nguyên lỗi cũ và báo lại là "chưa sửa".
+
+`registerSW.js` do plugin tự chèn chỉ `navigator.serviceWorker.register(...)` — không theo
+dõi cập nhật, không tải lại. `src/app/pwa.ts` bổ sung:
+
+- `watchForNewVersion()` — nghe `controllerchange` (SW đã bật `skipWaiting` + `clientsClaim`),
+  tự tải lại một lần. Bỏ qua lần đầu cài SW. **Không** tải lại khi đang ở màn hình làm bài
+  (`/session`, `/practice`, `/review`…) vì vị trí trong buổi học nằm ở state React.
+- `forceUpdate()` — nút thoát hiểm ở `/settings`: huỷ đăng ký SW, xoá cache, tải lại.
+  KHÔNG đụng IndexedDB.
+- `__BUILD_VERSION__` đóng dấu lúc build, hiện ở `/settings` để người học xác nhận đang chạy bản nào.
+
 ## 18. BẢNG ƯU TIÊN HOÀN THIỆN (sau lô 3b, 2026-09-11)
 
 Đo trên kho nội dung thực tế: 195 grammar · 708 câu hỏi · 82 ComparisonSet.
