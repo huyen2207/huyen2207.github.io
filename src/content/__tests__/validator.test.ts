@@ -118,6 +118,6 @@ describe('content repository — trường DERIVED', () => {
     expect(s.questions).toBeGreaterThanOrEqual(200);
     expect(s.comparisonSets).toBeGreaterThanOrEqual(88);
     // Nội dung do AI sinh vẫn phải NEEDS_REVIEW; chỉ nội dung trích sách mới VERIFIED.
-    expect(s.verifiedGrammar).toBe(183);
+    expect(s.verifiedGrammar).toBe(182);
   });
 });

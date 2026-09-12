@@ -287,7 +287,7 @@
    "PHASE_1_KNOW"
   ],
   "targetGrammarIds": [
-   "nara-dewa"
+   "narade-wa"
   ],
   "stemJa": "「〜ならでは」の意味に最も近いのはどれか。",
   "choices": [
@@ -358,7 +358,7 @@
     "isCorrect": false,
     "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
     "whyWrongVi": "Đó là 「ならでは」— khen, không phải khiêm tốn.",
-    "confusedWithGrammarId": "nara-dewa"
+    "confusedWithGrammarId": "narade-wa"
    },
    {
     "id": "c",

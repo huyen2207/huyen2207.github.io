@@ -156,7 +156,7 @@
  {
   "id": "cmp-limitation-lo3-01",
   "grammarIds": [
-   "nara-dewa",
+   "narade-wa",
    "nari-no"
   ],
   "familyHint": "LIMITATION",
@@ -164,28 +164,28 @@
    {
     "axis": "MEANING",
     "cells": {
-     "nara-dewa": "Chỉ nơi đó mới có được",
+     "narade-wa": "Chỉ nơi đó mới có được",
      "nari-no": "Theo sức riêng, có thể chưa hoàn hảo"
     }
    },
    {
     "axis": "SPEAKER_INTENT",
     "cells": {
-     "nara-dewa": "Khen ngợi",
+     "narade-wa": "Khen ngợi",
      "nari-no": "Khiêm tốn"
     }
    },
    {
     "axis": "RESTRICTION",
     "cells": {
-     "nara-dewa": "Chỉ dùng trong câu đánh giá TỐT",
+     "narade-wa": "Chỉ dùng trong câu đánh giá TỐT",
      "nari-no": "Hàm ý khiêm nhường, không dùng với người trên"
     }
    },
    {
     "axis": "KEY_CLUE",
     "cells": {
-     "nara-dewa": "「老舗ならではの」",
+     "narade-wa": "「老舗ならではの」",
      "nari-no": "Lặp lại chính danh từ đó: 「子供は子供なりに」"
     }
    }

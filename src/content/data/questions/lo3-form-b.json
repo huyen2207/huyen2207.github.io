@@ -97,7 +97,7 @@
     "isCorrect": false,
     "wrongBecause": "FORM_ERROR",
     "whyWrongVi": "Nối được nhưng phải là 「ならではの」＋danh từ.",
-    "confusedWithGrammarId": "nara-dewa",
+    "confusedWithGrammarId": "narade-wa",
     "violatedAxis": "CONNECTION"
    }
   ],
@@ -306,7 +306,7 @@
    "PHASE_1_KNOW"
   ],
   "targetGrammarIds": [
-   "nara-dewa"
+   "narade-wa"
   ],
   "stemJa": "「これは老舗（　）味わいだ。」正しい形はどれか。",
   "choices": [
@@ -389,7 +389,7 @@
     "isCorrect": false,
     "wrongBecause": "FORM_ERROR",
     "whyWrongVi": "Là lời khen, không phải khiêm tốn.",
-    "confusedWithGrammarId": "nara-dewa",
+    "confusedWithGrammarId": "narade-wa",
     "violatedAxis": "CONNECTION"
    },
    {

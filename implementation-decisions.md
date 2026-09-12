@@ -172,3 +172,35 @@ và không còn nội dung nào đủ điều kiện `EXAM_READY`.
 12 mẫu seed AI ban đầu (`sourceId: 'ai-seed'`) **không** có nguồn cho cả hàng 1 và 2, nên
 giữ `NEEDS_REVIEW` — đúng theo `§16.3`. Hai đoạn văn `psg-01`/`psg-02` và 21 câu
 `SENTENCE_BUILD`/`TEXT_GRAMMAR` dựa trên chúng cũng vậy.
+
+## D-02 — Câu hỏi có HAI đáp án đúng (2026-09-12)
+
+**Người học báo đúng.** Câu `q-cmp-limitation-lo3-01-mp-02` ra đề
+「新人は新人___工夫を重ねている。」 và chấm 「なりの」 là sai. Nhưng ngay sau chỗ trống là
+**工夫 — một danh từ**, nên 「新人なりの工夫を重ねている」 là tiếng Nhật đúng. Lời giải còn ghi
+*"Sau chỗ trống là động từ nên dùng 「なりに」"* — sai sự thật, sau chỗ trống không phải động từ.
+
+Đã đổi đề thành 「新人は新人___、地道に工夫を重ねている。」 để chỉ còn một đáp án đúng.
+
+**Quét toàn kho** tìm cùng một kiểu lỗi (đáp án sai dạng 連体 「〜の」 trong khi ngay sau chỗ
+trống là danh từ): 27 câu khả nghi, đọc tay từng câu, ba câu nữa có thật:
+
+| Câu | Vấn đề | Xử lý |
+|---|---|---|
+| `q-narade-wa-form-01` | Hỏi "hình thức đúng" nhưng loại 「なりの」 bằng lý do **sắc thái** — trong khi đó là một hình thức đúng | Thay bằng 「ならではな」 (không tồn tại) |
+| `q-atte-no-cloze-01` | 「方々があっての私の今日」 vẫn đúng; lý do "thừa 「が」" không đứng vững | Thay bằng 「あっても」 |
+| `q-kara-aru-cloze-01` | 「100キロからのバーベル」 cũng là cách nói có thật | Thay bằng 「ばかりの」 |
+
+23 câu còn lại kiểm tay thấy đáp án sai thật sự không ghép được (「いざの人前」, 「いかにもの職人」…).
+
+**Rủi ro còn lại, nói thẳng:** phép quét chỉ bắt được một kiểu lỗi (đuôi 「の」/「な」 đứng trước
+danh từ). Câu có hai đáp án đúng vì lý do **sắc thái** thì không có cách tự động nào phát hiện.
+Người học báo tiếp thì sửa tiếp.
+
+## D-03 — 「〜ならでは」 bị nhập hai lần (2026-09-12)
+
+`nara-dewa` (lô 3) và `narade-wa` (seed) là cùng một mẫu. Hậu quả không chỉ đếm sai coverage:
+H9 coi chúng là hai mẫu khác nhau, nên câu so sánh nhắm mẫu này bị loại vì "chưa học" mẫu kia,
+dù người học đã học đúng cái đó rồi. Đã gộp về `narade-wa`; tổng mẫu 195 → **194**.
+Thêm test chặn vĩnh viễn: không hai bản ghi nào được trùng `pattern` sau khi chuẩn hoá.
+

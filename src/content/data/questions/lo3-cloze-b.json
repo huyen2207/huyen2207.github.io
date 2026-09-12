@@ -396,7 +396,7 @@
    "PHASE_3_DETECT"
   ],
   "targetGrammarIds": [
-   "nara-dewa"
+   "narade-wa"
   ],
   "stemJa": "「これぞ職人___の精緻な仕上がりだ。」",
   "choices": [
@@ -488,7 +488,7 @@
     "isCorrect": false,
     "wrongBecause": "SIMILAR_GRAMMAR_CONFUSION",
     "whyWrongVi": "Là lời khen nét độc nhất, không hợp giọng khiêm tốn.",
-    "confusedWithGrammarId": "nara-dewa",
+    "confusedWithGrammarId": "narade-wa",
     "violatedAxis": "SPEAKER_INTENT"
    },
    {

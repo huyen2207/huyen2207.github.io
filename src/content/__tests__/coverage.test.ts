@@ -278,9 +278,23 @@ describe('Vệ sinh dữ liệu', () => {
 });
 
 describe('Thống kê nội dung', () => {
+  it('không có hai mẫu ngữ pháp trùng nhau', () => {
+    // Đã từng thủng: 「〜ならでは」nhập hai lần với hai id khác nhau. Hậu quả không chỉ là
+    // đếm sai coverage — H9 coi chúng là hai mẫu khác nhau, nên câu so sánh nhắm mẫu này
+    // bị loại vì "chưa học" mẫu kia, dù người học đã học đúng cái đó rồi.
+    const norm = (p: string) => p.replace(/[〜～・\s（）()]/g, '');
+    const seen = new Map<string, string>();
+    for (const g of listRawGrammar()) {
+      const key = norm(g.pattern);
+      expect(seen.has(key), `${g.id} trùng mẫu với ${seen.get(key)}: ${g.pattern}`).toBe(false);
+      seen.set(key, g.id);
+    }
+  });
+
   it('quy mô hiện tại', () => {
     const s = contentStats();
-    expect(s.grammar).toBe(195);
+    // 194 chứ không phải 195: 「〜ならでは」từng bị nhập hai lần (nara-dewa + narade-wa), đã gộp.
+    expect(s.grammar).toBe(194);
     expect(s.questions).toBeGreaterThanOrEqual(971);
     expect(s.comparisonSets).toBe(88);
   });
@@ -293,7 +307,7 @@ describe('Thống kê nội dung', () => {
 
   it('nội dung trích từ sách có nguồn PRIMARY và đủ số trang để đối chiếu', () => {
     const fromBook = listRawGrammar().filter((g) => g.sourceId === 'drill-drill-n1');
-    expect(fromBook.length).toBe(183);
+    expect(fromBook.length).toBe(182);
     expect(fromBook.every((g) => g.verificationStatus === 'VERIFIED')).toBe(true);
     expect(fromBook.every((g) => Boolean(g.sourcePage))).toBe(true);
   });
