@@ -24,6 +24,7 @@ import {
   listComparisonSets,
 } from '@/content/repository';
 import { MOCK_TOTAL_MS } from '@/config/timing.config';
+import { TRAP_ID_QUESTION } from './__tests__/trapId-fixture';
 
 const NOW = new Date('2026-10-01T09:00:00.000Z');
 const env: QuestionEnv = { grammarById: getGrammar };
@@ -225,7 +226,7 @@ describe('ExerciseEngine — SENTENCE_BUILD chấm theo ô ★', () => {
 
 describe('ExerciseEngine — TRAP_ID', () => {
   it('chọn đúng loại bẫy', () => {
-    const q = getQuestion('q-trapid-01')!;
+    const q = TRAP_ID_QUESTION;
     const r = grade({
       question: q,
       response: { kind: 'TRAP', trapType: 'LOOKALIKE_FORM' },
@@ -238,7 +239,7 @@ describe('ExerciseEngine — TRAP_ID', () => {
   });
 
   it('chọn sai loại bẫy → TRAP_ERROR', () => {
-    const q = getQuestion('q-trapid-01')!;
+    const q = TRAP_ID_QUESTION;
     const r = grade({
       question: q,
       response: { kind: 'TRAP', trapType: 'REGISTER_MISMATCH' },

@@ -1167,6 +1167,12 @@ không lệch kế hoạch. Mỗi thẻ học kèm câu recall (§11).
 > Kèm theo: `markLearnCard` nay chỉ đóng dấu `learnCardDoneAt` **lần đầu**. Trước đó xem lại
 > thẻ cũ cũng bị tính là "hôm nay học mẫu mới", nên dựng lại buổi học ăn mất quota của ngày.
 
+### 17.t Kỹ năng nhận bẫy đo trên câu THẬT có bẫy
+
+Dạng câu `TRAP_ID` ("câu này bẫy ở đâu?") đã gỡ khỏi kho nội dung — xem `implementation-decisions.md` D-04.
+`MetricOptions.trapByQuestion` cho `metrics.trapAccuracy` đo trên mọi câu có trường `trap`
+(328/965 câu) thay vì chỉ dạng câu meta. Engine vẫn giữ năng lực chấm `TRAP_ID`.
+
 ### 17.u Thẻ ôn của tôi (`/flashcards`)
 
 Người học tự đánh dấu mẫu ngữ pháp hoặc bảng so sánh nào chưa thuộc hẳn, rồi xem lại / luyện riêng.

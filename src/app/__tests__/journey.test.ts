@@ -14,6 +14,7 @@ import { attemptRepo, masteryRepo, resetAllData, sessionRepo } from '@/storage/r
 import { exportBackup, importBackup } from '@/storage/backup';
 import type { Question } from '@/domain/question';
 import type { Confidence, DeliveryMode, SessionBlockType } from '@/domain/enums';
+import { TRAP_ID_QUESTION } from '@/engines/exercise/__tests__/trapId-fixture';
 
 const START = new Date('2026-09-07T09:00:00.000Z');
 
@@ -241,7 +242,7 @@ describe('Hành trình Month 3 — sập bẫy', () => {
     await onboard();
     const ctx = (await loadContext(START))!;
     await getOrCreateTodaySession(ctx);
-    const q = getQuestion('q-trapid-01')!;
+    const q = TRAP_ID_QUESTION;
     const session = (await sessionRepo.getByDate(ctx.timeline.todayKey))!;
     const input = {
       ctx,

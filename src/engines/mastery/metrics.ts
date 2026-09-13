@@ -38,6 +38,12 @@ export interface MetricOptions {
   phase: Phase;
   daysRemaining: number;
   choiceCountByQuestion?: Record<string, number>;
+  /**
+   * Câu nào có cài bẫy. Trước đây "độ nhận bẫy" chỉ đếm dạng câu meta `TRAP_ID`
+   * ("câu này bẫy ở đâu?"), nên gỡ dạng đó đi là chỉ số tắt hẳn. Bẫy nằm sẵn trong
+   * hàng trăm câu thường — đo trên chính chúng mới đúng việc làm bài.
+   */
+  trapByQuestion?: Record<string, boolean>;
 }
 
 /** Cửa sổ co lại khi gần thi (learning-engine §4.1). */
@@ -180,7 +186,7 @@ export function computeGrammarMetrics(
     usageAccuracy: accuracyOf(byTypes(win, USAGE_TYPES), opts),
     comparisonAccuracy: accuracyOf(byTypes(win, COMPARISON_TYPES), opts),
     timedAccuracy: accuracyOf(win.filter((a) => a.isTimed), opts),
-    trapAccuracy: accuracyOf(win.filter((a) => a.questionType === 'TRAP_ID' || a.subKind === 'TRAP_ID'), opts),
+    trapAccuracy: accuracyOf(win.filter((a) => isTrapAttempt(a, opts)), opts),
     examStyleAccuracy: accuracyOf(byTypes(win, EXAM_STYLE_TYPES), opts),
     retentionScore,
     medianResponseTimeMs: overallMedian,
@@ -196,14 +202,22 @@ export function computeGrammarMetrics(
   };
 }
 
+/** Lần trả lời này có đụng bẫy không? */
+function isTrapAttempt(a: Attempt, opts: MetricOptions): boolean {
+  return a.questionType === 'TRAP_ID' || a.subKind === 'TRAP_ID' || Boolean(opts.trapByQuestion?.[a.questionId]);
+}
+
 function evidenceForDimension(
   dim: SkillDimension,
   attempts: Attempt[],
   retentionAvailable: boolean,
+  opts?: MetricOptions,
 ): EvidenceLevel {
   const types =
     dim === 'KNOW' ? [...RECOGNITION_TYPES, ...USAGE_TYPES] : dim === 'COMPARE' ? COMPARISON_TYPES : EXAM_STYLE_TYPES;
-  const subset = attempts.filter((a) => types.includes(a.questionType) || (dim === 'DETECT' && (a.isTimed || a.questionType === 'TRAP_ID')));
+  const subset = attempts.filter(
+    (a) => types.includes(a.questionType) || (dim === 'DETECT' && (a.isTimed || (opts ? isTrapAttempt(a, opts) : a.questionType === 'TRAP_ID'))),
+  );
   const days = new Set(subset.map((a) => a.dayKey)).size;
   return evidenceLevelOf(subset.length, days, retentionAvailable);
 }
@@ -216,6 +230,7 @@ export function computeSkillProfile(
   metrics: GrammarMetrics,
   attempts: Attempt[],
   confusedWithTotal: number,
+  opts?: MetricOptions,
 ): SkillProfile {
   const retentionPlus = metrics.retentionScore ?? metrics.meaningAccuracy;
   const confusionPenalty = clamp(confusedWithTotal / CONFUSION_SATURATION, 0, 1);
@@ -241,9 +256,9 @@ export function computeSkillProfile(
       SKILL_WEIGHTS.DETECT.speedIndex * metrics.speedIndex);
 
   const evidence: Record<SkillDimension, EvidenceLevel> = {
-    KNOW: evidenceForDimension('KNOW', attempts, metrics.retentionScore !== null),
-    COMPARE: evidenceForDimension('COMPARE', attempts, metrics.retentionScore !== null),
-    DETECT: evidenceForDimension('DETECT', attempts, metrics.retentionScore !== null),
+    KNOW: evidenceForDimension('KNOW', attempts, metrics.retentionScore !== null, opts),
+    COMPARE: evidenceForDimension('COMPARE', attempts, metrics.retentionScore !== null, opts),
+    DETECT: evidenceForDimension('DETECT', attempts, metrics.retentionScore !== null, opts),
   };
 
   const scores: Record<SkillDimension, number | null> = {

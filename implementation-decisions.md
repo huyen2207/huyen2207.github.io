@@ -204,3 +204,28 @@ H9 coi chúng là hai mẫu khác nhau, nên câu so sánh nhắm mẫu này b�
 dù người học đã học đúng cái đó rồi. Đã gộp về `narade-wa`; tổng mẫu 195 → **194**.
 Thêm test chặn vĩnh viễn: không hai bản ghi nào được trùng `pattern` sau khi chuẩn hoá.
 
+## D-04 — Gỡ dạng câu TRAP_ID khỏi kho nội dung (2026-09-13)
+
+**Người học báo:** *"loại bài tập này là gì? tôi không hiểu lắm"* — và họ đúng.
+
+Dạng câu hỏi **về** câu hỏi: nhồi cả đề gốc lẫn bốn lựa chọn của nó vào một khối tiếng Nhật
+(「計画を縮小＿＿。」選択肢：せざるを得ない／…。この問題の罠は何か。), rồi bắt chọn một
+**nhãn phân loại bẫy** trừu tượng ("Bẫy động từ ý chí", "Nghĩa chồng lấn") mà không chỗ nào
+dạy các nhãn đó nghĩa là gì. Sáu câu, tất cả `NEEDS_REVIEW`, đều do tôi tự soạn.
+
+**Đã gỡ cả sáu.** Kho còn **965** câu.
+
+**Vì sao gỡ được mà không phá trụ cột DETECT (CLAUDE.md §3):** kỹ năng nhận bẫy vốn không
+nằm ở dạng câu meta này. **328/965 câu thường đã có sẵn trường `trap`** — người học làm câu
+thật, sập bẫy thật, rồi được chỉ ra bẫy nằm ở đâu. Trap Lab dùng `requireTrap` trên câu thường,
+không dùng TRAP_ID, nên không bị ảnh hưởng.
+
+**Một chỗ suýt hỏng âm thầm:** `metrics.trapAccuracy` (trọng số **0.25** của chiều DETECT,
+`SKILL_WEIGHTS`) chỉ đếm `questionType === 'TRAP_ID'`. Gỡ dạng câu đi là chỉ số này tắt hẳn
+và chiều DETECT mất một phần tư trọng số mà không báo gì. Nay nó nhận thêm
+`trapByQuestion` và đo trên **mọi câu có cài bẫy** — đúng với việc làm bài hơn dạng cũ.
+(`analytics/index.ts` vốn đã dùng `hasTrap`, nên ERS §23 không bị ảnh hưởng.)
+
+**Giữ lại năng lực chấm TRAP_ID trong engine**, kèm fixture riêng trong test, để sau này dựng
+lại một dạng dễ hiểu hơn thì không phải làm lại từ đầu.
+

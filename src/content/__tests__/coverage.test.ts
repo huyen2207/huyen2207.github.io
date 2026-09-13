@@ -295,7 +295,8 @@ describe('Thống kê nội dung', () => {
     const s = contentStats();
     // 194 chứ không phải 195: 「〜ならでは」từng bị nhập hai lần (nara-dewa + narade-wa), đã gộp.
     expect(s.grammar).toBe(194);
-    expect(s.questions).toBeGreaterThanOrEqual(971);
+    // 965: đã gỡ 6 câu TRAP_ID ("câu này bẫy ở đâu?") — xem D-04.
+    expect(s.questions).toBeGreaterThanOrEqual(965);
     expect(s.comparisonSets).toBe(88);
   });
 

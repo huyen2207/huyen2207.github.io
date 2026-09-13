@@ -1,5 +1,6 @@
 import { observedCadence, type CadenceCheck } from '@/engines/roadmap';
 import type { DashboardMetrics, NotebookLineVi, WeeklyCheckpoint } from '@/domain/analytics';
+import { listQuestions } from '@/content/repository';
 import type { GrammarMetrics, SkillProfile } from '@/domain/mastery';
 import {
   buildMetricCards,
@@ -77,21 +78,34 @@ export function confusionMatrix(ctx: EngineContext) {
   return buildConfusionMatrix(ctx.attempts, ctx.now);
 }
 
+/** Câu nào có cài bẫy — tính một lần rồi dùng lại. */
+let trapCache: Record<string, boolean> | null = null;
+function trapMap(): Record<string, boolean> {
+  if (!trapCache) {
+    trapCache = {};
+    for (const q of listQuestions()) if (q.trap) trapCache[q.id] = true;
+  }
+  return trapCache;
+}
+
 export function grammarInsight(
   ctx: EngineContext,
   grammarId: string,
 ): { metrics: GrammarMetrics; skills: SkillProfile } {
-  const metrics = computeGrammarMetrics(grammarId, ctx.attempts, {
+  const opts = {
     now: ctx.now,
     phase: ctx.timeline.currentPhase,
     daysRemaining: ctx.timeline.daysRemaining,
-  });
+    trapByQuestion: trapMap(),
+  };
+  const metrics = computeGrammarMetrics(grammarId, ctx.attempts, opts);
   const mastery = ctx.mastery.find((m) => m.grammarId === grammarId);
   const confusedTotal = Object.values(mastery?.confusedWith ?? {}).reduce((s, v) => s + v, 0);
   const skills = computeSkillProfile(
     metrics,
     ctx.attempts.filter((a) => a.grammarId === grammarId),
     confusedTotal,
+    opts,
   );
   return { metrics, skills };
 }
