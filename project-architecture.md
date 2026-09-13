@@ -1167,6 +1167,20 @@ không lệch kế hoạch. Mỗi thẻ học kèm câu recall (§11).
 > Kèm theo: `markLearnCard` nay chỉ đóng dấu `learnCardDoneAt` **lần đầu**. Trước đó xem lại
 > thẻ cũ cũng bị tính là "hôm nay học mẫu mới", nên dựng lại buổi học ăn mất quota của ngày.
 
+### 17.u Thẻ ôn của tôi (`/flashcards`)
+
+Người học tự đánh dấu mẫu ngữ pháp hoặc bảng so sánh nào chưa thuộc hẳn, rồi xem lại / luyện riêng.
+
+**Ranh giới cố ý:** bộ thẻ chỉ chọn **nội dung**. Nó KHÔNG đụng vào `priority` của ReviewEngine
+(CLAUDE.md §14.1) và KHÔNG tạo thuật toán ôn song song — §19.1 cấm để người học chỉnh tay thuật
+toán review. `buildFlashcardDrill` đi qua đúng `buildAdHocDrill` như mọi drill khác, nên vẫn chịu
+H9 và câu trả lời vẫn ghi `Attempt` → mastery → lịch ôn qua đúng một engine.
+
+Chế độ "Lật thẻ xem lại" che nội dung cho tới khi người học tự nhớ xong (§11 — cấm đọc suông).
+
+Lưu trữ: bảng Dexie `flashcards` (schema v2, thêm bảng mới, không đụng dữ liệu cũ), nằm trong
+`resetAllData` và trong file sao lưu. Thẻ trỏ tới nội dung không còn tồn tại bị bỏ khi đọc ra.
+
 ### 17.v Nút quay lại đi LÙI trong bài, không thoát ra
 
 `AppShell` nhận thêm `onBack`. `/session`, `/practice`, `/review` truyền vào hàm lùi một mục;

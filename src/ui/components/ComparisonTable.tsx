@@ -2,6 +2,7 @@ import type { ComparisonSet } from '@/domain/grammar';
 import { getGrammar } from '@/content/repository';
 import { t } from '@/i18n/vi';
 import { Card } from './primitives';
+import { SaveToDeck } from './SaveToDeck';
 
 /** Bảng so sánh — cuộn ngang được trên 375px (arch §9 /compare). */
 export function ComparisonTable({ set }: { set: ComparisonSet }) {
@@ -69,6 +70,11 @@ export function ComparisonTable({ set }: { set: ComparisonSet }) {
           <p className="text-[14px] leading-relaxed">{set.examPatternVi}</p>
         </Card>
       )}
+
+      {/* Ngay dưới bảng — đúng lúc người học vừa đọc xong và biết mình có thuộc hay không. */}
+      <div className="mt-3">
+        <SaveToDeck kind="COMPARISON" refId={set.id} />
+      </div>
     </div>
   );
 }

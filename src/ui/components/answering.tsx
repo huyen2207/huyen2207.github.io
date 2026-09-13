@@ -255,7 +255,7 @@ export function ExplanationPanel({
  * Chỉ hiện khi câu hỏi nhắm ĐÚNG MỘT mẫu; câu so sánh nhiều mẫu đã có bảng riêng
  * ở Compare Lab, nhồi 3–4 cấu trúc vào đây sẽ thành bức tường chữ trên điện thoại.
  */
-function StructureRecap({ grammar, full }: { grammar: GrammarView; full: boolean }) {
+export function StructureRecap({ grammar, full }: { grammar: GrammarView; full: boolean }) {
   return (
     <Card className="px-3.5 py-3">
       <h3 className="mb-2 text-[12px] font-semibold uppercase tracking-wide" style={{ color: 'var(--ink-faint)' }}>

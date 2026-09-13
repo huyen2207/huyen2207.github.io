@@ -5,6 +5,7 @@ import type { LearnerProfile, StudyPlan } from '@/domain/learner';
 import type { DailySession } from '@/domain/session';
 import type { ReadinessSnapshot, WeeklyCheckpoint } from '@/domain/analytics';
 import type { GrammarRelation } from '@/domain/grammar';
+import type { Flashcard } from '@/domain/flashcard';
 
 /* ── profile ── */
 export const profileRepo = {
@@ -151,6 +152,22 @@ export const metaRepo = {
   },
 };
 
+/* ── flashcards ── */
+export const flashcardRepo = {
+  async all(): Promise<Flashcard[]> {
+    return db.flashcards.orderBy('addedAt').reverse().toArray();
+  },
+  async put(card: Flashcard): Promise<void> {
+    await db.flashcards.put(card);
+  },
+  async remove(id: string): Promise<void> {
+    await db.flashcards.delete(id);
+  },
+  async has(id: string): Promise<boolean> {
+    return (await db.flashcards.get(id)) !== undefined;
+  },
+};
+
 /** Reset toàn bộ dữ liệu học (xác nhận hai bước ở UI). */
 export async function resetAllData(): Promise<void> {
   await Promise.all([
@@ -164,5 +181,6 @@ export async function resetAllData(): Promise<void> {
     db.learnedRelations.clear(),
     db.contentOverrides.clear(),
     db.meta.clear(),
+    db.flashcards.clear(),
   ]);
 }

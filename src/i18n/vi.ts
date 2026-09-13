@@ -430,6 +430,28 @@ const vi: Record<string, string> = {
   'practice.newDone': 'Xong phần học thêm. Các mẫu này đã vào lịch ôn.',
   'practice.noNewLeft': 'Lộ trình không còn mẫu nào chưa học.',
   'practice.newCount': 'Số mẫu',
+
+  /* Thẻ ôn của tôi */
+  'deck.title': 'Thẻ ôn của tôi',
+  'deck.ja': '暗記',
+  'deck.save': '+ Lưu vào thẻ ôn',
+  'deck.saved': '✓ Đã lưu vào thẻ ôn — bấm để bỏ',
+  'deck.empty': 'Chưa có thẻ nào',
+  'deck.emptyBody':
+    'Trong lúc học, gặp mẫu hay bảng so sánh nào chưa thuộc hẳn thì bấm "Lưu vào thẻ ôn". Ở đây bạn xem lại và luyện riêng chúng.',
+  'deck.note':
+    'Bộ thẻ chỉ chọn NỘI DUNG để ôn. Việc chấm điểm và xếp lịch ôn vẫn do hệ thống lo như mọi phần khác.',
+  'deck.count': '{n} thẻ',
+  'deck.study': 'Luyện bộ thẻ này',
+  'deck.browse': 'Lật thẻ xem lại',
+  'deck.reveal': 'Tôi đã nghĩ xong — lật thẻ',
+  'deck.next': 'Thẻ tiếp theo',
+  'deck.remove': 'Bỏ khỏi bộ thẻ',
+  'deck.setSeparator': '・',
+  'deck.kind.GRAMMAR': 'Mẫu ngữ pháp',
+  'deck.kind.COMPARISON': 'Bảng so sánh',
+  'deck.promptGrammar': 'Mẫu này nghĩa là gì? Nối với thể nào?',
+  'deck.promptComparison': 'Các mẫu trong nhóm này khác nhau ở điểm nào?',
   'practice.nothingLearnedTitle': 'Bạn chưa học mẫu nào',
   'practice.nothingLearnedBody':
     'Phần này ôn lại những mẫu bạn ĐÃ học, nên bây giờ chưa có gì để ôn. Hãy học buổi hôm nay ở tab Hôm nay, hoặc học vài mẫu mới ngay tại đây.',
@@ -623,6 +645,7 @@ const vi: Record<string, string> = {
   'more.mock.ja': '模擬試験',
   'more.grammarMap.ja': '文法マップ',
   'more.settings.ja': '設定',
+  'more.deck.ja': '暗記',
   'complete.finishJa': '終了',
   'mistakes.emptyJa': 'まだミスはありません。',
   'settings.importGrammarJson': '文法 JSON',

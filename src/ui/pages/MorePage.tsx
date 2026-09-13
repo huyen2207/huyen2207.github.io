@@ -7,6 +7,7 @@ const LINKS = [
   { to: '/compare', labelKey: 'compare.title', jaKey: 'more.compare.ja' },
   { to: '/trap-lab', labelKey: 'trapLab.title', jaKey: 'more.trapLab.ja' },
   { to: '/practice', labelKey: 'practice.title', jaKey: 'more.practice.ja' },
+  { to: '/flashcards', labelKey: 'deck.title', jaKey: 'more.deck.ja' },
   { to: '/mock', labelKey: 'mock.title', jaKey: 'more.mock.ja' },
   { to: '/grammar-map', labelKey: 'grammarMap.title', jaKey: 'more.grammarMap.ja' },
   { to: '/settings', labelKey: 'settings.title', jaKey: 'more.settings.ja' },

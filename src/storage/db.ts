@@ -6,6 +6,7 @@ import type { DailySession } from '@/domain/session';
 import type { ReadinessSnapshot, WeeklyCheckpoint } from '@/domain/analytics';
 import type { GrammarRelation, Grammar } from '@/domain/grammar';
 import type { Question } from '@/domain/question';
+import type { Flashcard } from '@/domain/flashcard';
 
 export interface MetaRow {
   key: string;
@@ -24,7 +25,7 @@ export interface LearnedRelationRow extends GrammarRelation {
   key: string;
 }
 
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 export class AppDb extends Dexie {
   profile!: Table<LearnerProfile, string>;
@@ -37,6 +38,7 @@ export class AppDb extends Dexie {
   learnedRelations!: Table<LearnedRelationRow, string>;
   contentOverrides!: Table<ContentOverrideRow, string>;
   meta!: Table<MetaRow, string>;
+  flashcards!: Table<Flashcard, string>;
 
   constructor(name = 'n1-bunpou-90days') {
     super(name);
@@ -52,6 +54,8 @@ export class AppDb extends Dexie {
       contentOverrides: 'id, type, verificationStatus',
       meta: 'key',
     });
+    // v2 — bộ thẻ ôn do người học tự đánh dấu. Thêm bảng mới, không đụng dữ liệu cũ.
+    this.version(2).stores({ flashcards: 'id, kind, refId, addedAt' });
   }
 }
 

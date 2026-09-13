@@ -16,6 +16,7 @@ import ReviewPage from './pages/ReviewPage';
 import MistakesPage from './pages/MistakesPage';
 import GrammarMapPage from './pages/GrammarMapPage';
 import PracticePage from './pages/PracticePage';
+import FlashcardsPage from './pages/FlashcardsPage';
 import MockPage from './pages/MockPage';
 import AnalyticsPage from './pages/AnalyticsPage';
 import SettingsPage from './pages/SettingsPage';
@@ -69,6 +70,7 @@ export default function App() {
       <Route path="/mistakes" element={<MistakesPage />} />
       <Route path="/grammar-map" element={<GrammarMapPage />} />
       <Route path="/practice" element={<PracticePage />} />
+      <Route path="/flashcards" element={<FlashcardsPage />} />
       <Route path="/mock" element={<MockPage />} />
       <Route path="/analytics" element={<AnalyticsPage />} />
       <Route path="/settings" element={<SettingsPage />} />

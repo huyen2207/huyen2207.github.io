@@ -3,6 +3,7 @@ import type { GrammarView } from '@/domain/grammar';
 import { t } from '@/i18n/vi';
 import { Card, NeedsReviewBadge, Pill, PrimaryButton, SecondaryButton } from './primitives';
 import { JaText } from './JaText';
+import { SaveToDeck } from './SaveToDeck';
 
 /**
  * Micro lesson — thứ tự 10 mục CHỐT theo arch §9 (/grammar/:id).
@@ -211,6 +212,10 @@ export function LearnCard({
               </div>
             </Card>
           )}
+
+          <div className="mb-3">
+            <SaveToDeck kind="GRAMMAR" refId={grammar.id} />
+          </div>
 
           <button
             type="button"

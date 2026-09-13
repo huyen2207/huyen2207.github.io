@@ -19,6 +19,7 @@ const TABLES = [
   'learnedRelations',
   'contentOverrides',
   'meta',
+  'flashcards',
 ] as const;
 
 /** Export toàn bộ dữ liệu học ra JSON (bắt buộc ở MVP — CLAUDE.md §25). */
