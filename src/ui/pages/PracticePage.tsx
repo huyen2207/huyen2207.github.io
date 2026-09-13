@@ -13,7 +13,7 @@ import type { DrillKind } from '@/domain/enums';
 import { t } from '@/i18n/vi';
 import { AppShell } from '../AppShell';
 import { Card, EmptyState, PrimaryButton, ThumbBar } from '../components/primitives';
-import { QuestionRunner } from '../components/QuestionRunner';
+import { QuestionRunner, type AnswerSnapshot } from '../components/QuestionRunner';
 import { LearnCard } from '../components/LearnCard';
 
 const MODES: Array<{ key: DrillKind; labelKey: string; payload: Record<string, unknown> }> = [
@@ -35,6 +35,7 @@ export default function PracticePage() {
   const [newCount, setNewCount] = useState(2);
   const [items, setItems] = useState<SessionItem[] | null>(null);
   const [pos, setPos] = useState(0);
+  const [snapshots, setSnapshots] = useState<Record<string, AnswerSnapshot>>({});
 
   const [capAck, setCapAck] = useState(false);
   // Ảnh chụp trạng thái học (`ctx`) chỉ được dựng lúc mở app. Học xong buổi chính rồi
@@ -52,6 +53,7 @@ export default function PracticePage() {
   function run(next: SessionItem[]) {
     setItems(next);
     setPos(0);
+    setSnapshots({});
   }
 
   function startDrill(kind: DrillKind, payload: Record<string, unknown>) {
@@ -78,6 +80,8 @@ export default function PracticePage() {
       void refresh();
     };
     const advance = () => (pos + 1 >= items.length ? finish() : setPos((p) => p + 1));
+    // Lùi về mục TRƯỚC trong lượt luyện; ở mục đầu thì thoát về danh sách.
+    const back = () => (pos <= 0 ? finish() : setPos((p) => p - 1));
 
     if (!item) {
       return (
@@ -117,7 +121,7 @@ export default function PracticePage() {
       const grammar = getGrammarView(item.grammarId);
       if (!grammar) return <EmptyState titleKey="error.invalidData" />;
       return (
-        <AppShell title={t('practice.title')} back hideNav>
+        <AppShell title={t('practice.title')} back hideNav onBack={back}>
           <LearnCard
             key={grammar.id}
             grammar={grammar}
@@ -142,7 +146,7 @@ export default function PracticePage() {
 
     const q = getQuestion(item.questionId)!;
     return (
-      <AppShell title={t('practice.title')} back hideNav>
+      <AppShell title={t('practice.title')} back hideNav onBack={back}>
         <QuestionRunner
           key={q.id}
           question={q}
@@ -150,6 +154,8 @@ export default function PracticePage() {
           blockType="APPLY"
           index={pos}
           total={items.length}
+          prior={snapshots[q.id]}
+          onAnswered={(_r, qq, snap) => setSnapshots((prev) => ({ ...prev, [qq.id]: snap }))}
           onNext={advance}
         />
       </AppShell>

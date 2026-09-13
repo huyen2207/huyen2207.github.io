@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { DailySession, SessionItem } from '@/domain/session';
 import type { SessionBlockType } from '@/domain/enums';
+import type { Question } from '@/domain/question';
 import type { GradeResult } from '@/engines/exercise';
 import { useAppStore } from '@/app/stores/appStore';
 import { markLearnCard } from '@/app/services/answerService';
@@ -12,7 +13,7 @@ import { attemptRepo } from '@/storage/repositories';
 import { t } from '@/i18n/vi';
 import { AppShell } from '../AppShell';
 import { Card, EmptyState, PrimaryButton, SecondaryButton, ThumbBar } from '../components/primitives';
-import { QuestionRunner } from '../components/QuestionRunner';
+import { QuestionRunner, type AnswerSnapshot } from '../components/QuestionRunner';
 import { LearnCard } from '../components/LearnCard';
 import { ComparisonTable } from '../components/ComparisonTable';
 
@@ -34,6 +35,8 @@ export default function SessionPage() {
   const [finished, setFinished] = useState(false);
   const [results, setResults] = useState<GradeResult[]>([]);
   const [compareRevealed, setCompareRevealed] = useState(false);
+  // Giữ lại câu đã trả lời để khi lùi về thì hiện nguyên kết quả cũ, không bắt làm lại.
+  const [snapshots, setSnapshots] = useState<Record<string, AnswerSnapshot>>({});
 
   const flat = useMemo<FlatItem[]>(() => {
     if (!session) return [];
@@ -90,6 +93,13 @@ export default function SessionPage() {
     setPos(next);
   }, [ctx, flat, pos, session, setSession]);
 
+  /** Lùi về mục TRƯỚC trong buổi học; ở mục đầu tiên thì mới rời trang. */
+  const goBack = () => {
+    if (pos <= 0) return navigate(-1);
+    setCompareRevealed(false);
+    setPos(pos - 1);
+  };
+
   if (!ctx || !session) {
     return (
       <AppShell title={t('today.title')} back hideNav>
@@ -118,6 +128,7 @@ export default function SessionPage() {
       title={blockLabel}
       back
       hideNav
+      onBack={goBack}
       action={
         <span className="tabular text-[13px]" style={{ color: 'var(--ink-faint)' }}>
           {pos + 1}/{flat.length}
@@ -146,7 +157,11 @@ export default function SessionPage() {
           questionId={current.item.questionId}
           delivery={current.item.delivery}
           blockType={current.blockType}
-          onAnswered={(r) => setResults((prev) => [...prev, r])}
+          prior={snapshots[current.item.questionId]}
+          onAnswered={(r, q, snap) => {
+            setResults((prev) => [...prev, r]);
+            setSnapshots((prev) => ({ ...prev, [q.id]: snap }));
+          }}
           onNext={() => void advance()}
         />
       )}
@@ -197,12 +212,14 @@ function QuestionStep({
   delivery,
   blockType,
   onAnswered,
+  prior,
   onNext,
 }: {
   questionId: string;
   delivery: 'STUDY' | 'PRACTICE' | 'TIMED' | 'MOCK';
   blockType: FlatItem['blockType'];
-  onAnswered: (r: GradeResult) => void;
+  onAnswered: (r: GradeResult, q: Question, snap: AnswerSnapshot) => void;
+  prior?: AnswerSnapshot;
   onNext: () => void;
 }) {
   const question = getQuestion(questionId);
@@ -214,6 +231,7 @@ function QuestionStep({
       delivery={delivery}
       blockType={blockType}
       onAnswered={onAnswered}
+      prior={prior}
       onNext={onNext}
     />
   );

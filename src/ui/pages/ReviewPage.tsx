@@ -9,13 +9,14 @@ import { t } from '@/i18n/vi';
 import { AppShell } from '../AppShell';
 import { Card, EmptyState, Pill, PrimaryButton, SecondaryButton, ThumbBar } from '../components/primitives';
 import { StatePill } from '../components/StatePill';
-import { QuestionRunner } from '../components/QuestionRunner';
+import { QuestionRunner, type AnswerSnapshot } from '../components/QuestionRunner';
 
 export default function ReviewPage() {
   const ctx = useAppStore((s) => s.ctx);
   const refresh = useAppStore((s) => s.refresh);
   const [block, setBlock] = useState<SessionBlock | null>(null);
   const [pos, setPos] = useState(0);
+  const [snapshots, setSnapshots] = useState<Record<string, AnswerSnapshot>>({});
 
   // Ảnh chụp trạng thái học (`ctx`) chỉ được dựng lúc mở app. Học xong buổi chính rồi
   // sang đây thì ảnh chụp vẫn là của lúc sáng — những mẫu vừa học hôm nay chưa có trong
@@ -43,6 +44,7 @@ export default function ReviewPage() {
       ),
     );
     setPos(0);
+    setSnapshots({});
   }
 
   if (block) {
@@ -66,7 +68,15 @@ export default function ReviewPage() {
     }
     const q = getQuestion(item.questionId)!;
     return (
-      <AppShell title={t('review.title')} back hideNav>
+      <AppShell
+        title={t('review.title')}
+        back
+        hideNav
+        onBack={() => {
+          if (pos <= 0) return setBlock(null);
+          setPos((p) => p - 1);
+        }}
+      >
         <QuestionRunner
           key={q.id}
           question={q}
@@ -74,6 +84,8 @@ export default function ReviewPage() {
           blockType="REVIEW"
           index={pos}
           total={block.items.length}
+          prior={snapshots[q.id]}
+          onAnswered={(_r, qq, snap) => setSnapshots((prev) => ({ ...prev, [qq.id]: snap }))}
           onNext={() => {
             if (pos + 1 < block.items.length) return setPos((p) => p + 1);
             setBlock(null);

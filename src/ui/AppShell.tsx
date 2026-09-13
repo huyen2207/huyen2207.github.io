@@ -16,12 +16,15 @@ export function AppShell({
   back,
   action,
   hideNav,
+  onBack,
 }: {
   children: ReactNode;
   title?: string;
   back?: boolean;
   action?: ReactNode;
   hideNav?: boolean;
+  /** Thay hành vi mặc định (rời trang) — dùng để lùi về mục TRƯỚC trong buổi học. */
+  onBack?: () => void;
 }) {
   const navigate = useNavigate();
   return (
@@ -34,7 +37,7 @@ export function AppShell({
           {back && (
             <button
               type="button"
-              onClick={() => navigate(-1)}
+              onClick={() => (onBack ? onBack() : navigate(-1))}
               aria-label={t('common.back')}
               className="tap -ml-2 flex items-center justify-center rounded-lg px-2"
             >

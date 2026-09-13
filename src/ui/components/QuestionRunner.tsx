@@ -12,12 +12,26 @@ import { ChoiceButton, ConfidenceSelector, ExplanationPanel, ResultBanner, SelfR
 import { ClozeText, JaText } from './JaText';
 import { getGrammarView } from '@/content/repository';
 
+/**
+ * Ảnh chụp một lần trả lời, để khi người học bấm QUAY LẠI thì hiện nguyên kết quả cũ
+ * thay vì bắt làm lại — làm lại sẽ ghi thêm một Attempt nữa cho cùng một lần suy nghĩ,
+ * làm sai thống kê và làm lệch mastery.
+ */
+export interface AnswerSnapshot {
+  selected: string;
+  confidence: Confidence;
+  order: string[];
+  result: GradeResult;
+}
+
 export interface QuestionRunnerProps {
   question: Question;
   delivery: DeliveryMode;
   blockType: SessionBlockType;
   /** MOCK: không hiện feedback, chỉ ghi nhận rồi sang câu sau. */
-  onAnswered?: (result: GradeResult, question: Question) => void;
+  onAnswered?: (result: GradeResult, question: Question, snapshot: AnswerSnapshot) => void;
+  /** Câu này đã trả lời rồi trong lượt hiện tại — hiện lại kết quả cũ. */
+  prior?: AnswerSnapshot;
   onNext: () => void;
   index?: number;
   total?: number;
@@ -32,6 +46,7 @@ export function QuestionRunner({
   delivery,
   blockType,
   onAnswered,
+  prior,
   onNext,
   index,
   total,
@@ -67,12 +82,12 @@ export function QuestionRunner({
 
   useEffect(() => {
     startedAt.current = Date.now();
-    setSelected(null);
-    setConfidence(isMock ? 'UNSURE' : null);
-    setResult(null);
+    setSelected(prior?.selected ?? null);
+    setConfidence(prior?.confidence ?? (isMock ? 'UNSURE' : null));
+    setResult(prior?.result ?? null);
     setSelfReported(false);
-    setOrder(isBuild ? (view.fragments ?? []).map((f) => f.id) : []);
-  }, [question.id, isMock, isBuild, view.fragments]);
+    setOrder(prior?.order ?? (isBuild ? (view.fragments ?? []).map((f) => f.id) : []));
+  }, [question.id, isMock, isBuild, view.fragments, prior]);
 
   const trapOptions = useMemo<TrapType[]>(() => {
     if (!isTrapId) return [];
@@ -98,6 +113,7 @@ export function QuestionRunner({
 
   function submit() {
     if (!ctx || !session || !confidence || !selected) return;
+    if (prior) return; // đã trả lời rồi — không chấm lại, không ghi thêm
     const responseTimeMs = Math.max(300, Date.now() - startedAt.current);
     const input = {
       ctx,
@@ -114,7 +130,7 @@ export function QuestionRunner({
     // Chấm đồng bộ → hiện feedback ngay; ghi DB chạy nền (arch §8.3).
     const graded = gradeAnswer(input);
     setResult(graded);
-    onAnswered?.(graded, question);
+    onAnswered?.(graded, question, { selected, confidence, order, result: graded });
     void persistAnswer(input, graded);
     if (isMock) onNext();
   }

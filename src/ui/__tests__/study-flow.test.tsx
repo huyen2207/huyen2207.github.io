@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it } from 'vitest';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
-import { QuestionRunner } from '../components/QuestionRunner';
+import { QuestionRunner, type AnswerSnapshot } from '../components/QuestionRunner';
 import { LearnCard } from '../components/LearnCard';
 import { ComparisonTable } from '../components/ComparisonTable';
 import { completeOnboarding } from '@/app/services/onboardingService';
@@ -208,3 +208,47 @@ describe('Khả năng truy cập', () => {
     expect(screen.getByRole('radiogroup', { name: vi['confidence.prompt'] })).toBeInTheDocument();
   });
 });
+
+describe('Quay lại câu đã trả lời', () => {
+  it('hiện lại kết quả cũ và KHÔNG ghi thêm Attempt', async () => {
+    const user = userEvent.setup();
+    const question = getQuestion('q-ni-itatte-cloze-01')!;
+
+    // Lượt đầu: trả lời bình thường, giữ lại ảnh chụp.
+    let snap: AnswerSnapshot | undefined;
+    const first = wrap(
+      <QuestionRunner
+        question={question}
+        delivery="PRACTICE"
+        blockType="APPLY"
+        onAnswered={(_r, _q, s) => {
+          snap = s;
+        }}
+        onNext={() => {}}
+      />,
+    );
+    await user.click(screen.getByText('に至って'));
+    await user.click(screen.getByRole('radio', { name: vi['confidence.CONFIDENT'] }));
+    await user.click(screen.getByRole('button', { name: vi['question.submit'] }));
+    await waitFor(() => expect(snap).toBeDefined());
+    await waitFor(async () => expect(await attemptRepo.all()).toHaveLength(1));
+    first.unmount();
+
+    // Lượt hai: người học bấm QUAY LẠI. Phải thấy ngay kết quả cũ, không có nút nộp.
+    wrap(
+      <QuestionRunner
+        question={question}
+        delivery="PRACTICE"
+        blockType="APPLY"
+        prior={snap}
+        onNext={() => {}}
+      />,
+    );
+    expect(screen.queryByRole('button', { name: vi['question.submit'] })).toBeNull();
+    expect(screen.getByText(vi['question.correct'])).toBeInTheDocument();
+
+    // Và quan trọng nhất: không đẻ thêm một Attempt nữa cho cùng một lần suy nghĩ.
+    expect(await attemptRepo.all()).toHaveLength(1);
+  });
+});
+

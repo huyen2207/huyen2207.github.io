@@ -1167,6 +1167,17 @@ không lệch kế hoạch. Mỗi thẻ học kèm câu recall (§11).
 > Kèm theo: `markLearnCard` nay chỉ đóng dấu `learnCardDoneAt` **lần đầu**. Trước đó xem lại
 > thẻ cũ cũng bị tính là "hôm nay học mẫu mới", nên dựng lại buổi học ăn mất quota của ngày.
 
+### 17.v Nút quay lại đi LÙI trong bài, không thoát ra
+
+`AppShell` nhận thêm `onBack`. `/session`, `/practice`, `/review` truyền vào hàm lùi một mục;
+chỉ khi đang ở mục đầu tiên thì mới rời trang như cũ.
+
+Vấn đề đi kèm: lùi về một câu ĐÃ trả lời rồi mà bắt làm lại thì sẽ ghi **thêm một `Attempt`**
+cho cùng một lần suy nghĩ — sai thống kê và làm lệch mastery (CLAUDE.md §9). Vì vậy
+`QuestionRunner` nhận `prior: AnswerSnapshot` (`selected` / `confidence` / `order` / `result`):
+có nó thì hiện thẳng kết quả cũ, không chấm lại, `submit()` thoát sớm. Trang cha giữ ảnh chụp
+theo `question.id` trong lượt hiện tại.
+
 ### 17.w `ctx` cũ làm chết `/practice` và `/review`
 
 `ctx` (ảnh chụp hồ sơ + mastery + weakness) chỉ được dựng trong `bootstrap`, tức là **lúc mở
