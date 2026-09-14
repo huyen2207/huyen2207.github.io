@@ -1,14 +1,15 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useAppStore } from '@/app/stores/appStore';
 import { errorRecords, notebook } from '@/app/services/analyticsService';
 import { buildDrill } from '@/app/services/sessionService';
+import { wrongQuestionsToRedo } from '@/app/services/mistakeRedoService';
 import { getGrammar, getQuestion } from '@/content/repository';
 import type { SessionBlock } from '@/domain/session';
 import type { DrillKind } from '@/domain/enums';
 import { t } from '@/i18n/vi';
 import { AppShell } from '../AppShell';
 import { Card, EmptyState, Pill, PrimaryButton, SecondaryButton, ThumbBar } from '../components/primitives';
-import { QuestionRunner } from '../components/QuestionRunner';
+import { QuestionRunner, type AnswerSnapshot } from '../components/QuestionRunner';
 
 const TABS = [
   { key: 'recent', labelKey: 'mistakes.tab.recent' },
@@ -23,9 +24,31 @@ type TabKey = (typeof TABS)[number]['key'];
 
 export default function MistakesPage() {
   const ctx = useAppStore((s) => s.ctx);
+  const refresh = useAppStore((s) => s.refresh);
   const [tab, setTab] = useState<TabKey>('recent');
   const [block, setBlock] = useState<SessionBlock | null>(null);
   const [pos, setPos] = useState(0);
+  // Làm lại ĐÚNG những câu đã sai (không phải drill mới sinh ra).
+  const [redo, setRedo] = useState<string[] | null>(null);
+  const [snapshots, setSnapshots] = useState<Record<string, AnswerSnapshot>>({});
+
+  // Đọc lại trạng thái: vừa học xong buổi chính rồi sang đây thì ảnh chụp lúc mở app đã cũ.
+  useEffect(() => {
+    void refresh();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const wrong = useMemo(() => (ctx ? wrongQuestionsToRedo(ctx) : []), [ctx]);
+
+  function startRedo(ids: string[]) {
+    setRedo(ids);
+    setPos(0);
+    setSnapshots({});
+  }
+  function endRedo() {
+    setRedo(null);
+    void refresh();
+  }
 
   const lines = useMemo(() => (ctx ? notebook(ctx) : []), [ctx]);
   const records = useMemo(() => (ctx ? errorRecords(ctx) : []), [ctx]);
@@ -51,6 +74,34 @@ export default function MistakesPage() {
     if (!ctx) return;
     setBlock(buildDrill(ctx, kind, payload, 5));
     setPos(0);
+  }
+
+  if (redo) {
+    const q = getQuestion(redo[pos]);
+    if (!q) {
+      endRedo();
+      return null;
+    }
+    return (
+      <AppShell
+        title={t('mistakes.redoTitle')}
+        back
+        hideNav
+        onBack={() => (pos <= 0 ? endRedo() : setPos((p) => p - 1))}
+      >
+        <QuestionRunner
+          key={q.id}
+          question={q}
+          delivery="PRACTICE"
+          blockType="ANALYZE_ERROR"
+          index={pos}
+          total={redo.length}
+          prior={snapshots[q.id]}
+          onAnswered={(_r, qq, snap) => setSnapshots((prev) => ({ ...prev, [qq.id]: snap }))}
+          onNext={() => (pos + 1 >= redo.length ? endRedo() : setPos((p) => p + 1))}
+        />
+      </AppShell>
+    );
   }
 
   if (block) {
@@ -110,6 +161,56 @@ export default function MistakesPage() {
           </ul>
         </section>
       )}
+
+      <section className="mb-6">
+        <h2 className="mb-1 text-[13px] font-semibold uppercase tracking-wide" style={{ color: 'var(--ink-faint)' }}>
+          {t('mistakes.redoTitle')}
+        </h2>
+        {wrong.length === 0 ? (
+          <Card className="px-4 py-3">
+            <p className="text-[14px]">{t('mistakes.redoEmpty')}</p>
+          </Card>
+        ) : (
+          <>
+            <p className="mb-2 text-[13px] leading-relaxed" style={{ color: 'var(--ink-soft)' }}>
+              {t('mistakes.redoNote')}
+            </p>
+            <div className="mb-3">
+              <PrimaryButton onClick={() => startRedo(wrong.map((w) => w.question.id))}>
+                {t('mistakes.redoAll', { n: wrong.length })}
+              </PrimaryButton>
+            </div>
+            <ul className="space-y-2">
+              {wrong.map((w) => (
+                <li key={w.question.id}>
+                  <Card className="px-4 py-3">
+                    <p className="ja ja-sentence mb-2">{w.question.stemJa}</p>
+                    <dl className="space-y-1 text-[13px]">
+                      {w.chosenLabel && (
+                        <div className="flex gap-2">
+                          <dt style={{ color: 'var(--ink-faint)' }}>{t('mistakes.youChose')}</dt>
+                          <dd className="ja" style={{ color: 'var(--seal)' }}>{w.chosenLabel}</dd>
+                        </div>
+                      )}
+                      {w.correctLabel && (
+                        <div className="flex gap-2">
+                          <dt style={{ color: 'var(--ink-faint)' }}>{t('mistakes.correctWas')}</dt>
+                          <dd className="ja" style={{ color: 'var(--accent)' }}>{w.correctLabel}</dd>
+                        </div>
+                      )}
+                    </dl>
+                    <div className="mt-2 flex items-center gap-2">
+                      <Pill tone="warn">{t('mistakes.wrongTimes', { n: w.wrongCount })}</Pill>
+                      <span className="flex-1" />
+                      <SecondaryButton onClick={() => startRedo([w.question.id])}>{t('mistakes.redoOne')}</SecondaryButton>
+                    </div>
+                  </Card>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+      </section>
 
       <div className="scroll-x -mx-4 mb-3 px-4">
         <div className="flex w-max gap-2">

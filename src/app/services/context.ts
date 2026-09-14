@@ -13,6 +13,13 @@ import { attemptRepo, flashcardRepo, masteryRepo, planRepo, profileRepo, session
 
 /** Id mẫu đã gộp → id còn giữ. */
 const MERGED_GRAMMAR_IDS: Record<string, string> = { 'nara-dewa': 'narade-wa' };
+
+function normalizeMergedIds(a: Attempt): Attempt {
+  const g = MERGED_GRAMMAR_IDS[a.grammarId];
+  const c = a.confusedWith ? MERGED_GRAMMAR_IDS[a.confusedWith] : undefined;
+  if (!g && !c) return a;
+  return { ...a, ...(g ? { grammarId: g } : {}), ...(c ? { confusedWith: c } : {}) };
+}
 import { daysAgo, dayKey } from '@/shared/date';
 import { median } from '@/shared/math';
 import { GUESS_WINDOW, ERROR_WINDOW_DAYS } from '@/config/learning.config';
@@ -136,7 +143,9 @@ export async function loadContext(now: Date): Promise<EngineContext | null> {
     }
   }
 
-  const attempts = await attemptRepo.all();
+  // Attempt ghi dưới id mẫu đã gộp vẫn nằm nguyên trong DB (append-only, §9). Chuẩn hoá
+  // lúc ĐỌC, nếu không sổ lỗi hiện một mẫu thành hai dòng và lộ cả mã nội bộ "nara-dewa".
+  const attempts = (await attemptRepo.all()).map(normalizeMergedIds);
   const weakness =
     attempts.length === 0
       ? { ...emptyWeaknessProfile(now), daysSinceLastSession: gap, reviewDebt: countDue(mastery, now) }

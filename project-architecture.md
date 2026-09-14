@@ -1167,6 +1167,19 @@ không lệch kế hoạch. Mỗi thẻ học kèm câu recall (§11).
 > Kèm theo: `markLearnCard` nay chỉ đóng dấu `learnCardDoneAt` **lần đầu**. Trước đó xem lại
 > thẻ cũ cũng bị tính là "hôm nay học mẫu mới", nên dựng lại buổi học ăn mất quota của ngày.
 
+### 17.r `/mistakes` — làm lại đúng những câu đã sai
+
+`wrongQuestionsToRedo(ctx)` trả về các câu mà **lần gần nhất vẫn sai** (lỗi chưa sửa), kèm nhãn
+đáp án đã chọn và đáp án đúng. Làm lại đúng thì câu tự rời danh sách. Bỏ câu đã gỡ khỏi kho và câu
+thuộc mẫu chưa dạy (H9). Mục này nằm **dưới** các dòng tổng hợp tiếng Việt — §10 vẫn giữ: sổ lỗi
+không phải log thô, dòng tổng hợp đứng trước.
+
+Khác "Luyện ngay": "Luyện ngay" sinh drill mới cùng loại lỗi; "Làm lại" hỏi lại **đúng câu đã sai**.
+
+**Chuẩn hoá id mẫu đã gộp lúc đọc** (`normalizeMergedIds` trong `loadContext`): attempt ghi dưới
+`nara-dewa` vẫn nằm nguyên trong DB (append-only, §9), nhưng mọi engine thấy `narade-wa`. Trước khi
+sửa, sổ lỗi hiện 〜ならでは thành hai dòng và lộ mã nội bộ "nara-dewa".
+
 ### 17.s Màn kết quả khi trả lời SAI — thứ tự hiển thị
 
 Trả lời sai: `StructureRecap` (bản đầy đủ) đứng **ngay sau** "Vì sao đáp án này đúng".
