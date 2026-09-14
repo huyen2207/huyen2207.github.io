@@ -1167,6 +1167,15 @@ không lệch kế hoạch. Mỗi thẻ học kèm câu recall (§11).
 > Kèm theo: `markLearnCard` nay chỉ đóng dấu `learnCardDoneAt` **lần đầu**. Trước đó xem lại
 > thẻ cũ cũng bị tính là "hôm nay học mẫu mới", nên dựng lại buổi học ăn mất quota của ngày.
 
+### 17.s Màn kết quả khi trả lời SAI — thứ tự hiển thị
+
+Trả lời sai: `StructureRecap` (bản đầy đủ) đứng **ngay sau** "Vì sao đáp án này đúng".
+Bản trước để nó ở cuối — dưới "vì sao đáp án khác sai" và "các bước nên làm" — nên trên điện
+thoại nó khuất sau nút "Câu tiếp theo" và người học báo là không có. Trả lời đúng: vẫn nhắc gọn ở cuối.
+
+Lớp CSS `ja` (font tiếng Nhật) **không được** bọc chữ tiếng Việt: dấu thanh vỡ ("Vê´sau").
+Đã gỡ khỏi `keyClueVi`, nút "Học tiếp", `qtype.*`, `mock.structure`.
+
 ### 17.t Kỹ năng nhận bẫy đo trên câu THẬT có bẫy
 
 Dạng câu `TRAP_ID` ("câu này bẫy ở đâu?") đã gỡ khỏi kho nội dung — xem `implementation-decisions.md` D-04.

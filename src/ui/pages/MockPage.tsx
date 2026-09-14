@@ -121,7 +121,7 @@ export default function MockPage() {
     return (
       <AppShell title={t('mock.title')} back>
         <Card className="mb-4 px-4 py-4">
-          <p className="ja mb-2 text-[15px]">{t('mock.structure')}</p>
+          <p className="mb-2 text-[15px]">{t('mock.structure')}</p>
           <p className="text-[14px]" style={{ color: 'var(--ink-soft)' }}>
             {t('mock.rules')}
           </p>
@@ -244,7 +244,7 @@ export default function MockPage() {
         <ul className="space-y-1.5">
           {[...byType.entries()].map(([type, v]) => (
             <li key={type} className="flex items-center justify-between text-[14px]">
-              <span className="ja">{t(`qtype.${type}`)}</span>
+              <span>{t(`qtype.${type}`)}</span>
               <span className="tabular">
                 {v.correct}/{v.total}
               </span>

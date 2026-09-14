@@ -154,7 +154,10 @@ export default function TodayPage() {
         ) : (
           <div className="space-y-2">
             <PrimaryButton onClick={() => navigate('/session')}>
-              <span className="ja">{inProgress ? t('today.resumeSession') : t('today.startSession')}</span>
+              {/* "Học tiếp" là tiếng Việt — gán font tiếng Nhật thì dấu thanh bị vỡ. */}
+              <span className={inProgress ? undefined : 'ja'}>
+                {inProgress ? t('today.resumeSession') : t('today.startSession')}
+              </span>
             </PrimaryButton>
             {/* Hiện cả khi đang học dở: lúc cần dựng lại buổi học nhất chính là lúc
                 đang học mà thấy nội dung không ổn. Hộp xác nhận đã báo rõ mất tiến độ. */}

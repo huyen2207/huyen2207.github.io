@@ -155,12 +155,17 @@ export function ExplanationPanel({
         </Card>
       )}
 
+      {/* Trả lời SAI: dạy lại cấu trúc ngay sau lời giải. Để ở cuối thì trên điện thoại nó nằm
+          dưới cả "vì sao đáp án khác sai" lẫn "các bước nên làm", khuất sau nút "Câu tiếp theo" —
+          người học báo là "không thấy phần giải thích cấu trúc". */}
+      {grammar && teachFully && <StructureRecap grammar={grammar} full />}
+
       {feedback.keyClueVi && (
         <Card className="px-3.5 py-3" >
           <h3 className="mb-1 text-[12px] font-semibold uppercase tracking-wide" style={{ color: 'var(--ink-faint)' }}>
             {t('question.keyClue')}
           </h3>
-          <p className="ja text-[16px]">{feedback.keyClueVi}</p>
+          <p className="text-[15px] leading-relaxed">{feedback.keyClueVi}</p>
         </Card>
       )}
 
@@ -213,7 +218,8 @@ export function ExplanationPanel({
         </Card>
       )}
 
-      {grammar && <StructureRecap grammar={grammar} full={Boolean(teachFully)} />}
+      {/* Trả lời đúng: nhắc gọn ở cuối. */}
+      {grammar && !teachFully && <StructureRecap grammar={grammar} full={false} />}
 
       {otherGrammars && otherGrammars.length > 0 && (
         <Card className="px-3.5 py-3">
