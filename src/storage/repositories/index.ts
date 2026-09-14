@@ -32,6 +32,10 @@ export const planRepo = {
 
 /* ── mastery ── */
 export const masteryRepo = {
+  /** Chỉ dùng khi gộp mẫu trùng — xoá bản ghi của id đã bị gộp. */
+  async remove(grammarId: string): Promise<void> {
+    await db.mastery.delete(grammarId);
+  },
   async getAll(): Promise<GrammarMastery[]> {
     return db.mastery.toArray();
   },
@@ -165,6 +169,13 @@ export const flashcardRepo = {
   },
   async has(id: string): Promise<boolean> {
     return (await db.flashcards.get(id)) !== undefined;
+  },
+  /** Nội dung đổi id (gộp mẫu trùng) → thẻ đi theo, không bị mồ côi. */
+  async renameRef(kind: Flashcard['kind'], fromRef: string, toRef: string): Promise<void> {
+    const old = await db.flashcards.get(`${kind}:${fromRef}`);
+    if (!old) return;
+    await db.flashcards.delete(old.id);
+    await db.flashcards.put({ ...old, id: `${kind}:${toRef}`, refId: toRef });
   },
 };
 

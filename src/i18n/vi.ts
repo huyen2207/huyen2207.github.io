@@ -16,6 +16,7 @@ const vi: Record<string, string> = {
   'common.save': 'Lưu',
   'common.cancel': 'Huỷ',
   'common.confirm': 'Xác nhận',
+  'common.skip': 'Bỏ qua mục này',
   'common.finish': 'Kết thúc',
   'common.showAnswer': 'Xem đáp án',
   'common.practiceNow': 'Luyện ngay',

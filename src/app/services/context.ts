@@ -9,7 +9,10 @@ import { buildWeaknessProfile, emptyWeaknessProfile } from '@/engines/error';
 import { generatePlan, shouldReplan } from '@/engines/roadmap';
 import { weightedErrorScore, type GrammarPrioritySignals, type PriorityContext } from '@/engines/review';
 import { getGrammar, listRawGrammar, getQuestion } from '@/content/repository';
-import { attemptRepo, masteryRepo, planRepo, profileRepo, sessionRepo } from '@/storage/repositories';
+import { attemptRepo, flashcardRepo, masteryRepo, planRepo, profileRepo, sessionRepo } from '@/storage/repositories';
+
+/** Id mẫu đã gộp → id còn giữ. */
+const MERGED_GRAMMAR_IDS: Record<string, string> = { 'nara-dewa': 'narade-wa' };
 import { daysAgo, dayKey } from '@/shared/date';
 import { median } from '@/shared/math';
 import { GUESS_WINDOW, ERROR_WINDOW_DAYS } from '@/config/learning.config';
@@ -34,6 +37,23 @@ export async function ensureMasteryRows(): Promise<GrammarMastery[]> {
     .filter((g) => !known.has(g.id))
     .map((g) => createInitialMastery(g.id));
   if (missing.length) await masteryRepo.putMany(missing);
+
+  // Mẫu trùng đã gộp (implementation-decisions D-03): chuyển tiến độ sang id còn lại.
+  // Không làm thế thì người học đã học 〜ならでは dưới id cũ sẽ bị dạy lại từ đầu.
+  for (const [oldId, newId] of Object.entries(MERGED_GRAMMAR_IDS)) {
+    const from = existing.find((m) => m.grammarId === oldId);
+    const toIdx = existing.findIndex((m) => m.grammarId === newId);
+    if (!from) continue;
+    if (from.state !== 'UNSEEN' && (toIdx < 0 || existing[toIdx].state === 'UNSEEN')) {
+      const moved = { ...from, grammarId: newId };
+      await masteryRepo.putMany([moved]);
+      if (toIdx >= 0) existing[toIdx] = moved;
+      else existing.push(moved);
+    }
+    await masteryRepo.remove(oldId);
+    existing.splice(existing.indexOf(from), 1);
+    await flashcardRepo.renameRef('GRAMMAR', oldId, newId);
+  }
 
   // Trả về hàng chờ những mẫu bị đánh dấu "đã dạy" mà chưa hề có learn card.
   const repaired = repairUntaught(existing, new Date());

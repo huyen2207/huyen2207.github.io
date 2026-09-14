@@ -394,3 +394,45 @@ describe('Bất biến hệ thống qua nhiều ngày', () => {
     expect(await attemptRepo.count()).toBe(before);
   });
 });
+
+describe('Cập nhật nội dung không được làm người học kẹt', () => {
+  it('buổi học đã lưu trỏ tới câu hỏi đã bị gỡ → tự dựng lại', async () => {
+    await onboard();
+    const ctx = (await loadContext(START))!;
+    const session = await getOrCreateTodaySession(ctx);
+    const block = session.blocks.find((b) => b.items.length > 0)!;
+    await sessionRepo.put({
+      ...session,
+      blocks: session.blocks.map((b) =>
+        b === block
+          ? {
+              ...b,
+              items: [
+                { kind: 'QUESTION' as const, questionId: 'q-da-bi-go', timed: false, delivery: 'PRACTICE' as const, grammarId: 'x' },
+                ...b.items,
+              ],
+            }
+          : b,
+      ),
+    });
+    const rebuilt = await getOrCreateTodaySession((await loadContext(START))!);
+    const ids = rebuilt.blocks.flatMap((b) => b.items.map((i) => ('questionId' in i ? i.questionId : '')));
+    expect(ids).not.toContain('q-da-bi-go');
+  });
+
+  it('mẫu trùng đã gộp: tiến độ học dưới id cũ chuyển sang id mới', async () => {
+    await onboard();
+    await masteryRepo.putMany([
+      {
+        ...(await masteryRepo.get('narade-wa'))!,
+        grammarId: 'nara-dewa',
+        state: 'RECOGNIZED',
+        baseRank: 'RECOGNIZED',
+        learnCardDoneAt: START.toISOString(),
+      },
+    ]);
+    const ctx = (await loadContext(START))!;
+    expect(ctx.mastery.find((m) => m.grammarId === 'narade-wa')!.state).toBe('RECOGNIZED');
+    expect(ctx.mastery.some((m) => m.grammarId === 'nara-dewa')).toBe(false);
+  });
+});

@@ -229,3 +229,15 @@ và chiều DETECT mất một phần tư trọng số mà không báo gì. Nay 
 **Giữ lại năng lực chấm TRAP_ID trong engine**, kèm fixture riêng trong test, để sau này dựng
 lại một dạng dễ hiểu hơn thì không phải làm lại từ đầu.
 
+## D-05 — Cập nhật nội dung làm kẹt buổi học đã lưu (2026-09-15)
+
+Người học mở app: mục 1/32 báo "Dữ liệu không hợp lệ" và **không có nút đi tiếp**. Buổi học
+là ảnh chụp lúc tạo; D-02/D-03/D-04 gỡ câu hỏi và gộp mẫu nên vài id trong ảnh chụp thành id chết.
+
+- `getOrCreateTodaySession` dựng lại buổi học khi nó trỏ tới grammar / câu hỏi / bộ so sánh không còn.
+- Mục hỏng ở `/session` không bao giờ là ngõ cụt nữa: có nút "Bỏ qua mục này".
+- Mẫu gộp `nara-dewa → narade-wa`: bản ghi mastery và thẻ ôn chuyển sang id mới trong
+  `ensureMasteryRows`, để người học không bị dạy lại từ đầu. `Attempt` giữ nguyên (append-only, §9).
+
+Bài học: mỗi lần gỡ/đổi id nội dung phải nghĩ tới dữ liệu ĐÃ LƯU trên máy người học, không chỉ kho nội dung.
+

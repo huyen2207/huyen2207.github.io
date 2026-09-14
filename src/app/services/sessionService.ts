@@ -182,9 +182,27 @@ function usesUntaughtGrammar(session: DailySession, ctx: EngineContext): boolean
   return false;
 }
 
+/**
+ * Buổi học đã lưu có trỏ tới nội dung KHÔNG CÒN trong kho không?
+ *
+ * Buổi học là ảnh chụp lúc tạo. Cập nhật nội dung (gỡ câu hỏi, gộp mẫu trùng) làm vài id
+ * trong ảnh chụp thành id chết. Trước đây màn hình chỉ báo "Dữ liệu không hợp lệ" và không
+ * có nút đi tiếp — người học kẹt cứng ngay mục 1.
+ */
+function referencesMissingContent(session: DailySession): boolean {
+  return session.blocks.some((b) =>
+    b.items.some((it) => {
+      if (it.kind === 'LEARN_CARD') return !getGrammar(it.grammarId);
+      if (it.kind === 'QUESTION' || it.kind === 'TRAP_DRILL') return !getQuestion(it.questionId);
+      if (it.kind === 'COMPARE_SET') return !listComparisonSets().some((s) => s.id === it.comparisonSetId);
+      return false;
+    }),
+  );
+}
+
 export async function getOrCreateTodaySession(ctx: EngineContext, force = false): Promise<DailySession> {
   const existing = await sessionRepo.getByDate(ctx.timeline.todayKey);
-  if (existing && !force && !usesUntaughtGrammar(existing, ctx)) return existing;
+  if (existing && !force && !usesUntaughtGrammar(existing, ctx) && !referencesMissingContent(existing)) return existing;
 
   const seedBase = hashString(`${ctx.timeline.todayKey}|${ctx.plan.version}`);
   const session = buildDailySession({

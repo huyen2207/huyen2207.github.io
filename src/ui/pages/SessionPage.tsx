@@ -187,10 +187,22 @@ export default function SessionPage() {
   );
 }
 
+/** Mục trỏ tới nội dung đã bị gỡ: báo rõ và cho đi tiếp, không bao giờ để kẹt. */
+function SkipBroken({ onSkip }: { onSkip: () => void }) {
+  return (
+    <>
+      <EmptyState titleKey="error.invalidData" />
+      <ThumbBar>
+        <PrimaryButton onClick={onSkip}>{t('common.skip')}</PrimaryButton>
+      </ThumbBar>
+    </>
+  );
+}
+
 function LearnCardStep({ grammarId, onDone }: { grammarId: string; onDone: () => void }) {
   const ctx = useAppStore((s) => s.ctx);
   const grammar = getGrammarView(grammarId);
-  if (!grammar) return <EmptyState titleKey="error.invalidData" />;
+  if (!grammar) return <SkipBroken onSkip={onDone} />;
   return (
     <LearnCard
       grammar={grammar}
@@ -223,7 +235,7 @@ function QuestionStep({
   onNext: () => void;
 }) {
   const question = getQuestion(questionId);
-  if (!question) return <EmptyState titleKey="error.invalidData" />;
+  if (!question) return <SkipBroken onSkip={onNext} />;
   return (
     <QuestionRunner
       key={questionId}
@@ -251,7 +263,7 @@ function CompareStep({
 }) {
   const set = getComparisonSet(setId);
   const opener = set?.openerQuestionId ? getQuestion(set.openerQuestionId) : undefined;
-  if (!set) return <EmptyState titleKey="error.invalidData" />;
+  if (!set) return <SkipBroken onSkip={onNext} />;
 
   if (!revealed && opener) {
     return (
@@ -299,7 +311,7 @@ function ErrorReviewStep({
     void attemptRepo.byIds(attemptIds).then((attempts) => {
       if (!alive) return;
       setItems(
-        attempts.map((a) => {
+        attempts.filter((a) => getQuestion(a.questionId)).map((a) => {
           const q = getQuestion(a.questionId);
           const chosen = q?.choices.find((c) => c.id === a.selectedAnswer);
           return {
