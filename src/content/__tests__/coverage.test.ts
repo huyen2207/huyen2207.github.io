@@ -278,6 +278,22 @@ describe('Vệ sinh dữ liệu', () => {
 });
 
 describe('Thống kê nội dung', () => {
+  it('câu sắp xếp: ★ vẽ trên đề nằm ĐÚNG ô mà máy chấm dùng', () => {
+    // Đã từng thủng ở 3 câu: đề vẽ ★ ở ô 2 nhưng starSlotIndex = 3. Người học làm theo ★ trên
+    // đề, chọn đúng mảnh ở ô đó — và bị chấm SAI. Hai nguồn sự thật cho cùng một vị trí thì
+    // phải khoá chúng lại với nhau.
+    const offenders: string[] = [];
+    for (const q of questions.filter((x) => x.type === 'SENTENCE_BUILD')) {
+      const blanks = q.stemJa.match(/[＿_]+★?[＿_]*|★/g) ?? [];
+      const starAt = blanks.findIndex((b) => b.includes('★'));
+      const n = q.fragments?.length ?? 0;
+      if (blanks.length !== n) offenders.push(`${q.id}: ${blanks.length} ô / ${n} mảnh`);
+      if (starAt !== q.starSlotIndex) offenders.push(`${q.id}: ★ trên đề ở ô ${starAt}, máy chấm ở ô ${q.starSlotIndex}`);
+      if (q.correctChoiceId !== q.starFragmentId) offenders.push(`${q.id}: correctChoiceId ≠ starFragmentId`);
+    }
+    expect(offenders).toEqual([]);
+  });
+
   it('không có hai mẫu ngữ pháp trùng nhau', () => {
     // Đã từng thủng: 「〜ならでは」nhập hai lần với hai id khác nhau. Hậu quả không chỉ là
     // đếm sai coverage — H9 coi chúng là hai mẫu khác nhau, nên câu so sánh nhắm mẫu này

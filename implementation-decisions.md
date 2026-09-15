@@ -241,3 +241,22 @@ là ảnh chụp lúc tạo; D-02/D-03/D-04 gỡ câu hỏi và gộp mẫu nên
 
 Bài học: mỗi lần gỡ/đổi id nội dung phải nghĩ tới dữ liệu ĐÃ LƯU trên máy người học, không chỉ kho nội dung.
 
+## D-06 — Câu sắp xếp vẽ ★ sai ô (2026-09-15)
+
+**Người học báo đúng.** `q-build-b07`: đề vẽ ★ ở ô thứ 2 (「十年目の社員が」), nhưng
+`starSlotIndex = 3` và máy chấm lấy 「とは」. Người học làm đúng theo ★ trên đề và bị chấm sai.
+
+Vị trí ★ tồn tại ở **hai nơi** — ký tự ★ trong `stemJa` và `starSlotIndex` — không có gì ràng chúng lại.
+Quét 20 câu `SENTENCE_BUILD`: **3 câu lệch** (`q-build-05`, `q-build-b07`, `q-build-b08`), cùng kiểu:
+đáp án và lời giải đúng, chỉ ★ trên đề sai ô. Đã sửa đề.
+
+Lần quét đầu của tôi báo nhầm 11 câu vì hai lỗi của chính công cụ quét: tìm `_` nửa độ rộng trong khi
+đề dùng `＿` toàn độ rộng, và lời giải ghi dính phần đầu câu vào mảnh đầu nên thứ tự bị lệch một.
+8 câu còn lại đã đọc tay, đều đúng.
+
+Test mới khoá: số ô = số mảnh, ★ trên đề = `starSlotIndex`, `correctChoiceId = starFragmentId`.
+Trả `q-build-b07` về đề cũ thì test FAIL đúng câu đó.
+
+Attempt sai người học đã ghi cho câu này **giữ nguyên** (append-only, §9); người học xoá nó khỏi
+danh sách lỗi bằng cách "Làm lại" ở sổ lỗi.
+

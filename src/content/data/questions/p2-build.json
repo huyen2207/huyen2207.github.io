@@ -1,776 +1,776 @@
 [
- {
-  "id": "q-build-b01",
-  "type": "SENTENCE_BUILD",
-  "phaseHint": [
-   "PHASE_2_COMPARE",
-   "PHASE_3_DETECT"
-  ],
-  "targetGrammarIds": [
-   "wo-kawakiri-ni",
-   "ni-itaru"
-  ],
-  "stemJa": "この劇団は ＿＿ ＿★＿ ＿＿ ＿＿ 至った。",
-  "fragments": [
-   {
-    "id": "f1",
-    "textJa": "初の地方公演を"
-   },
-   {
-    "id": "f2",
-    "textJa": "皮切りに"
-   },
-   {
-    "id": "f3",
-    "textJa": "全国の劇場を回るまでに"
-   },
-   {
-    "id": "f4",
-    "textJa": "成長するに"
-   }
-  ],
-  "starFragmentId": "f2",
-  "starSlotIndex": 1,
-  "choices": [
-   {
-    "id": "f2",
-    "textJa": "皮切りに",
-    "isCorrect": true
-   },
-   {
-    "id": "f1",
-    "textJa": "初の地方公演を",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Cụm chỉ mốc mở màn phải đứng ngay sau chủ ngữ."
-   },
-   {
-    "id": "f3",
-    "textJa": "全国の劇場を回るまでに",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Cụm chỉ quá trình đứng trước 「至った」."
-   },
-   {
-    "id": "f4",
-    "textJa": "成長するに",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "「〜に至った」là cặp cố định, 「に」phải liền 「至った」."
-   }
-  ],
-  "correctChoiceId": "f2",
-  "explanationVi": "Thứ tự đúng: 初の地方公演を → 皮切りに → 全国の劇場を回るまでに → 成長するに → 至った。",
-  "keyClueVi": "「を皮切りに」và 「に至った」đều là cặp cố định — ghép hai cặp trước là xong.",
-  "solvingStrategy": [
-   {
-    "order": 1,
-    "labelJa": "セットを固定",
-    "labelVi": "Ghép cặp cố định trước"
-   },
-   {
-    "order": 2,
-    "labelJa": "主語と述語を結ぶ",
-    "labelVi": "Nối chủ ngữ với vị ngữ"
-   }
-  ],
-  "targetTimeMs": 90000,
-  "sourceId": "drill-drill-n1",
-  "sourcePage": "別冊 p.15 / p.19",
-  "verificationStatus": "VERIFIED",
-  "testedSkill": "DETECT",
-  "difficultyStatic": 4,
-  "stemVi": "Đoàn kịch này mở màn bằng buổi diễn tỉnh lẻ đầu tiên rồi vươn tới mức đi khắp các nhà hát toàn quốc."
- },
- {
-  "id": "q-build-b02",
-  "type": "SENTENCE_BUILD",
-  "phaseHint": [
-   "PHASE_2_COMPARE",
-   "PHASE_3_DETECT"
-  ],
-  "targetGrammarIds": [
-   "naku-shite",
-   "atte-no"
-  ],
-  "stemJa": "地域住民の ＿＿ ＿★＿ ＿＿ ＿＿ 成り立たない。",
-  "fragments": [
-   {
-    "id": "f1",
-    "textJa": "理解と協力"
-   },
-   {
-    "id": "f2",
-    "textJa": "なくして"
-   },
-   {
-    "id": "f3",
-    "textJa": "この事業は"
-   },
-   {
-    "id": "f4",
-    "textJa": "一日たりとも"
-   }
-  ],
-  "starFragmentId": "f2",
-  "starSlotIndex": 1,
-  "choices": [
-   {
-    "id": "f2",
-    "textJa": "なくして",
-    "isCorrect": true
-   },
-   {
-    "id": "f1",
-    "textJa": "理解と協力",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Danh từ đứng ngay sau 「地域住民の」."
-   },
-   {
-    "id": "f3",
-    "textJa": "この事業は",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Chủ ngữ đứng sau cụm điều kiện."
-   },
-   {
-    "id": "f4",
-    "textJa": "一日たりとも",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Trạng ngữ nhấn mạnh đứng ngay trước vị ngữ phủ định."
-   }
-  ],
-  "correctChoiceId": "f2",
-  "explanationVi": "Thứ tự đúng: 理解と協力 → なくして → この事業は → 一日たりとも → 成り立たない。",
-  "keyClueVi": "「なくして」đòi vế sau phủ định; 「たりとも」cũng vậy — hai cái cùng trỏ về 「成り立たない」.",
-  "solvingStrategy": [
-   {
-    "order": 1,
-    "labelJa": "文末から遡る",
-    "labelVi": "Đọc ngược từ đuôi câu"
-   },
-   {
-    "order": 2,
-    "labelJa": "接続で絞る",
-    "labelVi": "Loại bằng cách nối"
-   }
-  ],
-  "targetTimeMs": 90000,
-  "sourceId": "drill-drill-n1",
-  "sourcePage": "別冊 p.22 / p.21",
-  "verificationStatus": "VERIFIED",
-  "testedSkill": "DETECT",
-  "difficultyStatic": 4,
-  "stemVi": "Không có sự thấu hiểu và hợp tác của cư dân thì dự án này dù chỉ một ngày cũng không thể đứng vững."
- },
- {
-  "id": "q-build-b03",
-  "type": "SENTENCE_BUILD",
-  "phaseHint": [
-   "PHASE_2_COMPARE",
-   "PHASE_3_DETECT"
-  ],
-  "targetGrammarIds": [
-   "ni-katakunai",
-   "wo-kinji-enai"
-  ],
-  "stemJa": "被災者の ＿＿ ＿★＿ ＿＿ ＿＿ 得ない。",
-  "fragments": [
-   {
-    "id": "f1",
-    "textJa": "置かれた状況を思えば"
-   },
-   {
-    "id": "f2",
-    "textJa": "その落胆は想像に"
-   },
-   {
-    "id": "f3",
-    "textJa": "かたくなく"
-   },
-   {
-    "id": "f4",
-    "textJa": "同情の念を禁じ"
-   }
-  ],
-  "starFragmentId": "f2",
-  "starSlotIndex": 1,
-  "choices": [
-   {
-    "id": "f2",
-    "textJa": "その落胆は想像に",
-    "isCorrect": true
-   },
-   {
-    "id": "f1",
-    "textJa": "置かれた状況を思えば",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Cụm điều kiện mở đầu câu."
-   },
-   {
-    "id": "f3",
-    "textJa": "かたくなく",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Đây là phần sau của cụm cố định, nối sang vế tiếp."
-   },
-   {
-    "id": "f4",
-    "textJa": "同情の念を禁じ",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "「を禁じ得ない」là cụm cố định, phải liền 「得ない」."
-   }
-  ],
-  "correctChoiceId": "f2",
-  "explanationVi": "Thứ tự đúng: 置かれた状況を思えば → その落胆は想像に → かたくなく → 同情の念を禁じ → 得ない。",
-  "keyClueVi": "Hai cụm cố định 「想像にかたくない」và 「を禁じ得ない」đều không được tách rời.",
-  "solvingStrategy": [
-   {
-    "order": 1,
-    "labelJa": "セットを固定",
-    "labelVi": "Ghép cặp cố định trước"
-   },
-   {
-    "order": 2,
-    "labelJa": "主語と述語を結ぶ",
-    "labelVi": "Nối chủ ngữ với vị ngữ"
-   }
-  ],
-  "targetTimeMs": 90000,
-  "sourceId": "drill-drill-n1",
-  "sourcePage": "別冊 p.13 / p.26",
-  "verificationStatus": "VERIFIED",
-  "testedSkill": "DETECT",
-  "difficultyStatic": 4,
-  "stemVi": "Nghĩ tới hoàn cảnh của người bị nạn thì nỗi thất vọng ấy không khó hình dung, và tôi không kìm được lòng thương cảm."
- },
- {
-  "id": "q-build-b04",
-  "type": "SENTENCE_BUILD",
-  "phaseHint": [
-   "PHASE_2_COMPARE",
-   "PHASE_3_DETECT"
-  ],
-  "targetGrammarIds": [
-   "mo-saru-koto-nagara",
-   "to-aimatte"
-  ],
-  "stemJa": "この店の ＿＿ ＿★＿ ＿＿ ＿＿ 評判を呼んでいる。",
-  "fragments": [
-   {
-    "id": "f1",
-    "textJa": "味もさることながら"
-   },
-   {
-    "id": "f2",
-    "textJa": "落ち着いた内装が"
-   },
-   {
-    "id": "f3",
-    "textJa": "丁寧な接客と"
-   },
-   {
-    "id": "f4",
-    "textJa": "相まって"
-   }
-  ],
-  "starFragmentId": "f2",
-  "starSlotIndex": 1,
-  "choices": [
-   {
-    "id": "f2",
-    "textJa": "落ち着いた内装が",
-    "isCorrect": true
-   },
-   {
-    "id": "f1",
-    "textJa": "味もさることながら",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Cụm công nhận vế trước, mở đầu câu."
-   },
-   {
-    "id": "f3",
-    "textJa": "丁寧な接客と",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Phần trước của cặp 「〜と相まって」."
-   },
-   {
-    "id": "f4",
-    "textJa": "相まって",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Phần sau của cặp, phải liền 「〜と」."
-   }
-  ],
-  "correctChoiceId": "f2",
-  "explanationVi": "Thứ tự đúng: 味もさることながら → 落ち着いた内装が → 丁寧な接客と → 相まって → 評判を呼んでいる。",
-  "keyClueVi": "「もさることながら」dồn trọng tâm sang vế sau; 「と相まって」là cặp cố định.",
-  "solvingStrategy": [
-   {
-    "order": 1,
-    "labelJa": "セットを固定",
-    "labelVi": "Ghép cặp cố định trước"
-   },
-   {
-    "order": 2,
-    "labelJa": "主語と述語を結ぶ",
-    "labelVi": "Nối chủ ngữ với vị ngữ"
-   }
-  ],
-  "targetTimeMs": 90000,
-  "sourceId": "drill-drill-n1",
-  "sourcePage": "別冊 p.20 / p.13",
-  "verificationStatus": "VERIFIED",
-  "testedSkill": "DETECT",
-  "difficultyStatic": 4,
-  "stemVi": "Hương vị của quán này đã đành, nội thất trầm lắng cộng hưởng với cung cách phục vụ chu đáo đang tạo nên tiếng vang."
- },
- {
-  "id": "q-build-b05",
-  "type": "SENTENCE_BUILD",
-  "phaseHint": [
-   "PHASE_2_COMPARE",
-   "PHASE_3_DETECT"
-  ],
-  "targetGrammarIds": [
-   "ga-saigo",
-   "zaru-wo-enai"
-  ],
-  "stemJa": "この契約は ＿＿ ＿★＿ ＿＿ ＿＿ ざるを得ない。",
-  "fragments": [
-   {
-    "id": "f1",
-    "textJa": "一度署名した"
-   },
-   {
-    "id": "f2",
-    "textJa": "が最後"
-   },
-   {
-    "id": "f3",
-    "textJa": "どんな条件でも"
-   },
-   {
-    "id": "f4",
-    "textJa": "受け入れ"
-   }
-  ],
-  "starFragmentId": "f2",
-  "starSlotIndex": 1,
-  "choices": [
-   {
-    "id": "f2",
-    "textJa": "が最後",
-    "isCorrect": true
-   },
-   {
-    "id": "f1",
-    "textJa": "一度署名した",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Thể た mở đầu, đứng ngay sau chủ ngữ."
-   },
-   {
-    "id": "f3",
-    "textJa": "どんな条件でも",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Trạng ngữ nhượng bộ đứng sau vế điều kiện."
-   },
-   {
-    "id": "f4",
-    "textJa": "受け入れ",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Động từ chính, phải liền 「ざるを得ない」."
-   }
-  ],
-  "correctChoiceId": "f2",
-  "explanationVi": "Thứ tự đúng: 一度署名した → が最後 → どんな条件でも → 受け入れ → ざるを得ない。",
-  "keyClueVi": "「が最後」nối thể た; 「ざるを得ない」nối thể ない bỏ ない — hai đầu câu đã cố định.",
-  "solvingStrategy": [
-   {
-    "order": 1,
-    "labelJa": "文末から遡る",
-    "labelVi": "Đọc ngược từ đuôi câu"
-   },
-   {
-    "order": 2,
-    "labelJa": "接続で絞る",
-    "labelVi": "Loại bằng cách nối"
-   }
-  ],
-  "targetTimeMs": 90000,
-  "sourceId": "drill-drill-n1",
-  "sourcePage": "別冊 p.28",
-  "verificationStatus": "VERIFIED",
-  "testedSkill": "DETECT",
-  "difficultyStatic": 4,
-  "stemVi": "Hợp đồng này mà đã ký một lần là buộc phải chấp nhận mọi điều khoản."
- },
- {
-  "id": "q-build-b06",
-  "type": "SENTENCE_BUILD",
-  "phaseHint": [
-   "PHASE_2_COMPARE",
-   "PHASE_3_DETECT"
-  ],
-  "targetGrammarIds": [
-   "ni-atte",
-   "wo-mono-tomo-sezu-ni"
-  ],
-  "stemJa": "戦後の ＿＿ ＿★＿ ＿＿ ＿＿ 事業を再建した。",
-  "fragments": [
-   {
-    "id": "f1",
-    "textJa": "混乱期にあって"
-   },
-   {
-    "id": "f2",
-    "textJa": "彼は資材不足を"
-   },
-   {
-    "id": "f3",
-    "textJa": "ものともせずに"
-   },
-   {
-    "id": "f4",
-    "textJa": "わずか三年で"
-   }
-  ],
-  "starFragmentId": "f2",
-  "starSlotIndex": 1,
-  "choices": [
-   {
-    "id": "f2",
-    "textJa": "彼は資材不足を",
-    "isCorrect": true
-   },
-   {
-    "id": "f1",
-    "textJa": "混乱期にあって",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Cụm chỉ bối cảnh mở đầu câu."
-   },
-   {
-    "id": "f3",
-    "textJa": "ものともせずに",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Phần sau của cặp 「〜をものともせずに」."
-   },
-   {
-    "id": "f4",
-    "textJa": "わずか三年で",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Trạng ngữ thời gian đứng ngay trước vị ngữ."
-   }
-  ],
-  "correctChoiceId": "f2",
-  "explanationVi": "Thứ tự đúng: 混乱期にあって → 彼は資材不足を → ものともせずに → わずか三年で → 事業を再建した。",
-  "keyClueVi": "「にあって」đặt bối cảnh; 「をものともせずに」là cặp cố định quanh danh từ chỉ khó khăn.",
-  "solvingStrategy": [
-   {
-    "order": 1,
-    "labelJa": "セットを固定",
-    "labelVi": "Ghép cặp cố định trước"
-   },
-   {
-    "order": 2,
-    "labelJa": "主語と述語を結ぶ",
-    "labelVi": "Nối chủ ngữ với vị ngữ"
-   }
-  ],
-  "targetTimeMs": 90000,
-  "sourceId": "drill-drill-n1",
-  "sourcePage": "別冊 p.25 / p.11",
-  "verificationStatus": "VERIFIED",
-  "testedSkill": "DETECT",
-  "difficultyStatic": 4,
-  "stemVi": "Giữa thời loạn lạc sau chiến tranh, anh ấy bất chấp thiếu thốn vật tư, chỉ trong ba năm đã gây dựng lại sự nghiệp."
- },
- {
-  "id": "q-build-b07",
-  "type": "SENTENCE_BUILD",
-  "phaseHint": [
-   "PHASE_2_COMPARE",
-   "PHASE_3_DETECT"
-  ],
-  "targetGrammarIds": [
-   "nara-madashimo",
-   "to-wa"
-  ],
-  "stemJa": "新人 ＿＿ ＿★＿ ＿＿ ＿＿ 情けない。",
-  "fragments": [
-   {
-    "id": "f1",
-    "textJa": "ならまだしも"
-   },
-   {
-    "id": "f2",
-    "textJa": "十年目の社員が"
-   },
-   {
-    "id": "f3",
-    "textJa": "同じ誤りを繰り返す"
-   },
-   {
-    "id": "f4",
-    "textJa": "とは"
-   }
-  ],
-  "starFragmentId": "f4",
-  "starSlotIndex": 3,
-  "choices": [
-   {
-    "id": "f4",
-    "textJa": "とは",
-    "isCorrect": true
-   },
-   {
-    "id": "f1",
-    "textJa": "ならまだしも",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Cụm nhượng bộ đứng ngay sau 「新人」."
-   },
-   {
-    "id": "f2",
-    "textJa": "十年目の社員が",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Chủ ngữ của vế đối lập."
-   },
-   {
-    "id": "f3",
-    "textJa": "同じ誤りを繰り返す",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Nội dung bị chê trách."
-   }
-  ],
-  "correctChoiceId": "f4",
-  "explanationVi": "Thứ tự đúng: ならまだしも → 十年目の社員が → 同じ誤りを繰り返す → とは → 情けない。",
-  "keyClueVi": "「ならまだしも」và 「〜とは」kẹp lấy vế bị chê — nhận ra hai đầu là ra thứ tự.",
-  "solvingStrategy": [
-   {
-    "order": 1,
-    "labelJa": "文末から遡る",
-    "labelVi": "Đọc ngược từ đuôi câu"
-   },
-   {
-    "order": 2,
-    "labelJa": "接続で絞る",
-    "labelVi": "Loại bằng cách nối"
-   }
-  ],
-  "targetTimeMs": 90000,
-  "sourceId": "drill-drill-n1",
-  "sourcePage": "別冊 p.28 / p.25",
-  "verificationStatus": "VERIFIED",
-  "testedSkill": "DETECT",
-  "difficultyStatic": 4,
-  "stemVi": "Người mới thì còn được, đằng này nhân viên mười năm mà lặp lại đúng lỗi ấy thì thật đáng trách."
- },
- {
-  "id": "q-build-b08",
-  "type": "SENTENCE_BUILD",
-  "phaseHint": [
-   "PHASE_2_COMPARE",
-   "PHASE_3_DETECT"
-  ],
-  "targetGrammarIds": [
-   "ikan-ni-yotte-wa",
-   "mo-jisanai"
-  ],
-  "stemJa": "今後の ＿＿ ＿★＿ ＿＿ ＿＿ 構えだ。",
-  "fragments": [
-   {
-    "id": "f1",
-    "textJa": "交渉の結果いかんによっては"
-   },
-   {
-    "id": "f2",
-    "textJa": "組合側は"
-   },
-   {
-    "id": "f3",
-    "textJa": "全面的なストライキ"
-   },
-   {
-    "id": "f4",
-    "textJa": "も辞さない"
-   }
-  ],
-  "starFragmentId": "f3",
-  "starSlotIndex": 2,
-  "choices": [
-   {
-    "id": "f3",
-    "textJa": "全面的なストライキ",
-    "isCorrect": true
-   },
-   {
-    "id": "f1",
-    "textJa": "交渉の結果いかんによっては",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Cụm điều kiện mở đầu câu."
-   },
-   {
-    "id": "f2",
-    "textJa": "組合側は",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Chủ ngữ của vế sau."
-   },
-   {
-    "id": "f4",
-    "textJa": "も辞さない",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Phần sau của cặp, phải liền trước 「構えだ」."
-   }
-  ],
-  "correctChoiceId": "f3",
-  "explanationVi": "Thứ tự đúng: 交渉の結果いかんによっては → 組合側は → 全面的なストライキ → も辞さない → 構えだ。",
-  "keyClueVi": "「いかんによっては」mở điều kiện; 「も辞さない」đòi danh từ chỉ hậu quả nặng đứng ngay trước.",
-  "solvingStrategy": [
-   {
-    "order": 1,
-    "labelJa": "セットを固定",
-    "labelVi": "Ghép cặp cố định trước"
-   },
-   {
-    "order": 2,
-    "labelJa": "主語と述語を結ぶ",
-    "labelVi": "Nối chủ ngữ với vị ngữ"
-   }
-  ],
-  "targetTimeMs": 90000,
-  "sourceId": "drill-drill-n1",
-  "sourcePage": "別冊 p.30 / p.36",
-  "verificationStatus": "VERIFIED",
-  "testedSkill": "DETECT",
-  "difficultyStatic": 4,
-  "stemVi": "Tuỳ kết quả thương lượng sắp tới, phía công đoàn ở thế sẵn sàng đình công toàn diện."
- },
- {
-  "id": "q-build-b09",
-  "type": "SENTENCE_BUILD",
-  "phaseHint": [
-   "PHASE_2_COMPARE",
-   "PHASE_3_DETECT"
-  ],
-  "targetGrammarIds": [
-   "te-kara-to-iu-mono",
-   "ikkou-ni"
-  ],
-  "stemJa": "単身赴任 ＿＿ ＿★＿ ＿＿ ＿＿ 気配がない。",
-  "fragments": [
-   {
-    "id": "f1",
-    "textJa": "してからというもの"
-   },
-   {
-    "id": "f2",
-    "textJa": "彼の生活は乱れる一方で"
-   },
-   {
-    "id": "f3",
-    "textJa": "一向に"
-   },
-   {
-    "id": "f4",
-    "textJa": "改善する"
-   }
-  ],
-  "starFragmentId": "f2",
-  "starSlotIndex": 1,
-  "choices": [
-   {
-    "id": "f2",
-    "textJa": "彼の生活は乱れる一方で",
-    "isCorrect": true
-   },
-   {
-    "id": "f1",
-    "textJa": "してからというもの",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Cụm chỉ mốc thay đổi, đứng ngay sau danh từ."
-   },
-   {
-    "id": "f3",
-    "textJa": "一向に",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Phó từ phủ định đứng ngay trước vị ngữ."
-   },
-   {
-    "id": "f4",
-    "textJa": "改善する",
-    "isCorrect": false,
-    "wrongBecause": "FORM_ERROR",
-    "violatedAxis": "CONNECTION",
-    "whyWrongVi": "Động từ, phải liền 「気配がない」."
-   }
-  ],
-  "correctChoiceId": "f2",
-  "explanationVi": "Thứ tự đúng: してからというもの → 彼の生活は乱れる一方で → 一向に → 改善する → 気配がない。",
-  "keyClueVi": "「てからというもの」đòi vế sau là trạng thái kéo dài; 「一向に」đòi phủ định ở cuối.",
-  "solvingStrategy": [
-   {
-    "order": 1,
-    "labelJa": "文末から遡る",
-    "labelVi": "Đọc ngược từ đuôi câu"
-   },
-   {
-    "order": 2,
-    "labelJa": "接続で絞る",
-    "labelVi": "Loại bằng cách nối"
-   }
-  ],
-  "targetTimeMs": 90000,
-  "sourceId": "drill-drill-n1",
-  "sourcePage": "別冊 p.6 / p.17",
-  "verificationStatus": "VERIFIED",
-  "testedSkill": "DETECT",
-  "difficultyStatic": 4,
-  "stemVi": "Kể từ khi đi công tác xa nhà một mình, nếp sống của anh ấy ngày càng xô lệch mà chẳng có dấu hiệu cải thiện."
- }
+  {
+    "id": "q-build-b01",
+    "type": "SENTENCE_BUILD",
+    "phaseHint": [
+      "PHASE_2_COMPARE",
+      "PHASE_3_DETECT"
+    ],
+    "targetGrammarIds": [
+      "wo-kawakiri-ni",
+      "ni-itaru"
+    ],
+    "stemJa": "この劇団は ＿＿ ＿★＿ ＿＿ ＿＿ 至った。",
+    "fragments": [
+      {
+        "id": "f1",
+        "textJa": "初の地方公演を"
+      },
+      {
+        "id": "f2",
+        "textJa": "皮切りに"
+      },
+      {
+        "id": "f3",
+        "textJa": "全国の劇場を回るまでに"
+      },
+      {
+        "id": "f4",
+        "textJa": "成長するに"
+      }
+    ],
+    "starFragmentId": "f2",
+    "starSlotIndex": 1,
+    "choices": [
+      {
+        "id": "f2",
+        "textJa": "皮切りに",
+        "isCorrect": true
+      },
+      {
+        "id": "f1",
+        "textJa": "初の地方公演を",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Cụm chỉ mốc mở màn phải đứng ngay sau chủ ngữ."
+      },
+      {
+        "id": "f3",
+        "textJa": "全国の劇場を回るまでに",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Cụm chỉ quá trình đứng trước 「至った」."
+      },
+      {
+        "id": "f4",
+        "textJa": "成長するに",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "「〜に至った」là cặp cố định, 「に」phải liền 「至った」."
+      }
+    ],
+    "correctChoiceId": "f2",
+    "explanationVi": "Thứ tự đúng: 初の地方公演を → 皮切りに → 全国の劇場を回るまでに → 成長するに → 至った。",
+    "keyClueVi": "「を皮切りに」và 「に至った」đều là cặp cố định — ghép hai cặp trước là xong.",
+    "solvingStrategy": [
+      {
+        "order": 1,
+        "labelJa": "セットを固定",
+        "labelVi": "Ghép cặp cố định trước"
+      },
+      {
+        "order": 2,
+        "labelJa": "主語と述語を結ぶ",
+        "labelVi": "Nối chủ ngữ với vị ngữ"
+      }
+    ],
+    "targetTimeMs": 90000,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.15 / p.19",
+    "verificationStatus": "VERIFIED",
+    "testedSkill": "DETECT",
+    "difficultyStatic": 4,
+    "stemVi": "Đoàn kịch này mở màn bằng buổi diễn tỉnh lẻ đầu tiên rồi vươn tới mức đi khắp các nhà hát toàn quốc."
+  },
+  {
+    "id": "q-build-b02",
+    "type": "SENTENCE_BUILD",
+    "phaseHint": [
+      "PHASE_2_COMPARE",
+      "PHASE_3_DETECT"
+    ],
+    "targetGrammarIds": [
+      "naku-shite",
+      "atte-no"
+    ],
+    "stemJa": "地域住民の ＿＿ ＿★＿ ＿＿ ＿＿ 成り立たない。",
+    "fragments": [
+      {
+        "id": "f1",
+        "textJa": "理解と協力"
+      },
+      {
+        "id": "f2",
+        "textJa": "なくして"
+      },
+      {
+        "id": "f3",
+        "textJa": "この事業は"
+      },
+      {
+        "id": "f4",
+        "textJa": "一日たりとも"
+      }
+    ],
+    "starFragmentId": "f2",
+    "starSlotIndex": 1,
+    "choices": [
+      {
+        "id": "f2",
+        "textJa": "なくして",
+        "isCorrect": true
+      },
+      {
+        "id": "f1",
+        "textJa": "理解と協力",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Danh từ đứng ngay sau 「地域住民の」."
+      },
+      {
+        "id": "f3",
+        "textJa": "この事業は",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Chủ ngữ đứng sau cụm điều kiện."
+      },
+      {
+        "id": "f4",
+        "textJa": "一日たりとも",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Trạng ngữ nhấn mạnh đứng ngay trước vị ngữ phủ định."
+      }
+    ],
+    "correctChoiceId": "f2",
+    "explanationVi": "Thứ tự đúng: 理解と協力 → なくして → この事業は → 一日たりとも → 成り立たない。",
+    "keyClueVi": "「なくして」đòi vế sau phủ định; 「たりとも」cũng vậy — hai cái cùng trỏ về 「成り立たない」.",
+    "solvingStrategy": [
+      {
+        "order": 1,
+        "labelJa": "文末から遡る",
+        "labelVi": "Đọc ngược từ đuôi câu"
+      },
+      {
+        "order": 2,
+        "labelJa": "接続で絞る",
+        "labelVi": "Loại bằng cách nối"
+      }
+    ],
+    "targetTimeMs": 90000,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.22 / p.21",
+    "verificationStatus": "VERIFIED",
+    "testedSkill": "DETECT",
+    "difficultyStatic": 4,
+    "stemVi": "Không có sự thấu hiểu và hợp tác của cư dân thì dự án này dù chỉ một ngày cũng không thể đứng vững."
+  },
+  {
+    "id": "q-build-b03",
+    "type": "SENTENCE_BUILD",
+    "phaseHint": [
+      "PHASE_2_COMPARE",
+      "PHASE_3_DETECT"
+    ],
+    "targetGrammarIds": [
+      "ni-katakunai",
+      "wo-kinji-enai"
+    ],
+    "stemJa": "被災者の ＿＿ ＿★＿ ＿＿ ＿＿ 得ない。",
+    "fragments": [
+      {
+        "id": "f1",
+        "textJa": "置かれた状況を思えば"
+      },
+      {
+        "id": "f2",
+        "textJa": "その落胆は想像に"
+      },
+      {
+        "id": "f3",
+        "textJa": "かたくなく"
+      },
+      {
+        "id": "f4",
+        "textJa": "同情の念を禁じ"
+      }
+    ],
+    "starFragmentId": "f2",
+    "starSlotIndex": 1,
+    "choices": [
+      {
+        "id": "f2",
+        "textJa": "その落胆は想像に",
+        "isCorrect": true
+      },
+      {
+        "id": "f1",
+        "textJa": "置かれた状況を思えば",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Cụm điều kiện mở đầu câu."
+      },
+      {
+        "id": "f3",
+        "textJa": "かたくなく",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Đây là phần sau của cụm cố định, nối sang vế tiếp."
+      },
+      {
+        "id": "f4",
+        "textJa": "同情の念を禁じ",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "「を禁じ得ない」là cụm cố định, phải liền 「得ない」."
+      }
+    ],
+    "correctChoiceId": "f2",
+    "explanationVi": "Thứ tự đúng: 置かれた状況を思えば → その落胆は想像に → かたくなく → 同情の念を禁じ → 得ない。",
+    "keyClueVi": "Hai cụm cố định 「想像にかたくない」và 「を禁じ得ない」đều không được tách rời.",
+    "solvingStrategy": [
+      {
+        "order": 1,
+        "labelJa": "セットを固定",
+        "labelVi": "Ghép cặp cố định trước"
+      },
+      {
+        "order": 2,
+        "labelJa": "主語と述語を結ぶ",
+        "labelVi": "Nối chủ ngữ với vị ngữ"
+      }
+    ],
+    "targetTimeMs": 90000,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.13 / p.26",
+    "verificationStatus": "VERIFIED",
+    "testedSkill": "DETECT",
+    "difficultyStatic": 4,
+    "stemVi": "Nghĩ tới hoàn cảnh của người bị nạn thì nỗi thất vọng ấy không khó hình dung, và tôi không kìm được lòng thương cảm."
+  },
+  {
+    "id": "q-build-b04",
+    "type": "SENTENCE_BUILD",
+    "phaseHint": [
+      "PHASE_2_COMPARE",
+      "PHASE_3_DETECT"
+    ],
+    "targetGrammarIds": [
+      "mo-saru-koto-nagara",
+      "to-aimatte"
+    ],
+    "stemJa": "この店の ＿＿ ＿★＿ ＿＿ ＿＿ 評判を呼んでいる。",
+    "fragments": [
+      {
+        "id": "f1",
+        "textJa": "味もさることながら"
+      },
+      {
+        "id": "f2",
+        "textJa": "落ち着いた内装が"
+      },
+      {
+        "id": "f3",
+        "textJa": "丁寧な接客と"
+      },
+      {
+        "id": "f4",
+        "textJa": "相まって"
+      }
+    ],
+    "starFragmentId": "f2",
+    "starSlotIndex": 1,
+    "choices": [
+      {
+        "id": "f2",
+        "textJa": "落ち着いた内装が",
+        "isCorrect": true
+      },
+      {
+        "id": "f1",
+        "textJa": "味もさることながら",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Cụm công nhận vế trước, mở đầu câu."
+      },
+      {
+        "id": "f3",
+        "textJa": "丁寧な接客と",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Phần trước của cặp 「〜と相まって」."
+      },
+      {
+        "id": "f4",
+        "textJa": "相まって",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Phần sau của cặp, phải liền 「〜と」."
+      }
+    ],
+    "correctChoiceId": "f2",
+    "explanationVi": "Thứ tự đúng: 味もさることながら → 落ち着いた内装が → 丁寧な接客と → 相まって → 評判を呼んでいる。",
+    "keyClueVi": "「もさることながら」dồn trọng tâm sang vế sau; 「と相まって」là cặp cố định.",
+    "solvingStrategy": [
+      {
+        "order": 1,
+        "labelJa": "セットを固定",
+        "labelVi": "Ghép cặp cố định trước"
+      },
+      {
+        "order": 2,
+        "labelJa": "主語と述語を結ぶ",
+        "labelVi": "Nối chủ ngữ với vị ngữ"
+      }
+    ],
+    "targetTimeMs": 90000,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.20 / p.13",
+    "verificationStatus": "VERIFIED",
+    "testedSkill": "DETECT",
+    "difficultyStatic": 4,
+    "stemVi": "Hương vị của quán này đã đành, nội thất trầm lắng cộng hưởng với cung cách phục vụ chu đáo đang tạo nên tiếng vang."
+  },
+  {
+    "id": "q-build-b05",
+    "type": "SENTENCE_BUILD",
+    "phaseHint": [
+      "PHASE_2_COMPARE",
+      "PHASE_3_DETECT"
+    ],
+    "targetGrammarIds": [
+      "ga-saigo",
+      "zaru-wo-enai"
+    ],
+    "stemJa": "この契約は ＿＿ ＿★＿ ＿＿ ＿＿ ざるを得ない。",
+    "fragments": [
+      {
+        "id": "f1",
+        "textJa": "一度署名した"
+      },
+      {
+        "id": "f2",
+        "textJa": "が最後"
+      },
+      {
+        "id": "f3",
+        "textJa": "どんな条件でも"
+      },
+      {
+        "id": "f4",
+        "textJa": "受け入れ"
+      }
+    ],
+    "starFragmentId": "f2",
+    "starSlotIndex": 1,
+    "choices": [
+      {
+        "id": "f2",
+        "textJa": "が最後",
+        "isCorrect": true
+      },
+      {
+        "id": "f1",
+        "textJa": "一度署名した",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Thể た mở đầu, đứng ngay sau chủ ngữ."
+      },
+      {
+        "id": "f3",
+        "textJa": "どんな条件でも",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Trạng ngữ nhượng bộ đứng sau vế điều kiện."
+      },
+      {
+        "id": "f4",
+        "textJa": "受け入れ",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Động từ chính, phải liền 「ざるを得ない」."
+      }
+    ],
+    "correctChoiceId": "f2",
+    "explanationVi": "Thứ tự đúng: 一度署名した → が最後 → どんな条件でも → 受け入れ → ざるを得ない。",
+    "keyClueVi": "「が最後」nối thể た; 「ざるを得ない」nối thể ない bỏ ない — hai đầu câu đã cố định.",
+    "solvingStrategy": [
+      {
+        "order": 1,
+        "labelJa": "文末から遡る",
+        "labelVi": "Đọc ngược từ đuôi câu"
+      },
+      {
+        "order": 2,
+        "labelJa": "接続で絞る",
+        "labelVi": "Loại bằng cách nối"
+      }
+    ],
+    "targetTimeMs": 90000,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.28",
+    "verificationStatus": "VERIFIED",
+    "testedSkill": "DETECT",
+    "difficultyStatic": 4,
+    "stemVi": "Hợp đồng này mà đã ký một lần là buộc phải chấp nhận mọi điều khoản."
+  },
+  {
+    "id": "q-build-b06",
+    "type": "SENTENCE_BUILD",
+    "phaseHint": [
+      "PHASE_2_COMPARE",
+      "PHASE_3_DETECT"
+    ],
+    "targetGrammarIds": [
+      "ni-atte",
+      "wo-mono-tomo-sezu-ni"
+    ],
+    "stemJa": "戦後の ＿＿ ＿★＿ ＿＿ ＿＿ 事業を再建した。",
+    "fragments": [
+      {
+        "id": "f1",
+        "textJa": "混乱期にあって"
+      },
+      {
+        "id": "f2",
+        "textJa": "彼は資材不足を"
+      },
+      {
+        "id": "f3",
+        "textJa": "ものともせずに"
+      },
+      {
+        "id": "f4",
+        "textJa": "わずか三年で"
+      }
+    ],
+    "starFragmentId": "f2",
+    "starSlotIndex": 1,
+    "choices": [
+      {
+        "id": "f2",
+        "textJa": "彼は資材不足を",
+        "isCorrect": true
+      },
+      {
+        "id": "f1",
+        "textJa": "混乱期にあって",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Cụm chỉ bối cảnh mở đầu câu."
+      },
+      {
+        "id": "f3",
+        "textJa": "ものともせずに",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Phần sau của cặp 「〜をものともせずに」."
+      },
+      {
+        "id": "f4",
+        "textJa": "わずか三年で",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Trạng ngữ thời gian đứng ngay trước vị ngữ."
+      }
+    ],
+    "correctChoiceId": "f2",
+    "explanationVi": "Thứ tự đúng: 混乱期にあって → 彼は資材不足を → ものともせずに → わずか三年で → 事業を再建した。",
+    "keyClueVi": "「にあって」đặt bối cảnh; 「をものともせずに」là cặp cố định quanh danh từ chỉ khó khăn.",
+    "solvingStrategy": [
+      {
+        "order": 1,
+        "labelJa": "セットを固定",
+        "labelVi": "Ghép cặp cố định trước"
+      },
+      {
+        "order": 2,
+        "labelJa": "主語と述語を結ぶ",
+        "labelVi": "Nối chủ ngữ với vị ngữ"
+      }
+    ],
+    "targetTimeMs": 90000,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.25 / p.11",
+    "verificationStatus": "VERIFIED",
+    "testedSkill": "DETECT",
+    "difficultyStatic": 4,
+    "stemVi": "Giữa thời loạn lạc sau chiến tranh, anh ấy bất chấp thiếu thốn vật tư, chỉ trong ba năm đã gây dựng lại sự nghiệp."
+  },
+  {
+    "id": "q-build-b07",
+    "type": "SENTENCE_BUILD",
+    "phaseHint": [
+      "PHASE_2_COMPARE",
+      "PHASE_3_DETECT"
+    ],
+    "targetGrammarIds": [
+      "nara-madashimo",
+      "to-wa"
+    ],
+    "stemJa": "新人 ＿＿ ＿＿ ＿＿ ＿★＿ 情けない。",
+    "fragments": [
+      {
+        "id": "f1",
+        "textJa": "ならまだしも"
+      },
+      {
+        "id": "f2",
+        "textJa": "十年目の社員が"
+      },
+      {
+        "id": "f3",
+        "textJa": "同じ誤りを繰り返す"
+      },
+      {
+        "id": "f4",
+        "textJa": "とは"
+      }
+    ],
+    "starFragmentId": "f4",
+    "starSlotIndex": 3,
+    "choices": [
+      {
+        "id": "f4",
+        "textJa": "とは",
+        "isCorrect": true
+      },
+      {
+        "id": "f1",
+        "textJa": "ならまだしも",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Cụm nhượng bộ đứng ngay sau 「新人」."
+      },
+      {
+        "id": "f2",
+        "textJa": "十年目の社員が",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Chủ ngữ của vế đối lập."
+      },
+      {
+        "id": "f3",
+        "textJa": "同じ誤りを繰り返す",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Nội dung bị chê trách."
+      }
+    ],
+    "correctChoiceId": "f4",
+    "explanationVi": "Thứ tự đúng: ならまだしも → 十年目の社員が → 同じ誤りを繰り返す → とは → 情けない。",
+    "keyClueVi": "「ならまだしも」và 「〜とは」kẹp lấy vế bị chê — nhận ra hai đầu là ra thứ tự.",
+    "solvingStrategy": [
+      {
+        "order": 1,
+        "labelJa": "文末から遡る",
+        "labelVi": "Đọc ngược từ đuôi câu"
+      },
+      {
+        "order": 2,
+        "labelJa": "接続で絞る",
+        "labelVi": "Loại bằng cách nối"
+      }
+    ],
+    "targetTimeMs": 90000,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.28 / p.25",
+    "verificationStatus": "VERIFIED",
+    "testedSkill": "DETECT",
+    "difficultyStatic": 4,
+    "stemVi": "Người mới thì còn được, đằng này nhân viên mười năm mà lặp lại đúng lỗi ấy thì thật đáng trách."
+  },
+  {
+    "id": "q-build-b08",
+    "type": "SENTENCE_BUILD",
+    "phaseHint": [
+      "PHASE_2_COMPARE",
+      "PHASE_3_DETECT"
+    ],
+    "targetGrammarIds": [
+      "ikan-ni-yotte-wa",
+      "mo-jisanai"
+    ],
+    "stemJa": "今後の ＿＿ ＿＿ ＿★＿ ＿＿ 構えだ。",
+    "fragments": [
+      {
+        "id": "f1",
+        "textJa": "交渉の結果いかんによっては"
+      },
+      {
+        "id": "f2",
+        "textJa": "組合側は"
+      },
+      {
+        "id": "f3",
+        "textJa": "全面的なストライキ"
+      },
+      {
+        "id": "f4",
+        "textJa": "も辞さない"
+      }
+    ],
+    "starFragmentId": "f3",
+    "starSlotIndex": 2,
+    "choices": [
+      {
+        "id": "f3",
+        "textJa": "全面的なストライキ",
+        "isCorrect": true
+      },
+      {
+        "id": "f1",
+        "textJa": "交渉の結果いかんによっては",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Cụm điều kiện mở đầu câu."
+      },
+      {
+        "id": "f2",
+        "textJa": "組合側は",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Chủ ngữ của vế sau."
+      },
+      {
+        "id": "f4",
+        "textJa": "も辞さない",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Phần sau của cặp, phải liền trước 「構えだ」."
+      }
+    ],
+    "correctChoiceId": "f3",
+    "explanationVi": "Thứ tự đúng: 交渉の結果いかんによっては → 組合側は → 全面的なストライキ → も辞さない → 構えだ。",
+    "keyClueVi": "「いかんによっては」mở điều kiện; 「も辞さない」đòi danh từ chỉ hậu quả nặng đứng ngay trước.",
+    "solvingStrategy": [
+      {
+        "order": 1,
+        "labelJa": "セットを固定",
+        "labelVi": "Ghép cặp cố định trước"
+      },
+      {
+        "order": 2,
+        "labelJa": "主語と述語を結ぶ",
+        "labelVi": "Nối chủ ngữ với vị ngữ"
+      }
+    ],
+    "targetTimeMs": 90000,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.30 / p.36",
+    "verificationStatus": "VERIFIED",
+    "testedSkill": "DETECT",
+    "difficultyStatic": 4,
+    "stemVi": "Tuỳ kết quả thương lượng sắp tới, phía công đoàn ở thế sẵn sàng đình công toàn diện."
+  },
+  {
+    "id": "q-build-b09",
+    "type": "SENTENCE_BUILD",
+    "phaseHint": [
+      "PHASE_2_COMPARE",
+      "PHASE_3_DETECT"
+    ],
+    "targetGrammarIds": [
+      "te-kara-to-iu-mono",
+      "ikkou-ni"
+    ],
+    "stemJa": "単身赴任 ＿＿ ＿★＿ ＿＿ ＿＿ 気配がない。",
+    "fragments": [
+      {
+        "id": "f1",
+        "textJa": "してからというもの"
+      },
+      {
+        "id": "f2",
+        "textJa": "彼の生活は乱れる一方で"
+      },
+      {
+        "id": "f3",
+        "textJa": "一向に"
+      },
+      {
+        "id": "f4",
+        "textJa": "改善する"
+      }
+    ],
+    "starFragmentId": "f2",
+    "starSlotIndex": 1,
+    "choices": [
+      {
+        "id": "f2",
+        "textJa": "彼の生活は乱れる一方で",
+        "isCorrect": true
+      },
+      {
+        "id": "f1",
+        "textJa": "してからというもの",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Cụm chỉ mốc thay đổi, đứng ngay sau danh từ."
+      },
+      {
+        "id": "f3",
+        "textJa": "一向に",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Phó từ phủ định đứng ngay trước vị ngữ."
+      },
+      {
+        "id": "f4",
+        "textJa": "改善する",
+        "isCorrect": false,
+        "wrongBecause": "FORM_ERROR",
+        "violatedAxis": "CONNECTION",
+        "whyWrongVi": "Động từ, phải liền 「気配がない」."
+      }
+    ],
+    "correctChoiceId": "f2",
+    "explanationVi": "Thứ tự đúng: してからというもの → 彼の生活は乱れる一方で → 一向に → 改善する → 気配がない。",
+    "keyClueVi": "「てからというもの」đòi vế sau là trạng thái kéo dài; 「一向に」đòi phủ định ở cuối.",
+    "solvingStrategy": [
+      {
+        "order": 1,
+        "labelJa": "文末から遡る",
+        "labelVi": "Đọc ngược từ đuôi câu"
+      },
+      {
+        "order": 2,
+        "labelJa": "接続で絞る",
+        "labelVi": "Loại bằng cách nối"
+      }
+    ],
+    "targetTimeMs": 90000,
+    "sourceId": "drill-drill-n1",
+    "sourcePage": "別冊 p.6 / p.17",
+    "verificationStatus": "VERIFIED",
+    "testedSkill": "DETECT",
+    "difficultyStatic": 4,
+    "stemVi": "Kể từ khi đi công tác xa nhà một mình, nếp sống của anh ấy ngày càng xô lệch mà chẳng có dấu hiệu cải thiện."
+  }
 ]
