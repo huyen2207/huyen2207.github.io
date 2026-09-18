@@ -35,6 +35,12 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,json,woff2}'],
+        // SW có scope '/', nên mọi trang dưới huyen2207.github.io/ đều bị trả về app này —
+        // kể cả GitHub Pages của repo khác (/tên-repo/). Chừa các đường dẫn đó ra.
+        // Thêm repo mới có bật Pages ⇒ thêm tên vào đây (project-architecture.md §14.1).
+        navigateFallbackDenylist: [
+          /^\/(fashion-trend-spec|n1-vocab-quiz|kanji-master-1kyuu|my-first-web-app|kazu|MochiMochi)(\/|$)/,
+        ],
       },
     }),
   ],

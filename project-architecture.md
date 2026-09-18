@@ -1033,6 +1033,12 @@ App không có backend nên chỉ cần phục vụ thư mục `dist`. Ba ràng 
 | **SPA fallback** | `main.tsx` dùng `BrowserRouter`. Thiếu fallback thì tải lại `/today` ra 404. | GitHub Pages: `dist/404.html` do `npm run build` tạo. Netlify (nếu đổi host): `public/_redirects` + `netlify.toml`, vẫn giữ trong repo. |
 | **HTTPS** | Service worker chỉ chạy trên HTTPS (hoặc `localhost`). Không có SW ⇒ mất offline và không cài được PWA — tức là mất đúng hai yêu cầu của `CLAUDE.md §18`. | — (chọn host đúng) |
 
+**Chung domain với các repo khác.** Service worker có `scope: '/'` và trả `index.html` cho
+mọi lần điều hướng, nên trên máy đã mở app, trang GitHub Pages của repo khác
+(`huyen2207.github.io/tên-repo/`) cũng bị app này chiếm (mở ra `/today`). Các đường dẫn đó
+được chừa ra bằng `workbox.navigateFallbackDenylist` trong `vite.config.ts`.
+**Bật Pages cho repo mới ⇒ thêm tên repo vào danh sách đó.**
+
 `sw.js` được đặt `Cache-Control: no-cache` trong `netlify.toml`. Trên GitHub Pages không đặt header được, nhưng `vite-plugin-pwa` dùng `registerType: 'autoUpdate'` nên service worker vẫn tự kiểm tra bản mới mỗi lần tải trang.
 
 > ⚠️ **IndexedDB gắn theo origin.** Đổi URL học ⇒ toàn bộ tiến độ không đi theo, phải
