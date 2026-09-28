@@ -441,6 +441,11 @@ const vi: Record<string, string> = {
   'practice.newCount': 'Số mẫu',
 
   /* Thẻ ôn của tôi */
+  'star.off': '☆ Đánh dấu: cần ôn thêm mẫu này',
+  'star.on': '★ Đang ưu tiên ôn — bấm để bỏ',
+  'star.note': 'Mẫu có ★ sẽ xuất hiện dày hơn trong phần ôn tập. Khi bạn đã vững, ★ tự gỡ.',
+  'review.reason.starred': 'Bạn đánh dấu cần ôn thêm',
+
   'deck.title': 'Thẻ ôn của tôi',
   'deck.ja': '暗記',
   'deck.save': '+ Lưu vào thẻ ôn',

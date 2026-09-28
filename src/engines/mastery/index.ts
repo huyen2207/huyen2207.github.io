@@ -349,6 +349,11 @@ export function applyAttempt(
     }
   }
 
+  /* Đã vững thì tự gỡ sao người học đánh dấu — nhường chỗ cho mẫu còn yếu. */
+  if (next.starredAt && BASE_RANK_ORDER[baseRank ?? 'INTRODUCED'] >= BASE_RANK_ORDER.COMPARABLE) {
+    delete next.starredAt;
+  }
+
   /* 5. Sàn — không bao giờ về UNSEEN (M2) */
   if (state === 'UNSEEN') state = 'INTRODUCED';
   if (baseRank === null) baseRank = 'INTRODUCED';

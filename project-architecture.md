@@ -1173,6 +1173,16 @@ không lệch kế hoạch. Mỗi thẻ học kèm câu recall (§11).
 > Kèm theo: `markLearnCard` nay chỉ đóng dấu `learnCardDoneAt` **lần đầu**. Trước đó xem lại
 > thẻ cũ cũng bị tính là "hôm nay học mẫu mới", nên dựng lại buổi học ăn mất quota của ngày.
 
+### 17.q ★ "cần ôn thêm" do người học đánh dấu
+
+`GrammarMastery.starredAt` + `LEARNER_FLAG_BONUS = 0.08` cộng thêm vào `computePriority`
+(CLAUDE.md §14.1 sau sửa). Nút ★ nằm trong thẻ học và ở khối ôn cấu trúc sau khi trả lời —
+đúng lúc người học biết mình có chắc mẫu đó hay không.
+
+Ranh giới: người học nêu **một tín hiệu**, không chỉnh tay tham số. Bonus nhỏ hơn khoảng cách
+`stateWeight` giữa `INTRODUCED` và `CONFUSED`, nên dữ liệu vẫn nói tiếng nói cuối cùng.
+★ tự gỡ trong `applyAttempt` khi mẫu đạt `COMPARABLE`.
+
 ### 17.r `/mistakes` — làm lại đúng những câu đã sai
 
 `wrongQuestionsToRedo(ctx)` trả về các câu mà **lần gần nhất vẫn sai** (lỗi chưa sửa), kèm nhãn

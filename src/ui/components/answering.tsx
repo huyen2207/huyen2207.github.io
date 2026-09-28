@@ -5,6 +5,7 @@ import type { GrammarView } from '@/domain/grammar';
 import { CONFIDENCES } from '@/domain/enums';
 import { t } from '@/i18n/vi';
 import { Card, Pill } from './primitives';
+import { StarToggle } from './StarToggle';
 
 export type ChoiceStatus = 'IDLE' | 'CORRECT' | 'WRONG' | 'MISSED';
 
@@ -270,6 +271,11 @@ export function StructureRecap({ grammar, full }: { grammar: GrammarView; full: 
 
       <p className="ja text-[20px] font-semibold leading-tight">{grammar.pattern}</p>
       <p className="mt-1 text-[14px] leading-relaxed">{grammar.meaningVi}</p>
+
+      {/* Ngay lúc vừa trả lời — đúng lúc người học biết mình có chắc mẫu này hay không. */}
+      <div className="mt-3">
+        <StarToggle grammarId={grammar.id} />
+      </div>
 
       {full && (
         <>

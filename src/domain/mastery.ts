@@ -31,6 +31,11 @@ export interface GrammarMastery {
   confusedPair?: string;
   learnCardDoneAt?: string;
   /**
+   * Người học tự đánh dấu "cần ôn thêm" (CLAUDE.md §14.1 — learnerFlag).
+   * Tự gỡ khi mẫu đạt COMPARABLE trở lên, để nhường chỗ cho mẫu còn yếu.
+   */
+  starredAt?: string;
+  /**
    * Kết quả bài xếp lớp ở onboarding. CỐ Ý tách khỏi `state`:
    * CLAUDE.md §5.1 đòi ≥ 2 ngày khác nhau mới lên RECOGNIZED, mà xếp lớp chỉ diễn ra một ngày.
    * Vì vậy trường này KHÔNG bao giờ đổi `state`, chỉ dùng để xếp lại thứ tự LEARN.

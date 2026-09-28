@@ -26,6 +26,7 @@ import {
   PHASE_FIT,
   PRIORITY_WEIGHTS,
   PRIORITY_WEIGHTS_NEAR_EXAM,
+  LEARNER_FLAG_BONUS,
   STATE_WEIGHT,
   TRAP_SATURATION,
 } from '@/config/learning.config';
@@ -96,6 +97,8 @@ interface Components {
   examFrequencyWeight: number;
   recencyPenalty: number;
   trapPressure: number;
+  /** 1 nếu người học đã đánh dấu sao mẫu này. */
+  learnerFlag: number;
 }
 
 export function priorityComponents(
@@ -135,6 +138,7 @@ export function priorityComponents(
     examFrequencyWeight: EXAM_FREQUENCY_WEIGHT[sig.examFrequency],
     recencyPenalty: ctx.seenTodayGrammarIds.includes(mastery.grammarId) ? 1 : 0,
     trapPressure: clamp(sig.trapMisses / TRAP_SATURATION, 0, 1),
+    learnerFlag: mastery.starredAt ? 1 : 0,
   };
 }
 
@@ -165,6 +169,9 @@ export function computePriority(mastery: GrammarMastery, ctx: PriorityContext): 
     w.recencyPenalty * c.recencyPenalty;
 
   if (nearExam) score += PRIORITY_WEIGHTS_NEAR_EXAM.trapPressure * c.trapPressure;
+
+  // Người học nói "mẫu này tôi cần gặp thêm" — cộng thêm, không lấy của thành phần nào.
+  score += LEARNER_FLAG_BONUS * c.learnerFlag;
 
   return score * phaseFitOf(mastery, ctx);
 }
@@ -221,6 +228,10 @@ export function reasonsFor(mastery: GrammarMastery, ctx: PriorityContext): Reaso
     {
       value: w.stateWeight * c.stateWeight,
       reason: { key: 'review.reason.state', params: { state: mastery.state } },
+    },
+    {
+      value: LEARNER_FLAG_BONUS * c.learnerFlag,
+      reason: { key: 'review.reason.starred', params: {} },
     },
   ];
   if (nearExam) {

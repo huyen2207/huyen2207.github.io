@@ -99,6 +99,17 @@ export const PRIORITY_WEIGHTS_NEAR_EXAM = {
   recencyPenalty: -0.1,
 } as const;
 
+/**
+ * CLAUDE.md §14.1 — thưởng cho mẫu NGƯỜI HỌC tự đánh dấu sao.
+ *
+ * CỘNG THÊM vào điểm ưu tiên, không lấy bớt trọng số của thành phần nào: điểm chỉ dùng để
+ * XẾP HẠNG, nên chia lại 7 trọng số cũ chỉ làm lệch cán cân giữa các tín hiệu đã cân chỉnh.
+ * 0.08 đủ để một mẫu được đánh dấu vượt lên trên mẫu CÙNG HẠNG, nhưng nhỏ hơn khoảng cách
+ * stateWeight giữa INTRODUCED và CONFUSED (0.25 × 0.4 = 0.10) — nên dấu sao không bao giờ đè
+ * được một mẫu đang thực sự hỏng. Người học nêu nguyện vọng, dữ liệu vẫn nói tiếng nói cuối.
+ */
+export const LEARNER_FLAG_BONUS = 0.08;
+
 export const NEAR_EXAM_DAYS = 21;
 
 export const STATE_WEIGHT: Record<MasteryState, number> = {

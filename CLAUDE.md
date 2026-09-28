@@ -397,6 +397,16 @@ priority =
   - 0.10 * recencyPenalty       // tránh lặp lại item vừa gặp trong cùng ngày
 ```
 
+Cộng thêm ngoài 7 thành phần trên:
+```
+  + 0.08 * learnerFlag          // người học tự đánh dấu ★ "cần ôn thêm"
+```
+- **Cộng thêm**, KHÔNG lấy bớt trọng số của thành phần nào: điểm chỉ dùng để xếp hạng.
+- 0.08 **nhỏ hơn** khoảng cách `stateWeight` giữa `INTRODUCED` và `CONFUSED` (0.25 × 0.4 = 0.10) — dấu sao đẩy mẫu lên trên mẫu **cùng hạng**, nhưng **không bao giờ đè** được mẫu đang thực sự hỏng.
+- ★ **tự gỡ** khi mẫu đạt `COMPARABLE` trở lên, để nhường chỗ cho mẫu còn yếu.
+- `reasonsFor` phải nêu được lý do này cho người học (§15 — mọi điều chỉnh phải giải thích được).
+- *(Thêm 2026-09-28 theo quyết định của người học — phương án B. Ngoại lệ có chủ ý với §19.1: người học nêu **một tín hiệu**, không phải chỉnh tay tham số thuật toán.)*
+
 Nhân hệ số phù hợp phase (`phaseFit`): item chưa `RECOGNIZED` × **1.3** ở Phase 1; item `CONFUSED` × **1.4** ở Phase 2; item có `trapHistory` × **1.4** ở Phase 3.
 
 ### 14.2 Khoảng review cơ sở
