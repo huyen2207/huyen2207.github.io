@@ -1173,6 +1173,20 @@ không lệch kế hoạch. Mỗi thẻ học kèm câu recall (§11).
 > Kèm theo: `markLearnCard` nay chỉ đóng dấu `learnCardDoneAt` **lần đầu**. Trước đó xem lại
 > thẻ cũ cũng bị tính là "hôm nay học mẫu mới", nên dựng lại buổi học ăn mất quota của ngày.
 
+### 17.p Giai đoạn theo độ vững, ngày thi tuỳ chọn (2026-11-02, phương án A)
+
+`computeTimeline(profile, now, progress?)`. `progress` do `progressOf()` trong `loadContext`
+đo từ mastery + attempts; **đường chạy thật luôn truyền vào**, thiếu nó chỉ còn dùng cho test
+đơn vị của PhaseEngine (giữ cách tính theo lịch cũ).
+
+- `phaseOfProgress()` — nơi DUY NHẤT quyết định giai đoạn. Ngưỡng ở `PHASE_PROGRESS_THRESHOLDS`.
+- `LearnerProfile.examDate` thành tuỳ chọn; `Timeline.hasDeadline` cho UI biết ẩn/hiện phần hạn chót.
+- Không có ngày thi ⇒ `daysRemaining = NO_DEADLINE_DAYS` (9999). Dùng một sentinel thay vì rải
+  `if (hasDeadline)` khắp 178 chỗ: mọi ngưỡng theo hạn chót (TRIAGE 30, FINAL 14/7, nén §14.3,
+  gần thi §14.4) tự nhiên không chạm tới, không sợ quên một chỗ.
+- `studyDayIndex` = số ngày thực sự ngồi học + 1 (đếm `dayKey` trong attempts).
+- §22: `profile.lastPhaseSeen` thay cho "ngày chuyển giai đoạn".
+
 ### 17.q ★ "cần ôn thêm" do người học đánh dấu
 
 `GrammarMastery.starredAt` + `LEARNER_FLAG_BONUS = 0.08` cộng thêm vào `computePriority`

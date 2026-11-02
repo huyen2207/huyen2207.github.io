@@ -29,7 +29,7 @@ export async function updateProfile(
   await profileRepo.save(next);
 
   const scheduleChanged =
-    update.examDate !== undefined ||
+    'examDate' in update ||
     update.availableMinutesPerDay !== undefined ||
     update.daysPerWeek !== undefined;
 
@@ -38,7 +38,8 @@ export async function updateProfile(
     const mastery = await ensureMasteryRows();
 
     // Ngoại lệ DUY NHẤT được phép sửa hàng loạt nextReviewAt: ngày thi gần hơn.
-    if (update.examDate && new Date(update.examDate) < new Date(current.examDate)) {
+    // Chỉ nén lại khi ngày thi được dời GẦN HƠN. Trước đây không có ngày thi thì không nén.
+    if (update.examDate && current.examDate && new Date(update.examDate) < new Date(current.examDate)) {
       const recompressed = recompressAll(mastery, timeline, next.dayBoundaryHour);
       await masteryRepo.putMany(recompressed);
     }

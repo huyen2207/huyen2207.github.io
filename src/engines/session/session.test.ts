@@ -120,7 +120,8 @@ function timelineOf(phase: Phase, mode: StudyMode, daysRemaining = 40): Timeline
     isPhaseTransitionDay: false,
     todayKey: '2026-10-15',
     isExamOver: daysRemaining <= 0,
-    isNearExam: daysRemaining > 0 && daysRemaining <= 21,
+    hasDeadline: true,
+  isNearExam: daysRemaining > 0 && daysRemaining <= 21,
   };
 }
 

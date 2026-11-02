@@ -59,7 +59,8 @@ function timeline(over: Partial<Timeline> = {}): Timeline {
     todayKey: '2026-10-20',
     ...over,
     isExamOver: (over.daysRemaining ?? 47) <= 0,
-    isNearExam: (over.daysRemaining ?? 47) > 0 && (over.daysRemaining ?? 47) <= 21,
+    hasDeadline: true,
+  isNearExam: (over.daysRemaining ?? 47) > 0 && (over.daysRemaining ?? 47) <= 21,
   };
 }
 

@@ -118,11 +118,16 @@ export default function SettingsPage() {
           {t('onboarding.roadmap.title')}
         </h2>
         <Card className="divide-y px-4 hairline">
-          <Row label={t('settings.examDate')}>
+          <Row label={t('settings.examDateOptional')}>
             <input
               type="date"
-              defaultValue={ctx?.profile.examDate.slice(0, 10)}
-              onChange={(e) => void change({ examDate: new Date(e.target.value).toISOString() })}
+              defaultValue={ctx?.profile.examDate?.slice(0, 10) ?? ''}
+              onChange={(e) =>
+                void change({
+                  // Xoá ngày trong ô = bỏ hạn chót, quay về học đều đặn.
+                  examDate: e.target.value ? new Date(e.target.value).toISOString() : undefined,
+                })
+              }
               className="tap rounded-lg border px-2 py-1.5 text-[14px] hairline"
               style={{ background: 'var(--paper)', color: 'var(--ink)' }}
             />

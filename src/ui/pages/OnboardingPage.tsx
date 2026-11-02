@@ -34,10 +34,12 @@ export default function OnboardingPage() {
     setAnswers((a) => ({ ...a, [k]: v }));
 
   const isReview = step === TOTAL_STEPS;
-  const preview = isReview ? previewRoadmap({ ...answers, examDate: new Date(answers.examDate).toISOString() }, new Date()) : null;
+  // Ô ngày để trống = chưa có ngày thi, không phải lỗi nhập.
+  const examDateIso = answers.examDate ? new Date(answers.examDate).toISOString() : undefined;
+  const preview = isReview ? previewRoadmap({ ...answers, examDate: examDateIso }, new Date()) : null;
 
   async function finish() {
-    await completeOnboarding({ ...answers, examDate: new Date(answers.examDate).toISOString() }, new Date());
+    await completeOnboarding({ ...answers, examDate: examDateIso }, new Date());
     await bootstrap();
     // Xếp lớp chạy TRƯỚC ngày học đầu tiên; trang đó tự điều hướng sang /today.
     navigate('/placement', { replace: true });
@@ -60,6 +62,18 @@ export default function OnboardingPage() {
             className="tap w-full rounded-xl border px-3 py-3 text-[16px] hairline"
             style={{ background: 'var(--paper-raised)', color: 'var(--ink)' }}
           />
+        
+          <button
+            type="button"
+            onClick={() => set('examDate', '')}
+            className="tap mt-3 w-full text-center text-[13px]"
+            style={{ color: answers.examDate ? 'var(--ink-faint)' : 'var(--accent)' }}
+          >
+            {t('onboarding.examDateSkip')}
+          </button>
+          <p className="mt-2 text-[13px] leading-relaxed" style={{ color: 'var(--ink-faint)' }}>
+            {t('onboarding.examDateSkipNote')}
+          </p>
         </QuestionBlock>
       )}
 
@@ -159,7 +173,9 @@ export default function OnboardingPage() {
               {t('onboarding.roadmap.perDay', { n: preview.plan.newPerDay })}
             </p>
             <p className="mt-1 text-[13px]" style={{ color: 'var(--ink-faint)' }}>
-              {formatDateVi(preview.profile.examDate)}
+              {preview.profile.examDate
+                ? formatDateVi(preview.profile.examDate)
+                : t('onboarding.roadmap.noDeadline')}
             </p>
             {preview.profile.daysPerWeek < 7 && (
               <p className="mt-2 text-[13px] leading-relaxed" style={{ color: 'var(--ink-faint)' }}>

@@ -16,6 +16,31 @@ export const PHASE_RATIO_TABLE: readonly PhaseRatioRow[] = [
   { minDays: 0, know: 0.0, compare: 0.3, detect: 0.7 },
 ];
 
+/**
+ * CLAUDE.md §3.2/§4 (sửa 2026-11-02, phương án A) — GIAI ĐOẠN TÍNH THEO ĐỘ VỮNG, KHÔNG THEO LỊCH.
+ *
+ * `knowToCompare`: tỉ lệ mẫu trong kế hoạch đạt ≥ RECOGNIZED thì mới sang 文法を比べる.
+ * `compareToDetect`: tỉ lệ đạt ≥ COMPARABLE thì mới sang 問題を見抜く.
+ * Đặt dưới 1.0 có chủ ý: chờ 100% thì vài mẫu khó sẽ khoá người học lại vĩnh viễn ở giai đoạn 1.
+ * Mẫu chưa đạt KHÔNG bị bỏ — §3.2 bắt tiếp tục dạy chúng ở chế độ KNOW xen vào giai đoạn sau.
+ */
+export const PHASE_PROGRESS_THRESHOLDS = { knowToCompare: 0.6, compareToDetect: 0.5 } as const;
+
+/**
+ * Không khai ngày thi → không có áp lực hạn chót. Dùng một số ngày đủ lớn để mọi luật theo
+ * hạn chót (nén lịch ôn §14.3, TRIAGE, FINAL_14/7) tự động không kích hoạt, thay vì rải
+ * `if (hasDeadline)` khắp nơi và quên mất một chỗ.
+ */
+export const NO_DEADLINE_DAYS = 9999;
+
+/**
+ * Không có ngày thi thì vẫn cần một tầm nhìn để chia số mẫu mới mỗi buổi (§8.2).
+ * 120 buổi: phần 文法を知る chiếm ~1/3 → khoảng 40 buổi cho ~194 mẫu ≈ 5 mẫu mới/buổi.
+ * Đặt thấp hơn (60) sẽ ra ~10 mẫu/buổi — vô lý với người học không có nhiều thời gian,
+ * đúng cái mà lần sửa này muốn bỏ đi.
+ */
+export const PLANNING_HORIZON_SESSIONS = 120;
+
 /** Ràng buộc cứng CLAUDE.md §4.1 */
 export const MIN_DETECT_DAYS = 7;
 export const MIN_TOTAL_DAYS_FOR_DETECT_FLOOR = 14;

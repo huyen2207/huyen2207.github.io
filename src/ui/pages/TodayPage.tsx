@@ -55,14 +55,20 @@ export default function TodayPage() {
     >
       <header className="mb-5">
         <p className="tabular text-[13px] font-semibold tracking-wide" style={{ color: 'var(--ink-faint)' }}>
-          {t('today.dayCounter', { day: timeline.studyDayIndex, total: timeline.totalStudyDays })}
+          {timeline.hasDeadline
+            ? t('today.dayCounter', { day: timeline.studyDayIndex, total: timeline.totalStudyDays })
+            : t('today.sessionCounter', { day: timeline.studyDayIndex })}
         </p>
         <h2 className="ja mt-1 text-[30px] font-semibold leading-tight">{t(`phase.${timeline.currentPhase}`)}</h2>
         <p className="mt-0.5 text-[14px]" style={{ color: 'var(--ink-soft)' }}>
           {t(`phase.${timeline.currentPhase}.question`)}
         </p>
         <p className="mt-2 text-[15px] font-medium" style={{ color: 'var(--accent)' }}>
-          {examOver ? t('today.afterExam') : t('today.daysLeft', { days: timeline.daysRemaining })}
+          {!timeline.hasDeadline
+            ? t('today.noDeadline')
+            : examOver
+              ? t('today.afterExam')
+              : t('today.daysLeft', { days: timeline.daysRemaining })}
         </p>
       </header>
 

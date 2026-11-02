@@ -7,7 +7,8 @@ import { DEFAULT_DAY_BOUNDARY_HOUR } from '@/config/learning.config';
 import { ensureMasteryRows } from './context';
 
 export interface OnboardingAnswers {
-  examDate: string;
+  /** Để trống nếu chưa đăng ký thi — học đều đặn, không hạn chót (CLAUDE.md §4). */
+  examDate?: string;
   selfAssessedLevel: LearnerProfile['selfAssessedLevel'];
   grammarAlreadyStudiedCount: number;
   availableMinutesPerDay: number;

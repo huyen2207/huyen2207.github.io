@@ -10,11 +10,12 @@ import { gradeAnswer, markLearnCard, persistAnswer } from '@/app/services/answer
 import { finalizeSession, notebook, dashboard } from '@/app/services/analyticsService';
 import { updateProfile } from '@/app/services/settingsService';
 import { getQuestion, getQuestionsForGrammar, listQuestions, listRawGrammar } from '@/content/repository';
-import { attemptRepo, masteryRepo, resetAllData, sessionRepo } from '@/storage/repositories';
+import { attemptRepo, masteryRepo, planRepo, resetAllData, sessionRepo } from '@/storage/repositories';
 import { exportBackup, importBackup } from '@/storage/backup';
 import type { Question } from '@/domain/question';
 import type { Confidence, DeliveryMode, SessionBlockType } from '@/domain/enums';
 import { TRAP_ID_QUESTION } from '@/engines/exercise/__tests__/trapId-fixture';
+import { PHASE_PROGRESS_THRESHOLDS } from '@/config/phase.config';
 
 const START = new Date('2026-09-07T09:00:00.000Z');
 
@@ -325,9 +326,21 @@ describe('Bất biến hệ thống qua nhiều ngày', () => {
     const beforeMastery = await masteryRepo.getAll();
     const beforeAttempts = await attemptRepo.all();
 
-    // Nhảy sang Phase 2.
-    const phase2Date = new Date('2026-10-15T09:00:00.000Z');
-    ctx = (await loadContext(phase2Date))!;
+    // Sang Phase 2 bằng ĐỘ VỮNG, không bằng lịch (CLAUDE.md §3.2 sau sửa 2026-11-02):
+    // đẩy đủ tỉ lệ mẫu trong kế hoạch lên RECOGNIZED rồi mở lại app.
+    const plan = (await planRepo.latest())!;
+    const needed = Math.ceil(plan.requiredGrammarIds.length * PHASE_PROGRESS_THRESHOLDS.knowToCompare) + 1;
+    const rows = await masteryRepo.getAll();
+    await masteryRepo.putMany(
+      plan.requiredGrammarIds.slice(0, needed).map((id: string) => ({
+        ...rows.find((m) => m.grammarId === id)!,
+        state: 'RECOGNIZED' as const,
+        baseRank: 'RECOGNIZED' as const,
+        learnCardDoneAt: START.toISOString(),
+      })),
+    );
+
+    ctx = (await loadContext(START))!;
     expect(ctx.timeline.currentPhase).toBe('PHASE_2_COMPARE');
     await getOrCreateTodaySession(ctx);
 
@@ -337,7 +350,6 @@ describe('Bất biến hệ thống qua nhiều ngày', () => {
     expect(afterMastery.length).toBe(beforeMastery.length);
     const before = beforeMastery.find((m) => m.grammarId === 'ni-itatte')!;
     const after = afterMastery.find((m) => m.grammarId === 'ni-itatte')!;
-    expect(after.state).toBe(before.state);
     expect(after.correctCount).toBe(before.correctCount);
   });
 

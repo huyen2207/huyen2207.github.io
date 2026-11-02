@@ -24,7 +24,11 @@
 
 ## 1. ĐỊNH NGHĨA SẢN PHẨM TRONG MỘT CÂU
 
-> Một hệ thống huấn luyện 文法 N1 **có thời hạn cứng**, đưa người học đã có N2 từ *"chưa biết mẫu nào"* đến *"xử lý câu hỏi 文法 N1 nhanh và chính xác"*, bằng cách thay đổi **cách luyện** theo 3 giai đoạn chứ không chỉ tăng số lượng bài.
+> Một hệ thống huấn luyện 文法 N1 **theo độ vững**, đưa người học đã có N2 từ *"chưa biết mẫu nào"* đến *"xử lý câu hỏi 文法 N1 nhanh và chính xác"*, bằng cách thay đổi **cách luyện** theo 3 giai đoạn chứ không chỉ tăng số lượng bài.
+>
+> Mở app lúc nào thì học và ôn đúng phần cần lúc đó. **Ngày thi là tuỳ chọn**: có thì mọi luật nén lịch (§14.3, §14.5) bật lên; không có thì học đều đặn, không hạn chót, không "trễ lịch".
+>
+> *(Sửa 2026-11-02 theo quyết định của người học — phương án A. Bản gốc là "thời hạn cứng" tính theo lịch; người học không giữ được nhịp hằng ngày, và giai đoạn tính theo lịch khiến nghỉ vài hôm là bị đẩy sang giai đoạn chưa sẵn sàng.)*
 
 Không phải: từ điển ngữ pháp. Không phải: app flashcard tổng quát. Không phải: kho đề.
 
@@ -82,7 +86,11 @@ Ví dụ chuẩn — `〜に至って`:
 
 ### 3.2 Quy tắc chuyển phase
 
-- Phase được tính bằng **ngày**, không bằng "hoàn thành bài".
+- Phase được tính bằng **ĐỘ VỮNG THẬT**, không bằng ngày trên lịch và cũng không bằng số bài đã làm:
+  - `文法を知る → 文法を比べる` khi **≥ 60%** mẫu trong kế hoạch đạt ≥ `RECOGNIZED`.
+  - `文法を比べる → 問題を見抜く` khi **≥ 50%** mẫu trong kế hoạch đạt ≥ `COMPARABLE`.
+  - Ngưỡng nằm ở `PHASE_PROGRESS_THRESHOLDS` (§0.5). Đặt dưới 100% có chủ ý: chờ toàn bộ thì vài mẫu khó sẽ khoá người học lại vĩnh viễn ở giai đoạn 1.
+  - **Cấm** quay lại tính phase theo `studyDayIndex` hay `daysRemaining`.
 - Không reset dữ liệu khi chuyển phase. Không xoá lịch sử. Không đặt lại mastery.
 - Phase mới **không** loại bỏ hoạt động của phase cũ, chỉ **đổi trọng số** (xem `§8`).
 - Grammar chưa đạt `RECOGNIZED` khi vào Phase 2 vẫn tiếp tục được dạy ở chế độ KNOW, xen vào session.
@@ -97,14 +105,21 @@ examDate, studyStartDate, availableMinutesPerDay, daysPerWeek,
 selfAssessedLevel, grammarAlreadyStudiedCount, targetScoreBand, confidenceLevel
 ```
 
-Hệ thống tính:
+`examDate` **tuỳ chọn**. Hệ thống tính:
 ```
-totalDays      = businessDaysBetween(studyStartDate, examDate, daysPerWeek)
-daysElapsed    = từ studyStartDate đến hôm nay
-daysRemaining  = từ hôm nay đến examDate
-currentPhase   = phaseOf(daysElapsed / totalDays)
-progressExpected, progressActual
+currentPhase   = phaseOfProgress(recognizedShare, comparableShare)   // KHÔNG phụ thuộc lịch
+studyDayIndex  = số ngày ĐÃ THỰC SỰ ngồi học + 1
+daysRemaining  = có examDate ? từ hôm nay đến examDate : NO_DEADLINE_DAYS
+mode           = modeOf(daysRemaining)   // không có examDate ⇒ luôn NORMAL
 ```
+
+Khi **không** khai `examDate`:
+- `timeline.hasDeadline = false`; UI **không** được hiện bất cứ thứ gì về hạn chót.
+- `TRIAGE_MODE`, `FINAL_14_MODE`, `FINAL_7_MODE`, nén lịch §14.3, bộ trọng số gần thi §14.4 đều **không kích hoạt**.
+- `progressExpected` lấy đúng mức đang đạt ⇒ không bao giờ báo "trễ tiến độ" so với một cái mốc không tồn tại.
+- Tầm nhìn chia mẫu mới/buổi: `PLANNING_HORIZON_SESSIONS`.
+
+Khai `examDate` về sau (ở `/settings`) thì toàn bộ luật hạn chót sống lại ngay, **không mất dữ liệu học**.
 
 ### 4.1 Tỉ lệ phase theo tổng số ngày (compress tự động)
 
@@ -561,6 +576,8 @@ Mỗi PR thêm feature phải ghi câu trả lời này vào mô tả. Không c�
 
 `/today` là **trang quan trọng nhất**. Người học **không bao giờ** phải tự hỏi "hôm nay học gì". Mở app → có sẵn session.
 
+Không có `examDate` thì `/today` là "buổi học tiếp theo", không phải "buổi của ngày hôm nay": không đếm ngược, không đánh dấu trễ, nghỉ bao lâu quay lại cũng đi tiếp từ đúng chỗ đang đứng.
+
 Trách nhiệm chi tiết từng trang: `project-architecture.md §9`.
 
 ---
@@ -590,7 +607,7 @@ Z grammar cần review.
 
 Luật:
 - **Không reset dữ liệu.** Không xoá lịch sử. Không đặt lại mastery.
-- Màn hình chuyển phase chỉ hiện **một lần**, có thể xem lại ở `/analytics`.
+- Màn hình chuyển phase chỉ hiện **một lần**, có thể xem lại ở `/analytics`. Mốc "một lần" là `profile.lastPhaseSeen` khác phase hiện tại (không còn "ngày chuyển giai đoạn" vì phase không còn tính theo lịch).
 - Nếu coverage chưa đạt, vẫn chuyển phase nhưng chèn "nợ KNOW" vào session Phase 2.
 
 ---

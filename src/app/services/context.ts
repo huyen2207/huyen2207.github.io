@@ -1,10 +1,10 @@
 import type { Attempt } from '@/domain/attempt';
 import type { GrammarMastery } from '@/domain/mastery';
-import type { LearnerProfile, StudyPlan, Timeline } from '@/domain/learner';
+import type { LearnerProfile, LearnerProgress, StudyPlan, Timeline } from '@/domain/learner';
 import type { WeaknessProfile } from '@/domain/analytics';
 import type { Confidence, QuestionType } from '@/domain/enums';
 import { computeTimeline } from '@/engines/phase';
-import { createInitialMastery, applyDecay, repairUntaught } from '@/engines/mastery';
+import { createInitialMastery, applyDecay, repairUntaught, atLeast } from '@/engines/mastery';
 import { buildWeaknessProfile, emptyWeaknessProfile } from '@/engines/error';
 import { generatePlan, shouldReplan } from '@/engines/roadmap';
 import { weightedErrorScore, type GrammarPrioritySignals, type PriorityContext } from '@/engines/review';
@@ -112,16 +112,43 @@ export async function daysSinceLastSession(now: Date, boundaryHour: number): Pro
   return Math.max(0, diff);
 }
 
+/**
+ * Đo độ vững hiện tại để PhaseEngine quyết định giai đoạn (CLAUDE.md §3.2 sau sửa).
+ *
+ * Tính trên danh sách mẫu của kế hoạch khi đã có kế hoạch; buổi đầu chưa có thì tính trên
+ * toàn bộ kho — lúc đó chưa học gì nên tỉ lệ bằng 0 và vẫn ra giai đoạn 1, đúng.
+ */
+export function progressOf(
+  mastery: GrammarMastery[],
+  plan: StudyPlan | undefined,
+  attempts: Attempt[],
+): LearnerProgress {
+  const required = plan?.requiredGrammarIds?.length ? new Set(plan.requiredGrammarIds) : null;
+  const rows = required ? mastery.filter((m) => required.has(m.grammarId)) : mastery;
+  const total = Math.max(1, rows.length);
+  return {
+    recognizedShare: rows.filter((m) => atLeast(m, 'RECOGNIZED')).length / total,
+    comparableShare: rows.filter((m) => atLeast(m, 'COMPARABLE')).length / total,
+    studyDaysDone: new Set(attempts.map((a) => a.dayKey)).size,
+  };
+}
+
 /** Dựng toàn bộ ngữ cảnh engine từ storage. Đây là nơi DUY NHẤT có side effect đọc DB. */
 export async function loadContext(now: Date): Promise<EngineContext | null> {
   const profile = await profileRepo.get();
   if (!profile) return null;
 
-  const timeline = computeTimeline(profile, now);
   let mastery = await ensureMasteryRows();
+  let plan = await planRepo.latest();
+
+  // Attempt ghi dưới id mẫu đã gộp vẫn nằm nguyên trong DB (append-only, §9). Chuẩn hoá
+  // lúc ĐỌC, nếu không sổ lỗi hiện một mẫu thành hai dòng và lộ cả mã nội bộ "nara-dewa".
+  const attempts = (await attemptRepo.all()).map(normalizeMergedIds);
+
+  // Giai đoạn do ĐỘ VỮNG quyết định, nên phải đo độ vững TRƯỚC khi dựng timeline (§3.2).
+  const timeline = computeTimeline(profile, now, progressOf(mastery, plan, attempts));
   mastery = mastery.map((m) => applyDecay(m, timeline, now));
 
-  let plan = await planRepo.latest();
   const gap = await daysSinceLastSession(now, profile.dayBoundaryHour);
 
   if (!plan) {
@@ -143,9 +170,6 @@ export async function loadContext(now: Date): Promise<EngineContext | null> {
     }
   }
 
-  // Attempt ghi dưới id mẫu đã gộp vẫn nằm nguyên trong DB (append-only, §9). Chuẩn hoá
-  // lúc ĐỌC, nếu không sổ lỗi hiện một mẫu thành hai dòng và lộ cả mã nội bộ "nara-dewa".
-  const attempts = (await attemptRepo.all()).map(normalizeMergedIds);
   const weakness =
     attempts.length === 0
       ? { ...emptyWeaknessProfile(now), daysSinceLastSession: gap, reviewDebt: countDue(mastery, now) }
